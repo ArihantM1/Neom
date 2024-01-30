@@ -121,7 +121,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "ConZebLogo",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 10,
+                "PublishOrderIndex": 20,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -453,7 +453,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "ConMainHeader",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 9,
+            "PublishOrderIndex": 19,
             "Rules": [
               {
                 "Category": "Design",
@@ -650,7 +650,7 @@
                     "OptimizeForDevices": "Off",
                     "Parent": "Gallery3",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 13,
+                    "PublishOrderIndex": 23,
                     "Rules": [
                       {
                         "Category": "Design",
@@ -739,7 +739,14 @@
                             "PropertyName": "FillPortions"
                           },
                           {
-                            "PropertyName": "AlignInContainer"
+                            "ControlPropertyState": "AlignInContainer",
+                            "PropertyName": "AlignInContainer",
+                            "Rule": {
+                              "Category": "Design",
+                              "InvariantScript": "AlignInContainer.SetByContainer",
+                              "Property": "AlignInContainer",
+                              "RuleProviderType": "Unknown"
+                            }
                           },
                           {
                             "PropertyName": "LayoutMinWidth"
@@ -761,7 +768,7 @@
                         "OptimizeForDevices": "Off",
                         "Parent": "Container3",
                         "PersistMetaDataIDKey": false,
-                        "PublishOrderIndex": 15,
+                        "PublishOrderIndex": 25,
                         "Rules": [
                           {
                             "Category": "Design",
@@ -976,7 +983,14 @@
                             "PropertyName": "FillPortions"
                           },
                           {
-                            "PropertyName": "AlignInContainer"
+                            "ControlPropertyState": "AlignInContainer",
+                            "PropertyName": "AlignInContainer",
+                            "Rule": {
+                              "Category": "Design",
+                              "InvariantScript": "AlignInContainer.SetByContainer",
+                              "Property": "AlignInContainer",
+                              "RuleProviderType": "Unknown"
+                            }
                           },
                           {
                             "PropertyName": "LayoutMinWidth"
@@ -998,7 +1012,7 @@
                         "OptimizeForDevices": "Off",
                         "Parent": "Container3",
                         "PersistMetaDataIDKey": false,
-                        "PublishOrderIndex": 16,
+                        "PublishOrderIndex": 26,
                         "Rules": [
                           {
                             "Category": "Data",
@@ -1146,7 +1160,7 @@
                           },
                           {
                             "Category": "Design",
-                            "InvariantScript": "Parent.Width\r\n",
+                            "InvariantScript": "//Parent.Width\r\nLen(Self.Text)*Self.Size+20",
                             "Property": "Width",
                             "RuleProviderType": "User"
                           },
@@ -1311,7 +1325,14 @@
                             "PropertyName": "FillPortions"
                           },
                           {
-                            "PropertyName": "AlignInContainer"
+                            "ControlPropertyState": "AlignInContainer",
+                            "PropertyName": "AlignInContainer",
+                            "Rule": {
+                              "Category": "Design",
+                              "InvariantScript": "AlignInContainer.SetByContainer",
+                              "Property": "AlignInContainer",
+                              "RuleProviderType": "Unknown"
+                            }
                           },
                           {
                             "PropertyName": "LayoutMinWidth"
@@ -1333,7 +1354,7 @@
                         "OptimizeForDevices": "Off",
                         "Parent": "Container3",
                         "PersistMetaDataIDKey": false,
-                        "PublishOrderIndex": 17,
+                        "PublishOrderIndex": 27,
                         "Rules": [
                           {
                             "Category": "Design",
@@ -1531,7 +1552,7 @@
                     "OptimizeForDevices": "Off",
                     "Parent": "Gallery3",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 14,
+                    "PublishOrderIndex": 24,
                     "Rules": [
                       {
                         "Category": "Design",
@@ -1565,7 +1586,7 @@
                       },
                       {
                         "Category": "Design",
-                        "InvariantScript": "Parent.TemplateWidth",
+                        "InvariantScript": "Parent.TemplateWidth\r\n",
                         "Property": "Width",
                         "RuleProviderType": "User"
                       },
@@ -1835,7 +1856,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "ConNavBar",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 12,
+                "PublishOrderIndex": 22,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -1845,7 +1866,7 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "If(Self.Layout = Layout.Horizontal, Min(120, Self.Width - 60), Min(320, Self.Height - 60))",
+                    "InvariantScript": "If(Self.Layout = Layout.Horizontal, Min(110, Self.Width - 60), Min(320, Self.Height - 60))",
                     "Property": "TemplateSize",
                     "RuleProviderType": "User"
                   },
@@ -2135,7 +2156,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "ConMainHeader",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 11,
+            "PublishOrderIndex": 21,
             "Rules": [
               {
                 "Category": "Design",
@@ -2430,7 +2451,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "ConLoggedinuserName",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 19,
+                "PublishOrderIndex": 29,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -2814,7 +2835,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "ConMainHeader",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 18,
+            "PublishOrderIndex": 28,
             "Rules": [
               {
                 "Category": "Design",
@@ -3113,7 +3134,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "ConLoggedinuserimg",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 21,
+                "PublishOrderIndex": 31,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -3437,7 +3458,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "ConMainHeader",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 20,
+            "PublishOrderIndex": 30,
             "Rules": [
               {
                 "Category": "Design",
@@ -3669,7 +3690,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "HeaderComponent",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 8,
+        "PublishOrderIndex": 18,
         "Rules": [
           {
             "Category": "Design",
@@ -3865,7 +3886,7 @@
       },
       "CurrentScreen"
     ],
-    "LastModifiedTimestamp": "638422125707385042",
+    "LastModifiedTimestamp": "638422187406106085",
     "Name": "HeaderComponent",
     "Rules": [
       {
@@ -3955,7 +3976,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638422125707385042",
+  "LastModifiedTimestamp": "638422187406106085",
   "Name": "e860f6aa078a4c378c29f0cd0a36bbc2",
   "OverridableProperties": {},
   "Version": "1.0"
