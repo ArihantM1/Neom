@@ -1845,7 +1845,7 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "If(Self.Layout = Layout.Horizontal, Min(130, Self.Width - 60), Min(320, Self.Height - 60))",
+                    "InvariantScript": "If(Self.Layout = Layout.Horizontal, Min(120, Self.Width - 60), Min(320, Self.Height - 60))",
                     "Property": "TemplateSize",
                     "RuleProviderType": "User"
                   },
@@ -2944,7 +2944,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "Parent.Width*.2",
+                "InvariantScript": "Parent.Width*.25",
                 "Property": "Width",
                 "RuleProviderType": "User"
               },
@@ -3865,7 +3865,7 @@
       },
       "CurrentScreen"
     ],
-    "LastModifiedTimestamp": "638422123094653285",
+    "LastModifiedTimestamp": "638422125707385042",
     "Name": "HeaderComponent",
     "Rules": [
       {
@@ -3955,7 +3955,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638422123094653285",
+  "LastModifiedTimestamp": "638422125707385042",
   "Name": "e860f6aa078a4c378c29f0cd0a36bbc2",
   "OverridableProperties": {},
   "Version": "1.0"

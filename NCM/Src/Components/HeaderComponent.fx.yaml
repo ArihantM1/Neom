@@ -81,7 +81,7 @@ HeaderComponent As CanvasComponent:
                     Navigate(ThisItem.TargetScreen,ScreenTransition.Fade)
                 ShowScrollbar: =false
                 TemplatePadding: =0
-                TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(130, Self.Width - 60), Min(320, Self.Height - 60))
+                TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(120, Self.Width - 60), Min(320, Self.Height - 60))
                 Width: =Parent.Width
                 ZIndex: =1
 
@@ -133,7 +133,7 @@ HeaderComponent As CanvasComponent:
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
-            Width: =Parent.Width*.2
+            Width: =Parent.Width*.25
             ZIndex: =3
 
             Label1 As label:
