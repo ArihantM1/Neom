@@ -1,4 +1,5 @@
 HeaderComponent As CanvasComponent:
+    CurrentScreen: ="Text"
     Fill: =Color.White
     Height: =100
     NavItems: |-
@@ -97,15 +98,26 @@ HeaderComponent As CanvasComponent:
                     Label2 As label:
                         Align: =Align.Center
                         AlignInContainer: =AlignInContainer.Center
+                        FontWeight: |-
+                            =//FontWeight.Bold
+                            If(ThisItem.Title=HeaderComponent.CurrentScreen, FontWeight.Bold,FontWeight.Lighter)
                         Text: =ThisItem.Title
                         Width: |
                             =Parent.Width
                         ZIndex: =1
 
                     Rectangle2 As rectangle:
-                        Height: =2
-                        Width: =Label2.Width-30
+                        Fill: =RGBA(107, 29, 94,1)
+                        Height: =1
+                        Width: =Len(Label2.Text)*Label2.Size+15
                         ZIndex: =2
+
+                    Rectangle2_1 As rectangle:
+                        Fill: =RGBA(107, 29, 94,1)
+                        Height: =2
+                        Visible: =If(ThisItem.Title=HeaderComponent.CurrentScreen, true,false)
+                        Width: =Len(Label2.Text)*Label2.Size+15
+                        ZIndex: =3
 
         ConLoggedinuserName As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer

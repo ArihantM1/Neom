@@ -1,0 +1,15 @@
+"'Screen Reports' As screen":
+
+    Container1_3 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+        HeaderComponent_4 As HeaderComponent:
+            CurrentScreen: ="REPORTS"
+            Height: =Parent.Height*.1
+            LayoutMinHeight: =640
+            LayoutMinWidth: =640
+

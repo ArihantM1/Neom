@@ -133,6 +133,9 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Screen1"
+    "Screen Home",
+    "Screen Analytics",
+    "Screen Reports",
+    "Screen Configuration"
   ]
 }

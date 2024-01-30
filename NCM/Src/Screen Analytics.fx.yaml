@@ -1,0 +1,15 @@
+"'Screen Analytics' As screen":
+
+    Container1_4 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+        HeaderComponent_5 As HeaderComponent:
+            CurrentScreen: ="ANALYTICS"
+            Height: =Parent.Height*.1
+            LayoutMinHeight: =640
+            LayoutMinWidth: =640
+
