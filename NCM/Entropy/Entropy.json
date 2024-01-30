@@ -6,27 +6,27 @@
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
-    "ConLoggedinuserimg": 10,
-    "ConLoggedinuserName": 9,
-    "ConMainHeader": 6,
+    "ConLoggedinuserimg": 16,
+    "ConLoggedinuserName": 14,
+    "ConMainHeader": 5,
     "ConNavBar": 8,
-    "Container3": 26,
-    "ConZebLogo": 7,
-    "Gallery3": 24,
-    "galleryTemplate3": 25,
-    "HeaderComponent": 5,
-    "HeaderComponent_1": 29,
+    "Container3": 11,
+    "ConZebLogo": 6,
+    "Gallery3": 9,
+    "galleryTemplate3": 10,
+    "HeaderComponent": 4,
+    "HeaderComponent_1": 19,
     "Host": 3,
-    "Image1": 11,
-    "Image2": 12,
-    "Label1": 13,
-    "Label2": 27,
-    "Rectangle2": 28,
-    "Screen1": 4
+    "Image1": 7,
+    "Image2": 17,
+    "Label1": 15,
+    "Label2": 12,
+    "Rectangle2": 13,
+    "Screen1": 18
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "01/30/2024 08:14:17",
+  "HeaderLastSavedDateTimeUTC": "01/30/2024 10:37:37",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -34,7 +34,7 @@
     "xebia-logo": "2b23ea01-7fc9-450b-ac77-fde8041b3a23.jpg"
   },
   "LocalResourceRootPaths": {
-    "xebia-logo": "https://docserverpwaprodneu.blob.core.windows.net/974097ba-5973-490c-98d7-45d31f985332-1/resource/df0f6df9-a4bb-4c1c-825f-2de988580412.jpg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-01-30T07%3A48%3A39Z&ske=2024-01-31T08%3A03%3A39Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-01-31T08%3A03%3A39Z&sr=b&sp=r&sig=kqdiQMe7qiY5GPDEAvk121Z4R7SqKX%2FbnWeOZZJSsgU%3D"
+    "xebia-logo": "https://docserverpwaprodneu.blob.core.windows.net/174019da-607d-4644-9df3-9f360655276f-1/resource/Assets0Images02b23ea01-7fc9-450b-ac77-fde8041b3a23.jpg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-01-30T10%3A11%3A25Z&ske=2024-01-31T10%3A26%3A25Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-01-31T10%3A26%3A25Z&sr=b&sp=r&sig=2o4TCN5F%2BTw%2Bhd9%2BtOWC1DqWjlm2w00%2B7PeWyvrlfSY%3D"
   },
   "OrderComponentMetadata": {
     "e860f6aa078a4c378c29f0cd0a36bbc2": 0
@@ -104,11 +104,18 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.0230217,
+    "AnalysisLoadTime": 0.1225547,
     "ControlCount": {
-      "e860f6aa078a4c378c29f0cd0a36bbc2": 1,
-      "groupContainer": 3
-    }
+      "e860f6aa078a4c378c29f0cd0a36bbc2": 2,
+      "gallery": 1,
+      "galleryTemplate": 1,
+      "groupContainer": 6,
+      "image": 2,
+      "label": 2,
+      "rectangle": 1,
+      "screen": 1
+    },
+    "DeserializationLoadTime": 2.0736222
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

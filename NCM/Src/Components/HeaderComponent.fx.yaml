@@ -71,7 +71,7 @@ HeaderComponent As CanvasComponent:
             ZIndex: =2
 
             Gallery3 As gallery.galleryHorizontal:
-                AlignInContainer: =AlignInContainer.Center
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DelayItemLoading: =true
                 FillPortions: =0
                 Height: =Parent.Height
@@ -80,7 +80,7 @@ HeaderComponent As CanvasComponent:
                 LayoutMinWidth: =320
                 LoadingSpinner: =LoadingSpinner.Data
                 ShowScrollbar: =false
-                TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(100, Self.Width - 60), Min(320, Self.Height - 60))
+                TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(160, Self.Width - 60), Min(320, Self.Height - 60))
                 Width: =Parent.Width
                 ZIndex: =1
 
@@ -92,20 +92,19 @@ HeaderComponent As CanvasComponent:
                     LayoutJustifyContent: =LayoutJustifyContent.Center
                     LayoutMode: =LayoutMode.Auto
                     Width: =Parent.TemplateWidth
-                    X: =40
-                    Y: =40
                     ZIndex: =1
 
                     Label2 As label:
                         Align: =Align.Center
                         AlignInContainer: =AlignInContainer.Center
-                        Text: ="Text"
-                        Width: =Parent.Width
+                        Text: =ThisItem.Title
+                        Width: |
+                            =Parent.Width
                         ZIndex: =1
 
                     Rectangle2 As rectangle:
                         Height: =2
-                        Width: =Parent.Width-50
+                        Width: =Label2.Width-30
                         ZIndex: =2
 
         ConLoggedinuserName As groupContainer.verticalAutoLayoutContainer:
