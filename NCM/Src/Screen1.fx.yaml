@@ -1,2 +1,5 @@
 Screen1 As screen:
 
+    HeaderComponent_1 As HeaderComponent:
+        Height: =Parent.Height*.1
+

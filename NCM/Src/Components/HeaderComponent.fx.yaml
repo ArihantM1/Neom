@@ -39,15 +39,16 @@ HeaderComponent As CanvasComponent:
 
         ConZebLogo As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.None
             FillPortions: =0
             Height: =Parent.Height
-            LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
             LayoutJustifyContent: =LayoutJustifyContent.Center
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
-            Width: =Parent.Width*.15
+            PaddingLeft: =10
+            Width: =Parent.Width*.1
             ZIndex: =1
 
             Image1 As image:
@@ -58,6 +59,7 @@ HeaderComponent As CanvasComponent:
 
         ConNavBar As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.None
             FillPortions: =0
             Height: =Parent.Height
             LayoutDirection: =LayoutDirection.Vertical
@@ -83,6 +85,7 @@ HeaderComponent As CanvasComponent:
                 ZIndex: =1
 
                 Container3 As groupContainer.verticalAutoLayoutContainer:
+                    DropShadow: =DropShadow.None
                     Height: =Parent.TemplateHeight
                     LayoutAlignItems: =LayoutAlignItems.Center
                     LayoutDirection: =LayoutDirection.Vertical
@@ -107,9 +110,10 @@ HeaderComponent As CanvasComponent:
 
         ConLoggedinuserName As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.None
             FillPortions: =0
             Height: =Parent.Height
-            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutAlignItems: =LayoutAlignItems.End
             LayoutDirection: =LayoutDirection.Vertical
             LayoutJustifyContent: =LayoutJustifyContent.Center
             LayoutMinHeight: =100
@@ -119,7 +123,7 @@ HeaderComponent As CanvasComponent:
             ZIndex: =3
 
             Label1 As label:
-                Align: =Align.Center
+                Align: =Align.Right
                 FontWeight: =FontWeight.Semibold
                 Size: =15
                 Text: ="Xebia Contract Kit (ACK)"
@@ -128,6 +132,7 @@ HeaderComponent As CanvasComponent:
 
         ConLoggedinuserimg As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.None
             FillPortions: =0
             Height: =Parent.Height
             LayoutAlignItems: =LayoutAlignItems.Center
@@ -140,12 +145,12 @@ HeaderComponent As CanvasComponent:
             ZIndex: =4
 
             Image2 As image:
-                Height: =Parent.Width-50
+                Height: =Parent.Width-40
                 Image: =User().Image
                 RadiusBottomLeft: =50
                 RadiusBottomRight: =50
                 RadiusTopLeft: =50
                 RadiusTopRight: =50
-                Width: =Parent.Width-50
+                Width: =Parent.Width-40
                 ZIndex: =1
 

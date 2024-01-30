@@ -1,6 +1,7 @@
 {
   "ComponentIndexes": {
-    "HeaderComponent": 1
+    "HeaderComponent": 1,
+    "HeaderComponent_1": 1
   },
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
@@ -14,6 +15,7 @@
     "Gallery3": 24,
     "galleryTemplate3": 25,
     "HeaderComponent": 5,
+    "HeaderComponent_1": 29,
     "Host": 3,
     "Image1": 11,
     "Image2": 12,
@@ -24,7 +26,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "01/30/2024 08:08:50",
+  "HeaderLastSavedDateTimeUTC": "01/30/2024 08:13:56",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -50,8 +52,8 @@
     "gallery": 2,
     "groupContainer": 0,
     "image": 1,
-    "label": 4,
-    "rectangle": 3
+    "label": 3,
+    "rectangle": 4
   },
   "OverridablePropertiesEntry": {
     "App": {},
@@ -64,6 +66,7 @@
     "Gallery3": {},
     "galleryTemplate3": {},
     "HeaderComponent": {},
+    "HeaderComponent_1": {},
     "Host": {},
     "Image1": {},
     "Image2": {},
@@ -76,21 +79,22 @@
   "PCFTemplateEntry": {},
   "PublishOrderIndices": {
     "App": 0,
-    "ConLoggedinuserimg": 10,
-    "ConLoggedinuserName": 8,
-    "ConMainHeader": 0,
-    "ConNavBar": 3,
-    "Container3": 6,
-    "ConZebLogo": 1,
-    "Gallery3": 4,
-    "galleryTemplate3": 5,
+    "ConLoggedinuserimg": 12,
+    "ConLoggedinuserName": 10,
+    "ConMainHeader": 1,
+    "ConNavBar": 4,
+    "Container3": 7,
+    "ConZebLogo": 2,
+    "Gallery3": 5,
+    "galleryTemplate3": 6,
     "HeaderComponent": 0,
+    "HeaderComponent_1": 0,
     "Host": 0,
-    "Image1": 2,
-    "Image2": 11,
-    "Label1": 9,
-    "Label2": 7,
-    "Rectangle2": 0,
+    "Image1": 3,
+    "Image2": 13,
+    "Label1": 11,
+    "Label2": 8,
+    "Rectangle2": 9,
     "Screen1": 0
   },
   "ResourcesJsonIndices": {
@@ -102,6 +106,7 @@
   "VolatileProperties": {
     "AnalysisLoadTime": 0.0230217,
     "ControlCount": {
+      "e860f6aa078a4c378c29f0cd0a36bbc2": 1,
       "groupContainer": 3
     }
   },
