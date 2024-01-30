@@ -40,7 +40,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "01/30/2024 10:52:30",
+  "HeaderLastSavedDateTimeUTC": "01/30/2024 11:52:59",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -57,7 +57,8 @@
     "e860f6aa078a4c378c29f0cd0a36bbc2": 0
   },
   "OrderDataSource": {
-    "CustomGallerySample": 0
+    "CustomGallerySample": 0,
+    "NavBar": 1
   },
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
@@ -66,8 +67,8 @@
     "gallery": 2,
     "groupContainer": 0,
     "image": 1,
-    "label": 3,
-    "rectangle": 4
+    "label": 4,
+    "rectangle": 3
   },
   "OverridablePropertiesEntry": {
     "App": {},
@@ -125,9 +126,9 @@
     "Image1": 10,
     "Image2": 21,
     "Label1": 19,
-    "Label2": 15,
-    "Rectangle2": 16,
-    "Rectangle2_1": 17,
+    "Label2": 16,
+    "Rectangle2": 17,
+    "Rectangle2_1": 15,
     "Screen Analytics": 0,
     "Screen Configuration": 0,
     "Screen Home": 0,
@@ -147,8 +148,8 @@
       "galleryTemplate": 1,
       "groupContainer": 10,
       "image": 2,
-      "label": 2,
-      "rectangle": 2,
+      "label": 3,
+      "rectangle": 4,
       "screen": 5
     },
     "DeserializationLoadTime": 2.0736222

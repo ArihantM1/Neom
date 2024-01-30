@@ -6,23 +6,20 @@ HeaderComponent As CanvasComponent:
         =Table(
             {
                 Title: "HOME",
-                TargetScreen: App.ActiveScreen,
-                icon: Icon.Home
+                TargetScreen: App.ActiveScreen
             },
             {
                 Title: "ANALYTICS",
-                TargetScreen: App.ActiveScreen,
-                icon: Icon.DocumentWithContent
+                TargetScreen: App.ActiveScreen
             },
             {
                 Title: "REPORTS",
-                TargetScreen: App.ActiveScreen,
-                icon: Icon.Trending
+                TargetScreen: App.ActiveScreen
             },
               {
                 Title: "CONFIGURATIONS",
-                TargetScreen: App.ActiveScreen,
-                icon: Icon.Trending
+                TargetScreen: App.ActiveScreen
+                
             }
            
         )
@@ -49,13 +46,13 @@ HeaderComponent As CanvasComponent:
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             PaddingLeft: =10
-            Width: =Parent.Width*.1
+            Width: =Parent.Width*.08
             ZIndex: =1
 
             Image1 As image:
                 Height: =Parent.Height-50
                 Image: ='xebia-logo'
-                Width: =Parent.Width-50
+                Width: =Parent.Width-20
                 ZIndex: =1
 
         ConNavBar As groupContainer.verticalAutoLayoutContainer:
@@ -79,9 +76,12 @@ HeaderComponent As CanvasComponent:
                 Items: =HeaderComponent.NavItems
                 LayoutMinHeight: =287
                 LayoutMinWidth: =320
-                LoadingSpinner: =LoadingSpinner.Data
+                OnSelect: |-
+                    =true;
+                    Navigate(ThisItem.TargetScreen,ScreenTransition.Fade)
                 ShowScrollbar: =false
-                TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(160, Self.Width - 60), Min(320, Self.Height - 60))
+                TemplatePadding: =0
+                TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(130, Self.Width - 60), Min(320, Self.Height - 60))
                 Width: =Parent.Width
                 ZIndex: =1
 
@@ -97,18 +97,21 @@ HeaderComponent As CanvasComponent:
 
                     Label2 As label:
                         Align: =Align.Center
-                        AlignInContainer: =AlignInContainer.Center
                         FontWeight: |-
                             =//FontWeight.Bold
                             If(ThisItem.Title=HeaderComponent.CurrentScreen, FontWeight.Bold,FontWeight.Lighter)
+                        HoverColor: =
+                        OnSelect: =Navigate(ThisItem.TargetScreen,ScreenTransition.Fade)
+                        Size: =9
                         Text: =ThisItem.Title
                         Width: |
                             =Parent.Width
                         ZIndex: =1
 
                     Rectangle2 As rectangle:
-                        Fill: =RGBA(107, 29, 94,1)
+                        Fill: =RGBA(0, 0, 0, 0)
                         Height: =1
+                        HoverFill: =RGBA(107, 29, 94,1)
                         Width: =Len(Label2.Text)*Label2.Size+15
                         ZIndex: =2
 

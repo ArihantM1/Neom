@@ -1,5 +1,29 @@
 App As appinfo:
     BackEnabled: =true
+    OnStart: |-
+        =ClearCollect(
+            NavBar,
+           Table(
+            {
+                Title: "HOME",
+                TargetScreen: 'Screen Home'
+            },
+            {
+                Title: "ANALYTICS",
+                TargetScreen: 'Screen Analytics'
+            },
+            {
+                Title: "REPORTS",
+                TargetScreen: 'Screen Reports'
+            },
+              {
+                Title: "CONFIGURATIONS",
+                TargetScreen: 'Screen Configuration'
+                
+            }
+           
+        )
+        )
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:

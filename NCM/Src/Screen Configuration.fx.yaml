@@ -12,4 +12,5 @@
             Height: =Parent.Height*.1
             LayoutMinHeight: =640
             LayoutMinWidth: =640
+            NavItems: =NavBar
 
