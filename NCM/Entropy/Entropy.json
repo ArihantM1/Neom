@@ -1,44 +1,109 @@
 {
-  "ComponentIndexes": {},
+  "ComponentIndexes": {
+    "HeaderComponent": 1
+  },
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
+    "ConLoggedinuserimg": 10,
+    "ConLoggedinuserName": 9,
+    "ConMainHeader": 6,
+    "ConNavBar": 8,
+    "Container3": 26,
+    "ConZebLogo": 7,
+    "Gallery3": 24,
+    "galleryTemplate3": 25,
+    "HeaderComponent": 5,
     "Host": 3,
+    "Image1": 11,
+    "Image2": 12,
+    "Label1": 13,
+    "Label2": 27,
+    "Rectangle2": 28,
     "Screen1": 4
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "01/30/2024 07:34:37",
+  "HeaderLastSavedDateTimeUTC": "01/30/2024 08:08:50",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
-  "LocalResourceFileNames": {},
-  "LocalResourceRootPaths": {},
-  "OrderComponentMetadata": {},
-  "OrderComponentTemplate": {},
-  "OrderDataSource": {},
+  "LocalResourceFileNames": {
+    "xebia-logo": "2b23ea01-7fc9-450b-ac77-fde8041b3a23.jpg"
+  },
+  "LocalResourceRootPaths": {
+    "xebia-logo": "https://docserverpwaprodneu.blob.core.windows.net/974097ba-5973-490c-98d7-45d31f985332-1/resource/df0f6df9-a4bb-4c1c-825f-2de988580412.jpg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-01-30T07%3A48%3A39Z&ske=2024-01-31T08%3A03%3A39Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-01-31T08%3A03%3A39Z&sr=b&sp=r&sig=kqdiQMe7qiY5GPDEAvk121Z4R7SqKX%2FbnWeOZZJSsgU%3D"
+  },
+  "OrderComponentMetadata": {
+    "e860f6aa078a4c378c29f0cd0a36bbc2": 0
+  },
+  "OrderComponentTemplate": {
+    "e860f6aa078a4c378c29f0cd0a36bbc2": 0
+  },
+  "OrderDataSource": {
+    "CustomGallerySample": 0
+  },
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {},
+  "OrderXMLTemplate": {
+    "gallery": 2,
+    "groupContainer": 0,
+    "image": 1,
+    "label": 4,
+    "rectangle": 3
+  },
   "OverridablePropertiesEntry": {
     "App": {},
+    "ConLoggedinuserimg": {},
+    "ConLoggedinuserName": {},
+    "ConMainHeader": {},
+    "ConNavBar": {},
+    "Container3": {},
+    "ConZebLogo": {},
+    "Gallery3": {},
+    "galleryTemplate3": {},
+    "HeaderComponent": {},
     "Host": {},
+    "Image1": {},
+    "Image2": {},
+    "Label1": {},
+    "Label2": {},
+    "Rectangle2": {},
     "Screen1": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
   "PublishOrderIndices": {
     "App": 0,
+    "ConLoggedinuserimg": 10,
+    "ConLoggedinuserName": 8,
+    "ConMainHeader": 0,
+    "ConNavBar": 3,
+    "Container3": 6,
+    "ConZebLogo": 1,
+    "Gallery3": 4,
+    "galleryTemplate3": 5,
+    "HeaderComponent": 0,
     "Host": 0,
+    "Image1": 2,
+    "Image2": 11,
+    "Label1": 9,
+    "Label2": 7,
+    "Rectangle2": 0,
     "Screen1": 0
   },
-  "ResourcesJsonIndices": {},
+  "ResourcesJsonIndices": {
+    "Image-SampleImage": 0,
+    "Image-xebia-logo": 1
+  },
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
     "AnalysisLoadTime": 0.0230217,
-    "ControlCount": {}
+    "ControlCount": {
+      "groupContainer": 3
+    }
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
