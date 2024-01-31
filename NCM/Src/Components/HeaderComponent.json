@@ -660,7 +660,7 @@
                       },
                       {
                         "Category": "Behavior",
-                        "InvariantScript": "true;\r\nNavigate(ThisItem.TargetScreen,ScreenTransition.Fade)",
+                        "InvariantScript": "true;\nNavigate(ThisItem.TargetScreen,ScreenTransition.Fade)",
                         "Property": "OnSelect",
                         "RuleProviderType": "User"
                       }
@@ -733,10 +733,17 @@
                             "NameMapSourceSchema": "?"
                           }
                         ],
-                        "ControlUniqueId": "20",
+                        "ControlUniqueId": "12",
                         "DynamicProperties": [
                           {
-                            "PropertyName": "FillPortions"
+                            "ControlPropertyState": "FillPortions",
+                            "PropertyName": "FillPortions",
+                            "Rule": {
+                              "Category": "Design",
+                              "InvariantScript": "0",
+                              "Property": "FillPortions",
+                              "RuleProviderType": "Unknown"
+                            }
                           },
                           {
                             "ControlPropertyState": "AlignInContainer",
@@ -749,10 +756,24 @@
                             }
                           },
                           {
-                            "PropertyName": "LayoutMinWidth"
+                            "ControlPropertyState": "LayoutMinWidth",
+                            "PropertyName": "LayoutMinWidth",
+                            "Rule": {
+                              "Category": "Design",
+                              "InvariantScript": "150",
+                              "Property": "LayoutMinWidth",
+                              "RuleProviderType": "Unknown"
+                            }
                           },
                           {
-                            "PropertyName": "LayoutMinHeight"
+                            "ControlPropertyState": "LayoutMinHeight",
+                            "PropertyName": "LayoutMinHeight",
+                            "Rule": {
+                              "Category": "Design",
+                              "InvariantScript": "100",
+                              "Property": "LayoutMinHeight",
+                              "RuleProviderType": "Unknown"
+                            }
                           }
                         ],
                         "HasDynamicProperties": true,
@@ -977,10 +998,17 @@
                             "NameMapSourceSchema": "?"
                           }
                         ],
-                        "ControlUniqueId": "12",
+                        "ControlUniqueId": "13",
                         "DynamicProperties": [
                           {
-                            "PropertyName": "FillPortions"
+                            "ControlPropertyState": "FillPortions",
+                            "PropertyName": "FillPortions",
+                            "Rule": {
+                              "Category": "Design",
+                              "InvariantScript": "0",
+                              "Property": "FillPortions",
+                              "RuleProviderType": "Unknown"
+                            }
                           },
                           {
                             "ControlPropertyState": "AlignInContainer",
@@ -993,10 +1021,24 @@
                             }
                           },
                           {
-                            "PropertyName": "LayoutMinWidth"
+                            "ControlPropertyState": "LayoutMinWidth",
+                            "PropertyName": "LayoutMinWidth",
+                            "Rule": {
+                              "Category": "Design",
+                              "InvariantScript": "150",
+                              "Property": "LayoutMinWidth",
+                              "RuleProviderType": "Unknown"
+                            }
                           },
                           {
-                            "PropertyName": "LayoutMinHeight"
+                            "ControlPropertyState": "LayoutMinHeight",
+                            "PropertyName": "LayoutMinHeight",
+                            "Rule": {
+                              "Category": "Design",
+                              "InvariantScript": "40",
+                              "Property": "LayoutMinHeight",
+                              "RuleProviderType": "Unknown"
+                            }
                           }
                         ],
                         "HasDynamicProperties": true,
@@ -1130,7 +1172,7 @@
                           },
                           {
                             "Category": "Design",
-                            "InvariantScript": "//FontWeight.Bold\r\nIf(ThisItem.Title=HeaderComponent.CurrentScreen, FontWeight.Bold,FontWeight.Lighter)",
+                            "InvariantScript": "//FontWeight.Bold\nIf(ThisItem.Title=HeaderComponent.CurrentScreen, FontWeight.Bold,FontWeight.Lighter)",
                             "Property": "FontWeight",
                             "RuleProviderType": "User"
                           },
@@ -1160,7 +1202,7 @@
                           },
                           {
                             "Category": "Design",
-                            "InvariantScript": "//Parent.Width\r\nLen(Self.Text)*Self.Size+20",
+                            "InvariantScript": "//Parent.Width\nLen(Self.Text)*Self.Size+20",
                             "Property": "Width",
                             "RuleProviderType": "User"
                           },
@@ -1319,10 +1361,17 @@
                           "BorderThickness",
                           "FocusedBorderThickness"
                         ],
-                        "ControlUniqueId": "13",
+                        "ControlUniqueId": "14",
                         "DynamicProperties": [
                           {
-                            "PropertyName": "FillPortions"
+                            "ControlPropertyState": "FillPortions",
+                            "PropertyName": "FillPortions",
+                            "Rule": {
+                              "Category": "Design",
+                              "InvariantScript": "0",
+                              "Property": "FillPortions",
+                              "RuleProviderType": "Unknown"
+                            }
                           },
                           {
                             "ControlPropertyState": "AlignInContainer",
@@ -1335,10 +1384,24 @@
                             }
                           },
                           {
-                            "PropertyName": "LayoutMinWidth"
+                            "ControlPropertyState": "LayoutMinWidth",
+                            "PropertyName": "LayoutMinWidth",
+                            "Rule": {
+                              "Category": "Design",
+                              "InvariantScript": "150",
+                              "Property": "LayoutMinWidth",
+                              "RuleProviderType": "Unknown"
+                            }
                           },
                           {
-                            "PropertyName": "LayoutMinHeight"
+                            "ControlPropertyState": "LayoutMinHeight",
+                            "PropertyName": "LayoutMinHeight",
+                            "Rule": {
+                              "Category": "Design",
+                              "InvariantScript": "100",
+                              "Property": "LayoutMinHeight",
+                              "RuleProviderType": "Unknown"
+                            }
                           }
                         ],
                         "HasDynamicProperties": true,
@@ -1586,7 +1649,7 @@
                       },
                       {
                         "Category": "Design",
-                        "InvariantScript": "Parent.TemplateWidth\r\n",
+                        "InvariantScript": "Parent.TemplateWidth\n",
                         "Property": "Width",
                         "RuleProviderType": "User"
                       },
@@ -2395,7 +2458,7 @@
                   "PaddingBottom",
                   "PaddingLeft"
                 ],
-                "ControlUniqueId": "15",
+                "ControlUniqueId": "16",
                 "DynamicProperties": [
                   {
                     "ControlPropertyState": "FillPortions",
@@ -2765,7 +2828,7 @@
               "RadiusBottomLeft",
               "RadiusBottomRight"
             ],
-            "ControlUniqueId": "14",
+            "ControlUniqueId": "15",
             "DynamicProperties": [
               {
                 "ControlPropertyState": {
@@ -3078,7 +3141,7 @@
                   "PaddingBottom",
                   "PaddingLeft"
                 ],
-                "ControlUniqueId": "17",
+                "ControlUniqueId": "18",
                 "DynamicProperties": [
                   {
                     "ControlPropertyState": "FillPortions",
@@ -3388,7 +3451,7 @@
               "RadiusBottomLeft",
               "RadiusBottomRight"
             ],
-            "ControlUniqueId": "16",
+            "ControlUniqueId": "17",
             "DynamicProperties": [
               {
                 "ControlPropertyState": {
@@ -3886,7 +3949,7 @@
       },
       "CurrentScreen"
     ],
-    "LastModifiedTimestamp": "638422187406106085",
+    "LastModifiedTimestamp": "638422816852487934",
     "Name": "HeaderComponent",
     "Rules": [
       {
@@ -3976,7 +4039,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638422187406106085",
+  "LastModifiedTimestamp": "638422816852487934",
   "Name": "e860f6aa078a4c378c29f0cd0a36bbc2",
   "OverridableProperties": {},
   "Version": "1.0"
