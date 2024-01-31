@@ -1,0 +1,172 @@
+HeaderComponent_2 As CanvasComponent:
+    CurrentScreen: ="Text"
+    Fill: =Color.White
+    Height: =100
+    NavItems: |-
+        =Table(
+            {
+                Title: "HOME",
+                TargetScreen: App.ActiveScreen
+            },
+            {
+                Title: "ANALYTICS",
+                TargetScreen: App.ActiveScreen
+            },
+            {
+                Title: "REPORTS",
+                TargetScreen: App.ActiveScreen
+            },
+              {
+                Title: "CONFIGURATIONS",
+                TargetScreen: App.ActiveScreen
+                
+            }
+           
+        )
+    Width: =Max(App.Width, App.MinScreenWidth)
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    ConMainHeader_1 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+        ConZebLogo_1 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: =Parent.Height
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =10
+            Width: =Parent.Width*.08
+            ZIndex: =1
+
+            Image1_1 As image:
+                Height: =Parent.Height-50
+                Image: ='xebia-logo'
+                Width: =Parent.Width-20
+                ZIndex: =1
+
+        ConNavBar_1 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: =Parent.Height
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width-ConZebLogo_1.Width-ConLoggedinuserimg_1.Width-ConLoggedinuserName_1.Width
+            ZIndex: =2
+
+            Gallery3_1 As gallery.galleryHorizontal:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                DelayItemLoading: =true
+                FillPortions: =0
+                Height: =Parent.Height
+                Items: =HeaderComponent_2.NavItems
+                LayoutMinHeight: =287
+                LayoutMinWidth: =320
+                OnSelect: |-
+                    =true;
+                    Navigate(ThisItem.TargetScreen,ScreenTransition.Fade)
+                ShowScrollbar: =false
+                TemplatePadding: =0
+                TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(110, Self.Width - 60), Min(320, Self.Height - 60))
+                Width: =Parent.Width
+                ZIndex: =1
+
+                Container3_1 As groupContainer.verticalAutoLayoutContainer:
+                    DropShadow: =DropShadow.None
+                    Height: =Parent.TemplateHeight
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMode: =LayoutMode.Auto
+                    Width: |
+                        =Parent.TemplateWidth
+                    ZIndex: =1
+
+                    Label2_1 As label:
+                        Align: =Align.Center
+                        FontWeight: |-
+                            =//FontWeight.Bold
+                            If(ThisItem.Title=HeaderComponent_2.CurrentScreen, FontWeight.Bold,FontWeight.Lighter)
+                        HoverColor: =
+                        OnSelect: =Navigate(ThisItem.TargetScreen,ScreenTransition.Fade)
+                        Size: =9
+                        Text: =ThisItem.Title
+                        Width: |-
+                            =//Parent.Width
+                            Len(Self.Text)*Self.Size+20
+                        ZIndex: =1
+
+                    Rectangle2_3 As rectangle:
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =1
+                        HoverFill: =RGBA(107, 29, 94,1)
+                        Width: =Len(Label2_1.Text)*Label2_1.Size+15
+                        ZIndex: =2
+
+                    Rectangle2_2 As rectangle:
+                        Fill: =RGBA(107, 29, 94,1)
+                        Height: =2
+                        Visible: =If(ThisItem.Title=HeaderComponent_2.CurrentScreen, true,false)
+                        Width: =Len(Label2_1.Text)*Label2_1.Size+15
+                        ZIndex: =3
+
+        ConLoggedinuserName_1 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: =Parent.Height
+            LayoutAlignItems: =LayoutAlignItems.End
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width*.25
+            ZIndex: =3
+
+            Label1_1 As label:
+                Align: =Align.Right
+                FontWeight: =FontWeight.Semibold
+                Size: =15
+                Text: ="Xebia Contract Kit (ACK)"
+                Width: =Parent.Width-10
+                ZIndex: =1
+
+        ConLoggedinuserimg_1 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: =Parent.Height
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Height
+            ZIndex: =4
+
+            Image2_1 As image:
+                Height: =Parent.Width-40
+                Image: =User().Image
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
+                Width: =Parent.Width-40
+                ZIndex: =1
+
