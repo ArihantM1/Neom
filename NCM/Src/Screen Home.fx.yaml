@@ -51,6 +51,16 @@
                     Width: =Parent.Width*.7
                     ZIndex: =1
 
+                    "'Img user' As image":
+                        Height: =Parent.Height-30
+                        Image: =User().Image
+                        RadiusBottomLeft: =50
+                        RadiusBottomRight: =50
+                        RadiusTopLeft: =50
+                        RadiusTopRight: =50
+                        Width: =Parent.Height-30
+                        ZIndex: =1
+
                     "'Lbl CM' As label":
                         Color: =RGBA(77, 77, 77, 1)
                         FontWeight: =FontWeight.Semibold

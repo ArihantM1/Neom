@@ -142,9 +142,7 @@ HeaderComponent As CanvasComponent:
                 Align: =Align.Right
                 FontWeight: =FontWeight.Semibold
                 Size: =15
-                Text: |-
-                    =//"Xebia Contract Kit (ACK)"
-                    User().FullName
+                Text: ="Xebia Contract Kit (ACK)"
                 Width: =Parent.Width-10
                 ZIndex: =1
 
@@ -163,12 +161,12 @@ HeaderComponent As CanvasComponent:
             ZIndex: =4
 
             Image2 As image:
-                Height: =45
+                Height: =Parent.Width-40
                 Image: =User().Image
                 RadiusBottomLeft: =50
                 RadiusBottomRight: =50
                 RadiusTopLeft: =50
                 RadiusTopRight: =50
-                Width: =45
+                Width: =Parent.Width-40
                 ZIndex: =1
 
