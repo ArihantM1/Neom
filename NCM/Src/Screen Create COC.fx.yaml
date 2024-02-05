@@ -87,16 +87,43 @@
                 Width: =Parent.Width
                 ZIndex: =1
 
-                Label4 As label:
-                    DisplayMode: =DisplayMode.View
-                    FontWeight: =FontWeight.Semibold
-                    Text: ="Create New Contract"
-                    Width: =Parent.Width*.30
+                Radio1 As radio:
+                    Default: =""
+                    Height: =Parent.Height-Rectangle4.Height
+                    Items: =RadioOptions
+                    Layout: =Layout.Horizontal
+                    OnChange: =If(Radio1.Selected.Value="Create New",Set(cocview,true),Set(cocview,false));
+                    OnSelect: =
+                    RadioSize: =30
+                    Width: =Parent.Width
                     ZIndex: =1
 
                 Rectangle4 As rectangle:
+                    AlignInContainer: =AlignInContainer.End
                     Fill: =RGBA(107, 29, 94, 1)
-                    Height: =2
+                    Height: =10
                     Width: =Parent.Width
                     ZIndex: =2
+
+            Container6 As groupContainer.horizontalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =Parent.Width*.10
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =2
+
+                Container9 As groupContainer.horizontalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =Parent.Height
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutMinHeight: =0
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width*.50
+                    ZIndex: =1
+
+                    Label5 As label:
+                        Text: =""
+                        ZIndex: =1
 

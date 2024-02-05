@@ -1,6 +1,6 @@
 App As appinfo:
     BackEnabled: =true
-    OnStart: |-
+    OnStart: |
         =ClearCollect(
             NavBar,
            Table(
@@ -23,7 +23,9 @@ App As appinfo:
             }
            
         )
-        )
+        );
+        Set(cocview,true);
+        ClearCollect(RadioOptions, ["Create New", "Add Existing"]);
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
