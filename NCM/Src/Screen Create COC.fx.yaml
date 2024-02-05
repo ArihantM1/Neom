@@ -124,6 +124,13 @@
                     ZIndex: =1
 
                     Label5 As label:
-                        Text: =""
+                        Text: |-
+                            ="Client: "
                         ZIndex: =1
+
+                    Dropdown1 As dropdown:
+                        AlignInContainer: =AlignInContainer.Center
+                        Items: =DropDownSample
+                        Width: =Parent.Width*.60
+                        ZIndex: =2
 
