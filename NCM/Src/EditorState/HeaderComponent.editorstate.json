@@ -499,14 +499,7 @@
       "ControlPropertyState": [
         "BorderColor",
         "BorderStyle",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "RGBA(0, 0, 0, 0)",
-          "InvariantPropertyName": "Fill",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Fill",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -556,14 +549,7 @@
         "LayoutOverflowX",
         "LayoutOverflowY",
         "LayoutWrap",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "DropShadow",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "DropShadow",
         "ZIndex",
         "RadiusTopLeft",
         "RadiusTopRight",
@@ -687,7 +673,7 @@
         {
           "Category": "Design",
           "PropertyName": "Fill",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
@@ -2223,7 +2209,7 @@
         {
           "Category": "Data",
           "PropertyName": "Image",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -3383,7 +3369,7 @@
         {
           "Category": "Design",
           "PropertyName": "Height",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",

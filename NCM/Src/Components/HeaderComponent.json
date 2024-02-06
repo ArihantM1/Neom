@@ -121,7 +121,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "ConZebLogo",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 41,
+                "PublishOrderIndex": 47,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -453,7 +453,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "ConMainHeader",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 40,
+            "PublishOrderIndex": 46,
             "Rules": [
               {
                 "Category": "Design",
@@ -650,7 +650,7 @@
                     "OptimizeForDevices": "Off",
                     "Parent": "Gallery3",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 44,
+                    "PublishOrderIndex": 50,
                     "Rules": [
                       {
                         "Category": "Design",
@@ -789,7 +789,7 @@
                         "OptimizeForDevices": "Off",
                         "Parent": "Container3",
                         "PersistMetaDataIDKey": false,
-                        "PublishOrderIndex": 46,
+                        "PublishOrderIndex": 52,
                         "Rules": [
                           {
                             "Category": "Design",
@@ -859,9 +859,9 @@
                           },
                           {
                             "Category": "Design",
-                            "InvariantScript": "3",
+                            "InvariantScript": "2",
                             "Property": "Height",
-                            "RuleProviderType": "User"
+                            "RuleProviderType": "Unknown"
                           },
                           {
                             "Category": "Design",
@@ -1054,7 +1054,7 @@
                         "OptimizeForDevices": "Off",
                         "Parent": "Container3",
                         "PersistMetaDataIDKey": false,
-                        "PublishOrderIndex": 47,
+                        "PublishOrderIndex": 53,
                         "Rules": [
                           {
                             "Category": "Data",
@@ -1417,7 +1417,7 @@
                         "OptimizeForDevices": "Off",
                         "Parent": "Container3",
                         "PersistMetaDataIDKey": false,
-                        "PublishOrderIndex": 48,
+                        "PublishOrderIndex": 54,
                         "Rules": [
                           {
                             "Category": "Design",
@@ -1615,7 +1615,7 @@
                     "OptimizeForDevices": "Off",
                     "Parent": "Gallery3",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 45,
+                    "PublishOrderIndex": 51,
                     "Rules": [
                       {
                         "Category": "Design",
@@ -1919,7 +1919,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "ConNavBar",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 43,
+                "PublishOrderIndex": 49,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -2219,7 +2219,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "ConMainHeader",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 42,
+            "PublishOrderIndex": 48,
             "Rules": [
               {
                 "Category": "Design",
@@ -2514,7 +2514,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "ConLoggedinuserName",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 50,
+                "PublishOrderIndex": 56,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -2524,7 +2524,7 @@
                   },
                   {
                     "Category": "Data",
-                    "InvariantScript": "\"Contract Managment\"",
+                    "InvariantScript": "//\"Xebia Contract Kit (ACK)\"\r\nUser().FullName",
                     "Property": "Text",
                     "RuleProviderType": "User"
                   },
@@ -2898,7 +2898,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "ConMainHeader",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 49,
+            "PublishOrderIndex": 55,
             "Rules": [
               {
                 "Category": "Design",
@@ -3197,13 +3197,13 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "ConLoggedinuserimg",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 52,
+                "PublishOrderIndex": 58,
                 "Rules": [
                   {
                     "Category": "Data",
-                    "InvariantScript": "xebiaappcino",
+                    "InvariantScript": "User().Image",
                     "Property": "Image",
-                    "RuleProviderType": "Unknown"
+                    "RuleProviderType": "User"
                   },
                   {
                     "Category": "Design",
@@ -3521,7 +3521,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "ConMainHeader",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 51,
+            "PublishOrderIndex": 57,
             "Rules": [
               {
                 "Category": "Design",
@@ -3682,14 +3682,7 @@
         "ControlPropertyState": [
           "BorderColor",
           "BorderStyle",
-          {
-            "AFDDataSourceName": "",
-            "AutoRuleBindingEnabled": false,
-            "AutoRuleBindingString": "RGBA(0, 0, 0, 0)",
-            "InvariantPropertyName": "Fill",
-            "IsLockable": false,
-            "NameMapSourceSchema": "?"
-          },
+          "Fill",
           {
             "AFDDataSourceName": "",
             "AutoRuleBindingEnabled": false,
@@ -3739,14 +3732,7 @@
           "LayoutOverflowX",
           "LayoutOverflowY",
           "LayoutWrap",
-          {
-            "AFDDataSourceName": "",
-            "AutoRuleBindingEnabled": false,
-            "AutoRuleBindingString": "",
-            "InvariantPropertyName": "DropShadow",
-            "IsLockable": false,
-            "NameMapSourceSchema": "?"
-          },
+          "DropShadow",
           "ZIndex",
           "RadiusTopLeft",
           "RadiusTopRight",
@@ -3767,7 +3753,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "HeaderComponent",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 39,
+        "PublishOrderIndex": 45,
         "Rules": [
           {
             "Category": "Design",
@@ -3801,7 +3787,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "DropShadow.None",
+            "InvariantScript": "DropShadow.Light",
             "Property": "DropShadow",
             "RuleProviderType": "Unknown"
           },
@@ -3891,9 +3877,9 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "ColorFade(RGBA(107, 29, 94,1),96%)",
+            "InvariantScript": "RGBA(0, 0, 0, 0)",
             "Property": "Fill",
-            "RuleProviderType": "User"
+            "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
@@ -3963,12 +3949,12 @@
       },
       "CurrentScreen"
     ],
-    "LastModifiedTimestamp": "638428000158543746",
+    "LastModifiedTimestamp": "638427935871562787",
     "Name": "HeaderComponent",
     "Rules": [
       {
         "Category": "Data",
-        "InvariantScript": "Table(\n    {\n        Title: \"HOME\",\n        TargetScreen: App.ActiveScreen\n    },\n    {\n        Title: \"ANALYTICS\",\n        TargetScreen: App.ActiveScreen\n    },\n    {\n        Title: \"REPORTS\",\n        TargetScreen: App.ActiveScreen\n    }\n     // {\n       // Title: \"CONFIGURATIONS\",\n        //TargetScreen: App.ActiveScreen\n        \n    //}\n   \n)",
+        "InvariantScript": "Table(\n    {\n        Title: \"HOME\",\n        TargetScreen: App.ActiveScreen\n    },\n    {\n        Title: \"ANALYTICS\",\n        TargetScreen: App.ActiveScreen\n    },\n    {\n        Title: \"REPORTS\",\n        TargetScreen: App.ActiveScreen\n    },\n      {\n        Title: \"CONFIGURATIONS\",\n        TargetScreen: App.ActiveScreen\n        \n    }\n   \n)",
         "Property": "NavItems",
         "RuleProviderType": "System"
       },
@@ -4053,7 +4039,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638428000158543746",
+  "LastModifiedTimestamp": "638427935871562787",
   "Name": "e860f6aa078a4c378c29f0cd0a36bbc2",
   "OverridableProperties": {},
   "Version": "1.0"

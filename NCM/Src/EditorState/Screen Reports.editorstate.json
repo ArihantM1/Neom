@@ -447,7 +447,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "Table(\n    {\n        Title: \"HOME\",\n        TargetScreen: App.ActiveScreen,\n        icon: Icon.Home\n    },\n    {\n        Title: \"ANALYTICS\",\n        TargetScreen: App.ActiveScreen\n    },\n    {\n        Title: \"REPORTS\",\n        TargetScreen: App.ActiveScreen\n    },\n      {\n        Title: \"CONFIGURATIONS\",\n        TargetScreen: App.ActiveScreen\n        \n    }\n   \n)",
+          "AutoRuleBindingString": "Table(\n    {\n        Title: \"HOME\",\n        TargetScreen: App.ActiveScreen\n    },\n    {\n        Title: \"ANALYTICS\",\n        TargetScreen: App.ActiveScreen\n    },\n    {\n        Title: \"REPORTS\",\n        TargetScreen: App.ActiveScreen\n    },\n      {\n        Title: \"CONFIGURATIONS\",\n        TargetScreen: App.ActiveScreen\n        \n    }\n   \n)",
           "InvariantPropertyName": "NavItems",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -551,7 +551,7 @@
         {
           "Category": "Design",
           "PropertyName": "Height",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
