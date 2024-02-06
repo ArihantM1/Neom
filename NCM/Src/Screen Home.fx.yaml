@@ -87,6 +87,21 @@
                         ZIndex: =1
 
                         Container13 As groupContainer.horizontalAutoLayoutContainer:
+                            DropShadow: =DropShadow.None
+                            Height: =Parent.Height*.1
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                            LayoutMode: =LayoutMode.Auto
+                            PaddingLeft: =25
+                            PaddingRight: =25
+                            Width: =Parent.Width
+                            ZIndex: =2
+
+                            Label3 As label:
+                                Text: ="Hello !  "& User().FullName
+                                ZIndex: =1
+
+                        Container13_1 As groupContainer.horizontalAutoLayoutContainer:
                             AlignInContainer: =AlignInContainer.Center
                             DropShadow: =DropShadow.None
                             FillPortions: =0
@@ -99,9 +114,9 @@
                             PaddingLeft: =25
                             PaddingRight: =25
                             Width: =Parent.Width
-                            ZIndex: =2
+                            ZIndex: =3
 
-                            Container14 As groupContainer.horizontalAutoLayoutContainer:
+                            Container14_4 As groupContainer.horizontalAutoLayoutContainer:
                                 AlignInContainer: =AlignInContainer.Center
                                 Fill: =RGBA(237, 237, 237, 0.77)
                                 FillPortions: =0
@@ -112,7 +127,7 @@
                                 Width: =Parent.Width*.23
                                 ZIndex: =1
 
-                            Container14_1 As groupContainer.horizontalAutoLayoutContainer:
+                            Container14_5 As groupContainer.horizontalAutoLayoutContainer:
                                 AlignInContainer: =AlignInContainer.Center
                                 Fill: =RGBA(237, 237, 237, 0.77)
                                 FillPortions: =0
@@ -123,14 +138,17 @@
                                 Width: =Parent.Width*.23
                                 ZIndex: =2
 
-                            Container14_2 As groupContainer.horizontalAutoLayoutContainer:
+                            Container14_6 As groupContainer.horizontalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.SetByContainer
                                 Fill: =RGBA(237, 237, 237, 0.77)
                                 Height: =Parent.Height*.9
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
                                 LayoutMode: =LayoutMode.Auto
                                 Width: =Parent.Width*.23
                                 ZIndex: =3
 
-                            Container14_3 As groupContainer.horizontalAutoLayoutContainer:
+                            Container14_7 As groupContainer.horizontalAutoLayoutContainer:
                                 AlignInContainer: =AlignInContainer.Center
                                 Fill: =RGBA(237, 237, 237, 0.77)
                                 FillPortions: =0

@@ -143,9 +143,12 @@
                 ZIndex: =3
 
                 Container9_1 As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     DropShadow: =DropShadow.None
                     Height: =Parent.Height
                     LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     Width: =Parent.Width*.50
                     ZIndex: =1
