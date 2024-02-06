@@ -106,6 +106,7 @@
                     ZIndex: =2
 
             Container6 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =Parent.Width*.10
                 LayoutMinHeight: =100
@@ -114,6 +115,7 @@
                 ZIndex: =2
 
                 Container9 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.None
                     FillPortions: =0
                     Height: =Parent.Height
                     LayoutAlignItems: =LayoutAlignItems.Center
@@ -130,6 +132,7 @@
 
                     Dropdown1 As dropdown:
                         AlignInContainer: =AlignInContainer.Center
+                        ChevronBackground: =RGBA(107, 29, 94, 1)
                         Items: =DropDownSample
                         Width: =Parent.Width*.60
                         ZIndex: =2
