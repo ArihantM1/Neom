@@ -17,12 +17,6 @@
             Width: =Parent.Width
             ZIndex: =2
 
-            HeaderComponent_6 As HeaderComponent_2:
-                CurrentScreen: ="HOME"
-                LayoutMinHeight: =640
-                LayoutMinWidth: =640
-                NavItems: =NavBar
-
         Container8 As groupContainer.verticalAutoLayoutContainer:
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100

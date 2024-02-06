@@ -7,7 +7,7 @@
         Width: =Parent.Width
         ZIndex: =1
 
-        HeaderComponent_5 As HeaderComponent:
+        HeaderComponent_2 As HeaderComponent:
             CurrentScreen: ="ANALYTICS"
             Height: =Parent.Height*.1
             LayoutMinHeight: =640

@@ -15,12 +15,8 @@ App As appinfo:
             {
                 Title: "REPORTS",
                 TargetScreen: 'Screen Reports'
-            },
-              {
-                Title: "CONFIGURATIONS",
-                TargetScreen: 'Screen Configuration'
-                
             }
+              
            
         )
         );

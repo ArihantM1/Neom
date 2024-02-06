@@ -15,12 +15,12 @@ HeaderComponent As CanvasComponent:
             {
                 Title: "REPORTS",
                 TargetScreen: App.ActiveScreen
-            },
-              {
-                Title: "CONFIGURATIONS",
-                TargetScreen: App.ActiveScreen
-                
             }
+             // {
+               // Title: "CONFIGURATIONS",
+                //TargetScreen: App.ActiveScreen
+                
+            //}
            
         )
     Width: =Max(App.Width, App.MinScreenWidth)
@@ -29,6 +29,8 @@ HeaderComponent As CanvasComponent:
     ZIndex: =1
 
     ConMainHeader As groupContainer.horizontalAutoLayoutContainer:
+        DropShadow: =DropShadow.None
+        Fill: =ColorFade(RGBA(107, 29, 94,1),96%)
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Center
         LayoutMode: =LayoutMode.Auto
@@ -119,7 +121,7 @@ HeaderComponent As CanvasComponent:
 
                     Rectangle2_1 As rectangle:
                         Fill: =RGBA(107, 29, 94,1)
-                        Height: =2
+                        Height: =3
                         Visible: =If(ThisItem.Title=HeaderComponent.CurrentScreen, true,false)
                         Width: =Len(Label2.Text)*Label2.Size+15
                         ZIndex: =3
@@ -142,9 +144,7 @@ HeaderComponent As CanvasComponent:
                 Align: =Align.Right
                 FontWeight: =FontWeight.Semibold
                 Size: =15
-                Text: |-
-                    =//"Xebia Contract Kit (ACK)"
-                    User().FullName
+                Text: ="Contract Managment"
                 Width: =Parent.Width-10
                 ZIndex: =1
 
@@ -164,7 +164,7 @@ HeaderComponent As CanvasComponent:
 
             Image2 As image:
                 Height: =45
-                Image: =User().Image
+                Image: =xebiaappcino
                 RadiusBottomLeft: =50
                 RadiusBottomRight: =50
                 RadiusTopLeft: =50
