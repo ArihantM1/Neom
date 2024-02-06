@@ -51,15 +51,11 @@
                     ZIndex: =1
 
                 Container12 As groupContainer.horizontalAutoLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
                     DropShadow: =DropShadow.Semibold
                     Fill: =ColorFade(RGBA(107, 29, 94,1),96%)
-                    FillPortions: =0
                     Height: =Parent.Height
                     LayoutAlignItems: =LayoutAlignItems.Center
                     LayoutJustifyContent: =LayoutJustifyContent.End
-                    LayoutMinHeight: =100
-                    LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     RadiusBottomLeft: =6
                     RadiusBottomRight: =6
@@ -69,7 +65,6 @@
                     ZIndex: =3
 
                     "'Con contracts page' As groupContainer.verticalAutoLayoutContainer":
-                        AlignInContainer: =AlignInContainer.SetByContainer
                         DropShadow: =DropShadow.None
                         Fill: =RGBA(255, 255, 255, 1)
                         FillPortions: =0
@@ -83,15 +78,18 @@
                         RadiusBottomRight: =6
                         RadiusTopLeft: =6
                         RadiusTopRight: =6
-                        Width: =1155
+                        Width: =Parent.Width
                         X: =3
                         ZIndex: =1
 
                         Container13 As groupContainer.horizontalAutoLayoutContainer:
                             DropShadow: =DropShadow.None
+                            FillPortions: =0
                             Height: =Parent.Height*.1
                             LayoutAlignItems: =LayoutAlignItems.Center
                             LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
                             LayoutMode: =LayoutMode.Auto
                             PaddingLeft: =25
                             Width: =Parent.Width
