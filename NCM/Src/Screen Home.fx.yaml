@@ -108,6 +108,7 @@
 
                             Container15 As groupContainer.horizontalAutoLayoutContainer:
                                 AlignInContainer: =AlignInContainer.Center
+                                DropShadow: =DropShadow.None
                                 FillPortions: =0
                                 Height: =Parent.Height
                                 LayoutAlignItems: =LayoutAlignItems.Center
@@ -121,6 +122,7 @@
                                 ZIndex: =3
 
                                 Button1 As button:
+                                    BorderColor: =ColorFade(RGBA(107, 29, 94,1),60%)
                                     Color: =RGBA(107, 29, 94, 1)
                                     Fill: =ColorFade(RGBA(107, 29, 94,1),96%)
                                     FontWeight: =FontWeight.Bold
@@ -133,6 +135,7 @@
                                     ZIndex: =1
 
                                 Button2 As button:
+                                    BorderColor: =ColorFade(RGBA(107, 29, 94,1),60%)
                                     Color: =RGBA(107, 29, 94, 1)
                                     Fill: =ColorFade(RGBA(107, 29, 94,1),96%)
                                     FontWeight: =FontWeight.Bold
@@ -162,6 +165,8 @@
 
                             Container14_4 As groupContainer.horizontalAutoLayoutContainer:
                                 AlignInContainer: =AlignInContainer.SetByContainer
+                                BorderColor: =ColorFade(RGBA(107, 29, 94,1),60%)
+                                BorderThickness: =2
                                 DropShadow: =DropShadow.Regular
                                 Fill: =RGBA(255, 255, 255, 1)
                                 FillPortions: =0
@@ -210,6 +215,8 @@
 
                             Container14_5 As groupContainer.horizontalAutoLayoutContainer:
                                 AlignInContainer: =AlignInContainer.SetByContainer
+                                BorderColor: =ColorFade(RGBA(107, 29, 94,1),60%)
+                                BorderThickness: =2
                                 DropShadow: =DropShadow.Regular
                                 Fill: =RGBA(255, 255, 255, 1)
                                 FillPortions: =0
@@ -258,6 +265,8 @@
 
                             Container14_6 As groupContainer.horizontalAutoLayoutContainer:
                                 AlignInContainer: =AlignInContainer.SetByContainer
+                                BorderColor: =ColorFade(RGBA(107, 29, 94,1),60%)
+                                BorderThickness: =2
                                 DropShadow: =DropShadow.Regular
                                 Fill: =RGBA(255, 255, 255, 1)
                                 FillPortions: =0
@@ -306,6 +315,8 @@
 
                             Container14_7 As groupContainer.horizontalAutoLayoutContainer:
                                 AlignInContainer: =AlignInContainer.SetByContainer
+                                BorderColor: =ColorFade(RGBA(107, 29, 94,1),60%)
+                                BorderThickness: =2
                                 DropShadow: =DropShadow.Regular
                                 Fill: =RGBA(255, 255, 255, 1)
                                 FillPortions: =0
