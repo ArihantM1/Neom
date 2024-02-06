@@ -47,7 +47,7 @@
                     RadiusBottomRight: =0
                     RadiusTopLeft: =0
                     RadiusTopRight: =0
-                    Width: =Parent.Width*.15
+                    Width: =Parent.Width*.17
                     ZIndex: =1
 
                 Container12 As groupContainer.horizontalAutoLayoutContainer:
@@ -90,47 +90,87 @@
                             FillPortions: =0
                             Height: =Parent.Height*.1
                             LayoutAlignItems: =LayoutAlignItems.Center
-                            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                            LayoutGap: =5
                             LayoutMinHeight: =100
                             LayoutMinWidth: =250
                             LayoutMode: =LayoutMode.Auto
-                            PaddingLeft: =25
+                            PaddingLeft: =15
                             Width: =Parent.Width
                             ZIndex: =2
 
                             Label3 As label:
                                 Color: =RGBA(107, 29, 94,1)
                                 FontWeight: =FontWeight.Bold
-                                Text: ="Hello !  "& User().FullName
-                                Width: =Parent.Width*.9
-                                ZIndex: =1
+                                Size: =14
+                                Text: ="Hello! "&User().FullName
+                                Width: =Parent.Width*.5
+                                ZIndex: =2
+
+                            Container15 As groupContainer.horizontalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Center
+                                FillPortions: =0
+                                Height: =Parent.Height
+                                LayoutAlignItems: =LayoutAlignItems.Center
+                                LayoutGap: =15
+                                LayoutJustifyContent: =LayoutJustifyContent.End
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                PaddingRight: =15
+                                Width: =Parent.Width*.48
+                                ZIndex: =3
+
+                                Button1 As button:
+                                    Color: =RGBA(107, 29, 94, 1)
+                                    Fill: =ColorFade(RGBA(107, 29, 94,1),96%)
+                                    FontWeight: =FontWeight.Bold
+                                    Height: =35
+                                    HoverBorderColor: =RGBA(107, 29, 94, 1)
+                                    HoverColor: =RGBA(107, 29, 94, 1)
+                                    HoverFill: =RGBA(255, 255, 255, 1)
+                                    Size: =10.5
+                                    Text: ="Import Contract"
+                                    ZIndex: =1
+
+                                Button2 As button:
+                                    Color: =RGBA(107, 29, 94, 1)
+                                    Fill: =ColorFade(RGBA(107, 29, 94,1),96%)
+                                    FontWeight: =FontWeight.Bold
+                                    Height: =35
+                                    HoverBorderColor: =RGBA(107, 29, 94, 1)
+                                    HoverColor: =RGBA(107, 29, 94, 1)
+                                    HoverFill: =RGBA(255, 255, 255, 1)
+                                    Size: =10.5
+                                    Text: ="Create New Contract"
+                                    Width: =180
+                                    ZIndex: =2
 
                         Container13_1 As groupContainer.horizontalAutoLayoutContainer:
                             AlignInContainer: =AlignInContainer.Center
                             DropShadow: =DropShadow.None
                             FillPortions: =0
                             Height: =Parent.Height*.15
-                            LayoutAlignItems: =LayoutAlignItems.Center
-                            LayoutGap: =25
-                            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                            LayoutGap: =50
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
                             LayoutMinHeight: =100
                             LayoutMinWidth: =250
                             LayoutMode: =LayoutMode.Auto
-                            PaddingLeft: =15
                             PaddingRight: =15
+                            PaddingTop: =5
                             Width: =Parent.Width
                             ZIndex: =3
 
                             Container14_4 As groupContainer.horizontalAutoLayoutContainer:
-                                AlignInContainer: =AlignInContainer.Center
-                                Fill: =RGBA(237, 237, 237, 0.77)
+                                AlignInContainer: =AlignInContainer.SetByContainer
+                                DropShadow: =DropShadow.Regular
+                                Fill: =RGBA(255, 255, 255, 1)
                                 FillPortions: =0
-                                Height: =Parent.Height*.9
+                                Height: =Parent.Height*.8
                                 LayoutDirection: =LayoutDirection.Vertical
                                 LayoutMinHeight: =100
                                 LayoutMinWidth: =250
                                 LayoutMode: =LayoutMode.Auto
-                                Width: =Parent.Width*.23
+                                Width: =Parent.Width*.2
                                 ZIndex: =1
 
                                 Container14 As groupContainer.horizontalAutoLayoutContainer:
@@ -156,9 +196,9 @@
                                         ZIndex: =1
 
                                     Image4 As image:
-                                        Height: =Parent.Height
-                                        Image: =contracts
-                                        Width: =Parent.Height*.6
+                                        Height: =Parent.Height*.7
+                                        Image: =partnership
+                                        Width: =Parent.Height*.7
                                         ZIndex: =2
 
                                 Label4 As label:
@@ -169,15 +209,16 @@
                                     ZIndex: =2
 
                             Container14_5 As groupContainer.horizontalAutoLayoutContainer:
-                                AlignInContainer: =AlignInContainer.Center
-                                Fill: =RGBA(237, 237, 237, 0.77)
+                                AlignInContainer: =AlignInContainer.SetByContainer
+                                DropShadow: =DropShadow.Regular
+                                Fill: =RGBA(255, 255, 255, 1)
                                 FillPortions: =0
-                                Height: =Parent.Height*.9
+                                Height: =Parent.Height*.8
                                 LayoutDirection: =LayoutDirection.Vertical
                                 LayoutMinHeight: =100
                                 LayoutMinWidth: =250
                                 LayoutMode: =LayoutMode.Auto
-                                Width: =Parent.Width*.23
+                                Width: =Parent.Width*.2
                                 ZIndex: =2
 
                                 Container14_1 As groupContainer.horizontalAutoLayoutContainer:
@@ -203,9 +244,9 @@
                                         ZIndex: =1
 
                                     Image4_1 As image:
-                                        Height: =Parent.Height
-                                        Image: =failed
-                                        Width: =Parent.Height*.6
+                                        Height: =Parent.Height*.7
+                                        Image: =deadline
+                                        Width: =Parent.Height*.7
                                         ZIndex: =2
 
                                 Label4_1 As label:
@@ -217,13 +258,15 @@
 
                             Container14_6 As groupContainer.horizontalAutoLayoutContainer:
                                 AlignInContainer: =AlignInContainer.SetByContainer
-                                Fill: =RGBA(237, 237, 237, 0.77)
-                                Height: =Parent.Height*.9
+                                DropShadow: =DropShadow.Regular
+                                Fill: =RGBA(255, 255, 255, 1)
+                                FillPortions: =0
+                                Height: =Parent.Height*.8
                                 LayoutDirection: =LayoutDirection.Vertical
                                 LayoutMinHeight: =100
                                 LayoutMinWidth: =250
                                 LayoutMode: =LayoutMode.Auto
-                                Width: =Parent.Width*.23
+                                Width: =Parent.Width*.2
                                 ZIndex: =3
 
                                 Container14_2 As groupContainer.horizontalAutoLayoutContainer:
@@ -249,9 +292,9 @@
                                         ZIndex: =1
 
                                     Image4_2 As image:
-                                        Height: =Parent.Height
-                                        Image: =growth
-                                        Width: =Parent.Height*.6
+                                        Height: =Parent.Height*.7
+                                        Image: ='approved (1)'
+                                        Width: =Parent.Height*.7
                                         ZIndex: =2
 
                                 Label4_2 As label:
@@ -262,15 +305,16 @@
                                     ZIndex: =2
 
                             Container14_7 As groupContainer.horizontalAutoLayoutContainer:
-                                AlignInContainer: =AlignInContainer.Center
-                                Fill: =RGBA(237, 237, 237, 0.77)
+                                AlignInContainer: =AlignInContainer.SetByContainer
+                                DropShadow: =DropShadow.Regular
+                                Fill: =RGBA(255, 255, 255, 1)
                                 FillPortions: =0
-                                Height: =Parent.Height*.9
+                                Height: =Parent.Height*.8
                                 LayoutDirection: =LayoutDirection.Vertical
                                 LayoutMinHeight: =100
                                 LayoutMinWidth: =250
                                 LayoutMode: =LayoutMode.Auto
-                                Width: =Parent.Width*.23
+                                Width: =Parent.Width*.2
                                 ZIndex: =4
 
                                 Container14_3 As groupContainer.horizontalAutoLayoutContainer:
@@ -296,9 +340,9 @@
                                         ZIndex: =1
 
                                     Image4_3 As image:
-                                        Height: =Parent.Height
-                                        Image: =clock
-                                        Width: =Parent.Height*.6
+                                        Height: =Parent.Height*.7
+                                        Image: ='drafts (1)'
+                                        Width: =Parent.Height*.7
                                         ZIndex: =2
 
                                 Label4_3 As label:
@@ -307,4 +351,10 @@
                                     Text: ="DraftContracts"
                                     Width: =Parent.Width
                                     ZIndex: =2
+
+                        Container16 As groupContainer.horizontalAutoLayoutContainer:
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            ZIndex: =4
 

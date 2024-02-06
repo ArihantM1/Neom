@@ -7,6 +7,11 @@
         Width: =Parent.Width
         ZIndex: =1
 
+        HeaderComponent_2 As HeaderComponent:
+            Height: =Parent.Height*.1
+            LayoutMinHeight: =640
+            LayoutMinWidth: =640
+
         Container4_1 As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.Center
             FillPortions: =0
