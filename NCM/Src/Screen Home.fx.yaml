@@ -27,7 +27,7 @@
             ZIndex: =2
 
             "'Con body main' As groupContainer.horizontalAutoLayoutContainer":
-                LayoutAlignItems: =LayoutAlignItems.End
+                LayoutAlignItems: =LayoutAlignItems.Center
                 LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
@@ -35,7 +35,7 @@
                 ZIndex: =3
 
                 Container11 As groupContainer.horizontalAutoLayoutContainer:
-                    AlignInContainer: =AlignInContainer.Center
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     DropShadow: =DropShadow.None
                     Fill: =ColorFade(RGBA(107, 29, 94,1),96%)
                     FillPortions: =0
@@ -51,7 +51,7 @@
                     ZIndex: =1
 
                 Container12 As groupContainer.horizontalAutoLayoutContainer:
-                    AlignInContainer: =AlignInContainer.Center
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     DropShadow: =DropShadow.Semibold
                     Fill: =ColorFade(RGBA(107, 29, 94,1),96%)
                     FillPortions: =0
@@ -73,7 +73,7 @@
                         DropShadow: =DropShadow.None
                         Fill: =RGBA(255, 255, 255, 1)
                         FillPortions: =0
-                        Height: =Parent.Height
+                        Height: =691
                         LayoutAlignItems: =LayoutAlignItems.Center
                         LayoutDirection: =LayoutDirection.Vertical
                         LayoutMinHeight: =100
@@ -83,7 +83,8 @@
                         RadiusBottomRight: =6
                         RadiusTopLeft: =6
                         RadiusTopRight: =6
-                        Width: =Parent.Width
+                        Width: =1155
+                        X: =3
                         ZIndex: =1
 
                         Container13 As groupContainer.horizontalAutoLayoutContainer:
@@ -93,12 +94,14 @@
                             LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                             LayoutMode: =LayoutMode.Auto
                             PaddingLeft: =25
-                            PaddingRight: =25
                             Width: =Parent.Width
                             ZIndex: =2
 
                             Label3 As label:
+                                Color: =RGBA(107, 29, 94,1)
+                                FontWeight: =FontWeight.Bold
                                 Text: ="Hello !  "& User().FullName
+                                Width: =Parent.Width*.9
                                 ZIndex: =1
 
                         Container13_1 As groupContainer.horizontalAutoLayoutContainer:
@@ -107,12 +110,13 @@
                             FillPortions: =0
                             Height: =Parent.Height*.15
                             LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutGap: =25
                             LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                             LayoutMinHeight: =100
                             LayoutMinWidth: =250
                             LayoutMode: =LayoutMode.Auto
-                            PaddingLeft: =25
-                            PaddingRight: =25
+                            PaddingLeft: =15
+                            PaddingRight: =15
                             Width: =Parent.Width
                             ZIndex: =3
 
