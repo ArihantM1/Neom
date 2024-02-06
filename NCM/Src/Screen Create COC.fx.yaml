@@ -108,7 +108,7 @@
             Container6 As groupContainer.horizontalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
                 FillPortions: =0
-                Height: =Parent.Width*.10
+                Height: =Parent.Width*.06
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
@@ -132,8 +132,207 @@
 
                     Dropdown1 As dropdown:
                         AlignInContainer: =AlignInContainer.Center
+                        BorderColor: =RGBA(215, 223, 240, 1)
                         ChevronBackground: =RGBA(107, 29, 94, 1)
+                        Height: =30
                         Items: =DropDownSample
                         Width: =Parent.Width*.60
+                        ZIndex: =2
+
+            Container6_1 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =Parent.Width*.06
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =3
+
+                Container9_1 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.None
+                    Height: =Parent.Height
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width*.50
+                    ZIndex: =1
+
+                    Label5_1 As label:
+                        Text: |-
+                            ="Service Type: "
+                        ZIndex: =1
+
+                    Dropdown1_1 As dropdown:
+                        BorderColor: =RGBA(215, 223, 240, 1)
+                        ChevronBackground: =RGBA(107, 29, 94, 1)
+                        Height: =30
+                        Items: =DropDownSample
+                        Width: =Parent.Width*.60
+                        ZIndex: =2
+
+            Container6_2 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =Parent.Width*.06
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =4
+
+                Container9_2 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.None
+                    FillPortions: =0
+                    Height: =Parent.Height
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutMinHeight: =0
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width*.50
+                    ZIndex: =1
+
+                    Label5_2 As label:
+                        Text: |-
+                            ="Services: "
+                        ZIndex: =1
+
+                    Dropdown1_2 As dropdown:
+                        AlignInContainer: =AlignInContainer.Center
+                        BorderColor: =RGBA(204, 208, 225, 1)
+                        ChevronBackground: =RGBA(107, 29, 94, 1)
+                        Height: =30
+                        Items: =DropDownSample
+                        Width: =Parent.Width*.60
+                        ZIndex: =2
+
+            Container6_3 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =Parent.Width*.06
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =5
+
+                Container9_3 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.None
+                    FillPortions: =0
+                    Height: =Parent.Height
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutMinHeight: =0
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width*.50
+                    ZIndex: =1
+
+                    Label5_3 As label:
+                        Text: |-
+                            ="Name: "
+                        ZIndex: =1
+
+                    TextInput1 As text:
+                        BorderColor: =RGBA(215, 223, 240, 1)
+                        Default: ="Text input"
+                        Height: =30
+                        Width: =Parent.Width-Label5_3.Width
+                        ZIndex: =2
+
+            Container6_4 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =Parent.Width*.06
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =6
+
+                Container9_4 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.None
+                    FillPortions: =0
+                    Height: =Parent.Height
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutMinHeight: =0
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width*.50
+                    ZIndex: =1
+
+                    Label5_4 As label:
+                        Text: |-
+                            ="Applicable To: "
+                        ZIndex: =1
+
+                    Dropdown1_3 As dropdown:
+                        AlignInContainer: =AlignInContainer.Center
+                        BorderColor: =RGBA(215, 223, 240, 1)
+                        ChevronBackground: =RGBA(107, 29, 94, 1)
+                        Height: =30
+                        Items: =DropDownSample
+                        Width: =Parent.Width*.60
+                        ZIndex: =2
+
+            Container6_5 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =Parent.Width*.08
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =7
+
+                Container9_5 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.None
+                    FillPortions: =0
+                    Height: =Parent.Height
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutMinHeight: =0
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width*.50
+                    ZIndex: =1
+
+                    Label5_5 As label:
+                        Text: |-
+                            ="Description: "
+                        ZIndex: =1
+
+                    TextInput2 As text:
+                        BorderColor: =RGBA(215, 223, 240, 1)
+                        Default: =""
+                        Height: =Parent.Height
+                        HintText: ="Enter description"
+                        Mode: =TextMode.MultiLine
+                        Width: =Parent.Width-Label5.Width
+                        ZIndex: =2
+
+            Container6_6 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =Parent.Width*.06
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =8
+
+                Container9_6 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.None
+                    FillPortions: =0
+                    Height: =Parent.Height
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutMinHeight: =0
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width*.50
+                    ZIndex: =1
+
+                    Label5_6 As label:
+                        Text: |-
+                            ="COC Currency: "
+                        ZIndex: =1
+
+                    Dropdown3 As dropdown:
+                        BorderColor: =RGBA(175, 191, 224, 1)
+                        ChevronBackground: =RGBA(107, 29, 94, 1)
+                        Height: =30
+                        Items: =DropDownSample
+                        Width: =Parent.Width-Label5_6.Width
                         ZIndex: =2
 
