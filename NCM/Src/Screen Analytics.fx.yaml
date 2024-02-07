@@ -25,3 +25,116 @@
             Width: =Parent.Width
             ZIndex: =2
 
+            Container11 As groupContainer.horizontalAutoLayoutContainer:
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =1
+
+                Container17 As groupContainer.verticalAutoLayoutContainer:
+                    FillPortions: =0
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutGap: =10
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingTop: =10
+                    Width: =Parent.Width*.17
+                    ZIndex: =1
+
+                    Label7 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Bold
+                        Size: =17
+                        Text: ="Quick Filters"
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                    Rectangle3 As rectangle:
+                        AlignInContainer: =AlignInContainer.Center
+                        Fill: =RGBA(158, 108, 151, 1)
+                        Height: =2
+                        Width: =Parent.Width*.95
+                        ZIndex: =2
+
+                    Container21 As groupContainer.verticalAutoLayoutContainer:
+                        DropShadow: =DropShadow.None
+                        FillPortions: =0
+                        Height: =Parent.Height*.6
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =Parent.Width
+                        LayoutMode: =LayoutMode.Auto
+                        ZIndex: =3
+
+                        Container24 As groupContainer.manualLayoutContainer:
+                            DropShadow: =DropShadow.None
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =Parent.Width
+                            ZIndex: =1
+
+                            Gallery2 As gallery.galleryVertical:
+                                DelayItemLoading: =true
+                                Height: =337
+                                Items: =CheckboxValue
+                                Layout: =Layout.Vertical
+                                LoadingSpinner: =LoadingSpinner.Data
+                                ShowScrollbar: =false
+                                TemplateSize: =75
+                                Transition: =Transition.Pop
+                                Width: =Parent.Width
+                                ZIndex: =1
+
+                                Checkbox3 As checkbox:
+                                    BorderColor: =RGBA(107, 29, 94, 1)
+                                    CheckboxBorderColor: =RGBA(107, 29, 94, 1)
+                                    CheckmarkFill: =RGBA(107, 29, 94, 1)
+                                    Color: =RGBA(107, 29, 94, 1)
+                                    FontWeight: =If(ThisItem.IsSelected,FontWeight.Bold,FontWeight.Normal)
+                                    HoverBorderColor: =ColorFade(Self.CheckboxBorderColor, 30%)
+                                    HoverColor: =RGBA(107, 29, 94, 1)
+                                    OnCheck: =Set(Filter,ThisItem.IsSelected)
+                                    OnSelect: =Select(Parent)
+                                    PressedBorderColor: =RGBA(107, 29, 94, 1)
+                                    PressedColor: =RGBA(107, 29, 94, 1)
+                                    Reset: =true
+                                    Text: =ThisItem.Value
+                                    Width: =Parent.Width*.9
+                                    X: =12
+                                    Y: =(Gallery2.TemplateHeight-Self.Height)/2
+                                    ZIndex: =1
+
+                            Icon4 As icon.Erase:
+                                Color: =RGBA(107, 29, 94, 1)
+                                Height: =20
+                                Icon: =Icon.Erase
+                                OnSelect: |-
+                                    =//ForAll(Gallery2.AllItems, UpdateContext(ThisRecord:{Checkbox3:false}));
+                                    Set(Filter,Blank());
+                                    //Reset(Checkbox3)
+                                Width: =20
+                                X: =Parent.Width*.95-Self.Width
+                                Y: =Gallery2.Height
+                                ZIndex: =2
+
+                            Label10 As label:
+                                Align: =Align.Right
+                                Height: =20
+                                Size: =10
+                                Text: ="Clear Filters"
+                                X: =Icon4.X-Self.Width
+                                Y: =Gallery2.Height
+                                ZIndex: =3
+
+                    Container25 As groupContainer.horizontalAutoLayoutContainer:
+                        DropShadow: =DropShadow.None
+                        FillPortions: =0
+                        Height: =Parent.Height*.1
+                        LayoutJustifyContent: =LayoutJustifyContent.End
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =Parent.Width
+                        LayoutMode: =LayoutMode.Auto
+                        PaddingRight: =10
+                        ZIndex: =4
+

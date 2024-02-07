@@ -442,7 +442,7 @@
                                 Label4_3 As label:
                                     Height: =Parent.Height*.4
                                     PaddingLeft: =10
-                                    Text: ="DraftContracts"
+                                    Text: ="Draft Contracts"
                                     Width: =Parent.Width
                                     ZIndex: =2
 

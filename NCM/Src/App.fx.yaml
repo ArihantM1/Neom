@@ -22,6 +22,8 @@ App As appinfo:
         );
         Set(cocview,true);
         ClearCollect(RadioOptions, ["Create New", "Add Existing"]);
+        
+        ClearCollect(CheckboxValue,["Expired August","Expired Contracts","Active Contracts","Draft Contracts"])
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
