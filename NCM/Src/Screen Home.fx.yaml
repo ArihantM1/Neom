@@ -548,7 +548,7 @@
                                             =ColorValue("#6b1d5e")
                                         OnSelect: |-
                                             =Reset(ComboBox1);
-                                            //eset(ComboBox1_1)
+                                            Reset(Dropdown2)
                                         PressedBorderColor: |-
                                             =ColorValue("#6b1d5e")
                                         PressedFill: |-
@@ -601,7 +601,7 @@
                                     PaddingLeft: =10
                                     Size: =11
                                     Text: ="CONTRACT NAME"
-                                    Width: =Parent.Width*.22
+                                    Width: =Parent.Width*.2
                                     ZIndex: =3
 
                                 Label3_7 As label:
@@ -686,4 +686,49 @@
                                     X: =Label3_6.X
                                     Y: =(Gallery1.TemplateHeight-Self.Height)/2
                                     ZIndex: =2
+
+                                Label9_2 As label:
+                                    Align: =Align.Center
+                                    OnSelect: =Select(Parent)
+                                    Text: =ThisItem.SampleHeading
+                                    Width: =Label3_7.Width
+                                    X: =Label3_7.X
+                                    Y: =(Gallery1.TemplateHeight-Self.Height)/2
+                                    ZIndex: =3
+
+                                Label9_3 As label:
+                                    Align: =Align.Center
+                                    OnSelect: =Select(Parent)
+                                    Text: =ThisItem.SampleHeading
+                                    Width: =Label3_8.Width
+                                    X: =Label3_8.X
+                                    Y: =(Gallery1.TemplateHeight-Self.Height)/2
+                                    ZIndex: =4
+
+                                Label9_4 As label:
+                                    Align: =Align.Center
+                                    OnSelect: =Select(Parent)
+                                    Text: =ThisItem.SampleHeading
+                                    Width: =Label3_9.Width
+                                    X: =Label3_9.X
+                                    Y: =10
+                                    ZIndex: =5
+
+                                Label9_5 As label:
+                                    Align: =Align.Center
+                                    OnSelect: =Select(Parent)
+                                    Text: =ThisItem.SampleHeading
+                                    Width: =Label3_10.Width
+                                    X: =Label3_10.X
+                                    Y: =10
+                                    ZIndex: =6
+
+                                Label9_6 As label:
+                                    Align: =Align.Center
+                                    OnSelect: =Select(Parent)
+                                    Text: =ThisItem.SampleHeading
+                                    Width: =Label3_11.Width
+                                    X: =Label3_11.X
+                                    Y: =(Gallery1.TemplateHeight-Self.Height)/2
+                                    ZIndex: =7
 
