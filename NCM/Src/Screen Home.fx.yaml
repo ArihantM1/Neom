@@ -130,7 +130,7 @@
                             PressedFill: =Self.Fill
                             Size: =11
                             Text: ="Configuration"
-                            Width: =200
+                            Width: =Parent.Width*.7
                             ZIndex: =2
 
                 Container12 As groupContainer.horizontalAutoLayoutContainer:
