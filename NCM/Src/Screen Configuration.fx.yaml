@@ -7,13 +7,6 @@
         Width: =Parent.Width
         ZIndex: =1
 
-        HeaderComponent_3 As HeaderComponent:
-            CurrentScreen: ="Screen Configuration"
-            Height: =Parent.Height*.1
-            LayoutMinHeight: =640
-            LayoutMinWidth: =640
-            NavItems: =NavBar
-
         Container4_3 As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.Center
             FillPortions: =0
