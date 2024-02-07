@@ -234,7 +234,7 @@
                             AlignInContainer: =AlignInContainer.Center
                             DropShadow: =DropShadow.None
                             FillPortions: =0
-                            Height: =Parent.Height*.15
+                            Height: =Parent.Height*.18
                             LayoutGap: =50
                             LayoutJustifyContent: =LayoutJustifyContent.Center
                             LayoutMinHeight: =100
@@ -252,7 +252,7 @@
                                 DropShadow: =DropShadow.Regular
                                 Fill: =RGBA(255, 255, 255, 1)
                                 FillPortions: =0
-                                Height: =Parent.Height*.8
+                                Height: =Parent.Height*.7
                                 LayoutDirection: =LayoutDirection.Vertical
                                 LayoutMinHeight: =100
                                 LayoutMinWidth: =250
@@ -302,7 +302,7 @@
                                 DropShadow: =DropShadow.Regular
                                 Fill: =RGBA(255, 255, 255, 1)
                                 FillPortions: =0
-                                Height: =Parent.Height*.8
+                                Height: =Parent.Height*.7
                                 LayoutDirection: =LayoutDirection.Vertical
                                 LayoutMinHeight: =100
                                 LayoutMinWidth: =250
@@ -352,7 +352,7 @@
                                 DropShadow: =DropShadow.Regular
                                 Fill: =RGBA(255, 255, 255, 1)
                                 FillPortions: =0
-                                Height: =Parent.Height*.8
+                                Height: =Parent.Height*.7
                                 LayoutDirection: =LayoutDirection.Vertical
                                 LayoutMinHeight: =100
                                 LayoutMinWidth: =250
@@ -402,7 +402,7 @@
                                 DropShadow: =DropShadow.Regular
                                 Fill: =RGBA(255, 255, 255, 1)
                                 FillPortions: =0
-                                Height: =Parent.Height*.8
+                                Height: =Parent.Height*.7
                                 LayoutDirection: =LayoutDirection.Vertical
                                 LayoutMinHeight: =100
                                 LayoutMinWidth: =250
@@ -456,7 +456,7 @@
                             Container13_2 As groupContainer.horizontalAutoLayoutContainer:
                                 DropShadow: =DropShadow.None
                                 FillPortions: =0
-                                Height: =Parent.Height*.1
+                                Height: =Parent.Height*.12
                                 LayoutAlignItems: =LayoutAlignItems.Center
                                 LayoutGap: =2
                                 LayoutMinHeight: =100
@@ -496,7 +496,7 @@
                                     SelectionFill: =RGBA(107, 29, 94, 1)
                                     Size: =11
                                     Width: =220
-                                    ZIndex: =3
+                                    ZIndex: =2
 
                                 Label3_5 As label:
                                     Align: =Align.Center
@@ -507,27 +507,23 @@
                                     Size: =12
                                     Text: ="Status"
                                     Width: =Parent.Width*.07
-                                    ZIndex: =4
+                                    ZIndex: =3
 
-                                ComboBox1_1 As combobox:
+                                Dropdown2 As dropdown:
                                     BorderColor: =RGBA(219, 200, 216, 1)
                                     ChevronBackground: =RGBA(255, 255, 255, 1)
                                     ChevronFill: =RGBA(107, 29, 94, 1)
-                                    ChevronHoverBackground: =ColorFade(RGBA(107, 29, 94, 1), -20%)
+                                    ChevronHoverBackground: =RGBA(107, 29, 94, 1)
                                     Color: =RGBA(107, 29, 94, 1)
-                                    DisplayFields: =["Value"]
                                     Height: =30
-                                    HoverFill: =ColorFade(RGBA(107, 29, 94, 1),80%)
-                                    IsSearchable: =false
-                                    Items: =["","Expired","Active"]
-                                    PressedColor: =RGBA(107, 29, 94, 1)
-                                    PressedFill: =RGBA(255, 255, 255, 1)
-                                    SearchFields: =["Value"]
-                                    SearchItems: =[]
+                                    HoverColor: =RGBA(107, 29, 94, 1)
+                                    HoverFill: |-
+                                        =ColorValue("#9e6c97")
+                                    Items: =[Blank(),"Expired","Active"]
+                                    PressedFill: =RGBA(158, 108, 151, 1)
                                     SelectionFill: =RGBA(107, 29, 94, 1)
-                                    Size: =11
                                     Width: =220
-                                    ZIndex: =5
+                                    ZIndex: =4
 
                                 Container22 As groupContainer.horizontalAutoLayoutContainer:
                                     DropShadow: =DropShadow.None
@@ -538,7 +534,7 @@
                                     LayoutMinWidth: =250
                                     LayoutMode: =LayoutMode.Auto
                                     PaddingRight: =20
-                                    ZIndex: =6
+                                    ZIndex: =5
 
                                     Button1_1 As button:
                                         BorderColor: |-
@@ -552,7 +548,7 @@
                                             =ColorValue("#6b1d5e")
                                         OnSelect: |-
                                             =Reset(ComboBox1);
-                                            Reset(ComboBox1_1)
+                                            //eset(ComboBox1_1)
                                         PressedBorderColor: |-
                                             =ColorValue("#6b1d5e")
                                         PressedFill: |-
@@ -563,20 +559,19 @@
                                         Y: =(Parent.Height-Self.Height)/2
                                         ZIndex: =1
 
+                                    Icon2 As icon.Download:
+                                        Color: =RGBA(107, 29, 94, 1)
+                                        Height: =30
+                                        Icon: =Icon.Download
+                                        Width: =30
+                                        ZIndex: =2
+
                                     Icon1 As icon.Reload:
                                         Color: =RGBA(107, 29, 94, 1)
                                         Height: =30
                                         Icon: =Icon.Reload
                                         Width: =30
-                                        ZIndex: =2
-
-                            Rectangle1 As rectangle:
-                                AlignInContainer: =AlignInContainer.Center
-                                DisplayMode: =DisplayMode.View
-                                Fill: =RGBA(219, 219, 219, 1)
-                                Height: =2
-                                Width: =Parent.Width*.95
-                                ZIndex: =2
+                                        ZIndex: =3
 
                             Container13_3 As groupContainer.horizontalAutoLayoutContainer:
                                 DropShadow: =DropShadow.None
@@ -589,7 +584,7 @@
                                 LayoutMinWidth: =250
                                 LayoutMode: =LayoutMode.Auto
                                 Width: =Parent.Width
-                                ZIndex: =3
+                                ZIndex: =2
 
                                 Label3_4 As label:
                                     Align: =Align.Center
@@ -654,13 +649,29 @@
                                     Width: =Parent.Width*.12
                                     ZIndex: =8
 
+                            Rectangle1 As rectangle:
+                                AlignInContainer: =AlignInContainer.Center
+                                DisplayMode: =DisplayMode.View
+                                Fill: =RGBA(219, 219, 219, 1)
+                                Height: =2
+                                Width: =Parent.Width*.95
+                                ZIndex: =3
+
                             Gallery1 As gallery.variableTemplateHeightGallery:
                                 DelayItemLoading: =true
+                                FillPortions: =0
+                                Height: =380
                                 Items: =CustomGallerySample
                                 Layout: =Layout.Vertical
                                 LayoutMinHeight: =287
                                 LayoutMinWidth: =320
                                 LoadingSpinner: =LoadingSpinner.Data
-                                TemplateSize: =280
+                                TemplateSize: =60
                                 ZIndex: =4
+
+                                Label9 As label:
+                                    OnSelect: =Select(Parent)
+                                    Text: =ThisItem.SampleHeading
+                                    X: =12
+                                    ZIndex: =1
 

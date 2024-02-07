@@ -524,19 +524,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Screen Home'.'Con header'.'Con body'.'Con body main'.Container12.'Con contracts page'.Container16.Container13_2.ComboBox1_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Screen Home'.'Con header'.'Con body'.'Con body main'.Container12.'Con contracts page'.Container16.Container13_2.Dropdown2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Screen Home'.'Con header'.'Con body'.'Con body main'.Container12.'Con contracts page'.Container16.Container13_2.ComboBox1_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Screen Home'.'Con header'.'Con body'.'Con body main'.Container12.'Con contracts page'.Container16.Container13_2.Dropdown2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen Home",
-                "type": "'Screen Home'.'Con header'.'Con body'.'Con body main'.Container12.'Con contracts page'.Container16.Container13_2.ComboBox1_1"
+                "type": "'Screen Home'.'Con header'.'Con body'.'Con body main'.Container12.'Con contracts page'.Container16.Container13_2.Dropdown2"
               }
             }
           ],
