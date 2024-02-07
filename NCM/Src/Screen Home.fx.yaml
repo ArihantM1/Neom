@@ -596,12 +596,12 @@
                                     ZIndex: =1
 
                                 Label3_6 As label:
-                                    Align: =Align.Center
                                     Color: =RGBA(107, 29, 94,1)
                                     FontWeight: =FontWeight.Bold
+                                    PaddingLeft: =10
                                     Size: =11
                                     Text: ="CONTRACT NAME"
-                                    Width: =Parent.Width*.15
+                                    Width: =Parent.Width*.22
                                     ZIndex: =3
 
                                 Label3_7 As label:
@@ -670,8 +670,20 @@
                                 ZIndex: =4
 
                                 Label9 As label:
+                                    Align: =Align.Center
                                     OnSelect: =Select(Parent)
                                     Text: =ThisItem.SampleHeading
-                                    X: =12
+                                    Width: =Label3_4.Width
+                                    X: =Label3_4.X
+                                    Y: =(Gallery1.TemplateHeight-Self.Height)/2
                                     ZIndex: =1
+
+                                Label9_1 As label:
+                                    OnSelect: =Select(Parent)
+                                    PaddingLeft: =10
+                                    Text: =ThisItem.SampleHeading
+                                    Width: =Label3_6.Width
+                                    X: =Label3_6.X
+                                    Y: =(Gallery1.TemplateHeight-Self.Height)/2
+                                    ZIndex: =2
 
