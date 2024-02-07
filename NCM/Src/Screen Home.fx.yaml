@@ -34,12 +34,14 @@
                 LayoutMode: =LayoutMode.Auto
                 ZIndex: =3
 
-                Container11 As groupContainer.horizontalAutoLayoutContainer:
+                NavContainer As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     DropShadow: =DropShadow.None
                     Fill: =ColorFade(RGBA(107, 29, 94,1),96%)
                     FillPortions: =0
                     Height: =Parent.Height
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutJustifyContent: =LayoutJustifyContent.End
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
@@ -49,6 +51,85 @@
                     RadiusTopRight: =0
                     Width: =Parent.Width*.17
                     ZIndex: =1
+
+                    Container20 As groupContainer.verticalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        DropShadow: =DropShadow.None
+                        FillPortions: =0
+                        Height: =Parent.Height*.4
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                        Image6 As image:
+                            Height: =60
+                            Image: =User().Image
+                            RadiusBottomLeft: =50
+                            RadiusBottomRight: =50
+                            RadiusTopLeft: =50
+                            RadiusTopRight: =50
+                            Width: =60
+                            ZIndex: =1
+
+                        Label3 As label:
+                            Align: =Align.Center
+                            Color: =RGBA(107, 29, 94,1)
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            PaddingBottom: =0
+                            Size: =11
+                            Text: ="Welcome !"
+                            Width: =Parent.Width
+                            ZIndex: =2
+
+                        Label3_2 As label:
+                            Align: =Align.Center
+                            Color: =RGBA(107, 29, 94,1)
+                            FontWeight: =FontWeight.Bold
+                            PaddingTop: =0
+                            Size: =14
+                            Text: =User().FullName
+                            Width: =Parent.Width
+                            ZIndex: =3
+
+                    Container19 As groupContainer.verticalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        DropShadow: =DropShadow.None
+                        FillPortions: =0
+                        Height: =Parent.Height*.6
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutGap: =10
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        Width: =Parent.Width
+                        ZIndex: =2
+
+                        Image5 As image:
+                            Height: =Parent.Height*.6
+                            Image: ='Agreement-amico'
+                            Width: |
+                                =Parent.Width
+                            ZIndex: =1
+
+                        Button3 As button:
+                            AlignInContainer: =AlignInContainer.Center
+                            Color: =ColorFade(RGBA(107, 29, 94,1),96%)
+                            Fill: =RGBA(107, 29, 94, 1)
+                            FontWeight: =FontWeight.Bold
+                            Height: =35
+                            HoverColor: =RGBA(107, 29, 94, 1)
+                            HoverFill: =Self.Color
+                            PressedColor: =Self.Color
+                            PressedFill: =Self.Fill
+                            Size: =11
+                            Text: ="Configuration"
+                            ZIndex: =2
 
                 Container12 As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
@@ -91,6 +172,7 @@
                             Height: =Parent.Height*.1
                             LayoutAlignItems: =LayoutAlignItems.Center
                             LayoutGap: =5
+                            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                             LayoutMinHeight: =100
                             LayoutMinWidth: =250
                             LayoutMode: =LayoutMode.Auto
@@ -98,13 +180,13 @@
                             Width: =Parent.Width
                             ZIndex: =2
 
-                            Label3 As label:
+                            Label3_1 As label:
                                 Color: =RGBA(107, 29, 94,1)
                                 FontWeight: =FontWeight.Bold
                                 Size: =14
-                                Text: ="Hello! "&User().FullName
-                                Width: =Parent.Width*.5
-                                ZIndex: =2
+                                Text: ="Contracts"
+                                Width: =Parent.Width*.4
+                                ZIndex: =1
 
                             Container15 As groupContainer.horizontalAutoLayoutContainer:
                                 AlignInContainer: =AlignInContainer.Center
@@ -119,7 +201,7 @@
                                 LayoutMode: =LayoutMode.Auto
                                 PaddingRight: =15
                                 Width: =Parent.Width*.48
-                                ZIndex: =3
+                                ZIndex: =2
 
                                 Button1 As button:
                                     BorderColor: =ColorFade(RGBA(107, 29, 94,1),60%)
@@ -364,8 +446,221 @@
                                     ZIndex: =2
 
                         Container16 As groupContainer.horizontalAutoLayoutContainer:
+                            DropShadow: =DropShadow.None
+                            LayoutDirection: =LayoutDirection.Vertical
                             LayoutMinHeight: =100
                             LayoutMinWidth: =250
                             LayoutMode: =LayoutMode.Auto
                             ZIndex: =4
+
+                            Container13_2 As groupContainer.horizontalAutoLayoutContainer:
+                                DropShadow: =DropShadow.None
+                                FillPortions: =0
+                                Height: =Parent.Height*.1
+                                LayoutAlignItems: =LayoutAlignItems.Center
+                                LayoutGap: =2
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                PaddingLeft: =15
+                                Width: =Parent.Width
+                                ZIndex: =1
+
+                                Label3_3 As label:
+                                    Align: =Align.Center
+                                    Color: =RGBA(107, 29, 94,1)
+                                    FontWeight: =FontWeight.Semibold
+                                    Height: =35
+                                    PaddingRight: =0
+                                    Size: =12
+                                    Text: ="Applicable To"
+                                    Width: =Parent.Width*.11
+                                    ZIndex: =1
+
+                                ComboBox1 As combobox:
+                                    BorderColor: =RGBA(219, 200, 216, 1)
+                                    ChevronBackground: =RGBA(255, 255, 255, 1)
+                                    ChevronFill: =RGBA(107, 29, 94, 1)
+                                    ChevronHoverBackground: =ColorFade(RGBA(107, 29, 94, 1), -20%)
+                                    ChevronHoverFill: =RGBA(107, 29, 94, 1)
+                                    Color: =RGBA(107, 29, 94, 1)
+                                    DisplayFields: =["Value"]
+                                    Height: =30
+                                    HoverFill: =ColorFade(RGBA(107, 29, 94, 1),80%)
+                                    IsSearchable: =false
+                                    Items: =["","Global","Regional","Local"]
+                                    PressedColor: =RGBA(107, 29, 94, 1)
+                                    PressedFill: =RGBA(255, 255, 255, 1)
+                                    SearchFields: =["Value"]
+                                    SearchItems: =[]
+                                    SelectionFill: =RGBA(107, 29, 94, 1)
+                                    Size: =11
+                                    Width: =220
+                                    ZIndex: =3
+
+                                Label3_5 As label:
+                                    Align: =Align.Center
+                                    Color: =RGBA(107, 29, 94,1)
+                                    FontWeight: =FontWeight.Semibold
+                                    Height: =35
+                                    PaddingRight: =0
+                                    Size: =12
+                                    Text: ="Status"
+                                    Width: =Parent.Width*.07
+                                    ZIndex: =4
+
+                                ComboBox1_1 As combobox:
+                                    BorderColor: =RGBA(219, 200, 216, 1)
+                                    ChevronBackground: =RGBA(255, 255, 255, 1)
+                                    ChevronFill: =RGBA(107, 29, 94, 1)
+                                    ChevronHoverBackground: =ColorFade(RGBA(107, 29, 94, 1), -20%)
+                                    Color: =RGBA(107, 29, 94, 1)
+                                    DisplayFields: =["Value"]
+                                    Height: =30
+                                    HoverFill: =ColorFade(RGBA(107, 29, 94, 1),80%)
+                                    IsSearchable: =false
+                                    Items: =["","Expired","Active"]
+                                    PressedColor: =RGBA(107, 29, 94, 1)
+                                    PressedFill: =RGBA(255, 255, 255, 1)
+                                    SearchFields: =["Value"]
+                                    SearchItems: =[]
+                                    SelectionFill: =RGBA(107, 29, 94, 1)
+                                    Size: =11
+                                    Width: =220
+                                    ZIndex: =5
+
+                                Container22 As groupContainer.horizontalAutoLayoutContainer:
+                                    DropShadow: =DropShadow.None
+                                    LayoutAlignItems: =LayoutAlignItems.Center
+                                    LayoutGap: =15
+                                    LayoutJustifyContent: =LayoutJustifyContent.End
+                                    LayoutMinHeight: =Parent.Height
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingRight: =20
+                                    ZIndex: =6
+
+                                    Button1_1 As button:
+                                        BorderColor: |-
+                                            =ColorFade(ColorValue("#6b1d5e"), 70%)
+                                        Color: =RGBA(107, 29, 94, 1)
+                                        Fill: =RGBA(255, 255, 255, 1)
+                                        Height: =Parent.Height*.5
+                                        HoverBorderColor: |-
+                                            =ColorValue("#6b1d5e")
+                                        HoverFill: |-
+                                            =ColorValue("#6b1d5e")
+                                        OnSelect: |-
+                                            =Reset(ComboBox1);
+                                            Reset(ComboBox1_1)
+                                        PressedBorderColor: |-
+                                            =ColorValue("#6b1d5e")
+                                        PressedFill: |-
+                                            =ColorValue("#6b1d5e")
+                                        Size: =11
+                                        Text: ="Reset"
+                                        Width: =Parent.Width*.12
+                                        Y: =(Parent.Height-Self.Height)/2
+                                        ZIndex: =1
+
+                                    Icon1 As icon.Reload:
+                                        Color: =RGBA(107, 29, 94, 1)
+                                        Height: =30
+                                        Icon: =Icon.Reload
+                                        Width: =30
+                                        ZIndex: =2
+
+                            Rectangle1 As rectangle:
+                                AlignInContainer: =AlignInContainer.Center
+                                DisplayMode: =DisplayMode.View
+                                Fill: =RGBA(219, 219, 219, 1)
+                                Height: =2
+                                Width: =Parent.Width*.95
+                                ZIndex: =2
+
+                            Container13_3 As groupContainer.horizontalAutoLayoutContainer:
+                                DropShadow: =DropShadow.None
+                                FillPortions: =0
+                                Height: =Parent.Height*.1
+                                LayoutAlignItems: =LayoutAlignItems.Center
+                                LayoutGap: =5
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                Width: =Parent.Width
+                                ZIndex: =3
+
+                                Label3_4 As label:
+                                    Align: =Align.Center
+                                    Color: =RGBA(107, 29, 94,1)
+                                    FontWeight: =FontWeight.Bold
+                                    Size: =11
+                                    Text: ="CONTRACT ID"
+                                    Width: =Parent.Width*.12
+                                    ZIndex: =1
+
+                                Label3_6 As label:
+                                    Align: =Align.Center
+                                    Color: =RGBA(107, 29, 94,1)
+                                    FontWeight: =FontWeight.Bold
+                                    Size: =11
+                                    Text: ="CONTRACT NAME"
+                                    Width: =Parent.Width*.15
+                                    ZIndex: =3
+
+                                Label3_7 As label:
+                                    Align: =Align.Center
+                                    Color: =RGBA(107, 29, 94,1)
+                                    FontWeight: =FontWeight.Bold
+                                    Size: =11
+                                    Text: ="CLIENT"
+                                    Width: =Parent.Width*.12
+                                    ZIndex: =4
+
+                                Label3_8 As label:
+                                    Align: =Align.Center
+                                    Color: =RGBA(107, 29, 94,1)
+                                    FontWeight: =FontWeight.Bold
+                                    Size: =11
+                                    Text: ="SERVICE"
+                                    Width: =Parent.Width*.12
+                                    ZIndex: =5
+
+                                Label3_9 As label:
+                                    Align: =Align.Center
+                                    Color: =RGBA(107, 29, 94,1)
+                                    FontWeight: =FontWeight.Bold
+                                    Size: =11
+                                    Text: ="STATUS"
+                                    Width: =Parent.Width*.12
+                                    ZIndex: =6
+
+                                Label3_10 As label:
+                                    Align: =Align.Center
+                                    Color: =RGBA(107, 29, 94,1)
+                                    FontWeight: =FontWeight.Bold
+                                    Size: =11
+                                    Text: ="APPLICABLE TO"
+                                    Width: =Parent.Width*.12
+                                    ZIndex: =7
+
+                                Label3_11 As label:
+                                    Align: =Align.Center
+                                    Color: =RGBA(107, 29, 94,1)
+                                    FontWeight: =FontWeight.Bold
+                                    Size: =11
+                                    Text: ="COUNTURIES"
+                                    Width: =Parent.Width*.12
+                                    ZIndex: =8
+
+                            Gallery1 As gallery.variableTemplateHeightGallery:
+                                DelayItemLoading: =true
+                                Items: =CustomGallerySample
+                                Layout: =Layout.Vertical
+                                LayoutMinHeight: =287
+                                LayoutMinWidth: =320
+                                LoadingSpinner: =LoadingSpinner.Data
+                                TemplateSize: =280
+                                ZIndex: =4
 

@@ -434,6 +434,126 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Screen Home'.'Con header'.'Con body'.'Con body main'.Container12.'Con contracts page'.Container16.Gallery1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Screen Home'.'Con header'.'Con body'.'Con body main'.Container12.'Con contracts page'.Container16.Gallery1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen Home",
+                "type": "'Screen Home'.'Con header'.'Con body'.'Con body main'.Container12.'Con contracts page'.Container16.Gallery1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Screen Home'.'Con header'.'Con body'.'Con body main'.Container12.'Con contracts page'.Container16.Gallery1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Screen Home'.'Con header'.'Con body'.'Con body main'.Container12.'Con contracts page'.Container16.Gallery1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen Home",
+                "type": "'Screen Home'.'Con header'.'Con body'.'Con body main'.Container12.'Con contracts page'.Container16.Gallery1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Screen Home'.'Con header'.'Con body'.'Con body main'.Container12.'Con contracts page'.Container16.Container13_2.ComboBox1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Screen Home'.'Con header'.'Con body'.'Con body main'.Container12.'Con contracts page'.Container16.Container13_2.ComboBox1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen Home",
+                "type": "'Screen Home'.'Con header'.'Con body'.'Con body main'.Container12.'Con contracts page'.Container16.Container13_2.ComboBox1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Screen Home'.'Con header'.'Con body'.'Con body main'.Container12.'Con contracts page'.Container16.Container13_2.ComboBox1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Screen Home'.'Con header'.'Con body'.'Con body main'.Container12.'Con contracts page'.Container16.Container13_2.ComboBox1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen Home",
+                "type": "'Screen Home'.'Con header'.'Con body'.'Con body main'.Container12.'Con contracts page'.Container16.Container13_2.ComboBox1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.cocview"
                 }
               ],
@@ -715,6 +835,36 @@
               },
               "properties": {
                 "member": "contract",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.reload"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.reload",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "reload",
                 "module": "App",
                 "type": "App"
               }
