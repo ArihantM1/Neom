@@ -143,10 +143,10 @@
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
-                    RadiusBottomLeft: =6
-                    RadiusBottomRight: =6
-                    RadiusTopLeft: =6
-                    RadiusTopRight: =6
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
                     Width: =Parent.Width*.85
                     ZIndex: =3
 
@@ -242,7 +242,6 @@
                             LayoutMinHeight: =100
                             LayoutMinWidth: =250
                             LayoutMode: =LayoutMode.Auto
-                            PaddingRight: =15
                             PaddingTop: =5
                             Width: =Parent.Width
                             ZIndex: =3
@@ -543,7 +542,7 @@
                                             =ColorFade(ColorValue("#6b1d5e"), 70%)
                                         Color: =RGBA(107, 29, 94, 1)
                                         Fill: =RGBA(255, 255, 255, 1)
-                                        Height: =Parent.Height*.5
+                                        Height: =30
                                         HoverBorderColor: |-
                                             =ColorValue("#6b1d5e")
                                         HoverFill: |-
@@ -668,6 +667,8 @@
                                 LayoutMinHeight: =287
                                 LayoutMinWidth: =320
                                 LoadingSpinner: =LoadingSpinner.Data
+                                LoadingSpinnerColor: |-
+                                    =ColorValue("#6b1d5e")
                                 TemplateSize: =60
                                 ZIndex: =4
 

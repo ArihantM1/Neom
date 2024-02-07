@@ -8,9 +8,11 @@
         ZIndex: =1
 
         HeaderComponent_2 As HeaderComponent:
+            CurrentScreen: ="ANALYTICS"
             Height: =Parent.Height*.1
             LayoutMinHeight: =640
             LayoutMinWidth: =640
+            NavItems: =NavBar
 
         Container4_1 As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.Center
