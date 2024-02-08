@@ -64,18 +64,21 @@ HeaderCMP_withoutNavbar As CanvasComponent:
             ZIndex: =3
 
         ConLoggedinuserimg_1 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             DropShadow: =DropShadow.None
             Height: =Parent.Height
             LayoutAlignItems: =LayoutAlignItems.Center
-            LayoutDirection: =LayoutDirection.Vertical
-            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutGap: =20
+            LayoutJustifyContent: =LayoutJustifyContent.End
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             PaddingRight: =10
             Width: =Parent.Height
             ZIndex: =4
 
             Button3_1 As button:
-                AlignInContainer: =AlignInContainer.End
+                AlignInContainer: =AlignInContainer.Center
                 Color: =ColorFade(RGBA(107, 29, 94,1),96%)
                 Fill: =RGBA(107, 29, 94, 1)
                 FontWeight: =FontWeight.Bold
@@ -83,11 +86,20 @@ HeaderCMP_withoutNavbar As CanvasComponent:
                 HoverColor: =RGBA(107, 29, 94, 1)
                 HoverFill: =Self.Color
                 OnSelect: =Navigate('Screen Home')
-                PaddingRight: =0
                 PressedColor: =Self.Color
                 PressedFill: =Self.Fill
                 Size: =11
                 Text: ="Home"
-                Width: =Parent.Width*.8
+                Width: =Parent.Width*.3
                 ZIndex: =1
+
+            Image7 As image:
+                Height: =50
+                Image: =User().Image
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
+                Width: =50
+                ZIndex: =2
 

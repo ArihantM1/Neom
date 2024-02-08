@@ -77,8 +77,10 @@
             ZIndex: =2
 
             Container5 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
                 FillPortions: =0
                 Height: =Parent.Height*.10
+                LayoutAlignItems: =LayoutAlignItems.End
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutJustifyContent: =LayoutJustifyContent.Center
                 LayoutMinHeight: =100
@@ -88,18 +90,24 @@
                 ZIndex: =1
 
                 Radio1 As radio:
+                    AlignInContainer: =AlignInContainer.Start
+                    BorderColor: =RGBA(107, 29, 94, 1)
+                    BorderStyle: =BorderStyle.None
+                    Color: =RGBA(107, 29, 94, 1)
                     Default: =""
                     Height: =Parent.Height-Rectangle4.Height
                     Items: =RadioOptions
                     Layout: =Layout.Horizontal
                     OnChange: =If(Radio1.Selected.Value="Create New",Set(cocview,true),Set(cocview,false));
                     OnSelect: =
+                    RadioBorderColor: =RGBA(107, 29, 94, 1)
+                    RadioSelectionFill: =RGBA(107, 29, 94, 1)
                     RadioSize: =30
-                    Width: =Parent.Width
+                    Size: =11
+                    Width: =Parent.Width*.4
                     ZIndex: =1
 
                 Rectangle4 As rectangle:
-                    AlignInContainer: =AlignInContainer.End
                     Fill: =RGBA(107, 29, 94, 1)
                     Height: =10
                     Width: =Parent.Width
@@ -109,35 +117,61 @@
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =Parent.Width*.07
+                LayoutAlignItems: =LayoutAlignItems.Center
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 ZIndex: =2
 
-                Container9 As groupContainer.horizontalAutoLayoutContainer:
-                    DropShadow: =DropShadow.None
-                    FillPortions: =0
-                    Height: =Parent.Height
-                    LayoutAlignItems: =LayoutAlignItems.Center
-                    LayoutMinHeight: =0
-                    LayoutMinWidth: =250
-                    LayoutMode: =LayoutMode.Auto
-                    Width: =Parent.Width*.50
+                Label5 As label:
+                    Align: =Align.Center
+                    Text: |-
+                        ="Client: "
+                    Width: =Parent.Width*.1
                     ZIndex: =1
 
-                    Label5 As label:
-                        Text: |-
-                            ="Client: "
-                        ZIndex: =1
+                Dropdown2_2 As dropdown:
+                    BorderColor: =RGBA(219, 200, 216, 1)
+                    ChevronBackground: =RGBA(255, 255, 255, 1)
+                    ChevronFill: =RGBA(107, 29, 94, 1)
+                    ChevronHoverBackground: =RGBA(107, 29, 94, 1)
+                    Color: =RGBA(107, 29, 94, 1)
+                    Default: ="Select a Supplier"
+                    Height: =30
+                    HoverColor: =RGBA(107, 29, 94, 1)
+                    HoverFill: |-
+                        =ColorValue("#9e6c97")
+                    Items: =["--Select a Supplier--","Expired","Active"]
+                    PressedFill: =RGBA(158, 108, 151, 1)
+                    SelectionFill: =RGBA(107, 29, 94, 1)
+                    Size: =12
+                    Width: =Parent.Width*.35
+                    ZIndex: =2
 
-                    Dropdown1 As dropdown:
-                        AlignInContainer: =AlignInContainer.Center
-                        BorderColor: =RGBA(215, 223, 240, 1)
-                        ChevronBackground: =RGBA(107, 29, 94, 1)
-                        Height: =30
-                        Items: =DropDownSample
-                        Width: =Parent.Width*.60
-                        ZIndex: =2
+                Label5_1 As label:
+                    Align: =Align.Right
+                    Text: |-
+                        ="Service Type: "
+                    Width: =Parent.Width*.15
+                    ZIndex: =3
+
+                Dropdown2_3 As dropdown:
+                    BorderColor: =RGBA(219, 200, 216, 1)
+                    ChevronBackground: =RGBA(255, 255, 255, 1)
+                    ChevronFill: =RGBA(107, 29, 94, 1)
+                    ChevronHoverBackground: =RGBA(107, 29, 94, 1)
+                    Color: =RGBA(107, 29, 94, 1)
+                    Default: ="Select a Supplier"
+                    Height: =30
+                    HoverColor: =RGBA(107, 29, 94, 1)
+                    HoverFill: |-
+                        =ColorValue("#9e6c97")
+                    Items: =["--Select a Service--","Expired","Active"]
+                    PressedFill: =RGBA(158, 108, 151, 1)
+                    SelectionFill: =RGBA(107, 29, 94, 1)
+                    Size: =12
+                    Width: =Parent.Width*.35
+                    ZIndex: =4
 
             Container6_1 As groupContainer.horizontalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
@@ -159,19 +193,6 @@
                     Width: =Parent.Width*.50
                     ZIndex: =1
 
-                    Label5_1 As label:
-                        Text: |-
-                            ="Service Type: "
-                        ZIndex: =1
-
-                    Dropdown1_1 As dropdown:
-                        BorderColor: =RGBA(215, 223, 240, 1)
-                        ChevronBackground: =RGBA(107, 29, 94, 1)
-                        Height: =30
-                        Items: =DropDownSample
-                        Width: =Parent.Width*.60
-                        ZIndex: =2
-
             Container6_2 As groupContainer.horizontalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
                 FillPortions: =0
@@ -183,11 +204,8 @@
 
                 Container9_2 As groupContainer.horizontalAutoLayoutContainer:
                     DropShadow: =DropShadow.None
-                    FillPortions: =0
                     Height: =Parent.Height
                     LayoutAlignItems: =LayoutAlignItems.Center
-                    LayoutMinHeight: =0
-                    LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     Width: =Parent.Width*.50
                     ZIndex: =1
@@ -198,7 +216,6 @@
                         ZIndex: =1
 
                     Dropdown1_2 As dropdown:
-                        AlignInContainer: =AlignInContainer.Center
                         BorderColor: =RGBA(204, 208, 225, 1)
                         ChevronBackground: =RGBA(107, 29, 94, 1)
                         Height: =30
@@ -217,11 +234,8 @@
 
                 Container9_3 As groupContainer.horizontalAutoLayoutContainer:
                     DropShadow: =DropShadow.None
-                    FillPortions: =0
                     Height: =Parent.Height
                     LayoutAlignItems: =LayoutAlignItems.Center
-                    LayoutMinHeight: =0
-                    LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     Width: =Parent.Width*.50
                     ZIndex: =1
@@ -249,11 +263,8 @@
 
                 Container9_4 As groupContainer.horizontalAutoLayoutContainer:
                     DropShadow: =DropShadow.None
-                    FillPortions: =0
                     Height: =Parent.Height
                     LayoutAlignItems: =LayoutAlignItems.Center
-                    LayoutMinHeight: =0
-                    LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     Width: =Parent.Width*.50
                     ZIndex: =1
@@ -264,7 +275,6 @@
                         ZIndex: =1
 
                     Dropdown1_3 As dropdown:
-                        AlignInContainer: =AlignInContainer.Center
                         BorderColor: =RGBA(215, 223, 240, 1)
                         ChevronBackground: =RGBA(107, 29, 94, 1)
                         Height: =30
