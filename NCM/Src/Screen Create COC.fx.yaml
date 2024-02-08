@@ -198,9 +198,12 @@
                 ZIndex: =5
 
                 Container9_3 As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     DropShadow: =DropShadow.None
                     Height: =Parent.Height
                     LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     Width: =Parent.Width*.50
                     ZIndex: =1
@@ -227,9 +230,12 @@
                 ZIndex: =6
 
                 Container9_4 As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     DropShadow: =DropShadow.None
                     Height: =Parent.Height
                     LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     Width: =Parent.Width*.50
                     ZIndex: =1
@@ -377,12 +383,4 @@
                         IconBackground: =RGBA(107,29,94,100)
                         Width: =Parent.Width-Label5_8.Width
                         ZIndex: =2
-
-    Container9 As groupContainer.manualLayoutContainer:
-        DropShadow: =DropShadow.Bold
-        Height: =Container1.Height
-        Width: =(Parent.Width-Container1.Width)/2
-        X: =Parent.Width*.03
-        Y: =Container10.Height*.9
-        ZIndex: =3
 
