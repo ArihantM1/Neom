@@ -81,6 +81,8 @@
                                 Items: =CheckboxValue
                                 Layout: =Layout.Vertical
                                 LoadingSpinner: =LoadingSpinner.Data
+                                LoadingSpinnerColor: |-
+                                    =ColorValue("#6b1d5e")
                                 ShowScrollbar: =false
                                 TemplateSize: =75
                                 Transition: =Transition.Pop
@@ -124,9 +126,18 @@
                                 Height: =20
                                 Size: =10
                                 Text: ="Clear Filters"
+                                Width: =90
                                 X: =Icon4.X-Self.Width
                                 Y: =Gallery2.Height
                                 ZIndex: =3
+
+                            Rectangle5 As rectangle:
+                                Fill: =RGBA(107, 29, 94, 1)
+                                Height: =1
+                                Width: =Label10.Width
+                                X: =Label10.X
+                                Y: =357
+                                ZIndex: =4
 
                 Container16_1 As groupContainer.horizontalAutoLayoutContainer:
                     DropShadow: =DropShadow.None
