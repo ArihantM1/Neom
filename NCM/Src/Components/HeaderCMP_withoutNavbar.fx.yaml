@@ -63,6 +63,17 @@ HeaderCMP_withoutNavbar As CanvasComponent:
             Width: =Parent.Width*.25
             ZIndex: =3
 
+        ConLoggedinuserimg_1 As groupContainer.verticalAutoLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =Parent.Height
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMode: =LayoutMode.Auto
+            PaddingRight: =10
+            Width: =Parent.Height
+            ZIndex: =4
+
             Button3_1 As button:
                 AlignInContainer: =AlignInContainer.End
                 Color: =ColorFade(RGBA(107, 29, 94,1),96%)
@@ -72,34 +83,11 @@ HeaderCMP_withoutNavbar As CanvasComponent:
                 HoverColor: =RGBA(107, 29, 94, 1)
                 HoverFill: =Self.Color
                 OnSelect: =Navigate('Screen Home')
+                PaddingRight: =0
                 PressedColor: =Self.Color
                 PressedFill: =Self.Fill
                 Size: =11
                 Text: ="Home"
-                Width: =Parent.Width*.25
-                ZIndex: =1
-
-        ConLoggedinuserimg_1 As groupContainer.verticalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
-            DropShadow: =DropShadow.None
-            FillPortions: =0
-            Height: =Parent.Height
-            LayoutAlignItems: =LayoutAlignItems.Center
-            LayoutDirection: =LayoutDirection.Vertical
-            LayoutJustifyContent: =LayoutJustifyContent.Center
-            LayoutMinHeight: =100
-            LayoutMinWidth: =250
-            LayoutMode: =LayoutMode.Auto
-            Width: =Parent.Height
-            ZIndex: =4
-
-            Image2_1 As image:
-                Height: =45
-                Image: =xebiaappcino
-                RadiusBottomLeft: =50
-                RadiusBottomRight: =50
-                RadiusTopLeft: =50
-                RadiusTopRight: =50
-                Width: =45
+                Width: =Parent.Width*.8
                 ZIndex: =1
 
