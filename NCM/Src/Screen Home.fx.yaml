@@ -597,6 +597,7 @@
                                     ZIndex: =1
 
                                 Label3_6 As label:
+                                    Align: =Align.Center
                                     Color: =RGBA(107, 29, 94,1)
                                     FontWeight: =FontWeight.Bold
                                     PaddingLeft: =10
@@ -682,6 +683,7 @@
                                     ZIndex: =1
 
                                 Label9_1 As label:
+                                    Align: =Align.Center
                                     OnSelect: =Select(Parent)
                                     PaddingLeft: =10
                                     Text: =ThisItem.SampleHeading
