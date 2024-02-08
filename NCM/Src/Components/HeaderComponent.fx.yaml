@@ -53,7 +53,7 @@ HeaderComponent As CanvasComponent:
 
             Image1 As image:
                 Height: =Parent.Height-50
-                Image: ='xebia-logo'
+                Image: =xebialogo
                 Width: =Parent.Width-20
                 ZIndex: =1
 

@@ -1,0 +1,105 @@
+HeaderCMP_withoutNavbar As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =100
+    Width: =1500
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    ConMainHeader_1 As groupContainer.horizontalAutoLayoutContainer:
+        DropShadow: =DropShadow.None
+        Fill: =ColorFade(RGBA(107, 29, 94,1),96%)
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+        ConZebLogo_1 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: =Parent.Height
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =10
+            Width: =Parent.Width*.08
+            ZIndex: =1
+
+            Image1_1 As image:
+                Height: =Parent.Height-50
+                Image: =xebialogo
+                Width: =Parent.Width-20
+                ZIndex: =1
+
+        ConNavBar_1 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: =Parent.Height
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width-ConZebLogo_1.Width-ConLoggedinuserimg_1.Width-ConLoggedinuserName_1.Width
+            ZIndex: =2
+
+        ConLoggedinuserName_1 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: =Parent.Height
+            LayoutAlignItems: =LayoutAlignItems.End
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingRight: =5
+            Width: =Parent.Width*.25
+            ZIndex: =3
+
+            Button3_1 As button:
+                AlignInContainer: =AlignInContainer.End
+                Color: =ColorFade(RGBA(107, 29, 94,1),96%)
+                Fill: =RGBA(107, 29, 94, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =35
+                HoverColor: =RGBA(107, 29, 94, 1)
+                HoverFill: =Self.Color
+                OnSelect: =Navigate('Screen Home')
+                PressedColor: =Self.Color
+                PressedFill: =Self.Fill
+                Size: =11
+                Text: ="Home"
+                Width: =Parent.Width*.25
+                ZIndex: =1
+
+        ConLoggedinuserimg_1 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: =Parent.Height
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Height
+            ZIndex: =4
+
+            Image2_1 As image:
+                Height: =45
+                Image: =xebiaappcino
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
+                Width: =45
+                ZIndex: =1
+
