@@ -1,0 +1,40 @@
+"'Screen Preview COC' As screen":
+
+    Container2 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Container9 As groupContainer.horizontalAutoLayoutContainer:
+            FillPortions: =0
+            Height: =Parent.Height*.1
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =1
+
+            HeaderCMP_withoutNavbar_2 As HeaderCMP_withoutNavbar:
+                Height: =Parent.Height
+                LayoutMinHeight: =640
+                LayoutMinWidth: =640
+                Width: =Parent.Width
+
+        Container18 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.Center
+            FillPortions: =0
+            Height: =Parent.Height*.9
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
+            ZIndex: =2
+
+            Container23 As groupContainer.horizontalAutoLayoutContainer:
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =1
+

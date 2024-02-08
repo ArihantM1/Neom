@@ -195,9 +195,12 @@
                 ZIndex: =5
 
                 Container9_3 As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     DropShadow: =DropShadow.None
                     Height: =Parent.Height
                     LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     Width: =Parent.Width*.50
                     ZIndex: =1
@@ -224,9 +227,12 @@
                 ZIndex: =6
 
                 Container9_4 As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     DropShadow: =DropShadow.None
                     Height: =Parent.Height
                     LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     Width: =Parent.Width*.50
                     ZIndex: =1
