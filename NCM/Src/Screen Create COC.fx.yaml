@@ -43,15 +43,18 @@
                 ZIndex: =1
 
     Container1 As groupContainer.horizontalAutoLayoutContainer:
+        DropShadow: =DropShadow.Bold
         Fill: =RGBA(255, 255, 255, 1)
         Height: =Parent.Height*.80
         LayoutMode: =LayoutMode.Auto
+        LayoutOverflowY: =LayoutOverflow.Scroll
         Width: =Parent.Width*.8
         X: =Parent.Width*.15
         Y: =Container10.Height*.9
         ZIndex: =2
 
         Container4 As groupContainer.horizontalAutoLayoutContainer:
+            DropShadow: =DropShadow.Bold
             Fill: =RGBA(255, 255, 255, 1)
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
@@ -376,9 +379,10 @@
                         ZIndex: =2
 
     Container9 As groupContainer.manualLayoutContainer:
-        Height: =613
-        Width: =Parent.Width-Container1.Width
-        X: =40
-        Y: =124
+        DropShadow: =DropShadow.Bold
+        Height: =Container1.Height
+        Width: =(Parent.Width-Container1.Width)/2
+        X: =Parent.Width*.03
+        Y: =Container10.Height*.9
         ZIndex: =3
 
