@@ -46,9 +46,9 @@
         Fill: =RGBA(255, 255, 255, 1)
         Height: =Parent.Height*.80
         LayoutMode: =LayoutMode.Auto
-        Width: =Parent.Width*.85
-        X: =102
-        Y: =116
+        Width: =Parent.Width*.8
+        X: =Parent.Width*.15
+        Y: =Container10.Height*.9
         ZIndex: =2
 
         Container4 As groupContainer.horizontalAutoLayoutContainer:
@@ -374,4 +374,11 @@
                         IconBackground: =RGBA(107,29,94,100)
                         Width: =Parent.Width-Label5_8.Width
                         ZIndex: =2
+
+    Container9 As groupContainer.manualLayoutContainer:
+        Height: =613
+        Width: =Parent.Width-Container1.Width
+        X: =40
+        Y: =124
+        ZIndex: =3
 
