@@ -46,9 +46,9 @@
         Fill: =RGBA(255, 255, 255, 1)
         Height: =Parent.Height*.80
         LayoutMode: =LayoutMode.Auto
-        Width: =Parent.Width*.85
-        X: =102
-        Y: =116
+        Width: =Parent.Width*.8
+        X: =Parent.Width*.15
+        Y: =Container10.Height*.9
         ZIndex: =2
 
         Container4 As groupContainer.horizontalAutoLayoutContainer:
