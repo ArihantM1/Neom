@@ -168,6 +168,20 @@
     "OverridableProperties": {},
     "Version": "1.0"
   },
+  "group": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/group",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "group",
+    "OverridableProperties": {},
+    "Version": "1"
+  },
   "groupContainer": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -308,5 +322,20 @@
     "Name": "text",
     "OverridableProperties": {},
     "Version": "2.3.2"
+  },
+  "Toggle": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_Toggle",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "PowerApps_CoreControls_Toggle",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "Toggle",
+    "Version": "1.0.23"
   }
 }

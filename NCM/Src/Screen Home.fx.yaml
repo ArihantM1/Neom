@@ -605,7 +605,7 @@
                                     Size: =11
                                     Text: ="CONTRACT NAME"
                                     Width: =Parent.Width*.2
-                                    ZIndex: =3
+                                    ZIndex: =2
 
                                 Label3_7 As label:
                                     Align: =Align.Center
@@ -614,7 +614,7 @@
                                     Size: =11
                                     Text: ="CLIENT"
                                     Width: =Parent.Width*.12
-                                    ZIndex: =4
+                                    ZIndex: =3
 
                                 Label3_8 As label:
                                     Align: =Align.Center
@@ -623,16 +623,7 @@
                                     Size: =11
                                     Text: ="SERVICE"
                                     Width: =Parent.Width*.12
-                                    ZIndex: =5
-
-                                Label3_9 As label:
-                                    Align: =Align.Center
-                                    Color: =RGBA(107, 29, 94,1)
-                                    FontWeight: =FontWeight.Bold
-                                    Size: =11
-                                    Text: ="STATUS"
-                                    Width: =Parent.Width*.12
-                                    ZIndex: =6
+                                    ZIndex: =4
 
                                 Label3_10 As label:
                                     Align: =Align.Center
@@ -641,7 +632,7 @@
                                     Size: =11
                                     Text: ="APPLICABLE TO"
                                     Width: =Parent.Width*.12
-                                    ZIndex: =7
+                                    ZIndex: =5
 
                                 Label3_11 As label:
                                     Align: =Align.Center
@@ -650,7 +641,16 @@
                                     Size: =11
                                     Text: ="COUNTURIES"
                                     Width: =Parent.Width*.12
-                                    ZIndex: =8
+                                    ZIndex: =6
+
+                                Label3_9 As label:
+                                    Align: =Align.Center
+                                    Color: =RGBA(107, 29, 94,1)
+                                    FontWeight: =FontWeight.Bold
+                                    Size: =11
+                                    Text: ="STATUS"
+                                    Width: =Parent.Width*.12
+                                    ZIndex: =7
 
                             Rectangle1 As rectangle:
                                 AlignInContainer: =AlignInContainer.Center
@@ -717,16 +717,6 @@
                                     Y: =(GridGallery1.TemplateHeight-Self.Height)/2
                                     ZIndex: =4
 
-                                Label9_4 As label:
-                                    Align: =Align.Center
-                                    FontWeight: =FontWeight.Semibold
-                                    OnSelect: =Select(Parent)
-                                    Text: =ThisItem.Status.Value
-                                    Width: =Label3_9.Width
-                                    X: =Label3_9.X
-                                    Y: =10
-                                    ZIndex: =5
-
                                 Label9_5 As label:
                                     Align: =Align.Center
                                     FontWeight: =FontWeight.Semibold
@@ -755,4 +745,21 @@
                                     X: =(Parent.Width-Self.Width)/2
                                     Y: =GridGallery1.TemplateHeight
                                     ZIndex: =8
+
+                                Toggle2 As Toggle:
+                                    BasePaletteColor: =RGBA(107, 29, 94, 1)
+                                    Checked: =If(ThisItem.Status.Value="Active",true,false)
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontColor: =RGBA(0, 0, 0, 1)
+                                    FontSize: =15
+                                    FontWeight: =FontWeight.Bold
+                                    Height: =40
+                                    Label: =ThisItem.Status.Value
+                                    OnCheck: =false
+                                    OnSelect: =Select(Parent)
+                                    OnUncheck: =false
+                                    Width: =Label3_9.Width
+                                    X: =Label3_9.X
+                                    Y: =10
+                                    ZIndex: =9
 

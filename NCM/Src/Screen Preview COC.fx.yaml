@@ -7,97 +7,109 @@
         Width: =Parent.Width
         ZIndex: =1
 
-        Container9 As groupContainer.horizontalAutoLayoutContainer:
-            FillPortions: =0
+        HeaderComponent_3 As HeaderComponent:
             Height: =Parent.Height*.1
-            LayoutMinHeight: =100
-            LayoutMinWidth: =250
-            LayoutMode: =LayoutMode.Auto
-            ZIndex: =1
+            LayoutMinHeight: =640
+            LayoutMinWidth: =640
 
-            HeaderCMP_withoutNavbar_2 As HeaderCMP_withoutNavbar:
-                Height: =Parent.Height
-                LayoutMinHeight: =640
-                LayoutMinWidth: =640
-                Width: =Parent.Width
+    Container9 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Bold
+        Height: =Parent.Height*.83
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =Parent.Width*.83
+        X: =Parent.Width*.15
+        Y: =HeaderComponent_3.Y+HeaderComponent_3.Height+Parent.Height*.04
+        ZIndex: =2
 
-        Container18 As groupContainer.verticalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.Center
-            FillPortions: =0
-            Height: =Parent.Height*.9
-            LayoutDirection: =LayoutDirection.Vertical
-            LayoutMinHeight: =100
-            LayoutMinWidth: =250
-            LayoutMode: =LayoutMode.Auto
-            Width: =Parent.Width
-            ZIndex: =2
+    Rectangle7_2 As rectangle:
+        BorderStyle: =BorderStyle.None
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(107, 29, 94, 1)
+        Height: =3
+        Width: =Container9.X-Circle1_3.Width-Circle1_3.X-Parent.Width*0.01
+        X: =Circle1_2.X+Circle1_2.Width+(Container9.X-Circle1_2.X-Circle1_2.Width-Self.Width)/2
+        Y: =Circle1_3.Y+(Circle1_3.Height-Self.Height)/2
+        ZIndex: =11
 
-            Container23 As groupContainer.horizontalAutoLayoutContainer:
-                AlignInContainer: =AlignInContainer.Center
-                FillPortions: =0
-                Height: =Parent.Height*.1
-                LayoutMinHeight: =100
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                Width: =Parent.Width
-                ZIndex: =1
+    Group1_1 As group:
+        Height: =5
+        Width: =5
+        X: =6.109999999999999
+        Y: =124.38000000000002
+        ZIndex: =11
 
-            Container25 As groupContainer.horizontalAutoLayoutContainer:
-                LayoutMinHeight: =100
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                ZIndex: =2
+        Circle1_3 As circle:
+            Fill: =RGBA(107, 29, 94, 1)
+            Height: =Circle1_2.Height
+            Width: =Circle1_2.Width
+            X: =Container9.X-Parent.Width*.065-Self.Width
+            Y: =Circle1_2.Height+Circle1_2.Y+Parent.Height*.4
+            ZIndex: =3
 
-                Container28 As groupContainer.verticalAutoLayoutContainer:
-                    LayoutDirection: =LayoutDirection.Vertical
-                    LayoutMinHeight: =100
-                    LayoutMinWidth: =250
-                    LayoutMode: =LayoutMode.Auto
-                    ZIndex: =1
+        Circle1_2 As circle:
+            BorderStyle: =BorderStyle.None
+            Fill: =RGBA(107, 29, 94, 1)
+            Height: =70
+            Width: =70
+            X: =Container9.X-Parent.Width*.065-Self.Width
+            Y: |
+                =Container10.Height*.9
+            ZIndex: =4
 
-                Container26 As groupContainer.verticalAutoLayoutContainer:
-                    LayoutDirection: =LayoutDirection.Vertical
-                    LayoutMinHeight: =100
-                    LayoutMinWidth: =250
-                    LayoutMode: =LayoutMode.Auto
-                    ZIndex: =2
+        Icon5_3 As icon.Flag:
+            Color: =RGBA(255, 255, 255, 1)
+            DisplayMode: =DisplayMode.View
+            Height: =35
+            Icon: =Icon.Flag
+            Width: =35
+            X: =Circle1_2.X+(Circle1_2.Width-Self.Width)/2
+            Y: =Circle1_2.Y+(Circle1_2.Height-Self.Height)/2
+            ZIndex: =5
 
-                Container27 As groupContainer.verticalAutoLayoutContainer:
-                    LayoutDirection: =LayoutDirection.Vertical
-                    LayoutMinHeight: =100
-                    LayoutMinWidth: =250
-                    LayoutMode: =LayoutMode.Auto
-                    ZIndex: =3
+        Rectangle7_1 As rectangle:
+            BorderStyle: =BorderStyle.None
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(107, 29, 94, 1)
+            Height: =3
+            Width: =Container9.X-Circle1_2.Width-Circle1_2.X-Parent.Width*0.01
+            X: =Circle1_2.X+Circle1_2.Width+(Container9.X-Circle1_2.X-Circle1_2.Width-Self.Width)/2
+            Y: =Circle1_2.Y+(Circle1_2.Height-Self.Height)/2
+            ZIndex: =6
 
-                    Canvas1 As fluidGrid.fluidGridWithBlankCard:
-                        BorderThickness: =0
-                        Height: =Parent.Height - Self.Y
-                        LayoutMinHeight: =250
-                        LayoutMinWidth: =100
-                        Width: =Parent.Width
-                        Y: =
-                        ZIndex: =1
+        Icon5_2 As icon.Flag:
+            Color: =RGBA(255, 255, 255, 1)
+            DisplayMode: =DisplayMode.View
+            Height: =35
+            Icon: =Icon.Flag
+            Width: =35
+            X: =Circle1_3.X+(Circle1_3.Width-Self.Width)/2
+            Y: =Circle1_3.Y+(Circle1_3.Height-Self.Height)/2
+            ZIndex: =7
 
-                        DataCard1 As dataCard:
-                            BorderColor: =RGBA(0, 0, 0, 1)
-                            BorderStyle: =BorderStyle.Solid
-                            BorderThickness: =0
-                            DisplayMode: =DisplayMode.Edit
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =Parent.Height
-                            Width: =Parent.Width
-                            X: =0
-                            Y: =0
-                            ZIndex: =1
+        Rectangle6_1 As rectangle:
+            Fill: =RGBA(107, 29, 94, 1)
+            Height: =-Label12_2.Y-Label12_2.Height+Circle1_3.Y-Parent.Height*0.01
+            Width: =3
+            X: =Label12_2.X+(Label12_2.Width-Self.Width)/2
+            Y: =Label12_2.Y+Label12_2.Height
+            ZIndex: =8
 
-                            HtmlText1 As htmlViewer:
-                                Height: =Parent.Height
-                                HtmlText: |-
-                                    ="<h1> 
-                                    <char32>Contract Form</h1>
-                                    <br> HI "&Upper(TextInput1.Text)&" and this contract is made on "&Today()&" and  Contract is made for  " &" . This contract is valid for 4 year . <br/> The term and Condition are as follows:<br/>
-                                    <br/>
-                                    "
-                                Width: =Parent.Width
-                                ZIndex: =1
+        Label12_2 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Text: ="Overview"
+            X: =Circle1_2.X+(Circle1_2.Width-Self.Width)/2
+            Y: =Circle1_2.Y+Circle1_2.Height
+            ZIndex: =9
+
+        Label12_3 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Text: ="Documents"
+            X: =Circle1_3.X+(Circle1_3.Width-Self.Width)/2
+            Y: =Circle1_3.Y+Circle1_3.Height
+            ZIndex: =10
 
