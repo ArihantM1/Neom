@@ -458,6 +458,15 @@
                 LayoutMode: =LayoutMode.Auto
                 ZIndex: =8
 
+                Label5_8 As label:
+                    Align: =Align.Right
+                    AlignInContainer: =AlignInContainer.Center
+                    Size: =12
+                    Text: |-
+                        ="Created On:"
+                    Width: =Label5.Width
+                    ZIndex: =1
+
                 DatePicker1 As datepicker:
                     AlignInContainer: =AlignInContainer.Center
                     BorderColor: =RGBA(219, 200, 216, 1)

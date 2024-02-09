@@ -3,7 +3,6 @@
     Height: =120
     image: =SampleImage
     MainText: ="Text"
-    navigation: ="Text"
     SecondaryText: ="Text"
     Width: =345
     X: =0
@@ -13,19 +12,15 @@
     ConCard_defaultValues_1 As groupContainer.verticalAutoLayoutContainer:
         DropShadow: =DropShadow.Semibold
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =Parent.Height
+        Height: =123
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
-        Width: =Parent.Width
+        Width: =348
         ZIndex: =1
 
         ConMain As groupContainer.manualLayoutContainer:
-            AlignInContainer: =AlignInContainer.Center
-            FillPortions: =0
-            Height: =Parent.Height
             LayoutMinHeight: =100
             LayoutMinWidth: =
-            Width: =Parent.Width
             ZIndex: =1
 
             Con_information As groupContainer.verticalAutoLayoutContainer:
@@ -53,6 +48,7 @@
 
                 imgSupportingtext As label:
                     Align: =Align.Center
+                    Height: =30
                     PaddingTop: =0
                     Size: =10
                     Text: ='Card compomnent'.SecondaryText
@@ -63,7 +59,6 @@
                 BorderColor: |-
                     =//ColorFade(RGBA(107, 29, 94,1),60%)
                     Color.White
-                BorderThickness: =5
                 Color: =RGBA(107, 29, 94, 1)
                 DisabledFill: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(0, 0, 0, 0)
@@ -72,7 +67,6 @@
                 HoverBorderColor: =RGBA(107, 29, 94, 1)
                 HoverColor: =RGBA(0, 0, 0, 0)
                 HoverFill: =RGBA(0, 0, 0, 0)
-                OnSelect: ='Card compomnent'.navigation
                 PressedFill: =//Self.Color
                 Size: =10.5
                 Text: =""
