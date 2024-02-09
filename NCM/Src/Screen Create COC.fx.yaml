@@ -600,7 +600,7 @@
                         Reset(Dropdown2_2);
                         Reset(Dropdown2_1);
                         Reset(Dropdown2_7);
-                        Navigate('Screen Create COC',ScreenTransition.Cover)
+                        Navigate('Screen Preview COC',ScreenTransition.Cover)
                     Size: =10
                     Text: ="Next"
                     Width: =Parent.Width*.07
