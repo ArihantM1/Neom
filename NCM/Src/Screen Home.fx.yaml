@@ -755,9 +755,11 @@
                                     FontWeight: =FontWeight.Bold
                                     Height: =40
                                     Label: =ThisItem.Status.Value
-                                    OnCheck: =false
+                                    OnCheck: |
+                                        =UpdateIf(CM_ContractDetails,ID=ThisItem.ID,{Status:ThisItem.Status});
                                     OnSelect: =Select(Parent)
-                                    OnUncheck: =false
+                                    OnUncheck: |
+                                        =UpdateIf(CM_ContractDetails,ID=ThisItem.ID,{Status:ThisItem.Status});
                                     Width: =Label3_9.Width
                                     X: =Label3_9.X
                                     Y: =10
