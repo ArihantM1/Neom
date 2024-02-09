@@ -594,7 +594,13 @@
                     Fill: =RGBA(255, 255, 255, 1)
                     Height: =35
                     HoverFill: =RGBA(107, 29, 94, 1)
-                    OnSelect: =Navigate('Screen Preview COC')
+                    OnSelect: |-
+                        =Reset(Dropdown2_3);
+                        Reset(Dropdown2_4);
+                        Reset(Dropdown2_2);
+                        Reset(Dropdown2_1);
+                        Reset(Dropdown2_7);
+                        Navigate('Screen Create COC',ScreenTransition.Cover)
                     Size: =10
                     Text: ="Next"
                     Width: =Parent.Width*.07
