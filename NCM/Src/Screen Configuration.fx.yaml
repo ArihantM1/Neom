@@ -7,6 +7,12 @@
         Width: =Parent.Width
         ZIndex: =1
 
+        HeaderCMP_withoutNavbar_3 As HeaderCMP_withoutNavbar:
+            Height: =Parent.Height*.1
+            LayoutMinHeight: =640
+            LayoutMinWidth: =640
+            Width: =Parent.Width
+
         Container29 As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.Center
             FillPortions: =0
@@ -15,15 +21,6 @@
             LayoutMinWidth: =250
             Width: =Parent.Width
             ZIndex: =2
-
-            ConHeader_ConfigurationsScreen As groupContainer.verticalAutoLayoutContainer:
-                Fill: =RGBA(107, 29, 94, 1)
-                Height: =Parent.Height*.20
-                LayoutDirection: =LayoutDirection.Vertical
-                LayoutJustifyContent: =LayoutJustifyContent.Center
-                LayoutMode: =LayoutMode.Auto
-                Width: =Parent.Width
-                ZIndex: =1
 
             ConMain_ConfigurationsScreen As groupContainer.verticalAutoLayoutContainer:
                 DropShadow: =DropShadow.Bold
@@ -64,60 +61,14 @@
                         Width: =Parent.Width*.3
                         ZIndex: =1
 
-                        ConInner As groupContainer.manualLayoutContainer:
-                            LayoutMinHeight: =100
-                            LayoutMinWidth: =
-                            ZIndex: =1
-
-                            Coninformation As groupContainer.verticalAutoLayoutContainer:
-                                Height: =Parent.Height
-                                LayoutAlignItems: =LayoutAlignItems.Center
-                                LayoutDirection: =LayoutDirection.Vertical
-                                LayoutJustifyContent: =LayoutJustifyContent.Center
-                                LayoutMode: =LayoutMode.Auto
-                                Width: =Parent.Width
-                                ZIndex: =1
-
-                                Image3 As image:
-                                    Height: =35
-                                    Image: =partnership
-                                    Width: =35
-                                    ZIndex: =1
-
-                                Label8 As label:
-                                    Align: =Align.Center
-                                    FontWeight: =FontWeight.Semibold
-                                    PaddingBottom: =0
-                                    Text: ="Manage default values"
-                                    Width: =Parent.Width
-                                    ZIndex: =2
-
-                                Label8_1 As label:
-                                    Align: =Align.Center
-                                    Height: =30
-                                    PaddingTop: =0
-                                    Size: =10
-                                    Text: ="Manage the default values of your vendor"
-                                    Width: =Parent.Width
-                                    ZIndex: =3
-
-                            Btn_defaultValues As button:
-                                BorderColor: |-
-                                    =//ColorFade(RGBA(107, 29, 94,1),60%)
-                                    Color.White
-                                Color: =RGBA(107, 29, 94, 1)
-                                DisabledFill: =RGBA(255, 255, 255, 1)
-                                Fill: =RGBA(0, 0, 0, 0)
-                                FontWeight: =FontWeight.Bold
-                                Height: =Parent.Height
-                                HoverBorderColor: =RGBA(107, 29, 94, 1)
-                                HoverColor: =RGBA(0, 0, 0, 0)
-                                HoverFill: =RGBA(0, 0, 0, 0)
-                                PressedFill: =//Self.Color
-                                Size: =10.5
-                                Text: =""
-                                Width: =Parent.Width
-                                ZIndex: =2
+                        "'Card compomnent_3' As 'Card compomnent'":
+                            Height: =Parent.Height
+                            image: =partnership
+                            LayoutMinHeight: =640
+                            LayoutMinWidth: =640
+                            MainText: ="Manage default values"
+                            SecondaryText: ="Manage the default values of your vendor"
+                            Width: =Parent.Width
 
                     "'ConCard_Terms&Conditions' As groupContainer.verticalAutoLayoutContainer":
                         AlignInContainer: =AlignInContainer.SetByContainer
@@ -132,60 +83,14 @@
                         Width: =Parent.Width*.3
                         ZIndex: =2
 
-                        "'ConInner_Terms&Conditions' As groupContainer.manualLayoutContainer":
-                            LayoutMinHeight: =100
-                            LayoutMinWidth: =
-                            ZIndex: =1
-
-                            Coninformation_1 As groupContainer.verticalAutoLayoutContainer:
-                                Height: =Parent.Height
-                                LayoutAlignItems: =LayoutAlignItems.Center
-                                LayoutDirection: =LayoutDirection.Vertical
-                                LayoutJustifyContent: =LayoutJustifyContent.Center
-                                LayoutMode: =LayoutMode.Auto
-                                Width: =Parent.Width
-                                ZIndex: =1
-
-                                Image3_1 As image:
-                                    Height: =35
-                                    Image: =goal
-                                    Width: =35
-                                    ZIndex: =1
-
-                                Label8_2 As label:
-                                    Align: =Align.Center
-                                    FontWeight: =FontWeight.Semibold
-                                    PaddingBottom: =0
-                                    Text: ="Manage Supplier T&C"
-                                    Width: =Parent.Width
-                                    ZIndex: =2
-
-                                Label8_3 As label:
-                                    Align: =Align.Center
-                                    Height: =30
-                                    PaddingTop: =0
-                                    Size: =10
-                                    Text: ="Manage terms & conditions documents for each suppliers"
-                                    Width: =Parent.Width
-                                    ZIndex: =3
-
-                            "'btn_Terms&Conditions' As button":
-                                BorderColor: |-
-                                    =//ColorFade(RGBA(107, 29, 94,1),60%)
-                                    Color.White
-                                Color: =RGBA(107, 29, 94, 1)
-                                DisabledFill: =RGBA(255, 255, 255, 1)
-                                Fill: =RGBA(0, 0, 0, 0)
-                                FontWeight: =FontWeight.Bold
-                                Height: =Parent.Height
-                                HoverBorderColor: =RGBA(107, 29, 94, 1)
-                                HoverColor: =RGBA(0, 0, 0, 0)
-                                HoverFill: =RGBA(0, 0, 0, 0)
-                                PressedFill: =//Self.Color
-                                Size: =10.5
-                                Text: =""
-                                Width: =Parent.Width
-                                ZIndex: =2
+                        "'Card compomnent_2' As 'Card compomnent'":
+                            Height: =Parent.Height
+                            image: =goal
+                            LayoutMinHeight: =640
+                            LayoutMinWidth: =640
+                            MainText: ="Manage Supplier T&C"
+                            SecondaryText: ="Manage terms & conditions documents for each supplier"
+                            Width: =Parent.Width
 
                     ConCard_FieldAssgnment As groupContainer.verticalAutoLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
