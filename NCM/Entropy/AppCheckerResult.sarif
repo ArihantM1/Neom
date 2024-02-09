@@ -254,66 +254,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Screen Analytics'.Container1_4.Container4_1.Container11.Container16_1.Container13_4.Container22_1.Icon1_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Screen Analytics'.Container1_4.Container4_1.Container11.Container16_1.Container13_4.Container22_1.Icon1_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen Analytics",
-                "type": "'Screen Analytics'.Container1_4.Container4_1.Container11.Container16_1.Container13_4.Container22_1.Icon1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Screen Analytics'.Container1_4.Container4_1.Container11.Container16_1.Container13_4.Container22_1.Icon1_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Screen Analytics'.Container1_4.Container4_1.Container11.Container16_1.Container13_4.Container22_1.Icon1_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Screen Analytics",
-                "type": "'Screen Analytics'.Container1_4.Container4_1.Container11.Container16_1.Container13_4.Container22_1.Icon1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Screen Analytics'.Container1_4.Container4_1.Container11.Container16_1.Container13_4.ComboBox1_1.AccessibleLabel"
                 }
               ],
@@ -368,6 +308,66 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Screen Analytics'.Container1_4.Container4_1.Container11.Container16_1.Container13_4.Container22_1.Icon1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Screen Analytics'.Container1_4.Container4_1.Container11.Container16_1.Container13_4.Container22_1.Icon1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen Analytics",
+                "type": "'Screen Analytics'.Container1_4.Container4_1.Container11.Container16_1.Container13_4.Container22_1.Icon1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Screen Analytics'.Container1_4.Container4_1.Container11.Container16_1.Container13_4.Container22_1.Icon1_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Screen Analytics'.Container1_4.Container4_1.Container11.Container16_1.Container13_4.Container22_1.Icon1_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen Analytics",
+                "type": "'Screen Analytics'.Container1_4.Container4_1.Container11.Container16_1.Container13_4.Container22_1.Icon1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -464,19 +464,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Screen Create COC'.Container1.Container4.Container6_4.Container9_4.Dropdown1_3.AccessibleLabel"
+                  "fullyQualifiedName": "'Screen Create COC'.Container1.Container4.Container6.Dropdown2_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Screen Create COC'.Container1.Container4.Container6_4.Container9_4.Dropdown1_3.AccessibleLabel",
+                  "fullyQualifiedName": "'Screen Create COC'.Container1.Container4.Container6.Dropdown2_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen Create COC",
-                "type": "'Screen Create COC'.Container1.Container4.Container6_4.Container9_4.Dropdown1_3"
+                "type": "'Screen Create COC'.Container1.Container4.Container6.Dropdown2_2"
               }
             }
           ],
@@ -537,6 +537,36 @@
                 "member": "AccessibleLabel",
                 "module": "Screen Create COC",
                 "type": "'Screen Create COC'.Container1.Container4.Container6_3.Container9_3.TextInput1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Screen Create COC'.Container1.Container4.Container6_4.Container9_4.Dropdown1_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Screen Create COC'.Container1.Container4.Container6_4.Container9_4.Dropdown1_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen Create COC",
+                "type": "'Screen Create COC'.Container1.Container4.Container6_4.Container9_4.Dropdown1_3"
               }
             }
           ],
@@ -854,36 +884,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Screen Create COC'.Container1.Container4.Container6.Dropdown2_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Screen Create COC'.Container1.Container4.Container6.Dropdown2_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen Create COC",
-                "type": "'Screen Create COC'.Container1.Container4.Container6.Dropdown2_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.cocview"
                 }
               ],
@@ -974,17 +974,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.EDIT ECON"
+                  "fullyQualifiedName": "App.approved"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.EDIT ECON",
+                  "fullyQualifiedName": "App.approved",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "EDIT ECON",
+                "member": "approved",
                 "module": "App",
                 "type": "App"
               }
@@ -1004,17 +1004,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.PLUS ICON"
+                  "fullyQualifiedName": "App.clock"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.PLUS ICON",
+                  "fullyQualifiedName": "App.clock",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "PLUS ICON",
+                "member": "clock",
                 "module": "App",
                 "type": "App"
               }
@@ -1034,17 +1034,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.xebia-logo"
+                  "fullyQualifiedName": "App.contract"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.xebia-logo",
+                  "fullyQualifiedName": "App.contract",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "xebia-logo",
+                "member": "contract",
                 "module": "App",
                 "type": "App"
               }
@@ -1075,6 +1075,66 @@
               },
               "properties": {
                 "member": "contracts",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.drafts"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.drafts",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "drafts",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.EDIT ECON"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.EDIT ECON",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "EDIT ECON",
                 "module": "App",
                 "type": "App"
               }
@@ -1154,107 +1214,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.clock"
+                  "fullyQualifiedName": "App.PLUS ICON"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.clock",
+                  "fullyQualifiedName": "App.PLUS ICON",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "clock",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.drafts"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.drafts",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "drafts",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.approved"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.approved",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "approved",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.contract"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.contract",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "contract",
+                "member": "PLUS ICON",
                 "module": "App",
                 "type": "App"
               }
@@ -1285,6 +1255,36 @@
               },
               "properties": {
                 "member": "reload",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.xebia-logo"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.xebia-logo",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "xebia-logo",
                 "module": "App",
                 "type": "App"
               }
