@@ -132,11 +132,11 @@
                     ChevronFill: =RGBA(107, 29, 94, 1)
                     ChevronHoverBackground: =RGBA(107, 29, 94, 1)
                     Color: =RGBA(107, 29, 94, 1)
-                    Default: ="Select a Supplier"
+                    Default: ="--Select a Call off Contact to duplicate--"
                     Height: =30
                     HoverFill: |-
                         =ColorValue("#9e6c97")
-                    Items: =["--Select a Call off Contact to duplicate--","Expired","Active"]
+                    Items: =CM_ContractDetails
                     PressedFill: =RGBA(158, 108, 151, 1)
                     SelectionFill: =RGBA(107, 29, 94, 1)
                     Size: =12
@@ -167,11 +167,11 @@
                     ChevronFill: =RGBA(107, 29, 94, 1)
                     ChevronHoverBackground: =RGBA(107, 29, 94, 1)
                     Color: =RGBA(107, 29, 94, 1)
-                    Default: ="Select a Supplier"
+                    Default: ="--Select a Supplier--"
                     Height: =30
                     HoverFill: |-
                         =ColorValue("#9e6c97")
-                    Items: =["--Select a Supplier--","Expired","Active"]
+                    Items: =CM_ClientData
                     PressedFill: =RGBA(158, 108, 151, 1)
                     SelectionFill: =RGBA(107, 29, 94, 1)
                     Size: =12
@@ -196,7 +196,7 @@
                     Height: =30
                     HoverFill: |-
                         =ColorValue("#9e6c97")
-                    Items: =["--Select a Service--","Expired","Active"]
+                    Items: =CM_Service_Types
                     PressedFill: =RGBA(158, 108, 151, 1)
                     SelectionFill: =RGBA(107, 29, 94, 1)
                     Size: =12
@@ -241,7 +241,7 @@
                         Height: =30
                         HoverFill: |-
                             =ColorValue("#9e6c97")
-                        Items: =["--Select a Service--","Expired","Active"]
+                        Items: =Filter(CM_Services, Service_Type_fk.Value= Dropdown2_3.Selected.Service_Type)
                         PressedFill: =RGBA(158, 108, 151, 1)
                         SelectionFill: =RGBA(107, 29, 94, 1)
                         Size: =12
@@ -302,7 +302,7 @@
                     Height: =30
                     HoverFill: |-
                         =ColorValue("#9e6c97")
-                    Items: =["--Select a Currancy--","USD","SAR"]
+                    Items: =["--Select a Currency--","USD","SAR"]
                     PressedFill: =RGBA(158, 108, 151, 1)
                     SelectionFill: =RGBA(107, 29, 94, 1)
                     Size: =12
@@ -594,7 +594,13 @@
                     Fill: =RGBA(255, 255, 255, 1)
                     Height: =35
                     HoverFill: =RGBA(107, 29, 94, 1)
-                    OnSelect: =Navigate('Screen Preview COC')
+                    OnSelect: |-
+                        =Reset(Dropdown2_3);
+                        Reset(Dropdown2_4);
+                        Reset(Dropdown2_2);
+                        Reset(Dropdown2_1);
+                        Reset(Dropdown2_7);
+                        Navigate('Screen Create COC',ScreenTransition.Cover)
                     Size: =10
                     Text: ="Next"
                     Width: =Parent.Width*.07
