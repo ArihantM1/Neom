@@ -7,12 +7,6 @@
         Width: =Parent.Width
         ZIndex: =1
 
-        HeaderCMP_withoutNavbar_4 As HeaderCMP_withoutNavbar_3:
-            Height: =Parent.Height*.1
-            LayoutMinHeight: =640
-            LayoutMinWidth: =640
-            Width: =Parent.Width
-
         Container29 As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.Center
             FillPortions: =0
@@ -206,58 +200,12 @@
                         Width: =Parent.Width*.3
                         ZIndex: =3
 
-                        ConInner_FieldAssgnment As groupContainer.manualLayoutContainer:
-                            LayoutMinHeight: =100
-                            LayoutMinWidth: =
-                            ZIndex: =1
-
-                            Coninformation_2 As groupContainer.verticalAutoLayoutContainer:
-                                Height: =Parent.Height
-                                LayoutAlignItems: =LayoutAlignItems.Center
-                                LayoutDirection: =LayoutDirection.Vertical
-                                LayoutJustifyContent: =LayoutJustifyContent.Center
-                                LayoutMode: =LayoutMode.Auto
-                                Width: =Parent.Width
-                                ZIndex: =1
-
-                                Image3_2 As image:
-                                    Height: =35
-                                    Image: =database
-                                    Width: =35
-                                    ZIndex: =1
-
-                                Label8_4 As label:
-                                    Align: =Align.Center
-                                    FontWeight: =FontWeight.Semibold
-                                    PaddingBottom: =0
-                                    Text: ="Manage Field Assignment"
-                                    Width: =Parent.Width
-                                    ZIndex: =2
-
-                                Label8_5 As label:
-                                    Align: =Align.Center
-                                    Height: =30
-                                    PaddingTop: =0
-                                    Size: =10
-                                    Text: ="Decide who can edit which field"
-                                    Width: =Parent.Width
-                                    ZIndex: =3
-
-                            Btn_FieldAssgnment As button:
-                                BorderColor: |-
-                                    =//ColorFade(RGBA(107, 29, 94,1),60%)
-                                    Color.White
-                                Color: =RGBA(107, 29, 94, 1)
-                                DisabledFill: =RGBA(255, 255, 255, 1)
-                                Fill: =RGBA(0, 0, 0, 0)
-                                FontWeight: =FontWeight.Bold
-                                Height: =Parent.Height
-                                HoverBorderColor: =RGBA(107, 29, 94, 1)
-                                HoverColor: =RGBA(0, 0, 0, 0)
-                                HoverFill: =RGBA(0, 0, 0, 0)
-                                PressedFill: =//Self.Color
-                                Size: =10.5
-                                Text: =""
-                                Width: =Parent.Width
-                                ZIndex: =2
+                        "'Card compomnent_1' As 'Card compomnent'":
+                            Height: =Parent.Height
+                            image: =database
+                            LayoutMinHeight: =640
+                            LayoutMinWidth: =640
+                            MainText: ="Manage Field Assignment"
+                            SecondaryText: ="Describe Who can edit Which Field"
+                            Width: =Parent.Width
 
