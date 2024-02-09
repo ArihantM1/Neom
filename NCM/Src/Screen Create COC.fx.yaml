@@ -46,7 +46,7 @@
     Container1 As groupContainer.horizontalAutoLayoutContainer:
         DropShadow: =DropShadow.Bold
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =Parent.Height*.8
+        Height: =Parent.Height*.83
         LayoutMode: =LayoutMode.Auto
         LayoutOverflowY: =LayoutOverflow.Scroll
         Width: =Parent.Width*.83
@@ -83,7 +83,7 @@
                     BorderColor: =RGBA(107, 29, 94, 1)
                     BorderStyle: =BorderStyle.None
                     Color: =RGBA(107, 29, 94, 1)
-                    Default: =""
+                    Default: ="Create New"
                     Height: =Parent.Height-Rectangle4.Height
                     Items: =RadioOptions
                     Layout: =Layout.Horizontal
@@ -105,6 +105,44 @@
                     Width: =Parent.Width*.9
                     ZIndex: =2
 
+            Container30 As groupContainer.verticalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =Parent.Width*.04
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Visible: |
+                    =If(Radio1.Selected.Value = "Duplicate Existing", true, false)
+                ZIndex: =2
+
+                Label5_11 As label:
+                    Align: =Align.Right
+                    AlignInContainer: =AlignInContainer.Center
+                    Size: =12
+                    Text: |-
+                        ="Select COC:"
+                    Width: =Label5.Width
+                    ZIndex: =1
+
+                Dropdown2_7 As dropdown:
+                    AlignInContainer: =AlignInContainer.Center
+                    BorderColor: =RGBA(219, 200, 216, 1)
+                    ChevronBackground: =RGBA(255, 255, 255, 1)
+                    ChevronFill: =RGBA(107, 29, 94, 1)
+                    ChevronHoverBackground: =RGBA(107, 29, 94, 1)
+                    Color: =RGBA(107, 29, 94, 1)
+                    Default: ="Select a Supplier"
+                    Height: =30
+                    HoverFill: |-
+                        =ColorValue("#9e6c97")
+                    Items: =["--Select a Call off Contact to duplicate--","Expired","Active"]
+                    PressedFill: =RGBA(158, 108, 151, 1)
+                    SelectionFill: =RGBA(107, 29, 94, 1)
+                    Size: =12
+                    Width: =Parent.Width*.85
+                    ZIndex: =2
+
             Container6 As groupContainer.horizontalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
                 FillPortions: =0
@@ -113,7 +151,7 @@
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
-                ZIndex: =2
+                ZIndex: =3
 
                 Label5 As label:
                     Align: =Align.Right
@@ -172,7 +210,7 @@
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
-                ZIndex: =3
+                ZIndex: =4
 
                 Container9_1 As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
@@ -189,7 +227,7 @@
                         Align: =Align.Right
                         Size: =12
                         Text: |-
-                            ="Services :"
+                            ="Services:"
                         Width: =Label5.Width
                         ZIndex: =1
 
@@ -203,7 +241,7 @@
                         Height: =30
                         HoverFill: |-
                             =ColorValue("#9e6c97")
-                        Items: =["--Select a Supplier--","Expired","Active"]
+                        Items: =["--Select a Service--","Expired","Active"]
                         PressedFill: =RGBA(158, 108, 151, 1)
                         SelectionFill: =RGBA(107, 29, 94, 1)
                         Size: =12
@@ -243,7 +281,15 @@
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
-                ZIndex: =4
+                ZIndex: =5
+
+                Label5_6 As label:
+                    Align: =Align.Right
+                    Size: =12
+                    Text: |-
+                        ="Currency:"
+                    Width: =Label5.Width
+                    ZIndex: =1
 
                 Dropdown2_6 As dropdown:
                     AlignInContainer: =AlignInContainer.Center
@@ -256,7 +302,7 @@
                     Height: =30
                     HoverFill: |-
                         =ColorValue("#9e6c97")
-                    Items: =["--Select a Supplier--","Expired","Active"]
+                    Items: =["--Select a Currancy--","Expired","Active"]
                     PressedFill: =RGBA(158, 108, 151, 1)
                     SelectionFill: =RGBA(107, 29, 94, 1)
                     Size: =12
@@ -283,7 +329,7 @@
                     Height: =30
                     HoverFill: |-
                         =ColorValue("#9e6c97")
-                    Items: =["--Select a Supplier--","Expired","Active"]
+                    Items: =["--Select --","Expired","Active"]
                     PressedFill: =RGBA(158, 108, 151, 1)
                     SelectionFill: =RGBA(107, 29, 94, 1)
                     Size: =12
@@ -297,7 +343,7 @@
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
-                ZIndex: =5
+                ZIndex: =6
 
                 Container9_3 As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
@@ -323,7 +369,7 @@
                         BorderColor: =RGBA(219, 200, 216, 1)
                         Default: =""
                         Height: =Parent.Height*.9
-                        HintText: ="--Enter the name of Contract--"
+                        HintText: ="--Description of the Contract--"
                         HoverBorderColor: =RGBA(107, 29, 94, 1)
                         HoverColor: =RGBA(107, 29, 94, 1)
                         HoverFill: =RGBA(219, 200, 216, 1)
@@ -344,7 +390,7 @@
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
-                ZIndex: =6
+                ZIndex: =7
 
                 Container9_4 As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.Center
@@ -369,7 +415,7 @@
                         BasePaletteColor: =RGBA(158, 108, 151, 1)
                         DisplayMode: =DisplayMode.Edit
                         FontColor: =RGBA(107, 29, 94, 1)
-                        FontSize: =12
+                        FontSize: =14
                         FontWeight: =FontWeight.Bold
                         Format: ='DatePickerCanvas.Format'.Short
                         Height: =30
@@ -384,15 +430,15 @@
                         Align: =Align.Right
                         Size: =12
                         Text: |-
-                            ="Start Date: "
-                        Width: =Label5.Width
+                            ="End Date: "
+                        Width: =Label5_1.Width
                         ZIndex: =3
 
                     "DatePickerCanvas1_1 As 'Date picker'":
                         BasePaletteColor: =RGBA(158, 108, 151, 1)
                         DisplayMode: =DisplayMode.Edit
                         FontColor: =RGBA(107, 29, 94, 1)
-                        FontSize: =12
+                        FontSize: =14
                         FontWeight: =FontWeight.Bold
                         Format: ='DatePickerCanvas.Format'.Short
                         Height: =30
@@ -406,83 +452,104 @@
             Container6_5 As groupContainer.horizontalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
                 FillPortions: =0
-                Height: =Parent.Width*.08
-                LayoutMinHeight: =100
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                ZIndex: =7
-
-                Container9_5 As groupContainer.horizontalAutoLayoutContainer:
-                    DropShadow: =DropShadow.None
-                    FillPortions: =0
-                    Height: =Parent.Height
-                    LayoutAlignItems: =LayoutAlignItems.Center
-                    LayoutMinHeight: =0
-                    LayoutMinWidth: =250
-                    LayoutMode: =LayoutMode.Auto
-                    Width: =Parent.Width*.50
-                    ZIndex: =1
-
-            Container6_6 As groupContainer.horizontalAutoLayoutContainer:
-                DropShadow: =DropShadow.None
-                FillPortions: =0
-                Height: =Parent.Width*.07
+                Height: =Parent.Width*.04
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 ZIndex: =8
 
-            Container6_7 As groupContainer.horizontalAutoLayoutContainer:
+                Label5_8 As label:
+                    Align: =Align.Right
+                    AlignInContainer: =AlignInContainer.Center
+                    Size: =12
+                    Text: |-
+                        ="Created On:"
+                    Width: =Label5.Width
+                    ZIndex: =1
+
+                DatePicker1 As datepicker:
+                    AlignInContainer: =AlignInContainer.Center
+                    BorderColor: =RGBA(219, 200, 216, 1)
+                    DisabledBorderColor: =RGBA(219, 200, 216, 1)
+                    DisabledColor: =RGBA(107, 29, 94, 1)
+                    DisabledFill: =RGBA(255, 255, 255, 1)
+                    DisplayMode: =DisplayMode.Disabled
+                    Height: =30
+                    IconBackground: =Color.White
+                    IconFill: |-
+                        =ColorValue("#6b1d5e")
+                    Size: =12
+                    Width: =Dropdown2_2.Width
+                    ZIndex: =2
+
+                Label5_10 As label:
+                    Align: =Align.Right
+                    AlignInContainer: =AlignInContainer.Center
+                    Size: =12
+                    Text: |-
+                        ="Created By:"
+                    Width: =Label5_1.Width
+                    ZIndex: =3
+
+                TextInput1_2 As text:
+                    AlignInContainer: =AlignInContainer.Center
+                    BorderColor: =RGBA(219, 200, 216, 1)
+                    Default: =User().FullName
+                    DisabledBorderColor: =RGBA(219, 200, 216, 1)
+                    DisabledColor: =RGBA(107, 29, 94, 1)
+                    DisabledFill: =RGBA(255, 255, 255, 1)
+                    DisplayMode: =DisplayMode.Disabled
+                    Height: =30
+                    HintText: =""
+                    HoverBorderColor: =RGBA(107, 29, 94, 1)
+                    HoverColor: =RGBA(107, 29, 94, 1)
+                    HoverFill: =RGBA(219, 200, 216, 1)
+                    PaddingLeft: =10
+                    PressedColor: =RGBA(107, 29, 94, 1)
+                    PressedFill: =RGBA(255, 255, 255, 1)
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Size: =12
+                    Width: =Dropdown2_4.Width
+                    ZIndex: =4
+
+            Container31 As groupContainer.horizontalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
-                FillPortions: =0
-                Height: =Parent.Width*.07
+                LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
+                PaddingLeft: =80
+                PaddingRight: =80
                 ZIndex: =9
 
-                Container9_7 As groupContainer.horizontalAutoLayoutContainer:
-                    DropShadow: =DropShadow.None
-                    FillPortions: =0
-                    Height: =Parent.Height
-                    LayoutAlignItems: =LayoutAlignItems.Center
-                    LayoutMinHeight: =0
-                    LayoutMinWidth: =250
-                    LayoutMode: =LayoutMode.Auto
-                    Width: =Parent.Width*.50
+                Button4 As button:
+                    AlignInContainer: =AlignInContainer.Center
+                    BorderColor: =RGBA(219, 200, 216, 1)
+                    Color: =RGBA(107, 29, 94, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =35
+                    HoverColor: =RGBA(107, 29, 94, 1)
+                    HoverFill: =RGBA(219, 200, 216, 1)
+                    Size: =10
+                    Text: ="Cancel"
+                    Width: =Parent.Width*.07
                     ZIndex: =1
 
-            Container6_8 As groupContainer.horizontalAutoLayoutContainer:
-                DropShadow: =DropShadow.None
-                FillPortions: =0
-                Height: =Parent.Width*.07
-                LayoutMinHeight: =100
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                ZIndex: =10
-
-                Container9_8 As groupContainer.horizontalAutoLayoutContainer:
-                    DropShadow: =DropShadow.None
-                    FillPortions: =0
-                    Height: =Parent.Height
-                    LayoutAlignItems: =LayoutAlignItems.Center
-                    LayoutMinHeight: =0
-                    LayoutMinWidth: =250
-                    LayoutMode: =LayoutMode.Auto
-                    Width: =Parent.Width*.50
-                    ZIndex: =1
-
-                    Label5_8 As label:
-                        Text: |-
-                            ="End Date: "
-                        ZIndex: =1
-
-                    DatePicker1_1 As datepicker:
-                        BorderColor: =RGBA(175, 191, 224, 1)
-                        Height: =30
-                        IconBackground: =RGBA(107,29,94,100)
-                        Width: =Parent.Width-Label5_8.Width
-                        ZIndex: =2
+                Button4_1 As button:
+                    AlignInContainer: =AlignInContainer.Center
+                    BorderColor: =RGBA(107, 29, 94, 1)
+                    Color: =RGBA(107, 29, 94, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =35
+                    HoverFill: =RGBA(107, 29, 94, 1)
+                    OnSelect: =Navigate('Screen Preview COC')
+                    Size: =10
+                    Text: ="Next"
+                    Width: =Parent.Width*.07
+                    ZIndex: =2
 
     Circle1_1 As circle:
         Fill: =RGBA(107, 29, 94, 1)

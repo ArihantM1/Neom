@@ -21,7 +21,7 @@ App As appinfo:
         )
         );
         Set(cocview,true);
-        ClearCollect(RadioOptions, ["Create New", "Add Existing"]);
+        ClearCollect(RadioOptions, ["Create New", "Duplicate Existing"]);
         
         ClearCollect(CheckboxValue,["Expired August","Expired Contracts","Active Contracts","Draft Contracts"])
     Theme: =PowerAppsTheme
