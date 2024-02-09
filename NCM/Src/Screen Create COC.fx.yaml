@@ -302,7 +302,7 @@
                     Height: =30
                     HoverFill: |-
                         =ColorValue("#9e6c97")
-                    Items: =["--Select a Currancy--","Expired","Active"]
+                    Items: =["--Select a Currancy--","USD","SAR"]
                     PressedFill: =RGBA(158, 108, 151, 1)
                     SelectionFill: =RGBA(107, 29, 94, 1)
                     Size: =12
@@ -329,7 +329,7 @@
                     Height: =30
                     HoverFill: |-
                         =ColorValue("#9e6c97")
-                    Items: =["--Select --","Expired","Active"]
+                    Items: =["--Select --","Global","Country"]
                     PressedFill: =RGBA(158, 108, 151, 1)
                     SelectionFill: =RGBA(107, 29, 94, 1)
                     Size: =12
@@ -359,7 +359,8 @@
                     Label5_5 As label:
                         Align: =Align.Right
                         AlignInContainer: =AlignInContainer.Start
-                        PaddingTop: =10
+                        PaddingLeft: =0
+                        PaddingRight: =0
                         Text: |-
                             ="Description: "
                         Width: =Label5.Width
@@ -382,6 +383,33 @@
                         Size: =12
                         Width: =Dropdown2_4.Width
                         ZIndex: =2
+
+                    Label5_12 As label:
+                        Align: =Align.Right
+                        AlignInContainer: =AlignInContainer.Start
+                        Size: =12
+                        Text: |-
+                            ="Countrues: "
+                        Width: =Label5_1.Width
+                        ZIndex: =3
+
+                    Dropdown2_8 As dropdown:
+                        AlignInContainer: =AlignInContainer.Start
+                        BorderColor: =RGBA(219, 200, 216, 1)
+                        ChevronBackground: =RGBA(255, 255, 255, 1)
+                        ChevronFill: =RGBA(107, 29, 94, 1)
+                        ChevronHoverBackground: =RGBA(107, 29, 94, 1)
+                        Color: =RGBA(107, 29, 94, 1)
+                        Default: ="Select a Supplier"
+                        Height: =30
+                        HoverFill: |-
+                            =ColorValue("#9e6c97")
+                        Items: =["--Select --","Global","Country"]
+                        PressedFill: =RGBA(158, 108, 151, 1)
+                        SelectionFill: =RGBA(107, 29, 94, 1)
+                        Size: =12
+                        Width: =Parent.Width*.35
+                        ZIndex: =4
 
             Container6_4 As groupContainer.horizontalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
