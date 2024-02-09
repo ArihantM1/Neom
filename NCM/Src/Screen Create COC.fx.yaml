@@ -32,7 +32,8 @@
             ZIndex: =3
 
             Container10 As groupContainer.verticalAutoLayoutContainer:
-                Fill: =RGBA(107, 29, 94, 1)
+                DropShadow: =DropShadow.None
+                Fill: =RGBA(255, 255, 255, 1)
                 FillPortions: =0
                 Height: =Parent.Height*.20
                 LayoutDirection: =LayoutDirection.Vertical
@@ -64,6 +65,7 @@
 
             Container5 As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.Center
+                DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =Parent.Height*.10
                 LayoutAlignItems: =LayoutAlignItems.End
@@ -94,9 +96,10 @@
                     ZIndex: =1
 
                 Rectangle4 As rectangle:
-                    Fill: =RGBA(107, 29, 94, 1)
-                    Height: =10
-                    Width: =Parent.Width
+                    AlignInContainer: =AlignInContainer.Center
+                    Fill: =RGBA(219, 219, 219, 1)
+                    Height: =2
+                    Width: =Parent.Width*.9
                     ZIndex: =2
 
             Container6 As groupContainer.horizontalAutoLayoutContainer:
@@ -383,4 +386,56 @@
                         IconBackground: =RGBA(107,29,94,100)
                         Width: =Parent.Width-Label5_8.Width
                         ZIndex: =2
+
+    Circle1_1 As circle:
+        Fill: =RGBA(107, 29, 94, 1)
+        Height: =Circle1.Height
+        Width: =Circle1.Width
+        X: =Container1.X-Parent.Width*.05-Self.Width
+        Y: =Circle1.Height+Circle1.Y+Parent.Height*.09
+        ZIndex: =4
+
+    Circle1 As circle:
+        BorderStyle: =BorderStyle.None
+        Fill: =RGBA(107, 29, 94, 1)
+        Height: =70
+        Width: =70
+        X: =Container1.X-Parent.Width*.065-Self.Width
+        Y: |
+            =Container10.Height*.9
+        ZIndex: =5
+
+    Icon5 As icon.Flag:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =40
+        Icon: =Icon.Flag
+        Width: =40
+        X: =Circle1.X+(Circle1.Width-Self.Width)/2
+        Y: =Circle1.Y+(Circle1.Height-Self.Height)/2
+        ZIndex: =6
+
+    Rectangle7 As rectangle:
+        BorderStyle: =BorderStyle.None
+        Fill: =RGBA(107, 29, 94, 1)
+        Height: =10
+        Width: =Container1.X-Circle1.Width-Circle1.X-Parent.Width*0.0
+        X: =Circle1.X+Circle1.Width+(Container1.X-Circle1.X-Circle1.Width-Self.Width)/2
+        Y: =Circle1.Y+(Circle1.Height-Self.Height)/2
+        ZIndex: =7
+
+    Label8 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Text: ="Overview"
+        X: =Circle1.X+(Circle1.Width-Self.Width)/2
+        Y: =Circle1.Y+Circle1.Height
+        ZIndex: =8
+
+    Label8_1 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Text: ="Document "
+        X: =Circle1_1.X+(Circle1_1.Width-Self.Width)/2
+        Y: =Circle1_1.Y+Circle1_1.Height
+        ZIndex: =9
 
