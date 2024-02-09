@@ -245,15 +245,6 @@
                 LayoutMode: =LayoutMode.Auto
                 ZIndex: =4
 
-                Label5_6 As label:
-                    Align: =Align.Right
-                    AlignInContainer: =AlignInContainer.Center
-                    Size: =12
-                    Text: |-
-                        ="COC Currency: "
-                    Width: =Label5.Width
-                    ZIndex: =1
-
                 Dropdown2_6 As dropdown:
                     AlignInContainer: =AlignInContainer.Center
                     BorderColor: =RGBA(219, 200, 216, 1)
@@ -531,14 +522,6 @@
         Y: =Circle1.Y+(Circle1.Height-Self.Height)/2
         ZIndex: =6
 
-    Label8_1 As label:
-        Align: =Align.Center
-        FontWeight: =FontWeight.Bold
-        Text: ="Document "
-        X: =Circle1_1.X+(Circle1_1.Width-Self.Width)/2
-        Y: =Circle1_1.Y+Circle1_1.Height
-        ZIndex: =7
-
     Icon5_1 As icon.Flag:
         Color: =RGBA(255, 255, 255, 1)
         DisplayMode: =DisplayMode.View
@@ -548,15 +531,6 @@
         X: =Circle1_1.X+(Circle1_1.Width-Self.Width)/2
         Y: =Circle1_1.Y+(Circle1_1.Height-Self.Height)/2
         ZIndex: =8
-
-    Label8 As label:
-        Align: =Align.Center
-        FontWeight: =FontWeight.Bold
-        Height: =35
-        Text: ="Overview"
-        X: =Circle1.X+(Circle1.Width-Self.Width)/2
-        Y: =Circle1.Y+Circle1.Height
-        ZIndex: =10
 
     Rectangle6 As rectangle:
         Fill: =RGBA(107, 29, 94, 1)
