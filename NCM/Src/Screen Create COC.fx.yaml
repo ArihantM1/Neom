@@ -167,11 +167,11 @@
                     ChevronFill: =RGBA(107, 29, 94, 1)
                     ChevronHoverBackground: =RGBA(107, 29, 94, 1)
                     Color: =RGBA(107, 29, 94, 1)
-                    Default: ="Select a Supplier"
+                    Default: ="--Select a Supplier--"
                     Height: =30
                     HoverFill: |-
                         =ColorValue("#9e6c97")
-                    Items: =["--Select a Supplier--","Expired","Active"]
+                    Items: =CM_ClientData
                     PressedFill: =RGBA(158, 108, 151, 1)
                     SelectionFill: =RGBA(107, 29, 94, 1)
                     Size: =12
@@ -196,7 +196,7 @@
                     Height: =30
                     HoverFill: |-
                         =ColorValue("#9e6c97")
-                    Items: =["--Select a Service--","Expired","Active"]
+                    Items: =CM_Service_Types
                     PressedFill: =RGBA(158, 108, 151, 1)
                     SelectionFill: =RGBA(107, 29, 94, 1)
                     Size: =12
@@ -241,7 +241,7 @@
                         Height: =30
                         HoverFill: |-
                             =ColorValue("#9e6c97")
-                        Items: =["--Select a Service--","Expired","Active"]
+                        Items: =Filter(CM_Services, Service_Type_fk.Value= Dropdown2_3.Selected.Service_Type)
                         PressedFill: =RGBA(158, 108, 151, 1)
                         SelectionFill: =RGBA(107, 29, 94, 1)
                         Size: =12
