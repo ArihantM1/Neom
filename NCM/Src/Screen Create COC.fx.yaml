@@ -534,9 +534,25 @@
 
     Rectangle6 As rectangle:
         Fill: =RGBA(107, 29, 94, 1)
-        Height: =-Label8.Y-Label8.Height+Circle1_1.Y-Parent.Height*0.01
+        Height: =-Label12.Y-Label12.Height+Circle1_1.Y-Parent.Height*0.01
         Width: =3
-        X: =Label8.X+(Label8.Width-Self.Width)/2
-        Y: =Label8.Y+Label8.Height
+        X: =Label12.X+(Label12.Width-Self.Width)/2
+        Y: =Label12.Y+Label12.Height
         ZIndex: =11
+
+    Label12 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Text: ="Overview"
+        X: =Circle1.X+(Circle1.Width-Self.Width)/2
+        Y: =Circle1.Y+Circle1.Height
+        ZIndex: =12
+
+    Label12_1 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Text: ="Documents"
+        X: =Circle1_1.X+(Circle1_1.Width-Self.Width)/2
+        Y: =Circle1_1.Y+Circle1_1.Height
+        ZIndex: =13
 
