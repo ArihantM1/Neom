@@ -121,7 +121,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "ConZebLogo_1",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 176,
+                "PublishOrderIndex": 173,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -453,7 +453,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "ConMainHeader_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 175,
+            "PublishOrderIndex": 172,
             "Rules": [
               {
                 "Category": "Design",
@@ -749,7 +749,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "ConMainHeader_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 177,
+            "PublishOrderIndex": 174,
             "Rules": [
               {
                 "Category": "Design",
@@ -1047,7 +1047,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "ConMainHeader_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 178,
+            "PublishOrderIndex": 175,
             "Rules": [
               {
                 "Category": "Design",
@@ -1296,7 +1296,7 @@
                   "PaddingBottom",
                   "PaddingLeft"
                 ],
-                "ControlUniqueId": "205",
+                "ControlUniqueId": "11",
                 "DynamicProperties": [
                   {
                     "ControlPropertyState": "FillPortions",
@@ -1352,7 +1352,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "ConLoggedinuserimg_1",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 180,
+                "PublishOrderIndex": 177,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -1678,7 +1678,7 @@
                     "NameMapSourceSchema": "?"
                   }
                 ],
-                "ControlUniqueId": "11",
+                "ControlUniqueId": "12",
                 "DynamicProperties": [
                   {
                     "ControlPropertyState": "FillPortions",
@@ -1741,7 +1741,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "ConLoggedinuserimg_1",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 181,
+                "PublishOrderIndex": 178,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -2121,7 +2121,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "ConMainHeader_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 179,
+            "PublishOrderIndex": 176,
             "Rules": [
               {
                 "Category": "Design",
@@ -2359,7 +2359,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "HeaderCMP_withoutNavbar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 174,
+        "PublishOrderIndex": 171,
         "Rules": [
           {
             "Category": "Design",
@@ -2539,7 +2539,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638429866579941196",
+    "LastModifiedTimestamp": "638430507473498498",
     "Name": "HeaderCMP_withoutNavbar",
     "Rules": [
       {
@@ -2598,7 +2598,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638429866579941196",
+  "LastModifiedTimestamp": "638430507473498498",
   "Name": "82ce9062a6a5495bad7260f812f08727",
   "OverridableProperties": {},
   "Version": "1.0"

@@ -48,3 +48,56 @@
                 LayoutMode: =LayoutMode.Auto
                 ZIndex: =2
 
+                Container28 As groupContainer.verticalAutoLayoutContainer:
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    ZIndex: =1
+
+                Container26 As groupContainer.verticalAutoLayoutContainer:
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    ZIndex: =2
+
+                Container27 As groupContainer.verticalAutoLayoutContainer:
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    ZIndex: =3
+
+                    Canvas1 As fluidGrid.fluidGridWithBlankCard:
+                        BorderThickness: =0
+                        Height: =Parent.Height - Self.Y
+                        LayoutMinHeight: =250
+                        LayoutMinWidth: =100
+                        Width: =Parent.Width
+                        Y: =
+                        ZIndex: =1
+
+                        DataCard1 As dataCard:
+                            BorderColor: =RGBA(0, 0, 0, 1)
+                            BorderStyle: =BorderStyle.Solid
+                            BorderThickness: =0
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =Parent.Height
+                            Width: =Parent.Width
+                            X: =0
+                            Y: =0
+                            ZIndex: =1
+
+                            HtmlText1 As htmlViewer:
+                                Height: =Parent.Height
+                                HtmlText: |-
+                                    ="<h1> 
+                                    <char32>Contract Form</h1>
+                                    <br> HI "&Upper(TextInput1.Text)&" and this contract is made on "&Today()&" and  Contract is made for  " &" . This contract is valid for 4 year . <br/> The term and Condition are as follows:<br/>
+                                    <br/>
+                                    "
+                                Width: =Parent.Width
+                                ZIndex: =1
+
