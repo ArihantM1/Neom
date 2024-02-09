@@ -227,6 +227,7 @@
                                     HoverBorderColor: =RGBA(107, 29, 94, 1)
                                     HoverColor: =RGBA(107, 29, 94, 1)
                                     HoverFill: =RGBA(255, 255, 255, 1)
+                                    OnSelect: =Navigate('Screen Create COC')
                                     Size: =10.5
                                     Text: ="Create New Contract"
                                     Width: =180

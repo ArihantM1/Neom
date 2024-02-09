@@ -389,7 +389,8 @@
                         AlignInContainer: =AlignInContainer.Start
                         Size: =12
                         Text: |-
-                            ="Countrues: "
+                            ="Countries: "
+                        Visible: =If(Dropdown2_5.SelectedText.Value="Country",true,false)
                         Width: =Label5_1.Width
                         ZIndex: =3
 
@@ -404,10 +405,11 @@
                         Height: =30
                         HoverFill: |-
                             =ColorValue("#9e6c97")
-                        Items: =["--Select --","Global","Country"]
+                        Items: =["--Select Country --","Global","Country"]
                         PressedFill: =RGBA(158, 108, 151, 1)
                         SelectionFill: =RGBA(107, 29, 94, 1)
                         Size: =12
+                        Visible: =If(Dropdown2_5.SelectedText.Value="Country",true,false)
                         Width: =Parent.Width*.35
                         ZIndex: =4
 
@@ -561,6 +563,25 @@
                     Height: =35
                     HoverColor: =RGBA(107, 29, 94, 1)
                     HoverFill: =RGBA(219, 200, 216, 1)
+                    OnSelect: |+
+                        =Reset(Dropdown2_3);
+                        Reset(Dropdown2_2);
+                        Reset(Dropdown2_4);
+                        Reset(Dropdown2_5);
+                        Reset(Dropdown2_6);
+                        Reset(Dropdown2_8);
+                        Reset(Dropdown2_7);
+                        Reset(TextInput1);
+                        Reset(TextInput1_1);
+                        Reset(DatePickerCanvas1);
+                        Reset(DatePickerCanvas1_1);
+                        
+                        Navigate('Screen Home')
+                        
+                        
+                        
+                        
+                        
                     Size: =10
                     Text: ="Cancel"
                     Width: =Parent.Width*.07
