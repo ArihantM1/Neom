@@ -132,11 +132,11 @@
                     ChevronFill: =RGBA(107, 29, 94, 1)
                     ChevronHoverBackground: =RGBA(107, 29, 94, 1)
                     Color: =RGBA(107, 29, 94, 1)
-                    Default: ="Select a Supplier"
+                    Default: ="--Select a Call off Contact to duplicate--"
                     Height: =30
                     HoverFill: |-
                         =ColorValue("#9e6c97")
-                    Items: =["--Select a Call off Contact to duplicate--","Expired","Active"]
+                    Items: =CM_ContractDetails
                     PressedFill: =RGBA(158, 108, 151, 1)
                     SelectionFill: =RGBA(107, 29, 94, 1)
                     Size: =12
@@ -302,7 +302,7 @@
                     Height: =30
                     HoverFill: |-
                         =ColorValue("#9e6c97")
-                    Items: =["--Select a Currancy--","USD","SAR"]
+                    Items: =["--Select a Currency--","USD","SAR"]
                     PressedFill: =RGBA(158, 108, 151, 1)
                     SelectionFill: =RGBA(107, 29, 94, 1)
                     Size: =12
