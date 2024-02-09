@@ -677,6 +677,7 @@
 
                                 Label9 As label:
                                     Align: =Align.Center
+                                    FontWeight: =FontWeight.Bold
                                     OnSelect: =Select(Parent)
                                     Size: =12
                                     Text: =ThisItem.Title
@@ -687,7 +688,7 @@
 
                                 Label9_1 As label:
                                     Align: =Align.Center
-                                    FontWeight: =FontWeight.Bold
+                                    FontWeight: =FontWeight.Semibold
                                     OnSelect: =Select(Parent)
                                     PaddingLeft: =10
                                     Text: =ThisItem.Contract_name
@@ -698,6 +699,7 @@
 
                                 Label9_2 As label:
                                     Align: =Align.Center
+                                    FontWeight: =FontWeight.Semibold
                                     OnSelect: =Select(Parent)
                                     Text: =ThisItem.Supplier.Value
                                     Width: =Label3_7.Width
@@ -707,6 +709,7 @@
 
                                 Label9_3 As label:
                                     Align: =Align.Center
+                                    FontWeight: =FontWeight.Semibold
                                     OnSelect: =Select(Parent)
                                     Text: =ThisItem.Service_Type_fk.Value
                                     Width: =Label3_8.Width
@@ -716,6 +719,7 @@
 
                                 Label9_4 As label:
                                     Align: =Align.Center
+                                    FontWeight: =FontWeight.Semibold
                                     OnSelect: =Select(Parent)
                                     Text: =ThisItem.Status.Value
                                     Width: =Label3_9.Width
@@ -725,6 +729,7 @@
 
                                 Label9_5 As label:
                                     Align: =Align.Center
+                                    FontWeight: =FontWeight.Semibold
                                     OnSelect: =Select(Parent)
                                     Text: =ThisItem.Applicable_to
                                     Width: =Label3_10.Width
@@ -734,10 +739,20 @@
 
                                 Label9_6 As label:
                                     Align: =Align.Center
+                                    FontWeight: =FontWeight.Semibold
                                     OnSelect: =Select(Parent)
                                     Text: =ThisItem.Applicable_to
                                     Width: =Label3_11.Width
                                     X: =Label3_11.X
                                     Y: =(GridGallery1.TemplateHeight-Self.Height)/2
                                     ZIndex: =7
+
+                                Rectangle8 As rectangle:
+                                    Fill: =RGBA(219, 200, 216, 1)
+                                    Height: =2
+                                    OnSelect: =Select(Parent)
+                                    Width: =Parent.Width*.9
+                                    X: =(Parent.Width-Self.Width)/2
+                                    Y: =GridGallery1.TemplateHeight
+                                    ZIndex: =8
 
