@@ -280,7 +280,7 @@
                                     Label6 As label:
                                         Height: =Parent.Height
                                         Size: =25
-                                        Text: ="9"
+                                        Text: =CountRows(CM_ContractDetails)
                                         Width: =Parent.Width*.7
                                         ZIndex: =1
 
@@ -330,7 +330,7 @@
                                     Label6_1 As label:
                                         Height: =Parent.Height
                                         Size: =25
-                                        Text: ="9"
+                                        Text: =CountIf(CM_ContractDetails,Text(Status.Value)="Expired")
                                         Width: =Parent.Width*.7
                                         ZIndex: =1
 
@@ -380,7 +380,7 @@
                                     Label6_2 As label:
                                         Height: =Parent.Height
                                         Size: =25
-                                        Text: ="9"
+                                        Text: =CountIf(CM_ContractDetails,Text(Status.Value)="Active")
                                         Width: =Parent.Width*.7
                                         ZIndex: =1
 
@@ -479,26 +479,21 @@
                                     Width: =Parent.Width*.11
                                     ZIndex: =1
 
-                                ComboBox1 As combobox:
+                                Dropdown2_9 As dropdown:
                                     BorderColor: =RGBA(219, 200, 216, 1)
                                     ChevronBackground: =RGBA(255, 255, 255, 1)
                                     ChevronFill: =RGBA(107, 29, 94, 1)
-                                    ChevronHoverBackground: =ColorFade(RGBA(107, 29, 94, 1), -20%)
-                                    ChevronHoverFill: =RGBA(107, 29, 94, 1)
+                                    ChevronHoverBackground: =Self.HoverBorderColor
                                     Color: =RGBA(107, 29, 94, 1)
-                                    DisplayFields: =["Value"]
                                     Height: =30
-                                    HoverFill: =ColorFade(RGBA(107, 29, 94, 1),80%)
-                                    IsSearchable: =false
-                                    Items: =["","Global","Regional","Local"]
-                                    PressedColor: =RGBA(107, 29, 94, 1)
-                                    PressedFill: =RGBA(255, 255, 255, 1)
-                                    SearchFields: =["Value"]
-                                    SearchItems: =[]
+                                    HoverColor: =RGBA(107, 29, 94, 1)
+                                    HoverFill: |-
+                                        =ColorFade  (ColorValue("#9e6c97"),70%)
+                                    Items: =[Blank(),"Global","Local","Regional"]
+                                    PressedFill: =RGBA(158, 108, 151, 1)
                                     SelectionFill: =RGBA(107, 29, 94, 1)
-                                    Size: =11
                                     Width: =220
-                                    ZIndex: =2
+                                    ZIndex: =3
 
                                 Label3_5 As label:
                                     Align: =Align.Center
@@ -509,23 +504,23 @@
                                     Size: =12
                                     Text: ="Status"
                                     Width: =Parent.Width*.07
-                                    ZIndex: =3
+                                    ZIndex: =4
 
                                 Dropdown2 As dropdown:
                                     BorderColor: =RGBA(219, 200, 216, 1)
                                     ChevronBackground: =RGBA(255, 255, 255, 1)
                                     ChevronFill: =RGBA(107, 29, 94, 1)
-                                    ChevronHoverBackground: =RGBA(107, 29, 94, 1)
+                                    ChevronHoverBackground: =Self.HoverBorderColor
                                     Color: =RGBA(107, 29, 94, 1)
                                     Height: =30
                                     HoverColor: =RGBA(107, 29, 94, 1)
                                     HoverFill: |-
-                                        =ColorValue("#9e6c97")
+                                        =ColorFade  (ColorValue("#9e6c97"),70%)
                                     Items: =[Blank(),"Expired","Active"]
                                     PressedFill: =RGBA(158, 108, 151, 1)
                                     SelectionFill: =RGBA(107, 29, 94, 1)
                                     Width: =220
-                                    ZIndex: =4
+                                    ZIndex: =5
 
                                 Container22 As groupContainer.horizontalAutoLayoutContainer:
                                     DropShadow: =DropShadow.None
@@ -536,7 +531,7 @@
                                     LayoutMinWidth: =250
                                     LayoutMode: =LayoutMode.Auto
                                     PaddingRight: =20
-                                    ZIndex: =5
+                                    ZIndex: =6
 
                                     Button1_1 As button:
                                         BorderColor: |-
@@ -549,7 +544,7 @@
                                         HoverFill: |-
                                             =ColorValue("#6b1d5e")
                                         OnSelect: |-
-                                            =Reset(ComboBox1);
+                                            =Reset(Dropdown2_9);
                                             Reset(Dropdown2)
                                         PressedBorderColor: |-
                                             =ColorValue("#6b1d5e")
@@ -679,7 +674,7 @@
                                     Align: =Align.Center
                                     FontWeight: =FontWeight.Bold
                                     OnSelect: =Select(Parent)
-                                    Size: =12
+                                    Size: =11
                                     Text: =ThisItem.Title
                                     Width: =Label3_4.Width
                                     X: =Label3_4.X
@@ -691,6 +686,7 @@
                                     FontWeight: =FontWeight.Semibold
                                     OnSelect: =Select(Parent)
                                     PaddingLeft: =10
+                                    Size: =11
                                     Text: =ThisItem.Contract_name
                                     Width: =Label3_6.Width
                                     X: =Label3_6.X
@@ -701,6 +697,7 @@
                                     Align: =Align.Center
                                     FontWeight: =FontWeight.Semibold
                                     OnSelect: =Select(Parent)
+                                    Size: =11
                                     Text: =ThisItem.Supplier.Value
                                     Width: =Label3_7.Width
                                     X: =Label3_7.X
@@ -711,6 +708,7 @@
                                     Align: =Align.Center
                                     FontWeight: =FontWeight.Semibold
                                     OnSelect: =Select(Parent)
+                                    Size: =11
                                     Text: =ThisItem.Service_Type_fk.Value
                                     Width: =Label3_8.Width
                                     X: =Label3_8.X
@@ -721,7 +719,8 @@
                                     Align: =Align.Center
                                     FontWeight: =FontWeight.Semibold
                                     OnSelect: =Select(Parent)
-                                    Text: =ThisItem.Applicable_to
+                                    Size: =11
+                                    Text: =ThisItem.Applicable_to.Value
                                     Width: =Label3_10.Width
                                     X: =Label3_10.X
                                     Y: =10
@@ -731,7 +730,8 @@
                                     Align: =Align.Center
                                     FontWeight: =FontWeight.Semibold
                                     OnSelect: =Select(Parent)
-                                    Text: =ThisItem.Applicable_to
+                                    Size: =11
+                                    Text: =If(ThisItem.Countries.Value=Blank(),"-",ThisItem.Countries.Value)
                                     Width: =Label3_11.Width
                                     X: =Label3_11.X
                                     Y: =(GridGallery1.TemplateHeight-Self.Height)/2
@@ -755,13 +755,12 @@
                                     FontWeight: =FontWeight.Bold
                                     Height: =40
                                     Label: =ThisItem.Status.Value
-                                    OnCheck: |
-                                        =UpdateIf(CM_ContractDetails,ID=ThisItem.ID,{Status:ThisItem.Status});
+                                    LabelPosition: ='Toggle.LabelPosition'.After
+                                    OnCheck: =
                                     OnSelect: =Select(Parent)
-                                    OnUncheck: |
-                                        =UpdateIf(CM_ContractDetails,ID=ThisItem.ID,{Status:ThisItem.Status});
+                                    OnUncheck: =
                                     Width: =Label3_9.Width
                                     X: =Label3_9.X
-                                    Y: =10
+                                    Y: =(GridGallery1.TemplateHeight-Self.Height)/2
                                     ZIndex: =9
 
