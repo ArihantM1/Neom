@@ -480,6 +480,8 @@
                                     ZIndex: =1
 
                                 Dropdown2_9 As dropdown:
+                                    AllowEmptySelection: |
+                                        =true
                                     BorderColor: =RGBA(219, 200, 216, 1)
                                     ChevronBackground: =RGBA(255, 255, 255, 1)
                                     ChevronFill: =RGBA(107, 29, 94, 1)
@@ -489,9 +491,10 @@
                                     HoverColor: =RGBA(107, 29, 94, 1)
                                     HoverFill: |-
                                         =ColorFade  (ColorValue("#9e6c97"),70%)
-                                    Items: =[Blank(),"Global","Local","Regional"]
+                                    Items: =["Global","Regional"]
                                     PressedFill: =RGBA(158, 108, 151, 1)
                                     SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
+                                    Size: =11
                                     Width: =220
                                     ZIndex: =3
 
@@ -507,6 +510,7 @@
                                     ZIndex: =4
 
                                 Dropdown2 As dropdown:
+                                    AllowEmptySelection: =true
                                     BorderColor: =RGBA(219, 200, 216, 1)
                                     ChevronBackground: =RGBA(255, 255, 255, 1)
                                     ChevronFill: =RGBA(107, 29, 94, 1)
@@ -519,6 +523,7 @@
                                     Items: =[Blank(),"Expired","Active"]
                                     PressedFill: =RGBA(158, 108, 151, 1)
                                     SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
+                                    Size: =11
                                     Width: =220
                                     ZIndex: =5
 
