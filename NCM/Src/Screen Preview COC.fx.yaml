@@ -24,6 +24,188 @@
         Y: =HeaderComponent_3.Y+HeaderComponent_3.Height+Parent.Height*.04
         ZIndex: =2
 
+        Container4_3 As groupContainer.horizontalAutoLayoutContainer:
+            DropShadow: =DropShadow.Bold
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =Parent.Height
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
+            ZIndex: =1
+
+            Container2_2 As groupContainer.horizontalAutoLayoutContainer:
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =1
+
+                Container9_2 As groupContainer.verticalAutoLayoutContainer:
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    ZIndex: =1
+
+                    Container23 As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Center
+                        FillPortions: =0
+                        Height: =Parent.Height*.1
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        PaddingLeft: =5
+                        PaddingRight: =5
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                        Label8_4 As label:
+                            FontWeight: =FontWeight.Bold
+                            Height: =Parent.Height
+                            Size: =18
+                            Text: ="EDIT"
+                            Width: =Parent.Width*.3
+                            ZIndex: =1
+
+                Container18_1 As groupContainer.horizontalAutoLayoutContainer:
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    ZIndex: =2
+
+                    Container23_1 As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Center
+                        FillPortions: =0
+                        Height: =Parent.Height*.1
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        PaddingLeft: =5
+                        PaddingRight: =5
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                        Label8_5 As label:
+                            FontWeight: =FontWeight.Bold
+                            Height: =Parent.Height
+                            Size: =18
+                            Text: ="PREVIEW"
+                            Width: =Parent.Width*.3
+                            ZIndex: =1
+
+                    Container26 As groupContainer.manualLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Center
+                        FillPortions: =0
+                        Height: =Parent.Height*.9
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =
+                        Width: =Parent.Width
+                        ZIndex: =2
+
+                        Canvas1 As fluidGrid.fluidGridWithBlankCard:
+                            BorderThickness: =0
+                            Height: =Parent.Height - Self.Y
+                            Width: =Parent.Width
+                            Y: =
+                            ZIndex: =1
+
+                            DataCard1 As dataCard:
+                                BorderColor: =RGBA(0, 0, 0, 1)
+                                BorderStyle: =BorderStyle.Solid
+                                BorderThickness: =0
+                                DisplayMode: =DisplayMode.Edit
+                                Fill: =RGBA(0, 0, 0, 0)
+                                Height: =Parent.Height
+                                Width: =Parent.Width
+                                X: =0
+                                Y: =0
+                                ZIndex: =1
+
+                                HtmlText1_1 As htmlViewer:
+                                    Height: =Parent.Height
+                                    HtmlText: |-
+                                        ="<h1> 
+                                        <char32>Contract Form</h1>
+                                        <br> HI "&Upper(TextInput1.Text)&" and this contract is made on "&Today()&" and  Contract is made for  " &" . This contract is valid for 4 year . <br/> The term and Condition are as follows:<br/>
+                                        <br/>
+                                        
+                                        <h1> 
+                                        <char32>Contract Form</h1>
+                                        <br> HI "&Upper(TextInput1.Text)&" and this contract is made on "&Today()&" and  Contract is made for  " &" . This contract is valid for 4 year . <br/> The term and Condition are as follows:<br/>
+                                        <br/><h1> 
+                                        <char32>Contract Form</h1>
+                                        <br> HI "&Upper(TextInput1.Text)&" and this contract is made on "&Today()&" and  Contract is made for  " &" . This contract is valid for 4 year . <br/> The term and Condition are as follows:<br/>
+                                        <br/><h1> 
+                                        <char32>Contract Form</h1>
+                                        <br> HI "&Upper(TextInput1.Text)&" and this contract is made on "&Today()&" and  Contract is made for  " &" . This contract is valid for 4 year . <br/> The term and Condition are as follows:<br/>
+                                        <br/><h1> 
+                                        <char32>Contract Form</h1>
+                                        <br> HI "&Upper(TextInput1.Text)&" and this contract is made on "&Today()&" and  Contract is made for  " &" . This contract is valid for 4 year . <br/> The term and Condition are as follows:<br/>
+                                        <br/><h1> 
+                                        <char32>Contract Form</h1>
+                                        <br> HI "&Upper(TextInput1.Text)&" and this contract is made on "&Today()&" and  Contract is made for  " &" . This contract is valid for 4 year . <br/> The term and Condition are as follows:<br/>
+                                        <br/><h1> 
+                                        <char32>Contract Form</h1>
+                                        <br> HI "&Upper(TextInput1.Text)&" and this contract is made on "&Today()&" and  Contract is made for  " &" . This contract is valid for 4 year . <br/> The term and Condition are as follows:<br/>
+                                        <br/><h1> 
+                                        <char32>Contract Form</h1>
+                                        <br> HI "&Upper(TextInput1.Text)&" and this contract is made on "&Today()&" and  Contract is made for  " &" . This contract is valid for 4 year . <br/> The term and Condition are as follows:<br/>
+                                        <br/><h1> 
+                                        <char32>Contract Form</h1>
+                                        <br> HI "&Upper(TextInput1.Text)&" and this contract is made on "&Today()&" and  Contract is made for  " &" . This contract is valid for 4 year . <br/> The term and Condition are as follows:<br/>
+                                        <br/>
+                                        "
+                                    Width: =Parent.Width
+                                    ZIndex: =1
+
+            Container31_1 As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =Parent.Height*.2
+                LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingLeft: =80
+                PaddingRight: =80
+                Width: =Parent.Width
+                ZIndex: =2
+
+                Button4_2 As button:
+                    AlignInContainer: =AlignInContainer.Center
+                    BorderColor: =RGBA(219, 200, 216, 1)
+                    Color: =RGBA(107, 29, 94, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =35
+                    HoverColor: =RGBA(107, 29, 94, 1)
+                    HoverFill: =RGBA(219, 200, 216, 1)
+                    OnSelect: |+
+                        =
+                        Navigate('Screen Create COC')
+                        
+                        
+                        
+                        
+                        
+                    Size: =10
+                    Text: ="Cancel"
+                    Width: =Parent.Width*.07
+                    ZIndex: =1
+
+                Button4_3 As button:
+                    AlignInContainer: =AlignInContainer.Center
+                    BorderColor: =RGBA(107, 29, 94, 1)
+                    Color: =RGBA(107, 29, 94, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =35
+                    HoverFill: =RGBA(107, 29, 94, 1)
+                    OnSelect: =Navigate('Screen Preview COC')
+                    Size: =10
+                    Text: ="Next"
+                    Width: =Parent.Width*.07
+                    ZIndex: =2
+
     Rectangle7_2 As rectangle:
         BorderStyle: =BorderStyle.None
         DisplayMode: =DisplayMode.View
