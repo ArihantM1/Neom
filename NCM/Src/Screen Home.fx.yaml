@@ -659,7 +659,14 @@
                                 DelayItemLoading: =true
                                 FillPortions: =0
                                 Height: =380
-                                Items: =CM_ContractDetails
+                                Items: |-
+                                    =If(
+                                        IsBlank(Dropdown2.SelectedText.Value),
+                                        CM_ContractDetails,
+                                        Filter(
+                                            CM_ContractDetails,Status.Value=Dropdown2.SelectedText.Value
+                                        )
+                                    )
                                 Layout: =Layout.Vertical
                                 LayoutMinHeight: =287
                                 LayoutMinWidth: =320

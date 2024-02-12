@@ -7973,7 +7973,14 @@
     "GridGallery1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        "Items",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "CM_ContractDetails",
+          "InvariantPropertyName": "Items",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "WrapCount",
         {
           "AFDDataSourceName": "",
