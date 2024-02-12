@@ -127,6 +127,7 @@
 
                 Dropdown2_7 As dropdown:
                     AlignInContainer: =AlignInContainer.Center
+                    AllowEmptySelection: =true
                     BorderColor: =RGBA(219, 200, 216, 1)
                     ChevronBackground: =RGBA(255, 255, 255, 1)
                     ChevronFill: =RGBA(107, 29, 94, 1)
@@ -136,9 +137,10 @@
                     Height: =30
                     HoverFill: |-
                         =ColorValue("#9e6c97")
-                    Items: =CM_ContractDetails
+                    Items: =contractName
+                    OnSelect: =Set(contractName,CM_ContractDetails)
                     PressedFill: =RGBA(158, 108, 151, 1)
-                    SelectionFill: =RGBA(107, 29, 94, 1)
+                    SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
                     Size: =12
                     Width: =Parent.Width*.85
                     ZIndex: =2
@@ -172,11 +174,11 @@
                     Height: =30
                     HoverFill: |-
                         =ColorValue("#9e6c97")
-                    Items: =ClientsData
+                    Items: =CM_ClientData
                     OnChange: =Set(Items,CM_ClientData);
                     OnSelect: =Set(ClientsData,CM_ClientData);
                     PressedFill: =RGBA(158, 108, 151, 1)
-                    SelectionFill: =RGBA(107, 29, 94, 1)
+                    SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
                     Size: =12
                     Width: =Parent.Width*.35
                     ZIndex: =2
@@ -203,7 +205,7 @@
                     Items: =ServiceTypes
                     OnSelect: =Set(ServiceTypes,CM_Service_Types)
                     PressedFill: =RGBA(158, 108, 151, 1)
-                    SelectionFill: =RGBA(107, 29, 94, 1)
+                    SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
                     Size: =12
                     Width: =Parent.Width*.35
                     ZIndex: =4
@@ -250,7 +252,7 @@
                         Items: =services
                         OnSelect: =Set(services,Filter(CM_Services, Service_Type_fk.Value= Dropdown2_3.Selected.Service_Type))
                         PressedFill: =RGBA(158, 108, 151, 1)
-                        SelectionFill: =RGBA(107, 29, 94, 1)
+                        SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
                         Size: =12
                         Width: =Parent.Width*.35
                         ZIndex: =2
@@ -311,7 +313,7 @@
                         =ColorValue("#9e6c97")
                     Items: =["--Select a Currency--","USD","SAR"]
                     PressedFill: =RGBA(158, 108, 151, 1)
-                    SelectionFill: =RGBA(107, 29, 94, 1)
+                    SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
                     Size: =12
                     Width: =Parent.Width*.35
                     ZIndex: =2
@@ -338,7 +340,7 @@
                         =ColorValue("#9e6c97")
                     Items: =["--Select --","Global","Country"]
                     PressedFill: =RGBA(158, 108, 151, 1)
-                    SelectionFill: =RGBA(107, 29, 94, 1)
+                    SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
                     Size: =12
                     Width: =Parent.Width*.35
                     ZIndex: =4
@@ -414,7 +416,7 @@
                             =ColorValue("#9e6c97")
                         Items: =["--Select Country --","Global","Country"]
                         PressedFill: =RGBA(158, 108, 151, 1)
-                        SelectionFill: =RGBA(107, 29, 94, 1)
+                        SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
                         Size: =12
                         Visible: =If(Dropdown2_5.SelectedText.Value="Country",true,false)
                         Width: =Parent.Width*.35
@@ -515,6 +517,7 @@
                     IconBackground: =Color.White
                     IconFill: |-
                         =ColorValue("#6b1d5e")
+                    PaddingTop: =5
                     Size: =12
                     Width: =Dropdown2_2.Width
                     ZIndex: =2
@@ -582,7 +585,7 @@
                         Reset(TextInput1_1);
                         Reset(DatePickerCanvas1);
                         Reset(DatePickerCanvas1_1);
-                        
+                        Reset(Radio1);
                         Navigate('Screen Home')
                         
                         
@@ -602,21 +605,7 @@
                     Height: =35
                     HoverFill: =RGBA(107, 29, 94, 1)
                     OnSelect: |-
-                        =Patch(
-                            CM_ContractDetails,
-                            Defaults(CM_ContractDetails),
-                            {Start_date: DatePickerCanvas1},
-                            {End_date: DatePickerCanvas1_1},
-                            {Description: TextInput1_1},
-                            {Applicable_to: Dropdown2_5},
-                            {Currency: Dropdown2_6},
-                            {Client_Name: Dropdown2_2},
-                            {Service_Type_fk: Dropdown2_3},
-                            {Service_fk: Dropdown2_4},
-                            {'Created By': TextInput1_2},
-                            {Created: DatePicker1},
-                            {Countries: Dropdown2_8}
-                        );
+                        =
                         Navigate(
                             'Screen Preview COC',
                             ScreenTransition.Cover
@@ -634,7 +623,7 @@
         ZIndex: =14
 
         Circle1_1 As circle:
-            Fill: =RGBA(107, 29, 94, 1)
+            Fill: =RGBA(191, 186, 190, 1)
             Height: =Circle1.Height
             Width: =Circle1.Width
             X: =Container1.X-Parent.Width*.065-Self.Width
@@ -682,7 +671,7 @@
             ZIndex: =8
 
         Rectangle6 As rectangle:
-            Fill: =RGBA(107, 29, 94, 1)
+            Fill: =RGBA(191, 186, 190, 1)
             Height: =-Label12.Y-Label12.Height+Circle1_1.Y-Parent.Height*0.01
             Width: =3
             X: =Label12.X+(Label12.Width-Self.Width)/2

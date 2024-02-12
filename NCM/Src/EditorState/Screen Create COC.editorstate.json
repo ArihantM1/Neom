@@ -5145,7 +5145,14 @@
           "NameMapSourceSchema": "?"
         },
         "Italic",
-        "PaddingTop",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "PaddingTop",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "PaddingRight",
         "PaddingBottom",
         "PaddingLeft"
@@ -6057,7 +6064,7 @@
         {
           "Category": "Design",
           "PropertyName": "SelectionFill",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -6499,7 +6506,7 @@
         {
           "Category": "Design",
           "PropertyName": "SelectionFill",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -6936,7 +6943,7 @@
         {
           "Category": "Design",
           "PropertyName": "SelectionFill",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -7366,7 +7373,7 @@
         {
           "Category": "Design",
           "PropertyName": "SelectionFill",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -7784,7 +7791,7 @@
         {
           "Category": "Design",
           "PropertyName": "SelectionFill",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -8092,6 +8099,22 @@
           "InvariantPropertyName": "Default",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "false",
+          "InvariantPropertyName": "OnSelect",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "false",
+          "InvariantPropertyName": "AllowEmptySelection",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "DynamicProperties": [
@@ -8155,7 +8178,7 @@
       "Properties": [
         {
           "Category": "Data",
-          "NameMap": "{\"Value\":\"ComplianceAssetId\"}",
+          "NameMap": "{\"Value\":\"contract_name\"}",
           "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },
@@ -8163,6 +8186,11 @@
           "Category": "Data",
           "PropertyName": "Default",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "AllowEmptySelection",
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -8202,7 +8230,7 @@
         {
           "Category": "Design",
           "PropertyName": "SelectionFill",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -8363,6 +8391,11 @@
           "Category": "Design",
           "PropertyName": "PaddingLeft",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Behavior",
+          "PropertyName": "OnSelect",
+          "RuleProviderType": "User"
         }
       ],
       "StyleName": "defaultDropdownStyle",
@@ -8635,7 +8668,7 @@
         {
           "Category": "Design",
           "PropertyName": "SelectionFill",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",

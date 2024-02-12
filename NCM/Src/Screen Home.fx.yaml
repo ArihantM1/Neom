@@ -491,7 +491,7 @@
                                         =ColorFade  (ColorValue("#9e6c97"),70%)
                                     Items: =[Blank(),"Global","Local","Regional"]
                                     PressedFill: =RGBA(158, 108, 151, 1)
-                                    SelectionFill: =RGBA(107, 29, 94, 1)
+                                    SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
                                     Width: =220
                                     ZIndex: =3
 
@@ -518,7 +518,7 @@
                                         =ColorFade  (ColorValue("#9e6c97"),70%)
                                     Items: =[Blank(),"Expired","Active"]
                                     PressedFill: =RGBA(158, 108, 151, 1)
-                                    SelectionFill: =RGBA(107, 29, 94, 1)
+                                    SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
                                     Width: =220
                                     ZIndex: =5
 

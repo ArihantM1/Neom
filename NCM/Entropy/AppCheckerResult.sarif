@@ -1383,6 +1383,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.ClientsData"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.ClientsData",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "ClientsData",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.12083109_Wavy_Bus-05_Single-08"
                 }
               ],
