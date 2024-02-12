@@ -661,10 +661,19 @@
                                 Height: =380
                                 Items: |-
                                     =If(
-                                        IsBlank(Dropdown2.SelectedText.Value),
+                                        IsBlank(Dropdown2.Selected.Value) && IsBlank(Dropdown2_9.Selected.Value),
                                         CM_ContractDetails,
                                         Filter(
-                                            CM_ContractDetails,Status.Value=Dropdown2.SelectedText.Value
+                                            CM_ContractDetails,
+                                            If(
+                                                !IsBlank(Dropdown2.Selected.Value),
+                                                Status.Value = Dropdown2.Selected.Value,
+                                                true
+                                            ) && If(
+                                                !IsBlank(Dropdown2_9.Selected.Value),
+                                                Applicable_to.Value = Dropdown2_9.Selected.Value,
+                                                true
+                                            )
                                         )
                                     )
                                 Layout: =Layout.Vertical
