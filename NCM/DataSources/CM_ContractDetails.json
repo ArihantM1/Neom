@@ -27,6 +27,8 @@
       "applicable_to#Id": "Applicable_to Id",
       "Author": "Created By",
       "Author#Claims": "Created By Claims",
+      "Client_Name": "Client_Name",
+      "Client_Name#Id": "Client_Name Id",
       "Coc_stage": "Coc_stage",
       "ComplianceAssetId": "Compliance Asset Id",
       "Contract_ID": "Contract_ID",

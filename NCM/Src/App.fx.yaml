@@ -1,6 +1,6 @@
 App As appinfo:
     BackEnabled: =true
-    OnStart: |
+    OnStart: |+
         =ClearCollect(
             NavBar,
            Table(
@@ -23,7 +23,11 @@ App As appinfo:
         Set(cocview,true);
         ClearCollect(RadioOptions, ["Create New", "Duplicate Existing"]);
         
-        ClearCollect(CheckboxValue,["Expired August","Expired Contracts","Active Contracts","Draft Contracts"])
+        ClearCollect(CheckboxValue,["Expired August","Expired Contracts","Active Contracts","Draft Contracts"]);
+        
+        ClearCollect(Clients,CM_ClientData);
+        
+        
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
