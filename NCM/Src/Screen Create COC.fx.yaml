@@ -329,7 +329,6 @@
                     ZIndex: =3
 
                 Dropdown2_5 As dropdown:
-                    AlignInContainer: =AlignInContainer.Center
                     BorderColor: =RGBA(219, 200, 216, 1)
                     ChevronBackground: =RGBA(255, 255, 255, 1)
                     ChevronFill: =RGBA(107, 29, 94, 1)
@@ -339,7 +338,7 @@
                     Height: =30
                     HoverFill: |-
                         = ColorFade( ColorValue("#9e6c97"),80%)
-                    Items: =["--Select --","Global","Country"]
+                    Items: =Choices(CM_ContractDetails.Applicable_to)
                     PressedFill: =RGBA(158, 108, 151, 1)
                     SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
                     Size: =11
@@ -416,7 +415,7 @@
                         Height: =30
                         HoverFill: |-
                             = ColorFade( ColorValue("#9e6c97"),80%)
-                        Items: =["--Select Country --","Global","Country"]
+                        Items: =Choices(CM_ContractDetails.Countries)
                         PressedFill: =RGBA(158, 108, 151, 1)
                         SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
                         Size: =11
@@ -607,7 +606,30 @@
                     Height: =35
                     HoverFill: =RGBA(107, 29, 94, 1)
                     OnSelect: |-
-                        =
+                        =Set(conname,TextInput1.Text);
+                        Patch(
+                            CM_ContractDetails,
+                            Defaults(CM_ContractDetails),
+                            {Contract_name: conname,
+                            Currency:Dropdown2_6.SelectedText,
+                            Applicable_to:Dropdown2_5.SelectedText,
+                            Description:TextInput1_1.Text,
+                            Start_date:DatePickerCanvas1.SelectedDate,
+                            End_date:DatePickerCanvas1_1.SelectedDate}
+                        );
+                        Set(
+                            NewRecord,
+                            LookUp(CM_ContractDetails, Contract_name = conname)
+                        );
+                        /*Patch(
+                            CM_ContractDetails,
+                            NewRecord,
+                            { Supplier: { Id: Dropdown2_2.Selected.ID, Value: Dropdown2_2.Selected.ID },
+                            Service_Type_fk:{Id:Dropdown2_3.Selected.ID,Value: Dropdown2_3.Selected.ID},
+                            Service_fk:{Id: Dropdown2_4.Selected.ID,Value:Dropdown2_4.Selected.ID},
+                            Countries: If(Dropdown2_5.SelectedText.Value = "Country", Dropdown2_8.SelectedText.Value, Blank())
+                             }
+                        );*/
                         Navigate(
                             'Screen Preview COC',
                             ScreenTransition.Cover

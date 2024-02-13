@@ -3,7 +3,7 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
     "CdpRevision": {
       "BaseUrl": "/",
-      "LastChangedTimeString": "2024-01-30T17:56:46.1450000Z",
+      "LastChangedTimeString": "2024-02-12T21:23:44.4260000Z",
       "RevisionNumber": 1
     },
     "ConnectedDataSourceInfoNameMapping": {
@@ -31,7 +31,6 @@
       "Client_Name#Id": "Client_Name Id",
       "Coc_stage": "Coc_stage",
       "ComplianceAssetId": "Compliance Asset Id",
-      "Contract_ID": "Contract_ID",
       "contract_name": "Contract_name",
       "Countries": "Countries",
       "Countries#Id": "Countries Id",
