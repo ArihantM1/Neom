@@ -557,6 +557,7 @@
                                             =ColorValue("#6b1d5e")
                                         Size: =11
                                         Text: ="Reset"
+                                        Visible: =If(IsBlank(Dropdown2)&&IsBlank(Dropdown2_9),false,true)
                                         Width: =Parent.Width*.12
                                         Y: =(Parent.Height-Self.Height)/2
                                         ZIndex: =1
@@ -572,6 +573,7 @@
                                         Color: =RGBA(107, 29, 94, 1)
                                         Height: =30
                                         Icon: =Icon.Reload
+                                        OnSelect: =Refresh(CM_ContractDetails)
                                         Width: =30
                                         ZIndex: =3
 
@@ -777,9 +779,23 @@
                                     Height: =40
                                     Label: =ThisItem.Status.Value
                                     LabelPosition: ='Toggle.LabelPosition'.After
-                                    OnCheck: =
+                                    OnCheck: |
+                                        =Patch(
+                                            CM_ContractDetails, 
+                                            LookUp(CM_ContractDetails,ID=ThisItem.ID), 
+                                            {
+                                                Status: {Value:"Active"}
+                                            }
+                                        )
                                     OnSelect: =Select(Parent)
-                                    OnUncheck: =
+                                    OnUncheck: |
+                                        =Patch(
+                                            CM_ContractDetails, 
+                                            LookUp(CM_ContractDetails,ID=ThisItem.ID), 
+                                            {
+                                                Status: {Value:"Expired"},End_date:Today()
+                                            }
+                                        )
                                     Width: =Label3_9.Width
                                     X: =Label3_9.X
                                     Y: =(GridGallery1.TemplateHeight-Self.Height)/2

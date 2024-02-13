@@ -136,12 +136,12 @@
                     Default: ="--Select a Call off Contact to duplicate--"
                     Height: =30
                     HoverFill: |-
-                        =ColorValue("#9e6c97")
+                        = ColorFade( ColorValue("#9e6c97"),80%)
                     Items: =contractName
                     OnSelect: =Set(contractName,CM_ContractDetails)
                     PressedFill: =RGBA(158, 108, 151, 1)
                     SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
-                    Size: =12
+                    Size: =11
                     Width: =Parent.Width*.85
                     ZIndex: =2
 
@@ -173,13 +173,13 @@
                     Default: ="--Select a Supplier--"
                     Height: =30
                     HoverFill: |-
-                        =ColorValue("#9e6c97")
+                        = ColorFade( ColorValue("#9e6c97"),80%)
                     Items: =CM_ClientData
                     OnChange: =Set(Items,CM_ClientData);
                     OnSelect: =Set(ClientsData,CM_ClientData);
                     PressedFill: =RGBA(158, 108, 151, 1)
                     SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
-                    Size: =12
+                    Size: =11
                     Width: =Parent.Width*.35
                     ZIndex: =2
 
@@ -201,12 +201,12 @@
                     Default: ="Select a Supplier"
                     Height: =30
                     HoverFill: |-
-                        =ColorValue("#9e6c97")
+                        = ColorFade( ColorValue("#9e6c97"),80%)
                     Items: =ServiceTypes
                     OnSelect: =Set(ServiceTypes,CM_Service_Types)
                     PressedFill: =RGBA(158, 108, 151, 1)
                     SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
-                    Size: =12
+                    Size: =11
                     Width: =Parent.Width*.35
                     ZIndex: =4
 
@@ -248,7 +248,7 @@
                         Default: ="Select a Supplier"
                         Height: =30
                         HoverFill: |-
-                            =ColorValue("#9e6c97")
+                            = ColorFade( ColorValue("#9e6c97"),80%)
                         Items: =services
                         OnSelect: =Set(services,Filter(CM_Services, Service_Type_fk.Value= Dropdown2_3.Selected.Service_Type))
                         PressedFill: =RGBA(158, 108, 151, 1)
@@ -272,14 +272,15 @@
                         HintText: ="--Enter the name of Contract--"
                         HoverBorderColor: =RGBA(107, 29, 94, 1)
                         HoverColor: =RGBA(107, 29, 94, 1)
-                        HoverFill: =RGBA(219, 200, 216, 1)
+                        HoverFill: |-
+                            = ColorFade( ColorValue("#9e6c97"),80%)
                         PaddingLeft: =10
                         PressedColor: =RGBA(107, 29, 94, 1)
                         RadiusBottomLeft: =0
                         RadiusBottomRight: =0
                         RadiusTopLeft: =0
                         RadiusTopRight: =0
-                        Size: =12
+                        Size: =11
                         Width: =Dropdown2_4.Width
                         ZIndex: =4
 
@@ -310,11 +311,11 @@
                     Default: ="Select a Supplier"
                     Height: =30
                     HoverFill: |-
-                        =ColorValue("#9e6c97")
+                        = ColorFade( ColorValue("#9e6c97"),80%)
                     Items: =["--Select a Currency--","USD","SAR"]
                     PressedFill: =RGBA(158, 108, 151, 1)
                     SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
-                    Size: =12
+                    Size: =11
                     Width: =Parent.Width*.35
                     ZIndex: =2
 
@@ -337,11 +338,11 @@
                     Default: ="Select a Supplier"
                     Height: =30
                     HoverFill: |-
-                        =ColorValue("#9e6c97")
+                        = ColorFade( ColorValue("#9e6c97"),80%)
                     Items: =["--Select --","Global","Country"]
                     PressedFill: =RGBA(158, 108, 151, 1)
                     SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
-                    Size: =12
+                    Size: =11
                     Width: =Parent.Width*.35
                     ZIndex: =4
 
@@ -382,14 +383,15 @@
                         HintText: ="--Description of the Contract--"
                         HoverBorderColor: =RGBA(107, 29, 94, 1)
                         HoverColor: =RGBA(107, 29, 94, 1)
-                        HoverFill: =RGBA(219, 200, 216, 1)
+                        HoverFill: |-
+                            = ColorFade( ColorValue("#9e6c97"),80%)
                         Mode: =TextMode.MultiLine
                         PressedColor: =RGBA(107, 29, 94, 1)
                         RadiusBottomLeft: =0
                         RadiusBottomRight: =0
                         RadiusTopLeft: =0
                         RadiusTopRight: =0
-                        Size: =12
+                        Size: =11
                         Width: =Dropdown2_4.Width
                         ZIndex: =2
 
@@ -413,11 +415,11 @@
                         Default: ="Select a Supplier"
                         Height: =30
                         HoverFill: |-
-                            =ColorValue("#9e6c97")
+                            = ColorFade( ColorValue("#9e6c97"),80%)
                         Items: =["--Select Country --","Global","Country"]
                         PressedFill: =RGBA(158, 108, 151, 1)
                         SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
-                        Size: =12
+                        Size: =11
                         Visible: =If(Dropdown2_5.SelectedText.Value="Country",true,false)
                         Width: =Parent.Width*.35
                         ZIndex: =4
