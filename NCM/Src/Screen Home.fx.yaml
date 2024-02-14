@@ -432,7 +432,7 @@
                                     Label6_3 As label:
                                         Height: =Parent.Height
                                         Size: =25
-                                        Text: ="9"
+                                        Text: =CountIf(CM_ContractDetails,Text(Status.Value)="Draft")
                                         Width: =Parent.Width*.7
                                         ZIndex: =1
 
