@@ -295,6 +295,7 @@
 
                 Label5_6 As label:
                     Align: =Align.Right
+                    AlignInContainer: =AlignInContainer.Center
                     Size: =12
                     Text: |-
                         ="Currency:"
@@ -329,6 +330,8 @@
                     ZIndex: =3
 
                 Dropdown2_5 As dropdown:
+                    AlignInContainer: =AlignInContainer.Center
+                    AllowEmptySelection: =true
                     BorderColor: =RGBA(219, 200, 216, 1)
                     ChevronBackground: =RGBA(255, 255, 255, 1)
                     ChevronFill: =RGBA(107, 29, 94, 1)
@@ -406,6 +409,7 @@
 
                     Dropdown2_8 As dropdown:
                         AlignInContainer: =AlignInContainer.Start
+                        AllowEmptySelection: =true
                         BorderColor: =RGBA(219, 200, 216, 1)
                         ChevronBackground: =RGBA(255, 255, 255, 1)
                         ChevronFill: =RGBA(107, 29, 94, 1)
@@ -606,20 +610,87 @@
                     Height: =35
                     HoverFill: =RGBA(107, 29, 94, 1)
                     OnSelect: |-
-                        =Set(conname,TextInput1.Text);
-                        Patch(
+                        =If(
+                            IsBlank(contractId),
+                            Set(
+                                contractId,
+                                Patch(
+                                    CM_ContractDetails,
+                                    Defaults(CM_ContractDetails),
+                                    {
+                                        Contract_name: TextInput1.Text,
+                                        Currency: Dropdown2_6.SelectedText,
+                                        Applicable_to: Dropdown2_5.SelectedText,
+                                        Description: TextInput1_1.Text,
+                                        Start_date: DatePickerCanvas1.SelectedDate,
+                                        End_date: DatePickerCanvas1_1.SelectedDate,
+                                        Coc_stage: 1,
+                                        Status: {Value: "Draft"},
+                                        Countries: Dropdown2_8.SelectedText,
+                                        Service_Type_fk: {
+                                            Id: Dropdown2_3.Selected.ID,
+                                            Value: Dropdown2_3.SelectedText.Value
+                                        },
+                                        Supplier: {
+                                            Id: Dropdown2_2.Selected.ID,
+                                            Value: Dropdown2_2.SelectedText.Value
+                                        },
+                                        Service_fk: {
+                                            Id: Dropdown2_4.Selected.ID,
+                                            Value: Dropdown2_4.SelectedText.Value
+                                        }
+                                    }
+                                )
+                            );
+                            Patch(
+                                CM_ContractDetails,
+                                {ID: contractId.ID},
+                                {
+                                    Contract_name: TextInput1.Text,
+                                    Currency: Dropdown2_6.SelectedText,
+                                    Applicable_to: Dropdown2_5.SelectedText,
+                                    Description: TextInput1_1.Text,
+                                    Start_date: DatePickerCanvas1.SelectedDate,
+                                    End_date: DatePickerCanvas1_1.SelectedDate,
+                                    Coc_stage: 1,
+                                    Status: {Value: "Draft"},
+                                    Countries: Dropdown2_8.SelectedText,
+                                    Service_Type_fk: {
+                                        Id: Dropdown2_3.Selected.ID,
+                                        Value: Dropdown2_3.SelectedText.Value
+                                    },
+                                    Supplier: {
+                                        Id: Dropdown2_2.Selected.ID,
+                                        Value: Dropdown2_2.SelectedText.Value
+                                    },
+                                    Service_fk: {
+                                        Id: Dropdown2_4.Selected.ID,
+                                        Value: Dropdown2_4.SelectedText.Value
+                                    }
+                                }
+                            )
+                        );
+                        /*Patch(
                             CM_ContractDetails,
                             Defaults(CM_ContractDetails),
-                            {Contract_name: conname,
-                            Currency:Dropdown2_6.SelectedText,
-                            Applicable_to:Dropdown2_5.SelectedText,
-                            Description:TextInput1_1.Text,
-                            Start_date:DatePickerCanvas1.SelectedDate,
-                            End_date:DatePickerCanvas1_1.SelectedDate}
-                        );
+                            {
+                                Contract_name: conname,
+                                Currency: Dropdown2_6.SelectedText,
+                                Applicable_to: Dropdown2_5.SelectedText,
+                                Description: TextInput1_1.Text,
+                                Start_date: DatePickerCanvas1.SelectedDate,
+                                End_date: DatePickerCanvas1_1.SelectedDate,
+                                Coc_stage: 1,
+                                Status: {Value: "Draft"},
+                                Countries: Dropdown2_8.SelectedText
+                           }
+                        ); 
                         Set(
                             NewRecord,
-                            LookUp(CM_ContractDetails, Contract_name = conname)
+                            LookUp(
+                                CM_ContractDetails,
+                                Contract_name = conname
+                            )
                         );
                         /*Patch(
                             CM_ContractDetails,
