@@ -559,7 +559,7 @@
                                             =ColorValue("#6b1d5e")
                                         Size: =11
                                         Text: ="Reset"
-                                        Visible: =If(IsBlank(Dropdown2)&&IsBlank(Dropdown2_9),false,true)
+                                        Visible: =If(IsBlank(Dropdown2)&&IsBlank(Dropdown2_9),true,false)
                                         Width: =Parent.Width*.12
                                         Y: =(Parent.Height-Self.Height)/2
                                         ZIndex: =1
