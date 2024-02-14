@@ -638,7 +638,8 @@
                                         Service_fk: {
                                             Id: Dropdown2_4.Selected.ID,
                                             Value: Dropdown2_4.SelectedText.Value
-                                        }
+                                        },
+                                        Title: "C" & "000" & contractId.ID
                                     }
                                 )
                             );
@@ -666,7 +667,8 @@
                                     Service_fk: {
                                         Id: Dropdown2_4.Selected.ID,
                                         Value: Dropdown2_4.SelectedText.Value
-                                    }
+                                    },
+                                    Title: "C" & "000" & contractId.ID
                                 }
                             )
                         );
