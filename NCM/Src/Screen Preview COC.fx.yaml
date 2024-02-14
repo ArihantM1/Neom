@@ -7,10 +7,11 @@
         Width: =Parent.Width
         ZIndex: =1
 
-        HeaderComponent_3 As HeaderComponent:
+        HeaderCMP_withoutNavbar_2 As HeaderCMP_withoutNavbar:
             Height: =Parent.Height*.1
             LayoutMinHeight: =640
             LayoutMinWidth: =640
+            Width: =Parent.Width
 
     Container9 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Bold
@@ -21,7 +22,7 @@
         RadiusTopRight: =10
         Width: =Parent.Width*.83
         X: =Parent.Width*.15
-        Y: =HeaderComponent_3.Y+HeaderComponent_3.Height+Parent.Height*.04
+        Y: =HeaderCMP_withoutNavbar_2.Y+HeaderCMP_withoutNavbar_2.Height+Parent.Height*.04
         ZIndex: =2
 
         Container4_3 As groupContainer.horizontalAutoLayoutContainer:
