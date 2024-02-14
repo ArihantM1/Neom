@@ -700,7 +700,7 @@
                                     FontWeight: =FontWeight.Bold
                                     OnSelect: =Select(Parent)
                                     Size: =11
-                                    Text: =ThisItem.Title
+                                    Text: =ThisItem.ContractDet_Id
                                     Width: =Label3_4.Width
                                     X: =Label3_4.X
                                     Y: =(GridGallery1.TemplateHeight-Self.Height)/2
@@ -777,7 +777,7 @@
                                     DisplayMode: =DisplayMode.Edit
                                     FontColor: =RGBA(0, 0, 0, 1)
                                     FontSize: =15
-                                    FontWeight: =FontWeight.Bold
+                                    FontWeight: =FontWeight.Semibold
                                     Height: =40
                                     Label: =ThisItem.Status.Value
                                     LabelPosition: ='Toggle.LabelPosition'.After
@@ -799,8 +799,30 @@
                                             }
                                         )
                                     Visible: =If(ThisItem.Status.Value="Draft",false,true)
-                                    Width: =Label3_9.Width
+                                    Width: =Label3_9.Width-10
                                     X: =Label3_9.X
                                     Y: =(GridGallery1.TemplateHeight-Self.Height)/2
                                     ZIndex: =9
+
+                                Label13 As label:
+                                    Align: =Align.Center
+                                    FontWeight: =FontWeight.Semibold
+                                    OnSelect: =Select(Parent)
+                                    Size: =11
+                                    Text: =ThisItem.Status.Value
+                                    Visible: =If(ThisItem.Status.Value="Draft",true,false)
+                                    Width: =70
+                                    X: =Image8.X+Image8.Width-10
+                                    Y: =Toggle2.Y
+                                    ZIndex: =10
+
+                                Image8 As image:
+                                    Height: =40
+                                    Image: ='drafts (1)'
+                                    OnSelect: =Select(Parent)
+                                    Visible: =If(ThisItem.Status.Value="Draft",true,false)
+                                    Width: =40
+                                    X: =Toggle2.X
+                                    Y: =Toggle2.Y
+                                    ZIndex: =11
 
