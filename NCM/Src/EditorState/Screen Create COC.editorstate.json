@@ -6012,7 +6012,7 @@
       "Properties": [
         {
           "Category": "Data",
-          "NameMap": "{\"Value\":\"Client_name\"}",
+          "NameMap": "{\"Value\":\"Client_email\"}",
           "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },

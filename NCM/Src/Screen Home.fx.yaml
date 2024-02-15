@@ -678,6 +678,11 @@
                                 LoadingSpinner: =LoadingSpinner.Data
                                 LoadingSpinnerColor: |-
                                     =ColorValue("#6b1d5e")
+                                OnSelect: |
+                                    =If(
+                                        ThisItem.Status.Value="Draft", Navigate('Screen Create COC', ScreenTransition.Fade)
+                                       
+                                    );
                                 TemplateSize: =60
                                 Transition: =Transition.Pop
                                 ZIndex: =4

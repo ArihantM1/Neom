@@ -85,7 +85,20 @@ HeaderCMP_withoutNavbar As CanvasComponent:
                 Height: =30
                 HoverColor: =RGBA(107, 29, 94, 1)
                 HoverFill: =Self.Color
-                OnSelect: =Navigate('Screen Home')
+                OnSelect: |-
+                    =Reset(Dropdown2_3);
+                    Reset(Dropdown2_2);
+                    Reset(Dropdown2_4);
+                    Reset(Dropdown2_5);
+                    Reset(Dropdown2_6);
+                    Reset(Dropdown2_8);
+                    Reset(Dropdown2_7);
+                    Reset(TextInput1);
+                    Reset(TextInput1_1);
+                    Reset(DatePickerCanvas1);
+                    Reset(DatePickerCanvas1_1);
+                    Reset(Radio1);
+                    Navigate('Screen Home')
                 PressedColor: =Self.Color
                 PressedFill: =Self.Fill
                 Size: =11
