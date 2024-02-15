@@ -26,6 +26,7 @@ App As appinfo:
         ClearCollect(CheckboxValue,["Expired August","Expired Contracts","Active Contracts","Draft Contracts"]);
         
         ClearCollect(Clients,CM_ClientData);
+        Set(Varinputdate,false)
         
         
     Theme: =PowerAppsTheme

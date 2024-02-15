@@ -67,6 +67,11 @@
                             Width: =Parent.Width*.3
                             ZIndex: =1
 
+                    TextInput2 As text:
+                        Default: ="[insert date]"
+                        Visible: =Varinputdate
+                        ZIndex: =2
+
                 Container18_1 As groupContainer.horizontalAutoLayoutContainer:
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMinHeight: =100
@@ -122,42 +127,39 @@
                                 Y: =0
                                 ZIndex: =1
 
-                                HtmlText1_1 As htmlViewer:
+                                Container25 As groupContainer.verticalAutoLayoutContainer:
                                     Height: =Parent.Height
-                                    HtmlText: |-
-                                        ="<h1> 
-                                        <char32>Contract Form</h1>
-                                        <br> HI "&Upper(TextInput1.Text)&" and this contract is made on "&Today()&" and  Contract is made for  " &" . This contract is valid for 4 year . <br/> The term and Condition are as follows:<br/>
-                                        <br/>
-                                        
-                                        <h1> 
-                                        <char32>Contract Form</h1>
-                                        <br> HI "&Upper(TextInput1.Text)&" and this contract is made on "&Today()&" and  Contract is made for  " &" . This contract is valid for 4 year . <br/> The term and Condition are as follows:<br/>
-                                        <br/><h1> 
-                                        <char32>Contract Form</h1>
-                                        <br> HI "&Upper(TextInput1.Text)&" and this contract is made on "&Today()&" and  Contract is made for  " &" . This contract is valid for 4 year . <br/> The term and Condition are as follows:<br/>
-                                        <br/><h1> 
-                                        <char32>Contract Form</h1>
-                                        <br> HI "&Upper(TextInput1.Text)&" and this contract is made on "&Today()&" and  Contract is made for  " &" . This contract is valid for 4 year . <br/> The term and Condition are as follows:<br/>
-                                        <br/><h1> 
-                                        <char32>Contract Form</h1>
-                                        <br> HI "&Upper(TextInput1.Text)&" and this contract is made on "&Today()&" and  Contract is made for  " &" . This contract is valid for 4 year . <br/> The term and Condition are as follows:<br/>
-                                        <br/><h1> 
-                                        <char32>Contract Form</h1>
-                                        <br> HI "&Upper(TextInput1.Text)&" and this contract is made on "&Today()&" and  Contract is made for  " &" . This contract is valid for 4 year . <br/> The term and Condition are as follows:<br/>
-                                        <br/><h1> 
-                                        <char32>Contract Form</h1>
-                                        <br> HI "&Upper(TextInput1.Text)&" and this contract is made on "&Today()&" and  Contract is made for  " &" . This contract is valid for 4 year . <br/> The term and Condition are as follows:<br/>
-                                        <br/><h1> 
-                                        <char32>Contract Form</h1>
-                                        <br> HI "&Upper(TextInput1.Text)&" and this contract is made on "&Today()&" and  Contract is made for  " &" . This contract is valid for 4 year . <br/> The term and Condition are as follows:<br/>
-                                        <br/><h1> 
-                                        <char32>Contract Form</h1>
-                                        <br> HI "&Upper(TextInput1.Text)&" and this contract is made on "&Today()&" and  Contract is made for  " &" . This contract is valid for 4 year . <br/> The term and Condition are as follows:<br/>
-                                        <br/>
-                                        "
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutMode: =LayoutMode.Auto
                                     Width: =Parent.Width
                                     ZIndex: =1
+
+                                    Label11 As label:
+                                        Align: =Align.Center
+                                        FontWeight: =FontWeight.Bold
+                                        Size: =16
+                                        Text: ="User Agreement"
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                    Container28 As groupContainer.horizontalAutoLayoutContainer:
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        ZIndex: =3
+
+                                        HtmlText3 As htmlViewer:
+                                            Height: =Parent.Height*.07
+                                            HtmlText: ="<b>This agreement</b> is made on"
+                                            Width: =Parent.Width*.27
+                                            ZIndex: =1
+
+                                        HtmlText3_1 As htmlViewer:
+                                            Height: =Parent.Height*.07
+                                            HtmlText: ="<mark>"&TextInput2.Text&"</mark>"
+                                            OnSelect: =Set(Varinputdate,!Varinputdate)
+                                            Width: =Parent.Width*.08
+                                            ZIndex: =2
 
             Container31_1 As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.Center
