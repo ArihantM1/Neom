@@ -262,7 +262,7 @@
                         
                         
                     Size: =10
-                    Text: ="Cancel"
+                    Text: ="Back"
                     Width: =Parent.Width*.07
                     ZIndex: =1
 
@@ -275,7 +275,7 @@
                     HoverFill: =RGBA(107, 29, 94, 1)
                     OnSelect: =Navigate('Screen Preview COC')
                     Size: =10
-                    Text: ="Next"
+                    Text: ="Create"
                     Width: =Parent.Width*.07
                     ZIndex: =2
 
