@@ -25,3 +25,40 @@
             Width: =Parent.Width
             ZIndex: =2
 
+            Container29 As groupContainer.horizontalAutoLayoutContainer:
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =1
+
+                Container33 As groupContainer.manualLayoutContainer:
+                    FillPortions: =0
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    Width: =Parent.Width*.65
+                    ZIndex: =1
+
+                    Label14 As label:
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Bold
+                        Size: =18
+                        Text: ="Resources Involved"
+                        Width: =Parent.Width*.9
+                        X: =Parent.Width*.015
+                        Y: =12
+                        ZIndex: =1
+
+                    Rectangle9 As rectangle:
+                        Fill: =RGBA(107, 29, 94, 1)
+                        Height: =2
+                        Width: =Parent.Width*.95
+                        X: =(Parent.Width-Self.Width)/2
+                        Y: =Label14.Height+Label14.Y+Parent.Height*.01
+                        ZIndex: =2
+
+                Container35 As groupContainer.manualLayoutContainer:
+                    FillPortions: =0
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    ZIndex: =2
+

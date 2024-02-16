@@ -92,7 +92,14 @@
                     Height: =Parent.Height-Rectangle4.Height
                     Items: =RadioOptions
                     Layout: =Layout.Horizontal
-                    OnChange: =If(Radio1.Selected.Value="Create New",Set(cocview,true),Set(cocview,false));
+                    OnChange: |-
+                        =If(
+                            Radio1.Selected.Value = "Create New",
+                            Set(
+                                ContractData,
+                                Blank()
+                            )
+                        )
                     OnSelect: =
                     PaddingBottom: =0
                     PaddingTop: =15
