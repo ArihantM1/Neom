@@ -1727,8 +1727,22 @@
               },
               "X",
               "Y",
-              "Width",
-              "Height",
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "500",
+                "InvariantPropertyName": "Width",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "200",
+                "InvariantPropertyName": "Height",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
               "DisplayMode",
               "LayoutMode",
               "LayoutDirection",
@@ -1748,21 +1762,35 @@
             "ControlUniqueId": "6",
             "DynamicProperties": [
               {
-                "ControlPropertyState": "FillPortions",
+                "ControlPropertyState": {
+                  "AFDDataSourceName": "",
+                  "AutoRuleBindingEnabled": false,
+                  "AutoRuleBindingString": "",
+                  "InvariantPropertyName": "FillPortions",
+                  "IsLockable": false,
+                  "NameMapSourceSchema": "?"
+                },
                 "PropertyName": "FillPortions",
                 "Rule": {
                   "Category": "Design",
-                  "InvariantScript": "1",
+                  "InvariantScript": "0",
                   "Property": "FillPortions",
                   "RuleProviderType": "Unknown"
                 }
               },
               {
-                "ControlPropertyState": "AlignInContainer",
+                "ControlPropertyState": {
+                  "AFDDataSourceName": "",
+                  "AutoRuleBindingEnabled": false,
+                  "AutoRuleBindingString": "",
+                  "InvariantPropertyName": "AlignInContainer",
+                  "IsLockable": false,
+                  "NameMapSourceSchema": "?"
+                },
                 "PropertyName": "AlignInContainer",
                 "Rule": {
                   "Category": "Design",
-                  "InvariantScript": "AlignInContainer.Stretch",
+                  "InvariantScript": "AlignInContainer.Center",
                   "Property": "AlignInContainer",
                   "RuleProviderType": "Unknown"
                 }
@@ -1920,15 +1948,15 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "500",
+                "InvariantScript": "Parent.Width",
                 "Property": "Width",
-                "RuleProviderType": "Unknown"
+                "RuleProviderType": "User"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "200",
+                "InvariantScript": "Parent.Height",
                 "Property": "Height",
-                "RuleProviderType": "Unknown"
+                "RuleProviderType": "User"
               },
               {
                 "Category": "Design",
@@ -2171,15 +2199,15 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "123",
+            "InvariantScript": "Parent.Height",
             "Property": "Height",
-            "RuleProviderType": "Unknown"
+            "RuleProviderType": "User"
           },
           {
             "Category": "Design",
-            "InvariantScript": "348",
+            "InvariantScript": "Parent.Width",
             "Property": "Width",
-            "RuleProviderType": "Unknown"
+            "RuleProviderType": "User"
           }
         ],
         "StyleName": "defaultGroupContainerStyle",
@@ -2224,7 +2252,7 @@
       "MainText",
       "SecondaryText"
     ],
-    "LastModifiedTimestamp": "638435928197491704",
+    "LastModifiedTimestamp": "638436641320454976",
     "Name": "Card compomnent",
     "Rules": [
       {
@@ -2329,7 +2357,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638435928197491704",
+  "LastModifiedTimestamp": "638436641320454976",
   "Name": "eeae0174e886453083644726d574ee05",
   "OverridableProperties": {},
   "Version": "1.0"
