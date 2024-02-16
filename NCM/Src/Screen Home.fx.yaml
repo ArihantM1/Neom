@@ -585,8 +585,8 @@
                                     Color: =RGBA(107, 29, 94,1)
                                     FontWeight: =FontWeight.Bold
                                     Size: =11
-                                    Text: ="CONTRACT ID"
-                                    Width: =Parent.Width*.12
+                                    Text: ="ID"
+                                    Width: =Parent.Width*.1
                                     ZIndex: =1
 
                                 Label3_6 As label:

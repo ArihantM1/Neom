@@ -185,10 +185,13 @@
                                 ZIndex: =2
 
                     ConCard_FieldAssgnment As groupContainer.verticalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
                         DropShadow: =DropShadow.Semibold
                         Fill: =RGBA(255, 255, 255, 1)
                         Height: =Parent.Height*.6
                         LayoutDirection: =LayoutDirection.Vertical
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
                         LayoutMode: =LayoutMode.Auto
                         Width: =Parent.Width*.3
                         ZIndex: =3
@@ -196,6 +199,8 @@
                         "'Card compomnent_1' As 'Card compomnent'":
                             Height: =Parent.Height
                             image: =database
+                            LayoutMinHeight: =640
+                            LayoutMinWidth: =640
                             MainText: ="Manage Field Assignment"
                             SecondaryText: ="Describe Who can edit Which Field"
                             Width: =Parent.Width
