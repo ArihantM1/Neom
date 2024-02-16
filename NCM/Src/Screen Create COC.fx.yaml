@@ -175,7 +175,7 @@
                     ChevronFill: =RGBA(107, 29, 94, 1)
                     ChevronHoverBackground: =RGBA(107, 29, 94, 1)
                     Color: =RGBA(107, 29, 94, 1)
-                    Default: =
+                    Default: =If(Not(IsBlank(ContractData)),ContractData.Supplier.Value)
                     Height: =30
                     HoverFill: |-
                         = ColorFade( ColorValue("#9e6c97"),80%)
@@ -203,7 +203,7 @@
                     ChevronFill: =RGBA(107, 29, 94, 1)
                     ChevronHoverBackground: =RGBA(107, 29, 94, 1)
                     Color: =RGBA(107, 29, 94, 1)
-                    Default: ="Select a Supplier"
+                    Default: =If(Not(IsBlank(ContractData)),ContractData.Service_Type_fk.Value)
                     Height: =30
                     HoverFill: |-
                         = ColorFade( ColorValue("#9e6c97"),80%)
@@ -250,7 +250,7 @@
                         ChevronFill: =RGBA(107, 29, 94, 1)
                         ChevronHoverBackground: =RGBA(107, 29, 94, 1)
                         Color: =RGBA(107, 29, 94, 1)
-                        Default: ="Select a Supplier"
+                        Default: =If(Not(IsBlank(ContractData)),ContractData.Service_fk.Value)
                         Height: =30
                         HoverFill: |-
                             = ColorFade( ColorValue("#9e6c97"),80%)
@@ -272,7 +272,7 @@
 
                     TextInput1 As text:
                         BorderColor: =RGBA(219, 200, 216, 1)
-                        Default: =
+                        Default: =If(Not(IsBlank(ContractData)),ContractData.Contract_name)
                         Height: =30
                         HintText: ="--Enter the name of Contract--"
                         HoverBorderColor: =RGBA(107, 29, 94, 1)
@@ -314,7 +314,7 @@
                     ChevronFill: =RGBA(107, 29, 94, 1)
                     ChevronHoverBackground: =RGBA(107, 29, 94, 1)
                     Color: =RGBA(107, 29, 94, 1)
-                    Default: ="Select a Supplier"
+                    Default: =If(Not(IsBlank(ContractData)),ContractData.Currency.Value)
                     Height: =30
                     HoverFill: |-
                         = ColorFade( ColorValue("#9e6c97"),80%)
@@ -342,7 +342,7 @@
                     ChevronFill: =RGBA(107, 29, 94, 1)
                     ChevronHoverBackground: =RGBA(107, 29, 94, 1)
                     Color: =RGBA(107, 29, 94, 1)
-                    Default: ="Select a Supplier"
+                    Default: =If(Not(IsBlank(ContractData)),ContractData.Applicable_to.Value)
                     Height: =30
                     HoverFill: |-
                         = ColorFade( ColorValue("#9e6c97"),80%)
@@ -385,7 +385,7 @@
 
                     TextInput1_1 As text:
                         BorderColor: =RGBA(219, 200, 216, 1)
-                        Default: =""
+                        Default: =If(Not(IsBlank(ContractData)),ContractData.Description)
                         Height: =Parent.Height*.9
                         HintText: ="--Description of the Contract--"
                         HoverBorderColor: =RGBA(107, 29, 94, 1)
@@ -420,7 +420,7 @@
                         ChevronFill: =RGBA(107, 29, 94, 1)
                         ChevronHoverBackground: =RGBA(107, 29, 94, 1)
                         Color: =RGBA(107, 29, 94, 1)
-                        Default: ="Select a Supplier"
+                        Default: =If(Not(IsBlank(ContractData)),ContractData.Countries.Value)
                         Height: =30
                         HoverFill: |-
                             = ColorFade( ColorValue("#9e6c97"),80%)
@@ -470,6 +470,7 @@
                         Height: =30
                         LayoutMinHeight: =32
                         LayoutMinWidth: =320
+                        SelectedDate: =
                         Width: =TextInput1.Width
                         X: =0
                         Y: =0

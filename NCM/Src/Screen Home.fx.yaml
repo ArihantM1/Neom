@@ -216,6 +216,7 @@
                                     HoverFill: =RGBA(255, 255, 255, 1)
                                     OnSelect: |-
                                         =Set(contractId,Blank());
+                                        Set(ContractData,Blank());
                                         Navigate('Screen Create COC');
                                         Set(createcontract,true)
                                     Size: =10.5
@@ -684,7 +685,7 @@
                                         ThisItem.Status.Value="Draft", Navigate('Screen Create COC', ScreenTransition.Fade)
                                        
                                     );
-                                    ClearCollect(data,GridGallery1.Selected)
+                                    Set(ContractData,GridGallery1.Selected)
                                 TemplateSize: =60
                                 Transition: =Transition.Pop
                                 ZIndex: =4
@@ -816,7 +817,7 @@
                                     OnSelect: =Select(Parent)
                                     Visible: =If(ThisItem.Status.Value="Draft",true,false)
                                     Width: =40
-                                    X: =Toggle2.X
+                                    X: =Toggle2.X+20
                                     Y: =Toggle2.Y
                                     ZIndex: =11
 
