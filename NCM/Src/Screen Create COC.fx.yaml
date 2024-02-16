@@ -92,14 +92,13 @@
                     Height: =Parent.Height-Rectangle4.Height
                     Items: =RadioOptions
                     Layout: =Layout.Horizontal
-                    OnChange: |-
-                        =If(
-                            Radio1.Selected.Value = "Create New",
-                            Set(
+                    OnChange: |
+                        =
+                         Set(
                                 ContractData,
                                 Blank()
-                            )
-                        )
+                            );
+                        Reset(Dropdown2_7);
                     OnSelect: =
                     PaddingBottom: =0
                     PaddingTop: =15
@@ -216,8 +215,8 @@
                     Height: =30
                     HoverFill: |-
                         = ColorFade( ColorValue("#9e6c97"),80%)
-                    Items: =ServiceTypes
-                    OnSelect: =Set(ServiceTypes,CM_Service_Types)
+                    Items: =CM_Service_Types
+                    OnSelect: =
                     PressedFill: =RGBA(158, 108, 151, 1)
                     SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
                     Size: =11
@@ -263,7 +262,11 @@
                         Height: =30
                         HoverFill: |-
                             = ColorFade( ColorValue("#9e6c97"),80%)
-                        Items: =services
+                        Items: |-
+                            =Filter(
+                                CM_Services,
+                                Service_Type_fk.Id = Dropdown2_3.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID'
+                            )
                         OnSelect: =Set(services,Filter(CM_Services, Service_Type_fk.Value= Dropdown2_3.Selected.Service_Type))
                         PressedFill: =RGBA(158, 108, 151, 1)
                         SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
@@ -323,12 +326,13 @@
                     ChevronFill: =RGBA(107, 29, 94, 1)
                     ChevronHoverBackground: =RGBA(107, 29, 94, 1)
                     Color: =RGBA(107, 29, 94, 1)
-                    Default: =If(Not(IsBlank(ContractData)),ContractData.Currency.Value)
+                    Default: =If(Not(IsBlank(ContractData)),ContractData.Currency.Value,"")
                     Height: =30
                     HoverFill: |-
                         = ColorFade( ColorValue("#9e6c97"),80%)
                     Items: =["--Select a Currency--","USD","SAR"]
                     PressedFill: =RGBA(158, 108, 151, 1)
+                    Reset: =true
                     SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
                     Size: =11
                     Width: =Parent.Width*.35
