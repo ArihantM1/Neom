@@ -5503,7 +5503,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "SelectedDate"
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "SelectedDate",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        }
       ],
       "DynamicProperties": [
         {
@@ -5683,6 +5690,14 @@
           "InvariantPropertyName": "Format",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "SelectedDate",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "DynamicProperties": [
@@ -5761,6 +5776,11 @@
           "Category": "Data",
           "PropertyName": "Format",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "SelectedDate",
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",

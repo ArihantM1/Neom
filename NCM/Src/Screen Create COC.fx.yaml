@@ -470,7 +470,7 @@
                         Height: =30
                         LayoutMinHeight: =32
                         LayoutMinWidth: =320
-                        SelectedDate: =
+                        SelectedDate: =If(Not(IsBlank(ContractData)),ContractData.Start_date)
                         Width: =TextInput1.Width
                         X: =0
                         Y: =0
@@ -494,6 +494,7 @@
                         Height: =30
                         LayoutMinHeight: =32
                         LayoutMinWidth: =320
+                        SelectedDate: =If(Not(IsBlank(ContractData)),ContractData.End_date)
                         Width: =TextInput1.Width
                         X: =0
                         Y: =0
