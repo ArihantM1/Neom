@@ -201,7 +201,7 @@
                                 LayoutMinHeight: =100
                                 LayoutMinWidth: =250
                                 LayoutMode: =LayoutMode.Auto
-                                PaddingRight: =15
+                                PaddingRight: =30
                                 Width: =Parent.Width*.48
                                 ZIndex: =2
 

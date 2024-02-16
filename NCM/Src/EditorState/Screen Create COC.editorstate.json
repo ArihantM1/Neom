@@ -8154,6 +8154,14 @@
           "InvariantPropertyName": "AllowEmptySelection",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "false",
+          "InvariantPropertyName": "OnChange",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "DynamicProperties": [
@@ -8434,6 +8442,11 @@
         {
           "Category": "Behavior",
           "PropertyName": "OnSelect",
+          "RuleProviderType": "User"
+        },
+        {
+          "Category": "Behavior",
+          "PropertyName": "OnChange",
           "RuleProviderType": "User"
         }
       ],
@@ -15522,7 +15535,7 @@
         {
           "Category": "Design",
           "PropertyName": "HoverBorderColor",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -15926,7 +15939,7 @@
         {
           "Category": "Design",
           "PropertyName": "HoverBorderColor",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
