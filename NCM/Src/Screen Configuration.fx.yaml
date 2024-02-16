@@ -1,6 +1,6 @@
 "'Screen Configuration' As screen":
 
-    Container1_2 As groupContainer.verticalAutoLayoutContainer:
+    ConConfigurationscreenmain As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
@@ -13,8 +13,8 @@
             LayoutMinWidth: =640
             Width: =Parent.Width
 
-        Container29 As groupContainer.manualLayoutContainer:
-            AlignInContainer: =AlignInContainer.Center
+        ConConfigurationscreenbody As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =Parent.Height*.9
             LayoutMinHeight: =100
@@ -185,14 +185,10 @@
                                 ZIndex: =2
 
                     ConCard_FieldAssgnment As groupContainer.verticalAutoLayoutContainer:
-                        AlignInContainer: =AlignInContainer.SetByContainer
                         DropShadow: =DropShadow.Semibold
                         Fill: =RGBA(255, 255, 255, 1)
-                        FillPortions: =0
                         Height: =Parent.Height*.6
                         LayoutDirection: =LayoutDirection.Vertical
-                        LayoutMinHeight: =100
-                        LayoutMinWidth: =250
                         LayoutMode: =LayoutMode.Auto
                         Width: =Parent.Width*.3
                         ZIndex: =3
@@ -200,8 +196,6 @@
                         "'Card compomnent_1' As 'Card compomnent'":
                             Height: =Parent.Height
                             image: =database
-                            LayoutMinHeight: =640
-                            LayoutMinWidth: =640
                             MainText: ="Manage Field Assignment"
                             SecondaryText: ="Describe Who can edit Which Field"
                             Width: =Parent.Width
