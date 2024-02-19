@@ -55,6 +55,8 @@
                         Items: =CM_ContractDetails
                         Layout: =Layout.Vertical
                         LoadingSpinner: =LoadingSpinner.Data
+                        LoadingSpinnerColor: |-
+                            =ColorValue("#6b1d5e")
                         TemplateSize: =65
                         Transition: =Transition.Pop
                         Width: =Parent.Width
