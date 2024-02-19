@@ -273,7 +273,7 @@
                         Height: =Parent.Height*.1
                         LayoutAlignItems: =LayoutAlignItems.Center
                         LayoutGap: =5
-                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                         LayoutMinHeight: =100
                         LayoutMinWidth: =250
                         LayoutMode: =LayoutMode.Auto
@@ -285,8 +285,8 @@
                             Color: =RGBA(107, 29, 94,1)
                             FontWeight: =FontWeight.Bold
                             Size: =11
-                            Text: ="CONTRACT ID"
-                            Width: =Parent.Width*.12
+                            Text: =" ID"
+                            Width: =Parent.Width*.1
                             ZIndex: =1
 
                         Label3_15 As label:
@@ -295,8 +295,8 @@
                             PaddingLeft: =10
                             Size: =11
                             Text: ="CONTRACT NAME"
-                            Width: =Parent.Width*.2
-                            ZIndex: =3
+                            Width: =Parent.Width*.15
+                            ZIndex: =2
 
                         Label3_16 As label:
                             Align: =Align.Center
@@ -305,7 +305,7 @@
                             Size: =11
                             Text: ="CLIENT"
                             Width: =Parent.Width*.12
-                            ZIndex: =4
+                            ZIndex: =3
 
                         Label3_17 As label:
                             Align: =Align.Center
@@ -313,17 +313,8 @@
                             FontWeight: =FontWeight.Bold
                             Size: =11
                             Text: ="SERVICE"
-                            Width: =Parent.Width*.12
-                            ZIndex: =5
-
-                        Label3_18 As label:
-                            Align: =Align.Center
-                            Color: =RGBA(107, 29, 94,1)
-                            FontWeight: =FontWeight.Bold
-                            Size: =11
-                            Text: ="STATUS"
-                            Width: =Parent.Width*.12
-                            ZIndex: =6
+                            Width: =Parent.Width*.2
+                            ZIndex: =4
 
                         Label3_19 As label:
                             Align: =Align.Center
@@ -332,7 +323,7 @@
                             Size: =11
                             Text: ="APPLICABLE TO"
                             Width: =Parent.Width*.12
-                            ZIndex: =7
+                            ZIndex: =5
 
                         Label3_20 As label:
                             Align: =Align.Center
@@ -341,7 +332,16 @@
                             Size: =11
                             Text: ="COUNTURIES"
                             Width: =Parent.Width*.12
-                            ZIndex: =8
+                            ZIndex: =6
+
+                        Label3_18 As label:
+                            Align: =Align.Center
+                            Color: =RGBA(107, 29, 94,1)
+                            FontWeight: =FontWeight.Bold
+                            Size: =11
+                            Text: ="STATUS"
+                            Width: =Parent.Width*.12
+                            ZIndex: =7
 
                     Rectangle1_1 As rectangle:
                         AlignInContainer: =AlignInContainer.Center
@@ -354,7 +354,7 @@
                     GridGallery1_1 As gallery.variableTemplateHeightGallery:
                         DelayItemLoading: =true
                         FillPortions: =0
-                        Height: =380
+                        Height: =Parent.Height*.77
                         Items: |-
                             =//CM_ContractDetails
                             If(
@@ -384,7 +384,9 @@
 
                         Label9_7 As label:
                             Align: =Align.Center
+                            FontWeight: =FontWeight.Bold
                             OnSelect: =Select(Parent)
+                            Size: =11
                             Text: =ThisItem.Title
                             Width: =Label3_14.Width
                             X: =Label3_14.X
@@ -392,8 +394,10 @@
                             ZIndex: =1
 
                         Label9_8 As label:
+                            FontWeight: =FontWeight.Semibold
                             OnSelect: =Select(Parent)
                             PaddingLeft: =10
+                            Size: =11
                             Text: =ThisItem.Contract_name
                             Width: =Label3_15.Width
                             X: =Label3_15.X
@@ -402,7 +406,9 @@
 
                         Label9_9 As label:
                             Align: =Align.Center
+                            FontWeight: =FontWeight.Semibold
                             OnSelect: =Select(Parent)
+                            Size: =11
                             Text: =ThisItem.Supplier.Value
                             Width: =Label3_16.Width
                             X: =Label3_16.X
@@ -411,25 +417,20 @@
 
                         Label9_10 As label:
                             Align: =Align.Center
+                            FontWeight: =FontWeight.Semibold
                             OnSelect: =Select(Parent)
+                            Size: =11
                             Text: =ThisItem.Service_Type_fk.Value
                             Width: =Label3_17.Width
                             X: =Label3_17.X
                             Y: =(GridGallery1_1.TemplateHeight-Self.Height)/2
                             ZIndex: =4
 
-                        Label9_11 As label:
-                            Align: =Align.Center
-                            OnSelect: =Select(Parent)
-                            Text: =ThisItem.Status.Value
-                            Width: =Label3_18.Width
-                            X: =Label3_18.X
-                            Y: =10
-                            ZIndex: =5
-
                         Label9_12 As label:
                             Align: =Align.Center
+                            FontWeight: =FontWeight.Semibold
                             OnSelect: =Select(Parent)
+                            Size: =11
                             Text: =ThisItem.Applicable_to.Value
                             Width: =Label3_19.Width
                             X: =Label3_19.X
@@ -438,10 +439,76 @@
 
                         Label9_13 As label:
                             Align: =Align.Center
+                            FontWeight: =FontWeight.Semibold
                             OnSelect: =Select(Parent)
-                            Text: =If(ThisItem.Countries.Value=Blank(),"N/A",ThisItem.Countries.Value)
+                            Size: =11
+                            Text: =If(ThisItem.Countries.Value=Blank(),"-",ThisItem.Countries.Value)
                             Width: =Label3_20.Width
                             X: =Label3_20.X
                             Y: =(GridGallery1_1.TemplateHeight-Self.Height)/2
                             ZIndex: =7
+
+                        Rectangle8_1 As rectangle:
+                            Fill: =RGBA(219, 200, 216, 1)
+                            Height: =2
+                            OnSelect: =Select(Parent)
+                            Width: =Parent.Width*.9
+                            X: =(Parent.Width-Self.Width)/2
+                            Y: =58
+                            ZIndex: =8
+
+                        Label13_1 As label:
+                            Align: =Align.Center
+                            FontWeight: =FontWeight.Semibold
+                            OnSelect: =Select(Parent)
+                            Size: =11
+                            Text: =ThisItem.Status.Value
+                            Visible: =If(ThisItem.Status.Value="Draft",true,false)
+                            Width: =70
+                            X: =Image8_1.X+Image8_1.Width-10
+                            Y: =Toggle2.Y
+                            ZIndex: =9
+
+                        Image8_1 As image:
+                            Height: =40
+                            Image: ='pencil (1)'
+                            OnSelect: =Select(Parent)
+                            Visible: =If(ThisItem.Status.Value="Draft",true,false)
+                            Width: =40
+                            X: =Toggle2_1.X+20
+                            Y: =Toggle2.Y
+                            ZIndex: =10
+
+                        Toggle2_1 As Toggle:
+                            BasePaletteColor: =RGBA(107, 29, 94, 1)
+                            Checked: =If(ThisItem.Status.Value="Active",true,false)
+                            DisplayMode: =DisplayMode.Edit
+                            FontColor: =RGBA(0, 0, 0, 1)
+                            FontSize: =15
+                            FontWeight: =FontWeight.Semibold
+                            Height: =40
+                            Label: =ThisItem.Status.Value
+                            LabelPosition: ='Toggle.LabelPosition'.After
+                            OnCheck: |
+                                =Patch(
+                                    CM_ContractDetails, 
+                                    LookUp(CM_ContractDetails,ID=ThisItem.ID), 
+                                    {
+                                        Status: {Value:"Active"}
+                                    }
+                                )
+                            OnSelect: =Select(Parent)
+                            OnUncheck: |
+                                =Patch(
+                                    CM_ContractDetails, 
+                                    LookUp(CM_ContractDetails,ID=ThisItem.ID), 
+                                    {
+                                        Status: {Value:"Expired"},End_date:Today()
+                                    }
+                                )
+                            Visible: =If(ThisItem.Status.Value="Draft",false,true)
+                            Width: =Label3_9.Width-10
+                            X: =Label3_18.X
+                            Y: =(GridGallery1.TemplateHeight-Self.Height)/2
+                            ZIndex: =11
 
