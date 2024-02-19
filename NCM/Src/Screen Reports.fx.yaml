@@ -273,12 +273,13 @@
                             ZIndex: =5
 
                         Legend1 As legend:
+                            DisplayMode: =DisplayMode.View
                             Height: =200
                             ItemColorSet: =PieChart1.ItemColorSet
                             Items: =PieChart1.SeriesLabels
                             Size: =12
                             Width: =Parent.Width*.9
                             X: =(Parent.Width-Self.Width)/2
-                            Y: =470
+                            Y: =PieChart1.Y+PieChart1.Height
                             ZIndex: =6
 

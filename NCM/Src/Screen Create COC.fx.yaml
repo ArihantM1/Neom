@@ -648,7 +648,7 @@
                                         End_date: DatePickerCanvas1_1.SelectedDate,
                                         Coc_stage: 1,
                                         Status: {Value: "Draft"},
-                                        Countries: ComboBox1_3.Selected,
+                                        // Countries: ComboBox1_3.Selected,
                                         Service_Type_fk: {
                                             Id: Dropdown2_3.Selected.ID,
                                             Value: Dropdown2_3.SelectedText.Value
@@ -665,7 +665,12 @@
                                         Clauses: LookUp(
                                             ClauseCollection,
                                             Number = RandomClauseIndex
-                                        ).Name
+                                        ).Name,
+                                        Country: Concat(
+                                            ComboBox1_3.SelectedItems,
+                                            ThisRecord.Value,
+                                            ";"
+                                        )
                                     }
                                 )
                             );
@@ -694,7 +699,16 @@
                                         Id: Dropdown2_4.Selected.ID,
                                         Value: Dropdown2_4.SelectedText.Value
                                     },
-                                    Title: "C" & "000" & contractId.ID
+                                    Title: "C" & "000" & contractId.ID,
+                                    Clauses: LookUp(
+                                        ClauseCollection,
+                                        Number = RandomClauseIndex
+                                    ).Name,
+                                    Country: Concat(
+                                        ComboBox1_3.SelectedItems,
+                                        ThisRecord.Value,
+                                        ";"
+                                    )
                                 }
                             )
                         );

@@ -150,7 +150,7 @@
                     Container13_4 As groupContainer.horizontalAutoLayoutContainer:
                         DropShadow: =DropShadow.None
                         FillPortions: =0
-                        Height: =Parent.Height*.12
+                        Height: =Parent.Height*.1
                         LayoutAlignItems: =LayoutAlignItems.Center
                         LayoutGap: =2
                         LayoutMinHeight: =100
@@ -442,7 +442,7 @@
                             FontWeight: =FontWeight.Semibold
                             OnSelect: =Select(Parent)
                             Size: =11
-                            Text: =If(ThisItem.Countries.Value=Blank(),"-",ThisItem.Countries.Value)
+                            Text: =If(ThisItem.Countries.Value=Blank(),"-",ThisItem.Country)
                             Width: =Label3_20.Width
                             X: =Label3_20.X
                             Y: =(GridGallery1_1.TemplateHeight-Self.Height)/2
