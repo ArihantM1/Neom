@@ -51,7 +51,7 @@
                     Gallery1 As gallery.galleryVertical:
                         DelayItemLoading: =true
                         Fill: =RGBA(250, 250, 250, 1)
-                        Height: =Parent.Height*.8
+                        Height: =Parent.Height*.84
                         Items: =CM_ContractDetails
                         Layout: =Layout.Vertical
                         LoadingSpinner: =LoadingSpinner.Data
