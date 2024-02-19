@@ -58,7 +58,6 @@
                         LoadingSpinnerColor: |-
                             =ColorValue("#6b1d5e")
                         TemplateSize: =65
-                        Transition: =Transition.Pop
                         Width: =Parent.Width
                         X: =(Parent.Width-Self.Width)/2
                         Y: =Container13_6.Y+Container13_6.Height
@@ -269,7 +268,7 @@
                             Items: =ClauseCounts
                             Width: =Parent.Width*.9
                             X: =(Parent.Width-Self.Width)/2
-                            Y: =70
+                            Y: =Rectangle9_1.Y
                             ZIndex: =5
 
                         Legend1 As legend:
