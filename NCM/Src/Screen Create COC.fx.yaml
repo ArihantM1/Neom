@@ -447,6 +447,7 @@
                         ChevronHoverBackground: =ColorFade(RGBA(107, 29, 94, 1), -20%)
                         ChevronHoverFill: =RGBA(107, 29, 94, 1)
                         Color: =RGBA(107, 29, 94, 1)
+                        DefaultSelectedItems: =If(Not(IsBlank(ContractData)),Split(ContractData.Country,";"))
                         DisplayFields: =["Value"]
                         Height: =30
                         HoverFill: =ColorFade(RGBA(107, 29, 94, 1),80%)
