@@ -182,7 +182,7 @@
                             Height: =30
                             HoverFill: =ColorFade(RGBA(107, 29, 94, 1),80%)
                             IsSearchable: =false
-                            Items: =["","Global","Regional","Local"]
+                            Items: =[Blank(),"Global","Regional","Local"]
                             PressedColor: =RGBA(107, 29, 94, 1)
                             PressedFill: =RGBA(255, 255, 255, 1)
                             SearchFields: =["Value"]

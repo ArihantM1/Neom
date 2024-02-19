@@ -594,19 +594,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Screen Home'.'Con header'.'Con body'.'Con body main'.Container12.'Con contracts page'.Container16.Container13_2.Dropdown2_9.AccessibleLabel"
+                  "fullyQualifiedName": "'Screen Create COC'.Container1.Container4.Container6_3.Container9_3.ComboBox1_3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Screen Home'.'Con header'.'Con body'.'Con body main'.Container12.'Con contracts page'.Container16.Container13_2.Dropdown2_9.AccessibleLabel",
+                  "fullyQualifiedName": "'Screen Create COC'.Container1.Container4.Container6_3.Container9_3.ComboBox1_3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen Home",
-                "type": "'Screen Home'.'Con header'.'Con body'.'Con body main'.Container12.'Con contracts page'.Container16.Container13_2.Dropdown2_9"
+                "module": "Screen Create COC",
+                "type": "'Screen Create COC'.Container1.Container4.Container6_3.Container9_3.ComboBox1_3"
               }
             }
           ],
@@ -1343,19 +1343,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Screen Create COC'.Container1.Container4.Container6_3.Container9_3.Dropdown2_8.AccessibleLabel"
+                  "fullyQualifiedName": "'Screen Home'.'Con header'.'Con body'.'Con body main'.Container12.'Con contracts page'.Container16.Container13_2.ComboBox1_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Screen Create COC'.Container1.Container4.Container6_3.Container9_3.Dropdown2_8.AccessibleLabel",
+                  "fullyQualifiedName": "'Screen Home'.'Con header'.'Con body'.'Con body main'.Container12.'Con contracts page'.Container16.Container13_2.ComboBox1_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen Create COC",
-                "type": "'Screen Create COC'.Container1.Container4.Container6_3.Container9_3.Dropdown2_8"
+                "module": "Screen Home",
+                "type": "'Screen Home'.'Con header'.'Con body'.'Con body main'.Container12.'Con contracts page'.Container16.Container13_2.ComboBox1_2"
               }
             }
           ],

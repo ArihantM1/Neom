@@ -91,7 +91,7 @@ HeaderCMP_withoutNavbar As CanvasComponent:
                     Reset(Dropdown2_4);
                     Reset(Dropdown2_5);
                     Reset(Dropdown2_6);
-                    Reset(Dropdown2_8);
+                    Reset(ComboBox1_3);
                     Reset(Dropdown2_7);
                     Reset(TextInput1);
                     Reset(TextInput1_1);

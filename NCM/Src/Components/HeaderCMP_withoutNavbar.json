@@ -1961,7 +1961,7 @@
                   },
                   {
                     "Category": "Behavior",
-                    "InvariantScript": "Reset(Dropdown2_3);\nReset(Dropdown2_2);\nReset(Dropdown2_4);\nReset(Dropdown2_5);\nReset(Dropdown2_6);\nReset(Dropdown2_8);\nReset(Dropdown2_7);\nReset(TextInput1);\nReset(TextInput1_1);\nReset(DatePickerCanvas1);\nReset(DatePickerCanvas1_1);\nReset(Radio1);\nNavigate('Screen Home')",
+                    "InvariantScript": "Reset(Dropdown2_3);\nReset(Dropdown2_2);\nReset(Dropdown2_4);\nReset(Dropdown2_5);\nReset(Dropdown2_6);\nReset(ComboBox1_3);\nReset(Dropdown2_7);\nReset(TextInput1);\nReset(TextInput1_1);\nReset(DatePickerCanvas1);\nReset(DatePickerCanvas1_1);\nReset(Radio1);\nNavigate('Screen Home')",
                     "Property": "OnSelect",
                     "RuleProviderType": "User"
                   }
@@ -2539,7 +2539,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638439209178765223",
+    "LastModifiedTimestamp": "638439375882351767",
     "Name": "HeaderCMP_withoutNavbar",
     "Rules": [
       {
@@ -2598,7 +2598,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638439209178765223",
+  "LastModifiedTimestamp": "638439375882351767",
   "Name": "82ce9062a6a5495bad7260f812f08727",
   "OverridableProperties": {},
   "Version": "1.0"

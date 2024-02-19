@@ -376,7 +376,7 @@
                 ZIndex: =6
 
                 Container9_3 As groupContainer.horizontalAutoLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
+                    AlignInContainer: =AlignInContainer.Start
                     DropShadow: =DropShadow.None
                     Height: =Parent.Height
                     LayoutAlignItems: =LayoutAlignItems.Center
@@ -388,7 +388,6 @@
 
                     Label5_5 As label:
                         Align: =Align.Right
-                        AlignInContainer: =AlignInContainer.Start
                         PaddingLeft: =0
                         PaddingRight: =0
                         Text: |-
@@ -421,29 +420,32 @@
                         Size: =12
                         Text: |-
                             ="Countries: "
-                        Visible: =If(Dropdown2_5.SelectedText.Value="Country",true,false)
+                        Visible: =If(Dropdown2_5.SelectedText.Value="Regional",true,false)
                         Width: =Label5_1.Width
                         ZIndex: =3
 
-                    Dropdown2_8 As dropdown:
+                    ComboBox1_3 As combobox:
                         AlignInContainer: =AlignInContainer.Start
-                        AllowEmptySelection: =true
                         BorderColor: =RGBA(219, 200, 216, 1)
                         ChevronBackground: =RGBA(255, 255, 255, 1)
                         ChevronFill: =RGBA(107, 29, 94, 1)
-                        ChevronHoverBackground: =RGBA(107, 29, 94, 1)
+                        ChevronHoverBackground: =ColorFade(RGBA(107, 29, 94, 1), -20%)
+                        ChevronHoverFill: =RGBA(107, 29, 94, 1)
                         Color: =RGBA(107, 29, 94, 1)
-                        Default: =If(Not(IsBlank(ContractData)),ContractData.Countries.Value)
+                        DisplayFields: =["Value"]
                         Height: =30
-                        HoverFill: |-
-                            = ColorFade( ColorValue("#9e6c97"),80%)
-                        Items: =Choices(CM_ContractDetails.Countries)
-                        PressedFill: =RGBA(158, 108, 151, 1)
-                        SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
+                        HoverFill: =ColorFade(RGBA(107, 29, 94, 1),80%)
+                        IsSearchable: =false
+                        Items: =["","India","Russia","USA","China","Brazil","New Zealand","	Qatar"]
+                        PressedColor: =RGBA(107, 29, 94, 1)
+                        PressedFill: =RGBA(255, 255, 255, 1)
+                        SearchFields: =["Value"]
+                        SearchItems: =[]
+                        SelectionFill: =RGBA(107, 29, 94, 1)
                         Size: =11
-                        Visible: =If(Dropdown2_5.SelectedText.Value="Country",true,false)
-                        Width: =Parent.Width*.35
-                        ZIndex: =4
+                        Visible: =If(Dropdown2_5.SelectedText.Value="Regional",true,false)
+                        Width: =Dropdown2_4.Width
+                        ZIndex: =5
 
             Container6_4 As groupContainer.horizontalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
@@ -604,7 +606,7 @@
                         Reset(Dropdown2_4);
                         Reset(Dropdown2_5);
                         Reset(Dropdown2_6);
-                        Reset(Dropdown2_8);
+                        Reset(ComboBox1_3);
                         Reset(Dropdown2_7);
                         Reset(TextInput1);
                         Reset(TextInput1_1);
@@ -646,7 +648,7 @@
                                         End_date: DatePickerCanvas1_1.SelectedDate,
                                         Coc_stage: 1,
                                         Status: {Value: "Draft"},
-                                        Countries: Dropdown2_8.SelectedText,
+                                        Countries: ComboBox1_3.Selected,
                                         Service_Type_fk: {
                                             Id: Dropdown2_3.Selected.ID,
                                             Value: Dropdown2_3.SelectedText.Value
@@ -660,7 +662,10 @@
                                             Value: Dropdown2_4.SelectedText.Value
                                         },
                                         Title: "C" & "000" & contractId.ID,
-                                        Clauses:LookUp(ClauseCollection,Number=RandomClauseIndex).Name
+                                        Clauses: LookUp(
+                                            ClauseCollection,
+                                            Number = RandomClauseIndex
+                                        ).Name
                                     }
                                 )
                             );
@@ -676,7 +681,7 @@
                                     End_date: DatePickerCanvas1_1.SelectedDate,
                                     Coc_stage: 1,
                                     Status: {Value: "Draft"},
-                                    Countries: Dropdown2_8.SelectedText,
+                                    Countries: ComboBox1_3.Selected,
                                     Service_Type_fk: {
                                         Id: Dropdown2_3.Selected.ID,
                                         Value: Dropdown2_3.SelectedText.Value

@@ -470,24 +470,26 @@
                                     Width: =Parent.Width*.11
                                     ZIndex: =1
 
-                                Dropdown2_9 As dropdown:
-                                    AllowEmptySelection: |
-                                        =true
+                                ComboBox1_2 As combobox:
                                     BorderColor: =RGBA(219, 200, 216, 1)
                                     ChevronBackground: =RGBA(255, 255, 255, 1)
                                     ChevronFill: =RGBA(107, 29, 94, 1)
-                                    ChevronHoverBackground: =Self.HoverBorderColor
+                                    ChevronHoverBackground: =ColorFade(RGBA(107, 29, 94, 1), -20%)
+                                    ChevronHoverFill: =RGBA(107, 29, 94, 1)
                                     Color: =RGBA(107, 29, 94, 1)
+                                    DisplayFields: =["Value"]
                                     Height: =30
-                                    HoverColor: =RGBA(107, 29, 94, 1)
-                                    HoverFill: |-
-                                        =ColorFade  (ColorValue("#9e6c97"),70%)
-                                    Items: =["","Global","Regional","Local"]
-                                    PressedFill: =RGBA(158, 108, 151, 1)
-                                    SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
+                                    HoverFill: =ColorFade(RGBA(107, 29, 94, 1),80%)
+                                    IsSearchable: =false
+                                    Items: =[Blank(),"Global","Regional","Local"]
+                                    PressedColor: =RGBA(107, 29, 94, 1)
+                                    PressedFill: =RGBA(255, 255, 255, 1)
+                                    SearchFields: =["Value"]
+                                    SearchItems: =[]
+                                    SelectionFill: =RGBA(107, 29, 94, 1)
                                     Size: =11
                                     Width: =220
-                                    ZIndex: =3
+                                    ZIndex: =2
 
                                 Label3_5 As label:
                                     Align: =Align.Center
@@ -498,7 +500,7 @@
                                     Size: =12
                                     Text: ="Status"
                                     Width: =Parent.Width*.07
-                                    ZIndex: =4
+                                    ZIndex: =3
 
                                 Dropdown2 As dropdown:
                                     AllowEmptySelection: =true
@@ -516,7 +518,7 @@
                                     SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
                                     Size: =11
                                     Width: =220
-                                    ZIndex: =5
+                                    ZIndex: =4
 
                                 Container22 As groupContainer.horizontalAutoLayoutContainer:
                                     DropShadow: =DropShadow.None
@@ -527,7 +529,7 @@
                                     LayoutMinWidth: =250
                                     LayoutMode: =LayoutMode.Auto
                                     PaddingRight: =20
-                                    ZIndex: =6
+                                    ZIndex: =5
 
                                     Button1_1 As button:
                                         BorderColor: |-
@@ -540,7 +542,7 @@
                                         HoverFill: |-
                                             =ColorValue("#6b1d5e")
                                         OnSelect: |-
-                                            =Reset(Dropdown2_9);
+                                            =Reset(ComboBox1_2);
                                             Reset(Dropdown2)
                                         PressedBorderColor: |-
                                             =ColorValue("#6b1d5e")
@@ -548,7 +550,6 @@
                                             =ColorValue("#6b1d5e")
                                         Size: =11
                                         Text: ="Reset"
-                                        Visible: =If(IsBlank(Dropdown2)&&IsBlank(Dropdown2_9),false,true)
                                         Width: =Parent.Width*.12
                                         Y: =(Parent.Height-Self.Height)/2
                                         ZIndex: =1
@@ -597,7 +598,7 @@
                                     PaddingLeft: =10
                                     Size: =11
                                     Text: ="CONTRACT NAME"
-                                    Width: =Parent.Width*.13
+                                    Width: =Parent.Width*.12
                                     ZIndex: =2
 
                                 Label3_7 As label:
@@ -659,7 +660,7 @@
                                 Height: =380
                                 Items: |-
                                     =If(
-                                        IsBlank(Dropdown2.Selected.Value) && IsBlank(Dropdown2_9.Selected.Value),
+                                        IsBlank(Dropdown2.Selected.Value) && IsBlank(ComboBox1_2.Selected.Value),
                                         CM_ContractDetails,
                                         Filter(
                                             CM_ContractDetails,
@@ -668,8 +669,8 @@
                                                 Status.Value = Dropdown2.Selected.Value,
                                                 true
                                             ) && If(
-                                                !IsBlank(Dropdown2_9.Selected.Value),
-                                                Applicable_to.Value = Dropdown2_9.Selected.Value,
+                                                !IsBlank(ComboBox1_2.Selected.Value),
+                                                Applicable_to.Value = ComboBox1_2.Selected.Value,
                                                 true
                                             )
                                         )
