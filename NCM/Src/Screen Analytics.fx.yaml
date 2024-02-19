@@ -355,7 +355,24 @@
                         DelayItemLoading: =true
                         FillPortions: =0
                         Height: =380
-                        Items: =CustomGallerySample
+                        Items: |-
+                            =//CM_ContractDetails
+                            If(
+                                IsBlank(Dropdown2_1.Selected.Value) && IsBlank(ComboBox1_1.Selected.Value),
+                                CM_ContractDetails,
+                                Filter(
+                                    CM_ContractDetails,
+                                    If(
+                                        !IsBlank(Dropdown2_1.Selected.Value),
+                                        Status.Value = Dropdown2_1.Selected.Value,
+                                        true
+                                    ) && If(
+                                        !IsBlank(ComboBox1_1.Selected.Value),
+                                        Applicable_to.Value = ComboBox1_1.Selected.Value,
+                                        true
+                                    )
+                                )
+                            )
                         Layout: =Layout.Vertical
                         LayoutMinHeight: =287
                         LayoutMinWidth: =320
@@ -368,7 +385,7 @@
                         Label9_7 As label:
                             Align: =Align.Center
                             OnSelect: =Select(Parent)
-                            Text: =ThisItem.SampleHeading
+                            Text: =ThisItem.Title
                             Width: =Label3_14.Width
                             X: =Label3_14.X
                             Y: =(GridGallery1_1.TemplateHeight-Self.Height)/2
@@ -377,7 +394,7 @@
                         Label9_8 As label:
                             OnSelect: =Select(Parent)
                             PaddingLeft: =10
-                            Text: =ThisItem.SampleHeading
+                            Text: =ThisItem.Contract_name
                             Width: =Label3_15.Width
                             X: =Label3_15.X
                             Y: =(GridGallery1_1.TemplateHeight-Self.Height)/2
@@ -386,7 +403,7 @@
                         Label9_9 As label:
                             Align: =Align.Center
                             OnSelect: =Select(Parent)
-                            Text: =ThisItem.SampleHeading
+                            Text: =ThisItem.Supplier.Value
                             Width: =Label3_16.Width
                             X: =Label3_16.X
                             Y: =(GridGallery1_1.TemplateHeight-Self.Height)/2
@@ -395,7 +412,7 @@
                         Label9_10 As label:
                             Align: =Align.Center
                             OnSelect: =Select(Parent)
-                            Text: =ThisItem.SampleHeading
+                            Text: =ThisItem.Service_Type_fk.Value
                             Width: =Label3_17.Width
                             X: =Label3_17.X
                             Y: =(GridGallery1_1.TemplateHeight-Self.Height)/2
@@ -404,7 +421,7 @@
                         Label9_11 As label:
                             Align: =Align.Center
                             OnSelect: =Select(Parent)
-                            Text: =ThisItem.SampleHeading
+                            Text: =ThisItem.Status.Value
                             Width: =Label3_18.Width
                             X: =Label3_18.X
                             Y: =10
@@ -413,7 +430,7 @@
                         Label9_12 As label:
                             Align: =Align.Center
                             OnSelect: =Select(Parent)
-                            Text: =ThisItem.SampleHeading
+                            Text: =ThisItem.'Applicable_to'.Value
                             Width: =Label3_19.Width
                             X: =Label3_19.X
                             Y: =10
@@ -422,7 +439,7 @@
                         Label9_13 As label:
                             Align: =Align.Center
                             OnSelect: =Select(Parent)
-                            Text: =ThisItem.SampleHeading
+                            Text: =If(ThisItem.Countries.Value=Blank(),"N/A",ThisItem.Countries.Value)
                             Width: =Label3_20.Width
                             X: =Label3_20.X
                             Y: =(GridGallery1_1.TemplateHeight-Self.Height)/2
