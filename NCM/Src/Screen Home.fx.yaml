@@ -633,7 +633,7 @@
                                     FontWeight: =FontWeight.Bold
                                     Size: =11
                                     Text: ="COUNTURIES"
-                                    Width: =Parent.Width*.12
+                                    Width: =Parent.Width*.1
                                     ZIndex: =6
 
                                 Label3_9 As label:
