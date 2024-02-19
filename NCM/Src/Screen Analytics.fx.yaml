@@ -445,7 +445,7 @@
                             FontWeight: =FontWeight.Semibold
                             OnSelect: =Select(Parent)
                             Size: =11
-                            Text: =If(ThisItem.Countries.Value=Blank(),"-",ThisItem.Country)
+                            Text: =If(ThisItem.Country=Blank(),"-",ThisItem.Country)
                             Width: =Label3_20.Width
                             X: =Label3_20.X
                             Y: =(GridGallery1_1.TemplateHeight-Self.Height)/2
