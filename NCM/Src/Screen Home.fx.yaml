@@ -574,7 +574,7 @@
                                 Height: =Parent.Height*.1
                                 LayoutAlignItems: =LayoutAlignItems.Center
                                 LayoutGap: =5
-                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                                 LayoutMinHeight: =100
                                 LayoutMinWidth: =250
                                 LayoutMode: =LayoutMode.Auto
@@ -587,7 +587,7 @@
                                     FontWeight: =FontWeight.Bold
                                     Size: =11
                                     Text: ="ID"
-                                    Width: =Parent.Width*.1
+                                    Width: =Parent.Width*.09
                                     ZIndex: =1
 
                                 Label3_6 As label:
@@ -597,7 +597,7 @@
                                     PaddingLeft: =10
                                     Size: =11
                                     Text: ="CONTRACT NAME"
-                                    Width: =Parent.Width*.2
+                                    Width: =Parent.Width*.13
                                     ZIndex: =2
 
                                 Label3_7 As label:
@@ -615,7 +615,7 @@
                                     FontWeight: =FontWeight.Bold
                                     Size: =11
                                     Text: ="SERVICE"
-                                    Width: =Parent.Width*.12
+                                    Width: =Parent.Width*.15
                                     ZIndex: =4
 
                                 Label3_10 As label:
