@@ -659,7 +659,8 @@
                                             Id: Dropdown2_4.Selected.ID,
                                             Value: Dropdown2_4.SelectedText.Value
                                         },
-                                        Title: "C" & "000" & contractId.ID
+                                        Title: "C" & "000" & contractId.ID,
+                                        Clauses:LookUp(ClauseCollection,Number=RandomClauseIndex).Name
                                     }
                                 )
                             );

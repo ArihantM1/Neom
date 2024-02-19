@@ -430,7 +430,7 @@
                         Label9_12 As label:
                             Align: =Align.Center
                             OnSelect: =Select(Parent)
-                            Text: =ThisItem.'Applicable_to'.Value
+                            Text: =ThisItem.Applicable_to.Value
                             Width: =Label3_19.Width
                             X: =Label3_19.X
                             Y: =10

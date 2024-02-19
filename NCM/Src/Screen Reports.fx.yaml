@@ -45,20 +45,45 @@
                         Text: ="Resources Involved"
                         Width: =Parent.Width*.9
                         X: =Parent.Width*.015
-                        Y: =12
+                        Y: =Parent.Height*.01
                         ZIndex: =1
 
                     Rectangle9 As rectangle:
                         Fill: =RGBA(107, 29, 94, 1)
-                        Height: =2
+                        Height: =1
                         Width: =Parent.Width*.95
                         X: =(Parent.Width-Self.Width)/2
                         Y: =Label14.Height+Label14.Y+Parent.Height*.01
                         ZIndex: =2
 
+                    Label16 As label:
+                        Text: =
+                        X: =36
+                        Y: =152
+                        ZIndex: =3
+
                 Container35 As groupContainer.manualLayoutContainer:
                     FillPortions: =0
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
+                    Width: =Parent.Width*.35
                     ZIndex: =2
+
+                    Label14_1 As label:
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Bold
+                        Size: =18
+                        Text: ="Most Discussed Clauses"
+                        Width: =Parent.Width*.9
+                        X: =Parent.Width*.015
+                        Y: =Parent.Height*.01
+                        ZIndex: =1
+
+                    Rectangle9_1 As rectangle:
+                        Fill: =RGBA(107, 29, 94, 1)
+                        Height: =1
+                        Width: =Parent.Width*.9
+                        X: =(Parent.Width-Self.Width)/2
+                        Y: =Label14.Height+Label14.Y+Parent.Height*.01
+                        ZIndex: =2
 
