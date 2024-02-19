@@ -28,8 +28,8 @@
     "Circle1_1": 277,
     "Circle1_2": 135,
     "Circle1_3": 140,
+    "CM_DisscussedClausesPieChart": 319,
     "ComboBox1_1": 180,
-    "CompositePieChart1": 319,
     "Con body": 39,
     "Con body main": 40,
     "Con contracts page": 50,
@@ -313,7 +313,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "02/19/2024 09:09:26",
+  "HeaderLastSavedDateTimeUTC": "02/19/2024 10:41:36",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "560d9749-ce2d-46ff-a027-334511a62e86": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/c106917b92bc456099509fd8f2dd38ab\""
@@ -382,6 +382,7 @@
   "OrderDataSource": {
     "CheckboxValue": 10,
     "ClauseCollection": 14,
+    "ClauseCounts": 15,
     "Clients": 11,
     "CM_ClientData": 0,
     "CM_ContractDetails": 1,
@@ -397,7 +398,7 @@
     "RadioSample": 7
   },
   "OrderGroupControls": {
-    "CompositePieChart1": {
+    "CM_DisscussedClausesPieChart": {
       "Legend1": 1,
       "PieChart1": 0
     },
@@ -469,8 +470,8 @@
     "Circle1_1": {},
     "Circle1_2": {},
     "Circle1_3": {},
+    "CM_DisscussedClausesPieChart": {},
     "ComboBox1_1": {},
-    "CompositePieChart1": {},
     "Con body": {},
     "Con body main": {},
     "Con contracts page": {},
@@ -819,8 +820,8 @@
     "Circle1_1": 221,
     "Circle1_2": 251,
     "Circle1_3": 256,
+    "CM_DisscussedClausesPieChart": 142,
     "ComboBox1_1": 93,
-    "CompositePieChart1": 142,
     "Con body": 2,
     "Con body main": 3,
     "Con contracts page": 13,

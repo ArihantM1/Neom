@@ -50,11 +50,12 @@
 
                     Gallery1 As gallery.galleryVertical:
                         DelayItemLoading: =true
+                        Fill: =RGBA(250, 250, 250, 1)
                         Height: =Parent.Height*.8
                         Items: =CM_ContractDetails
                         Layout: =Layout.Vertical
                         LoadingSpinner: =LoadingSpinner.Data
-                        TemplateSize: =66
+                        TemplateSize: =65
                         Transition: =Transition.Pop
                         Width: =Parent.Width
                         X: =(Parent.Width-Self.Width)/2
@@ -164,7 +165,7 @@
 
                     Container13_6 As groupContainer.horizontalAutoLayoutContainer:
                         DropShadow: =DropShadow.None
-                        Height: =Parent.Height*.09
+                        Height: =Parent.Height*.07
                         LayoutAlignItems: =LayoutAlignItems.Center
                         LayoutGap: =5
                         LayoutJustifyContent: =LayoutJustifyContent.Center
@@ -254,7 +255,7 @@
                         Y: =Label14.Height+Label14.Y+Parent.Height*.01
                         ZIndex: =2
 
-                    CompositePieChart1 As group:
+                    CM_DisscussedClausesPieChart As group:
                         Height: =5
                         Width: =5
                         X: =40
@@ -262,7 +263,8 @@
                         ZIndex: =3
 
                         PieChart1 As pieChart:
-                            Items: =PieChartSample
+                            ItemColorSet: =[RGBA(92, 41, 85,1),RGBA(138, 37, 121,1),RGBA(217, 117, 200,1),RGBA(237, 185, 228,1),RGBA(250, 232, 247,1)]
+                            Items: =ClauseCounts
                             Width: =Parent.Width*.9
                             X: =(Parent.Width-Self.Width)/2
                             Y: =70
@@ -272,7 +274,7 @@
                             Height: =200
                             ItemColorSet: =PieChart1.ItemColorSet
                             Items: =PieChart1.SeriesLabels
-                            Size: =16
+                            Size: =12
                             Width: =Parent.Width*.9
                             X: =(Parent.Width-Self.Width)/2
                             Y: =470

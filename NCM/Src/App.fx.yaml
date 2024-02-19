@@ -1,38 +1,69 @@
 App As appinfo:
     BackEnabled: =true
-    OnStart: |+
+    OnStart: |-
         =ClearCollect(
             NavBar,
-           Table(
-            {
-                Title: "HOME",
-                TargetScreen: 'Screen Home'
-            },
-            {
-                Title: "ANALYTICS",
-                TargetScreen: 'Screen Analytics'
-            },
-            {
-                Title: "REPORTS",
-                TargetScreen: 'Screen Reports'
-            }
-              
-           
-        )
+            Table(
+                {
+                    Title: "HOME",
+                    TargetScreen: 'Screen Home'
+                },
+                {
+                    Title: "ANALYTICS",
+                    TargetScreen: 'Screen Analytics'
+                },
+                {
+                    Title: "REPORTS",
+                    TargetScreen: 'Screen Reports'
+                }
+            )
         );
-        Set(cocview,true);
-        ClearCollect(RadioOptions, ["Create New", "Duplicate Existing"]);
-        
-        ClearCollect(CheckboxValue,["Expired August","Expired Contracts","Active Contracts","Draft Contracts"]);
-        
-        ClearCollect(Clients,CM_ClientData);
+        Set(
+            cocview,
+            true
+        );
+        ClearCollect(
+            RadioOptions,
+            [
+                "Create New",
+                "Duplicate Existing"
+            ]
+        );
+        ClearCollect(
+            CheckboxValue,
+            [
+                "Expired August",
+                "Expired Contracts",
+                "Active Contracts",
+                "Draft Contracts"
+            ]
+        );
+        ClearCollect(
+            Clients,
+            CM_ClientData
+        );
         ClearCollect(
             ClauseCollection,
-            {Name: "Severability Clause",Number: 1},
-            {Name: "Non-Solicitation Clause",Number: 2},
-            {Name: "Termination Clause",Number: 3},
-            {Name: "Dispute Resolution Clause",Number: 4},
-            {Name: "Non-Compete Clause",Number: 5}
+            {
+                Name: "Severability Clause",
+                Number: 1
+            },
+            {
+                Name: "Non-Solicitation Clause",
+                Number: 2
+            },
+            {
+                Name: "Termination Clause",
+                Number: 3
+            },
+            {
+                Name: "Dispute Resolution Clause",
+                Number: 4
+            },
+            {
+                Name: "Non-Compete Clause",
+                Number: 5
+            }
         );
         Set (
             RandomClauseIndex,
@@ -41,12 +72,27 @@ App As appinfo:
                 0
             )
         );
-        Set( SelectedClause, FirstN(ClauseCollection, 1+RandomClauseIndex))
-        
-        
-        
-        
-        
+        Set(
+            SelectedClause,
+            FirstN(
+                ClauseCollection,
+                1 + RandomClauseIndex
+            )
+        );
+        ClearCollect(
+            ClauseCounts,
+            AddColumns(
+                GroupBy(
+                    CM_ContractDetails,
+                    "Clauses",
+                    "ClauseGroup"
+                ),
+                "ClauseName",
+                Clauses,
+                "ContractCount",
+                CountRows(ClauseGroup)
+            )
+        )
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
