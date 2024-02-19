@@ -42,43 +42,7 @@ App As appinfo:
             Clients,
             CM_ClientData
         );
-        ClearCollect(
-            ClauseCollection,
-            {
-                Name: "Severability Clause",
-                Number: 1
-            },
-            {
-                Name: "Non-Solicitation Clause",
-                Number: 2
-            },
-            {
-                Name: "Termination Clause",
-                Number: 3
-            },
-            {
-                Name: "Dispute Resolution Clause",
-                Number: 4
-            },
-            {
-                Name: "Non-Compete Clause",
-                Number: 5
-            }
-        );
-        Set (
-            RandomClauseIndex,
-            RoundUp(
-                Rand() * (CountRows(ClauseCollection) - 1),
-                0
-            )
-        );
-        Set(
-            SelectedClause,
-            FirstN(
-                ClauseCollection,
-                1 + RandomClauseIndex
-            )
-        );
+        
         ClearCollect(
             ClauseCounts,
             AddColumns(

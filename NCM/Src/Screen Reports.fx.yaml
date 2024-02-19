@@ -1,4 +1,42 @@
 "'Screen Reports' As screen":
+    OnVisible: |-
+        =ClearCollect(
+            ClauseCollection,
+            {
+                Name: "Severability Clause",
+                Number: 1
+            },
+            {
+                Name: "Non-Solicitation Clause",
+                Number: 2
+            },
+            {
+                Name: "Termination Clause",
+                Number: 3
+            },
+            {
+                Name: "Dispute Resolution Clause",
+                Number: 4
+            },
+            {
+                Name: "Non-Compete Clause",
+                Number: 5
+            }
+        );
+        Set (
+            RandomClauseIndex,
+            RoundUp(
+                Rand() * (CountRows(ClauseCollection) - 1),
+                0
+            )
+        );
+        Set(
+            SelectedClause,
+            FirstN(
+                ClauseCollection,
+                1 + RandomClauseIndex
+            )
+        );
 
     Container1_3 As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
@@ -243,7 +281,7 @@
                         FontWeight: =FontWeight.Bold
                         Size: =18
                         Text: ="Most Discussed Clauses"
-                        Width: =Parent.Width*.9
+                        Width: =Parent.Width*.8
                         X: =Parent.Width*.015
                         Y: =Parent.Height*.01
                         ZIndex: =1
@@ -281,4 +319,15 @@
                             X: =(Parent.Width-Self.Width)/2
                             Y: =PieChart1.Y+PieChart1.Height
                             ZIndex: =6
+
+                    Icon3 As icon.Reload:
+                        Color: =RGBA(107, 29, 94, 1)
+                        Height: =30
+                        Icon: =Icon.Reload
+                        OnSelect: =
+                        Tooltip: ="Reload Clauses"
+                        Width: =30
+                        X: =Label14_1.X+Label14_1.Width+Parent.Width*.1
+                        Y: =Parent.Height*.015
+                        ZIndex: =7
 
