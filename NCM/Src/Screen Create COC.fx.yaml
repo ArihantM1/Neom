@@ -3,7 +3,22 @@
         =Set(
             varPreviousClient,
             contractId.Supplier
-        )
+        );
+        
+        Set (
+            RandomClauseIndex,
+            RoundUp(
+                Rand() * (CountRows(ClauseCollection) - 1),
+                0
+            )
+        );
+        Set(
+            SelectedClause,
+            FirstN(
+                ClauseCollection,
+                1 + RandomClauseIndex
+            )
+        );
 
     Container2_1 As groupContainer.horizontalAutoLayoutContainer:
         Height: =Parent.Height

@@ -1673,17 +1673,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.varPreviousClient"
+                  "fullyQualifiedName": "App.SelectedClause"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.varPreviousClient",
+                  "fullyQualifiedName": "App.SelectedClause",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "varPreviousClient",
+                "member": "SelectedClause",
                 "module": "App",
                 "type": "App"
               }
@@ -1793,17 +1793,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.SelectedClause"
+                  "fullyQualifiedName": "App.varPreviousClient"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.SelectedClause",
+                  "fullyQualifiedName": "App.varPreviousClient",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "SelectedClause",
+                "member": "varPreviousClient",
                 "module": "App",
                 "type": "App"
               }
