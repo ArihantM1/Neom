@@ -32,31 +32,15 @@ App As appinfo:
         ClearCollect(
             CheckboxValue,
             [
-                "Expired August",
-                "Expired Contracts",
-                "Active Contracts",
-                "Draft Contracts"
+               // {name:"Expired August",value:"Expired"},
+                {name:"Expired Contracts",value:"Expired"},
+                {name:"Active Contracts",value:"Active"},
+                {name:"Draft Contracts",value:"Draft"}
             ]
         );
         ClearCollect(
             Clients,
             CM_ClientData
-        );
-        
-        
-        ClearCollect(
-            ClauseCounts,
-            AddColumns(
-                GroupBy(
-                    CM_ContractDetails,
-                    "Clauses",
-                    "ClauseGroup"
-                ),
-                "ClauseName",
-                Clauses,
-                "ContractCount",
-                CountRows(ClauseGroup)
-            )
         );
         ClearCollect(
             ClauseCollection,
@@ -81,6 +65,34 @@ App As appinfo:
                 Number: 5
             }
         );
+        Set (
+            RandomClauseIndex,
+            RoundUp(
+                Rand() * (CountRows(ClauseCollection) - 1),
+                0
+            )
+        );
+        Set(
+            SelectedClause,
+            FirstN(
+                ClauseCollection,
+                1 + RandomClauseIndex
+            )
+        );
+        ClearCollect(
+            ClauseCounts,
+            AddColumns(
+                GroupBy(
+                    CM_ContractDetails,
+                    "Clauses",
+                    "ClauseGroup"
+                ),
+                "ClauseName",
+                Clauses,
+                "ContractCount",
+                CountRows(ClauseGroup)
+            )
+        )
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
