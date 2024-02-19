@@ -482,7 +482,7 @@
                                     HoverColor: =RGBA(107, 29, 94, 1)
                                     HoverFill: |-
                                         =ColorFade  (ColorValue("#9e6c97"),70%)
-                                    Items: =["Global","Regional"]
+                                    Items: =["","Global","Regional","Local"]
                                     PressedFill: =RGBA(158, 108, 151, 1)
                                     SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
                                     Size: =11
@@ -548,7 +548,7 @@
                                             =ColorValue("#6b1d5e")
                                         Size: =11
                                         Text: ="Reset"
-                                        Visible: =If(IsBlank(Dropdown2)&&IsBlank(Dropdown2_9),true,false)
+                                        Visible: =If(IsBlank(Dropdown2)&&IsBlank(Dropdown2_9),false,true)
                                         Width: =Parent.Width*.12
                                         Y: =(Parent.Height-Self.Height)/2
                                         ZIndex: =1
