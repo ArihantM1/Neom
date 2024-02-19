@@ -32,10 +32,10 @@ App As appinfo:
         ClearCollect(
             CheckboxValue,
             [
-                "Expired August",
-                "Expired Contracts",
-                "Active Contracts",
-                "Draft Contracts"
+               // {name:"Expired August",value:"Expired"},
+                {name:"Expired Contracts",value:"Expired"},
+                {name:"Active Contracts",value:"Active"},
+                {name:"Draft Contracts",value:"Draft"}
             ]
         );
         ClearCollect(

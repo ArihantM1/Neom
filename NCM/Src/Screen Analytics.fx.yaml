@@ -97,12 +97,12 @@
                                     FontWeight: =If(ThisItem.IsSelected,FontWeight.Bold,FontWeight.Normal)
                                     HoverBorderColor: =ColorFade(Self.CheckboxBorderColor, 30%)
                                     HoverColor: =RGBA(107, 29, 94, 1)
-                                    OnCheck: =Set(Filter,ThisItem.IsSelected)
+                                    OnCheck: =Set(Filter,ThisItem.value)
                                     OnSelect: =Select(Parent)
                                     PressedBorderColor: =RGBA(107, 29, 94, 1)
                                     PressedColor: =RGBA(107, 29, 94, 1)
                                     Reset: =true
-                                    Text: =ThisItem.Value
+                                    Text: =ThisItem.name
                                     Width: =Parent.Width*.9
                                     X: =12
                                     Y: =(Gallery2.TemplateHeight-Self.Height)/2
@@ -357,6 +357,7 @@
                         Height: =Parent.Height*.77
                         Items: |-
                             =//CM_ContractDetails
+                            If(IsBlank(Filter),
                             If(
                                 IsBlank(Dropdown2_1.Selected.Value) && IsBlank(ComboBox1_1.Selected.Value),
                                 CM_ContractDetails,
@@ -372,6 +373,8 @@
                                         true
                                     )
                                 )
+                            ),
+                            Filter(CM_ContractDetails,Status.Value=Filter)
                             )
                         Layout: =Layout.Vertical
                         LayoutMinHeight: =287
