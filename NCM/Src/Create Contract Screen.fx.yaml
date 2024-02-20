@@ -20,3 +20,830 @@
             )
         );
 
+    Container2_1 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Container7 As groupContainer.horizontalAutoLayoutContainer:
+            FillPortions: =0
+            Height: =Parent.Height*.1
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
+            ZIndex: =2
+
+            HeaderCMP_withoutNavbar_1 As HeaderCMP_withoutNavbar:
+                Height: =Parent.Height
+                LayoutMinHeight: =640
+                LayoutMinWidth: =640
+                Width: =Parent.Width
+
+        Container8 As groupContainer.verticalAutoLayoutContainer:
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
+            ZIndex: =3
+
+            Container10 As groupContainer.verticalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                Fill: =RGBA(255, 255, 255, 1)
+                FillPortions: =0
+                Height: =Parent.Height*.20
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =1
+
+    Container1 As groupContainer.horizontalAutoLayoutContainer:
+        DropShadow: =DropShadow.Bold
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =Parent.Height*.83
+        LayoutMode: =LayoutMode.Auto
+        LayoutOverflowY: =LayoutOverflow.Scroll
+        Width: =Parent.Width*.83
+        X: =Parent.Width*.15
+        Y: =Container10.Height*.75
+        ZIndex: =2
+
+        Container4 As groupContainer.horizontalAutoLayoutContainer:
+            DropShadow: =DropShadow.Bold
+            Fill: =RGBA(255, 255, 255, 1)
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =2
+
+            Container5 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =Parent.Height*.10
+                LayoutAlignItems: =LayoutAlignItems.End
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingLeft: =20
+                Width: =Parent.Width
+                ZIndex: =1
+
+                Radio1 As radio:
+                    AlignInContainer: =AlignInContainer.Start
+                    BorderColor: =RGBA(107, 29, 94, 1)
+                    BorderStyle: =BorderStyle.None
+                    Color: =RGBA(107, 29, 94, 1)
+                    Default: ="Create New"
+                    Height: =Parent.Height-Rectangle4.Height
+                    Items: =RadioOptions
+                    Layout: =Layout.Horizontal
+                    OnChange: |
+                        =
+                         Set(
+                                ContractData,
+                                Blank()
+                            );
+                        Reset(Dropdown2_7);
+                    OnSelect: =
+                    PaddingBottom: =0
+                    PaddingTop: =15
+                    RadioBorderColor: =RGBA(107, 29, 94, 1)
+                    RadioSelectionFill: =RGBA(107, 29, 94, 1)
+                    RadioSize: =30
+                    Size: =11
+                    Width: =Parent.Width*.4
+                    ZIndex: =1
+
+                Rectangle4 As rectangle:
+                    AlignInContainer: =AlignInContainer.Center
+                    Fill: =RGBA(219, 219, 219, 1)
+                    Height: =2
+                    Width: =Parent.Width*.9
+                    ZIndex: =2
+
+            Container30 As groupContainer.verticalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =Parent.Width*.04
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Visible: |
+                    =If(Radio1.Selected.Value = "Duplicate Existing", true, false)
+                ZIndex: =2
+
+                Label5_11 As label:
+                    Align: =Align.Right
+                    AlignInContainer: =AlignInContainer.Center
+                    Size: =12
+                    Text: |-
+                        ="Select COC:"
+                    Width: =Label5.Width
+                    ZIndex: =1
+
+                Dropdown2_7 As dropdown:
+                    AlignInContainer: =AlignInContainer.Center
+                    AllowEmptySelection: =true
+                    BorderColor: =RGBA(219, 200, 216, 1)
+                    ChevronBackground: =RGBA(255, 255, 255, 1)
+                    ChevronFill: =RGBA(107, 29, 94, 1)
+                    ChevronHoverBackground: =RGBA(107, 29, 94, 1)
+                    Color: =RGBA(107, 29, 94, 1)
+                    Default: ="--Select a Call off Contact to duplicate--"
+                    Height: =30
+                    HoverFill: |-
+                        = ColorFade( ColorValue("#9e6c97"),80%)
+                    Items: =contractName
+                    OnChange: =Set(ContractData,Dropdown2_7.Selected)
+                    OnSelect: =Set(contractName,CM_ContractDetails)
+                    PressedFill: =RGBA(158, 108, 151, 1)
+                    SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
+                    Size: =11
+                    Width: =Parent.Width*.85
+                    ZIndex: =2
+
+            Container6 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =Parent.Width*.04
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =3
+
+                Label5 As label:
+                    Align: =Align.Right
+                    Size: =12
+                    Text: |-
+                        ="Client: "
+                    Width: =Parent.Width*.09
+                    ZIndex: =1
+
+                Dropdown2_2 As dropdown:
+                    AllowEmptySelection: =true
+                    BorderColor: =RGBA(219, 200, 216, 1)
+                    ChevronBackground: =RGBA(255, 255, 255, 1)
+                    ChevronFill: =RGBA(107, 29, 94, 1)
+                    ChevronHoverBackground: =RGBA(107, 29, 94, 1)
+                    Color: =RGBA(107, 29, 94, 1)
+                    Default: |
+                        =If(Not(IsBlank(ContractData)),ContractData.Supplier.Value)
+                    Height: =30
+                    HoverFill: |-
+                        = ColorFade( ColorValue("#9e6c97"),80%)
+                    Items: =CM_ClientData
+                    OnChange: =Set(Items,CM_ClientData);
+                    OnSelect: =Set(ClientsData,CM_ClientData);
+                    PressedFill: =RGBA(158, 108, 151, 1)
+                    SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
+                    Size: =11
+                    Width: =Parent.Width*.35
+                    ZIndex: =2
+
+                Label5_1 As label:
+                    Align: =Align.Right
+                    Size: =12
+                    Text: |-
+                        ="Service Type: "
+                    Width: =Parent.Width*.15
+                    ZIndex: =3
+
+                Dropdown2_3 As dropdown:
+                    AllowEmptySelection: =true
+                    BorderColor: =RGBA(219, 200, 216, 1)
+                    ChevronBackground: =RGBA(255, 255, 255, 1)
+                    ChevronFill: =RGBA(107, 29, 94, 1)
+                    ChevronHoverBackground: =RGBA(107, 29, 94, 1)
+                    Color: =RGBA(107, 29, 94, 1)
+                    Default: =If(Not(IsBlank(ContractData)),ContractData.Service_Type_fk.Value)
+                    Height: =30
+                    HoverFill: |-
+                        = ColorFade( ColorValue("#9e6c97"),80%)
+                    Items: =CM_Service_Types
+                    OnSelect: =
+                    PressedFill: =RGBA(158, 108, 151, 1)
+                    SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
+                    Size: =11
+                    Width: =Parent.Width*.35
+                    ZIndex: =4
+
+            Container6_1 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =Parent.Width*.04
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =4
+
+                Container9_1 As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    DropShadow: =DropShadow.None
+                    Height: =Parent.Height
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width*.50
+                    ZIndex: =1
+
+                    Label5_2 As label:
+                        Align: =Align.Right
+                        Size: =12
+                        Text: |-
+                            ="Services:"
+                        Width: =Label5.Width
+                        ZIndex: =1
+
+                    Dropdown2_4 As dropdown:
+                        AllowEmptySelection: =true
+                        BorderColor: =RGBA(219, 200, 216, 1)
+                        ChevronBackground: =RGBA(255, 255, 255, 1)
+                        ChevronFill: =RGBA(107, 29, 94, 1)
+                        ChevronHoverBackground: =RGBA(107, 29, 94, 1)
+                        Color: =RGBA(107, 29, 94, 1)
+                        Default: =If(Not(IsBlank(ContractData)),ContractData.Service_fk.Value)
+                        Height: =30
+                        HoverFill: |-
+                            = ColorFade( ColorValue("#9e6c97"),80%)
+                        Items: |-
+                            =Filter(
+                                CM_Services,
+                                Service_Type_fk.Id = Dropdown2_3.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID'
+                            )
+                        OnSelect: =Set(services,Filter(CM_Services, Service_Type_fk.Value= Dropdown2_3.Selected.Service_Type))
+                        PressedFill: =RGBA(158, 108, 151, 1)
+                        SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
+                        Size: =12
+                        Width: =Parent.Width*.35
+                        ZIndex: =2
+
+                    Label5_3 As label:
+                        Align: =Align.Right
+                        Size: =12
+                        Text: |-
+                            ="Name: "
+                        Width: =Label5_1.Width
+                        ZIndex: =3
+
+                    TextInput1 As text:
+                        BorderColor: =RGBA(219, 200, 216, 1)
+                        Default: =If(Not(IsBlank(ContractData)),ContractData.Contract_name)
+                        Height: =30
+                        HintText: ="--Enter the name of Contract--"
+                        HoverBorderColor: =ColorFade( RGBA(107, 29, 94, 1),50%)
+                        HoverColor: =RGBA(107, 29, 94, 1)
+                        HoverFill: |-
+                            = ColorFade( ColorValue("#9e6c97"),80%)
+                        PaddingLeft: =10
+                        PressedColor: =RGBA(107, 29, 94, 1)
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Size: =11
+                        Width: =Dropdown2_4.Width
+                        ZIndex: =4
+
+            Container6_2 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =Parent.Width*.04
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =5
+
+                Label5_6 As label:
+                    Align: =Align.Right
+                    AlignInContainer: =AlignInContainer.Center
+                    Size: =12
+                    Text: |-
+                        ="Currency:"
+                    Width: =Label5.Width
+                    ZIndex: =1
+
+                Dropdown2_6 As dropdown:
+                    AlignInContainer: =AlignInContainer.Center
+                    BorderColor: =RGBA(219, 200, 216, 1)
+                    ChevronBackground: =RGBA(255, 255, 255, 1)
+                    ChevronFill: =RGBA(107, 29, 94, 1)
+                    ChevronHoverBackground: =RGBA(107, 29, 94, 1)
+                    Color: =RGBA(107, 29, 94, 1)
+                    Default: =If(Not(IsBlank(ContractData)),ContractData.Currency.Value,"")
+                    Height: =30
+                    HoverFill: |-
+                        = ColorFade( ColorValue("#9e6c97"),80%)
+                    Items: =["--Select a Currency--","USD","SAR"]
+                    PressedFill: =RGBA(158, 108, 151, 1)
+                    Reset: =true
+                    SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
+                    Size: =11
+                    Width: =Parent.Width*.35
+                    ZIndex: =2
+
+                Label5_4 As label:
+                    Align: =Align.Right
+                    AlignInContainer: =AlignInContainer.Center
+                    Size: =12
+                    Text: |-
+                        ="Applicable To: "
+                    Width: =Label5_1.Width
+                    ZIndex: =3
+
+                Dropdown2_5 As dropdown:
+                    AlignInContainer: =AlignInContainer.Center
+                    AllowEmptySelection: =true
+                    BorderColor: =RGBA(219, 200, 216, 1)
+                    ChevronBackground: =RGBA(255, 255, 255, 1)
+                    ChevronFill: =RGBA(107, 29, 94, 1)
+                    ChevronHoverBackground: =RGBA(107, 29, 94, 1)
+                    Color: =RGBA(107, 29, 94, 1)
+                    Default: =If(Not(IsBlank(ContractData)),ContractData.Applicable_to.Value)
+                    Height: =30
+                    HoverFill: |-
+                        = ColorFade( ColorValue("#9e6c97"),80%)
+                    Items: =Choices(CM_ContractDetails.Applicable_to)
+                    PressedFill: =RGBA(158, 108, 151, 1)
+                    SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
+                    Size: =11
+                    Width: =Parent.Width*.35
+                    ZIndex: =4
+
+            Container6_3 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =Parent.Width*.1
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =6
+
+                Container9_3 As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Start
+                    DropShadow: =DropShadow.None
+                    Height: =Parent.Height
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width*.50
+                    ZIndex: =1
+
+                    Label5_5 As label:
+                        Align: =Align.Right
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        Text: |-
+                            ="Description: "
+                        Width: =Label5.Width
+                        ZIndex: =1
+
+                    TextInput1_1 As text:
+                        BorderColor: =RGBA(219, 200, 216, 1)
+                        Default: =If(Not(IsBlank(ContractData)),ContractData.Description)
+                        Height: =Parent.Height*.9
+                        HintText: ="--Description of the Contract--"
+                        HoverBorderColor: =ColorFade( RGBA(107, 29, 94, 1),50%)
+                        HoverColor: =RGBA(107, 29, 94, 1)
+                        HoverFill: |-
+                            = ColorFade( ColorValue("#9e6c97"),80%)
+                        Mode: =TextMode.MultiLine
+                        PressedColor: =RGBA(107, 29, 94, 1)
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Size: =11
+                        Width: =Dropdown2_4.Width
+                        ZIndex: =2
+
+                    Label5_12 As label:
+                        Align: =Align.Right
+                        AlignInContainer: =AlignInContainer.Start
+                        Size: =12
+                        Text: |-
+                            ="Countries: "
+                        Visible: =If(Dropdown2_5.SelectedText.Value="Regional",true,false)
+                        Width: =Label5_1.Width
+                        ZIndex: =3
+
+                    ComboBox1_3 As combobox:
+                        AlignInContainer: =AlignInContainer.Start
+                        BorderColor: =RGBA(219, 200, 216, 1)
+                        ChevronBackground: =RGBA(255, 255, 255, 1)
+                        ChevronFill: =RGBA(107, 29, 94, 1)
+                        ChevronHoverBackground: =ColorFade(RGBA(107, 29, 94, 1), -20%)
+                        ChevronHoverFill: =RGBA(107, 29, 94, 1)
+                        Color: =RGBA(107, 29, 94, 1)
+                        DefaultSelectedItems: =If(Not(IsBlank(ContractData)),Split(ContractData.Country,";"))
+                        DisplayFields: =["Value"]
+                        Height: =30
+                        HoverFill: =ColorFade(RGBA(107, 29, 94, 1),80%)
+                        IsSearchable: =false
+                        Items: =["","India","Russia","USA","China","Brazil","New Zealand","	Qatar"]
+                        PressedColor: =RGBA(107, 29, 94, 1)
+                        PressedFill: =RGBA(255, 255, 255, 1)
+                        SearchFields: =["Value"]
+                        SearchItems: =[]
+                        SelectionFill: =RGBA(107, 29, 94, 1)
+                        Size: =11
+                        Visible: =If(Dropdown2_5.SelectedText.Value="Regional",true,false)
+                        Width: =Dropdown2_4.Width
+                        ZIndex: =5
+
+            Container6_4 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =Parent.Width*.04
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =7
+
+                Container9_4 As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Center
+                    DropShadow: =DropShadow.None
+                    Height: =Parent.Height
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width*.50
+                    ZIndex: =1
+
+                    Label5_7 As label:
+                        Align: =Align.Right
+                        Size: =12
+                        Text: |-
+                            ="Start Date: "
+                        Width: =Label5.Width
+                        ZIndex: =1
+
+                    "DatePickerCanvas1 As 'Date picker'":
+                        BasePaletteColor: =RGBA(158, 108, 151, 1)
+                        DisplayMode: =DisplayMode.Edit
+                        FontColor: =RGBA(107, 29, 94, 1)
+                        FontSize: =14
+                        FontWeight: =FontWeight.Bold
+                        Format: ='DatePickerCanvas.Format'.Short
+                        Height: =30
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =320
+                        SelectedDate: =If(Not(IsBlank(ContractData)),ContractData.Start_date)
+                        Width: =TextInput1.Width
+                        X: =0
+                        Y: =0
+                        ZIndex: =2
+
+                    Label5_9 As label:
+                        Align: =Align.Right
+                        Size: =12
+                        Text: |-
+                            ="End Date: "
+                        Width: =Label5_1.Width
+                        ZIndex: =3
+
+                    "DatePickerCanvas1_1 As 'Date picker'":
+                        BasePaletteColor: =RGBA(158, 108, 151, 1)
+                        DisplayMode: =DisplayMode.Edit
+                        FontColor: =RGBA(107, 29, 94, 1)
+                        FontSize: =14
+                        FontWeight: =FontWeight.Bold
+                        Format: ='DatePickerCanvas.Format'.Short
+                        Height: =30
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =320
+                        SelectedDate: =If(Not(IsBlank(ContractData)),ContractData.End_date)
+                        Width: =TextInput1.Width
+                        X: =0
+                        Y: =0
+                        ZIndex: =4
+
+            Container6_5 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =Parent.Width*.04
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =8
+
+                Label5_8 As label:
+                    Align: =Align.Right
+                    AlignInContainer: =AlignInContainer.Center
+                    Size: =12
+                    Text: |-
+                        ="Created On:"
+                    Width: =Label5.Width
+                    ZIndex: =1
+
+                DatePicker1 As datepicker:
+                    AlignInContainer: =AlignInContainer.Center
+                    BorderColor: =RGBA(219, 200, 216, 1)
+                    DisabledBorderColor: =RGBA(219, 200, 216, 1)
+                    DisabledColor: =RGBA(107, 29, 94, 1)
+                    DisabledFill: =RGBA(255, 255, 255, 1)
+                    DisplayMode: =DisplayMode.Disabled
+                    Height: =30
+                    IconBackground: =Color.White
+                    IconFill: |-
+                        =ColorValue("#6b1d5e")
+                    PaddingTop: =5
+                    Size: =12
+                    Width: =Dropdown2_2.Width
+                    ZIndex: =2
+
+                Label5_10 As label:
+                    Align: =Align.Right
+                    AlignInContainer: =AlignInContainer.Center
+                    Size: =12
+                    Text: |-
+                        ="Created By:"
+                    Width: =Label5_1.Width
+                    ZIndex: =3
+
+                TextInput1_2 As text:
+                    AlignInContainer: =AlignInContainer.Center
+                    BorderColor: =RGBA(219, 200, 216, 1)
+                    Default: =User().FullName
+                    DisabledBorderColor: =RGBA(219, 200, 216, 1)
+                    DisabledColor: =RGBA(107, 29, 94, 1)
+                    DisabledFill: =RGBA(255, 255, 255, 1)
+                    DisplayMode: =DisplayMode.Disabled
+                    Height: =30
+                    HintText: =""
+                    HoverBorderColor: =RGBA(107, 29, 94, 1)
+                    HoverColor: =RGBA(107, 29, 94, 1)
+                    HoverFill: =RGBA(219, 200, 216, 1)
+                    PaddingLeft: =10
+                    PressedColor: =RGBA(107, 29, 94, 1)
+                    PressedFill: =RGBA(255, 255, 255, 1)
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Size: =12
+                    Width: =Dropdown2_4.Width
+                    ZIndex: =4
+
+            Container31 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingLeft: =80
+                PaddingRight: =80
+                ZIndex: =9
+
+                Button4 As button:
+                    AlignInContainer: =AlignInContainer.Center
+                    BorderColor: =RGBA(219, 200, 216, 1)
+                    Color: =RGBA(107, 29, 94, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =35
+                    HoverColor: =RGBA(107, 29, 94, 1)
+                    HoverFill: =RGBA(219, 200, 216, 1)
+                    OnSelect: |+
+                        =Reset(Dropdown2_3);
+                        Reset(Dropdown2_2);
+                        Reset(Dropdown2_4);
+                        Reset(Dropdown2_5);
+                        Reset(Dropdown2_6);
+                        Reset(ComboBox1_3);
+                        Reset(Dropdown2_7);
+                        Reset(TextInput1);
+                        Reset(TextInput1_1);
+                        Reset(DatePickerCanvas1);
+                        Reset(DatePickerCanvas1_1);
+                        Reset(Radio1);
+                        Navigate('Home Screen')
+                        
+                        
+                        
+                        
+                        
+                    Size: =10
+                    Text: ="Cancel"
+                    Width: =Parent.Width*.07
+                    ZIndex: =1
+
+                Button4_1 As button:
+                    AlignInContainer: =AlignInContainer.Center
+                    BorderColor: =RGBA(107, 29, 94, 1)
+                    Color: =RGBA(107, 29, 94, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =35
+                    HoverFill: =RGBA(107, 29, 94, 1)
+                    OnSelect: |-
+                        =If(
+                            IsBlank(contractId),
+                            Set(
+                                contractId,
+                                Patch(
+                                    CM_ContractDetails,
+                                    Defaults(CM_ContractDetails),
+                                    {
+                                        Contract_name: TextInput1.Text,
+                                        Currency: Dropdown2_6.SelectedText,
+                                        Applicable_to: Dropdown2_5.SelectedText,
+                                        Description: TextInput1_1.Text,
+                                        Start_date: DatePickerCanvas1.SelectedDate,
+                                        End_date: DatePickerCanvas1_1.SelectedDate,
+                                        Coc_stage: 1,
+                                        Status: {Value: "Draft"},
+                                        // Countries: ComboBox1_3.Selected,
+                                        Service_Type_fk: {
+                                            Id: Dropdown2_3.Selected.ID,
+                                            Value: Dropdown2_3.SelectedText.Value
+                                        },
+                                        Supplier: {
+                                            Id: Dropdown2_2.Selected.ID,
+                                            Value: Dropdown2_2.SelectedText.Value
+                                        },
+                                        Service_fk: {
+                                            Id: Dropdown2_4.Selected.ID,
+                                            Value: Dropdown2_4.SelectedText.Value
+                                        },
+                                        Title: "C" & "000" & contractId.ID,
+                                        Clauses: LookUp(
+                                            ClauseCollection,
+                                            Number = RandomClauseIndex
+                                        ).Name,
+                                        Country: Concat(
+                                            ComboBox1_3.SelectedItems,
+                                            ThisRecord.Value,
+                                            ";"
+                                        )
+                                    }
+                                )
+                            );
+                            Patch(
+                                CM_ContractDetails,
+                                {ID: contractId.ID},
+                                {
+                                    Contract_name: TextInput1.Text,
+                                    Currency: Dropdown2_6.SelectedText,
+                                    Applicable_to: Dropdown2_5.SelectedText,
+                                    Description: TextInput1_1.Text,
+                                    Start_date: DatePickerCanvas1.SelectedDate,
+                                    End_date: DatePickerCanvas1_1.SelectedDate,
+                                    Coc_stage: 1,
+                                    Status: {Value: "Draft"},
+                                    //Countries: ComboBox1_3.Selected,
+                                    Service_Type_fk: {
+                                        Id: Dropdown2_3.Selected.ID,
+                                        Value: Dropdown2_3.SelectedText.Value
+                                    },
+                                    Supplier: {
+                                        Id: Dropdown2_2.Selected.ID,
+                                        Value: Dropdown2_2.SelectedText.Value
+                                    },
+                                    Service_fk: {
+                                        Id: Dropdown2_4.Selected.ID,
+                                        Value: Dropdown2_4.SelectedText.Value
+                                    },
+                                    Title: "C" & "000" & contractId.ID,
+                                    Clauses: LookUp(
+                                        ClauseCollection,
+                                        Number = RandomClauseIndex
+                                    ).Name,
+                                    Country : Concat(
+                                        ComboBox1_3.SelectedItems,
+                                        ThisRecord.Value,
+                                        ";"
+                                    )
+                                }
+                            )
+                        );
+                        /*Patch(
+                            CM_ContractDetails,
+                            Defaults(CM_ContractDetails),
+                            {
+                                Contract_name: conname,
+                                Currency: Dropdown2_6.SelectedText,
+                                Applicable_to: Dropdown2_5.SelectedText,
+                                Description: TextInput1_1.Text,
+                                Start_date: DatePickerCanvas1.SelectedDate,
+                                End_date: DatePickerCanvas1_1.SelectedDate,
+                                Coc_stage: 1,
+                                Status: {Value: "Draft"},
+                                Countries: Dropdown2_8.SelectedText
+                           }
+                        ); 
+                        Set(
+                            NewRecord,
+                            LookUp(
+                                CM_ContractDetails,
+                                Contract_name = conname
+                            )
+                        );
+                        /*Patch(
+                            CM_ContractDetails,
+                            NewRecord,
+                            { Supplier: { Id: Dropdown2_2.Selected.ID, Value: Dropdown2_2.Selected.ID },
+                            Service_Type_fk:{Id:Dropdown2_3.Selected.ID,Value: Dropdown2_3.Selected.ID},
+                            Service_fk:{Id: Dropdown2_4.Selected.ID,Value:Dropdown2_4.Selected.ID},
+                            Countries: If(Dropdown2_5.SelectedText.Value = "Country", Dropdown2_8.SelectedText.Value, Blank())
+                             }
+                        );*/
+                        Navigate(
+                            'Preview Contract Screen',
+                            ScreenTransition.Cover
+                        )
+                    Size: =10
+                    Text: ="Next"
+                    Width: =Parent.Width*.07
+                    ZIndex: =2
+
+    Group1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =14
+
+        Circle1_1 As circle:
+            Fill: =RGBA(191, 186, 190, 1)
+            Height: =Circle1.Height
+            Width: =Circle1.Width
+            X: =Container1.X-Parent.Width*.065-Self.Width
+            Y: =Circle1.Height+Circle1.Y+Parent.Height*.4
+            ZIndex: =3
+
+        Circle1 As circle:
+            BorderStyle: =BorderStyle.None
+            Fill: =RGBA(107, 29, 94, 1)
+            Height: =70
+            Width: =70
+            X: =Container1.X-Parent.Width*.065-Self.Width
+            Y: |
+                =Container10.Height*.9
+            ZIndex: =4
+
+        Icon5 As icon.Flag:
+            Color: =RGBA(255, 255, 255, 1)
+            DisplayMode: =DisplayMode.View
+            Height: =35
+            Icon: =Icon.Flag
+            Width: =35
+            X: =Circle1.X+(Circle1.Width-Self.Width)/2
+            Y: =Circle1.Y+(Circle1.Height-Self.Height)/2
+            ZIndex: =5
+
+        Rectangle7 As rectangle:
+            BorderStyle: =BorderStyle.None
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(107, 29, 94, 1)
+            Height: =3
+            Width: =Container1.X-Circle1.Width-Circle1.X-Parent.Width*0.01
+            X: =Circle1.X+Circle1.Width+(Container1.X-Circle1.X-Circle1.Width-Self.Width)/2
+            Y: =Circle1.Y+(Circle1.Height-Self.Height)/2
+            ZIndex: =6
+
+        Icon5_1 As icon.Flag:
+            Color: =RGBA(255, 255, 255, 1)
+            DisplayMode: =DisplayMode.View
+            Height: =35
+            Icon: =Icon.Flag
+            Width: =35
+            X: =Circle1_1.X+(Circle1_1.Width-Self.Width)/2
+            Y: =Circle1_1.Y+(Circle1_1.Height-Self.Height)/2
+            ZIndex: =8
+
+        Rectangle6 As rectangle:
+            Fill: =RGBA(191, 186, 190, 1)
+            Height: =-Label12.Y-Label12.Height+Circle1_1.Y-Parent.Height*0.01
+            Width: =3
+            X: =Label12.X+(Label12.Width-Self.Width)/2
+            Y: =Label12.Y+Label12.Height
+            ZIndex: =11
+
+        Label12 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Text: ="Overview"
+            X: =Circle1.X+(Circle1.Width-Self.Width)/2
+            Y: =Circle1.Y+Circle1.Height
+            ZIndex: =12
+
+        Label12_1 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Text: ="Documents"
+            X: =Circle1_1.X+(Circle1_1.Width-Self.Width)/2
+            Y: =Circle1_1.Y+Circle1_1.Height
+            ZIndex: =13
+
