@@ -644,6 +644,16 @@
                     AlignInContainer: =AlignInContainer.Center
                     BorderColor: =RGBA(107, 29, 94, 1)
                     Color: =RGBA(107, 29, 94, 1)
+                    DisplayMode: |-
+                        =If(
+                            !IsBlank(Dropdown2_2.SelectedText)
+                            And !IsBlank(Dropdown2_3.SelectedText)
+                            And !IsBlank(Dropdown2_4.SelectedText)
+                            And !IsBlank(TextInput1.Text)
+                            And !IsBlank(Dropdown2_5.SelectedText),
+                            DisplayMode.Edit,
+                            DisplayMode.Disabled
+                        )
                     Fill: =RGBA(255, 255, 255, 1)
                     Height: =35
                     HoverFill: =RGBA(107, 29, 94, 1)
