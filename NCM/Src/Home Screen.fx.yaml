@@ -7,14 +7,14 @@
         Width: =Parent.Width
         ZIndex: =1
 
-        HeaderComponent_1 As HeaderComponent:
+        HeaderComponent_HS As HeaderComponent:
             CurrentScreen: ="HOME"
             Height: =Parent.Height*.1
             LayoutMinHeight: =640
             LayoutMinWidth: =640
             NavItems: =NavBar
 
-        con_BodyMain As groupContainer.horizontalAutoLayoutContainer:
+        con_BodyMain_HS As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
@@ -24,7 +24,7 @@
             Width: =Parent.Width
             ZIndex: =2
 
-            con_Configuration_NavBar As groupContainer.horizontalAutoLayoutContainer:
+            con_Configuration_NavBar_HS As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 Fill: =ColorFade(RGBA(107, 29, 94,1),96%)
@@ -42,7 +42,7 @@
                 Width: =Parent.Width*.17
                 ZIndex: =1
 
-                con_LoggedInUserInfo As groupContainer.verticalAutoLayoutContainer:
+                con_LoggedInUserInfo_HS As groupContainer.verticalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     DropShadow: =DropShadow.None
                     FillPortions: =0
@@ -87,7 +87,7 @@
                         Width: =Parent.Width
                         ZIndex: =3
 
-                con_ConfigurationsPart As groupContainer.verticalAutoLayoutContainer:
+                con_ConfigurationsPart_HS As groupContainer.verticalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     DropShadow: =DropShadow.None
                     FillPortions: =0
@@ -108,7 +108,6 @@
                         ZIndex: =1
 
                     btn_Configurations_Navigate As button:
-                        AlignInContainer: =AlignInContainer.Center
                         Color: =ColorFade(RGBA(107, 29, 94,1),96%)
                         Fill: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
@@ -123,7 +122,7 @@
                         Width: =Parent.Width*.7
                         ZIndex: =2
 
-            con_ContractsAll As groupContainer.horizontalAutoLayoutContainer:
+            con_ContractsAll_HS As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.Semibold
                 Fill: =ColorFade(RGBA(107, 29, 94,1),96%)
@@ -141,7 +140,7 @@
                 Width: =Parent.Width*.85
                 ZIndex: =3
 
-                con_Header_AddContract As groupContainer.horizontalAutoLayoutContainer:
+                con_Header_AddContract_HS As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     DropShadow: =DropShadow.None
                     FillPortions: =0
@@ -156,7 +155,7 @@
                     Width: =Parent.Width
                     ZIndex: =1
 
-                    lbl_Contracts As label:
+                    lbl_Contracts_HS As label:
                         Color: =RGBA(107, 29, 94,1)
                         FontWeight: =FontWeight.Bold
                         Size: =14
@@ -164,7 +163,7 @@
                         Width: =Parent.Width*.4
                         ZIndex: =1
 
-                    con_CreateNewContract As groupContainer.horizontalAutoLayoutContainer:
+                    con_CreateNewContract_HS As groupContainer.horizontalAutoLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         DropShadow: =DropShadow.None
                         FillPortions: =0
@@ -179,7 +178,7 @@
                         Width: =Parent.Width*.48
                         ZIndex: =2
 
-                        btn_CreateNewContract As button:
+                        btn_CreateNewContract_HS As button:
                             BorderColor: =ColorFade(RGBA(107, 29, 94,1),60%)
                             Color: =RGBA(107, 29, 94, 1)
                             Fill: =ColorFade(RGBA(107, 29, 94,1),96%)
@@ -198,7 +197,7 @@
                             Width: =180
                             ZIndex: =2
 
-                con_KpiAll As groupContainer.horizontalAutoLayoutContainer:
+                con_KpiAll_HS As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     DropShadow: =DropShadow.None
                     FillPortions: =0
@@ -212,7 +211,7 @@
                     Width: =Parent.Width
                     ZIndex: =2
 
-                    con_TotalContracts_Kpi As groupContainer.horizontalAutoLayoutContainer:
+                    con_TotalContracts_kpi_HS As groupContainer.horizontalAutoLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         BorderColor: =ColorFade(RGBA(107, 29, 94,1),60%)
                         BorderThickness: =2
@@ -262,7 +261,7 @@
                             Width: =Parent.Width
                             ZIndex: =2
 
-                    con_ExpiredContracts_Kpi As groupContainer.horizontalAutoLayoutContainer:
+                    con_ExpiredContracts_kpi_HS As groupContainer.horizontalAutoLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         BorderColor: =ColorFade(RGBA(107, 29, 94,1),60%)
                         BorderThickness: =2
@@ -312,7 +311,7 @@
                             Width: =Parent.Width
                             ZIndex: =2
 
-                    con_ActiveContracts_Kpi As groupContainer.horizontalAutoLayoutContainer:
+                    con_ActiveContracts_kpi_HS As groupContainer.horizontalAutoLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         BorderColor: =ColorFade(RGBA(107, 29, 94,1),60%)
                         BorderThickness: =2
@@ -362,7 +361,7 @@
                             Width: =Parent.Width
                             ZIndex: =2
 
-                    con_DraftContracts_Kpi As groupContainer.horizontalAutoLayoutContainer:
+                    con_DraftContracts_kpi_HS As groupContainer.horizontalAutoLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         BorderColor: =ColorFade(RGBA(107, 29, 94,1),60%)
                         BorderThickness: =2
@@ -412,12 +411,14 @@
                             Width: =Parent.Width
                             ZIndex: =2
 
-                con_ContractsView As groupContainer.horizontalAutoLayoutContainer:
+                con_ContractsView_HS As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     DropShadow: =DropShadow.None
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width
                     ZIndex: =3
 
                     con_ContractFilter As groupContainer.horizontalAutoLayoutContainer:
@@ -632,7 +633,7 @@
                         ZIndex: =3
 
                     gal_AllContractsDetailView As gallery.variableTemplateHeightGallery:
-                        AlignInContainer: =AlignInContainer.Center
+                        AlignInContainer: =AlignInContainer.SetByContainer
                         DelayItemLoading: =true
                         FillPortions: =0
                         Height: =380

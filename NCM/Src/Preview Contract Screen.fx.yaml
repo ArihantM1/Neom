@@ -292,7 +292,7 @@
                     Width: =Parent.Width*.07
                     ZIndex: =2
 
-    Rectangle7_2 As rectangle:
+    shp_Rect_7_2 As rectangle:
         BorderStyle: =BorderStyle.None
         DisplayMode: =DisplayMode.View
         Fill: =RGBA(107, 29, 94, 1)
@@ -337,7 +337,7 @@
             Y: =Circle1_2.Y+(Circle1_2.Height-Self.Height)/2
             ZIndex: =5
 
-        Rectangle7_1 As rectangle:
+        shp_Rect_7_1 As rectangle:
             BorderStyle: =BorderStyle.None
             DisplayMode: =DisplayMode.View
             Fill: =RGBA(107, 29, 94, 1)
@@ -357,7 +357,7 @@
             Y: =Circle1_3.Y+(Circle1_3.Height-Self.Height)/2
             ZIndex: =7
 
-        Rectangle6_1 As rectangle:
+        shp_Rect_6_1 As rectangle:
             Fill: =RGBA(107, 29, 94, 1)
             Height: =-Label12_2.Y-Label12_2.Height+Circle1_3.Y-Parent.Height*0.01
             Width: =3

@@ -14,86 +14,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.GridGallery1_1.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.GridGallery1_1.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 155,
-                  "charOffset": 223,
-                  "snippet": {
-                    "text": "If(\n            !IsBlank(drp_FilterByStatus_AS.Selected.Value),\n            Status.Value = drp_FilterByStatus_AS.Selected.Value,\n            true\n        )"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Analytics Screen",
-                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.GridGallery1_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "If"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.GridGallery1_1.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.GridGallery1_1.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 2,
-                  "charOffset": 379,
-                  "snippet": {
-                    "text": "&&"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Analytics Screen",
-                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.GridGallery1_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container6_1.Container9_1.Dropdown2_4.Items"
                 }
               ],
@@ -127,7 +47,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
-          "ruleIndex": 1
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -167,19 +87,19 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 0
+          "ruleIndex": 1
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_KpiAll.con_TotalContracts_Kpi.con_CountAndIcon_KpiTotalCount.lbl_Count_TotalContracts.Text"
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_TotalContracts_kpi_HS.con_CountAndIcon_KpiTotalCount.lbl_Count_TotalContracts.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_KpiAll.con_TotalContracts_Kpi.con_CountAndIcon_KpiTotalCount.lbl_Count_TotalContracts.Text",
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_TotalContracts_kpi_HS.con_CountAndIcon_KpiTotalCount.lbl_Count_TotalContracts.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -193,7 +113,7 @@
               "properties": {
                 "member": "Text",
                 "module": "Home Screen",
-                "type": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_KpiAll.con_TotalContracts_Kpi.con_CountAndIcon_KpiTotalCount.lbl_Count_TotalContracts"
+                "type": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_TotalContracts_kpi_HS.con_CountAndIcon_KpiTotalCount.lbl_Count_TotalContracts"
               }
             }
           ],
@@ -214,12 +134,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_KpiAll.con_ExpiredContracts_Kpi.con_CountAndIcon_KpiExpiredCount.lbl_Count_ExpiredContracts.Text"
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_ExpiredContracts_kpi_HS.con_CountAndIcon_KpiExpiredCount.lbl_Count_ExpiredContracts.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_KpiAll.con_ExpiredContracts_Kpi.con_CountAndIcon_KpiExpiredCount.lbl_Count_ExpiredContracts.Text",
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_ExpiredContracts_kpi_HS.con_CountAndIcon_KpiExpiredCount.lbl_Count_ExpiredContracts.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -233,7 +153,7 @@
               "properties": {
                 "member": "Text",
                 "module": "Home Screen",
-                "type": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_KpiAll.con_ExpiredContracts_Kpi.con_CountAndIcon_KpiExpiredCount.lbl_Count_ExpiredContracts"
+                "type": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_ExpiredContracts_kpi_HS.con_CountAndIcon_KpiExpiredCount.lbl_Count_ExpiredContracts"
               }
             }
           ],
@@ -254,12 +174,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_KpiAll.con_ActiveContracts_Kpi.con_CountAndIcon_KpiActiveCount.lbl_Count_ActiveContracts.Text"
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_ActiveContracts_kpi_HS.con_CountAndIcon_KpiActiveCount.lbl_Count_ActiveContracts.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_KpiAll.con_ActiveContracts_Kpi.con_CountAndIcon_KpiActiveCount.lbl_Count_ActiveContracts.Text",
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_ActiveContracts_kpi_HS.con_CountAndIcon_KpiActiveCount.lbl_Count_ActiveContracts.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -273,7 +193,7 @@
               "properties": {
                 "member": "Text",
                 "module": "Home Screen",
-                "type": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_KpiAll.con_ActiveContracts_Kpi.con_CountAndIcon_KpiActiveCount.lbl_Count_ActiveContracts"
+                "type": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_ActiveContracts_kpi_HS.con_CountAndIcon_KpiActiveCount.lbl_Count_ActiveContracts"
               }
             }
           ],
@@ -294,12 +214,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_KpiAll.con_DraftContracts_Kpi.con_CountAndIcon_KpiDraftCount.lbl_Count_DraftContracts.Text"
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_DraftContracts_kpi_HS.con_CountAndIcon_KpiDraftCount.lbl_Count_DraftContracts.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_KpiAll.con_DraftContracts_Kpi.con_CountAndIcon_KpiDraftCount.lbl_Count_DraftContracts.Text",
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_DraftContracts_kpi_HS.con_CountAndIcon_KpiDraftCount.lbl_Count_DraftContracts.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -313,7 +233,7 @@
               "properties": {
                 "member": "Text",
                 "module": "Home Screen",
-                "type": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_KpiAll.con_DraftContracts_Kpi.con_CountAndIcon_KpiDraftCount.lbl_Count_DraftContracts"
+                "type": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_DraftContracts_kpi_HS.con_CountAndIcon_KpiDraftCount.lbl_Count_DraftContracts"
               }
             }
           ],
@@ -334,12 +254,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_ContractsView.gal_AllContractsDetailView.Items"
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.gal_AllContractsDetailView.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_ContractsView.gal_AllContractsDetailView.Items",
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.gal_AllContractsDetailView.Items",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -353,7 +273,7 @@
               "properties": {
                 "member": "Items",
                 "module": "Home Screen",
-                "type": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_ContractsView.gal_AllContractsDetailView"
+                "type": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.gal_AllContractsDetailView"
               }
             }
           ],
@@ -367,19 +287,19 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 0
+          "ruleIndex": 1
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_ContractsView.gal_AllContractsDetailView.Items"
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.gal_AllContractsDetailView.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_ContractsView.gal_AllContractsDetailView.Items",
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.gal_AllContractsDetailView.Items",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -393,7 +313,7 @@
               "properties": {
                 "member": "Items",
                 "module": "Home Screen",
-                "type": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_ContractsView.gal_AllContractsDetailView"
+                "type": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.gal_AllContractsDetailView"
               }
             }
           ],
@@ -407,7 +327,87 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 0
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.gal_Analytics_AS.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.gal_Analytics_AS.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 155,
+                  "charOffset": 223,
+                  "snippet": {
+                    "text": "If(\n            !IsBlank(drp_FilterByStatus_AS.Selected.Value),\n            Status.Value = drp_FilterByStatus_AS.Selected.Value,\n            true\n        )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Analytics Screen",
+                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.gal_Analytics_AS"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "If"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.gal_Analytics_AS.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.gal_Analytics_AS.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 379,
+                  "snippet": {
+                    "text": "&&"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Analytics Screen",
+                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.gal_Analytics_AS"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -528,336 +528,6 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_QuickFiltersBar_AS.con_QuickFilters_AS.con_SubQuickFilters_AS.gal_ClearQuickFilters_AS.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_QuickFiltersBar_AS.con_QuickFilters_AS.con_SubQuickFilters_AS.gal_ClearQuickFilters_AS.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Analytics Screen",
-                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_QuickFiltersBar_AS.con_QuickFilters_AS.con_SubQuickFilters_AS.gal_ClearQuickFilters_AS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_QuickFiltersBar_AS.con_QuickFilters_AS.con_SubQuickFilters_AS.gal_ClearQuickFilters_AS.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_QuickFiltersBar_AS.con_QuickFilters_AS.con_SubQuickFilters_AS.gal_ClearQuickFilters_AS.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Analytics Screen",
-                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_QuickFiltersBar_AS.con_QuickFilters_AS.con_SubQuickFilters_AS.gal_ClearQuickFilters_AS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_QuickFiltersBar_AS.con_QuickFilters_AS.con_SubQuickFilters_AS.lco_ClearQuickFilters_AS.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_QuickFiltersBar_AS.con_QuickFilters_AS.con_SubQuickFilters_AS.lco_ClearQuickFilters_AS.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Analytics Screen",
-                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_QuickFiltersBar_AS.con_QuickFilters_AS.con_SubQuickFilters_AS.lco_ClearQuickFilters_AS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_QuickFiltersBar_AS.con_QuickFilters_AS.con_SubQuickFilters_AS.lco_ClearQuickFilters_AS.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_QuickFiltersBar_AS.con_QuickFilters_AS.con_SubQuickFilters_AS.lco_ClearQuickFilters_AS.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Analytics Screen",
-                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_QuickFiltersBar_AS.con_QuickFilters_AS.con_SubQuickFilters_AS.lco_ClearQuickFilters_AS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.con_ResetDownloadRefresh_AS.btn_Refresh_AS.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.con_ResetDownloadRefresh_AS.btn_Refresh_AS.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Analytics Screen",
-                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.con_ResetDownloadRefresh_AS.btn_Refresh_AS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.con_ResetDownloadRefresh_AS.btn_Refresh_AS.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.con_ResetDownloadRefresh_AS.btn_Refresh_AS.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Analytics Screen",
-                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.con_ResetDownloadRefresh_AS.btn_Refresh_AS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.cmb_FilterByApplicableTo_AS.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.cmb_FilterByApplicableTo_AS.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Analytics Screen",
-                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.cmb_FilterByApplicableTo_AS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.drp_FilterByStatus_AS.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.drp_FilterByStatus_AS.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Analytics Screen",
-                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.drp_FilterByStatus_AS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.GridGallery1_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.GridGallery1_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Analytics Screen",
-                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.GridGallery1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.GridGallery1_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.GridGallery1_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Analytics Screen",
-                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.GridGallery1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.GridGallery1_1.tgl_ContractStatus_AS.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.GridGallery1_1.tgl_ContractStatus_AS.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Analytics Screen",
-                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.GridGallery1_1.tgl_ContractStatus_AS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1284,19 +954,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_ContractsView.con_ContractFilter.con_RefreshReset.ico_Refresh.AccessibleLabel"
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.con_ContractFilter.con_RefreshReset.ico_Refresh.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_ContractsView.con_ContractFilter.con_RefreshReset.ico_Refresh.AccessibleLabel",
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.con_ContractFilter.con_RefreshReset.ico_Refresh.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Home Screen",
-                "type": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_ContractsView.con_ContractFilter.con_RefreshReset.ico_Refresh"
+                "type": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.con_ContractFilter.con_RefreshReset.ico_Refresh"
               }
             }
           ],
@@ -1314,19 +984,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_ContractsView.con_ContractFilter.con_RefreshReset.ico_Refresh.TabIndex"
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.con_ContractFilter.con_RefreshReset.ico_Refresh.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_ContractsView.con_ContractFilter.con_RefreshReset.ico_Refresh.TabIndex",
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.con_ContractFilter.con_RefreshReset.ico_Refresh.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Home Screen",
-                "type": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_ContractsView.con_ContractFilter.con_RefreshReset.ico_Refresh"
+                "type": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.con_ContractFilter.con_RefreshReset.ico_Refresh"
               }
             }
           ],
@@ -1344,19 +1014,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_ContractsView.con_ContractFilter.cmb_ApplicableTo_Filter.AccessibleLabel"
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.con_ContractFilter.cmb_ApplicableTo_Filter.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_ContractsView.con_ContractFilter.cmb_ApplicableTo_Filter.AccessibleLabel",
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.con_ContractFilter.cmb_ApplicableTo_Filter.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Home Screen",
-                "type": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_ContractsView.con_ContractFilter.cmb_ApplicableTo_Filter"
+                "type": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.con_ContractFilter.cmb_ApplicableTo_Filter"
               }
             }
           ],
@@ -1374,19 +1044,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_ContractsView.con_ContractFilter.drp_Status_Filter.AccessibleLabel"
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.con_ContractFilter.drp_Status_Filter.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_ContractsView.con_ContractFilter.drp_Status_Filter.AccessibleLabel",
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.con_ContractFilter.drp_Status_Filter.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Home Screen",
-                "type": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_ContractsView.con_ContractFilter.drp_Status_Filter"
+                "type": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.con_ContractFilter.drp_Status_Filter"
               }
             }
           ],
@@ -1404,19 +1074,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_ContractsView.gal_AllContractsDetailView.AccessibleLabel"
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.gal_AllContractsDetailView.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_ContractsView.gal_AllContractsDetailView.AccessibleLabel",
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.gal_AllContractsDetailView.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Home Screen",
-                "type": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_ContractsView.gal_AllContractsDetailView"
+                "type": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.gal_AllContractsDetailView"
               }
             }
           ],
@@ -1434,19 +1104,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_ContractsView.gal_AllContractsDetailView.TabIndex"
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.gal_AllContractsDetailView.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_ContractsView.gal_AllContractsDetailView.TabIndex",
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.gal_AllContractsDetailView.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Home Screen",
-                "type": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_ContractsView.gal_AllContractsDetailView"
+                "type": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.gal_AllContractsDetailView"
               }
             }
           ],
@@ -1464,19 +1134,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_ContractsView.gal_AllContractsDetailView.tgl_ContractStatus.AccessibleLabel"
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.gal_AllContractsDetailView.tgl_ContractStatus.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_ContractsView.gal_AllContractsDetailView.tgl_ContractStatus.AccessibleLabel",
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.gal_AllContractsDetailView.tgl_ContractStatus.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Home Screen",
-                "type": "'Home Screen'.con_Main_HS.con_BodyMain.con_ContractsAll.con_ContractsView.gal_AllContractsDetailView.tgl_ContractStatus"
+                "type": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.gal_AllContractsDetailView.tgl_ContractStatus"
               }
             }
           ],
@@ -1524,19 +1194,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Reports Screen'.con_Main_RS.con_Vertical_ResourceandClauses_RS.con_Horizontal_ResourceandMDC_RS.con_ResourcesInvolved_RS.Gallery1.AccessibleLabel"
+                  "fullyQualifiedName": "'Reports Screen'.con_Main_RS.con_Vertical_ResourceandClauses_RS.con_Horizontal_ResourceandMDC_RS.con_ResourcesInvolved_RS.gal_ContractDetails_RS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Reports Screen'.con_Main_RS.con_Vertical_ResourceandClauses_RS.con_Horizontal_ResourceandMDC_RS.con_ResourcesInvolved_RS.Gallery1.AccessibleLabel",
+                  "fullyQualifiedName": "'Reports Screen'.con_Main_RS.con_Vertical_ResourceandClauses_RS.con_Horizontal_ResourceandMDC_RS.con_ResourcesInvolved_RS.gal_ContractDetails_RS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Reports Screen",
-                "type": "'Reports Screen'.con_Main_RS.con_Vertical_ResourceandClauses_RS.con_Horizontal_ResourceandMDC_RS.con_ResourcesInvolved_RS.Gallery1"
+                "type": "'Reports Screen'.con_Main_RS.con_Vertical_ResourceandClauses_RS.con_Horizontal_ResourceandMDC_RS.con_ResourcesInvolved_RS.gal_ContractDetails_RS"
               }
             }
           ],
@@ -1554,19 +1224,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Reports Screen'.con_Main_RS.con_Vertical_ResourceandClauses_RS.con_Horizontal_ResourceandMDC_RS.con_ResourcesInvolved_RS.Gallery1.TabIndex"
+                  "fullyQualifiedName": "'Reports Screen'.con_Main_RS.con_Vertical_ResourceandClauses_RS.con_Horizontal_ResourceandMDC_RS.con_ResourcesInvolved_RS.gal_ContractDetails_RS.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Reports Screen'.con_Main_RS.con_Vertical_ResourceandClauses_RS.con_Horizontal_ResourceandMDC_RS.con_ResourcesInvolved_RS.Gallery1.TabIndex",
+                  "fullyQualifiedName": "'Reports Screen'.con_Main_RS.con_Vertical_ResourceandClauses_RS.con_Horizontal_ResourceandMDC_RS.con_ResourcesInvolved_RS.gal_ContractDetails_RS.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Reports Screen",
-                "type": "'Reports Screen'.con_Main_RS.con_Vertical_ResourceandClauses_RS.con_Horizontal_ResourceandMDC_RS.con_ResourcesInvolved_RS.Gallery1"
+                "type": "'Reports Screen'.con_Main_RS.con_Vertical_ResourceandClauses_RS.con_Horizontal_ResourceandMDC_RS.con_ResourcesInvolved_RS.gal_ContractDetails_RS"
               }
             }
           ],
@@ -1578,6 +1248,336 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_QuickFiltersBar_AS.con_QuickFilters_AS.con_SubQuickFilters_AS.gal_ClearQuickFilters_AS.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_QuickFiltersBar_AS.con_QuickFilters_AS.con_SubQuickFilters_AS.gal_ClearQuickFilters_AS.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Analytics Screen",
+                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_QuickFiltersBar_AS.con_QuickFilters_AS.con_SubQuickFilters_AS.gal_ClearQuickFilters_AS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_QuickFiltersBar_AS.con_QuickFilters_AS.con_SubQuickFilters_AS.gal_ClearQuickFilters_AS.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_QuickFiltersBar_AS.con_QuickFilters_AS.con_SubQuickFilters_AS.gal_ClearQuickFilters_AS.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Analytics Screen",
+                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_QuickFiltersBar_AS.con_QuickFilters_AS.con_SubQuickFilters_AS.gal_ClearQuickFilters_AS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_QuickFiltersBar_AS.con_QuickFilters_AS.con_SubQuickFilters_AS.lco_ClearQuickFilters_AS.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_QuickFiltersBar_AS.con_QuickFilters_AS.con_SubQuickFilters_AS.lco_ClearQuickFilters_AS.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Analytics Screen",
+                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_QuickFiltersBar_AS.con_QuickFilters_AS.con_SubQuickFilters_AS.lco_ClearQuickFilters_AS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_QuickFiltersBar_AS.con_QuickFilters_AS.con_SubQuickFilters_AS.lco_ClearQuickFilters_AS.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_QuickFiltersBar_AS.con_QuickFilters_AS.con_SubQuickFilters_AS.lco_ClearQuickFilters_AS.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Analytics Screen",
+                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_QuickFiltersBar_AS.con_QuickFilters_AS.con_SubQuickFilters_AS.lco_ClearQuickFilters_AS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.con_ResetDownloadRefresh_AS.btn_Refresh_AS.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.con_ResetDownloadRefresh_AS.btn_Refresh_AS.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Analytics Screen",
+                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.con_ResetDownloadRefresh_AS.btn_Refresh_AS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.con_ResetDownloadRefresh_AS.btn_Refresh_AS.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.con_ResetDownloadRefresh_AS.btn_Refresh_AS.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Analytics Screen",
+                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.con_ResetDownloadRefresh_AS.btn_Refresh_AS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.cmb_FilterByApplicableTo_AS.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.cmb_FilterByApplicableTo_AS.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Analytics Screen",
+                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.cmb_FilterByApplicableTo_AS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.drp_FilterByStatus_AS.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.drp_FilterByStatus_AS.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Analytics Screen",
+                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.drp_FilterByStatus_AS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.gal_Analytics_AS.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.gal_Analytics_AS.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Analytics Screen",
+                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.gal_Analytics_AS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.gal_Analytics_AS.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.gal_Analytics_AS.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Analytics Screen",
+                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.gal_Analytics_AS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.gal_Analytics_AS.tgl_ContractStatus_AS.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.gal_Analytics_AS.tgl_ContractStatus_AS.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Analytics Screen",
+                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.gal_Analytics_AS.tgl_ContractStatus_AS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2214,126 +2214,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.GridGallery1_1.tgl_ContractStatus_AS.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.GridGallery1_1.tgl_ContractStatus_AS.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "Analytics Screen",
-                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.GridGallery1_1.tgl_ContractStatus_AS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.GridGallery1_1.tgl_ContractStatus_AS.Width"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.GridGallery1_1.tgl_ContractStatus_AS.Width",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Width",
-                "module": "Analytics Screen",
-                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.GridGallery1_1.tgl_ContractStatus_AS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.GridGallery1_1.img_ContractStatus_AS.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.GridGallery1_1.img_ContractStatus_AS.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "Analytics Screen",
-                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.GridGallery1_1.img_ContractStatus_AS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.GridGallery1_1.lbl_ContractStatus_AS.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.GridGallery1_1.lbl_ContractStatus_AS.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "Analytics Screen",
-                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.GridGallery1_1.lbl_ContractStatus_AS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Preview Contract Screen'.Circle1_2.Y"
                 }
               ],
@@ -2358,6 +2238,126 @@
           },
           "ruleId": "app-InefficientDelayLoading",
           "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.gal_Analytics_AS.tgl_ContractStatus_AS.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.gal_Analytics_AS.tgl_ContractStatus_AS.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Analytics Screen",
+                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.gal_Analytics_AS.tgl_ContractStatus_AS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.gal_Analytics_AS.tgl_ContractStatus_AS.Width"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.gal_Analytics_AS.tgl_ContractStatus_AS.Width",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Width",
+                "module": "Analytics Screen",
+                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.gal_Analytics_AS.tgl_ContractStatus_AS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.gal_Analytics_AS.img_ContractStatus_AS.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.gal_Analytics_AS.img_ContractStatus_AS.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Analytics Screen",
+                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.gal_Analytics_AS.img_ContractStatus_AS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.gal_Analytics_AS.lbl_ContractStatus_AS.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.gal_Analytics_AS.lbl_ContractStatus_AS.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Analytics Screen",
+                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.gal_Analytics_AS.lbl_ContractStatus_AS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
         }
       ],
       "tool": {
@@ -2366,10 +2366,10 @@
           "name": "PowerApps app checker",
           "rules": [
             {
-              "id": "app-SuggestRemoteExecutionHint",
+              "id": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
               "messageStrings": {
                 "issue": {
-                  "text": "Delegation warning. The \"{0}\" part of this formula might not work correctly on large data sets."
+                  "text": "Delegation warning. The highlighted part of this formula might not work correctly with column \"{0}\" on large data sets."
                 }
               },
               "properties": {
@@ -2385,10 +2385,10 @@
               }
             },
             {
-              "id": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+              "id": "app-SuggestRemoteExecutionHint",
               "messageStrings": {
                 "issue": {
-                  "text": "Delegation warning. The highlighted part of this formula might not work correctly with column \"{0}\" on large data sets."
+                  "text": "Delegation warning. The \"{0}\" part of this formula might not work correctly on large data sets."
                 }
               },
               "properties": {

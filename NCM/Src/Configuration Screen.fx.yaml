@@ -77,13 +77,13 @@
                                 Width: =Parent.Width
                                 ZIndex: =1
 
-                                Img_info_CS As image:
+                                Img_defaultvalues_CS As image:
                                     Height: =35
                                     Image: =partnership
                                     Width: =35
                                     ZIndex: =1
 
-                                lbl_ As label:
+                                lbl_managedefault_CS As label:
                                     Align: =Align.Center
                                     FontWeight: =FontWeight.Semibold
                                     PaddingBottom: =0
@@ -91,7 +91,7 @@
                                     Width: =Parent.Width
                                     ZIndex: =2
 
-                                Label8_1 As label:
+                                lbl_MD_description_CS As label:
                                     Align: =Align.Center
                                     Height: =30
                                     PaddingTop: =0
@@ -131,12 +131,12 @@
                         Width: =Parent.Width*.3
                         ZIndex: =2
 
-                        "'ConInner_Terms&Conditions' As groupContainer.manualLayoutContainer":
+                        "'con_Inner_Terms&Conditions_CS' As groupContainer.manualLayoutContainer":
                             LayoutMinHeight: =100
                             LayoutMinWidth: =
                             ZIndex: =1
 
-                            Coninformation_1 As groupContainer.verticalAutoLayoutContainer:
+                            con_ManageSupplier_CS As groupContainer.verticalAutoLayoutContainer:
                                 Height: =Parent.Height
                                 LayoutAlignItems: =LayoutAlignItems.Center
                                 LayoutDirection: =LayoutDirection.Vertical
@@ -145,13 +145,13 @@
                                 Width: =Parent.Width
                                 ZIndex: =1
 
-                                Image3_1 As image:
+                                "'Img_T&C_CS' As image":
                                     Height: =35
                                     Image: =goal
                                     Width: =35
                                     ZIndex: =1
 
-                                Label8_2 As label:
+                                "'lbl_T&C_CS' As label":
                                     Align: =Align.Center
                                     FontWeight: =FontWeight.Semibold
                                     PaddingBottom: =0
@@ -159,7 +159,7 @@
                                     Width: =Parent.Width
                                     ZIndex: =2
 
-                                Label8_3 As label:
+                                "'lbl_T&C_Description_CS' As label":
                                     Align: =Align.Center
                                     Height: =30
                                     PaddingTop: =0
@@ -168,7 +168,7 @@
                                     Width: =Parent.Width
                                     ZIndex: =3
 
-                            "'btn_Terms&Conditions' As button":
+                            "'btn_Terms&Conditions_CS' As button":
                                 BorderColor: |-
                                     =//ColorFade(RGBA(107, 29, 94,1),60%)
                                     Color.White
@@ -198,7 +198,7 @@
                         Width: =Parent.Width*.3
                         ZIndex: =3
 
-                        "'Card compomnent_1' As 'Card compomnent'":
+                        "'Card compomnent_MFA_CS' As 'Card compomnent'":
                             Height: =Parent.Height
                             image: =database
                             LayoutMinHeight: =640
