@@ -1,10 +1,142 @@
 "'Contract Summary Screen' As screen":
 
-    Container18 As groupContainer.verticalAutoLayoutContainer:
-        Height: =Parent.Height*.9
-        LayoutDirection: =LayoutDirection.Vertical
-        LayoutMode: =LayoutMode.Auto
-        Width: =Parent.Width
-        Y: =76.79999999999995
-        ZIndex: =1
+    HeaderCMP_withoutNavbar_4 As HeaderCMP_withoutNavbar:
+        Height: =Parent.Height*.1
+        Width: =1366
+        ZIndex: =2
+
+    con_task_milestone As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.None
+        Height: =Parent.Height*.15
+        Width: =Parent.Width*.9
+        X: =(Parent.Width-Self.Width)/2
+        Y: =HeaderCMP_withoutNavbar_4.Y+HeaderCMP_withoutNavbar_4.Height+Parent.Height*.02
+        ZIndex: =3
+
+        cir_milestoneStage1 As circle:
+            BorderColor: =RGBA(107, 29, 94, 1)
+            BorderThickness: =3
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =70
+            Width: =70
+            X: =Parent.Width*.04
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =1
+
+        ico_check1 As icon.CheckBadge:
+            Color: =RGBA(107, 29, 94, 1)
+            Height: =40
+            Icon: =Icon.Check
+            Width: =40
+            X: =cir_milestoneStage1.X+(cir_milestoneStage1.Width-Self.Width)/2
+            Y: =cir_milestoneStage1.Y+(cir_milestoneStage1.Height-Self.Height)/2
+            ZIndex: =2
+
+        rec_milestone_dash1 As rectangle:
+            Fill: =RGBA(107, 29, 94, 1)
+            Height: =2
+            Width: =Parent.Width*.15
+            X: =cir_milestoneStage1.X+cir_milestoneStage1.Width+Parent.Width*.01
+            Y: =cir_milestoneStage1.Y+(cir_milestoneStage1.Height-Self.Height)/2
+            ZIndex: =3
+
+        cir_milestoneStage2 As circle:
+            BorderColor: =RGBA(107, 29, 94, 1)
+            BorderThickness: =3
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =70
+            Width: =70
+            X: =rec_milestone_dash1.X+rec_milestone_dash1.Width+Parent.Width*.01
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =4
+
+        ico_check2 As icon.CheckBadge:
+            Color: =RGBA(107, 29, 94, 1)
+            Height: =40
+            Icon: =Icon.Check
+            Width: =40
+            X: =cir_milestoneStage2.X+(cir_milestoneStage2.Width-Self.Width)/2
+            Y: =cir_milestoneStage1.Y+(cir_milestoneStage1.Height-Self.Height)/2
+            ZIndex: =5
+
+        cir_milestoneStage3 As circle:
+            BorderColor: =RGBA(107, 29, 94, 1)
+            BorderThickness: =3
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =70
+            Width: =70
+            X: =rec_milestone_dash2.X+rec_milestone_dash2.Width+Parent.Width*.01
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =6
+
+        ico_check3 As icon.CheckBadge:
+            Color: =RGBA(107, 29, 94, 1)
+            Height: =40
+            Icon: =Icon.Check
+            Width: =40
+            X: =cir_milestoneStage3.X+(cir_milestoneStage3.Width-Self.Width)/2
+            Y: =cir_milestoneStage1.Y+(cir_milestoneStage1.Height-Self.Height)/2
+            ZIndex: =7
+
+        cir_milestoneStage4 As circle:
+            BorderColor: =RGBA(107, 29, 94, 1)
+            BorderThickness: =3
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =70
+            Width: =70
+            X: =rec_milestone_dash3.X+rec_milestone_dash3.Width+Parent.Width*.01
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =8
+
+        ico_check4 As icon.CheckBadge:
+            Color: =RGBA(107, 29, 94, 1)
+            Height: =40
+            Icon: =Icon.Check
+            Width: =40
+            X: =cir_milestoneStage4.X+(cir_milestoneStage4.Width-Self.Width)/2
+            Y: =cir_milestoneStage1.Y+(cir_milestoneStage1.Height-Self.Height)/2
+            ZIndex: =9
+
+        cir_milestoneStage5 As circle:
+            BorderColor: =RGBA(107, 29, 94, 1)
+            BorderThickness: =3
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =70
+            Width: =70
+            X: =rec_milestone_dash4.X+rec_milestone_dash4.Width+Parent.Width*.01
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =10
+
+        ico_check5 As icon.CheckBadge:
+            Color: =RGBA(107, 29, 94, 1)
+            Height: =40
+            Icon: =Icon.Check
+            Width: =40
+            X: =cir_milestoneStage5.X+(cir_milestoneStage5.Width-Self.Width)/2
+            Y: =cir_milestoneStage1.Y+(cir_milestoneStage1.Height-Self.Height)/2
+            ZIndex: =11
+
+        rec_milestone_dash2 As rectangle:
+            Fill: =RGBA(107, 29, 94, 1)
+            Height: =2
+            Width: =Parent.Width*.15
+            X: =cir_milestoneStage2.X+cir_milestoneStage2.Width+Parent.Width*.01
+            Y: =cir_milestoneStage1.Y+(cir_milestoneStage1.Height-Self.Height)/2
+            ZIndex: =12
+
+        rec_milestone_dash3 As rectangle:
+            Fill: =RGBA(107, 29, 94, 1)
+            Height: =2
+            Width: =Parent.Width*.15
+            X: =cir_milestoneStage3.X+cir_milestoneStage3.Width+Parent.Width*.01
+            Y: =cir_milestoneStage1.Y+(cir_milestoneStage1.Height-Self.Height)/2
+            ZIndex: =13
+
+        rec_milestone_dash4 As rectangle:
+            Fill: =RGBA(107, 29, 94, 1)
+            Height: =2
+            Width: =Parent.Width*.15
+            X: =cir_milestoneStage4.X+cir_milestoneStage4.Width+Parent.Width*.01
+            Y: =cir_milestoneStage1.Y+(cir_milestoneStage1.Height-Self.Height)/2
+            ZIndex: =14
 
