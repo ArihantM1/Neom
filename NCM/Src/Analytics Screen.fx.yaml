@@ -513,6 +513,6 @@
                         Visible: =If(ThisItem.Status.Value="Draft",false,true)
                         Width: =lbl_ContractStatus_Headline.Width-10
                         X: =lbl_ContractsStatusHeadline_AS.X
-                        Y: =(gal_AllContractsDetailView.TemplateHeight-Self.Height)/2
+                        Y: =(gal_AllContractsDetailView_HS.TemplateHeight-Self.Height)/2
                         ZIndex: =11
 
