@@ -1,10 +1,2 @@
 "'Contract Summary Screen' As screen":
 
-    Container18 As groupContainer.verticalAutoLayoutContainer:
-        Height: =Parent.Height*.9
-        LayoutDirection: =LayoutDirection.Vertical
-        LayoutMode: =LayoutMode.Auto
-        Width: =Parent.Width
-        Y: =76.79999999999995
-        ZIndex: =1
-

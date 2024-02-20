@@ -31,6 +31,8 @@
       "Coc_stage": "Coc_stage",
       "ComplianceAssetId": "Compliance Asset Id",
       "contract_name": "Contract_name",
+      "Countries": "Countries",
+      "Countries#Id": "Countries Id",
       "Country": "Country",
       "Created": "Created",
       "Currency": "Currency",
