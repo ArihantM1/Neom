@@ -7121,7 +7121,7 @@
       "StyleName": "defaultGalleryStyle",
       "Type": "ControlInfo"
     },
-    "HeaderComponent_2": {
+    "HeaderComponent_AS": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -7220,20 +7220,25 @@
         "Description": ""
       },
       "MetaDataIDKey": "",
-      "Name": "HeaderComponent_2",
+      "Name": "HeaderComponent_AS",
       "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
           "Category": "Data",
-          "PropertyName": "NavItems",
-          "RuleProviderType": "User"
+          "PropertyName": "CurrentScreen",
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
-          "PropertyName": "CurrentScreen",
-          "RuleProviderType": "User"
+          "PropertyName": "NavItems",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Y",
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
@@ -7242,7 +7247,12 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Y",
+          "PropertyName": "Width",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Fill",
           "RuleProviderType": "Unknown"
         },
         {
@@ -7254,16 +7264,6 @@
           "Category": "Design",
           "PropertyName": "Height",
           "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Width",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Fill",
-          "RuleProviderType": "System"
         }
       ],
       "StyleName": "",

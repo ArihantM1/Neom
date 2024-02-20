@@ -1,19 +1,19 @@
 "'Configuration Screen' As screen":
 
-    ConConfigurationscreenmain As groupContainer.verticalAutoLayoutContainer:
+    con_Main_CS As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
         Width: =Parent.Width
         ZIndex: =1
 
-        HeaderCMP_withoutNavbar_3 As HeaderCMP_withoutNavbar:
+        Header_withoutNavbar_CS As HeaderCMP_withoutNavbar:
             Height: =Parent.Height*.1
             LayoutMinHeight: =640
             LayoutMinWidth: =640
             Width: =Parent.Width
 
-        ConConfigurationscreenbody As groupContainer.manualLayoutContainer:
+        con_Configurationscreen_body_CS As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =Parent.Height*.9
@@ -22,7 +22,7 @@
             Width: =Parent.Width
             ZIndex: =2
 
-            ConMain_ConfigurationsScreen As groupContainer.verticalAutoLayoutContainer:
+            con_MainConfigurationsScreen_CS As groupContainer.verticalAutoLayoutContainer:
                 DropShadow: =DropShadow.Bold
                 Fill: =ColorFade(RGBA(107, 29, 94,1),96%)
                 Height: =Parent.Height*.85
@@ -34,7 +34,7 @@
                 Y: =Parent.Height/2-Self.Height/2
                 ZIndex: =2
 
-                ConUpperPart As groupContainer.horizontalAutoLayoutContainer:
+                con_UpperPart_CS As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     DropShadow: =DropShadow.None
                     FillPortions: =0
@@ -48,8 +48,8 @@
                     Width: =Parent.Width
                     ZIndex: =1
 
-                    ConCard_defaultValues As groupContainer.verticalAutoLayoutContainer:
-                        AlignInContainer: =AlignInContainer.Center
+                    con_Card_defaultValues_CS As groupContainer.verticalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
                         DropShadow: =DropShadow.Semibold
                         Fill: =RGBA(255, 255, 255, 1)
                         FillPortions: =0
@@ -61,12 +61,14 @@
                         Width: =Parent.Width*.3
                         ZIndex: =1
 
-                        ConInner As groupContainer.manualLayoutContainer:
+                        con_Inner_CS As groupContainer.manualLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
                             LayoutMinHeight: =100
                             LayoutMinWidth: =
+                            Width: =Parent.Width
                             ZIndex: =1
 
-                            Coninformation As groupContainer.verticalAutoLayoutContainer:
+                            con_Information_CS As groupContainer.verticalAutoLayoutContainer:
                                 Height: =Parent.Height
                                 LayoutAlignItems: =LayoutAlignItems.Center
                                 LayoutDirection: =LayoutDirection.Vertical
@@ -75,13 +77,13 @@
                                 Width: =Parent.Width
                                 ZIndex: =1
 
-                                Image3 As image:
+                                Img_info_CS As image:
                                     Height: =35
                                     Image: =partnership
                                     Width: =35
                                     ZIndex: =1
 
-                                Label8 As label:
+                                lbl_ As label:
                                     Align: =Align.Center
                                     FontWeight: =FontWeight.Semibold
                                     PaddingBottom: =0
@@ -98,7 +100,7 @@
                                     Width: =Parent.Width
                                     ZIndex: =3
 
-                            Btn_defaultValues As button:
+                            Btn_defaultValues_CS As button:
                                 BorderColor: |-
                                     =//ColorFade(RGBA(107, 29, 94,1),60%)
                                     Color.White

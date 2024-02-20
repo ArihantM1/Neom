@@ -1,6 +1,6 @@
 "'Home Screen' As screen":
 
-    con_Main As groupContainer.verticalAutoLayoutContainer:
+    con_Main_HS As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
@@ -15,7 +15,7 @@
             NavItems: =NavBar
 
         con_BodyMain As groupContainer.horizontalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.Center
+            AlignInContainer: =AlignInContainer.SetByContainer
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
             LayoutMinHeight: =100

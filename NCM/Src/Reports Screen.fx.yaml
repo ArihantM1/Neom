@@ -38,22 +38,22 @@
             )
         );
 
-    Container1_3 As groupContainer.verticalAutoLayoutContainer:
+    con_Main_RS As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
         Width: =Parent.Width
         ZIndex: =1
 
-        HeaderComponent_4 As HeaderComponent:
+        HeaderComponent_RS As HeaderComponent:
             CurrentScreen: ="REPORTS"
             Height: =Parent.Height*.1
             LayoutMinHeight: =640
             LayoutMinWidth: =640
             NavItems: =NavBar
 
-        Container4_2 As groupContainer.verticalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.Center
+        con_Vertical_ResourceandClauses_RS As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =Parent.Height*.9
             LayoutDirection: =LayoutDirection.Vertical
@@ -63,14 +63,19 @@
             Width: =Parent.Width
             ZIndex: =2
 
-            Container29 As groupContainer.horizontalAutoLayoutContainer:
+            con_Horizontal_ResourceandMDC_RS As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                Height: =Parent.Height
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
                 ZIndex: =1
 
-                Container33 As groupContainer.manualLayoutContainer:
+                con_ResourcesInvolved_RS As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
+                    Height: =Parent.Height
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     Width: =Parent.Width*.65
@@ -269,14 +274,16 @@
                         Y: =Container13_6.Y+Container13_6.Height
                         ZIndex: =6
 
-                Container35 As groupContainer.manualLayoutContainer:
+                con_MostDiscussedClauses_RS As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
+                    Height: =Parent.Height
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     Width: =Parent.Width*.35
                     ZIndex: =2
 
-                    Label14_1 As label:
+                    lbl_MostDiscussedClauses_RS As label:
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
                         Size: =18
@@ -286,7 +293,7 @@
                         Y: =Parent.Height*.01
                         ZIndex: =1
 
-                    Rectangle9_1 As rectangle:
+                    Shp_Rect_RS As rectangle:
                         Fill: =RGBA(107, 29, 94, 1)
                         Height: =1
                         Width: =Parent.Width*.9
@@ -301,33 +308,33 @@
                         Y: =40
                         ZIndex: =3
 
-                        PieChart1 As pieChart:
+                        Chr_Clause_RS As pieChart:
                             ItemColorSet: =[RGBA(92, 41, 85,1),RGBA(138, 37, 121,1),RGBA(217, 117, 200,1),RGBA(237, 185, 228,1),RGBA(250, 232, 247,1)]
                             Items: =ClauseCounts
                             Width: =Parent.Width*.9
                             X: =(Parent.Width-Self.Width)/2
-                            Y: =Rectangle9_1.Y
+                            Y: =Shp_Rect_RS.Y
                             ZIndex: =5
 
-                        Legend1 As legend:
+                        Leg_Clauses_RS As legend:
                             DisplayMode: =DisplayMode.View
                             Height: =200
-                            ItemColorSet: =PieChart1.ItemColorSet
-                            Items: =PieChart1.SeriesLabels
+                            ItemColorSet: =Chr_Clause_RS.ItemColorSet
+                            Items: =Chr_Clause_RS.SeriesLabels
                             Size: =12
                             Width: =Parent.Width*.9
                             X: =(Parent.Width-Self.Width)/2
-                            Y: =PieChart1.Y+PieChart1.Height
+                            Y: =Chr_Clause_RS.Y+Chr_Clause_RS.Height
                             ZIndex: =6
 
-                    Icon3 As icon.Reload:
+                    Ico_Refresh_RS As icon.Reload:
                         Color: =RGBA(107, 29, 94, 1)
                         Height: =30
                         Icon: =Icon.Reload
                         OnSelect: =
                         Tooltip: ="Reload Clauses"
                         Width: =30
-                        X: =Label14_1.X+Label14_1.Width+Parent.Width*.1
+                        X: =lbl_MostDiscussedClauses_RS.X+lbl_MostDiscussedClauses_RS.Width+Parent.Width*.1
                         Y: =Parent.Height*.015
                         ZIndex: =7
 
