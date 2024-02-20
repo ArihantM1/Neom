@@ -470,7 +470,7 @@
                         Visible: =If(ThisItem.Status.Value="Draft",true,false)
                         Width: =70
                         X: =img_ContractStatus_AS.X+img_ContractStatus_AS.Width-10
-                        Y: =tgl_ContractStatus.Y
+                        Y: =tgl_ContractStatus_HS.Y
                         ZIndex: =9
 
                     img_ContractStatus_AS As image:
@@ -480,7 +480,7 @@
                         Visible: =If(ThisItem.Status.Value="Draft",true,false)
                         Width: =40
                         X: =tgl_ContractStatus_AS.X+20
-                        Y: =tgl_ContractStatus.Y
+                        Y: =tgl_ContractStatus_HS.Y
                         ZIndex: =10
 
                     tgl_ContractStatus_AS As Toggle:
@@ -511,7 +511,7 @@
                                 }
                             )
                         Visible: =If(ThisItem.Status.Value="Draft",false,true)
-                        Width: =lbl_ContractStatus_Headline.Width-10
+                        Width: =lbl_ContractStatus_Headline_HS.Width-10
                         X: =lbl_ContractsStatusHeadline_AS.X
                         Y: =(gal_AllContractsDetailView_HS.TemplateHeight-Self.Height)/2
                         ZIndex: =11

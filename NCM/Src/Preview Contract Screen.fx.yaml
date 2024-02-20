@@ -1,6 +1,6 @@
 "'Preview Contract Screen' As screen":
 
-    Container2 As groupContainer.verticalAutoLayoutContainer:
+    con_2 As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
@@ -13,7 +13,7 @@
             LayoutMinWidth: =640
             Width: =Parent.Width
 
-    Container9 As groupContainer.manualLayoutContainer:
+    con_9 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Bold
         Height: =Parent.Height*.83
         RadiusBottomLeft: =10
@@ -25,7 +25,7 @@
         Y: =HeaderCMP_withoutNavbar_2.Y+HeaderCMP_withoutNavbar_2.Height+Parent.Height*.04
         ZIndex: =2
 
-        Container4_3 As groupContainer.horizontalAutoLayoutContainer:
+        con_4_3 As groupContainer.horizontalAutoLayoutContainer:
             DropShadow: =DropShadow.Bold
             Fill: =RGBA(255, 255, 255, 1)
             Height: =Parent.Height
@@ -34,13 +34,15 @@
             Width: =Parent.Width
             ZIndex: =1
 
-            Container2_2 As groupContainer.horizontalAutoLayoutContainer:
+            con_2_2 As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 ZIndex: =1
 
                 Container9_2 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
@@ -51,7 +53,7 @@
                     RadiusTopRight: =0
                     ZIndex: =1
 
-                    Container23 As groupContainer.horizontalAutoLayoutContainer:
+                    con_23 As groupContainer.horizontalAutoLayoutContainer:
                         AlignInContainer: =AlignInContainer.Center
                         DropShadow: =DropShadow.Semilight
                         FillPortions: =0
@@ -70,7 +72,7 @@
                         Width: =Parent.Width
                         ZIndex: =1
 
-                        Label8_4 As label:
+                        lbl_8_4 As label:
                             FontWeight: =FontWeight.Bold
                             Height: =Parent.Height
                             Size: =18
@@ -78,7 +80,7 @@
                             Width: =Parent.Width*.3
                             ZIndex: =1
 
-                        Container27 As groupContainer.horizontalAutoLayoutContainer:
+                        con_27 As groupContainer.horizontalAutoLayoutContainer:
                             AlignInContainer: =AlignInContainer.SetByContainer
                             DropShadow: =DropShadow.None
                             FillPortions: =0
@@ -93,7 +95,7 @@
                             Width: =Parent.Width*.68
                             ZIndex: =2
 
-                            Container32 As groupContainer.manualLayoutContainer:
+                            con_32 As groupContainer.manualLayoutContainer:
                                 AlignInContainer: =AlignInContainer.SetByContainer
                                 BorderThickness: =1
                                 FillPortions: =0
@@ -103,7 +105,7 @@
                                 Width: =Parent.Height-15
                                 ZIndex: =1
 
-                            Container32_1 As groupContainer.manualLayoutContainer:
+                            con_32_1 As groupContainer.manualLayoutContainer:
                                 AlignInContainer: =AlignInContainer.SetByContainer
                                 BorderThickness: =1
                                 FillPortions: =0
@@ -113,7 +115,7 @@
                                 Width: =Parent.Height-15
                                 ZIndex: =2
 
-                            Container32_2 As groupContainer.manualLayoutContainer:
+                            con_32_2 As groupContainer.manualLayoutContainer:
                                 AlignInContainer: =AlignInContainer.SetByContainer
                                 BorderThickness: =1
                                 FillPortions: =0
@@ -128,15 +130,16 @@
                         Visible: =Varinputdate
                         ZIndex: =2
 
-                Container18_1 As groupContainer.horizontalAutoLayoutContainer:
+                con_18_1 As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     ZIndex: =2
 
-                    Container23_1 As groupContainer.horizontalAutoLayoutContainer:
-                        AlignInContainer: =AlignInContainer.Center
+                    con_23_1 As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
                         FillPortions: =0
                         Height: =Parent.Height*.1
                         LayoutMinHeight: =100
@@ -151,7 +154,7 @@
                         Width: =Parent.Width
                         ZIndex: =1
 
-                        Label8_5 As label:
+                        lbl_8_5 As label:
                             FontWeight: =FontWeight.Bold
                             Height: =Parent.Height
                             Size: =18
@@ -159,8 +162,8 @@
                             Width: =Parent.Width*.3
                             ZIndex: =1
 
-                    Container26 As groupContainer.manualLayoutContainer:
-                        AlignInContainer: =AlignInContainer.Center
+                    con_26 As groupContainer.manualLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
                         FillPortions: =0
                         Height: =Parent.Height*.9
                         LayoutMinHeight: =100
@@ -187,14 +190,14 @@
                                 Y: =0
                                 ZIndex: =1
 
-                                Container25 As groupContainer.verticalAutoLayoutContainer:
+                                con_25 As groupContainer.verticalAutoLayoutContainer:
                                     Height: =Parent.Height
                                     LayoutDirection: =LayoutDirection.Vertical
                                     LayoutMode: =LayoutMode.Auto
                                     Width: =Parent.Width
                                     ZIndex: =1
 
-                                    Label11 As label:
+                                    lbl_11 As label:
                                         Align: =Align.Center
                                         FontWeight: =FontWeight.Bold
                                         Size: =16
@@ -202,8 +205,8 @@
                                         Width: =Parent.Width
                                         ZIndex: =1
 
-                                    Container28 As groupContainer.horizontalAutoLayoutContainer:
-                                        AlignInContainer: =AlignInContainer.Center
+                                    con_28 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.SetByContainer
                                         LayoutMinHeight: =100
                                         LayoutMinWidth: =250
                                         LayoutMode: =LayoutMode.Auto
@@ -227,8 +230,8 @@
                                             Width: =Parent.Width*.08
                                             ZIndex: =2
 
-            Container31_1 As groupContainer.horizontalAutoLayoutContainer:
-                AlignInContainer: =AlignInContainer.Center
+            con_31_1 As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =Parent.Height*.2
@@ -246,7 +249,6 @@
                 ZIndex: =2
 
                 Button4_2 As button:
-                    AlignInContainer: =AlignInContainer.Center
                     BorderColor: =RGBA(219, 200, 216, 1)
                     Color: =RGBA(107, 29, 94, 1)
                     Fill: =RGBA(255, 255, 255, 1)
@@ -267,7 +269,6 @@
                     ZIndex: =1
 
                 Button4_3 As button:
-                    AlignInContainer: =AlignInContainer.Center
                     BorderColor: =RGBA(107, 29, 94, 1)
                     Color: =RGBA(107, 29, 94, 1)
                     Fill: =RGBA(255, 255, 255, 1)
@@ -297,12 +298,12 @@
         DisplayMode: =DisplayMode.View
         Fill: =RGBA(107, 29, 94, 1)
         Height: =3
-        Width: =Container9.X-Circle1_3.Width-Circle1_3.X-Parent.Width*0.01
-        X: =Circle1_2.X+Circle1_2.Width+(Container9.X-Circle1_2.X-Circle1_2.Width-Self.Width)/2
+        Width: =con_9.X-Circle1_3.Width-Circle1_3.X-Parent.Width*0.01
+        X: =Circle1_2.X+Circle1_2.Width+(con_9.X-Circle1_2.X-Circle1_2.Width-Self.Width)/2
         Y: =Circle1_3.Y+(Circle1_3.Height-Self.Height)/2
         ZIndex: =11
 
-    Group1_1 As group:
+    grp_Milestone_PCS As group:
         Height: =5
         Width: =5
         X: =6.109999999999999
@@ -313,7 +314,7 @@
             Fill: =RGBA(107, 29, 94, 1)
             Height: =Circle1_2.Height
             Width: =Circle1_2.Width
-            X: =Container9.X-Parent.Width*.065-Self.Width
+            X: =con_9.X-Parent.Width*.065-Self.Width
             Y: =Circle1_2.Height+Circle1_2.Y+Parent.Height*.4
             ZIndex: =3
 
@@ -322,9 +323,9 @@
             Fill: =RGBA(107, 29, 94, 1)
             Height: =70
             Width: =70
-            X: =Container9.X-Parent.Width*.065-Self.Width
+            X: =con_9.X-Parent.Width*.065-Self.Width
             Y: |
-                =Container10.Height*.9
+                =con_10.Height*.9
             ZIndex: =4
 
         Icon5_3 As icon.Flag:
@@ -342,8 +343,8 @@
             DisplayMode: =DisplayMode.View
             Fill: =RGBA(107, 29, 94, 1)
             Height: =3
-            Width: =Container9.X-Circle1_2.Width-Circle1_2.X-Parent.Width*0.01
-            X: =Circle1_2.X+Circle1_2.Width+(Container9.X-Circle1_2.X-Circle1_2.Width-Self.Width)/2
+            Width: =con_9.X-Circle1_2.Width-Circle1_2.X-Parent.Width*0.01
+            X: =Circle1_2.X+Circle1_2.Width+(con_9.X-Circle1_2.X-Circle1_2.Width-Self.Width)/2
             Y: =Circle1_2.Y+(Circle1_2.Height-Self.Height)/2
             ZIndex: =6
 
@@ -359,13 +360,13 @@
 
         shp_Rect_6_1 As rectangle:
             Fill: =RGBA(107, 29, 94, 1)
-            Height: =-Label12_2.Y-Label12_2.Height+Circle1_3.Y-Parent.Height*0.01
+            Height: =-lbl_12_2.Y-lbl_12_2.Height+Circle1_3.Y-Parent.Height*0.01
             Width: =3
-            X: =Label12_2.X+(Label12_2.Width-Self.Width)/2
-            Y: =Label12_2.Y+Label12_2.Height
+            X: =lbl_12_2.X+(lbl_12_2.Width-Self.Width)/2
+            Y: =lbl_12_2.Y+lbl_12_2.Height
             ZIndex: =8
 
-        Label12_2 As label:
+        lbl_12_2 As label:
             Align: =Align.Center
             FontWeight: =FontWeight.Bold
             Text: ="Overview"
@@ -373,7 +374,7 @@
             Y: =Circle1_2.Y+Circle1_2.Height
             ZIndex: =9
 
-        Label12_3 As label:
+        lbl_12_3 As label:
             Align: =Align.Center
             FontWeight: =FontWeight.Bold
             Text: ="Documents"

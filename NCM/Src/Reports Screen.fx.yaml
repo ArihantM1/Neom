@@ -301,7 +301,7 @@
                         Y: =lbl_ResourecesInvolvedHeading_RS.Height+lbl_ResourecesInvolvedHeading_RS.Y+Parent.Height*.01
                         ZIndex: =2
 
-                    CM_DisscussedClausesPieChart As group:
+                    grp_CM_DisscussedClausesPieChart_RS As group:
                         Height: =5
                         Width: =5
                         X: =40

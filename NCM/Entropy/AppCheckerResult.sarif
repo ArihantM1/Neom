@@ -14,12 +14,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container6_1.Container9_1.Dropdown2_4.Items"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_1.con_9_1.Dropdown2_4.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container6_1.Container9_1.Dropdown2_4.Items",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_1.con_9_1.Dropdown2_4.Items",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -33,7 +33,7 @@
               "properties": {
                 "member": "Items",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.Container1.Container4.Container6_1.Container9_1.Dropdown2_4"
+                "type": "'Create Contract Screen'.con_1.con_4.con_6_1.con_9_1.Dropdown2_4"
               }
             }
           ],
@@ -54,12 +54,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container6_1.Container9_1.Dropdown2_4.Items"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_1.con_9_1.Dropdown2_4.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container6_1.Container9_1.Dropdown2_4.Items",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_1.con_9_1.Dropdown2_4.Items",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -73,7 +73,7 @@
               "properties": {
                 "member": "Items",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.Container1.Container4.Container6_1.Container9_1.Dropdown2_4"
+                "type": "'Create Contract Screen'.con_1.con_4.con_6_1.con_9_1.Dropdown2_4"
               }
             }
           ],
@@ -94,12 +94,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_TotalContracts_kpi_HS.con_CountAndIcon_KpiTotalCount.lbl_Count_TotalContracts.Text"
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_TotalContracts_kpi_HS.con_CountAndIcon_KpiTotalCount.lbl_Count_TotalContracts_HS.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_TotalContracts_kpi_HS.con_CountAndIcon_KpiTotalCount.lbl_Count_TotalContracts.Text",
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_TotalContracts_kpi_HS.con_CountAndIcon_KpiTotalCount.lbl_Count_TotalContracts_HS.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -113,7 +113,7 @@
               "properties": {
                 "member": "Text",
                 "module": "Home Screen",
-                "type": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_TotalContracts_kpi_HS.con_CountAndIcon_KpiTotalCount.lbl_Count_TotalContracts"
+                "type": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_TotalContracts_kpi_HS.con_CountAndIcon_KpiTotalCount.lbl_Count_TotalContracts_HS"
               }
             }
           ],
@@ -134,12 +134,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_ExpiredContracts_kpi_HS.con_CountAndIcon_KpiExpiredCount.lbl_Count_ExpiredContracts.Text"
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_ExpiredContracts_kpi_HS.con_CountAndIcon_KpiExpiredCount.lbl_Count_ExpiredContracts_HS.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_ExpiredContracts_kpi_HS.con_CountAndIcon_KpiExpiredCount.lbl_Count_ExpiredContracts.Text",
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_ExpiredContracts_kpi_HS.con_CountAndIcon_KpiExpiredCount.lbl_Count_ExpiredContracts_HS.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -153,7 +153,7 @@
               "properties": {
                 "member": "Text",
                 "module": "Home Screen",
-                "type": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_ExpiredContracts_kpi_HS.con_CountAndIcon_KpiExpiredCount.lbl_Count_ExpiredContracts"
+                "type": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_ExpiredContracts_kpi_HS.con_CountAndIcon_KpiExpiredCount.lbl_Count_ExpiredContracts_HS"
               }
             }
           ],
@@ -174,12 +174,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_ActiveContracts_kpi_HS.con_CountAndIcon_KpiActiveCount.lbl_Count_ActiveContracts.Text"
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_ActiveContracts_kpi_HS.con_CountAndIcon_KpiActiveCount.lbl_Count_ActiveContracts_HS.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_ActiveContracts_kpi_HS.con_CountAndIcon_KpiActiveCount.lbl_Count_ActiveContracts.Text",
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_ActiveContracts_kpi_HS.con_CountAndIcon_KpiActiveCount.lbl_Count_ActiveContracts_HS.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -193,7 +193,7 @@
               "properties": {
                 "member": "Text",
                 "module": "Home Screen",
-                "type": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_ActiveContracts_kpi_HS.con_CountAndIcon_KpiActiveCount.lbl_Count_ActiveContracts"
+                "type": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_ActiveContracts_kpi_HS.con_CountAndIcon_KpiActiveCount.lbl_Count_ActiveContracts_HS"
               }
             }
           ],
@@ -214,12 +214,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_DraftContracts_kpi_HS.con_CountAndIcon_KpiDraftCount.lbl_Count_DraftContracts.Text"
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_DraftContracts_kpi_HS.con_CountAndIcon_KpiDraftCount.lbl_Count_DraftContracts_HS.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_DraftContracts_kpi_HS.con_CountAndIcon_KpiDraftCount.lbl_Count_DraftContracts.Text",
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_DraftContracts_kpi_HS.con_CountAndIcon_KpiDraftCount.lbl_Count_DraftContracts_HS.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -233,7 +233,7 @@
               "properties": {
                 "member": "Text",
                 "module": "Home Screen",
-                "type": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_DraftContracts_kpi_HS.con_CountAndIcon_KpiDraftCount.lbl_Count_DraftContracts"
+                "type": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_KpiAll_HS.con_DraftContracts_kpi_HS.con_CountAndIcon_KpiDraftCount.lbl_Count_DraftContracts_HS"
               }
             }
           ],
@@ -534,19 +534,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container5.Radio1.AccessibleLabel"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_5.Radio1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container5.Radio1.AccessibleLabel",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_5.Radio1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.Container1.Container4.Container5.Radio1"
+                "type": "'Create Contract Screen'.con_1.con_4.con_5.Radio1"
               }
             }
           ],
@@ -564,19 +564,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container30.Dropdown2_7.AccessibleLabel"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_30.Dropdown2_7.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container30.Dropdown2_7.AccessibleLabel",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_30.Dropdown2_7.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.Container1.Container4.Container30.Dropdown2_7"
+                "type": "'Create Contract Screen'.con_1.con_4.con_30.Dropdown2_7"
               }
             }
           ],
@@ -594,19 +594,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container6.Dropdown2_2.AccessibleLabel"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6.Dropdown2_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container6.Dropdown2_2.AccessibleLabel",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6.Dropdown2_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.Container1.Container4.Container6.Dropdown2_2"
+                "type": "'Create Contract Screen'.con_1.con_4.con_6.Dropdown2_2"
               }
             }
           ],
@@ -624,19 +624,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container6.Dropdown2_3.AccessibleLabel"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6.Dropdown2_3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container6.Dropdown2_3.AccessibleLabel",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6.Dropdown2_3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.Container1.Container4.Container6.Dropdown2_3"
+                "type": "'Create Contract Screen'.con_1.con_4.con_6.Dropdown2_3"
               }
             }
           ],
@@ -654,19 +654,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container6_1.Container9_1.Dropdown2_4.AccessibleLabel"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_1.con_9_1.Dropdown2_4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container6_1.Container9_1.Dropdown2_4.AccessibleLabel",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_1.con_9_1.Dropdown2_4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.Container1.Container4.Container6_1.Container9_1.Dropdown2_4"
+                "type": "'Create Contract Screen'.con_1.con_4.con_6_1.con_9_1.Dropdown2_4"
               }
             }
           ],
@@ -684,19 +684,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container6_1.Container9_1.TextInput1.AccessibleLabel"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_1.con_9_1.TextInput1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container6_1.Container9_1.TextInput1.AccessibleLabel",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_1.con_9_1.TextInput1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.Container1.Container4.Container6_1.Container9_1.TextInput1"
+                "type": "'Create Contract Screen'.con_1.con_4.con_6_1.con_9_1.TextInput1"
               }
             }
           ],
@@ -714,19 +714,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container6_2.Dropdown2_6.AccessibleLabel"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_2.Dropdown2_6.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container6_2.Dropdown2_6.AccessibleLabel",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_2.Dropdown2_6.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.Container1.Container4.Container6_2.Dropdown2_6"
+                "type": "'Create Contract Screen'.con_1.con_4.con_6_2.Dropdown2_6"
               }
             }
           ],
@@ -744,19 +744,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container6_2.Dropdown2_5.AccessibleLabel"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_2.Dropdown2_5.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container6_2.Dropdown2_5.AccessibleLabel",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_2.Dropdown2_5.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.Container1.Container4.Container6_2.Dropdown2_5"
+                "type": "'Create Contract Screen'.con_1.con_4.con_6_2.Dropdown2_5"
               }
             }
           ],
@@ -774,19 +774,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container6_3.Container9_3.ComboBox1_3.AccessibleLabel"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_3.con_9_3.ComboBox1_3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container6_3.Container9_3.ComboBox1_3.AccessibleLabel",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_3.con_9_3.ComboBox1_3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.Container1.Container4.Container6_3.Container9_3.ComboBox1_3"
+                "type": "'Create Contract Screen'.con_1.con_4.con_6_3.con_9_3.ComboBox1_3"
               }
             }
           ],
@@ -804,19 +804,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container6_3.Container9_3.TextInput1_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_3.con_9_3.TextInput1_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container6_3.Container9_3.TextInput1_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_3.con_9_3.TextInput1_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.Container1.Container4.Container6_3.Container9_3.TextInput1_1"
+                "type": "'Create Contract Screen'.con_1.con_4.con_6_3.con_9_3.TextInput1_1"
               }
             }
           ],
@@ -834,19 +834,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container6_4.Container9_4.DatePickerCanvas1.AccessibleLabel"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_4.con_9_4.DatePickerCanvas1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container6_4.Container9_4.DatePickerCanvas1.AccessibleLabel",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_4.con_9_4.DatePickerCanvas1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.Container1.Container4.Container6_4.Container9_4.DatePickerCanvas1"
+                "type": "'Create Contract Screen'.con_1.con_4.con_6_4.con_9_4.DatePickerCanvas1"
               }
             }
           ],
@@ -864,19 +864,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container6_4.Container9_4.DatePickerCanvas1_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_4.con_9_4.DatePickerCanvas1_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container6_4.Container9_4.DatePickerCanvas1_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_4.con_9_4.DatePickerCanvas1_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.Container1.Container4.Container6_4.Container9_4.DatePickerCanvas1_1"
+                "type": "'Create Contract Screen'.con_1.con_4.con_6_4.con_9_4.DatePickerCanvas1_1"
               }
             }
           ],
@@ -894,19 +894,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container6_5.DatePicker1.AccessibleLabel"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_5.DatePicker1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container6_5.DatePicker1.AccessibleLabel",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_5.DatePicker1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.Container1.Container4.Container6_5.DatePicker1"
+                "type": "'Create Contract Screen'.con_1.con_4.con_6_5.DatePicker1"
               }
             }
           ],
@@ -924,19 +924,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container6_5.TextInput1_2.AccessibleLabel"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_5.TextInput1_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.Container1.Container4.Container6_5.TextInput1_2.AccessibleLabel",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_5.TextInput1_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.Container1.Container4.Container6_5.TextInput1_2"
+                "type": "'Create Contract Screen'.con_1.con_4.con_6_5.TextInput1_2"
               }
             }
           ],
@@ -954,19 +954,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.con_ContractFilter_HS.con_RefreshReset_HS.ico_Refresh.AccessibleLabel"
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.con_ContractFilter_HS.con_RefreshReset_HS.ico_Refresh_HS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.con_ContractFilter_HS.con_RefreshReset_HS.ico_Refresh.AccessibleLabel",
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.con_ContractFilter_HS.con_RefreshReset_HS.ico_Refresh_HS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Home Screen",
-                "type": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.con_ContractFilter_HS.con_RefreshReset_HS.ico_Refresh"
+                "type": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.con_ContractFilter_HS.con_RefreshReset_HS.ico_Refresh_HS"
               }
             }
           ],
@@ -984,19 +984,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.con_ContractFilter_HS.con_RefreshReset_HS.ico_Refresh.TabIndex"
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.con_ContractFilter_HS.con_RefreshReset_HS.ico_Refresh_HS.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.con_ContractFilter_HS.con_RefreshReset_HS.ico_Refresh.TabIndex",
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.con_ContractFilter_HS.con_RefreshReset_HS.ico_Refresh_HS.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Home Screen",
-                "type": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.con_ContractFilter_HS.con_RefreshReset_HS.ico_Refresh"
+                "type": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.con_ContractFilter_HS.con_RefreshReset_HS.ico_Refresh_HS"
               }
             }
           ],
@@ -1134,19 +1134,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.gal_AllContractsDetailView_HS.tgl_ContractStatus.AccessibleLabel"
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.gal_AllContractsDetailView_HS.tgl_ContractStatus_HS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.gal_AllContractsDetailView_HS.tgl_ContractStatus.AccessibleLabel",
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.gal_AllContractsDetailView_HS.tgl_ContractStatus_HS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Home Screen",
-                "type": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.gal_AllContractsDetailView_HS.tgl_ContractStatus"
+                "type": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.gal_AllContractsDetailView_HS.tgl_ContractStatus_HS"
               }
             }
           ],
@@ -1164,19 +1164,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Preview Contract Screen'.Container9.Container4_3.Container2_2.Container9_2.TextInput2.AccessibleLabel"
+                  "fullyQualifiedName": "'Preview Contract Screen'.con_9.con_4_3.con_2_2.Container9_2.TextInput2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Preview Contract Screen'.Container9.Container4_3.Container2_2.Container9_2.TextInput2.AccessibleLabel",
+                  "fullyQualifiedName": "'Preview Contract Screen'.con_9.con_4_3.con_2_2.Container9_2.TextInput2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Preview Contract Screen",
-                "type": "'Preview Contract Screen'.Container9.Container4_3.Container2_2.Container9_2.TextInput2"
+                "type": "'Preview Contract Screen'.con_9.con_4_3.con_2_2.Container9_2.TextInput2"
               }
             }
           ],
