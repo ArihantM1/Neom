@@ -469,7 +469,7 @@
                             Visible: =If(ThisItem.Status.Value="Draft",true,false)
                             Width: =70
                             X: =Image8_1.X+Image8_1.Width-10
-                            Y: =Toggle2.Y
+                            Y: =tgl_ContractStatus.Y
                             ZIndex: =9
 
                         Image8_1 As image:
@@ -479,7 +479,7 @@
                             Visible: =If(ThisItem.Status.Value="Draft",true,false)
                             Width: =40
                             X: =Toggle2_1.X+20
-                            Y: =Toggle2.Y
+                            Y: =tgl_ContractStatus.Y
                             ZIndex: =10
 
                         Toggle2_1 As Toggle:
@@ -510,8 +510,8 @@
                                     }
                                 )
                             Visible: =If(ThisItem.Status.Value="Draft",false,true)
-                            Width: =Label3_9.Width-10
+                            Width: =lbl_ContractStatus_Headline.Width-10
                             X: =Label3_18.X
-                            Y: =(GridGallery1.TemplateHeight-Self.Height)/2
+                            Y: =(gal_AllContractsDetailView.TemplateHeight-Self.Height)/2
                             ZIndex: =11
 

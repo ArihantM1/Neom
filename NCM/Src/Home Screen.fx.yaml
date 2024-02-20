@@ -141,7 +141,7 @@
                 Width: =Parent.Width*.85
                 ZIndex: =3
 
-                Container13 As groupContainer.horizontalAutoLayoutContainer:
+                con_Header_AddContract As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     DropShadow: =DropShadow.None
                     FillPortions: =0
@@ -156,7 +156,7 @@
                     Width: =Parent.Width
                     ZIndex: =1
 
-                    Label3_1 As label:
+                    lbl_Contracts As label:
                         Color: =RGBA(107, 29, 94,1)
                         FontWeight: =FontWeight.Bold
                         Size: =14
@@ -164,8 +164,8 @@
                         Width: =Parent.Width*.4
                         ZIndex: =1
 
-                    Container15 As groupContainer.horizontalAutoLayoutContainer:
-                        AlignInContainer: =AlignInContainer.Center
+                    con_CreateNewContract As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
                         DropShadow: =DropShadow.None
                         FillPortions: =0
                         Height: =Parent.Height
@@ -179,7 +179,7 @@
                         Width: =Parent.Width*.48
                         ZIndex: =2
 
-                        Button2 As button:
+                        btn_CreateNewContract As button:
                             BorderColor: =ColorFade(RGBA(107, 29, 94,1),60%)
                             Color: =RGBA(107, 29, 94, 1)
                             Fill: =ColorFade(RGBA(107, 29, 94,1),96%)
@@ -198,7 +198,7 @@
                             Width: =180
                             ZIndex: =2
 
-                Container13_1 As groupContainer.horizontalAutoLayoutContainer:
+                con_KpiAll As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     DropShadow: =DropShadow.None
                     FillPortions: =0
@@ -212,7 +212,7 @@
                     Width: =Parent.Width
                     ZIndex: =2
 
-                    Container14_4 As groupContainer.horizontalAutoLayoutContainer:
+                    con_TotalContracts_Kpi As groupContainer.horizontalAutoLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         BorderColor: =ColorFade(RGBA(107, 29, 94,1),60%)
                         BorderThickness: =2
@@ -227,8 +227,8 @@
                         Width: =Parent.Width*.2
                         ZIndex: =1
 
-                        Container14 As groupContainer.horizontalAutoLayoutContainer:
-                            AlignInContainer: =AlignInContainer.Center
+                        con_CountAndIcon_KpiTotalCount As groupContainer.horizontalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
                             DropShadow: =DropShadow.None
                             FillPortions: =0
                             Height: =Parent.Height*.6
@@ -242,27 +242,27 @@
                             Width: =Parent.Width
                             ZIndex: =1
 
-                            Label6 As label:
+                            lbl_Count_TotalContracts As label:
                                 Height: =Parent.Height
                                 Size: =25
                                 Text: =CountRows(CM_ContractDetails)
                                 Width: =Parent.Width*.7
                                 ZIndex: =1
 
-                            Image4 As image:
+                            img_TotalContracts As image:
                                 Height: =Parent.Height*.7
                                 Image: =partnership
                                 Width: =Parent.Height*.7
                                 ZIndex: =2
 
-                        Label4 As label:
+                        lbl_TotalContracts As label:
                             Height: =Parent.Height*.4
                             PaddingLeft: =10
                             Text: ="Total Contracts"
                             Width: =Parent.Width
                             ZIndex: =2
 
-                    Container14_5 As groupContainer.horizontalAutoLayoutContainer:
+                    con_ExpiredContracts_Kpi As groupContainer.horizontalAutoLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         BorderColor: =ColorFade(RGBA(107, 29, 94,1),60%)
                         BorderThickness: =2
@@ -277,8 +277,8 @@
                         Width: =Parent.Width*.2
                         ZIndex: =2
 
-                        Container14_1 As groupContainer.horizontalAutoLayoutContainer:
-                            AlignInContainer: =AlignInContainer.Center
+                        con_CountAndIcon_KpiExpiredCount As groupContainer.horizontalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
                             DropShadow: =DropShadow.None
                             FillPortions: =0
                             Height: =Parent.Height*.6
@@ -292,27 +292,27 @@
                             Width: =Parent.Width
                             ZIndex: =1
 
-                            Label6_1 As label:
+                            lbl_Count_ExpiredContracts As label:
                                 Height: =Parent.Height
                                 Size: =25
                                 Text: =CountIf(CM_ContractDetails,Text(Status.Value)="Expired")
                                 Width: =Parent.Width*.7
                                 ZIndex: =1
 
-                            Image4_1 As image:
+                            img_ExpiredContracts As image:
                                 Height: =Parent.Height*.7
                                 Image: =deadline
                                 Width: =Parent.Height*.7
                                 ZIndex: =2
 
-                        Label4_1 As label:
+                        lbl_ExpiredContracts As label:
                             Height: =Parent.Height*.4
                             PaddingLeft: =10
                             Text: ="Expired Contracts"
                             Width: =Parent.Width
                             ZIndex: =2
 
-                    Container14_6 As groupContainer.horizontalAutoLayoutContainer:
+                    con_ActiveContracts_Kpi As groupContainer.horizontalAutoLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         BorderColor: =ColorFade(RGBA(107, 29, 94,1),60%)
                         BorderThickness: =2
@@ -327,8 +327,8 @@
                         Width: =Parent.Width*.2
                         ZIndex: =3
 
-                        Container14_2 As groupContainer.horizontalAutoLayoutContainer:
-                            AlignInContainer: =AlignInContainer.Center
+                        con_CountAndIcon_KpiActiveCount As groupContainer.horizontalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
                             DropShadow: =DropShadow.None
                             FillPortions: =0
                             Height: =Parent.Height*.6
@@ -342,27 +342,27 @@
                             Width: =Parent.Width
                             ZIndex: =1
 
-                            Label6_2 As label:
+                            lbl_Count_ActiveContracts As label:
                                 Height: =Parent.Height
                                 Size: =25
                                 Text: =CountIf(CM_ContractDetails,Text(Status.Value)="Active")
                                 Width: =Parent.Width*.7
                                 ZIndex: =1
 
-                            Image4_2 As image:
+                            img_ActiveContracts As image:
                                 Height: =Parent.Height*.7
                                 Image: ='approved (1)'
                                 Width: =Parent.Height*.7
                                 ZIndex: =2
 
-                        Label4_2 As label:
+                        lbl_ActiveContracts As label:
                             Height: =Parent.Height*.4
                             PaddingLeft: =10
                             Text: ="Active Contracts"
                             Width: =Parent.Width
                             ZIndex: =2
 
-                    Container14_7 As groupContainer.horizontalAutoLayoutContainer:
+                    con_DraftContracts_Kpi As groupContainer.horizontalAutoLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         BorderColor: =ColorFade(RGBA(107, 29, 94,1),60%)
                         BorderThickness: =2
@@ -377,8 +377,8 @@
                         Width: =Parent.Width*.2
                         ZIndex: =4
 
-                        Container14_3 As groupContainer.horizontalAutoLayoutContainer:
-                            AlignInContainer: =AlignInContainer.Center
+                        con_CountAndIcon_KpiDraftCount As groupContainer.horizontalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
                             DropShadow: =DropShadow.None
                             FillPortions: =0
                             Height: =Parent.Height*.6
@@ -392,27 +392,27 @@
                             Width: =Parent.Width
                             ZIndex: =1
 
-                            Label6_3 As label:
+                            lbl_Count_DraftContracts As label:
                                 Height: =Parent.Height
                                 Size: =25
                                 Text: =CountIf(CM_ContractDetails,Text(Status.Value)="Draft")
                                 Width: =Parent.Width*.7
                                 ZIndex: =1
 
-                            Image4_3 As image:
+                            img_DraftContracts As image:
                                 Height: =Parent.Height*.7
                                 Image: ='drafts (1)'
                                 Width: =Parent.Height*.7
                                 ZIndex: =2
 
-                        Label4_3 As label:
+                        lbl_DraftContracts As label:
                             Height: =Parent.Height*.4
                             PaddingLeft: =10
                             Text: ="Draft Contracts"
                             Width: =Parent.Width
                             ZIndex: =2
 
-                Container16 As groupContainer.horizontalAutoLayoutContainer:
+                con_ContractsView As groupContainer.horizontalAutoLayoutContainer:
                     DropShadow: =DropShadow.None
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMinHeight: =100
@@ -420,7 +420,8 @@
                     LayoutMode: =LayoutMode.Auto
                     ZIndex: =3
 
-                    Container13_2 As groupContainer.horizontalAutoLayoutContainer:
+                    con_ContractFilter As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
                         DropShadow: =DropShadow.None
                         FillPortions: =0
                         Height: =Parent.Height*.12
@@ -433,7 +434,7 @@
                         Width: =Parent.Width
                         ZIndex: =1
 
-                        Label3_3 As label:
+                        lbl_ApplicableTo_Filter As label:
                             Align: =Align.Center
                             Color: =RGBA(107, 29, 94,1)
                             FontWeight: =FontWeight.Semibold
@@ -444,7 +445,7 @@
                             Width: =Parent.Width*.11
                             ZIndex: =1
 
-                        ComboBox1_2 As combobox:
+                        cmb_ApplicableTo_Filter As combobox:
                             BorderColor: =RGBA(219, 200, 216, 1)
                             ChevronBackground: =RGBA(255, 255, 255, 1)
                             ChevronFill: =RGBA(107, 29, 94, 1)
@@ -465,7 +466,7 @@
                             Width: =220
                             ZIndex: =2
 
-                        Label3_5 As label:
+                        lbl_Status_Filter As label:
                             Align: =Align.Center
                             Color: =RGBA(107, 29, 94,1)
                             FontWeight: =FontWeight.Semibold
@@ -476,7 +477,7 @@
                             Width: =Parent.Width*.07
                             ZIndex: =3
 
-                        Dropdown2 As dropdown:
+                        drp_Status_Filter As dropdown:
                             AllowEmptySelection: =true
                             BorderColor: =RGBA(219, 200, 216, 1)
                             ChevronBackground: =RGBA(255, 255, 255, 1)
@@ -494,8 +495,10 @@
                             Width: =220
                             ZIndex: =4
 
-                        Container22 As groupContainer.horizontalAutoLayoutContainer:
+                        con_RefreshReset As groupContainer.horizontalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
                             DropShadow: =DropShadow.None
+                            Height: =Parent.Height
                             LayoutAlignItems: =LayoutAlignItems.Center
                             LayoutGap: =15
                             LayoutJustifyContent: =LayoutJustifyContent.End
@@ -505,7 +508,7 @@
                             PaddingRight: =20
                             ZIndex: =5
 
-                            Button1_1 As button:
+                            btn_Reset As button:
                                 BorderColor: |-
                                     =ColorFade(ColorValue("#6b1d5e"), 70%)
                                 Color: =RGBA(107, 29, 94, 1)
@@ -516,8 +519,8 @@
                                 HoverFill: |-
                                     =ColorValue("#6b1d5e")
                                 OnSelect: |-
-                                    =Reset(ComboBox1_2);
-                                    Reset(Dropdown2)
+                                    =Reset(cmb_ApplicableTo_Filter);
+                                    Reset(drp_Status_Filter)
                                 PressedBorderColor: |-
                                     =ColorValue("#6b1d5e")
                                 PressedFill: |-
@@ -528,14 +531,14 @@
                                 Y: =(Parent.Height-Self.Height)/2
                                 ZIndex: =1
 
-                            Icon2 As icon.Download:
+                            ico_Download As icon.Download:
                                 Color: =RGBA(107, 29, 94, 1)
                                 Height: =30
                                 Icon: =Icon.Download
                                 Width: =30
                                 ZIndex: =2
 
-                            Icon1 As icon.Reload:
+                            ico_Refresh As icon.Reload:
                                 Color: =RGBA(107, 29, 94, 1)
                                 Height: =30
                                 Icon: =Icon.Reload
@@ -543,7 +546,8 @@
                                 Width: =30
                                 ZIndex: =3
 
-                    Container13_3 As groupContainer.horizontalAutoLayoutContainer:
+                    con_Contract_GalleryHeadlines As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
                         DropShadow: =DropShadow.None
                         FillPortions: =0
                         Height: =Parent.Height*.1
@@ -556,7 +560,7 @@
                         Width: =Parent.Width
                         ZIndex: =2
 
-                        Label3_4 As label:
+                        lbl_ContractId_Headline As label:
                             Align: =Align.Center
                             Color: =RGBA(107, 29, 94,1)
                             FontWeight: =FontWeight.Bold
@@ -565,7 +569,7 @@
                             Width: =Parent.Width*.09
                             ZIndex: =1
 
-                        Label3_6 As label:
+                        lbl_ContractName_Headline As label:
                             Align: =Align.Center
                             Color: =RGBA(107, 29, 94,1)
                             FontWeight: =FontWeight.Bold
@@ -575,7 +579,7 @@
                             Width: =Parent.Width*.12
                             ZIndex: =2
 
-                        Label3_7 As label:
+                        lbl_ContracClient_Headline As label:
                             Align: =Align.Center
                             Color: =RGBA(107, 29, 94,1)
                             FontWeight: =FontWeight.Bold
@@ -584,7 +588,7 @@
                             Width: =Parent.Width*.12
                             ZIndex: =3
 
-                        Label3_8 As label:
+                        lbl_ContractService_Headline As label:
                             Align: =Align.Center
                             Color: =RGBA(107, 29, 94,1)
                             FontWeight: =FontWeight.Bold
@@ -593,7 +597,7 @@
                             Width: =Parent.Width*.15
                             ZIndex: =4
 
-                        Label3_10 As label:
+                        lbl_ContractApplicableTo_Headline As label:
                             Align: =Align.Center
                             Color: =RGBA(107, 29, 94,1)
                             FontWeight: =FontWeight.Bold
@@ -602,7 +606,7 @@
                             Width: =Parent.Width*.12
                             ZIndex: =5
 
-                        Label3_11 As label:
+                        lbl_ContractCountries_Headline As label:
                             Align: =Align.Center
                             Color: =RGBA(107, 29, 94,1)
                             FontWeight: =FontWeight.Bold
@@ -611,7 +615,7 @@
                             Width: =Parent.Width*.1
                             ZIndex: =6
 
-                        Label3_9 As label:
+                        lbl_ContractStatus_Headline As label:
                             Align: =Align.Center
                             Color: =RGBA(107, 29, 94,1)
                             FontWeight: =FontWeight.Bold
@@ -620,31 +624,31 @@
                             Width: =Parent.Width*.12
                             ZIndex: =7
 
-                    Rectangle1 As rectangle:
-                        AlignInContainer: =AlignInContainer.Center
+                    rec_ContractHeadlineAndContractsDetail_Devider As rectangle:
                         DisplayMode: =DisplayMode.View
                         Fill: =RGBA(219, 219, 219, 1)
                         Height: =2
                         Width: =Parent.Width*.95
                         ZIndex: =3
 
-                    GridGallery1 As gallery.variableTemplateHeightGallery:
+                    gal_AllContractsDetailView As gallery.variableTemplateHeightGallery:
+                        AlignInContainer: =AlignInContainer.Center
                         DelayItemLoading: =true
                         FillPortions: =0
                         Height: =380
                         Items: |-
                             =If(
-                                IsBlank(Dropdown2.Selected.Value) && IsBlank(ComboBox1_2.Selected.Value),
+                                IsBlank(drp_Status_Filter.Selected.Value) && IsBlank(cmb_ApplicableTo_Filter.Selected.Value),
                                 CM_ContractDetails,
                                 Filter(
                                     CM_ContractDetails,
                                     If(
-                                        !IsBlank(Dropdown2.Selected.Value),
-                                        Status.Value = Dropdown2.Selected.Value,
+                                        !IsBlank(drp_Status_Filter.Selected.Value),
+                                        Status.Value = drp_Status_Filter.Selected.Value,
                                         true
                                     ) && If(
-                                        !IsBlank(ComboBox1_2.Selected.Value),
-                                        Applicable_to.Value = ComboBox1_2.Selected.Value,
+                                        !IsBlank(cmb_ApplicableTo_Filter.Selected.Value),
+                                        Applicable_to.Value = cmb_ApplicableTo_Filter.Selected.Value,
                                         true
                                     )
                                 )
@@ -660,79 +664,80 @@
                                 ThisItem.Status.Value="Draft", Navigate('Create Contract Screen', ScreenTransition.Fade)
                                
                             );
-                            Set(ContractData,GridGallery1.Selected)
+                            Set(ContractData,gal_AllContractsDetailView.Selected)
                         TemplateSize: =60
                         Transition: =Transition.Pop
+                        Width: =Parent.Width
                         ZIndex: =4
 
-                        Label9 As label:
+                        lbl_ContractId As label:
                             Align: =Align.Center
                             FontWeight: =FontWeight.Bold
                             OnSelect: =Select(Parent)
                             Size: =11
                             Text: =ThisItem.Title
-                            Width: =Label3_4.Width
-                            X: =Label3_4.X
-                            Y: =(GridGallery1.TemplateHeight-Self.Height)/2
+                            Width: =lbl_ContractId_Headline.Width
+                            X: =lbl_ContractId_Headline.X
+                            Y: =(gal_AllContractsDetailView.TemplateHeight-Self.Height)/2
                             ZIndex: =1
 
-                        Label9_1 As label:
+                        lbl_ContractName As label:
                             Align: =Align.Center
                             FontWeight: =FontWeight.Semibold
                             OnSelect: =Select(Parent)
                             PaddingLeft: =10
                             Size: =11
                             Text: =ThisItem.Contract_name
-                            Width: =Label3_6.Width
-                            X: =Label3_6.X
-                            Y: =(GridGallery1.TemplateHeight-Self.Height)/2
+                            Width: =lbl_ContractName_Headline.Width
+                            X: =lbl_ContractName_Headline.X
+                            Y: =(gal_AllContractsDetailView.TemplateHeight-Self.Height)/2
                             ZIndex: =2
 
-                        Label9_2 As label:
+                        lbl_ContractClient As label:
                             Align: =Align.Center
                             FontWeight: =FontWeight.Semibold
                             OnSelect: =Select(Parent)
                             Size: =11
                             Text: =ThisItem.Supplier.Value
-                            Width: =Label3_7.Width
-                            X: =Label3_7.X
-                            Y: =(GridGallery1.TemplateHeight-Self.Height)/2
+                            Width: =lbl_ContracClient_Headline.Width
+                            X: =lbl_ContracClient_Headline.X
+                            Y: =(gal_AllContractsDetailView.TemplateHeight-Self.Height)/2
                             ZIndex: =3
 
-                        Label9_3 As label:
+                        lbl_ContractService As label:
                             Align: =Align.Center
                             FontWeight: =FontWeight.Semibold
                             OnSelect: =Select(Parent)
                             Size: =11
                             Text: =ThisItem.Service_Type_fk.Value
-                            Width: =Label3_8.Width
-                            X: =Label3_8.X
-                            Y: =(GridGallery1.TemplateHeight-Self.Height)/2
+                            Width: =lbl_ContractService_Headline.Width
+                            X: =lbl_ContractService_Headline.X
+                            Y: =(gal_AllContractsDetailView.TemplateHeight-Self.Height)/2
                             ZIndex: =4
 
-                        Label9_5 As label:
+                        lbl_ContractApplicableTo As label:
                             Align: =Align.Center
                             FontWeight: =FontWeight.Semibold
                             OnSelect: =Select(Parent)
                             Size: =11
                             Text: =ThisItem.Applicable_to.Value
-                            Width: =Label3_10.Width
-                            X: =Label3_10.X
+                            Width: =lbl_ContractApplicableTo_Headline.Width
+                            X: =lbl_ContractApplicableTo_Headline.X
                             Y: =10
                             ZIndex: =6
 
-                        Label9_6 As label:
+                        lbl_ContractCountries As label:
                             Align: =Align.Center
                             FontWeight: =FontWeight.Semibold
                             OnSelect: =Select(Parent)
                             Size: =11
                             Text: =If(ThisItem.Country=Blank(),"-",ThisItem.Country)
-                            Width: =Label3_11.Width
-                            X: =Label3_11.X
-                            Y: =(GridGallery1.TemplateHeight-Self.Height)/2
+                            Width: =lbl_ContractCountries_Headline.Width
+                            X: =lbl_ContractCountries_Headline.X
+                            Y: =(gal_AllContractsDetailView.TemplateHeight-Self.Height)/2
                             ZIndex: =7
 
-                        Rectangle8 As rectangle:
+                        rec_ContractDeviderLine As rectangle:
                             Fill: =RGBA(219, 200, 216, 1)
                             Height: =2
                             OnSelect: =Select(Parent)
@@ -741,7 +746,7 @@
                             Y: =58
                             ZIndex: =8
 
-                        Toggle2 As Toggle:
+                        tgl_ContractStatus As Toggle:
                             BasePaletteColor: =RGBA(107, 29, 94, 1)
                             Checked: =If(ThisItem.Status.Value="Active",true,false)
                             DisplayMode: =DisplayMode.Edit
@@ -769,12 +774,12 @@
                                     }
                                 )
                             Visible: =If(ThisItem.Status.Value="Draft",false,true)
-                            Width: =Label3_9.Width-10
-                            X: =Label3_9.X
-                            Y: =(GridGallery1.TemplateHeight-Self.Height)/2
+                            Width: =lbl_ContractStatus_Headline.Width-10
+                            X: =lbl_ContractStatus_Headline.X
+                            Y: =(gal_AllContractsDetailView.TemplateHeight-Self.Height)/2
                             ZIndex: =9
 
-                        Label13 As label:
+                        lbl_ContractStatus As label:
                             Align: =Align.Center
                             FontWeight: =FontWeight.Semibold
                             OnSelect: =Select(Parent)
@@ -782,17 +787,17 @@
                             Text: =ThisItem.Status.Value
                             Visible: =If(ThisItem.Status.Value="Draft",true,false)
                             Width: =70
-                            X: =Image8.X+Image8.Width-10
-                            Y: =Toggle2.Y
+                            X: =img_ContractStatus.X+img_ContractStatus.Width-10
+                            Y: =tgl_ContractStatus.Y
                             ZIndex: =10
 
-                        Image8 As image:
+                        img_ContractStatus As image:
                             Height: =40
                             Image: ='pencil (1)'
                             OnSelect: =Select(Parent)
                             Visible: =If(ThisItem.Status.Value="Draft",true,false)
                             Width: =40
-                            X: =Toggle2.X+20
-                            Y: =Toggle2.Y
+                            X: =tgl_ContractStatus.X+20
+                            Y: =tgl_ContractStatus.Y
                             ZIndex: =11
 
