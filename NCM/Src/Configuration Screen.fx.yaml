@@ -1,4 +1,4 @@
-"'Screen Configuration' As screen":
+"'Configuration Screen' As screen":
 
     ConConfigurationscreenmain As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height

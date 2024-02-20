@@ -1,4 +1,4 @@
-"'Screen Create COC' As screen":
+"'Create Contract Screen' As screen":
     OnVisible: |-
         =Set(
             varPreviousClient,
@@ -629,7 +629,7 @@
                         Reset(DatePickerCanvas1);
                         Reset(DatePickerCanvas1_1);
                         Reset(Radio1);
-                        Navigate('Screen Home')
+                        Navigate('Home Screen')
                         
                         
                         
@@ -702,7 +702,7 @@
                                     End_date: DatePickerCanvas1_1.SelectedDate,
                                     Coc_stage: 1,
                                     Status: {Value: "Draft"},
-                                    Countries: ComboBox1_3.Selected,
+                                    //Countries: ComboBox1_3.Selected,
                                     Service_Type_fk: {
                                         Id: Dropdown2_3.Selected.ID,
                                         Value: Dropdown2_3.SelectedText.Value
@@ -720,7 +720,7 @@
                                         ClauseCollection,
                                         Number = RandomClauseIndex
                                     ).Name,
-                                    Country: Concat(
+                                    Country : Concat(
                                         ComboBox1_3.SelectedItems,
                                         ThisRecord.Value,
                                         ";"
@@ -760,7 +760,7 @@
                              }
                         );*/
                         Navigate(
-                            'Screen Preview COC',
+                            'Preview Contract Screen',
                             ScreenTransition.Cover
                         )
                     Size: =10

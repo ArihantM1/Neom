@@ -134,12 +134,12 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Screen Home",
-    "Screen Analytics",
-    "Screen Reports",
-    "Screen Configuration",
-    "Screen Create COC",
-    "Screen Preview COC",
-    "Screen1"
+    "Home Screen",
+    "Analytics Screen",
+    "Reports Screen",
+    "Configuration Screen",
+    "Create Contract Screen",
+    "Preview Contract Screen",
+    "Contract Summary Screen"
   ]
 }

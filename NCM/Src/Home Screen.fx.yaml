@@ -1,4 +1,4 @@
-"'Screen Home' As screen":
+"'Home Screen' As screen":
 
     "'Con header' As groupContainer.verticalAutoLayoutContainer":
         Height: =Parent.Height
@@ -125,7 +125,7 @@
                             Height: =35
                             HoverColor: =RGBA(107, 29, 94, 1)
                             HoverFill: =Self.Color
-                            OnSelect: =Navigate('Screen Configuration')
+                            OnSelect: =Navigate('Configuration Screen')
                             PressedColor: =Self.Color
                             PressedFill: =Self.Fill
                             Size: =11
@@ -217,7 +217,7 @@
                                     OnSelect: |-
                                         =Set(contractId,Blank());
                                         Set(ContractData,Blank());
-                                        Navigate('Screen Create COC');
+                                        Navigate('Create Contract Screen');
                                         Set(createcontract,true)
                                     Size: =10.5
                                     Text: ="Create New Contract"
@@ -683,7 +683,7 @@
                                     =ColorValue("#6b1d5e")
                                 OnSelect: |
                                     =If(
-                                        ThisItem.Status.Value="Draft", Navigate('Screen Create COC', ScreenTransition.Fade)
+                                        ThisItem.Status.Value="Draft", Navigate('Create Contract Screen', ScreenTransition.Fade)
                                        
                                     );
                                     Set(ContractData,GridGallery1.Selected)

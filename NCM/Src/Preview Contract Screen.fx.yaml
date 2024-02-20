@@ -1,4 +1,4 @@
-"'Screen Preview COC' As screen":
+"'Preview Contract Screen' As screen":
 
     Container2 As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
@@ -255,7 +255,7 @@
                     HoverFill: =RGBA(219, 200, 216, 1)
                     OnSelect: |+
                         =
-                        Navigate('Screen Create COC')
+                        Navigate('Create Contract Screen')
                         
                         
                         
@@ -286,7 +286,7 @@
                         Reset(DatePickerCanvas1);
                         Reset(DatePickerCanvas1_1);
                         Reset(Radio1);
-                        Navigate('Screen Home')
+                        Navigate('Home Screen')
                     Size: =10
                     Text: ="Create"
                     Width: =Parent.Width*.07

@@ -6,15 +6,15 @@ App As appinfo:
             Table(
                 {
                     Title: "HOME",
-                    TargetScreen: 'Screen Home'
+                    TargetScreen: 'Home Screen'
                 },
                 {
                     Title: "ANALYTICS",
-                    TargetScreen: 'Screen Analytics'
+                    TargetScreen: 'Analytics Screen'
                 },
                 {
                     Title: "REPORTS",
-                    TargetScreen: 'Screen Reports'
+                    TargetScreen: 'Reports Screen'
                 }
             )
         );

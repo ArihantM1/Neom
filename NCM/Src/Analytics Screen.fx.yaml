@@ -1,4 +1,4 @@
-"'Screen Analytics' As screen":
+"'Analytics Screen' As screen":
 
     Container1_4 As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height

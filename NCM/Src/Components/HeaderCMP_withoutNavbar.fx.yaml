@@ -98,7 +98,7 @@ HeaderCMP_withoutNavbar As CanvasComponent:
                     Reset(DatePickerCanvas1);
                     Reset(DatePickerCanvas1_1);
                     Reset(Radio1);
-                    Navigate('Screen Home')
+                    Navigate('Home Screen')
                 PressedColor: =Self.Color
                 PressedFill: =Self.Fill
                 Size: =11

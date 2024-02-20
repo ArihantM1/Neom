@@ -1,4 +1,4 @@
-"'Screen Reports' As screen":
+"'Reports Screen' As screen":
     OnVisible: |-
         =ClearCollect(
             ClauseCollection,
