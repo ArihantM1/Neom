@@ -14,7 +14,7 @@
             Fill: =RGBA(255, 255, 255, 1)
             Height: =60
             Width: =60
-            X: =Parent.Width*.06
+            X: =Parent.Width*.065
             Y: =Parent.Height*.03
             ZIndex: =1
 
@@ -256,7 +256,7 @@
                 Width: =Parent.Width
                 ZIndex: =1
 
-        lbl_DownloadHistory_CSS_1 As label:
+        lbl_VersionsHistory_CSS As label:
             FontWeight: =FontWeight.Bold
             Height: =37
             Size: =15
