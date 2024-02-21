@@ -1,4 +1,6 @@
 "'Home Screen' As screen":
+    OnVisible: |
+        =Set(ContractData,Blank());
 
     con_Main_HS As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
@@ -188,11 +190,12 @@
                             HoverBorderColor: =RGBA(107, 29, 94, 1)
                             HoverColor: =RGBA(107, 29, 94, 1)
                             HoverFill: =RGBA(255, 255, 255, 1)
-                            OnSelect: |-
-                                =Set(contractId,Blank());
-                                Set(ContractData,Blank());
+                            OnSelect: |
+                                =Set(
+                                    ContractData,
+                                    Blank()
+                                );
                                 Navigate('Create Contract Screen');
-                                Set(createcontract,true)
                             Size: =10.5
                             Text: ="Create New Contract"
                             Width: =180

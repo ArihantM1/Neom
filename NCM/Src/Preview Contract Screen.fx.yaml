@@ -299,7 +299,7 @@
 
     HeaderComponent_WithoutNavbar_PCS As HeaderCMP_withoutNavbar:
         Height: =Parent.Height*.1
-        Width: =1366
+        Width: =Parent.Width
         ZIndex: =11
 
     grp_Milestone_PCS As group:

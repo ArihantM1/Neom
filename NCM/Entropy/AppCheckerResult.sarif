@@ -1644,36 +1644,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.varPreviousClient"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.varPreviousClient",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "varPreviousClient",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.ClientsData"
                 }
               ],
@@ -1745,36 +1715,6 @@
               },
               "properties": {
                 "member": "services",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.createcontract"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.createcontract",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "createcontract",
                 "module": "App",
                 "type": "App"
               }

@@ -1,9 +1,6 @@
 "'Create Contract Screen' As screen":
     OnVisible: |-
-        =Set(
-            varPreviousClient,
-            contractId.Supplier
-        );
+        =
         
         Set (
             RandomClauseIndex,
@@ -656,7 +653,10 @@
                             And !IsBlank(drp_ServiceType_CCS.SelectedText)
                             And !IsBlank(drp_Services_CCS.SelectedText)
                             And !IsBlank(txt_NameInput_CCS.Text)
-                            And !IsBlank(drp_ApplicableTo_CCS.SelectedText),
+                            And !IsBlank(drp_ApplicableTo_CCS.SelectedText)
+                            And !IsBlank(dte_StartDate_CCS.SelectedDate)
+                            And !IsBlank(dte_EndDate_CCS.SelectedDate)
+                            And !IsBlank(drp_Currency_CCS.SelectedText),
                             DisplayMode.Edit,
                             DisplayMode.Disabled
                         )
@@ -665,22 +665,21 @@
                     HoverFill: =RGBA(107, 29, 94, 1)
                     OnSelect: |-
                         =If(
-                            IsBlank(contractId),
+                            IsBlank(ContractData),
                             Set(
-                                contractId,
+                                ContractData,
                                 Patch(
                                     CM_ContractDetails,
                                     Defaults(CM_ContractDetails),
                                     {
                                         Contract_name: txt_NameInput_CCS.Text,
-                                        Currency: drp_Currency_CCS.SelectedText,
-                                        Applicable_to: drp_ApplicableTo_CCS.SelectedText,
+                                        Currency: {Value: drp_Currency_CCS.SelectedText.Value},
+                                        Applicable_to: {Value: drp_ApplicableTo_CCS.SelectedText.Value},
                                         Description: txt_DescriptionInput_CCS.Text,
                                         Start_date: dte_StartDate_CCS.SelectedDate,
                                         End_date: dte_EndDate_CCS.SelectedDate,
                                         Coc_stage: 1,
                                         Status: {Value: "Draft"},
-                                        // Countries: ComboBox1_3.Selected,
                                         Service_Type_fk: {
                                             Id: drp_ServiceType_CCS.Selected.ID,
                                             Value: drp_ServiceType_CCS.SelectedText.Value
@@ -693,28 +692,27 @@
                                             Id: drp_Services_CCS.Selected.ID,
                                             Value: drp_Services_CCS.SelectedText.Value
                                         },
-                                        Title: "C" & "000" & contractId.ID,
+                                        Title: "C" & "000" & ContractData.ID,
                                         Clauses: LookUp(
                                             ClauseCollection,
                                             Number = RandomClauseIndex
                                         ).Name,
-                                        Country: {Value:drp_Country_CCS.SelectedText.Value}
+                                        Country: {Value: drp_Country_CCS.SelectedText.Value}
                                     }
                                 )
                             );
                             Patch(
                                 CM_ContractDetails,
-                                {ID: contractId.ID},
+                                {ID: ContractData.ID},
                                 {
                                     Contract_name: txt_NameInput_CCS.Text,
-                                    Currency: drp_Currency_CCS.SelectedText,
-                                    Applicable_to: drp_ApplicableTo_CCS.SelectedText,
+                                    Currency: {Value: drp_Currency_CCS.SelectedText.Value},
+                                    Applicable_to: {Value: drp_ApplicableTo_CCS.SelectedText.Value},
                                     Description: txt_DescriptionInput_CCS.Text,
                                     Start_date: dte_StartDate_CCS.SelectedDate,
                                     End_date: dte_EndDate_CCS.SelectedDate,
                                     Coc_stage: 1,
                                     Status: {Value: "Draft"},
-                                    //Countries: ComboBox1_3.Selected,
                                     Service_Type_fk: {
                                         Id: drp_ServiceType_CCS.Selected.ID,
                                         Value: drp_ServiceType_CCS.SelectedText.Value
@@ -727,12 +725,12 @@
                                         Id: drp_Services_CCS.Selected.ID,
                                         Value: drp_Services_CCS.SelectedText.Value
                                     },
-                                    Title: "C" & "000" & contractId.ID,
+                                    Title: "C" & "000" & ContractData.ID,
                                     Clauses: LookUp(
                                         ClauseCollection,
                                         Number = RandomClauseIndex
                                     ).Name,
-                                    Country: {Value:drp_Country_CCS.SelectedText.Value}
+                                    Country: {Value: drp_Country_CCS.SelectedText.Value}
                                 }
                             )
                         );
