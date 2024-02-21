@@ -192,14 +192,14 @@
     con_Task_CSS As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
         Height: =Parent.Height*.65
-        Width: =Parent.Width*.2
+        Width: =Parent.Width*.21
         X: =Parent.Width*.01
         Y: =con_Task_Milestone_CSS.Y+con_Task_Milestone_CSS.Height+Parent.Height*.09
         ZIndex: =3
 
         con_MyTask_CSS As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Semibold
-            Height: =Parent.Height*.2
+            Height: =Parent.Height*.25
             Width: =Parent.Width*.98
             X: =(Parent.Width-Self.Width)/2
             Y: =    
@@ -224,7 +224,7 @@
             DropShadow: =DropShadow.Semibold
             Height: =con_MyTask_CSS.Height
             Width: =Parent.Width*.98
-            Y: =180
+            Y: =187
             ZIndex: =2
 
             shp_DownloadFiller_CSS As rectangle:
@@ -247,7 +247,7 @@
             Height: =con_MyTask_CSS.Height
             Width: =Parent.Width*.98
             X: =2
-            Y: =358
+            Y: =374
             ZIndex: =4
 
             shp_DownloadFiller_CSS_1 As rectangle:
@@ -268,8 +268,8 @@
     "'con_DownloadDetails_CSS.Y-40' As groupContainer.manualLayoutContainer":
         DropShadow: =DropShadow.Semibold
         Height: =con_Task_CSS.Height
-        Width: =Parent.Width-con_Task_CSS.Width-70
-        X: =con_Task_CSS.X+con_Task_CSS.Width+Parent.Width*.02
+        Width: =Parent.Width*.75
+        X: =con_Task_CSS.X+con_Task_CSS.Width+Parent.Width*.015
         Y: =con_Task_CSS.Y
         ZIndex: =4
 
