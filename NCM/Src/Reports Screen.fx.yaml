@@ -313,14 +313,3 @@
                             Y: =Chr_Clause_RS.Y+Chr_Clause_RS.Height
                             ZIndex: =6
 
-                    Ico_Refresh_RS As icon.Reload:
-                        Color: =RGBA(107, 29, 94, 1)
-                        Height: =30
-                        Icon: =Icon.Reload
-                        OnSelect: =
-                        Tooltip: ="Reload Clauses"
-                        Width: =30
-                        X: =lbl_MostDiscussedClauses_RS.X+lbl_MostDiscussedClauses_RS.Width+Parent.Width*.1
-                        Y: =Parent.Height*.015
-                        ZIndex: =7
-
