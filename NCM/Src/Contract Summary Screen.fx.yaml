@@ -224,7 +224,7 @@
             DropShadow: =DropShadow.Semibold
             Height: =con_MyTask_CSS.Height
             Width: =Parent.Width*.98
-            Y: =187
+            Y: =lbl_DownloadHistory_CSS.Y+lbl_DownloadHistory_CSS.Height
             ZIndex: =2
 
             shp_DownloadFiller_CSS As rectangle:
@@ -236,10 +236,10 @@
         lbl_DownloadHistory_CSS As label:
             FontWeight: =FontWeight.Bold
             Height: =37
-            Size: =15
+            Size: =12
             Text: ="COC Download History"
             Width: =Parent.Width
-            Y: =con_DownloadDetails_CSS.Y-40
+            Y: =con_MyTask_CSS.Y+con_MyTask_CSS.Height+Parent.Height*.05
             ZIndex: =3
 
         con_Versions_CSS As groupContainer.manualLayoutContainer:
@@ -247,7 +247,7 @@
             Height: =con_MyTask_CSS.Height
             Width: =Parent.Width*.98
             X: =2
-            Y: =374
+            Y: =lbl_VersionsHistory_CSS.Y+lbl_VersionsHistory_CSS.Height
             ZIndex: =4
 
             shp_DownloadFiller_CSS_1 As rectangle:
@@ -259,10 +259,10 @@
         lbl_VersionsHistory_CSS As label:
             FontWeight: =FontWeight.Bold
             Height: =37
-            Size: =15
+            Size: =12
             Text: ="COC Versions"
             Width: =Parent.Width
-            Y: =con_Versions_CSS.Y-40
+            Y: =con_DownloadDetails_CSS.Y+con_DownloadDetails_CSS.Height+Parent.Height*.05
             ZIndex: =5
 
     "'con_DownloadDetails_CSS.Y-40' As groupContainer.manualLayoutContainer":
@@ -300,7 +300,7 @@
 
     lbl_MyTask_CSS As label:
         FontWeight: =FontWeight.Bold
-        Size: =15
+        Size: =12
         Text: ="My Task"
         Width: =Parent.Width*.2
         X: =con_Task_CSS.X
