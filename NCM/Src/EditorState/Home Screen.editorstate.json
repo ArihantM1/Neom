@@ -1264,7 +1264,15 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "IsSearchable"
+        "IsSearchable",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Strikethrough",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        }
       ],
       "DynamicProperties": [
         {
@@ -1391,7 +1399,7 @@
         {
           "Category": "Design",
           "PropertyName": "SelectionFill",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -1416,7 +1424,7 @@
         {
           "Category": "Design",
           "PropertyName": "ChevronHoverFill",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -1531,6 +1539,11 @@
         {
           "Category": "Design",
           "PropertyName": "MoreItemsButtonColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Strikethrough",
           "RuleProviderType": "Unknown"
         }
       ],

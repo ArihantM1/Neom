@@ -455,7 +455,7 @@
                             ChevronBackground: =RGBA(255, 255, 255, 1)
                             ChevronFill: =RGBA(107, 29, 94, 1)
                             ChevronHoverBackground: =ColorFade(RGBA(107, 29, 94, 1), -20%)
-                            ChevronHoverFill: =RGBA(107, 29, 94, 1)
+                            ChevronHoverFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
                             Color: =RGBA(107, 29, 94, 1)
                             DisplayFields: =["Value"]
                             Height: =30
@@ -466,7 +466,7 @@
                             PressedFill: =RGBA(255, 255, 255, 1)
                             SearchFields: =["Value"]
                             SearchItems: =[]
-                            SelectionFill: =RGBA(107, 29, 94, 1)
+                            SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
                             Size: =11
                             Width: =220
                             ZIndex: =2
