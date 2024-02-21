@@ -350,7 +350,7 @@
                     Height: =30
                     HoverFill: |-
                         = ColorFade( ColorValue("#9e6c97"),80%)
-                    Items: =["--Select a Currency--","USD","SAR"]
+                    Items: =Choices(CM_ContractDetails.Currency)
                     PressedFill: =RGBA(158, 108, 151, 1)
                     Reset: =true
                     SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
@@ -403,11 +403,13 @@
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
+                    PaddingTop: =2
                     Width: =Parent.Width*.50
                     ZIndex: =1
 
                     lbl_Description_CCS As label:
                         Align: =Align.Right
+                        AlignInContainer: =AlignInContainer.Start
                         PaddingLeft: =0
                         PaddingRight: =0
                         Text: |-
@@ -416,6 +418,7 @@
                         ZIndex: =1
 
                     txt_DescriptionInput_CCS As text:
+                        AlignInContainer: =AlignInContainer.Start
                         BorderColor: =RGBA(219, 200, 216, 1)
                         Default: =If(Not(IsBlank(ContractData)),ContractData.Description)
                         Height: =Parent.Height*.9
@@ -436,6 +439,7 @@
 
                     lbl_Countries_CCS As label:
                         Align: =Align.Right
+                        AlignInContainer: =AlignInContainer.Start
                         Size: =12
                         Text: |-
                             ="Countries: "
@@ -444,20 +448,22 @@
                         ZIndex: =3
 
                     drp_Country_CCS As dropdown:
+                        AlignInContainer: =AlignInContainer.Start
                         AllowEmptySelection: =true
                         BorderColor: =RGBA(219, 200, 216, 1)
                         ChevronBackground: =RGBA(255, 255, 255, 1)
                         ChevronFill: =RGBA(107, 29, 94, 1)
                         ChevronHoverBackground: =RGBA(107, 29, 94, 1)
                         Color: =RGBA(107, 29, 94, 1)
-                        Default: =If(Not(IsBlank(ContractData)),ContractData.Applicable_to.Value)
+                        Default: =If(Not(IsBlank(ContractData)),ContractData.Country.Value)
                         Height: =30
                         HoverFill: |-
                             = ColorFade( ColorValue("#9e6c97"),80%)
-                        Items: =Choices(CM_ContractDetails.Applicable_to)
+                        Items: =Choices( CM_ContractDetails.Country)
                         PressedFill: =RGBA(158, 108, 151, 1)
                         SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
                         Size: =11
+                        Visible: =If(drp_ApplicableTo_CCS.SelectedText.Value="Regional",true,false)
                         Width: =Parent.Width*.35
                         ZIndex: =4
 

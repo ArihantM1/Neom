@@ -344,7 +344,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "02/21/2024 07:36:11",
+  "HeaderLastSavedDateTimeUTC": "02/21/2024 07:43:07",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "560d9749-ce2d-46ff-a027-334511a62e86": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/c106917b92bc456099509fd8f2dd38ab\""
@@ -1120,7 +1120,7 @@
     "lbl_CreatedOn_CCS": 209,
     "lbl_CreateNew_CCS": 178,
     "lbl_Currency_CCS": 192,
-    "lbl_Description_CCS": 199,
+    "lbl_Description_CCS": 198,
     "lbl_Document_PCS": 260,
     "lbl_DownloadHistory_CSS": 285,
     "lbl_DraftContracts_HS": 36,
@@ -1206,7 +1206,7 @@
     "tgl_ContractStatus_AS": 109,
     "tgl_ContractStatus_HS": 64,
     "txt_CreatedBy_CCS": 212,
-    "txt_DescriptionInput_CCS": 198,
+    "txt_DescriptionInput_CCS": 199,
     "txt_DynamicInput_PCS": 236,
     "txt_NameInput_CCS": 190
   },

@@ -108,6 +108,7 @@
                         ZIndex: =1
 
                     btn_Configurations_Navigate_HS As button:
+                        AlignInContainer: =AlignInContainer.Center
                         Color: =ColorFade(RGBA(107, 29, 94,1),96%)
                         Fill: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
