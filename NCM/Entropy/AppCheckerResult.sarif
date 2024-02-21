@@ -334,12 +334,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_1.con_9_1.Dropdown2_4.Items"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.'con_Services&Name_CCS'.'con_S&N_CCS'.drp_Services_CCS.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_1.con_9_1.Dropdown2_4.Items",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.'con_Services&Name_CCS'.'con_S&N_CCS'.drp_Services_CCS.Items",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -353,7 +353,7 @@
               "properties": {
                 "member": "Items",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.con_1.con_4.con_6_1.con_9_1.Dropdown2_4"
+                "type": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.'con_Services&Name_CCS'.'con_S&N_CCS'.drp_Services_CCS"
               }
             }
           ],
@@ -374,12 +374,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_1.con_9_1.Dropdown2_4.Items"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.'con_Services&Name_CCS'.'con_S&N_CCS'.drp_Services_CCS.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_1.con_9_1.Dropdown2_4.Items",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.'con_Services&Name_CCS'.'con_S&N_CCS'.drp_Services_CCS.Items",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -393,7 +393,7 @@
               "properties": {
                 "member": "Items",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.con_1.con_4.con_6_1.con_9_1.Dropdown2_4"
+                "type": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.'con_Services&Name_CCS'.'con_S&N_CCS'.drp_Services_CCS"
               }
             }
           ],
@@ -1164,19 +1164,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_5.Radio1.AccessibleLabel"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_Radiooption_CCS.Radio1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_5.Radio1.AccessibleLabel",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_Radiooption_CCS.Radio1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.con_1.con_4.con_5.Radio1"
+                "type": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_Radiooption_CCS.Radio1"
               }
             }
           ],
@@ -1194,19 +1194,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_30.Dropdown2_7.AccessibleLabel"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_RadioName_CCS.'drp_SelectNew&Existing_CCS'.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_30.Dropdown2_7.AccessibleLabel",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_RadioName_CCS.'drp_SelectNew&Existing_CCS'.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.con_1.con_4.con_30.Dropdown2_7"
+                "type": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_RadioName_CCS.'drp_SelectNew&Existing_CCS'"
               }
             }
           ],
@@ -1224,19 +1224,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6.Dropdown2_2.AccessibleLabel"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_client_ServiceType_CCS.drp_Client_CCS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6.Dropdown2_2.AccessibleLabel",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_client_ServiceType_CCS.drp_Client_CCS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.con_1.con_4.con_6.Dropdown2_2"
+                "type": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_client_ServiceType_CCS.drp_Client_CCS"
               }
             }
           ],
@@ -1254,19 +1254,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6.Dropdown2_3.AccessibleLabel"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_client_ServiceType_CCS.drp_ServiceType_CCS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6.Dropdown2_3.AccessibleLabel",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_client_ServiceType_CCS.drp_ServiceType_CCS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.con_1.con_4.con_6.Dropdown2_3"
+                "type": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_client_ServiceType_CCS.drp_ServiceType_CCS"
               }
             }
           ],
@@ -1284,19 +1284,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_1.con_9_1.Dropdown2_4.AccessibleLabel"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.'con_Services&Name_CCS'.'con_S&N_CCS'.drp_Services_CCS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_1.con_9_1.Dropdown2_4.AccessibleLabel",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.'con_Services&Name_CCS'.'con_S&N_CCS'.drp_Services_CCS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.con_1.con_4.con_6_1.con_9_1.Dropdown2_4"
+                "type": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.'con_Services&Name_CCS'.'con_S&N_CCS'.drp_Services_CCS"
               }
             }
           ],
@@ -1314,19 +1314,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_1.con_9_1.TextInput1.AccessibleLabel"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.'con_Services&Name_CCS'.'con_S&N_CCS'.txt_NameInput_CCS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_1.con_9_1.TextInput1.AccessibleLabel",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.'con_Services&Name_CCS'.'con_S&N_CCS'.txt_NameInput_CCS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.con_1.con_4.con_6_1.con_9_1.TextInput1"
+                "type": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.'con_Services&Name_CCS'.'con_S&N_CCS'.txt_NameInput_CCS"
               }
             }
           ],
@@ -1344,19 +1344,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_2.Dropdown2_6.AccessibleLabel"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.'con_Currency&Applicable_CSS'.drp_Currency_CCS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_2.Dropdown2_6.AccessibleLabel",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.'con_Currency&Applicable_CSS'.drp_Currency_CCS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.con_1.con_4.con_6_2.Dropdown2_6"
+                "type": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.'con_Currency&Applicable_CSS'.drp_Currency_CCS"
               }
             }
           ],
@@ -1374,19 +1374,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_2.Dropdown2_5.AccessibleLabel"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.'con_Currency&Applicable_CSS'.drp_ApplicableTo_CCS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_2.Dropdown2_5.AccessibleLabel",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.'con_Currency&Applicable_CSS'.drp_ApplicableTo_CCS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.con_1.con_4.con_6_2.Dropdown2_5"
+                "type": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.'con_Currency&Applicable_CSS'.drp_ApplicableTo_CCS"
               }
             }
           ],
@@ -1404,19 +1404,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_3.con_9_3.ComboBox1_3.AccessibleLabel"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_Description_CCS.con_DescriptionIn_CCS.cmb_Coutries_CCS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_3.con_9_3.ComboBox1_3.AccessibleLabel",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_Description_CCS.con_DescriptionIn_CCS.cmb_Coutries_CCS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.con_1.con_4.con_6_3.con_9_3.ComboBox1_3"
+                "type": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_Description_CCS.con_DescriptionIn_CCS.cmb_Coutries_CCS"
               }
             }
           ],
@@ -1434,19 +1434,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_3.con_9_3.TextInput1_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_Description_CCS.con_DescriptionIn_CCS.txt_DescriptionInput_CCS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_3.con_9_3.TextInput1_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_Description_CCS.con_DescriptionIn_CCS.txt_DescriptionInput_CCS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.con_1.con_4.con_6_3.con_9_3.TextInput1_1"
+                "type": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_Description_CCS.con_DescriptionIn_CCS.txt_DescriptionInput_CCS"
               }
             }
           ],
@@ -1464,19 +1464,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_4.con_9_4.DatePickerCanvas1.AccessibleLabel"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_Date_Main_CCS.con_DateIn_CCS.dte_StartDate_CCS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_4.con_9_4.DatePickerCanvas1.AccessibleLabel",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_Date_Main_CCS.con_DateIn_CCS.dte_StartDate_CCS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.con_1.con_4.con_6_4.con_9_4.DatePickerCanvas1"
+                "type": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_Date_Main_CCS.con_DateIn_CCS.dte_StartDate_CCS"
               }
             }
           ],
@@ -1494,19 +1494,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_4.con_9_4.DatePickerCanvas1_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_Date_Main_CCS.con_DateIn_CCS.dte_EndDate_CCS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_4.con_9_4.DatePickerCanvas1_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_Date_Main_CCS.con_DateIn_CCS.dte_EndDate_CCS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.con_1.con_4.con_6_4.con_9_4.DatePickerCanvas1_1"
+                "type": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_Date_Main_CCS.con_DateIn_CCS.dte_EndDate_CCS"
               }
             }
           ],
@@ -1524,19 +1524,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_5.DatePicker1.AccessibleLabel"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_CreatedMain_CCS.dte_CreatedOn_CCS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_5.DatePicker1.AccessibleLabel",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_CreatedMain_CCS.dte_CreatedOn_CCS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.con_1.con_4.con_6_5.DatePicker1"
+                "type": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_CreatedMain_CCS.dte_CreatedOn_CCS"
               }
             }
           ],
@@ -1554,19 +1554,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_5.TextInput1_2.AccessibleLabel"
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_CreatedMain_CCS.txt_CreatedBy_CCS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Create Contract Screen'.con_1.con_4.con_6_5.TextInput1_2.AccessibleLabel",
+                  "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_CreatedMain_CCS.txt_CreatedBy_CCS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Create Contract Screen",
-                "type": "'Create Contract Screen'.con_1.con_4.con_6_5.TextInput1_2"
+                "type": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_CreatedMain_CCS.txt_CreatedBy_CCS"
               }
             }
           ],

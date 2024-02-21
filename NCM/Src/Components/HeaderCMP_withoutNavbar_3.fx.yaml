@@ -86,17 +86,17 @@ HeaderCMP_withoutNavbar_3 As CanvasComponent:
                 HoverColor: =RGBA(107, 29, 94, 1)
                 HoverFill: =Self.Color
                 OnSelect: |-
-                    =Reset(Dropdown2_3);
-                    Reset(Dropdown2_2);
-                    Reset(Dropdown2_4);
-                    Reset(Dropdown2_5);
-                    Reset(Dropdown2_6);
-                    Reset(ComboBox1_3);
-                    Reset(Dropdown2_7);
-                    Reset(TextInput1);
-                    Reset(TextInput1_1);
-                    Reset(DatePickerCanvas1);
-                    Reset(DatePickerCanvas1_1);
+                    =Reset(drp_ServiceType_CCS);
+                    Reset(drp_Client_CCS);
+                    Reset(drp_Services_CCS);
+                    Reset(drp_ApplicableTo_CCS);
+                    Reset(drp_Currency_CCS);
+                    Reset(cmb_Coutries_CCS);
+                    Reset('drp_SelectNew&Existing_CCS');
+                    Reset(txt_NameInput_CCS);
+                    Reset(txt_DescriptionInput_CCS);
+                    Reset(dte_StartDate_CCS);
+                    Reset(dte_EndDate_CCS);
                     Reset(Radio1);
                     Navigate('Home Screen')
                 PressedColor: =Self.Color

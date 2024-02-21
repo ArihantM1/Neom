@@ -20,14 +20,14 @@
             )
         );
 
-    con_2_1 As groupContainer.horizontalAutoLayoutContainer:
+    con_Main_CCS As groupContainer.horizontalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
         Width: =Parent.Width
         ZIndex: =1
 
-        con_7 As groupContainer.horizontalAutoLayoutContainer:
+        con_Header_CCS As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =Parent.Height*.1
@@ -38,13 +38,13 @@
             Width: =Parent.Width
             ZIndex: =2
 
-            HeaderCMP_withoutNavbar_1 As HeaderCMP_withoutNavbar:
+            HeaderComponent_WithoutNavbar_CCS As HeaderCMP_withoutNavbar:
                 Height: =Parent.Height
                 LayoutMinHeight: =640
                 LayoutMinWidth: =640
                 Width: =Parent.Width
 
-        con_8 As groupContainer.verticalAutoLayoutContainer:
+        con_VertcalMain_CCS As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
@@ -66,7 +66,7 @@
                 LayoutMode: =LayoutMode.Auto
                 ZIndex: =1
 
-    con_1 As groupContainer.horizontalAutoLayoutContainer:
+    con_horizonatal_Main_CCS As groupContainer.horizontalAutoLayoutContainer:
         DropShadow: =DropShadow.Bold
         Fill: =RGBA(255, 255, 255, 1)
         Height: =Parent.Height*.83
@@ -77,22 +77,22 @@
         Y: =con_10.Height*.75
         ZIndex: =2
 
-        con_4 As groupContainer.horizontalAutoLayoutContainer:
+        con_Vertical_Main_CCS As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             DropShadow: =DropShadow.Bold
             Fill: =RGBA(255, 255, 255, 1)
+            Height: =Parent.Height
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             ZIndex: =2
 
-            con_5 As groupContainer.verticalAutoLayoutContainer:
+            con_Radiooption_CCS As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =Parent.Height*.10
-                LayoutAlignItems: =LayoutAlignItems.End
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutJustifyContent: =LayoutJustifyContent.Center
                 LayoutMinHeight: =100
@@ -116,7 +116,7 @@
                                 ContractData,
                                 Blank()
                             );
-                        Reset(Dropdown2_7);
+                        Reset('drp_SelectNew&Existing_CCS');
                     OnSelect: =
                     PaddingBottom: =0
                     PaddingTop: =15
@@ -133,7 +133,7 @@
                     Width: =Parent.Width*.9
                     ZIndex: =2
 
-            con_30 As groupContainer.verticalAutoLayoutContainer:
+            con_RadioName_CCS As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
@@ -145,15 +145,15 @@
                     =If(Radio1.Selected.Value = "Duplicate Existing", true, false)
                 ZIndex: =2
 
-                lbl_5_11 As label:
+                lbl_CreateNew_CCS As label:
                     Align: =Align.Right
                     Size: =12
                     Text: |-
                         ="Select COC:"
-                    Width: =lbl_5.Width
+                    Width: =lbl_Client_CCS.Width
                     ZIndex: =1
 
-                Dropdown2_7 As dropdown:
+                "'drp_SelectNew&Existing_CCS' As dropdown":
                     AllowEmptySelection: =true
                     BorderColor: =RGBA(219, 200, 216, 1)
                     ChevronBackground: =RGBA(255, 255, 255, 1)
@@ -165,7 +165,7 @@
                     HoverFill: |-
                         = ColorFade( ColorValue("#9e6c97"),80%)
                     Items: =contractName
-                    OnChange: =Set(ContractData,Dropdown2_7.Selected)
+                    OnChange: =Set(ContractData,'drp_SelectNew&Existing_CCS'.Selected)
                     OnSelect: =Set(contractName,CM_ContractDetails)
                     PressedFill: =RGBA(158, 108, 151, 1)
                     SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
@@ -173,7 +173,7 @@
                     Width: =Parent.Width*.85
                     ZIndex: =2
 
-            con_6 As groupContainer.horizontalAutoLayoutContainer:
+            con_client_ServiceType_CCS As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
@@ -182,9 +182,10 @@
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
                 ZIndex: =3
 
-                lbl_5 As label:
+                lbl_Client_CCS As label:
                     Align: =Align.Right
                     Size: =12
                     Text: |-
@@ -192,7 +193,7 @@
                     Width: =Parent.Width*.09
                     ZIndex: =1
 
-                Dropdown2_2 As dropdown:
+                drp_Client_CCS As dropdown:
                     AllowEmptySelection: =true
                     BorderColor: =RGBA(219, 200, 216, 1)
                     ChevronBackground: =RGBA(255, 255, 255, 1)
@@ -213,7 +214,7 @@
                     Width: =Parent.Width*.35
                     ZIndex: =2
 
-                lbl_5_1 As label:
+                lbl_ServiceType_CCS As label:
                     Align: =Align.Right
                     Size: =12
                     Text: |-
@@ -221,7 +222,7 @@
                     Width: =Parent.Width*.15
                     ZIndex: =3
 
-                Dropdown2_3 As dropdown:
+                drp_ServiceType_CCS As dropdown:
                     AllowEmptySelection: =true
                     BorderColor: =RGBA(219, 200, 216, 1)
                     ChevronBackground: =RGBA(255, 255, 255, 1)
@@ -240,7 +241,7 @@
                     Width: =Parent.Width*.35
                     ZIndex: =4
 
-            con_6_1 As groupContainer.horizontalAutoLayoutContainer:
+            "'con_Services&Name_CCS' As groupContainer.horizontalAutoLayoutContainer":
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
@@ -248,9 +249,10 @@
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
                 ZIndex: =4
 
-                con_9_1 As groupContainer.horizontalAutoLayoutContainer:
+                "'con_S&N_CCS' As groupContainer.horizontalAutoLayoutContainer":
                     AlignInContainer: =AlignInContainer.SetByContainer
                     DropShadow: =DropShadow.None
                     Height: =Parent.Height
@@ -261,15 +263,15 @@
                     Width: =Parent.Width*.50
                     ZIndex: =1
 
-                    lbl_5_2 As label:
+                    lbl_Services_CCS As label:
                         Align: =Align.Right
                         Size: =12
                         Text: |-
                             ="Services:"
-                        Width: =lbl_5.Width
+                        Width: =lbl_Client_CCS.Width
                         ZIndex: =1
 
-                    Dropdown2_4 As dropdown:
+                    drp_Services_CCS As dropdown:
                         AllowEmptySelection: =true
                         BorderColor: =RGBA(219, 200, 216, 1)
                         ChevronBackground: =RGBA(255, 255, 255, 1)
@@ -283,24 +285,24 @@
                         Items: |-
                             =Filter(
                                 CM_Services,
-                                Service_Type_fk.Id = Dropdown2_3.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID'
+                                Service_Type_fk.Id = drp_ServiceType_CCS.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID'
                             )
-                        OnSelect: =Set(services,Filter(CM_Services, Service_Type_fk.Value= Dropdown2_3.Selected.Service_Type))
+                        OnSelect: =Set(services,Filter(CM_Services, Service_Type_fk.Value= drp_ServiceType_CCS.Selected.Service_Type))
                         PressedFill: =RGBA(158, 108, 151, 1)
                         SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
                         Size: =12
                         Width: =Parent.Width*.35
                         ZIndex: =2
 
-                    lbl_5_3 As label:
+                    lbl_Name_CCS As label:
                         Align: =Align.Right
                         Size: =12
                         Text: |-
                             ="Name: "
-                        Width: =lbl_5_1.Width
+                        Width: =lbl_ServiceType_CCS.Width
                         ZIndex: =3
 
-                    TextInput1 As text:
+                    txt_NameInput_CCS As text:
                         BorderColor: =RGBA(219, 200, 216, 1)
                         Default: =If(Not(IsBlank(ContractData)),ContractData.Contract_name)
                         Height: =30
@@ -316,10 +318,10 @@
                         RadiusTopLeft: =0
                         RadiusTopRight: =0
                         Size: =11
-                        Width: =Dropdown2_4.Width
+                        Width: =drp_Services_CCS.Width
                         ZIndex: =4
 
-            con_6_2 As groupContainer.horizontalAutoLayoutContainer:
+            "'con_Currency&Applicable_CSS' As groupContainer.horizontalAutoLayoutContainer":
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
@@ -327,17 +329,18 @@
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
                 ZIndex: =5
 
-                lbl_5_6 As label:
+                lbl_Currency_CCS As label:
                     Align: =Align.Right
                     Size: =12
                     Text: |-
                         ="Currency:"
-                    Width: =lbl_5.Width
+                    Width: =lbl_Client_CCS.Width
                     ZIndex: =1
 
-                Dropdown2_6 As dropdown:
+                drp_Currency_CCS As dropdown:
                     BorderColor: =RGBA(219, 200, 216, 1)
                     ChevronBackground: =RGBA(255, 255, 255, 1)
                     ChevronFill: =RGBA(107, 29, 94, 1)
@@ -355,15 +358,15 @@
                     Width: =Parent.Width*.35
                     ZIndex: =2
 
-                lbl_5_4 As label:
+                lbl_ApplicableTo_CCS As label:
                     Align: =Align.Right
                     Size: =12
                     Text: |-
                         ="Applicable To: "
-                    Width: =lbl_5_1.Width
+                    Width: =lbl_ServiceType_CCS.Width
                     ZIndex: =3
 
-                Dropdown2_5 As dropdown:
+                drp_ApplicableTo_CCS As dropdown:
                     AllowEmptySelection: =true
                     BorderColor: =RGBA(219, 200, 216, 1)
                     ChevronBackground: =RGBA(255, 255, 255, 1)
@@ -381,7 +384,7 @@
                     Width: =Parent.Width*.35
                     ZIndex: =4
 
-            con_6_3 As groupContainer.horizontalAutoLayoutContainer:
+            con_Description_CCS As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
@@ -389,9 +392,10 @@
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
                 ZIndex: =6
 
-                con_9_3 As groupContainer.horizontalAutoLayoutContainer:
+                con_DescriptionIn_CCS As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     DropShadow: =DropShadow.None
                     Height: =Parent.Height
@@ -402,16 +406,16 @@
                     Width: =Parent.Width*.50
                     ZIndex: =1
 
-                    lbl_5_5 As label:
+                    lbl_Description_CCS As label:
                         Align: =Align.Right
                         PaddingLeft: =0
                         PaddingRight: =0
                         Text: |-
                             ="Description: "
-                        Width: =lbl_5.Width
+                        Width: =lbl_Client_CCS.Width
                         ZIndex: =1
 
-                    TextInput1_1 As text:
+                    txt_DescriptionInput_CCS As text:
                         BorderColor: =RGBA(219, 200, 216, 1)
                         Default: =If(Not(IsBlank(ContractData)),ContractData.Description)
                         Height: =Parent.Height*.9
@@ -427,19 +431,19 @@
                         RadiusTopLeft: =0
                         RadiusTopRight: =0
                         Size: =11
-                        Width: =Dropdown2_4.Width
+                        Width: =drp_Services_CCS.Width
                         ZIndex: =2
 
-                    lbl_5_12 As label:
+                    lbl_Countries_CCS As label:
                         Align: =Align.Right
                         Size: =12
                         Text: |-
                             ="Countries: "
-                        Visible: =If(Dropdown2_5.SelectedText.Value="Regional",true,false)
-                        Width: =lbl_5_1.Width
+                        Visible: =If(drp_ApplicableTo_CCS.SelectedText.Value="Regional",true,false)
+                        Width: =lbl_ServiceType_CCS.Width
                         ZIndex: =3
 
-                    ComboBox1_3 As combobox:
+                    cmb_Coutries_CCS As combobox:
                         BorderColor: =RGBA(219, 200, 216, 1)
                         ChevronBackground: =RGBA(255, 255, 255, 1)
                         ChevronFill: =RGBA(107, 29, 94, 1)
@@ -458,11 +462,11 @@
                         SearchItems: =[]
                         SelectionFill: =RGBA(107, 29, 94, 1)
                         Size: =11
-                        Visible: =If(Dropdown2_5.SelectedText.Value="Regional",true,false)
-                        Width: =Dropdown2_4.Width
+                        Visible: =If(drp_ApplicableTo_CCS.SelectedText.Value="Regional",true,false)
+                        Width: =drp_Services_CCS.Width
                         ZIndex: =5
 
-            con_6_4 As groupContainer.horizontalAutoLayoutContainer:
+            con_Date_Main_CCS As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
@@ -470,9 +474,10 @@
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
                 ZIndex: =7
 
-                con_9_4 As groupContainer.horizontalAutoLayoutContainer:
+                con_DateIn_CCS As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     DropShadow: =DropShadow.None
                     Height: =Parent.Height
@@ -483,15 +488,15 @@
                     Width: =Parent.Width*.50
                     ZIndex: =1
 
-                    lbl_5_7 As label:
+                    lbl_StartDate_CCS As label:
                         Align: =Align.Right
                         Size: =12
                         Text: |-
                             ="Start Date: "
-                        Width: =lbl_5.Width
+                        Width: =lbl_Client_CCS.Width
                         ZIndex: =1
 
-                    "DatePickerCanvas1 As 'Date picker'":
+                    "dte_StartDate_CCS As 'Date picker'":
                         BasePaletteColor: =RGBA(158, 108, 151, 1)
                         DisplayMode: =DisplayMode.Edit
                         FontColor: =RGBA(107, 29, 94, 1)
@@ -502,20 +507,20 @@
                         LayoutMinHeight: =32
                         LayoutMinWidth: =320
                         SelectedDate: =If(Not(IsBlank(ContractData)),ContractData.Start_date)
-                        Width: =TextInput1.Width
+                        Width: =txt_NameInput_CCS.Width
                         X: =0
                         Y: =0
                         ZIndex: =2
 
-                    lbl_5_9 As label:
+                    lbl_EndDate_CCS As label:
                         Align: =Align.Right
                         Size: =12
                         Text: |-
                             ="End Date: "
-                        Width: =lbl_5_1.Width
+                        Width: =lbl_ServiceType_CCS.Width
                         ZIndex: =3
 
-                    "DatePickerCanvas1_1 As 'Date picker'":
+                    "dte_EndDate_CCS As 'Date picker'":
                         BasePaletteColor: =RGBA(158, 108, 151, 1)
                         DisplayMode: =DisplayMode.Edit
                         FontColor: =RGBA(107, 29, 94, 1)
@@ -526,12 +531,12 @@
                         LayoutMinHeight: =32
                         LayoutMinWidth: =320
                         SelectedDate: =If(Not(IsBlank(ContractData)),ContractData.End_date)
-                        Width: =TextInput1.Width
+                        Width: =txt_NameInput_CCS.Width
                         X: =0
                         Y: =0
                         ZIndex: =4
 
-            con_6_5 As groupContainer.horizontalAutoLayoutContainer:
+            con_CreatedMain_CCS As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
@@ -539,17 +544,18 @@
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
                 ZIndex: =8
 
-                lbl_5_8 As label:
+                lbl_CreatedOn_CCS As label:
                     Align: =Align.Right
                     Size: =12
                     Text: |-
                         ="Created On:"
-                    Width: =lbl_5.Width
+                    Width: =lbl_Client_CCS.Width
                     ZIndex: =1
 
-                DatePicker1 As datepicker:
+                dte_CreatedOn_CCS As datepicker:
                     BorderColor: =RGBA(219, 200, 216, 1)
                     DisabledBorderColor: =RGBA(219, 200, 216, 1)
                     DisabledColor: =RGBA(107, 29, 94, 1)
@@ -561,18 +567,18 @@
                         =ColorValue("#6b1d5e")
                     PaddingTop: =5
                     Size: =12
-                    Width: =Dropdown2_2.Width
+                    Width: =drp_Client_CCS.Width
                     ZIndex: =2
 
-                lbl_5_10 As label:
+                lbl_CreatedBy_CCS As label:
                     Align: =Align.Right
                     Size: =12
                     Text: |-
                         ="Created By:"
-                    Width: =lbl_5_1.Width
+                    Width: =lbl_ServiceType_CCS.Width
                     ZIndex: =3
 
-                TextInput1_2 As text:
+                txt_CreatedBy_CCS As text:
                     BorderColor: =RGBA(219, 200, 216, 1)
                     Default: =User().FullName
                     DisabledBorderColor: =RGBA(219, 200, 216, 1)
@@ -592,21 +598,24 @@
                     RadiusTopLeft: =0
                     RadiusTopRight: =0
                     Size: =12
-                    Width: =Dropdown2_4.Width
+                    Width: =drp_Services_CCS.Width
                     ZIndex: =4
 
-            con_31 As groupContainer.horizontalAutoLayoutContainer:
+            con_NavigateButtons_CCS As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
+                Height: =Parent.Height
+                LayoutAlignItems: =LayoutAlignItems.Center
                 LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 PaddingLeft: =80
                 PaddingRight: =80
+                Width: =Parent.Width
                 ZIndex: =9
 
-                Button4 As button:
+                btn_Cancel_CCS As button:
                     BorderColor: =RGBA(219, 200, 216, 1)
                     Color: =RGBA(107, 29, 94, 1)
                     Fill: =RGBA(255, 255, 255, 1)
@@ -614,17 +623,17 @@
                     HoverColor: =RGBA(107, 29, 94, 1)
                     HoverFill: =RGBA(219, 200, 216, 1)
                     OnSelect: |+
-                        =Reset(Dropdown2_3);
-                        Reset(Dropdown2_2);
-                        Reset(Dropdown2_4);
-                        Reset(Dropdown2_5);
-                        Reset(Dropdown2_6);
-                        Reset(ComboBox1_3);
-                        Reset(Dropdown2_7);
-                        Reset(TextInput1);
-                        Reset(TextInput1_1);
-                        Reset(DatePickerCanvas1);
-                        Reset(DatePickerCanvas1_1);
+                        =Reset(drp_ServiceType_CCS);
+                        Reset(drp_Client_CCS);
+                        Reset(drp_Services_CCS);
+                        Reset(drp_ApplicableTo_CCS);
+                        Reset(drp_Currency_CCS);
+                        Reset(cmb_Coutries_CCS);
+                        Reset('drp_SelectNew&Existing_CCS');
+                        Reset(txt_NameInput_CCS);
+                        Reset(txt_DescriptionInput_CCS);
+                        Reset(dte_StartDate_CCS);
+                        Reset(dte_EndDate_CCS);
                         Reset(Radio1);
                         Navigate('Home Screen')
                         
@@ -637,16 +646,16 @@
                     Width: =Parent.Width*.07
                     ZIndex: =1
 
-                Button4_1 As button:
+                btn_Next_CCS As button:
                     BorderColor: =RGBA(107, 29, 94, 1)
                     Color: =RGBA(107, 29, 94, 1)
                     DisplayMode: |-
                         =If(
-                            !IsBlank(Dropdown2_2.SelectedText)
-                            And !IsBlank(Dropdown2_3.SelectedText)
-                            And !IsBlank(Dropdown2_4.SelectedText)
-                            And !IsBlank(TextInput1.Text)
-                            And !IsBlank(Dropdown2_5.SelectedText),
+                            !IsBlank(drp_Client_CCS.SelectedText)
+                            And !IsBlank(drp_ServiceType_CCS.SelectedText)
+                            And !IsBlank(drp_Services_CCS.SelectedText)
+                            And !IsBlank(txt_NameInput_CCS.Text)
+                            And !IsBlank(drp_ApplicableTo_CCS.SelectedText),
                             DisplayMode.Edit,
                             DisplayMode.Disabled
                         )
@@ -662,26 +671,26 @@
                                     CM_ContractDetails,
                                     Defaults(CM_ContractDetails),
                                     {
-                                        Contract_name: TextInput1.Text,
-                                        Currency: Dropdown2_6.SelectedText,
-                                        Applicable_to: Dropdown2_5.SelectedText,
-                                        Description: TextInput1_1.Text,
-                                        Start_date: DatePickerCanvas1.SelectedDate,
-                                        End_date: DatePickerCanvas1_1.SelectedDate,
+                                        Contract_name: txt_NameInput_CCS.Text,
+                                        Currency: drp_Currency_CCS.SelectedText,
+                                        Applicable_to: drp_ApplicableTo_CCS.SelectedText,
+                                        Description: txt_DescriptionInput_CCS.Text,
+                                        Start_date: dte_StartDate_CCS.SelectedDate,
+                                        End_date: dte_EndDate_CCS.SelectedDate,
                                         Coc_stage: 1,
                                         Status: {Value: "Draft"},
                                         // Countries: ComboBox1_3.Selected,
                                         Service_Type_fk: {
-                                            Id: Dropdown2_3.Selected.ID,
-                                            Value: Dropdown2_3.SelectedText.Value
+                                            Id: drp_ServiceType_CCS.Selected.ID,
+                                            Value: drp_ServiceType_CCS.SelectedText.Value
                                         },
                                         Supplier: {
-                                            Id: Dropdown2_2.Selected.ID,
-                                            Value: Dropdown2_2.SelectedText.Value
+                                            Id: drp_Client_CCS.Selected.ID,
+                                            Value: drp_Client_CCS.SelectedText.Value
                                         },
                                         Service_fk: {
-                                            Id: Dropdown2_4.Selected.ID,
-                                            Value: Dropdown2_4.SelectedText.Value
+                                            Id: drp_Services_CCS.Selected.ID,
+                                            Value: drp_Services_CCS.SelectedText.Value
                                         },
                                         Title: "C" & "000" & contractId.ID,
                                         Clauses: LookUp(
@@ -689,7 +698,7 @@
                                             Number = RandomClauseIndex
                                         ).Name,
                                         Country: Concat(
-                                            ComboBox1_3.SelectedItems,
+                                            cmb_Coutries_CCS.SelectedItems,
                                             ThisRecord.Value,
                                             ";"
                                         )
@@ -700,26 +709,26 @@
                                 CM_ContractDetails,
                                 {ID: contractId.ID},
                                 {
-                                    Contract_name: TextInput1.Text,
-                                    Currency: Dropdown2_6.SelectedText,
-                                    Applicable_to: Dropdown2_5.SelectedText,
-                                    Description: TextInput1_1.Text,
-                                    Start_date: DatePickerCanvas1.SelectedDate,
-                                    End_date: DatePickerCanvas1_1.SelectedDate,
+                                    Contract_name: txt_NameInput_CCS.Text,
+                                    Currency: drp_Currency_CCS.SelectedText,
+                                    Applicable_to: drp_ApplicableTo_CCS.SelectedText,
+                                    Description: txt_DescriptionInput_CCS.Text,
+                                    Start_date: dte_StartDate_CCS.SelectedDate,
+                                    End_date: dte_EndDate_CCS.SelectedDate,
                                     Coc_stage: 1,
                                     Status: {Value: "Draft"},
                                     //Countries: ComboBox1_3.Selected,
                                     Service_Type_fk: {
-                                        Id: Dropdown2_3.Selected.ID,
-                                        Value: Dropdown2_3.SelectedText.Value
+                                        Id: drp_ServiceType_CCS.Selected.ID,
+                                        Value: drp_ServiceType_CCS.SelectedText.Value
                                     },
                                     Supplier: {
-                                        Id: Dropdown2_2.Selected.ID,
-                                        Value: Dropdown2_2.SelectedText.Value
+                                        Id: drp_Client_CCS.Selected.ID,
+                                        Value: drp_Client_CCS.SelectedText.Value
                                     },
                                     Service_fk: {
-                                        Id: Dropdown2_4.Selected.ID,
-                                        Value: Dropdown2_4.SelectedText.Value
+                                        Id: drp_Services_CCS.Selected.ID,
+                                        Value: drp_Services_CCS.SelectedText.Value
                                     },
                                     Title: "C" & "000" & contractId.ID,
                                     Clauses: LookUp(
@@ -727,7 +736,7 @@
                                         Number = RandomClauseIndex
                                     ).Name,
                                     Country : Concat(
-                                        ComboBox1_3.SelectedItems,
+                                        cmb_Coutries_CCS.SelectedItems,
                                         ThisRecord.Value,
                                         ";"
                                     )
@@ -774,7 +783,7 @@
                     Width: =Parent.Width*.07
                     ZIndex: =2
 
-    Group1 As group:
+    grp_Milestone_CCS As group:
         Height: =5
         Width: =5
         X: =40
@@ -785,7 +794,7 @@
             Fill: =RGBA(191, 186, 190, 1)
             Height: =Circle1.Height
             Width: =Circle1.Width
-            X: =con_1.X-Parent.Width*.065-Self.Width
+            X: =con_horizonatal_Main_CCS.X-Parent.Width*.065-Self.Width
             Y: =Circle1.Height+Circle1.Y+Parent.Height*.4
             ZIndex: =3
 
@@ -794,7 +803,7 @@
             Fill: =RGBA(107, 29, 94, 1)
             Height: =70
             Width: =70
-            X: =con_1.X-Parent.Width*.065-Self.Width
+            X: =con_horizonatal_Main_CCS.X-Parent.Width*.065-Self.Width
             Y: |
                 =con_10.Height*.9
             ZIndex: =4
@@ -814,8 +823,8 @@
             DisplayMode: =DisplayMode.View
             Fill: =RGBA(107, 29, 94, 1)
             Height: =3
-            Width: =con_1.X-Circle1.Width-Circle1.X-Parent.Width*0.01
-            X: =Circle1.X+Circle1.Width+(con_1.X-Circle1.X-Circle1.Width-Self.Width)/2
+            Width: =con_horizonatal_Main_CCS.X-Circle1.Width-Circle1.X-Parent.Width*0.01
+            X: =Circle1.X+Circle1.Width+(con_horizonatal_Main_CCS.X-Circle1.X-Circle1.Width-Self.Width)/2
             Y: =Circle1.Y+(Circle1.Height-Self.Height)/2
             ZIndex: =6
 
