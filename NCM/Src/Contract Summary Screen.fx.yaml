@@ -1,15 +1,10 @@
 "'Contract Summary Screen' As screen":
 
-    HeaderCMP_withoutNavbar_4 As HeaderCMP_withoutNavbar_3:
-        Height: =Parent.Height*.1
-        Width: =Parent.Width
-
     con_task_milestone As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
         Height: =Parent.Height*.15
         Width: =Parent.Width
         X: =(Parent.Width-Self.Width)/2
-        Y: =HeaderCMP_withoutNavbar_4.Y+HeaderCMP_withoutNavbar_4.Height+Parent.Height*.02
         ZIndex: =2
 
         cir_milestoneStage1 As circle:
