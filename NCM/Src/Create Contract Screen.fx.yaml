@@ -132,15 +132,17 @@
                     ZIndex: =2
 
             con_RadioName_CCS As groupContainer.verticalAutoLayoutContainer:
-                AlignInContainer: =AlignInContainer.SetByContainer
+                AlignInContainer: =AlignInContainer.Center
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =Parent.Width*.04
+                LayoutAlignItems: =LayoutAlignItems.Center
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 Visible: |
                     =If(Radio1.Selected.Value = "Duplicate Existing", true, false)
+                Width: =Parent.Width
                 ZIndex: =2
 
                 lbl_CreateNew_CCS As label:
@@ -324,6 +326,7 @@
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =Parent.Width*.04
+                LayoutAlignItems: =LayoutAlignItems.Center
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
@@ -416,7 +419,7 @@
                         ZIndex: =1
 
                     txt_DescriptionInput_CCS As text:
-                        AlignInContainer: =AlignInContainer.Start
+                        AlignInContainer: =AlignInContainer.Center
                         BorderColor: =RGBA(219, 200, 216, 1)
                         Default: =If(Not(IsBlank(ContractData)),ContractData.Description)
                         Height: =Parent.Height*.9
@@ -701,7 +704,7 @@
                                         Country: {Value: drp_Country_CCS.SelectedText.Value}
                                     }
                                 )
-                            );
+                            );,
                             Patch(
                                 CM_ContractDetails,
                                 {ID: ContractData.ID},
