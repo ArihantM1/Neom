@@ -30,7 +30,7 @@ HeaderComponent As CanvasComponent:
 
     ConMainHeader As groupContainer.horizontalAutoLayoutContainer:
         DropShadow: =DropShadow.None
-        Fill: =ColorFade(RGBA(107, 29, 94,1),96%)
+        Fill: =RGBA(255, 255, 255, 1)
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Center
         LayoutMode: =LayoutMode.Auto

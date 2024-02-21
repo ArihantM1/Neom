@@ -29,7 +29,7 @@
             con_Configuration_NavBar_HS As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
-                Fill: =ColorFade(RGBA(107, 29, 94,1),96%)
+                Fill: =RGBA(255, 255, 255, 1)
                 FillPortions: =0
                 Height: =Parent.Height
                 LayoutDirection: =LayoutDirection.Vertical

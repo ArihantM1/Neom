@@ -221,7 +221,7 @@
 
         con_DownloadDetails_CSS As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Semibold
-            Height: =Parent.Height*.3
+            Height: =con_MyTask_CSS.Height
             Width: =Parent.Width*.98
             X: =(Parent.Width-Self.Width)/2
             Y: =176

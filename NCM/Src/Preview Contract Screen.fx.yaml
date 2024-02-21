@@ -9,7 +9,7 @@
         RadiusTopRight: =10
         Width: =Parent.Width*.83
         X: =Parent.Width*.15
-        Y: =HeaderComponent_WithoutNavbar_PCS.Y+HeaderComponent_WithoutNavbar_PCS.Height+Parent.Height*.04
+        Y: =HeaderComponent_WithoutNavbar_PCS.Y+HeaderComponent_WithoutNavbar_PCS.Height+Parent.Height*.035
         ZIndex: =1
 
         con_EditAndPreview_PCS As groupContainer.horizontalAutoLayoutContainer:
