@@ -1462,7 +1462,7 @@
       "MetaDataIDKey": "",
       "Name": "cmb_FilterByApplicableTo_AS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3494,7 +3494,7 @@
       "MetaDataIDKey": "",
       "Name": "con_ResetDownloadRefresh_AS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4019,7 +4019,7 @@
       "MetaDataIDKey": "",
       "Name": "drp_FilterByStatus_AS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4998,7 +4998,7 @@
       "MetaDataIDKey": "",
       "Name": "img_ContractStatus_AS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 8,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5569,7 +5569,7 @@
       "MetaDataIDKey": "",
       "Name": "lbl_ContractApplicableTO_AS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5880,7 +5880,7 @@
       "MetaDataIDKey": "",
       "Name": "lbl_ContractClients_AS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6191,7 +6191,7 @@
       "MetaDataIDKey": "",
       "Name": "lbl_ContractCountriess_AS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6495,7 +6495,7 @@
       "MetaDataIDKey": "",
       "Name": "lbl_ContractId_AS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7814,7 +7814,7 @@
       "MetaDataIDKey": "",
       "Name": "lbl_ContractService_AS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9484,7 +9484,7 @@
       "MetaDataIDKey": "",
       "Name": "lbl_ContractStatus_AS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 9,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9800,7 +9800,7 @@
       "MetaDataIDKey": "",
       "Name": "lbl_ContratName_AS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10162,7 +10162,7 @@
       "MetaDataIDKey": "",
       "Name": "lbl_FilterByApplicableTo_AS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12058,7 +12058,7 @@
       "MetaDataIDKey": "",
       "Name": "tgl_ContractStatus_AS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

@@ -50,7 +50,7 @@
             Width: =Parent.Width
             ZIndex: =3
 
-            con_10 As groupContainer.verticalAutoLayoutContainer:
+            con_FillerForMilestone_CSS As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 Fill: =RGBA(255, 255, 255, 1)
@@ -61,6 +61,7 @@
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
                 ZIndex: =1
 
     con_horizonatal_Main_CCS As groupContainer.horizontalAutoLayoutContainer:
@@ -71,7 +72,7 @@
         LayoutOverflowY: =LayoutOverflow.Scroll
         Width: =Parent.Width*.83
         X: =Parent.Width*.15
-        Y: =con_10.Height*.75
+        Y: =con_FillerForMilestone_CSS.Height*.75
         ZIndex: =2
 
         con_Vertical_Main_CCS As groupContainer.horizontalAutoLayoutContainer:
@@ -796,7 +797,7 @@
             Width: =70
             X: =con_horizonatal_Main_CCS.X-Parent.Width*.065-Self.Width
             Y: |
-                =con_10.Height*.9
+                =con_FillerForMilestone_CSS.Height*.9
             ZIndex: =4
 
         Icon5 As icon.Flag:

@@ -1611,7 +1611,7 @@
       "MetaDataIDKey": "",
       "Name": "gal_ContractDetails_RS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3323,7 +3323,7 @@
       "MetaDataIDKey": "",
       "Name": "lbl_GalClause_RS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3952,7 +3952,7 @@
       "MetaDataIDKey": "",
       "Name": "lbl_GalContract_RS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6555,7 +6555,7 @@
       "MetaDataIDKey": "",
       "Name": "shp_Rect_12_RS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6701,7 +6701,7 @@
       "MetaDataIDKey": "",
       "Name": "shp_Rect_13_RS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6993,7 +6993,7 @@
       "MetaDataIDKey": "",
       "Name": "shp_Rect_15_RS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7292,7 +7292,7 @@
       "MetaDataIDKey": "",
       "Name": "shp_Rect_ResoureDown_RS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

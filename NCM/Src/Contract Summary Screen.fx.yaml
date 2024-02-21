@@ -2,9 +2,10 @@
 
     con_Task_Milestone_CSS As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
-        Height: =Parent.Height*.15
+        Height: =Parent.Height*.13
         Width: =Parent.Width
         X: =(Parent.Width-Self.Width)/2
+        Y: =HeaderCMP_withoutNavbar_CSS.Y+HeaderCMP_withoutNavbar_CSS.Height+Parent.Height*.01
         ZIndex: =2
 
         shp_StartStage_CSS As circle:
@@ -14,7 +15,7 @@
             Height: =60
             Width: =60
             X: =Parent.Width*.06
-            Y: =Parent.Height*.01
+            Y: =Parent.Height*.03
             ZIndex: =1
 
         ico_StartCheck_CSS As icon.CheckBadge:
@@ -28,20 +29,20 @@
 
         shp_Milestone_StarttoSup_CSS As rectangle:
             Fill: =RGBA(107, 29, 94, 1)
-            Height: =2
+            Height: =3
             Width: =Parent.Width*.15
             X: =shp_StartStage_CSS.X+shp_StartStage_CSS.Width+Parent.Width*.01
             Y: =shp_StartStage_CSS.Y+(shp_StartStage_CSS.Height-Self.Height)/2
             ZIndex: =3
 
         shp_SupStage_CSS As circle:
-            BorderColor: =RGBA(219, 200, 216, 1)
+            BorderColor: =RGBA(212, 212, 212, 1)
             BorderThickness: =3
-            Fill: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(212, 212, 212, 1)
             Height: =60
             Width: =60
             X: =shp_Milestone_StarttoSup_CSS.X+shp_Milestone_StarttoSup_CSS.Width+Parent.Width*.01
-            Y: =Parent.Height*.01
+            Y: =Parent.Height*.03
             ZIndex: =4
 
         ico_SupCheck_Css As icon.CheckBadge:
@@ -55,13 +56,13 @@
             ZIndex: =5
 
         shp_ProcStage_CSS As circle:
-            BorderColor: =RGBA(219, 200, 216, 1)
+            BorderColor: =RGBA(212, 212, 212, 1)
             BorderThickness: =3
-            Fill: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(212, 212, 212, 1)
             Height: =60
             Width: =60
             X: =shp_Milestone_SuptoProc_CSS.X+shp_Milestone_SuptoProc_CSS.Width+Parent.Width*.01
-            Y: =Parent.Height*.01
+            Y: =Parent.Height*.03
             ZIndex: =6
 
         ico_ProcCHeck_CSS As icon.CheckBadge:
@@ -75,13 +76,13 @@
             ZIndex: =7
 
         shp_LegalStage_CSS As circle:
-            BorderColor: =RGBA(219, 200, 216, 1)
+            BorderColor: =RGBA(212, 212, 212, 1)
             BorderThickness: =3
-            Fill: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(212, 212, 212, 1)
             Height: =60
             Width: =60
             X: =shp_Milestone_ProctoLegal_CSS.X+shp_Milestone_ProctoLegal_CSS.Width+Parent.Width*.01
-            Y: =Parent.Height*.01
+            Y: =Parent.Height*.03
             ZIndex: =8
 
         ico_LeaglCHeck_CSS As icon.CheckBadge:
@@ -95,13 +96,13 @@
             ZIndex: =9
 
         shp_SigninStage_CSS As circle:
-            BorderColor: =RGBA(219, 200, 216, 1)
+            BorderColor: =RGBA(212, 212, 212, 1)
             BorderThickness: =3
-            Fill: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(212, 212, 212, 1)
             Height: =60
             Width: =60
             X: =shp_Milestone_LeagaltoSignin_CSS.X+shp_Milestone_LeagaltoSignin_CSS.Width+Parent.Width*.01
-            Y: =Parent.Height*.01
+            Y: =Parent.Height*.03
             ZIndex: =10
 
         ico_SigninCheck_CSS As icon.CheckBadge:
@@ -115,24 +116,24 @@
             ZIndex: =11
 
         shp_Milestone_SuptoProc_CSS As rectangle:
-            Fill: =RGBA(219, 200, 216, 1)
-            Height: =2
+            Fill: =RGBA(212, 212, 212, 1)
+            Height: =3
             Width: =Parent.Width*.15
             X: =shp_SupStage_CSS.X+shp_SupStage_CSS.Width+Parent.Width*.01
             Y: =shp_StartStage_CSS.Y+(shp_StartStage_CSS.Height-Self.Height)/2
             ZIndex: =12
 
         shp_Milestone_ProctoLegal_CSS As rectangle:
-            Fill: =RGBA(219, 200, 216, 1)
-            Height: =2
+            Fill: =RGBA(212, 212, 212, 1)
+            Height: =3
             Width: =Parent.Width*.15
             X: =shp_ProcStage_CSS.X+shp_ProcStage_CSS.Width+Parent.Width*.01
             Y: =shp_StartStage_CSS.Y+(shp_StartStage_CSS.Height-Self.Height)/2
             ZIndex: =13
 
         shp_Milestone_LeagaltoSignin_CSS As rectangle:
-            Fill: =RGBA(219, 200, 216, 1)
-            Height: =2
+            Fill: =RGBA(212, 212, 212, 1)
+            Height: =3
             Width: =Parent.Width*.15
             X: =shp_LegalStage_CSS.X+shp_LegalStage_CSS.Width+Parent.Width*.01
             Y: =shp_StartStage_CSS.Y+(shp_StartStage_CSS.Height-Self.Height)/2
@@ -178,7 +179,7 @@
         Height: =Parent.Height*.65
         Width: =Parent.Width*.2
         X: =Parent.Width*.01
-        Y: =con_Task_Milestone_CSS.Y+con_Task_Milestone_CSS.Height+Parent.Height*.065
+        Y: =con_Task_Milestone_CSS.Y+con_Task_Milestone_CSS.Height+Parent.Height*.09
         ZIndex: =3
 
         con_MyTask_CSS As groupContainer.manualLayoutContainer:
@@ -205,7 +206,7 @@
 
         con_DownloadDetails_CSS As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Semibold
-            Height: =Parent.Height*.2
+            Height: =Parent.Height*.3
             Width: =Parent.Width*.98
             X: =(Parent.Width-Self.Width)/2
             Y: =176
@@ -226,12 +227,12 @@
             Y: =con_DownloadDetails_CSS.Y-40
             ZIndex: =3
 
-    con_ContractPreview_CSS As groupContainer.manualLayoutContainer:
+    "'con_DownloadDetails_CSS.Y-40' As groupContainer.manualLayoutContainer":
         DropShadow: =DropShadow.Semibold
         Height: =con_Task_CSS.Height
         Width: =Parent.Width-con_Task_CSS.Width-70
         X: =con_Task_CSS.X+con_Task_CSS.Width+Parent.Width*.02
-        Y: =con_Task_Milestone_CSS.Y+con_Task_Milestone_CSS.Height+Parent.Height*.065
+        Y: =con_Task_CSS.Y
         ZIndex: =4
 
         rec_TopFiller_CSS As rectangle:
@@ -246,17 +247,17 @@
         Icon: =Icon.Download
         Tooltip: ="Export Contract"
         Width: =30
-        X: =con_ContractPreview_CSS.X+con_ContractPreview_CSS.Width-Parent.Width*.02
-        Y: =con_Task_Milestone_CSS.Y+con_Task_Milestone_CSS.Height+Parent.Height*.01
+        X: ='con_DownloadDetails_CSS.Y-40'.X+'con_DownloadDetails_CSS.Y-40'.Width-Parent.Width*.02
+        Y: =lbl_Coc_CSS.Y
         ZIndex: =5
 
     lbl_Coc_CSS As label:
         FontWeight: =FontWeight.Bold
-        Size: =15
-        Text: ="Call of Contract"
-        Width: =Parent.Width*.2
-        X: =con_ContractPreview_CSS.X
-        Y: =con_Task_Milestone_CSS.Y+con_Task_Milestone_CSS.Height+Parent.Height*.01
+        Size: =18
+        Text: =ContractData.Title &" - " &ContractData.Contract_name
+        Width: =Parent.Width*.5
+        X: ='con_DownloadDetails_CSS.Y-40'.X
+        Y: =con_Task_CSS.Y-40
         ZIndex: =6
 
     lbl_MyTask_CSS As label:
@@ -265,6 +266,11 @@
         Text: ="My Task"
         Width: =Parent.Width*.2
         X: =con_Task_CSS.X
-        Y: =con_Task_Milestone_CSS.Y+con_Task_Milestone_CSS.Height+Parent.Height*.01
+        Y: =con_Task_CSS.Y-40
         ZIndex: =7
+
+    HeaderCMP_withoutNavbar_CSS As HeaderCMP_withoutNavbar:
+        Height: =Parent.Height*.1
+        Width: =Parent.Width
+        ZIndex: =8
 

@@ -598,7 +598,7 @@
                             Color: =RGBA(107, 29, 94,1)
                             FontWeight: =FontWeight.Bold
                             Size: =11
-                            Text: ="SERVICE"
+                            Text: ="SERVICE "
                             Width: =Parent.Width*.15
                             ZIndex: =4
 

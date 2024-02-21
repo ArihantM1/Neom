@@ -324,7 +324,7 @@
             Width: =70
             X: =con_EditAndPreviewMain_PCS.X-Parent.Width*.065-Self.Width
             Y: |
-                =con_10.Height*.9
+                =con_FillerForMilestone_CSS.Height*.9
             ZIndex: =3
 
         ico_Overview_PCS As icon.Flag:
