@@ -158,16 +158,16 @@
                             Y: =(gal_ContractDetails_RS.TemplateHeight-Self.Height)/2
                             ZIndex: =5
 
-                        shp_Rect_11 As rectangle:
+                        shp_Rect_11_RS As rectangle:
                             Fill: =RGBA(214, 221, 224, 1)
                             Height: =1
                             OnSelect: =Select(Parent)
                             Width: =gal_ContractDetails_RS.Width*.95
                             X: =(Parent.Width-Self.Width)/2
-                            Y: =shp_Rect_13.Y+shp_Rect_13.Height
+                            Y: =shp_Rect_12_RS.Y+shp_Rect_12_RS.Height
                             ZIndex: =6
 
-                        shp_Rect_13 As rectangle:
+                        shp_Rect_12_RS As rectangle:
                             Fill: =RGBA(214, 221, 224, 1)
                             Height: =gal_ContractDetails_RS.TemplateHeight
                             OnSelect: =Select(Parent)
@@ -175,7 +175,7 @@
                             X: =lbl_GalResorce_RS.X+lbl_GalResorce_RS.Width
                             ZIndex: =7
 
-                        shp_Rect_13_1 As rectangle:
+                        shp_Rect_13_RS As rectangle:
                             Fill: =RGBA(214, 221, 224, 1)
                             Height: =gal_ContractDetails_RS.TemplateHeight
                             OnSelect: =Select(Parent)
@@ -183,7 +183,7 @@
                             X: =lbl_GalEmail_RS.X+lbl_GalEmail_RS.Width
                             ZIndex: =8
 
-                        shp_Rect_13_2 As rectangle:
+                        shp_Rect_14_RS As rectangle:
                             Fill: =RGBA(214, 221, 224, 1)
                             Height: =gal_ContractDetails_RS.TemplateHeight
                             OnSelect: =Select(Parent)
@@ -191,7 +191,7 @@
                             X: =lbl_GalContract_RS.X+lbl_GalContract_RS.Width
                             ZIndex: =9
 
-                        shp_Rect_13_3 As rectangle:
+                        shp_Rect_15_RS As rectangle:
                             Fill: =RGBA(214, 221, 224, 1)
                             Height: =gal_ContractDetails_RS.TemplateHeight
                             OnSelect: =Select(Parent)
