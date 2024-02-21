@@ -1,5 +1,5 @@
 "'Reports Screen' As screen":
-    OnVisible: |-
+    OnVisible: |
         =ClearCollect(
             ClauseCollection,
             {
@@ -22,20 +22,6 @@
                 Name: "Non-Compete Clause",
                 Number: 5
             }
-        );
-        Set (
-            RandomClauseIndex,
-            RoundUp(
-                Rand() * (CountRows(ClauseCollection) - 1),
-                0
-            )
-        );
-        Set(
-            SelectedClause,
-            FirstN(
-                ClauseCollection,
-                1 + RandomClauseIndex
-            )
         );
 
     con_Main_RS As groupContainer.verticalAutoLayoutContainer:

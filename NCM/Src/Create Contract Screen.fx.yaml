@@ -1,8 +1,6 @@
 "'Create Contract Screen' As screen":
-    OnVisible: |-
-        =
-        
-        Set (
+    OnVisible: |
+        =Set (
             RandomClauseIndex,
             RoundUp(
                 Rand() * (CountRows(ClauseCollection) - 1),
