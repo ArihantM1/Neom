@@ -224,6 +224,7 @@
             DropShadow: =DropShadow.Semibold
             Height: =con_MyTask_CSS.Height
             Width: =Parent.Width*.98
+            X: =(Parent.Width-Self.Width)/2
             Y: =lbl_DownloadHistory_CSS.Y+lbl_DownloadHistory_CSS.Height
             ZIndex: =2
 
@@ -246,7 +247,7 @@
             DropShadow: =DropShadow.Semibold
             Height: =con_MyTask_CSS.Height
             Width: =Parent.Width*.98
-            X: =2
+            X: =(Parent.Width-Self.Width)/2
             Y: =lbl_VersionsHistory_CSS.Y+lbl_VersionsHistory_CSS.Height
             ZIndex: =4
 
