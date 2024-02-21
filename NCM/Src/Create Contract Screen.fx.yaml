@@ -340,6 +340,7 @@
                     ZIndex: =1
 
                 drp_Currency_CCS As dropdown:
+                    AllowEmptySelection: =true
                     BorderColor: =RGBA(219, 200, 216, 1)
                     ChevronBackground: =RGBA(255, 255, 255, 1)
                     ChevronFill: =RGBA(107, 29, 94, 1)
