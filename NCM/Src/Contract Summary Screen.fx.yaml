@@ -141,6 +141,9 @@
 
         lbl_Started_CSS As label:
             Align: =Align.Center
+            FontWeight: =FontWeight.Semibold
+            Height: =35
+            Size: =12
             Text: ="Started"
             X: =shp_StartStage_CSS.X+(shp_StartStage_CSS.Width-Self.Width)/2
             Y: =shp_StartStage_CSS.Y+shp_StartStage_CSS.Height
@@ -148,6 +151,9 @@
 
         lbl_Supplier_CSS As label:
             Align: =Align.Center
+            FontWeight: =FontWeight.Semibold
+            Height: =35
+            Size: =12
             Text: ="Supplier"
             X: =shp_SupStage_CSS.X+(shp_SupStage_CSS.Width-Self.Width)/2
             Y: =shp_StartStage_CSS.Y+shp_StartStage_CSS.Height
@@ -155,6 +161,9 @@
 
         lbl_Procurement_CSS As label:
             Align: =Align.Center
+            FontWeight: =FontWeight.Semibold
+            Height: =35
+            Size: =12
             Text: ="Procurement"
             X: =shp_ProcStage_CSS.X+(shp_ProcStage_CSS.Width-Self.Width)/2
             Y: =shp_StartStage_CSS.Y+shp_StartStage_CSS.Height
@@ -162,6 +171,9 @@
 
         lbl_Legal_CSS As label:
             Align: =Align.Center
+            FontWeight: =FontWeight.Semibold
+            Height: =35
+            Size: =12
             Text: ="Legal Review"
             X: =shp_LegalStage_CSS.X+(shp_LegalStage_CSS.Width-Self.Width)/2
             Y: =shp_StartStage_CSS.Y+shp_StartStage_CSS.Height
@@ -169,6 +181,9 @@
 
         lbl_Signing_CSS As label:
             Align: =Align.Center
+            FontWeight: =FontWeight.Semibold
+            Height: =35
+            Size: =12
             Text: ="Signing"
             X: =shp_SigninStage_CSS.X+(shp_SigninStage_CSS.Width-Self.Width)/2
             Y: =shp_StartStage_CSS.Y+shp_StartStage_CSS.Height
