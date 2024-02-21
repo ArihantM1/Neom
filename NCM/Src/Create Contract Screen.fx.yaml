@@ -461,6 +461,7 @@
                         HoverFill: |-
                             = ColorFade( ColorValue("#9e6c97"),80%)
                         Items: =Choices( CM_ContractDetails.Country)
+                        OnChange: =If(drp_ApplicableTo_CCS.SelectedText.Value="Global",drp_Country_CCS.SelectedText.Value=Blank())
                         PressedFill: =RGBA(158, 108, 151, 1)
                         SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
                         Size: =11
@@ -701,10 +702,12 @@
                                             ClauseCollection,
                                             Number = RandomClauseIndex
                                         ).Name,
-                                        Country: {Value: drp_Country_CCS.SelectedText.Value}
+                                        Country: 
+                                        {Value: drp_Country_CCS.SelectedText.Value}
                                     }
                                 )
-                            );,
+                            );
+                            ,
                             Patch(
                                 CM_ContractDetails,
                                 {ID: ContractData.ID},
@@ -738,37 +741,6 @@
                                 }
                             )
                         );
-                        /*Patch(
-                            CM_ContractDetails,
-                            Defaults(CM_ContractDetails),
-                            {
-                                Contract_name: conname,
-                                Currency: Dropdown2_6.SelectedText,
-                                Applicable_to: Dropdown2_5.SelectedText,
-                                Description: TextInput1_1.Text,
-                                Start_date: DatePickerCanvas1.SelectedDate,
-                                End_date: DatePickerCanvas1_1.SelectedDate,
-                                Coc_stage: 1,
-                                Status: {Value: "Draft"},
-                                Countries: Dropdown2_8.SelectedText
-                           }
-                        ); 
-                        Set(
-                            NewRecord,
-                            LookUp(
-                                CM_ContractDetails,
-                                Contract_name = conname
-                            )
-                        );
-                        /*Patch(
-                            CM_ContractDetails,
-                            NewRecord,
-                            { Supplier: { Id: Dropdown2_2.Selected.ID, Value: Dropdown2_2.Selected.ID },
-                            Service_Type_fk:{Id:Dropdown2_3.Selected.ID,Value: Dropdown2_3.Selected.ID},
-                            Service_fk:{Id: Dropdown2_4.Selected.ID,Value:Dropdown2_4.Selected.ID},
-                            Countries: If(Dropdown2_5.SelectedText.Value = "Country", Dropdown2_8.SelectedText.Value, Blank())
-                             }
-                        );*/
                         Navigate(
                             'Preview Contract Screen',
                             ScreenTransition.Cover
