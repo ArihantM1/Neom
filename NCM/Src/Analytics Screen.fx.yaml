@@ -382,7 +382,17 @@
                     LoadingSpinner: =LoadingSpinner.Data
                     LoadingSpinnerColor: |-
                         =ColorValue("#6b1d5e")
+                    OnSelect: |-
+                        =If(
+                            ThisItem.Status.Value = "Active",
+                            Navigate('Contract Summary Screen')
+                        );
+                        Set(
+                            ContractData,
+                            gal_Analytics_AS.Selected
+                        )
                     TemplateSize: =60
+                    Transition: =Transition.Pop
                     Width: =Parent.Width
                     ZIndex: =4
 

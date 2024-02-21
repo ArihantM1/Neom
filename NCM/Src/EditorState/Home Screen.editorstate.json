@@ -469,7 +469,14 @@
         "RadiusTopRight",
         "RadiusBottomLeft",
         "RadiusBottomRight",
-        "BorderThickness",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "BorderThickness",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "FocusedBorderThickness",
         {
           "AFDDataSourceName": "",
@@ -666,7 +673,7 @@
         {
           "Category": "Design",
           "PropertyName": "Width",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -711,7 +718,7 @@
         {
           "Category": "Design",
           "PropertyName": "BorderColor",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",

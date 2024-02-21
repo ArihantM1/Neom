@@ -182,9 +182,9 @@
                         ZIndex: =2
 
                         btn_CreateNewContract_HS As button:
-                            BorderColor: =ColorFade(RGBA(107, 29, 94,1),60%)
-                            Color: =RGBA(107, 29, 94, 1)
-                            Fill: =ColorFade(RGBA(107, 29, 94,1),96%)
+                            BorderColor: =
+                            BorderThickness: =0
+                            Fill: =RGBA(107, 29, 94, 1)
                             FontWeight: =FontWeight.Bold
                             Height: =35
                             HoverBorderColor: =RGBA(107, 29, 94, 1)
@@ -197,8 +197,8 @@
                                 );
                                 Navigate('Create Contract Screen');
                             Size: =10.5
-                            Text: ="Create New Contract"
-                            Width: =180
+                            Text: ="Create Contract"
+                            Width: =Parent.Width*.25
                             ZIndex: =2
 
                 con_KpiAll_HS As groupContainer.horizontalAutoLayoutContainer:
