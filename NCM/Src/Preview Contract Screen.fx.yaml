@@ -274,7 +274,7 @@
                         Reset(drp_Services_CCS);
                         Reset(drp_ApplicableTo_CCS);
                         Reset(drp_Currency_CCS);
-                        Reset(cmb_Coutries_CCS);
+                        Reset(drp_Country_CCS);
                         Reset('drp_SelectNew&Existing_CCS');
                         Reset(txt_NameInput_CCS);
                         Reset(txt_DescriptionInput_CCS);
@@ -297,18 +297,10 @@
         Y: =shp_CircleDocuments_PCS.Y+(shp_CircleDocuments_PCS.Height-Self.Height)/2
         ZIndex: =10
 
-    con_Main_PCS As groupContainer.verticalAutoLayoutContainer:
-        Height: =Parent.Height
-        LayoutDirection: =LayoutDirection.Vertical
-        LayoutMode: =LayoutMode.Auto
-        Width: =Parent.Width
+    HeaderComponent_WithoutNavbar_PCS As HeaderCMP_withoutNavbar:
+        Height: =Parent.Height*.1
+        Width: =1366
         ZIndex: =11
-
-        HeaderComponent_WithoutNavbar_PCS As HeaderCMP_withoutNavbar:
-            Height: =Parent.Height*.1
-            LayoutMinHeight: =640
-            LayoutMinWidth: =640
-            Width: =Parent.Width
 
     grp_Milestone_PCS As group:
         Height: =5

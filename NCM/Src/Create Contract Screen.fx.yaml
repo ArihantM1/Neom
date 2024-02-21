@@ -443,28 +443,23 @@
                         Width: =lbl_ServiceType_CCS.Width
                         ZIndex: =3
 
-                    cmb_Coutries_CCS As combobox:
+                    drp_Country_CCS As dropdown:
+                        AllowEmptySelection: =true
                         BorderColor: =RGBA(219, 200, 216, 1)
                         ChevronBackground: =RGBA(255, 255, 255, 1)
                         ChevronFill: =RGBA(107, 29, 94, 1)
-                        ChevronHoverBackground: =ColorFade(RGBA(107, 29, 94, 1), -20%)
-                        ChevronHoverFill: =RGBA(107, 29, 94, 1)
+                        ChevronHoverBackground: =RGBA(107, 29, 94, 1)
                         Color: =RGBA(107, 29, 94, 1)
-                        DefaultSelectedItems: =If(Not(IsBlank(ContractData)),Split(ContractData.Country,";"))
-                        DisplayFields: =["Value"]
+                        Default: =If(Not(IsBlank(ContractData)),ContractData.Applicable_to.Value)
                         Height: =30
-                        HoverFill: =ColorFade(RGBA(107, 29, 94, 1),80%)
-                        IsSearchable: =false
-                        Items: =["","India","Russia","USA","China","Brazil","New Zealand","	Qatar"]
-                        PressedColor: =RGBA(107, 29, 94, 1)
-                        PressedFill: =RGBA(255, 255, 255, 1)
-                        SearchFields: =["Value"]
-                        SearchItems: =[]
-                        SelectionFill: =RGBA(107, 29, 94, 1)
+                        HoverFill: |-
+                            = ColorFade( ColorValue("#9e6c97"),80%)
+                        Items: =Choices(CM_ContractDetails.Applicable_to)
+                        PressedFill: =RGBA(158, 108, 151, 1)
+                        SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
                         Size: =11
-                        Visible: =If(drp_ApplicableTo_CCS.SelectedText.Value="Regional",true,false)
-                        Width: =drp_Services_CCS.Width
-                        ZIndex: =5
+                        Width: =Parent.Width*.35
+                        ZIndex: =4
 
             con_Date_Main_CCS As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
@@ -628,7 +623,7 @@
                         Reset(drp_Services_CCS);
                         Reset(drp_ApplicableTo_CCS);
                         Reset(drp_Currency_CCS);
-                        Reset(cmb_Coutries_CCS);
+                        Reset(drp_Country_CCS);
                         Reset('drp_SelectNew&Existing_CCS');
                         Reset(txt_NameInput_CCS);
                         Reset(txt_DescriptionInput_CCS);
@@ -697,11 +692,7 @@
                                             ClauseCollection,
                                             Number = RandomClauseIndex
                                         ).Name,
-                                        Country: Concat(
-                                            cmb_Coutries_CCS.SelectedItems,
-                                            ThisRecord.Value,
-                                            ";"
-                                        )
+                                        Country: {Value:drp_Country_CCS.SelectedText.Value}
                                     }
                                 )
                             );
@@ -735,11 +726,7 @@
                                         ClauseCollection,
                                         Number = RandomClauseIndex
                                     ).Name,
-                                    Country : Concat(
-                                        cmb_Coutries_CCS.SelectedItems,
-                                        ThisRecord.Value,
-                                        ";"
-                                    )
+                                    Country: {Value:drp_Country_CCS.SelectedText.Value}
                                 }
                             )
                         );

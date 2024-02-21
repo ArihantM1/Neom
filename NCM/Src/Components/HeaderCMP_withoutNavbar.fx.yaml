@@ -91,7 +91,7 @@ HeaderCMP_withoutNavbar As CanvasComponent:
                     Reset(drp_Services_CCS);
                     Reset(drp_ApplicableTo_CCS);
                     Reset(drp_Currency_CCS);
-                    Reset(cmb_Coutries_CCS);
+                    Reset(drp_Country_CCS);
                     Reset('drp_SelectNew&Existing_CCS');
                     Reset(txt_NameInput_CCS);
                     Reset(txt_DescriptionInput_CCS);
