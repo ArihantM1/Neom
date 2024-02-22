@@ -300,7 +300,7 @@
                         Width: =lbl_ServiceType_CCS.Width
                         ZIndex: =3
 
-                    txt_NameInput_CCS As text:
+                    lblContractName_CCS As text:
                         BorderColor: =RGBA(219, 200, 216, 1)
                         Default: =If(Not(IsBlank(ContractData)),ContractData.Contract_name)
                         Height: =30
@@ -509,7 +509,7 @@
                         LayoutMinHeight: =32
                         LayoutMinWidth: =320
                         SelectedDate: =If(Not(IsBlank(ContractData)),ContractData.Start_date)
-                        Width: =txt_NameInput_CCS.Width
+                        Width: =lblContractName_CCS.Width
                         X: =0
                         Y: =0
                         ZIndex: =2
@@ -533,7 +533,7 @@
                         LayoutMinHeight: =32
                         LayoutMinWidth: =320
                         SelectedDate: =If(Not(IsBlank(ContractData)),ContractData.End_date)
-                        Width: =txt_NameInput_CCS.Width
+                        Width: =lblContractName_CCS.Width
                         X: =0
                         Y: =0
                         ZIndex: =4
@@ -632,7 +632,7 @@
                         Reset(drp_Currency_CCS);
                         Reset(drp_Country_CCS);
                         Reset('drp_SelectNew&Existing_CCS');
-                        Reset(txt_NameInput_CCS);
+                        Reset(lblContractName_CCS);
                         Reset(txt_DescriptionInput_CCS);
                         Reset(dte_StartDate_CCS);
                         Reset(dte_EndDate_CCS);
@@ -648,7 +648,7 @@
                     Width: =Parent.Width*.07
                     ZIndex: =1
 
-                btn_Next_CCS As button:
+                btn_Next_CCS_1 As button:
                     BorderColor: =RGBA(107, 29, 94, 1)
                     Color: =RGBA(107, 29, 94, 1)
                     DisplayMode: |-
@@ -656,7 +656,7 @@
                             !IsBlank(drp_Client_CCS.SelectedText)
                             And !IsBlank(drp_ServiceType_CCS.SelectedText)
                             And !IsBlank(drp_Services_CCS.SelectedText)
-                            And !IsBlank(txt_NameInput_CCS.Text)
+                            And !IsBlank(lblContractName_CCS.Text)
                             And !IsBlank(drp_ApplicableTo_CCS.SelectedText)
                             And !IsBlank(dte_StartDate_CCS.SelectedDate)
                             And !IsBlank(dte_EndDate_CCS.SelectedDate)
@@ -676,7 +676,7 @@
                                     CM_ContractDetails,
                                     Defaults(CM_ContractDetails),
                                     {
-                                        Contract_name: txt_NameInput_CCS.Text,
+                                        Contract_name: lblContractName_CCS.Text,
                                         Currency: {Value: drp_Currency_CCS.SelectedText.Value},
                                         Applicable_to: {Value: drp_ApplicableTo_CCS.SelectedText.Value},
                                         Description: txt_DescriptionInput_CCS.Text,
@@ -711,7 +711,7 @@
                                 CM_ContractDetails,
                                 {ID: ContractData.ID},
                                 {
-                                    Contract_name: txt_NameInput_CCS.Text,
+                                    Contract_name: lblContractName_CCS.Text,
                                     Currency: {Value: drp_Currency_CCS.SelectedText.Value},
                                     Applicable_to: {Value: drp_ApplicableTo_CCS.SelectedText.Value},
                                     Description: txt_DescriptionInput_CCS.Text,
@@ -740,6 +740,80 @@
                                 }
                             )
                         );
+                        If(
+                            Radio1.Selected.Value = "Create new",
+                            Set(
+                                ContractData,
+                                Patch(
+                                    CM_ContractDetails,
+                                    Defaults(CM_ContractDetails),
+                                    {
+                                        Contract_name: lblContractName_CCS.Text,
+                                        Currency: {Value: drp_Currency_CCS.SelectedText.Value},
+                                        Applicable_to: {Value: drp_ApplicableTo_CCS.SelectedText.Value},
+                                        Description: txt_DescriptionInput_CCS.Text,
+                                        Start_date: dte_StartDate_CCS.SelectedDate,
+                                        End_date: dte_EndDate_CCS.SelectedDate,
+                                        Coc_stage: 1,
+                                        Status: {Value: "Draft"},
+                                        Service_Type_fk: {
+                                            Id: drp_ServiceType_CCS.Selected.ID,
+                                            Value: drp_ServiceType_CCS.SelectedText.Value
+                                        },
+                                        Supplier: {
+                                            Id: drp_Client_CCS.Selected.ID,
+                                            Value: drp_Client_CCS.SelectedText.Value
+                                        },
+                                        Service_fk: {
+                                            Id: drp_Services_CCS.Selected.ID,
+                                            Value: drp_Services_CCS.SelectedText.Value
+                                        },
+                                        Title: "C" & "000" & ContractData.ID,
+                                        Clauses: LookUp(
+                                            ClauseCollection,
+                                            Number = RandomClauseIndex
+                                        ).Name,
+                                        Country: {Value: drp_Country_CCS.SelectedText.Value}
+                                    }
+                                );
+                            );,
+                            Set(
+                                ContractData,
+                                Patch(
+                                    CM_ContractDetails,
+                                    Defaults(CM_ContractDetails),
+                                    {
+                                        Contract_name: lblContractName_CCS.Text,
+                                        Currency: {Value: drp_Currency_CCS.SelectedText.Value},
+                                        Applicable_to: {Value: drp_ApplicableTo_CCS.SelectedText.Value},
+                                        Description: txt_DescriptionInput_CCS.Text,
+                                        Start_date: dte_StartDate_CCS.SelectedDate,
+                                        End_date: dte_EndDate_CCS.SelectedDate,
+                                        Coc_stage: 1,
+                                        Status: {Value: "Draft"},
+                                        Service_Type_fk: {
+                                            Id: drp_ServiceType_CCS.Selected.ID,
+                                            Value: drp_ServiceType_CCS.SelectedText.Value
+                                        },
+                                        Supplier: {
+                                            Id: drp_Client_CCS.Selected.ID,
+                                            Value: drp_Client_CCS.SelectedText.Value
+                                        },
+                                        Service_fk: {
+                                            Id: drp_Services_CCS.Selected.ID,
+                                            Value: drp_Services_CCS.SelectedText.Value
+                                        },
+                                        Title: "C" & "000" & ContractData.ID,
+                                        Clauses: LookUp(
+                                            ClauseCollection,
+                                            Number = RandomClauseIndex
+                                        ).Name,
+                                        Country: {Value: drp_Country_CCS.SelectedText.Value}
+                                    }
+                                );
+                            )
+                        )
+                        ;
                         Navigate(
                             'Preview Contract Screen',
                             ScreenTransition.Cover
@@ -747,7 +821,7 @@
                     Size: =10
                     Text: ="Next"
                     Width: =Parent.Width*.07
-                    ZIndex: =2
+                    ZIndex: =3
 
     grp_Milestone_CCS As group:
         Height: =5

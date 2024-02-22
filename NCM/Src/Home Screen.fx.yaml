@@ -182,8 +182,7 @@
                         ZIndex: =2
 
                         btn_CreateNewContract_HS As button:
-                            BorderColor: =
-                            BorderThickness: =0
+                            BorderColor: =RGBA(107, 29, 94, 1)
                             Fill: =RGBA(107, 29, 94, 1)
                             FontWeight: =FontWeight.Bold
                             Height: =35

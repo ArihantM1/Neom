@@ -18,10 +18,7 @@ App As appinfo:
                 }
             )
         );
-        Set(
-            cocview,
-            true
-        );
+        
         ClearCollect(
             RadioOptions,
             [
@@ -38,10 +35,7 @@ App As appinfo:
                 {name:"Draft Contracts",value:"Draft"}
             ]
         );
-        ClearCollect(
-            Clients,
-            CM_ClientData
-        );
+        
         
         ClearCollect(
             ClauseCounts,
