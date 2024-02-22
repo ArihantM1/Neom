@@ -293,7 +293,7 @@
     lbl_Coc_CSS As label:
         FontWeight: =FontWeight.Bold
         Size: =18
-        Text: =ContractData.Title &" - " &ContractData.Contract_name
+        Text: ="C000"&ContractData.ID &" - " &ContractData.Contract_name
         Width: =Parent.Width*.5
         X: ='con_DownloadDetails_CSS.Y-40'.X
         Y: =con_Task_CSS.Y-40

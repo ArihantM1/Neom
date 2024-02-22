@@ -492,7 +492,7 @@
                             HoverColor: =RGBA(107, 29, 94, 1)
                             HoverFill: |-
                                 =ColorFade  (ColorValue("#9e6c97"),70%)
-                            Items: =[Blank(),"Expired","Active"]
+                            Items: =[Blank(),"Active","Expired"]
                             PressedFill: =RGBA(158, 108, 151, 1)
                             SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
                             Size: =11
