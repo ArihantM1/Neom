@@ -1462,7 +1462,7 @@
       "MetaDataIDKey": "",
       "Name": "cmb_FilterByApplicableTo_AS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3494,7 +3494,7 @@
       "MetaDataIDKey": "",
       "Name": "con_ResetDownloadRefresh_AS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4019,7 +4019,7 @@
       "MetaDataIDKey": "",
       "Name": "drp_FilterByStatus_AS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5018,7 +5018,7 @@
       "MetaDataIDKey": "",
       "Name": "img_ContractStatus_AS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5589,7 +5589,7 @@
       "MetaDataIDKey": "",
       "Name": "lbl_ContractApplicableTO_AS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 8,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5900,7 +5900,7 @@
       "MetaDataIDKey": "",
       "Name": "lbl_ContractClients_AS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6211,7 +6211,7 @@
       "MetaDataIDKey": "",
       "Name": "lbl_ContractCountriess_AS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 9,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6423,7 +6423,14 @@
       "ControlPropertyState": [
         "Live",
         "Overflow",
-        "Text",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "ThisItem.Title",
+          "InvariantPropertyName": "Text",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Role",
         "Color",
         "DisabledColor",
@@ -6515,7 +6522,7 @@
       "MetaDataIDKey": "",
       "Name": "lbl_ContractId_AS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6531,7 +6538,7 @@
         {
           "Category": "Data",
           "PropertyName": "Text",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -7834,7 +7841,7 @@
       "MetaDataIDKey": "",
       "Name": "lbl_ContractService_AS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9504,7 +9511,7 @@
       "MetaDataIDKey": "",
       "Name": "lbl_ContractStatus_AS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9820,7 +9827,7 @@
       "MetaDataIDKey": "",
       "Name": "lbl_ContratName_AS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10182,7 +10189,7 @@
       "MetaDataIDKey": "",
       "Name": "lbl_FilterByApplicableTo_AS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12078,7 +12085,7 @@
       "MetaDataIDKey": "",
       "Name": "tgl_ContractStatus_AS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

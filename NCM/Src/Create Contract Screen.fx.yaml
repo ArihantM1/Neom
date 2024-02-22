@@ -1,12 +1,13 @@
 "'Create Contract Screen' As screen":
     OnVisible: |
-        =Set (
+        =Set(
             RandomClauseIndex,
             RoundUp(
-                Rand() * (CountRows(ClauseCollection) - 1),
+                Rand() * 4,  // Generate a random number between 0 and 4
                 0
             )
         );
+        
         Set(
             SelectedClause,
             FirstN(
@@ -508,7 +509,9 @@
                         Height: =30
                         LayoutMinHeight: =32
                         LayoutMinWidth: =320
-                        SelectedDate: =If(Not(IsBlank(ContractData)),ContractData.Start_date)
+                        SelectedDate: |
+                            =If(Not(IsBlank(ContractData)),ContractData.Start_date)
+                        ValidationState: =
                         Width: =lblContractName_CCS.Width
                         X: =0
                         Y: =0
@@ -696,7 +699,7 @@
                                             Id: drp_Services_CCS.Selected.ID,
                                             Value: drp_Services_CCS.SelectedText.Value
                                         },
-                                        Title: "C" & "000" & ContractData.ID,
+                                       Title: "C000" & ContractData.ID,
                                         Clauses: LookUp(
                                             ClauseCollection,
                                             Number = RandomClauseIndex
@@ -730,7 +733,7 @@
                                         Id: drp_Services_CCS.Selected.ID,
                                         Value: drp_Services_CCS.SelectedText.Value
                                     },
-                                    Title: "C" & "000" & ContractData.ID,
+                                    Title: "C000" & ContractData.ID,
                                     Clauses: LookUp(
                                         ClauseCollection,
                                         Number = RandomClauseIndex

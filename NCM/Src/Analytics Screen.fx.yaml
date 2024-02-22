@@ -401,7 +401,7 @@
                         FontWeight: =FontWeight.Bold
                         OnSelect: =Select(Parent)
                         Size: =11
-                        Text: =ThisItem.Title
+                        Text: ="C000"&ThisItem.ID
                         Width: =lbl_ContractsIdHeadline_AS.Width
                         X: =lbl_ContractsIdHeadline_AS.X
                         Y: =(gal_Analytics_AS.TemplateHeight-Self.Height)/2

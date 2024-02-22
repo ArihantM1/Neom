@@ -60,6 +60,7 @@
 
                 con_ResourcesInvolved_RS As groupContainer.manualLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
+                    DropShadow: =DropShadow.None
                     FillPortions: =0
                     Height: =Parent.Height
                     LayoutMinHeight: =100
@@ -262,6 +263,7 @@
 
                 con_MostDiscussedClauses_RS As groupContainer.manualLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
+                    DropShadow: =DropShadow.None
                     FillPortions: =0
                     Height: =Parent.Height
                     LayoutMinHeight: =100
@@ -303,7 +305,6 @@
                             ZIndex: =5
 
                         Leg_Clauses_RS As legend:
-                            DisplayMode: =DisplayMode.View
                             Height: =200
                             ItemColorSet: =Chr_Clause_RS.ItemColorSet
                             Items: =Chr_Clause_RS.SeriesLabels
@@ -312,4 +313,11 @@
                             X: =(Parent.Width-Self.Width)/2
                             Y: =Chr_Clause_RS.Y+Chr_Clause_RS.Height
                             ZIndex: =6
+
+                    shp_SideFiller_RS As rectangle:
+                        Fill: =RGBA(212, 212, 212, 1)
+                        Height: =Parent.Height
+                        Width: =2
+                        Y: =4
+                        ZIndex: =7
 

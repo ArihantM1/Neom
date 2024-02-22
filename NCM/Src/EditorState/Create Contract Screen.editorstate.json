@@ -9045,6 +9045,14 @@
           "InvariantPropertyName": "SelectedDate",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"None\"",
+          "InvariantPropertyName": "ValidationState",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "DynamicProperties": [
@@ -9102,7 +9110,7 @@
         {
           "Category": "Data",
           "PropertyName": "SelectedDate",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Data",
@@ -9128,6 +9136,11 @@
           "Category": "Data",
           "PropertyName": "BasePaletteColor",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "ValidationState",
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",

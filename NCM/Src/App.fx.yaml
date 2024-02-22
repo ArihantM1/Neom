@@ -1,6 +1,6 @@
 App As appinfo:
     BackEnabled: =true
-    OnStart: |-
+    OnStart: |
         =ClearCollect(
             NavBar,
             Table(
@@ -18,7 +18,6 @@ App As appinfo:
                 }
             )
         );
-        
         ClearCollect(
             RadioOptions,
             [
@@ -30,13 +29,20 @@ App As appinfo:
             CheckboxValue,
             [
                // {name:"Expired August",value:"Expired"},
-                {name:"Expired Contracts",value:"Expired"},
-                {name:"Active Contracts",value:"Active"},
-                {name:"Draft Contracts",value:"Draft"}
+        {
+                    name: "Expired Contracts",
+                    value: "Expired"
+                },
+                {
+                    name: "Active Contracts",
+                    value: "Active"
+                },
+                {
+                    name: "Draft Contracts",
+                    value: "Draft"
+                }
             ]
         );
-        
-        
         ClearCollect(
             ClauseCounts,
             AddColumns(
@@ -50,7 +56,22 @@ App As appinfo:
                 "ContractCount",
                 CountRows(ClauseGroup)
             )
-        )
+        );
+        Set(
+            RandomClauseIndex,
+            RoundUp(
+                Rand() * 4,  // Generate a random number between 0 and 4
+                0
+            )
+        );
+        
+        Set(
+            SelectedClause,
+            FirstN(
+                ClauseCollection,
+                1 + RandomClauseIndex
+            )
+        );
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
