@@ -854,7 +854,7 @@
       "MetaDataIDKey": "",
       "Name": "con_Task_Milestone_CSS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1269,7 +1269,7 @@
       "MetaDataIDKey": "",
       "Name": "HeaderCMP_withoutNavbar_CSS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1387,7 +1387,7 @@
       "MetaDataIDKey": "",
       "Name": "ico_Exportcontract_CSS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2672,7 +2672,7 @@
       "MetaDataIDKey": "",
       "Name": "lbl_Coc_CSS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3573,7 +3573,7 @@
       "MetaDataIDKey": "",
       "Name": "lbl_MyTask_CSS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5670,7 +5670,7 @@
       "MetaDataIDKey": "",
       "Name": "PdfViewer1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
