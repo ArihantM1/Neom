@@ -266,7 +266,7 @@
             Y: =con_DownloadDetails_CSS.Y+con_DownloadDetails_CSS.Height+Parent.Height*.05
             ZIndex: =5
 
-    "'con_DownloadDetails_CSS.Y-40' As groupContainer.manualLayoutContainer":
+    con_ContractDownloadDetails_CSS As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Semibold
         Height: =con_Task_CSS.Height
         Width: =Parent.Width*.75
@@ -286,7 +286,7 @@
         Icon: =Icon.Download
         Tooltip: ="Export Contract"
         Width: =30
-        X: ='con_DownloadDetails_CSS.Y-40'.X+'con_DownloadDetails_CSS.Y-40'.Width-Parent.Width*.02
+        X: =con_ContractDownloadDetails_CSS.X+con_ContractDownloadDetails_CSS.Width-Parent.Width*.02
         Y: =lbl_Coc_CSS.Y
         ZIndex: =5
 
@@ -295,7 +295,7 @@
         Size: =18
         Text: ="C000"&ContractData.ID &" - " &ContractData.Contract_name
         Width: =Parent.Width*.5
-        X: ='con_DownloadDetails_CSS.Y-40'.X
+        X: =con_ContractDownloadDetails_CSS.X
         Y: =con_Task_CSS.Y-40
         ZIndex: =6
 
@@ -312,4 +312,15 @@
         Height: =Parent.Height*.1
         Width: =Parent.Width
         ZIndex: =8
+
+    PdfViewer1 As pdfViewer:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Document: =
+        Fill: =RGBA(0, 0, 0, 0.5)
+        Height: =con_ContractDownloadDetails_CSS.Height
+        Page: =0
+        Width: =con_ContractDownloadDetails_CSS.Width
+        X: =con_ContractDownloadDetails_CSS.X
+        Y: =con_ContractDownloadDetails_CSS.Y
+        ZIndex: =9
 

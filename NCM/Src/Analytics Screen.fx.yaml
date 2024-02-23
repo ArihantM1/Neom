@@ -252,13 +252,6 @@
                             Y: =(Parent.Height-Self.Height)/2
                             ZIndex: =1
 
-                        btn_Download_AS As icon.Download:
-                            Color: =RGBA(107, 29, 94, 1)
-                            Height: =30
-                            Icon: =Icon.Download
-                            Width: =30
-                            ZIndex: =2
-
                         btn_Refresh_AS As icon.Reload:
                             Color: =RGBA(107, 29, 94, 1)
                             Height: =30
