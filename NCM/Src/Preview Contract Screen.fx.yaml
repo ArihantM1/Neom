@@ -119,11 +119,6 @@
                                 Width: =Parent.Height-15
                                 ZIndex: =3
 
-                    txt_DynamicInput_PCS As text:
-                        Default: ="[insert date]"
-                        Visible: =Varinputdate
-                        ZIndex: =2
-
                     cvs_UserAgreementPreview_PCS_1 As fluidGrid.fluidGridWithBlankCard:
                         BorderThickness: =0
                         Height: =Parent.Height - Self.Y
@@ -145,24 +140,514 @@
                             Y: =0
                             ZIndex: =1
 
-                            con_inputFieldmain_PCS As groupContainer.verticalAutoLayoutContainer:
-                                Height: =Parent.Height
+                            con_inputFieldmain_PCS_1 As groupContainer.verticalAutoLayoutContainer:
+                                Height: =Parent.Height*.75
                                 LayoutAlignItems: =LayoutAlignItems.Center
                                 LayoutDirection: =LayoutDirection.Vertical
                                 LayoutMode: =LayoutMode.Auto
                                 Width: =Parent.Width
+                                Y: =con_inputFieldmain_PCS.Height
                                 ZIndex: =1
 
-                                Container5 As groupContainer.verticalAutoLayoutContainer:
+                                Container5_8 As groupContainer.verticalAutoLayoutContainer:
+                                    DropShadow: =DropShadow.None
+                                    Height: =Parent.Height*.07
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.End
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =5
+                                    PaddingLeft: =15
+                                    PaddingRight: =15
+                                    PaddingTop: =5
+                                    Width: =Parent.Width
+                                    ZIndex: =1
+
+                                    lbl_ContractCreateDate_PCS_8 As label:
+                                        PaddingLeft: =0
+                                        PaddingRight: =0
+                                        Size: =10
+                                        Text: |-
+                                            ="Contract Creeation Date: "
+                                        Width: =Parent.Width*.4
+                                        ZIndex: =1
+
+                                    "DatePickerCanvas1_8 As 'Date picker'":
+                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
+                                        DisplayMode: =DisplayMode.Edit
+                                        FontColor: =
+                                        Height: =32
+                                        Width: =Parent.Width*.9
+                                        X: =0
+                                        Y: =0
+                                        ZIndex: =3
+
+                                    Rectangle1_14 As rectangle:
+                                        Fill: =RGBA(214, 221, 224, 1)
+                                        Height: =1
+                                        Width: =Parent.Width*.95
+                                        ZIndex: =4
+
+                                Container5_10 As groupContainer.verticalAutoLayoutContainer:
+                                    DropShadow: =DropShadow.None
+                                    Height: =Container5_8.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.End
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =5
+                                    PaddingLeft: =15
+                                    PaddingRight: =15
+                                    PaddingTop: =5
+                                    Width: =Container5_8.Width
+                                    ZIndex: =2
+
+                                    lbl_ContractCreateDate_PCS_10 As label:
+                                        PaddingLeft: =0
+                                        PaddingRight: =0
+                                        Size: =10
+                                        Text: |-
+                                            ="Contract Creeation Date: "
+                                        Width: =Parent.Width*.4
+                                        ZIndex: =1
+
+                                    "DatePickerCanvas1_10 As 'Date picker'":
+                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
+                                        DisplayMode: =DisplayMode.Edit
+                                        FontColor: =
+                                        Height: =32
+                                        Width: =Parent.Width*.9
+                                        X: =0
+                                        Y: =0
+                                        ZIndex: =3
+
+                                    Rectangle1_15 As rectangle:
+                                        Fill: =RGBA(214, 221, 224, 1)
+                                        Height: =1
+                                        Width: =Parent.Width*.95
+                                        ZIndex: =4
+
+                                Container5_12 As groupContainer.verticalAutoLayoutContainer:
+                                    DropShadow: =DropShadow.None
+                                    Height: =Container5_8.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.End
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =5
+                                    PaddingLeft: =15
+                                    PaddingRight: =15
+                                    PaddingTop: =5
+                                    Width: =Container5_8.Width
+                                    ZIndex: =3
+
+                                    lbl_ContractCreateDate_PCS_12 As label:
+                                        PaddingLeft: =0
+                                        PaddingRight: =0
+                                        Size: =10
+                                        Text: |-
+                                            ="Contract Creeation Date: "
+                                        Width: =Parent.Width*.4
+                                        ZIndex: =1
+
+                                    "DatePickerCanvas1_12 As 'Date picker'":
+                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
+                                        DisplayMode: =DisplayMode.Edit
+                                        FontColor: =
+                                        Height: =32
+                                        Width: =Parent.Width*.9
+                                        X: =0
+                                        Y: =0
+                                        ZIndex: =3
+
+                                    Rectangle1_16 As rectangle:
+                                        Fill: =RGBA(214, 221, 224, 1)
+                                        Height: =1
+                                        Width: =Parent.Width*.95
+                                        ZIndex: =4
+
+                                Container5_14 As groupContainer.verticalAutoLayoutContainer:
                                     AlignInContainer: =AlignInContainer.SetByContainer
                                     DropShadow: =DropShadow.None
                                     FillPortions: =0
-                                    Height: =Parent.Height*.07
+                                    Height: =Container5_8.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =5
+                                    PaddingLeft: =15
+                                    PaddingRight: =15
+                                    PaddingTop: =5
+                                    Width: =Container5_8.Width
+                                    ZIndex: =4
+
+                                    lbl_ContractCreateDate_PCS_14 As label:
+                                        PaddingLeft: =0
+                                        PaddingRight: =0
+                                        Size: =10
+                                        Text: |-
+                                            ="Contract Creeation Date: "
+                                        Width: =Parent.Width*.4
+                                        ZIndex: =1
+
+                                    "DatePickerCanvas1_14 As 'Date picker'":
+                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
+                                        DisplayMode: =DisplayMode.Edit
+                                        FontColor: =
+                                        Height: =32
+                                        LayoutMinHeight: =32
+                                        LayoutMinWidth: =320
+                                        Width: =Parent.Width*.9
+                                        X: =0
+                                        Y: =0
+                                        ZIndex: =3
+
+                                    Rectangle1_17 As rectangle:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(214, 221, 224, 1)
+                                        Height: =1
+                                        Width: =Parent.Width*.95
+                                        ZIndex: =4
+
+                                Container5_16 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.SetByContainer
+                                    DropShadow: =DropShadow.None
+                                    FillPortions: =0
+                                    Height: =Container5_8.Height
                                     LayoutDirection: =LayoutDirection.Vertical
                                     LayoutGap: =5
                                     LayoutJustifyContent: =LayoutJustifyContent.End
                                     LayoutMinHeight: =100
                                     LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =5
+                                    PaddingLeft: =15
+                                    PaddingRight: =15
+                                    PaddingTop: =5
+                                    Width: =Container5_8.Width
+                                    ZIndex: =5
+
+                                    lbl_ContractCreateDate_PCS_16 As label:
+                                        PaddingLeft: =0
+                                        PaddingRight: =0
+                                        Size: =10
+                                        Text: |-
+                                            ="Contract Creeation Date: "
+                                        Width: =Parent.Width*.4
+                                        ZIndex: =1
+
+                                    "DatePickerCanvas1_16 As 'Date picker'":
+                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
+                                        DisplayMode: =DisplayMode.Edit
+                                        FontColor: =
+                                        Height: =32
+                                        LayoutMinHeight: =32
+                                        LayoutMinWidth: =320
+                                        Width: =Parent.Width*.9
+                                        X: =0
+                                        Y: =0
+                                        ZIndex: =3
+
+                                    Rectangle1_18 As rectangle:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(214, 221, 224, 1)
+                                        Height: =1
+                                        Width: =Parent.Width*.95
+                                        ZIndex: =4
+
+                                Container5_18 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.SetByContainer
+                                    DropShadow: =DropShadow.None
+                                    FillPortions: =0
+                                    Height: =Container5_8.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.End
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =5
+                                    PaddingLeft: =15
+                                    PaddingRight: =15
+                                    PaddingTop: =5
+                                    Width: =Container5_8.Width
+                                    ZIndex: =6
+
+                                    lbl_ContractCreateDate_PCS_18 As label:
+                                        PaddingLeft: =0
+                                        PaddingRight: =0
+                                        Size: =10
+                                        Text: |-
+                                            ="Contract Creeation Date: "
+                                        Width: =Parent.Width*.4
+                                        ZIndex: =1
+
+                                    "DatePickerCanvas1_18 As 'Date picker'":
+                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
+                                        DisplayMode: =DisplayMode.Edit
+                                        FontColor: =
+                                        Height: =32
+                                        LayoutMinHeight: =32
+                                        LayoutMinWidth: =320
+                                        Width: =Parent.Width*.9
+                                        X: =0
+                                        Y: =0
+                                        ZIndex: =3
+
+                                    Rectangle1_19 As rectangle:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(214, 221, 224, 1)
+                                        Height: =1
+                                        Width: =Parent.Width*.95
+                                        ZIndex: =4
+
+                                Container5_20 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.SetByContainer
+                                    DropShadow: =DropShadow.None
+                                    FillPortions: =0
+                                    Height: =Container5_8.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.End
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =5
+                                    PaddingLeft: =15
+                                    PaddingRight: =15
+                                    PaddingTop: =5
+                                    Width: =Container5_8.Width
+                                    ZIndex: =7
+
+                                    lbl_ContractCreateDate_PCS_20 As label:
+                                        PaddingLeft: =0
+                                        PaddingRight: =0
+                                        Size: =10
+                                        Text: |-
+                                            ="Contract Creeation Date: "
+                                        Width: =Parent.Width*.4
+                                        ZIndex: =1
+
+                                    "DatePickerCanvas1_20 As 'Date picker'":
+                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
+                                        DisplayMode: =DisplayMode.Edit
+                                        FontColor: =
+                                        Height: =32
+                                        LayoutMinHeight: =32
+                                        LayoutMinWidth: =320
+                                        Width: =Parent.Width*.9
+                                        X: =0
+                                        Y: =0
+                                        ZIndex: =3
+
+                                    Rectangle1_20 As rectangle:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(214, 221, 224, 1)
+                                        Height: =1
+                                        Width: =Parent.Width*.95
+                                        ZIndex: =4
+
+                                Container5_21 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.SetByContainer
+                                    DropShadow: =DropShadow.None
+                                    FillPortions: =0
+                                    Height: =Container5_8.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.End
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =5
+                                    PaddingLeft: =15
+                                    PaddingRight: =15
+                                    PaddingTop: =5
+                                    Width: =Container5_8.Width
+                                    ZIndex: =8
+
+                                    lbl_ContractCreateDate_PCS_21 As label:
+                                        PaddingLeft: =0
+                                        PaddingRight: =0
+                                        Size: =10
+                                        Text: |-
+                                            ="Contract Creeation Date: "
+                                        Width: =Parent.Width*.4
+                                        ZIndex: =1
+
+                                    "DatePickerCanvas1_21 As 'Date picker'":
+                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
+                                        DisplayMode: =DisplayMode.Edit
+                                        FontColor: =
+                                        Height: =32
+                                        LayoutMinHeight: =32
+                                        LayoutMinWidth: =320
+                                        Width: =Parent.Width*.9
+                                        X: =0
+                                        Y: =0
+                                        ZIndex: =3
+
+                                    Rectangle1_21 As rectangle:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(214, 221, 224, 1)
+                                        Height: =1
+                                        Width: =Parent.Width*.95
+                                        ZIndex: =5
+
+                                Container5_22 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.SetByContainer
+                                    DropShadow: =DropShadow.None
+                                    FillPortions: =0
+                                    Height: =Container5_8.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =5
+                                    PaddingLeft: =15
+                                    PaddingRight: =15
+                                    PaddingTop: =5
+                                    Width: =Container5_8.Width
+                                    ZIndex: =9
+
+                                    lbl_ContractCreateDate_PCS_22 As label:
+                                        PaddingLeft: =0
+                                        PaddingRight: =0
+                                        Size: =10
+                                        Text: |-
+                                            ="Contract Creeation Date: "
+                                        Width: =Parent.Width*.4
+                                        ZIndex: =1
+
+                                    "DatePickerCanvas1_22 As 'Date picker'":
+                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
+                                        DisplayMode: =DisplayMode.Edit
+                                        FontColor: =
+                                        Height: =32
+                                        LayoutMinHeight: =32
+                                        LayoutMinWidth: =320
+                                        Width: =Parent.Width*.9
+                                        X: =0
+                                        Y: =0
+                                        ZIndex: =3
+
+                                    Rectangle1_22 As rectangle:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(214, 221, 224, 1)
+                                        Height: =1
+                                        Width: =Parent.Width*.95
+                                        ZIndex: =5
+
+                                Container5_23 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.SetByContainer
+                                    DropShadow: =DropShadow.None
+                                    FillPortions: =0
+                                    Height: =Container5_8.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.End
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =5
+                                    PaddingLeft: =15
+                                    PaddingRight: =15
+                                    PaddingTop: =5
+                                    Width: =Container5_8.Width
+                                    ZIndex: =10
+
+                                    lbl_ContractCreateDate_PCS_23 As label:
+                                        PaddingLeft: =0
+                                        PaddingRight: =0
+                                        Size: =10
+                                        Text: |-
+                                            ="Contract Creeation Date: "
+                                        Width: =Parent.Width*.4
+                                        ZIndex: =1
+
+                                    "DatePickerCanvas1_23 As 'Date picker'":
+                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
+                                        DisplayMode: =DisplayMode.Edit
+                                        FontColor: =
+                                        Height: =32
+                                        LayoutMinHeight: =32
+                                        LayoutMinWidth: =320
+                                        Width: =Parent.Width*.9
+                                        X: =0
+                                        Y: =0
+                                        ZIndex: =3
+
+                                    Rectangle1_23 As rectangle:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(214, 221, 224, 1)
+                                        Height: =1
+                                        Width: =Parent.Width*.95
+                                        ZIndex: =5
+
+                                Container5_24 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.SetByContainer
+                                    DropShadow: =DropShadow.None
+                                    FillPortions: =0
+                                    Height: =Container5_8.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.End
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =5
+                                    PaddingLeft: =15
+                                    PaddingRight: =15
+                                    PaddingTop: =5
+                                    Width: =Container5_8.Width
+                                    ZIndex: =11
+
+                                    lbl_ContractCreateDate_PCS_24 As label:
+                                        PaddingLeft: =0
+                                        PaddingRight: =0
+                                        Size: =10
+                                        Text: |-
+                                            ="Contract Creeation Date: "
+                                        Width: =Parent.Width*.4
+                                        ZIndex: =1
+
+                                    "DatePickerCanvas1_24 As 'Date picker'":
+                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
+                                        DisplayMode: =DisplayMode.Edit
+                                        FontColor: =
+                                        Height: =32
+                                        LayoutMinHeight: =32
+                                        LayoutMinWidth: =320
+                                        Width: =Parent.Width*.9
+                                        X: =0
+                                        Y: =0
+                                        ZIndex: =3
+
+                                    Rectangle1_24 As rectangle:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(214, 221, 224, 1)
+                                        Height: =1
+                                        Width: =Parent.Width*.95
+                                        ZIndex: =5
+
+                            con_inputFieldmain_PCS As groupContainer.verticalAutoLayoutContainer:
+                                Height: =Parent.Height*.25
+                                LayoutAlignItems: =LayoutAlignItems.Center
+                                LayoutDirection: =LayoutDirection.Vertical
+                                LayoutMode: =LayoutMode.Auto
+                                Width: =Parent.Width
+                                ZIndex: =2
+
+                                Container5 As groupContainer.verticalAutoLayoutContainer:
+                                    DropShadow: =DropShadow.None
+                                    Height: =Parent.Height*.21
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.End
                                     LayoutMode: =LayoutMode.Auto
                                     PaddingBottom: =5
                                     PaddingLeft: =15
@@ -183,31 +668,25 @@
                                     "DatePickerCanvas1 As 'Date picker'":
                                         BasePaletteColor: =RGBA(227, 106, 244, 1)
                                         DisplayMode: =DisplayMode.Edit
+                                        FontColor: =
                                         Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
                                         Width: =Parent.Width*.9
                                         X: =0
                                         Y: =0
                                         ZIndex: =3
 
                                     Rectangle1 As rectangle:
-                                        AlignInContainer: =AlignInContainer.Center
                                         Fill: =RGBA(214, 221, 224, 1)
                                         Height: =1
                                         Width: =Parent.Width*.95
                                         ZIndex: =4
 
                                 Container5_1 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
                                     DropShadow: =DropShadow.None
-                                    FillPortions: =0
                                     Height: =Container5.Height
                                     LayoutDirection: =LayoutDirection.Vertical
                                     LayoutGap: =5
                                     LayoutJustifyContent: =LayoutJustifyContent.End
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
                                     LayoutMode: =LayoutMode.Auto
                                     PaddingBottom: =5
                                     PaddingLeft: =15
@@ -230,30 +709,23 @@
                                         DisplayMode: =DisplayMode.Edit
                                         FontColor: =
                                         Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
                                         Width: =Parent.Width*.9
                                         X: =0
                                         Y: =0
                                         ZIndex: =3
 
                                     Rectangle1_1 As rectangle:
-                                        AlignInContainer: =AlignInContainer.Center
                                         Fill: =RGBA(214, 221, 224, 1)
                                         Height: =1
                                         Width: =Parent.Width*.95
                                         ZIndex: =4
 
                                 Container5_2 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
                                     DropShadow: =DropShadow.None
-                                    FillPortions: =0
                                     Height: =Container5.Height
                                     LayoutDirection: =LayoutDirection.Vertical
                                     LayoutGap: =5
                                     LayoutJustifyContent: =LayoutJustifyContent.End
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
                                     LayoutMode: =LayoutMode.Auto
                                     PaddingBottom: =5
                                     PaddingLeft: =15
@@ -276,525 +748,16 @@
                                         DisplayMode: =DisplayMode.Edit
                                         FontColor: =
                                         Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
                                         Width: =Parent.Width*.9
                                         X: =0
                                         Y: =0
                                         ZIndex: =3
 
                                     Rectangle1_2 As rectangle:
-                                        AlignInContainer: =AlignInContainer.Center
                                         Fill: =RGBA(214, 221, 224, 1)
                                         Height: =1
                                         Width: =Parent.Width*.95
                                         ZIndex: =4
-
-                                Container5_3 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.None
-                                    FillPortions: =0
-                                    Height: =Container5.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.Center
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =5
-                                    PaddingLeft: =15
-                                    PaddingRight: =15
-                                    PaddingTop: =5
-                                    Width: =Container5.Width
-                                    ZIndex: =4
-
-                                    lbl_ContractCreateDate_PCS_3 As label:
-                                        PaddingLeft: =0
-                                        PaddingRight: =0
-                                        Size: =10
-                                        Text: |-
-                                            ="Contract Creeation Date: "
-                                        Width: =Parent.Width*.4
-                                        ZIndex: =1
-
-                                    "DatePickerCanvas1_3 As 'Date picker'":
-                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
-                                        DisplayMode: =DisplayMode.Edit
-                                        FontColor: =
-                                        Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
-                                        Width: =Parent.Width*.9
-                                        X: =0
-                                        Y: =0
-                                        ZIndex: =3
-
-                                    Rectangle1_3 As rectangle:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =4
-
-                                Container5_4 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.None
-                                    FillPortions: =0
-                                    Height: =Container5.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.End
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =5
-                                    PaddingLeft: =15
-                                    PaddingRight: =15
-                                    PaddingTop: =5
-                                    Width: =Container5.Width
-                                    ZIndex: =5
-
-                                    lbl_ContractCreateDate_PCS_4 As label:
-                                        PaddingLeft: =0
-                                        PaddingRight: =0
-                                        Size: =10
-                                        Text: |-
-                                            ="Contract Creeation Date: "
-                                        Width: =Parent.Width*.4
-                                        ZIndex: =1
-
-                                    "DatePickerCanvas1_4 As 'Date picker'":
-                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
-                                        DisplayMode: =DisplayMode.Edit
-                                        FontColor: =
-                                        Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
-                                        Width: =Parent.Width*.9
-                                        X: =0
-                                        Y: =0
-                                        ZIndex: =3
-
-                                    Rectangle1_4 As rectangle:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =4
-
-                                Container5_5 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.None
-                                    FillPortions: =0
-                                    Height: =Container5.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.End
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =5
-                                    PaddingLeft: =15
-                                    PaddingRight: =15
-                                    PaddingTop: =5
-                                    Width: =Container5.Width
-                                    ZIndex: =6
-
-                                    lbl_ContractCreateDate_PCS_5 As label:
-                                        PaddingLeft: =0
-                                        PaddingRight: =0
-                                        Size: =10
-                                        Text: |-
-                                            ="Contract Creeation Date: "
-                                        Width: =Parent.Width*.4
-                                        ZIndex: =1
-
-                                    "DatePickerCanvas1_5 As 'Date picker'":
-                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
-                                        DisplayMode: =DisplayMode.Edit
-                                        FontColor: =
-                                        Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
-                                        Width: =Parent.Width*.9
-                                        X: =0
-                                        Y: =0
-                                        ZIndex: =3
-
-                                    Rectangle1_5 As rectangle:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =4
-
-                                Container5_6 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.None
-                                    FillPortions: =0
-                                    Height: =Container5.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.End
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =5
-                                    PaddingLeft: =15
-                                    PaddingRight: =15
-                                    PaddingTop: =5
-                                    Width: =Container5.Width
-                                    ZIndex: =7
-
-                                    lbl_ContractCreateDate_PCS_6 As label:
-                                        PaddingLeft: =0
-                                        PaddingRight: =0
-                                        Size: =10
-                                        Text: |-
-                                            ="Contract Creeation Date: "
-                                        Width: =Parent.Width*.4
-                                        ZIndex: =1
-
-                                    "DatePickerCanvas1_6 As 'Date picker'":
-                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
-                                        DisplayMode: =DisplayMode.Edit
-                                        FontColor: =
-                                        Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
-                                        Width: =Parent.Width*.9
-                                        X: =0
-                                        Y: =0
-                                        ZIndex: =3
-
-                                    Rectangle1_6 As rectangle:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =4
-
-                                Container5_7 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.None
-                                    FillPortions: =0
-                                    Height: =Container5.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.End
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =5
-                                    PaddingLeft: =15
-                                    PaddingRight: =15
-                                    PaddingTop: =5
-                                    Width: =Container5.Width
-                                    ZIndex: =8
-
-                                    lbl_ContractCreateDate_PCS_7 As label:
-                                        PaddingLeft: =0
-                                        PaddingRight: =0
-                                        Size: =10
-                                        Text: |-
-                                            ="Contract Creeation Date: "
-                                        Width: =Parent.Width*.4
-                                        ZIndex: =1
-
-                                    "DatePickerCanvas1_7 As 'Date picker'":
-                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
-                                        DisplayMode: =DisplayMode.Edit
-                                        FontColor: =
-                                        Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
-                                        Width: =Parent.Width*.9
-                                        X: =0
-                                        Y: =0
-                                        ZIndex: =3
-
-                                    Rectangle1_7 As rectangle:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =5
-
-                                Container5_9 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.None
-                                    FillPortions: =0
-                                    Height: =Container5.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.Center
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =5
-                                    PaddingLeft: =15
-                                    PaddingRight: =15
-                                    PaddingTop: =5
-                                    Width: =Container5.Width
-                                    ZIndex: =9
-
-                                    lbl_ContractCreateDate_PCS_9 As label:
-                                        PaddingLeft: =0
-                                        PaddingRight: =0
-                                        Size: =10
-                                        Text: |-
-                                            ="Contract Creeation Date: "
-                                        Width: =Parent.Width*.4
-                                        ZIndex: =1
-
-                                    "DatePickerCanvas1_9 As 'Date picker'":
-                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
-                                        DisplayMode: =DisplayMode.Edit
-                                        FontColor: =
-                                        Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
-                                        Width: =Parent.Width*.9
-                                        X: =0
-                                        Y: =0
-                                        ZIndex: =3
-
-                                    Rectangle1_8 As rectangle:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =5
-
-                                Container5_11 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.None
-                                    FillPortions: =0
-                                    Height: =Container5.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.End
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =5
-                                    PaddingLeft: =15
-                                    PaddingRight: =15
-                                    PaddingTop: =5
-                                    Width: =Container5.Width
-                                    ZIndex: =10
-
-                                    lbl_ContractCreateDate_PCS_11 As label:
-                                        PaddingLeft: =0
-                                        PaddingRight: =0
-                                        Size: =10
-                                        Text: |-
-                                            ="Contract Creeation Date: "
-                                        Width: =Parent.Width*.4
-                                        ZIndex: =1
-
-                                    "DatePickerCanvas1_11 As 'Date picker'":
-                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
-                                        DisplayMode: =DisplayMode.Edit
-                                        FontColor: =
-                                        Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
-                                        Width: =Parent.Width*.9
-                                        X: =0
-                                        Y: =0
-                                        ZIndex: =3
-
-                                    Rectangle1_9 As rectangle:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =5
-
-                                Container5_13 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.None
-                                    FillPortions: =0
-                                    Height: =Container5.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.End
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =5
-                                    PaddingLeft: =15
-                                    PaddingRight: =15
-                                    PaddingTop: =5
-                                    Width: =Container5.Width
-                                    ZIndex: =11
-
-                                    lbl_ContractCreateDate_PCS_13 As label:
-                                        PaddingLeft: =0
-                                        PaddingRight: =0
-                                        Size: =10
-                                        Text: |-
-                                            ="Contract Creeation Date: "
-                                        Width: =Parent.Width*.4
-                                        ZIndex: =1
-
-                                    "DatePickerCanvas1_13 As 'Date picker'":
-                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
-                                        DisplayMode: =DisplayMode.Edit
-                                        FontColor: =
-                                        Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
-                                        Width: =Parent.Width*.9
-                                        X: =0
-                                        Y: =0
-                                        ZIndex: =3
-
-                                    Rectangle1_10 As rectangle:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =5
-
-                                Container5_15 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.None
-                                    FillPortions: =0
-                                    Height: =Container5.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.End
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =5
-                                    PaddingLeft: =15
-                                    PaddingRight: =15
-                                    PaddingTop: =5
-                                    Width: =Container5.Width
-                                    ZIndex: =12
-
-                                    lbl_ContractCreateDate_PCS_15 As label:
-                                        PaddingLeft: =0
-                                        PaddingRight: =0
-                                        Size: =10
-                                        Text: |-
-                                            ="Contract Creeation Date: "
-                                        Width: =Parent.Width*.4
-                                        ZIndex: =1
-
-                                    "DatePickerCanvas1_15 As 'Date picker'":
-                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
-                                        DisplayMode: =DisplayMode.Edit
-                                        FontColor: =
-                                        Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
-                                        Width: =Parent.Width*.9
-                                        X: =0
-                                        Y: =0
-                                        ZIndex: =3
-
-                                    Rectangle1_11 As rectangle:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =5
-
-                                Container5_17 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.None
-                                    FillPortions: =0
-                                    Height: =Container5.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.End
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =5
-                                    PaddingLeft: =15
-                                    PaddingRight: =15
-                                    PaddingTop: =5
-                                    Width: =Container5.Width
-                                    ZIndex: =13
-
-                                    lbl_ContractCreateDate_PCS_17 As label:
-                                        PaddingLeft: =0
-                                        PaddingRight: =0
-                                        Size: =10
-                                        Text: |-
-                                            ="Contract Creeation Date: "
-                                        Width: =Parent.Width*.4
-                                        ZIndex: =1
-
-                                    "DatePickerCanvas1_17 As 'Date picker'":
-                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
-                                        DisplayMode: =DisplayMode.Edit
-                                        FontColor: =
-                                        Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
-                                        Width: =Parent.Width*.9
-                                        X: =0
-                                        Y: =0
-                                        ZIndex: =3
-
-                                    Rectangle1_12 As rectangle:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =5
-
-                                Container5_19 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.None
-                                    FillPortions: =0
-                                    Height: =Container5.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.End
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =5
-                                    PaddingLeft: =15
-                                    PaddingRight: =15
-                                    PaddingTop: =5
-                                    Width: =Container5.Width
-                                    ZIndex: =14
-
-                                    lbl_ContractCreateDate_PCS_19 As label:
-                                        PaddingLeft: =0
-                                        PaddingRight: =0
-                                        Size: =10
-                                        Text: |-
-                                            ="Contract Creeation Date: "
-                                        Width: =Parent.Width*.4
-                                        ZIndex: =1
-
-                                    "DatePickerCanvas1_19 As 'Date picker'":
-                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
-                                        DisplayMode: =DisplayMode.Edit
-                                        FontColor: =
-                                        Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
-                                        Width: =Parent.Width*.9
-                                        X: =0
-                                        Y: =0
-                                        ZIndex: =3
-
-                                    Rectangle1_13 As rectangle:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =5
 
                 con_PreviewContract_PCS As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
@@ -889,13 +852,6 @@
                                             HtmlText: ="<b>This agreement</b> is made on"
                                             Width: =Parent.Width*.3
                                             ZIndex: =1
-
-                                        htm_DynamicText_PCS As htmlViewer:
-                                            Height: =Parent.Height*.07
-                                            HtmlText: ="<mark>"&txt_DynamicInput_PCS.Text&"</mark>"
-                                            OnSelect: =Set(Varinputdate,!Varinputdate)
-                                            Width: =Parent.Width*.08
-                                            ZIndex: =2
 
             con_EditAndPreviewButtonPart_PCS As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
