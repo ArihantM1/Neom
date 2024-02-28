@@ -134,7 +134,9 @@
                             BorderThickness: =0
                             DisplayMode: =DisplayMode.Edit
                             Fill: =RGBA(0, 0, 0, 0)
-                            Height: =Parent.Height*4
+                            Height: |-
+                                =//Parent.Height*4
+                                If(VarShowMoreFileds,Parent.Height*4,Parent.Height)
                             Width: =Parent.Width
                             X: =0
                             Y: =0
@@ -145,6 +147,7 @@
                                 LayoutAlignItems: =LayoutAlignItems.Center
                                 LayoutDirection: =LayoutDirection.Vertical
                                 LayoutMode: =LayoutMode.Auto
+                                Visible: =VarShowMoreFileds
                                 Width: =Parent.Width
                                 Y: =con_inputFieldmain_PCS.Height
                                 ZIndex: =1
@@ -635,7 +638,7 @@
                                         ZIndex: =5
 
                             con_inputFieldmain_PCS As groupContainer.verticalAutoLayoutContainer:
-                                Height: =Parent.Height*.25
+                                Height: =If(VarShowMoreFileds,Parent.Height*.25,Parent.Height)
                                 LayoutAlignItems: =LayoutAlignItems.Center
                                 LayoutDirection: =LayoutDirection.Vertical
                                 LayoutMode: =LayoutMode.Auto
@@ -758,6 +761,62 @@
                                         Height: =1
                                         Width: =Parent.Width*.95
                                         ZIndex: =4
+
+                                Container5_4 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    DropShadow: =DropShadow.None
+                                    FillPortions: =0
+                                    Height: =Container5.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.End
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =5
+                                    PaddingLeft: =15
+                                    PaddingRight: =15
+                                    PaddingTop: =5
+                                    Width: =Container5.Width
+                                    ZIndex: =4
+
+                                    lbl_ContractCreateDate_PCS_4 As label:
+                                        PaddingLeft: =0
+                                        PaddingRight: =0
+                                        Size: =10
+                                        Text: |-
+                                            ="Contract Creeation Date: "
+                                        Width: =Parent.Width*.4
+                                        ZIndex: =1
+
+                                    "DatePickerCanvas1_4 As 'Date picker'":
+                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
+                                        DisplayMode: =DisplayMode.Edit
+                                        FontColor: =
+                                        Height: =32
+                                        LayoutMinHeight: =32
+                                        LayoutMinWidth: =320
+                                        Width: =Parent.Width*.9
+                                        X: =0
+                                        Y: =0
+                                        ZIndex: =3
+
+                                    Rectangle1_4 As rectangle:
+                                        Fill: =RGBA(214, 221, 224, 1)
+                                        Height: =1
+                                        Width: =Parent.Width*.95
+                                        ZIndex: =4
+
+                            Label3 As label:
+                                Color: =RGBA(40, 134, 222, 1)
+                                FontWeight: =FontWeight.Bold
+                                OnSelect: =Set(VarShowMoreFileds,!VarShowMoreFileds)
+                                PaddingLeft: =15
+                                Size: =8
+                                Text: =If(VarShowMoreFileds,"Show Less...","Show More...")
+                                X: =5
+                                Y: =Parent.Height-Self.Height
+                                ZIndex: =3
 
                 con_PreviewContract_PCS As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
