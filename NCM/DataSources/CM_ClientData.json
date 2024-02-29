@@ -36,6 +36,8 @@
       "ID": "ID",
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",
+      "Pan_No": "Pan_No",
+      "Service_Tax_No": "Service_Tax_No",
       "Title": "Title"
     },
     "DatasetName": "https://xebiagroup.sharepoint.com/sites/PowerAppsDemo",
