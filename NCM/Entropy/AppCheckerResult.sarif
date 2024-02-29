@@ -1584,19 +1584,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS_1.dtc_UserAgreementPreview_PCS_1.con_inputFieldmain_PCS.Container5_1.DatePickerCanvas1_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS_1.dtc_UserAgreementPreview_PCS_1.con_inputFieldmain_PCS.Container5_2.TextInput1_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS_1.dtc_UserAgreementPreview_PCS_1.con_inputFieldmain_PCS.Container5_1.DatePickerCanvas1_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS_1.dtc_UserAgreementPreview_PCS_1.con_inputFieldmain_PCS.Container5_2.TextInput1_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Preview Contract Screen",
-                "type": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS_1.dtc_UserAgreementPreview_PCS_1.con_inputFieldmain_PCS.Container5_1.DatePickerCanvas1_1"
+                "type": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS_1.dtc_UserAgreementPreview_PCS_1.con_inputFieldmain_PCS.Container5_2.TextInput1_1"
               }
             }
           ],
@@ -1614,49 +1614,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS_1.dtc_UserAgreementPreview_PCS_1.con_inputFieldmain_PCS.Container5_2.DatePickerCanvas1_2.AccessibleLabel"
+                  "fullyQualifiedName": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS_1.dtc_UserAgreementPreview_PCS_1.con_inputFieldmain_PCS.Container5_4.TextInput1_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS_1.dtc_UserAgreementPreview_PCS_1.con_inputFieldmain_PCS.Container5_2.DatePickerCanvas1_2.AccessibleLabel",
+                  "fullyQualifiedName": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS_1.dtc_UserAgreementPreview_PCS_1.con_inputFieldmain_PCS.Container5_4.TextInput1_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Preview Contract Screen",
-                "type": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS_1.dtc_UserAgreementPreview_PCS_1.con_inputFieldmain_PCS.Container5_2.DatePickerCanvas1_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS_1.dtc_UserAgreementPreview_PCS_1.con_inputFieldmain_PCS.Container5_4.DatePickerCanvas1_4.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS_1.dtc_UserAgreementPreview_PCS_1.con_inputFieldmain_PCS.Container5_4.DatePickerCanvas1_4.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Preview Contract Screen",
-                "type": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS_1.dtc_UserAgreementPreview_PCS_1.con_inputFieldmain_PCS.Container5_4.DatePickerCanvas1_4"
+                "type": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS_1.dtc_UserAgreementPreview_PCS_1.con_inputFieldmain_PCS.Container5_4.TextInput1_2"
               }
             }
           ],
@@ -2677,6 +2647,36 @@
                 "member": "AccessibleLabel",
                 "module": "Preview Contract Screen",
                 "type": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS_1.dtc_UserAgreementPreview_PCS_1.con_inputFieldmain_PCS_1.Container5_44.DatePickerCanvas1_44"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS_1.dtc_UserAgreementPreview_PCS_1.con_inputFieldmain_PCS.Container5_1.TextInput1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS_1.dtc_UserAgreementPreview_PCS_1.con_inputFieldmain_PCS.Container5_1.TextInput1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Preview Contract Screen",
+                "type": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS_1.dtc_UserAgreementPreview_PCS_1.con_inputFieldmain_PCS.Container5_1.TextInput1"
               }
             }
           ],

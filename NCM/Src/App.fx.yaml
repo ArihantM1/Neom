@@ -73,6 +73,7 @@ App As appinfo:
             )
         );
         Set(VarShowMoreFileds,false);
+        Set(VarFieldColor,RGBA(245,245,245,1))
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
