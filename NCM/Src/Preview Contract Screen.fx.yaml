@@ -1582,18 +1582,18 @@
                                 Height: =If(VarShowMoreFileds,Parent.Height*.11,Parent.Height)
                                 LayoutAlignItems: =LayoutAlignItems.Center
                                 LayoutDirection: =LayoutDirection.Vertical
-                                LayoutGap: =1
+                                LayoutGap: =5
                                 LayoutMode: =LayoutMode.Auto
-                                PaddingBottom: =5
+                                PaddingBottom: =7
                                 PaddingRight: =8
-                                PaddingTop: =5
+                                PaddingTop: =7
                                 Width: =Parent.Width
                                 ZIndex: =2
 
                                 Container5 As groupContainer.verticalAutoLayoutContainer:
                                     AlignInContainer: =AlignInContainer.SetByContainer
                                     FillPortions: =0
-                                    Height: =Parent.Height*.235
+                                    Height: =Parent.Height*.225
                                     LayoutDirection: =LayoutDirection.Vertical
                                     LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                                     LayoutMinHeight: =100
@@ -1644,52 +1644,60 @@
 
                                 Container5_1 As groupContainer.verticalAutoLayoutContainer:
                                     AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.None
                                     FillPortions: =0
                                     Height: =Container5.Height
                                     LayoutDirection: =LayoutDirection.Vertical
                                     LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.End
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                                     LayoutMinHeight: =100
                                     LayoutMinWidth: =250
                                     LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =5
-                                    PaddingLeft: =15
-                                    PaddingRight: =15
-                                    PaddingTop: =5
+                                    PaddingBottom: =20
+                                    PaddingTop: =
                                     Width: =Container5.Width
                                     ZIndex: =2
 
-                                    lbl_ContractCreateDate_PCS_1 As label:
-                                        PaddingLeft: =0
-                                        PaddingRight: =0
-                                        Size: =10
-                                        Text: |-
-                                            ="Contract City: "
-                                        Width: =Parent.Width*.4
+                                    Container1_1 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
                                         ZIndex: =1
 
+                                        lbl_ContractCreateDate_PCS_5 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="CONTRACT CITY : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
                                     "DatePickerCanvas1_1 As 'Date picker'":
+                                        AlignInContainer: =AlignInContainer.Center
                                         BasePaletteColor: =RGBA(227, 106, 244, 1)
                                         DisplayMode: =DisplayMode.Edit
                                         FontColor: =
                                         Height: =32
                                         LayoutMinHeight: =32
                                         LayoutMinWidth: =320
-                                        Width: =Parent.Width*.9
+                                        Width: =Parent.Width*.97
                                         X: =0
                                         Y: =0
                                         ZIndex: =3
 
-                                    Rectangle1_1 As rectangle:
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =4
-
                                 Container5_2 As groupContainer.verticalAutoLayoutContainer:
                                     AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.None
                                     FillPortions: =0
                                     Height: =Container5.Height
                                     LayoutDirection: =LayoutDirection.Vertical
@@ -1726,15 +1734,8 @@
                                         Y: =0
                                         ZIndex: =3
 
-                                    Rectangle1_2 As rectangle:
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =4
-
                                 Container5_4 As groupContainer.verticalAutoLayoutContainer:
                                     AlignInContainer: =AlignInContainer.Center
-                                    DropShadow: =DropShadow.None
                                     FillPortions: =0
                                     Height: =Container5.Height
                                     LayoutDirection: =LayoutDirection.Vertical
@@ -1771,15 +1772,10 @@
                                         Y: =0
                                         ZIndex: =3
 
-                                    Rectangle1_4 As rectangle:
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =4
-
                             Label3 As label:
                                 Color: =RGBA(40, 134, 222, 1)
                                 FontWeight: =FontWeight.Bold
+                                Height: =20
                                 OnSelect: =Set(VarShowMoreFileds,!VarShowMoreFileds)
                                 PaddingLeft: =15
                                 Size: =8
@@ -1971,10 +1967,10 @@
 
         shp_CircleDocuments_PCS As circle:
             Fill: =RGBA(107, 29, 94, 1)
-            Height: =shp_CircleOverview_PCS.Height
-            Width: =shp_CircleOverview_PCS.Width
-            X: =con_EditAndPreviewMain_PCS.X-Parent.Width*.065-Self.Width
-            Y: =shp_CircleOverview_PCS.Height+shp_CircleOverview_PCS.Y+Parent.Height*.4
+            Height: =70
+            Width: =70
+            X: =46
+            Y: =506
             ZIndex: =2
 
         shp_CircleOverview_PCS As circle:
@@ -1982,62 +1978,65 @@
             Fill: =RGBA(107, 29, 94, 1)
             Height: =70
             Width: =70
-            X: =con_EditAndPreviewMain_PCS.X-Parent.Width*.065-Self.Width
-            Y: |
-                =con_FillerForMilestone_CSS.Height*.9
+            X: =46
+            Y: =126
             ZIndex: =3
 
         ico_Overview_PCS As icon.Flag:
             Color: =RGBA(255, 255, 255, 1)
             DisplayMode: =DisplayMode.View
-            Height: =35
+            Height: =36
             Icon: =Icon.Flag
             Width: =35
-            X: =shp_CircleOverview_PCS.X+(shp_CircleOverview_PCS.Width-Self.Width)/2
-            Y: =shp_CircleOverview_PCS.Y+(shp_CircleOverview_PCS.Height-Self.Height)/2
+            X: =63
+            Y: =143
             ZIndex: =4
 
         shp_RectOverview_PCS As rectangle:
             BorderStyle: =BorderStyle.None
             DisplayMode: =DisplayMode.View
             Fill: =RGBA(107, 29, 94, 1)
-            Height: =3
-            Width: =con_EditAndPreviewMain_PCS.X-shp_CircleOverview_PCS.Width-shp_CircleOverview_PCS.X-Parent.Width*0.01
-            X: =shp_CircleOverview_PCS.X+shp_CircleOverview_PCS.Width+(con_EditAndPreviewMain_PCS.X-shp_CircleOverview_PCS.X-shp_CircleOverview_PCS.Width-Self.Width)/2
-            Y: =shp_CircleOverview_PCS.Y+(shp_CircleOverview_PCS.Height-Self.Height)/2
+            Height: =2
+            Width: =75
+            X: =122
+            Y: =159
             ZIndex: =5
 
         ico_Document_PCS As icon.Flag:
             Color: =RGBA(255, 255, 255, 1)
             DisplayMode: =DisplayMode.View
-            Height: =35
+            Height: =36
             Icon: =Icon.Flag
             Width: =35
-            X: =shp_CircleDocuments_PCS.X+(shp_CircleDocuments_PCS.Width-Self.Width)/2
-            Y: =shp_CircleDocuments_PCS.Y+(shp_CircleDocuments_PCS.Height-Self.Height)/2
+            X: =63
+            Y: =524
             ZIndex: =6
 
         shp_RectMileStone_PCS As rectangle:
             Fill: =RGBA(107, 29, 94, 1)
-            Height: =-lbl_Overview_PCS.Y-lbl_Overview_PCS.Height+shp_CircleDocuments_PCS.Y-Parent.Height*0.01
+            Height: =261
             Width: =3
-            X: =lbl_Overview_PCS.X+(lbl_Overview_PCS.Width-Self.Width)/2
-            Y: =lbl_Overview_PCS.Y+lbl_Overview_PCS.Height
+            X: =79
+            Y: =237
             ZIndex: =7
 
         lbl_Overview_PCS As label:
             Align: =Align.Center
             FontWeight: =FontWeight.Bold
+            Height: =41
             Text: ="Overview"
-            X: =shp_CircleOverview_PCS.X+(shp_CircleOverview_PCS.Width-Self.Width)/2
-            Y: =shp_CircleOverview_PCS.Y+shp_CircleOverview_PCS.Height
+            Width: =149
+            X: =7
+            Y: =196
             ZIndex: =8
 
         lbl_Document_PCS As label:
             Align: =Align.Center
             FontWeight: =FontWeight.Bold
+            Height: =41
             Text: ="Documents"
-            X: =shp_CircleDocuments_PCS.X+(shp_CircleDocuments_PCS.Width-Self.Width)/2
-            Y: =shp_CircleDocuments_PCS.Y+shp_CircleDocuments_PCS.Height
+            Width: =149
+            X: =7
+            Y: =571
             ZIndex: =9
 
