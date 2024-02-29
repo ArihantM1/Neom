@@ -124,7 +124,7 @@
                     "OptimizeForDevices": "Off",
                     "Parent": "Con_information",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 446,
+                    "PublishOrderIndex": 414,
                     "Rules": [
                       {
                         "Category": "Data",
@@ -452,7 +452,7 @@
                     "OptimizeForDevices": "Off",
                     "Parent": "Con_information",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 447,
+                    "PublishOrderIndex": 415,
                     "Rules": [
                       {
                         "Category": "Data",
@@ -847,7 +847,7 @@
                     "OptimizeForDevices": "Off",
                     "Parent": "Con_information",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 448,
+                    "PublishOrderIndex": 416,
                     "Rules": [
                       {
                         "Category": "Data",
@@ -1168,7 +1168,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "ConMain",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 445,
+                "PublishOrderIndex": 413,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -1484,7 +1484,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "ConMain",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 449,
+                "PublishOrderIndex": 417,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -1836,7 +1836,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "ConCard_defaultValues_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 444,
+            "PublishOrderIndex": 412,
             "Rules": [
               {
                 "Category": "Design",
@@ -2069,7 +2069,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Card compomnent",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 443,
+        "PublishOrderIndex": 411,
         "Rules": [
           {
             "Category": "Design",
