@@ -139,9 +139,7 @@
                             BorderThickness: =0
                             DisplayMode: =DisplayMode.Edit
                             Fill: =RGBA(0, 0, 0, 0)
-                            Height: |-
-                                =//Parent.Height*4
-                                Parent.Height
+                            Height: =If(VarShowMoreFileds,Parent.Height*7,Parent.Height)
                             Width: =Parent.Width
                             X: =0
                             Y: =0
@@ -162,7 +160,7 @@
                                     AlignInContainer: =AlignInContainer.SetByContainer
                                     DropShadow: =DropShadow.None
                                     FillPortions: =0
-                                    Height: =Parent.Height*.032
+                                    Height: =Parent.Height*.041
                                     LayoutDirection: =LayoutDirection.Vertical
                                     LayoutGap: =5
                                     LayoutJustifyContent: =LayoutJustifyContent.End
@@ -1215,12 +1213,11 @@
 
                             con_inputFieldmain_PCS As groupContainer.verticalAutoLayoutContainer:
                                 DropShadow: =DropShadow.None
-                                Height: =If(VarShowMoreFileds,Parent.Height*.11,Parent.Height)
+                                Height: =If(VarShowMoreFileds,Parent.Height*.148,Parent.Height)
                                 LayoutAlignItems: =LayoutAlignItems.Center
                                 LayoutDirection: =LayoutDirection.Vertical
                                 LayoutGap: =5
                                 LayoutMode: =LayoutMode.Auto
-                                PaddingBottom: =7
                                 PaddingRight: =8
                                 PaddingTop: =7
                                 Width: =Parent.Width
@@ -1229,7 +1226,7 @@
                                 Container5 As groupContainer.verticalAutoLayoutContainer:
                                     AlignInContainer: =AlignInContainer.SetByContainer
                                     FillPortions: =0
-                                    Height: =Parent.Height*.225
+                                    Height: =Parent.Height*.23
                                     LayoutDirection: =LayoutDirection.Vertical
                                     LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                                     LayoutMinHeight: =100
