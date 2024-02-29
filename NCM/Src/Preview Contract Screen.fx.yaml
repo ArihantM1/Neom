@@ -634,7 +634,7 @@
                                         PaddingRight: =0
                                         Size: =10
                                         Text: |-
-                                            ="Customer Type: "
+                                            ="Client Contact Person Name: "
                                         Width: =Parent.Width*.4
                                         ZIndex: =1
 
@@ -680,7 +680,7 @@
                                         PaddingRight: =0
                                         Size: =10
                                         Text: |-
-                                            ="Customer Type: "
+                                            ="Contact Person Phone no: "
                                         Width: =Parent.Width*.4
                                         ZIndex: =1
 
@@ -726,7 +726,7 @@
                                         PaddingRight: =0
                                         Size: =10
                                         Text: |-
-                                            ="Customer Type: "
+                                            ="Contact Person Email: "
                                         Width: =Parent.Width*.4
                                         ZIndex: =1
 
@@ -772,7 +772,7 @@
                                         PaddingRight: =0
                                         Size: =10
                                         Text: |-
-                                            ="Customer Type: "
+                                            ="Customer Invoice Name: "
                                         Width: =Parent.Width*.4
                                         ZIndex: =1
 
@@ -818,7 +818,7 @@
                                         PaddingRight: =0
                                         Size: =10
                                         Text: |-
-                                            ="Customer Type: "
+                                            ="Customer Invoice City: "
                                         Width: =Parent.Width*.4
                                         ZIndex: =1
 
@@ -864,7 +864,7 @@
                                         PaddingRight: =0
                                         Size: =10
                                         Text: |-
-                                            ="Customer Type: "
+                                            ="Customer Invoice State: "
                                         Width: =Parent.Width*.4
                                         ZIndex: =1
 
@@ -910,7 +910,7 @@
                                         PaddingRight: =0
                                         Size: =10
                                         Text: |-
-                                            ="Customer Type: "
+                                            ="Customer Invoice Country: "
                                         Width: =Parent.Width*.4
                                         ZIndex: =1
 
@@ -956,7 +956,7 @@
                                         PaddingRight: =0
                                         Size: =10
                                         Text: |-
-                                            ="Customer Type: "
+                                            ="Customer Invoice Pin no: "
                                         Width: =Parent.Width*.4
                                         ZIndex: =1
 
@@ -1002,7 +1002,7 @@
                                         PaddingRight: =0
                                         Size: =10
                                         Text: |-
-                                            ="Customer Type: "
+                                            ="Customer Bank Name: "
                                         Width: =Parent.Width*.4
                                         ZIndex: =1
 
@@ -1048,7 +1048,7 @@
                                         PaddingRight: =0
                                         Size: =10
                                         Text: |-
-                                            ="Customer Type: "
+                                            ="Customer Bank Account No: "
                                         Width: =Parent.Width*.4
                                         ZIndex: =1
 
@@ -1094,7 +1094,7 @@
                                         PaddingRight: =0
                                         Size: =10
                                         Text: |-
-                                            ="Customer Type: "
+                                            ="Customer Bank MIRC no: "
                                         Width: =Parent.Width*.4
                                         ZIndex: =1
 
@@ -1140,7 +1140,7 @@
                                         PaddingRight: =0
                                         Size: =10
                                         Text: |-
-                                            ="Customer Type: "
+                                            ="Customer Bank IFSC Code: "
                                         Width: =Parent.Width*.4
                                         ZIndex: =1
 
@@ -1186,7 +1186,7 @@
                                         PaddingRight: =0
                                         Size: =10
                                         Text: |-
-                                            ="Customer Type: "
+                                            ="Customer Bank Branch Address: "
                                         Width: =Parent.Width*.4
                                         ZIndex: =1
 
@@ -1582,54 +1582,65 @@
                                 Height: =If(VarShowMoreFileds,Parent.Height*.11,Parent.Height)
                                 LayoutAlignItems: =LayoutAlignItems.Center
                                 LayoutDirection: =LayoutDirection.Vertical
+                                LayoutGap: =1
                                 LayoutMode: =LayoutMode.Auto
+                                PaddingBottom: =5
+                                PaddingRight: =8
+                                PaddingTop: =5
                                 Width: =Parent.Width
                                 ZIndex: =2
 
                                 Container5 As groupContainer.verticalAutoLayoutContainer:
                                     AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.None
                                     FillPortions: =0
                                     Height: =Parent.Height*.235
                                     LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.End
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                                     LayoutMinHeight: =100
                                     LayoutMinWidth: =250
                                     LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =5
-                                    PaddingLeft: =15
-                                    PaddingRight: =15
-                                    PaddingTop: =5
-                                    Width: =Parent.Width
+                                    PaddingBottom: =20
+                                    Width: =Parent.Width*.94
                                     ZIndex: =1
 
-                                    lbl_ContractCreateDate_PCS As label:
-                                        PaddingLeft: =0
-                                        PaddingRight: =0
-                                        Size: =10
-                                        Text: |-
-                                            ="Contract Creation Date: "
-                                        Width: =Parent.Width*.4
+                                    Container1 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
                                         ZIndex: =1
 
+                                        lbl_ContractCreateDate_PCS As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="CONTRACT CREATION DATE : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
                                     "DatePickerCanvas1 As 'Date picker'":
+                                        AlignInContainer: =AlignInContainer.Center
                                         BasePaletteColor: =RGBA(227, 106, 244, 1)
                                         DisplayMode: =DisplayMode.Edit
                                         FontColor: =
                                         Height: =32
                                         LayoutMinHeight: =32
                                         LayoutMinWidth: =320
-                                        Width: =Parent.Width*.9
+                                        Width: =Parent.Width*.97
                                         X: =0
                                         Y: =0
                                         ZIndex: =3
-
-                                    Rectangle1 As rectangle:
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =4
 
                                 Container5_1 As groupContainer.verticalAutoLayoutContainer:
                                     AlignInContainer: =AlignInContainer.SetByContainer
