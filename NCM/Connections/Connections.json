@@ -19,6 +19,9 @@
           },
           "CM_Services": {
             "tableName": "6dbb5b16-a766-4d7a-a4e9-0a481df4e7dd"
+          },
+          "Documents": {
+            "tableName": "9c9881e3-6953-4aa5-bd63-ec273fd77346"
           }
         }
       }
@@ -27,7 +30,8 @@
       "CM_ContractDetails",
       "CM_Service_Types",
       "CM_ClientData",
-      "CM_Services"
+      "CM_Services",
+      "Documents"
     ],
     "dependencies": {},
     "dependents": [],
