@@ -212,733 +212,6 @@
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
 
-                                Container5_8 As groupContainer.verticalAutoLayoutContainer:
-                                    DropShadow: =DropShadow.None
-                                    Height: =Parent.Height*.041
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.End
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =5
-                                    PaddingLeft: =15
-                                    PaddingRight: =15
-                                    PaddingTop: =5
-                                    Width: =Parent.Width
-                                    ZIndex: =2
-
-                                    lbl_ContractCreateDate_PCS_8 As label:
-                                        PaddingLeft: =0
-                                        PaddingRight: =0
-                                        Size: =10
-                                        Text: |-
-                                            ="Witness Vendor By: "
-                                        Width: =Parent.Width*.4
-                                        ZIndex: =1
-
-                                    "DatePickerCanvas1_8 As 'Date picker'":
-                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
-                                        DisplayMode: =DisplayMode.Edit
-                                        FontColor: =
-                                        Height: =32
-                                        Width: =Parent.Width*.9
-                                        X: =0
-                                        Y: =0
-                                        ZIndex: =3
-
-                                    Rectangle1_14 As rectangle:
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =4
-
-                                Container5_10 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.None
-                                    FillPortions: =0
-                                    Height: =Container5_8.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.End
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =5
-                                    PaddingLeft: =15
-                                    PaddingRight: =15
-                                    PaddingTop: =5
-                                    Width: =Container5_8.Width
-                                    ZIndex: =3
-
-                                    lbl_ContractCreateDate_PCS_10 As label:
-                                        PaddingLeft: =0
-                                        PaddingRight: =0
-                                        Size: =10
-                                        Text: |-
-                                            ="Witness Vendor Title: "
-                                        Width: =Parent.Width*.4
-                                        ZIndex: =1
-
-                                    "DatePickerCanvas1_10 As 'Date picker'":
-                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
-                                        DisplayMode: =DisplayMode.Edit
-                                        FontColor: =
-                                        Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
-                                        Width: =Parent.Width*.9
-                                        X: =0
-                                        Y: =0
-                                        ZIndex: =3
-
-                                    Rectangle1_15 As rectangle:
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =4
-
-                                Container5_12 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.None
-                                    FillPortions: =0
-                                    Height: =Container5_8.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.End
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =5
-                                    PaddingLeft: =15
-                                    PaddingRight: =15
-                                    PaddingTop: =5
-                                    Width: =Container5_8.Width
-                                    ZIndex: =4
-
-                                    lbl_ContractCreateDate_PCS_12 As label:
-                                        PaddingLeft: =0
-                                        PaddingRight: =0
-                                        Size: =10
-                                        Text: |-
-                                            ="Witness Vendor Date: "
-                                        Width: =Parent.Width*.4
-                                        ZIndex: =1
-
-                                    "DatePickerCanvas1_12 As 'Date picker'":
-                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
-                                        DisplayMode: =DisplayMode.Edit
-                                        FontColor: =
-                                        Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
-                                        Width: =Parent.Width*.9
-                                        X: =0
-                                        Y: =0
-                                        ZIndex: =3
-
-                                    Rectangle1_16 As rectangle:
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =4
-
-                                Container5_14 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.None
-                                    FillPortions: =0
-                                    Height: =Container5_8.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.Center
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =5
-                                    PaddingLeft: =15
-                                    PaddingRight: =15
-                                    PaddingTop: =5
-                                    Width: =Container5_8.Width
-                                    ZIndex: =5
-
-                                    lbl_ContractCreateDate_PCS_14 As label:
-                                        PaddingLeft: =0
-                                        PaddingRight: =0
-                                        Size: =10
-                                        Text: |-
-                                            ="Charges: "
-                                        Width: =Parent.Width*.4
-                                        ZIndex: =1
-
-                                    "DatePickerCanvas1_14 As 'Date picker'":
-                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
-                                        DisplayMode: =DisplayMode.Edit
-                                        FontColor: =
-                                        Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
-                                        Width: =Parent.Width*.9
-                                        X: =0
-                                        Y: =0
-                                        ZIndex: =3
-
-                                    Rectangle1_17 As rectangle:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =4
-
-                                Container5_16 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.None
-                                    FillPortions: =0
-                                    Height: =Container5_8.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.End
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =5
-                                    PaddingLeft: =15
-                                    PaddingRight: =15
-                                    PaddingTop: =5
-                                    Width: =Container5_8.Width
-                                    ZIndex: =6
-
-                                    lbl_ContractCreateDate_PCS_16 As label:
-                                        PaddingLeft: =0
-                                        PaddingRight: =0
-                                        Size: =10
-                                        Text: |-
-                                            ="Vendor Address: "
-                                        Width: =Parent.Width*.4
-                                        ZIndex: =1
-
-                                    "DatePickerCanvas1_16 As 'Date picker'":
-                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
-                                        DisplayMode: =DisplayMode.Edit
-                                        FontColor: =
-                                        Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
-                                        Width: =Parent.Width*.9
-                                        X: =0
-                                        Y: =0
-                                        ZIndex: =3
-
-                                    Rectangle1_18 As rectangle:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =4
-
-                                Container5_18 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.None
-                                    FillPortions: =0
-                                    Height: =Container5_8.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.End
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =5
-                                    PaddingLeft: =15
-                                    PaddingRight: =15
-                                    PaddingTop: =5
-                                    Width: =Container5_8.Width
-                                    ZIndex: =7
-
-                                    lbl_ContractCreateDate_PCS_18 As label:
-                                        PaddingLeft: =0
-                                        PaddingRight: =0
-                                        Size: =10
-                                        Text: |-
-                                            ="Customer Delarance Name: "
-                                        Width: =Parent.Width*.4
-                                        ZIndex: =1
-
-                                    "DatePickerCanvas1_18 As 'Date picker'":
-                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
-                                        DisplayMode: =DisplayMode.Edit
-                                        FontColor: =
-                                        Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
-                                        Width: =Parent.Width*.9
-                                        X: =0
-                                        Y: =0
-                                        ZIndex: =3
-
-                                    Rectangle1_19 As rectangle:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =4
-
-                                Container5_20 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.None
-                                    FillPortions: =0
-                                    Height: =Container5_8.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.End
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =5
-                                    PaddingLeft: =15
-                                    PaddingRight: =15
-                                    PaddingTop: =5
-                                    Width: =Container5_8.Width
-                                    ZIndex: =8
-
-                                    lbl_ContractCreateDate_PCS_20 As label:
-                                        PaddingLeft: =0
-                                        PaddingRight: =0
-                                        Size: =10
-                                        Text: |-
-                                            ="Customer Billing City: "
-                                        Width: =Parent.Width*.4
-                                        ZIndex: =1
-
-                                    "DatePickerCanvas1_20 As 'Date picker'":
-                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
-                                        DisplayMode: =DisplayMode.Edit
-                                        FontColor: =
-                                        Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
-                                        Width: =Parent.Width*.9
-                                        X: =0
-                                        Y: =0
-                                        ZIndex: =3
-
-                                    Rectangle1_20 As rectangle:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =4
-
-                                Container5_21 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.None
-                                    FillPortions: =0
-                                    Height: =Container5_8.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.End
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =5
-                                    PaddingLeft: =15
-                                    PaddingRight: =15
-                                    PaddingTop: =5
-                                    Width: =Container5_8.Width
-                                    ZIndex: =9
-
-                                    lbl_ContractCreateDate_PCS_21 As label:
-                                        PaddingLeft: =0
-                                        PaddingRight: =0
-                                        Size: =10
-                                        Text: |-
-                                            ="Customer Billing State: "
-                                        Width: =Parent.Width*.4
-                                        ZIndex: =1
-
-                                    "DatePickerCanvas1_21 As 'Date picker'":
-                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
-                                        DisplayMode: =DisplayMode.Edit
-                                        FontColor: =
-                                        Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
-                                        Width: =Parent.Width*.9
-                                        X: =0
-                                        Y: =0
-                                        ZIndex: =3
-
-                                    Rectangle1_21 As rectangle:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =5
-
-                                Container5_22 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.None
-                                    FillPortions: =0
-                                    Height: =Container5_8.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.Center
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =5
-                                    PaddingLeft: =15
-                                    PaddingRight: =15
-                                    PaddingTop: =5
-                                    Width: =Container5_8.Width
-                                    ZIndex: =10
-
-                                    lbl_ContractCreateDate_PCS_22 As label:
-                                        PaddingLeft: =0
-                                        PaddingRight: =0
-                                        Size: =10
-                                        Text: |-
-                                            ="Customer Billing Country: "
-                                        Width: =Parent.Width*.4
-                                        ZIndex: =1
-
-                                    "DatePickerCanvas1_22 As 'Date picker'":
-                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
-                                        DisplayMode: =DisplayMode.Edit
-                                        FontColor: =
-                                        Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
-                                        Width: =Parent.Width*.9
-                                        X: =0
-                                        Y: =0
-                                        ZIndex: =3
-
-                                    Rectangle1_22 As rectangle:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =5
-
-                                Container5_23 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.None
-                                    FillPortions: =0
-                                    Height: =Container5_8.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.End
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =5
-                                    PaddingLeft: =15
-                                    PaddingRight: =15
-                                    PaddingTop: =5
-                                    Width: =Container5_8.Width
-                                    ZIndex: =11
-
-                                    lbl_ContractCreateDate_PCS_23 As label:
-                                        PaddingLeft: =0
-                                        PaddingRight: =0
-                                        Size: =10
-                                        Text: |-
-                                            ="Pin Code: "
-                                        Width: =Parent.Width*.4
-                                        ZIndex: =1
-
-                                    "DatePickerCanvas1_23 As 'Date picker'":
-                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
-                                        DisplayMode: =DisplayMode.Edit
-                                        FontColor: =
-                                        Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
-                                        Width: =Parent.Width*.9
-                                        X: =0
-                                        Y: =0
-                                        ZIndex: =3
-
-                                    Rectangle1_23 As rectangle:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =5
-
-                                Container5_24 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.None
-                                    FillPortions: =0
-                                    Height: =Container5_8.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.End
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =5
-                                    PaddingLeft: =15
-                                    PaddingRight: =15
-                                    PaddingTop: =5
-                                    Width: =Container5_8.Width
-                                    ZIndex: =12
-
-                                    lbl_ContractCreateDate_PCS_24 As label:
-                                        PaddingLeft: =0
-                                        PaddingRight: =0
-                                        Size: =10
-                                        Text: |-
-                                            ="Client Contact Person Name: "
-                                        Width: =Parent.Width*.4
-                                        ZIndex: =1
-
-                                    "DatePickerCanvas1_24 As 'Date picker'":
-                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
-                                        DisplayMode: =DisplayMode.Edit
-                                        FontColor: =
-                                        Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
-                                        Width: =Parent.Width*.9
-                                        X: =0
-                                        Y: =0
-                                        ZIndex: =3
-
-                                    Rectangle1_24 As rectangle:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =5
-
-                                Container5_25 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.None
-                                    FillPortions: =0
-                                    Height: =Container5_8.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.End
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =5
-                                    PaddingLeft: =15
-                                    PaddingRight: =15
-                                    PaddingTop: =5
-                                    Width: =Container5_8.Width
-                                    ZIndex: =13
-
-                                    lbl_ContractCreateDate_PCS_25 As label:
-                                        PaddingLeft: =0
-                                        PaddingRight: =0
-                                        Size: =10
-                                        Text: |-
-                                            ="Contact Person Phone no: "
-                                        Width: =Parent.Width*.4
-                                        ZIndex: =1
-
-                                    "DatePickerCanvas1_25 As 'Date picker'":
-                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
-                                        DisplayMode: =DisplayMode.Edit
-                                        FontColor: =
-                                        Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
-                                        Width: =Parent.Width*.9
-                                        X: =0
-                                        Y: =0
-                                        ZIndex: =3
-
-                                    Rectangle1_25 As rectangle:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =5
-
-                                Container5_26 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.None
-                                    FillPortions: =0
-                                    Height: =Container5_8.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.End
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =5
-                                    PaddingLeft: =15
-                                    PaddingRight: =15
-                                    PaddingTop: =5
-                                    Width: =Container5_8.Width
-                                    ZIndex: =14
-
-                                    lbl_ContractCreateDate_PCS_26 As label:
-                                        PaddingLeft: =0
-                                        PaddingRight: =0
-                                        Size: =10
-                                        Text: |-
-                                            ="Contact Person Email: "
-                                        Width: =Parent.Width*.4
-                                        ZIndex: =1
-
-                                    "DatePickerCanvas1_26 As 'Date picker'":
-                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
-                                        DisplayMode: =DisplayMode.Edit
-                                        FontColor: =
-                                        Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
-                                        Width: =Parent.Width*.9
-                                        X: =0
-                                        Y: =0
-                                        ZIndex: =3
-
-                                    Rectangle1_26 As rectangle:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =5
-
-                                Container5_27 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.None
-                                    FillPortions: =0
-                                    Height: =Container5_8.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.End
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =5
-                                    PaddingLeft: =15
-                                    PaddingRight: =15
-                                    PaddingTop: =5
-                                    Width: =Container5_8.Width
-                                    ZIndex: =15
-
-                                    lbl_ContractCreateDate_PCS_27 As label:
-                                        PaddingLeft: =0
-                                        PaddingRight: =0
-                                        Size: =10
-                                        Text: |-
-                                            ="Customer Invoice Name: "
-                                        Width: =Parent.Width*.4
-                                        ZIndex: =1
-
-                                    "DatePickerCanvas1_27 As 'Date picker'":
-                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
-                                        DisplayMode: =DisplayMode.Edit
-                                        FontColor: =
-                                        Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
-                                        Width: =Parent.Width*.9
-                                        X: =0
-                                        Y: =0
-                                        ZIndex: =3
-
-                                    Rectangle1_27 As rectangle:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =5
-
-                                Container5_28 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.None
-                                    FillPortions: =0
-                                    Height: =Container5_8.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.End
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =5
-                                    PaddingLeft: =15
-                                    PaddingRight: =15
-                                    PaddingTop: =5
-                                    Width: =Container5_8.Width
-                                    ZIndex: =16
-
-                                    lbl_ContractCreateDate_PCS_28 As label:
-                                        PaddingLeft: =0
-                                        PaddingRight: =0
-                                        Size: =10
-                                        Text: |-
-                                            ="Customer Invoice City: "
-                                        Width: =Parent.Width*.4
-                                        ZIndex: =1
-
-                                    "DatePickerCanvas1_28 As 'Date picker'":
-                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
-                                        DisplayMode: =DisplayMode.Edit
-                                        FontColor: =
-                                        Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
-                                        Width: =Parent.Width*.9
-                                        X: =0
-                                        Y: =0
-                                        ZIndex: =3
-
-                                    Rectangle1_28 As rectangle:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =5
-
-                                Container5_29 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.None
-                                    FillPortions: =0
-                                    Height: =Container5_8.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.End
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =5
-                                    PaddingLeft: =15
-                                    PaddingRight: =15
-                                    PaddingTop: =5
-                                    Width: =Container5_8.Width
-                                    ZIndex: =17
-
-                                    lbl_ContractCreateDate_PCS_29 As label:
-                                        PaddingLeft: =0
-                                        PaddingRight: =0
-                                        Size: =10
-                                        Text: |-
-                                            ="Customer Invoice State: "
-                                        Width: =Parent.Width*.4
-                                        ZIndex: =1
-
-                                    "DatePickerCanvas1_29 As 'Date picker'":
-                                        BasePaletteColor: =RGBA(227, 106, 244, 1)
-                                        DisplayMode: =DisplayMode.Edit
-                                        FontColor: =
-                                        Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
-                                        Width: =Parent.Width*.9
-                                        X: =0
-                                        Y: =0
-                                        ZIndex: =3
-
-                                    Rectangle1_29 As rectangle:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(214, 221, 224, 1)
-                                        Height: =1
-                                        Width: =Parent.Width*.95
-                                        ZIndex: =5
-
                                 Container5_6 As groupContainer.verticalAutoLayoutContainer:
                                     AlignInContainer: =AlignInContainer.Center
                                     FillPortions: =0
@@ -1304,6 +577,867 @@
                                             ZIndex: =1
 
                                     TextInput1_10 As text:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        BorderColor: =RGBA(255, 255, 255, 1)
+                                        BorderThickness: =0
+                                        Default: =""
+                                        Fill: =VarFieldColor
+                                        Height: =30
+                                        HintText: ="Enter WITNESS VENDOR BY ..."
+                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                        HoverFill: =VarFieldColor
+                                        Size: =10
+                                        Width: =Parent.Width*.97
+                                        ZIndex: =2
+
+                                Container5_19 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =Container5.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Width: =Container5.Width
+                                    ZIndex: =32
+
+                                    Container1_12 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_ContractCreateDate_PCS_32 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="CUSTOMER INVOICE STATE : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
+                                    TextInput1_11 As text:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        BorderColor: =RGBA(255, 255, 255, 1)
+                                        BorderThickness: =0
+                                        Default: =""
+                                        Fill: =VarFieldColor
+                                        Height: =30
+                                        HintText: ="Enter WITNESS VENDOR BY ..."
+                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                        HoverFill: =VarFieldColor
+                                        Size: =10
+                                        Width: =Parent.Width*.97
+                                        ZIndex: =2
+
+                                Container5_27 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =Container5.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Width: =Container5.Width
+                                    ZIndex: =33
+
+                                    Container1_13 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_ContractCreateDate_PCS_33 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="CUSTOMER INVOICE CITY : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
+                                    TextInput1_12 As text:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        BorderColor: =RGBA(255, 255, 255, 1)
+                                        BorderThickness: =0
+                                        Default: =""
+                                        Fill: =VarFieldColor
+                                        Height: =30
+                                        HintText: ="Enter WITNESS VENDOR BY ..."
+                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                        HoverFill: =VarFieldColor
+                                        Size: =10
+                                        Width: =Parent.Width*.97
+                                        ZIndex: =2
+
+                                Container5_28 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =Container5.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Width: =Container5.Width
+                                    ZIndex: =34
+
+                                    Container1_14 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_ContractCreateDate_PCS_34 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="CUSTOMER INVOICE NAME : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
+                                    TextInput1_13 As text:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        BorderColor: =RGBA(255, 255, 255, 1)
+                                        BorderThickness: =0
+                                        Default: =""
+                                        Fill: =VarFieldColor
+                                        Height: =30
+                                        HintText: ="Enter WITNESS VENDOR BY ..."
+                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                        HoverFill: =VarFieldColor
+                                        Size: =10
+                                        Width: =Parent.Width*.97
+                                        ZIndex: =2
+
+                                Container5_24 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =Container5.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Width: =Container5.Width
+                                    ZIndex: =35
+
+                                    Container1_15 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_ContractCreateDate_PCS_35 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="CUSTOMER CONTACT PERSON EMAIL : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
+                                    TextInput1_14 As text:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        BorderColor: =RGBA(255, 255, 255, 1)
+                                        BorderThickness: =0
+                                        Default: =""
+                                        Fill: =VarFieldColor
+                                        Height: =30
+                                        HintText: ="Enter WITNESS VENDOR BY ..."
+                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                        HoverFill: =VarFieldColor
+                                        Size: =10
+                                        Width: =Parent.Width*.97
+                                        ZIndex: =2
+
+                                Container5_25 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =Container5.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Width: =Container5.Width
+                                    ZIndex: =36
+
+                                    Container1_16 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_ContractCreateDate_PCS_36 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="CUSTOMER CONTACT PERSON PHONE NO: "
+                                            Width: =Parent.Width*.45
+                                            ZIndex: =1
+
+                                    TextInput1_15 As text:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        BorderColor: =RGBA(255, 255, 255, 1)
+                                        BorderThickness: =0
+                                        Default: =""
+                                        Fill: =VarFieldColor
+                                        Height: =30
+                                        HintText: ="Enter WITNESS VENDOR BY ..."
+                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                        HoverFill: =VarFieldColor
+                                        Size: =10
+                                        Width: =Parent.Width*.97
+                                        ZIndex: =2
+
+                                Container5_26 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =Container5.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Width: =Container5.Width
+                                    ZIndex: =37
+
+                                    Container1_17 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_ContractCreateDate_PCS_37 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="CUSTOMER CONTACT PERSON NAME : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
+                                    TextInput1_16 As text:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        BorderColor: =RGBA(255, 255, 255, 1)
+                                        BorderThickness: =0
+                                        Default: =""
+                                        Fill: =VarFieldColor
+                                        Height: =30
+                                        HintText: ="Enter WITNESS VENDOR BY ..."
+                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                        HoverFill: =VarFieldColor
+                                        Size: =10
+                                        Width: =Parent.Width*.97
+                                        ZIndex: =2
+
+                                Container5_29 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =Container5.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Width: =Container5.Width
+                                    ZIndex: =38
+
+                                    Container1_18 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_ContractCreateDate_PCS_38 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="PIN CODE : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
+                                    TextInput1_17 As text:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        BorderColor: =RGBA(255, 255, 255, 1)
+                                        BorderThickness: =0
+                                        Default: =""
+                                        Fill: =VarFieldColor
+                                        Height: =30
+                                        HintText: ="Enter WITNESS VENDOR BY ..."
+                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                        HoverFill: =VarFieldColor
+                                        Size: =10
+                                        Width: =Parent.Width*.97
+                                        ZIndex: =2
+
+                                Container5_30 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =Container5.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Width: =Container5.Width
+                                    ZIndex: =39
+
+                                    Container1_19 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_ContractCreateDate_PCS_39 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="CUSTOMER BILLING STATE : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
+                                    TextInput1_18 As text:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        BorderColor: =RGBA(255, 255, 255, 1)
+                                        BorderThickness: =0
+                                        Default: =""
+                                        Fill: =VarFieldColor
+                                        Height: =30
+                                        HintText: ="Enter WITNESS VENDOR BY ..."
+                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                        HoverFill: =VarFieldColor
+                                        Size: =10
+                                        Width: =Parent.Width*.97
+                                        ZIndex: =2
+
+                                Container5_31 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =Container5.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Width: =Container5.Width
+                                    ZIndex: =40
+
+                                    Container1_20 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_ContractCreateDate_PCS_40 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="CUSTOMER BILLING COUNTRY : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
+                                    TextInput1_19 As text:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        BorderColor: =RGBA(255, 255, 255, 1)
+                                        BorderThickness: =0
+                                        Default: =""
+                                        Fill: =VarFieldColor
+                                        Height: =30
+                                        HintText: ="Enter WITNESS VENDOR BY ..."
+                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                        HoverFill: =VarFieldColor
+                                        Size: =10
+                                        Width: =Parent.Width*.97
+                                        ZIndex: =2
+
+                                Container5_32 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =Container5.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Width: =Container5.Width
+                                    ZIndex: =41
+
+                                    Container1_21 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_ContractCreateDate_PCS_41 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="VENDOR ADDRESS : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
+                                    TextInput1_20 As text:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        BorderColor: =RGBA(255, 255, 255, 1)
+                                        BorderThickness: =0
+                                        Default: =""
+                                        Fill: =VarFieldColor
+                                        Height: =30
+                                        HintText: ="Enter WITNESS VENDOR BY ..."
+                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                        HoverFill: =VarFieldColor
+                                        Size: =10
+                                        Width: =Parent.Width*.97
+                                        ZIndex: =2
+
+                                Container5_33 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =Container5.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Width: =Container5.Width
+                                    ZIndex: =42
+
+                                    Container1_22 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_ContractCreateDate_PCS_42 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="CUSTOMER DELARANCE NAME : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
+                                    TextInput1_21 As text:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        BorderColor: =RGBA(255, 255, 255, 1)
+                                        BorderThickness: =0
+                                        Default: =""
+                                        Fill: =VarFieldColor
+                                        Height: =30
+                                        HintText: ="Enter WITNESS VENDOR BY ..."
+                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                        HoverFill: =VarFieldColor
+                                        Size: =10
+                                        Width: =Parent.Width*.97
+                                        ZIndex: =2
+
+                                Container5_34 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =Container5.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Width: =Container5.Width
+                                    ZIndex: =43
+
+                                    Container1_23 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_ContractCreateDate_PCS_43 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="CUSTOMER BILLING CITY : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
+                                    TextInput1_22 As text:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        BorderColor: =RGBA(255, 255, 255, 1)
+                                        BorderThickness: =0
+                                        Default: =""
+                                        Fill: =VarFieldColor
+                                        Height: =30
+                                        HintText: ="Enter WITNESS VENDOR BY ..."
+                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                        HoverFill: =VarFieldColor
+                                        Size: =10
+                                        Width: =Parent.Width*.97
+                                        ZIndex: =2
+
+                                Container5_35 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =Container5.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Width: =Container5.Width
+                                    ZIndex: =44
+
+                                    Container1_24 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_ContractCreateDate_PCS_44 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="CHARGES : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
+                                    TextInput1_23 As text:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        BorderColor: =RGBA(255, 255, 255, 1)
+                                        BorderThickness: =0
+                                        Default: =""
+                                        Fill: =VarFieldColor
+                                        Height: =30
+                                        HintText: ="Enter WITNESS VENDOR BY ..."
+                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                        HoverFill: =VarFieldColor
+                                        Size: =10
+                                        Width: =Parent.Width*.97
+                                        ZIndex: =2
+
+                                Container5_36 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =Container5.Height
+                                    LayoutAlignItems: =LayoutAlignItems.Center
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Width: =Container5.Width
+                                    ZIndex: =45
+
+                                    Container1_25 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.SetByContainer
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_ContractCreateDate_PCS_45 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="WITNESS VENDOR DATE : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
+                                    "DatePickerCanvas2 As 'Date picker'":
+                                        DisplayMode: =DisplayMode.Edit
+                                        Height: =32
+                                        LayoutMinHeight: =32
+                                        LayoutMinWidth: =320
+                                        Width: =Parent.Width*.97
+                                        X: =0
+                                        Y: =0
+                                        ZIndex: =2
+
+                                Container5_37 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =Container5.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Width: =Container5.Width
+                                    ZIndex: =46
+
+                                    Container1_26 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_ContractCreateDate_PCS_46 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="WITNES VENDOR TITILE: "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
+                                    TextInput1_24 As text:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        BorderColor: =RGBA(255, 255, 255, 1)
+                                        BorderThickness: =0
+                                        Default: =""
+                                        Fill: =VarFieldColor
+                                        Height: =30
+                                        HintText: ="Enter WITNESS VENDOR BY ..."
+                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                        HoverFill: =VarFieldColor
+                                        Size: =10
+                                        Width: =Parent.Width*.97
+                                        ZIndex: =2
+
+                                Container5_38 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =Container5.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Width: =Container5.Width
+                                    ZIndex: =47
+
+                                    Container1_27 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_ContractCreateDate_PCS_47 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="WITNESS VENDOR BY  : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
+                                    TextInput1_25 As text:
                                         AlignInContainer: =AlignInContainer.Center
                                         BorderColor: =RGBA(255, 255, 255, 1)
                                         BorderThickness: =0
