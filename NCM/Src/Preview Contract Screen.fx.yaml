@@ -139,7 +139,7 @@
                             BorderThickness: =0
                             DisplayMode: =DisplayMode.Edit
                             Fill: =RGBA(0, 0, 0, 0)
-                            Height: =If(VarShowMoreFileds,Parent.Height*7.2,Parent.Height)
+                            Height: =If(VarShowMoreFileds,Parent.Height*7.12,Parent.Height)
                             Width: =Parent.Width
                             X: =0
                             Y: =0
@@ -1459,7 +1459,6 @@
                                 LayoutAlignItems: =LayoutAlignItems.Center
                                 LayoutDirection: =LayoutDirection.Vertical
                                 LayoutGap: =5
-                                LayoutJustifyContent: =LayoutJustifyContent.End
                                 LayoutMode: =LayoutMode.Auto
                                 PaddingBottom: =7
                                 PaddingRight: =8
@@ -1470,7 +1469,7 @@
                                 Container5 As groupContainer.verticalAutoLayoutContainer:
                                     AlignInContainer: =AlignInContainer.SetByContainer
                                     FillPortions: =0
-                                    Height: =Parent.Height*.23
+                                    Height: =Parent.Height*.289
                                     LayoutDirection: =LayoutDirection.Vertical
                                     LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                                     LayoutMinHeight: =100
@@ -1688,10 +1687,10 @@
                                 FontWeight: =FontWeight.Bold
                                 Height: =20
                                 OnSelect: =Set(VarShowMoreFileds,!VarShowMoreFileds)
+                                PaddingBottom: =0
                                 PaddingLeft: =15
                                 Size: =8
                                 Text: =If(VarShowMoreFileds,"Show Less...","Show More...")
-                                X: =40
                                 Y: =Parent.Height-Self.Height
                                 ZIndex: =3
 
