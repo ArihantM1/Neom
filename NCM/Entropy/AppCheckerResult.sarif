@@ -1974,66 +1974,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_PreviewContract_PCS.con_UserAgreementPreview_PCS.cvs_UserAgreementPreview_PCS.dtc_UserAgreementPreview_PCS.dtc_UserAgreementPreviewin_PCS.con_PreviewFiled_PCS.Gallery1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_PreviewContract_PCS.con_UserAgreementPreview_PCS.cvs_UserAgreementPreview_PCS.dtc_UserAgreementPreview_PCS.dtc_UserAgreementPreviewin_PCS.con_PreviewFiled_PCS.Gallery1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Preview Contract Screen",
-                "type": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_PreviewContract_PCS.con_UserAgreementPreview_PCS.cvs_UserAgreementPreview_PCS.dtc_UserAgreementPreview_PCS.dtc_UserAgreementPreviewin_PCS.con_PreviewFiled_PCS.Gallery1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_PreviewContract_PCS.con_UserAgreementPreview_PCS.cvs_UserAgreementPreview_PCS.dtc_UserAgreementPreview_PCS.dtc_UserAgreementPreviewin_PCS.con_PreviewFiled_PCS.Gallery1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_PreviewContract_PCS.con_UserAgreementPreview_PCS.cvs_UserAgreementPreview_PCS.dtc_UserAgreementPreview_PCS.dtc_UserAgreementPreviewin_PCS.con_PreviewFiled_PCS.Gallery1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Preview Contract Screen",
-                "type": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_PreviewContract_PCS.con_UserAgreementPreview_PCS.cvs_UserAgreementPreview_PCS.dtc_UserAgreementPreview_PCS.dtc_UserAgreementPreviewin_PCS.con_PreviewFiled_PCS.Gallery1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Create Contract Screen'.con_horizonatal_Main_CCS.con_Vertical_Main_CCS.con_Radiooption_CCS.Radio1.AccessibleLabel"
                 }
               ],
