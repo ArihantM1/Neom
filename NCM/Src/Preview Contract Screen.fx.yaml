@@ -1334,7 +1334,9 @@
                                             ZIndex: =1
 
                                     "DatePickerCanvas2 As 'Date picker'":
+                                        BasePaletteColor: =
                                         DisplayMode: =DisplayMode.Edit
+                                        FontColor: =
                                         Height: =32
                                         LayoutMinHeight: =32
                                         LayoutMinWidth: =320
@@ -1451,22 +1453,9 @@
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
 
-                                Label3 As label:
-                                    AlignInContainer: =AlignInContainer.Start
-                                    Color: =RGBA(40, 134, 222, 1)
-                                    FontWeight: =FontWeight.Bold
-                                    Height: =20
-                                    OnSelect: =Set(VarShowMoreFileds,!VarShowMoreFileds)
-                                    PaddingLeft: =15
-                                    Size: =8
-                                    Text: =If(VarShowMoreFileds,"Show Less...","Show More...")
-                                    X: =5
-                                    Y: =Parent.Height-Self.Height
-                                    ZIndex: =48
-
                             con_inputFieldmain_PCS As groupContainer.verticalAutoLayoutContainer:
                                 DropShadow: =DropShadow.None
-                                Height: =If(VarShowMoreFileds,Parent.Height*.131,Parent.Height)
+                                Height: =If(VarShowMoreFileds,Parent.Height*.124,Parent.Height)
                                 LayoutAlignItems: =LayoutAlignItems.Center
                                 LayoutDirection: =LayoutDirection.Vertical
                                 LayoutGap: =5
@@ -1693,6 +1682,18 @@
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
+
+                            Label3 As label:
+                                Color: =RGBA(40, 134, 222, 1)
+                                FontWeight: =FontWeight.Bold
+                                Height: =20
+                                OnSelect: =Set(VarShowMoreFileds,!VarShowMoreFileds)
+                                PaddingLeft: =15
+                                Size: =8
+                                Text: =If(VarShowMoreFileds,"Show Less...","Show More...")
+                                X: =40
+                                Y: =Parent.Height-Self.Height
+                                ZIndex: =3
 
                 con_PreviewContract_PCS As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
