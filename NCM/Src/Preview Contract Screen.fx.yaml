@@ -1946,7 +1946,7 @@
         Fill: =RGBA(0, 0, 0, 0.5)
         Height: =dtc_UserAgreementPreviewin_PCS.Height
         Width: =dtc_UserAgreementPreviewin_PCS.Width
-        X: =771
+        X: =Parent.Width-Self.Width-20
         Y: =159
         ZIndex: =12
 
