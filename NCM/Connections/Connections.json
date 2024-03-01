@@ -8,8 +8,14 @@
     "datasets": {
       "https://xebiagroup.sharepoint.com/sites/PowerAppsDemo": {
         "dataSources": {
+          "CM_Client_Contract": {
+            "tableName": "0ba33543-7f10-4f07-a454-4311de52ff60"
+          },
           "CM_ClientData": {
             "tableName": "850e47f3-c5e3-4adc-971d-eb2ec6932d8d"
+          },
+          "CM_COC_Summary": {
+            "tableName": "27f103e4-5bb2-4eeb-8fe9-b6b1ea069c59"
           },
           "CM_ContractDetails": {
             "tableName": "724aa805-f665-4f7b-a79e-5c00c83c211f"
@@ -19,6 +25,9 @@
           },
           "CM_Services": {
             "tableName": "6dbb5b16-a766-4d7a-a4e9-0a481df4e7dd"
+          },
+          "CM_VENDOR": {
+            "tableName": "22d5c57d-e58c-4ff0-a507-a1db6cc55c86"
           },
           "Documents": {
             "tableName": "9c9881e3-6953-4aa5-bd63-ec273fd77346"
@@ -31,7 +40,10 @@
       "CM_Service_Types",
       "CM_ClientData",
       "CM_Services",
-      "Documents"
+      "Documents",
+      "CM_Client_Contract",
+      "CM_COC_Summary",
+      "CM_VENDOR"
     ],
     "dependencies": {},
     "dependents": [],
