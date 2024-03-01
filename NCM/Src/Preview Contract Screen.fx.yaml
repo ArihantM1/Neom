@@ -139,7 +139,7 @@
                             BorderThickness: =0
                             DisplayMode: =DisplayMode.Edit
                             Fill: =RGBA(0, 0, 0, 0)
-                            Height: =If(VarShowMoreFileds,Parent.Height*7.4,Parent.Height)
+                            Height: =If(VarShowMoreFileds,Parent.Height*7.4,Parent.Height+20)
                             Width: =Parent.Width
                             X: =0
                             Y: =0
@@ -1459,8 +1459,9 @@
                                 LayoutAlignItems: =LayoutAlignItems.Center
                                 LayoutDirection: =LayoutDirection.Vertical
                                 LayoutGap: =5
+                                LayoutJustifyContent: =LayoutJustifyContent.End
                                 LayoutMode: =LayoutMode.Auto
-                                PaddingBottom: =7
+                                PaddingBottom: =17
                                 PaddingRight: =8
                                 PaddingTop: =7
                                 Width: =Parent.Width
@@ -1469,7 +1470,7 @@
                                 Container5 As groupContainer.verticalAutoLayoutContainer:
                                     AlignInContainer: =AlignInContainer.SetByContainer
                                     FillPortions: =0
-                                    Height: =Parent.Height*.238
+                                    Height: =Parent.Height*.22
                                     LayoutDirection: =LayoutDirection.Vertical
                                     LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                                     LayoutMinHeight: =100
