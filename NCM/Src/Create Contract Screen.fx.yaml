@@ -673,8 +673,6 @@
                     OnSelect: |-
                         =If(
                             IsBlank(ContractData),
-                            
-                                ContractData,
                                Set(VarContractDetailsPatch,
                                 Patch(
                                     CM_ContractDetails,

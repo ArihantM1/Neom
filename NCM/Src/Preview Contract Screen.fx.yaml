@@ -1907,7 +1907,7 @@
                         =Patch(
                             CM_Client_Contract,Defaults(CM_Client_Contract),
                             {
-                                Contract_Id: ,
+                                Contract_Id:{Id:VarContractDetailsPatch.ID,Value:VarContractDetailsPatch.ID},
                                 Notice_Client_Address:txt_CustomerNoticeAddress_PCS.Text,
                                 Notice_Client_Attention:TextInput1_2.Text,
                                 Witness_Vendor_By: TextInput1_3.Text,
@@ -1916,15 +1916,15 @@
                                 Client_Bank_MIRC_No:TextInput1_6.Text,
                                 Client_Bank_Account_No:TextInput1_7.Text,
                                 Client_Invoice_Country:TextInput1_8.Text,
-                                Client_Invoice_PinNo:TextInput1_9,
+                                Client_Invoice_PinNo:Value(TextInput1_9.Text),
                                 Client_Bank_Name:TextInput1_10.Text,
                                 Client_Invoice_State:TextInput1_11.Text,
                                 Client_Invoice_City:TextInput1_12.Text,
                                 Client_Invoice_Name:TextInput1_13.Text,
                                 Client_Contact_Person_Email:TextInput1_14.Text,
-                                Client_Contact_Person_PhoneNo:TextInput1_15,
+                                Client_Contact_Person_PhoneNo:Value(TextInput1_15.Text),
                                 Client_Contact_Person_name:TextInput1_16.Text,
-                                PIN_CODE:TextInput1_17,
+                                PIN_CODE:Value(TextInput1_17.Text),
                                 Client_Billing_State:TextInput1_18.Text,
                                 Client_Billing_Country:TextInput1_19.Text, 
                                 Client_Delarance_Name:TextInput1_21.Text,
@@ -1941,7 +1941,7 @@
                         
                                 Contract_CreatedOn: dtp_ContractCreationDate_PCS.SelectedDate,
                                 Contract_Created_Location:txt_con_ContractCity_PCS.Text,
-                                Contract_Charges: TextInput1_23
+                                Contract_Charges: Value(TextInput1_23.Text)
                                
                             }
                         );
@@ -1949,7 +1949,7 @@
                             CM_VENDOR,Defaults(CM_VENDOR),
                             {
                         
-                               Vendor_Contact_Number: TextInput1_26,
+                               Vendor_Contact_Number: Value(TextInput1_26.Text),
                                Vendor_Email:TextInput1_27.Text,
                                Vendor_Address:TextInput1_20.Text
                                
