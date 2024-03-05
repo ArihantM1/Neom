@@ -1907,6 +1907,7 @@
                         =Patch(
                             CM_Client_Contract,Defaults(CM_Client_Contract),
                             {
+                                
                                 Notice_Client_Address:txt_CustomerNoticeAddress_PCS.Text,
                                 Notice_Client_Attention:TextInput1_2.Text,
                                 Witness_Vendor_By: TextInput1_3.Text,

@@ -742,6 +742,8 @@
                                 }
                             )
                         );
+                        Refresh( CM_ContractDetails);
+                        Set(firstFormID,Last( CM_ContractDetails).ID);
                         /*If(
                             Radio1.Selected.Value = "Create new",
                             Set(
