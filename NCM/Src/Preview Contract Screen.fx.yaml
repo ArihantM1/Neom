@@ -147,7 +147,7 @@
 
                             con_inputFieldmain_PCS_1 As groupContainer.verticalAutoLayoutContainer:
                                 DropShadow: =DropShadow.None
-                                Height: =Parent.Height-con_inputFieldmain_PCS.Height-40
+                                Height: =Parent.Height-con_inputFieldmain_PCS.Height-15
                                 LayoutAlignItems: =LayoutAlignItems.Center
                                 LayoutDirection: =LayoutDirection.Vertical
                                 LayoutGap: =8
@@ -1453,6 +1453,114 @@
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
 
+                                Container5_39 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =con_ContractCreationDate_PCS.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Width: =con_ContractCreationDate_PCS.Width
+                                    ZIndex: =48
+
+                                    Container1_28 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_ContractCreateDate_PCS_48 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="VENDOR CONTACT NO  : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
+                                    TextInput1_26 As text:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        BorderColor: =RGBA(255, 255, 255, 1)
+                                        BorderThickness: =0
+                                        Default: =""
+                                        Fill: =VarFieldColor
+                                        Height: =30
+                                        HintText: ="Enter WITNESS VENDOR BY ..."
+                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                        HoverFill: =VarFieldColor
+                                        Size: =10
+                                        Width: =Parent.Width*.97
+                                        ZIndex: =2
+
+                                Container5_40 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =con_ContractCreationDate_PCS.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Width: =con_ContractCreationDate_PCS.Width
+                                    ZIndex: =49
+
+                                    Container1_29 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_ContractCreateDate_PCS_49 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="VENDOR CONTACT NO  : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
+                                    TextInput1_27 As text:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        BorderColor: =RGBA(255, 255, 255, 1)
+                                        BorderThickness: =0
+                                        Default: =""
+                                        Fill: =VarFieldColor
+                                        Height: =30
+                                        HintText: ="Enter WITNESS VENDOR BY ..."
+                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                        HoverFill: =VarFieldColor
+                                        Size: =10
+                                        Width: =Parent.Width*.97
+                                        ZIndex: =2
+
                             con_inputFieldmain_PCS As groupContainer.verticalAutoLayoutContainer:
                                 DropShadow: =DropShadow.None
                                 Height: =If(VarShowMoreFileds,Parent.Height*.139,Parent.Height)
@@ -1821,8 +1929,8 @@
                                 Client_Delarance_Name:TextInput1_21.Text,
                                 Client_Billing_City:TextInput1_22.Text,
                                 'Witness Vendor Date':DatePickerCanvas2.SelectedDate,
-                                Witness_Vendor_Title:TextInput1_24.Text,
-                                Witness_Vendor_By:TextInput1_25    
+                                Witness_Vendor_Title:TextInput1_24.Text
+                                //,Witness_Vendor_By:TextInput1_25 .Text  
                                
                             }
                         );
