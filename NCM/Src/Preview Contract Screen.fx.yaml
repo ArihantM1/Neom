@@ -2026,8 +2026,8 @@
             BorderStyle: =BorderStyle.None
             DisplayMode: =DisplayMode.View
             Fill: =RGBA(107, 29, 94, 1)
-            Height: =2
-            Width: =75
+            Height: =3
+            Width: =con_EditAndPreviewMain_PCS.X-shp_CircleDocuments_PCS.Width-shp_CircleDocuments_PCS.X-Parent.Width*0.01
             X: =122
             Y: =159
             ZIndex: =5
