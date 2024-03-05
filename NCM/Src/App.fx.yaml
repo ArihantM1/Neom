@@ -1,6 +1,6 @@
 App As appinfo:
     BackEnabled: =true
-    OnStart: |
+    OnStart: |+
         =ClearCollect(
             NavBar,
             Table(
@@ -73,7 +73,9 @@ App As appinfo:
             )
         );
         Set(VarShowMoreFileds,false);
-        Set(VarFieldColor,RGBA(245,245,245,1))
+        Set(VarFieldColor,RGBA(245,245,245,1));
+        Set(VarFindText,Blank())
+        
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
