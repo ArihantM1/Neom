@@ -1799,10 +1799,44 @@
                         =Patch(
                             CM_Client_Contract,Defaults(CM_Client_Contract),
                             {
-                                
+                                Notice_Client_Address:txt_CustomerNoticeAddress_PCS.Text,
+                                Notice_Client_Attention:TextInput1_2.Text,
+                                Witness_Vendor_By: TextInput1_3.Text,
+                                Client_Bank_Branch_Address:TextInput1_4.Text,
+                                'Client_Bank IFSC Code':TextInput1_5.Text,
+                                Client_Bank_MIRC_No:TextInput1_6.Text,
+                                Client_Bank_Account_No:TextInput1_7.Text,
+                                Client_Invoice_Country:TextInput1_8.Text,
+                                Client_Invoice_PinNo:TextInput1_9,
+                                Client_Bank_Name:TextInput1_10.Text,
+                                Client_Invoice_State:TextInput1_11.Text,
+                                Client_Invoice_City:TextInput1_12.Text,
+                                Client_Invoice_Name:TextInput1_13.Text,
+                                Client_Contact_Person_Email:TextInput1_14.Text,
+                                Client_Contact_Person_PhoneNo:TextInput1_15,
+                                Client_Contact_Person_name:TextInput1_16.Text,
+                                PIN_CODE:TextInput1_17,
+                                Client_Billing_State:TextInput1_18.Text,
+                                Client_Billing_Country:TextInput1_19.Text, 
+                                Client_Delarance_Name:TextInput1_21.Text,
+                                Client_Billing_City:TextInput1_22.Text,
+                                'Witness Vendor Date':DatePickerCanvas2.SelectedDate,
+                                Witness_Vendor_Title:TextInput1_24.Text,
+                                Witness_Vendor_By:TextInput1_25    
                                
                             }
                         );
+                        Patch(
+                            CM_ContractDetails,Defaults(CM_ContractDetails),
+                            {
+                        
+                                Contract_CreatedOn: dtp_ContractCreationDate_PCS.SelectedDate,
+                                Contract_Created_Location:txt_con_ContractCity_PCS.Text,
+                                Contract_Charges: TextInput1_23
+                               
+                            }
+                        );
+                        
                         Reset(drp_ServiceType_CCS);
                         Reset(drp_Client_CCS);
                         Reset(drp_Services_CCS);
