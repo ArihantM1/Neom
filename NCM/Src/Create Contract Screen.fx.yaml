@@ -673,8 +673,9 @@
                     OnSelect: |-
                         =If(
                             IsBlank(ContractData),
-                            Set(
+                            
                                 ContractData,
+                               Set(VarContractDetailsPatch,
                                 Patch(
                                     CM_ContractDetails,
                                     Defaults(CM_ContractDetails),
@@ -707,9 +708,11 @@
                                         Country: {Value: drp_Country_CCS.SelectedText.Value}
                                     }
                                 )
-                            );
+                               )
+                            
                             ,
-                            Patch(
+                            
+                           Set(VarContractDetailsPatch, Patch(
                                 CM_ContractDetails,
                                 {ID: ContractData.ID},
                                 {
@@ -740,10 +743,11 @@
                                     ).Name,
                                     Country: {Value: drp_Country_CCS.SelectedText.Value}
                                 }
-                            )
+                            ))
+                            
                         );
-                        Refresh( CM_ContractDetails);
-                        Set(firstFormID,Last( CM_ContractDetails).ID);
+                        Refresh(CM_ContractDetails);
+                        Set(firstFormID,Last(CM_ContractDetails).ID);
                         /*If(
                             Radio1.Selected.Value = "Create new",
                             Set(
