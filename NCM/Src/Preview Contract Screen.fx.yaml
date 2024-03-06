@@ -1970,7 +1970,7 @@
                         Reset(dte_EndDate_CCS);
                         Reset(Radio1);
                         Navigate('Home Screen');
-                        CM_PDFSummaryFlow.Run(VarContractDetailsPatch.ID)
+                        CM_PDFSummaryFlow.Run(firstFormID)
                     Size: =10
                     Text: ="Create"
                     Width: =Parent.Width*.07
