@@ -69,6 +69,15 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "040f5609-d9b0-405a-b5f2-ed0b3d441770": {
+          "value": "shared_onedriveforbusiness"
+        },
+        "d695dfbc-4db7-4aef-9dc0-9f5cc61a37c5": {
+          "value": "shared_wordonlinebusiness"
+        },
+        "ef27b844-23b6-4bd7-9094-f27f7f7fb679": {
+          "value": "shared_sharepointonline"
+        },
         "workflowDisplayName": {
           "value": "CM_PDF Summary Flow"
         },
@@ -80,6 +89,15 @@
         }
       },
       "parameterHintsV2": {
+        "shared_onedriveforbusiness": {
+          "value": "040f5609-d9b0-405a-b5f2-ed0b3d441770"
+        },
+        "shared_sharepointonline": {
+          "value": "ef27b844-23b6-4bd7-9094-f27f7f7fb679"
+        },
+        "shared_wordonlinebusiness": {
+          "value": "d695dfbc-4db7-4aef-9dc0-9f5cc61a37c5"
+        },
         "workflowDisplayName": {
           "value": "CM_PDF Summary Flow"
         },
