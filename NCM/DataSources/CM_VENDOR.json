@@ -28,6 +28,7 @@
       "ComplianceAssetId": "Compliance Asset Id",
       "Contract_Id": "Contract_Id",
       "Contract_Id#Id": "Contract_Id Id",
+      "contract_ID_FK": "contract_ID_FK",
       "Created": "Created",
       "Editor": "Modified By",
       "Editor#Claims": "Modified By Claims",

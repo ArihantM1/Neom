@@ -125,7 +125,9 @@
         ZIndex: =3
 
     ButtonCanvas1 As Button:
+        BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
+        FontColor: =
         Height: =32
         OnSelect: =ClearCollect(colTest,CM_Client_Contract)
         Width: =96
