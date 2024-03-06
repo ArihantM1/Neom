@@ -76,7 +76,8 @@ App As appinfo:
         Set(VarFieldColor,RGBA(245,245,245,1));
         Set(VarFindText,Blank());
         Set(VarfirstFormID,0);
-        Set(VarContractDetailsPatch,Blank())
+        Set(VarContractDetailsPatch,Blank());
+        Set(VarGetPDFID,Blank());
         
         
     Theme: =PowerAppsTheme

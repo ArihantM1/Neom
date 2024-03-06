@@ -284,6 +284,7 @@
         Color: =RGBA(107, 29, 94, 1)
         Height: =30
         Icon: =Icon.Download
+        OnSelect: =Download(PdfViewer1)
         Tooltip: ="Export Contract"
         Width: =30
         X: =con_ContractDownloadDetails_CSS.X+con_ContractDownloadDetails_CSS.Width-Parent.Width*.02
@@ -315,7 +316,7 @@
 
     PdfViewer1 As pdfViewer:
         BorderColor: =RGBA(0, 0, 0, 1)
-        Document: =
+        Document: =First(Filter(CM_COC_Summary,CM_CONTRACT_DETAIL_ID_FK=gal_AllContractsDetailView_HS.Selected.ID)).DATA_URI
         Fill: =RGBA(0, 0, 0, 0.5)
         Height: =con_ContractDownloadDetails_CSS.Height
         Page: =0
