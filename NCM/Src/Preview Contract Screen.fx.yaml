@@ -1617,11 +1617,12 @@
                                     "dtp_ContractCreationDate_PCS As 'Date picker'":
                                         AlignInContainer: =AlignInContainer.Center
                                         BasePaletteColor: =RGBA(227, 106, 244, 1)
-                                        DisplayMode: =DisplayMode.Edit
+                                        DisplayMode: =DisplayMode.Disabled
                                         FontColor: =
                                         Height: =30
                                         LayoutMinHeight: =32
                                         LayoutMinWidth: =320
+                                        SelectedDate: =Today()
                                         Width: =Parent.Width*.97
                                         X: =0
                                         Y: =0
@@ -1907,8 +1908,9 @@
                         =Patch(
                             CM_Client_Contract,Defaults(CM_Client_Contract),
                             {
+                                
                                 Contract_Id:{Id:VarContractDetailsPatch.ID,Value:VarContractDetailsPatch.ID},
-                                contract_ID_FK:firstFormID,
+                                //contract_ID_FK:firstFormID,
                                 Notice_Client_Address:txt_CustomerNoticeAddress_PCS.Text,
                                 Notice_Client_Attention:TextInput1_2.Text,
                                 Witness_Vendor_By: TextInput1_3.Text,
@@ -1932,24 +1934,27 @@
                                 Client_Billing_City:TextInput1_22.Text,
                                 'Witness Vendor Date':DatePickerCanvas2.SelectedDate,
                                 Witness_Vendor_Title:TextInput1_24.Text
-                                //,Witness_Vendor_By:TextInput1_25 .Text  
+                                //Witness_Vendor_By:TextInput1_25.Text  
                                
                             }
                         );
                         Patch(
                             CM_ContractDetails,Defaults(CM_ContractDetails),
+                            {ID: VarContractDetailsPatch.ID },
                             {
-                        
+                                
                                 Contract_CreatedOn: dtp_ContractCreationDate_PCS.SelectedDate,
                                 Contract_Created_Location:txt_con_ContractCity_PCS.Text,
-                                Contract_Charges: Value(TextInput1_23.Text)
+                                Contract_Charges: Value(TextInput1_23.Text),
+                                Status: {Value: "Active"}
                                
                             }
                         );
                         Patch(
                             CM_VENDOR,Defaults(CM_VENDOR),
                             {
-                               contract_ID_FK:firstFormID, 
+                                Contract_Id:{Id:VarContractDetailsPatch.ID,Value:VarContractDetailsPatch.ID},
+                              // contract_ID_FK:firstFormID ,
                                Vendor_Contact_Number: Value(TextInput1_26.Text),
                                Vendor_Email:TextInput1_27.Text,
                                Vendor_Address:TextInput1_20.Text
