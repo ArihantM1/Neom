@@ -658,11 +658,10 @@
                             =ColorValue("#6b1d5e")
                         OnSelect: |+
                             =If(
-                                ThisItem.Status.Value="Draft", Navigate('Create Contract Screen', ScreenTransition.Fade),Navigate('Contract Summary Screen')
+                                ThisItem.Status.Value="Draft", Navigate('Create Contract Screen', ScreenTransition.Fade),Navigate('Contract Summary Screen',ScreenTransition.None,{lclSelectedContract:gal_AllContractsDetailView_HS.Selected})
                                
                             );
-                            Set(ContractData,gal_AllContractsDetailView_HS.Selected);
-                            Set(VarGetPDFID,gal_AllContractsDetailView_HS.Selected.ID);
+                            
                             
                             
                         TemplateSize: =60

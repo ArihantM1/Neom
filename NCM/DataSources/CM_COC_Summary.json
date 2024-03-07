@@ -27,6 +27,7 @@
       "Author#Claims": "Created By Claims",
       "CM_CLIENT_CONTRACT_ID_FK": "CM_CLIENT_CONTRACT_ID_FK",
       "CM_CONTRACT_DETAIL_ID_FK": "CM_CONTRACT_DETAIL_ID_FK",
+      "CM_PDF_FILE_ID": "CM_PDF_FILE_ID",
       "CM_VENDOR_ID_FK": "CM_VENDOR_ID_FK",
       "ComplianceAssetId": "Compliance Asset Id",
       "Created": "Created",
