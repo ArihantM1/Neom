@@ -1910,7 +1910,7 @@
                             {
                                 
                                 Contract_Id:{Id:VarContractDetailsPatch.ID,Value:VarContractDetailsPatch.ID},
-                                //contract_ID_FK:firstFormID,
+                                contract_ID_FK:firstFormID,
                                 Notice_Client_Address:txt_CustomerNoticeAddress_PCS.Text,
                                 Notice_Client_Attention:TextInput1_2.Text,
                                 Witness_Vendor_By: TextInput1_3.Text,
@@ -1939,7 +1939,7 @@
                             }
                         );
                         Patch(
-                            CM_ContractDetails,Defaults(CM_ContractDetails),
+                            CM_ContractDetails,
                             {ID: VarContractDetailsPatch.ID },
                             {
                                 
@@ -1947,15 +1947,14 @@
                                 Contract_Created_Location:txt_con_ContractCity_PCS.Text,
                                 Contract_Charges: Value(TextInput1_23.Text),
                                 Status: {Value: "Active"},
-                                Coc_stage:2
-                               
+                                Coc_stage: 2
                             }
                         );
                         Patch(
                             CM_VENDOR,Defaults(CM_VENDOR),
                             {
                                 Contract_Id:{Id:VarContractDetailsPatch.ID,Value:VarContractDetailsPatch.ID},
-                              // contract_ID_FK:firstFormID ,
+                               contract_ID_FK:firstFormID ,
                                Vendor_Contact_Number: Value(TextInput1_26.Text),
                                Vendor_Email:TextInput1_27.Text,
                                Vendor_Address:TextInput1_20.Text
