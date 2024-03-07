@@ -1949,7 +1949,7 @@
                         Patch(
                             CM_VENDOR,Defaults(CM_VENDOR),
                             {
-                        
+                               contract_ID_FK:firstFormID, 
                                Vendor_Contact_Number: Value(TextInput1_26.Text),
                                Vendor_Email:TextInput1_27.Text,
                                Vendor_Address:TextInput1_20.Text
