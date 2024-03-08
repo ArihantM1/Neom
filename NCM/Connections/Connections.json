@@ -141,9 +141,6 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
-        "ef27b844-23b6-4bd7-9094-f27f7f7fb679": {
-          "value": "shared_sharepointonline"
-        },
         "workflowDisplayName": {
           "value": "CM Download Summary Flow"
         },
@@ -155,9 +152,6 @@
         }
       },
       "parameterHintsV2": {
-        "shared_sharepointonline": {
-          "value": "ef27b844-23b6-4bd7-9094-f27f7f7fb679"
-        },
         "workflowDisplayName": {
           "value": "CM Download Summary Flow"
         },
