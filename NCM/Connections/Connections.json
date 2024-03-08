@@ -14,6 +14,9 @@
           "CM_ClientData": {
             "tableName": "850e47f3-c5e3-4adc-971d-eb2ec6932d8d"
           },
+          "CM_COC_Download_History": {
+            "tableName": "248c1d69-3ce4-4228-a60c-0b0d3d732c49"
+          },
           "CM_COC_Summary": {
             "tableName": "27f103e4-5bb2-4eeb-8fe9-b6b1ea069c59"
           },
@@ -43,7 +46,8 @@
       "Documents",
       "CM_Client_Contract",
       "CM_COC_Summary",
-      "CM_VENDOR"
+      "CM_VENDOR",
+      "CM_COC_Download_History"
     ],
     "dependencies": {},
     "dependents": [],
@@ -141,6 +145,9 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "ef27b844-23b6-4bd7-9094-f27f7f7fb679": {
+          "value": "shared_sharepointonline"
+        },
         "workflowDisplayName": {
           "value": "CM Download Summary Flow"
         },
@@ -152,6 +159,9 @@
         }
       },
       "parameterHintsV2": {
+        "shared_sharepointonline": {
+          "value": "ef27b844-23b6-4bd7-9094-f27f7f7fb679"
+        },
         "workflowDisplayName": {
           "value": "CM Download Summary Flow"
         },

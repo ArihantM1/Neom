@@ -482,7 +482,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "03/08/2024 13:28:01",
+  "HeaderLastSavedDateTimeUTC": "03/08/2024 13:32:24",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "560d9749-ce2d-46ff-a027-334511a62e86": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/ffbc5922b2e140c387b18cbafc6d5552\"",
@@ -554,11 +554,12 @@
     "eeae0174e886453083644726d574ee05": 0
   },
   "OrderDataSource": {
-    "CheckboxValue": 16,
-    "ClauseCollection": 17,
-    "ClauseCounts": 18,
+    "CheckboxValue": 17,
+    "ClauseCollection": 18,
+    "ClauseCounts": 19,
     "CM_Client_Contract": 3,
     "CM_ClientData": 2,
+    "CM_COC_Download_History": 16,
     "CM_COC_Summary": 4,
     "CM_ContractDetails": 5,
     "CM_PDFSummaryFlow": 0,
@@ -566,15 +567,15 @@
     "CM_Services": 6,
     "CM_VENDOR": 8,
     "CMDownloadSummaryFlow": 1,
-    "colTest": 21,
+    "colTest": 22,
     "ComboBoxSample": 9,
     "CustomGallerySample": 10,
     "Documents": 11,
     "DropDownSample": 12,
     "LegendSample": 13,
-    "NavBar": 19,
+    "NavBar": 20,
     "PieChartSample": 14,
-    "RadioOptions": 20,
+    "RadioOptions": 21,
     "RadioSample": 15
   },
   "OrderGroupControls": {
