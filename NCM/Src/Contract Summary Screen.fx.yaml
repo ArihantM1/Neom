@@ -285,7 +285,8 @@
         Height: =30
         Icon: =Icon.Download
         OnSelect: |-
-            =UpdateContext({lclFileURL:CMDownloadSummaryFlow.Run(lclSelectedContract.CM_PDF_FILE_ID).fileurl})
+            =//UpdateContext({lclFileURL:CMDownloadSummaryFlow.Run(lclSelectedContract.CM_PDF_FILE_ID).fileurl})
+            CMDownloadSummaryFlow.Run(lclSelectedContract.CM_PDF_FILE_ID)
         Tooltip: ="Export Contract"
         Width: =30
         X: =con_ContractDownloadDetails_CSS.X+con_ContractDownloadDetails_CSS.Width-Parent.Width*.02
