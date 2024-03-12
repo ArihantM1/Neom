@@ -237,7 +237,7 @@
             Gallery1 As gallery.variableTemplateHeightGallery:
                 DelayItemLoading: =true
                 Height: =Parent.Height-shp_DownloadFiller_CSS.Height
-                Items: =CM_COC_Download_History
+                Items: =Filter(CM_COC_Download_History,Contract_Id_Fk=lclSelectedContract.ID)
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplateSize: =Gallery1.Height*.3
