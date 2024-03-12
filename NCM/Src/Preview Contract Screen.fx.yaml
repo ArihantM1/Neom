@@ -208,6 +208,7 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
+                                        OnSelect: =Set(VarFindText,"Witness Vendor By")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
@@ -262,6 +263,7 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
+                                        OnSelect: =Set(VarFindText,"Customer Bank Branch Address")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
@@ -316,6 +318,7 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
+                                        OnSelect: =Set(VarFindText,"Customer Bank IFSC&NEFT")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
@@ -370,6 +373,7 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
+                                        OnSelect: =Set(VarFindText,"Customer Bank MIRC")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
@@ -424,6 +428,7 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
+                                        OnSelect: =Set(VarFindText,"Customer Bank Account no")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
@@ -532,6 +537,7 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
+                                        OnSelect: =Set(VarFindText,"Customer Invoice Pin no")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
@@ -586,6 +592,7 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
+                                        OnSelect: =Set(VarFindText,"Customer Bank Name")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
@@ -640,6 +647,7 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
+                                        OnSelect: =Set(VarFindText,"Customer Invoice State")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
@@ -694,6 +702,7 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
+                                        OnSelect: =Set(VarFindText,"Customer Invoice City")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
@@ -748,6 +757,7 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
+                                        OnSelect: =Set(VarFindText,"Customer Invoice Name")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
@@ -802,6 +812,7 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
+                                        OnSelect: =Set(VarFindText,"Insert Contact Person Email")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
@@ -856,6 +867,7 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
+                                        OnSelect: =Set(VarFindText,"Insert Contact Person Phone No")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
@@ -910,6 +922,7 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
+                                        OnSelect: =Set(VarFindText,"Insert Contact Person Name")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
@@ -964,6 +977,7 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
+                                        OnSelect: =Set(VarFindText,"Customer Invoice Pin no")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
@@ -1018,6 +1032,7 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
+                                        OnSelect: =Set(VarFindText,"Insert Company Billing State")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
@@ -1072,6 +1087,7 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
+                                        OnSelect: =Set(VarFindText,"Insert Company Billing Country")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
@@ -1180,6 +1196,7 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
+                                        OnSelect: =Set(VarFindText,"Insert Company Billing State")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
@@ -1234,6 +1251,7 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
+                                        OnSelect: =Set(VarFindText,"Insert Company Billing City")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
@@ -1288,6 +1306,7 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
+                                        OnSelect: =Set(VarFindText,"Insert Charger")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
@@ -1340,6 +1359,7 @@
                                         Height: =32
                                         LayoutMinHeight: =32
                                         LayoutMinWidth: =320
+                                        OnChange: =Set(VarFindText,"Witness Vendor Date")
                                         Width: =Parent.Width*.97
                                         X: =0
                                         Y: =0
@@ -1395,6 +1415,7 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
+                                        OnSelect: =Set(VarFindText,"Witness Vendor Title")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
