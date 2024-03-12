@@ -45,16 +45,6 @@
             Y: =Parent.Height*.03
             ZIndex: =4
 
-        ico_SupCheck_Css As icon.CheckBadge:
-            Color: =RGBA(107, 29, 94, 1)
-            Height: =40
-            Icon: =Icon.Check
-            Visible: =false
-            Width: =40
-            X: =shp_SupStage_CSS.X+(shp_SupStage_CSS.Width-Self.Width)/2
-            Y: =shp_StartStage_CSS.Y+(shp_StartStage_CSS.Height-Self.Height)/2
-            ZIndex: =5
-
         shp_ProcStage_CSS As circle:
             BorderColor: =RGBA(212, 212, 212, 1)
             BorderThickness: =3
@@ -189,6 +179,26 @@
             Y: =shp_StartStage_CSS.Y+shp_StartStage_CSS.Height
             ZIndex: =19
 
+        shp_StartStage_CSS_1 As circle:
+            BorderColor: =RGBA(107, 29, 94, 1)
+            BorderThickness: =3
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =60
+            Width: =60
+            X: =shp_Milestone_StarttoSup_CSS.X+shp_Milestone_StarttoSup_CSS.Width+Parent.Width*.01
+            Y: =Parent.Height*.03
+            ZIndex: =20
+
+        ico_SupCheck_Css As icon.CheckBadge:
+            Color: =RGBA(107, 29, 94, 1)
+            Height: =40
+            Icon: =Icon.Check
+            Visible: =If(IsBlank(Filter(CM_ContractDetails,ID=lclSelectedContract.ID,Coc_stage=2)),false,true)
+            Width: =40
+            X: =shp_SupStage_CSS.X+(shp_SupStage_CSS.Width-Self.Width)/2
+            Y: =shp_StartStage_CSS.Y+(shp_StartStage_CSS.Height-Self.Height)/2
+            ZIndex: =21
+
     con_Task_CSS As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
         Height: =Parent.Height*.65
@@ -265,14 +275,41 @@
                         Width: =Parent.Height*.9
                         ZIndex: =1
 
-                    Label4 As label:
-                        FontWeight: =FontWeight.Semibold
+                    Container2 As groupContainer.verticalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Start
+                        DropShadow: =DropShadow.None
+                        FillPortions: =0
                         Height: =Parent.Height
-                        PaddingLeft: =10
-                        Size: =10
-                        Text: =ThisItem.Name
-                        Width: =Parent.Width-Image3.Width-10
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        Width: =Parent.Width-Image3.Width-5
                         ZIndex: =2
+
+                        Label4 As label:
+                            AlignInContainer: =AlignInContainer.Start
+                            FontWeight: =FontWeight.Semibold
+                            Height: =Parent.Height*.5
+                            PaddingBottom: =0
+                            PaddingLeft: =10
+                            Size: =10
+                            Text: =ThisItem.Name
+                            Width: =Parent.Width-Image3.Width-10
+                            ZIndex: =1
+
+                        Label4_1 As label:
+                            AlignInContainer: =AlignInContainer.Start
+                            FontWeight: =FontWeight.Lighter
+                            Height: =Parent.Height*.5
+                            PaddingBottom: =0
+                            PaddingLeft: =10
+                            PaddingTop: =0
+                            Size: =8
+                            Text: |
+                                =Text(ThisItem.Created, "dd - mmm - yy") & "  "& Text(ThisItem.Created, "hh:mm AM/PM")
+                            Width: =Parent.Width-Image3.Width-10
+                            ZIndex: =2
 
             Label5 As label:
                 Align: =Align.Center
