@@ -274,6 +274,18 @@
                         Width: =Parent.Width-Image3.Width-10
                         ZIndex: =2
 
+            Label5 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Height: =Parent.Height
+                Size: =8
+                Text: ="No Download History is available"
+                Visible: =IsBlank(Filter(CM_COC_Download_History,Contract_Id_Fk=lclSelectedContract.ID))
+                Width: =Parent.Width
+                X: =Parent.Width/2-Self.Width/2
+                Y: =Parent.Height/2-Self.Height/2
+                ZIndex: =3
+
         lbl_DownloadHistory_CSS As label:
             FontWeight: =FontWeight.Bold
             Height: =37
