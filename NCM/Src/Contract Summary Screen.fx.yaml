@@ -234,6 +234,46 @@
                 Width: =Parent.Width
                 ZIndex: =1
 
+            Gallery1 As gallery.variableTemplateHeightGallery:
+                DelayItemLoading: =true
+                Height: =Parent.Height-shp_DownloadFiller_CSS.Height
+                Items: =CM_COC_Download_History
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplateSize: =Gallery1.Height*.3
+                Width: =Parent.Width
+                Y: =shp_DownloadFiller_CSS.Height
+                ZIndex: =2
+
+                Container1 As groupContainer.horizontalAutoLayoutContainer:
+                    Height: =Parent.TemplateHeight
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =5
+                    Width: =Parent.TemplateWidth
+                    ZIndex: =1
+
+                    Image3 As image:
+                        Height: =Parent.Height*.9
+                        Image: |-
+                            =
+                            If(IsBlank(ThisItem.Profile_Photo),SampleImage,ThisItem.Profile_Photo)
+                        RadiusBottomLeft: =50
+                        RadiusBottomRight: =50
+                        RadiusTopLeft: =50
+                        RadiusTopRight: =50
+                        Width: =Parent.Height*.9
+                        ZIndex: =1
+
+                    Label4 As label:
+                        FontWeight: =FontWeight.Semibold
+                        Height: =Parent.Height
+                        PaddingLeft: =10
+                        Size: =10
+                        Text: =ThisItem.Name
+                        Width: =Parent.Width-Image3.Width-10
+                        ZIndex: =2
+
         lbl_DownloadHistory_CSS As label:
             FontWeight: =FontWeight.Bold
             Height: =37
@@ -286,7 +326,16 @@
         Icon: =Icon.Download
         OnSelect: |-
             =UpdateContext({lclFileURL:CMDownloadSummaryFlow.Run(lclSelectedContract.CM_PDF_FILE_ID).fileurl});
-            Download(lclFileURL)
+            Download(lclFileURL);
+            Patch(
+                CM_COC_Download_History,
+                {
+                 Contract_Id_Fk:lclSelectedContract.ID,
+                 Name:User().FullName,
+                 Profile_Photo:User().Image 
+                
+                }
+            );
         Tooltip: ="Export Contract"
         Width: =30
         X: =con_ContractDownloadDetails_CSS.X+con_ContractDownloadDetails_CSS.Width-Parent.Width*.02
