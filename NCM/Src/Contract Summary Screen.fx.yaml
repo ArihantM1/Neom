@@ -280,7 +280,7 @@
                 Height: =Parent.Height
                 Size: =8
                 Text: ="No Download History is available"
-                Visible: =IsBlank(Filter(CM_COC_Download_History,Contract_Id_Fk=lclSelectedContract.ID))
+                Visible: =Gallery1.AllItemsCount<1
                 Width: =Parent.Width
                 X: =Parent.Width/2-Self.Width/2
                 Y: =Parent.Height/2-Self.Height/2
