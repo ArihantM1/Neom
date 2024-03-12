@@ -1470,6 +1470,7 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
+                                        OnSelect: =Set(VarFindText,"Witness Vendor By")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
