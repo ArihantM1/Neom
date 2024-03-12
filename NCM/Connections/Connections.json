@@ -29,6 +29,9 @@
           "CM_Services": {
             "tableName": "6dbb5b16-a766-4d7a-a4e9-0a481df4e7dd"
           },
+          "CM_Users": {
+            "tableName": "53a260ac-fc52-41e6-9b41-2b2255667e34"
+          },
           "CM_VENDOR": {
             "tableName": "22d5c57d-e58c-4ff0-a507-a1db6cc55c86"
           },
@@ -47,7 +50,8 @@
       "CM_Client_Contract",
       "CM_COC_Summary",
       "CM_VENDOR",
-      "CM_COC_Download_History"
+      "CM_COC_Download_History",
+      "CM_Users"
     ],
     "dependencies": {},
     "dependents": [],
