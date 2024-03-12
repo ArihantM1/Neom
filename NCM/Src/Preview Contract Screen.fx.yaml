@@ -158,7 +158,7 @@
                                 Y: =con_inputFieldmain_PCS.Height
                                 ZIndex: =1
 
-                                Container5_36 As groupContainer.verticalAutoLayoutContainer:
+                                con_WitnessVendorDate_PCS As groupContainer.verticalAutoLayoutContainer:
                                     AlignInContainer: =AlignInContainer.Center
                                     FillPortions: =0
                                     Height: =con_ContractCreationDate_PCS.Height
@@ -173,7 +173,7 @@
                                     Width: =con_ContractCreationDate_PCS.Width
                                     ZIndex: =1
 
-                                    Container1_25 As groupContainer.horizontalAutoLayoutContainer:
+                                    con_WitnessVendorDate_Header_PCS As groupContainer.horizontalAutoLayoutContainer:
                                         AlignInContainer: =AlignInContainer.SetByContainer
                                         Fill: =RGBA(237, 237, 237, 1)
                                         FillPortions: =0
@@ -188,7 +188,7 @@
                                         Width: =Parent.Width
                                         ZIndex: =1
 
-                                        lbl_ContractCreateDate_PCS_45 As label:
+                                        lbl_WitnessVendorDate_Header_PCS As label:
                                             FontWeight: =FontWeight.Bold
                                             Height: =Parent.Height
                                             PaddingLeft: =10
@@ -199,7 +199,7 @@
                                             Width: =Parent.Width*.4
                                             ZIndex: =1
 
-                                    "DatePickerCanvas2 As 'Date picker'":
+                                    "dt_WitnessVendorDate_PCS As 'Date picker'":
                                         BasePaletteColor: =
                                         DisplayMode: =DisplayMode.Edit
                                         FontColor: =
@@ -2008,7 +2008,7 @@
                                 Client_Billing_Country:TextInput1_19.Text, 
                                 Client_Delarance_Name:TextInput1_21.Text,
                                 Client_Billing_City:TextInput1_22.Text,
-                                'Witness Vendor Date':DatePickerCanvas2.SelectedDate,
+                                'Witness Vendor Date':dt_WitnessVendorDate_PCS.SelectedDate,
                                 Witness_Vendor_Title:txxt_WitnessVendorTitle_Header_PCS.Text
                                 //Witness_Vendor_By:TextInput1_25.Text  
                                

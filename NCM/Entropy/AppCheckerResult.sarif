@@ -2004,19 +2004,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS_1.dtc_UserAgreementPreview_PCS_1.con_inputFieldmain_PCS_1.Container5_36.DatePickerCanvas2.AccessibleLabel"
+                  "fullyQualifiedName": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS_1.dtc_UserAgreementPreview_PCS_1.con_inputFieldmain_PCS_1.con_WitnessVendorDate_PCS.dt_WitnessVendorDate_PCS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS_1.dtc_UserAgreementPreview_PCS_1.con_inputFieldmain_PCS_1.Container5_36.DatePickerCanvas2.AccessibleLabel",
+                  "fullyQualifiedName": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS_1.dtc_UserAgreementPreview_PCS_1.con_inputFieldmain_PCS_1.con_WitnessVendorDate_PCS.dt_WitnessVendorDate_PCS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Preview Contract Screen",
-                "type": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS_1.dtc_UserAgreementPreview_PCS_1.con_inputFieldmain_PCS_1.Container5_36.DatePickerCanvas2"
+                "type": "'Preview Contract Screen'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS_1.dtc_UserAgreementPreview_PCS_1.con_inputFieldmain_PCS_1.con_WitnessVendorDate_PCS.dt_WitnessVendorDate_PCS"
               }
             }
           ],
