@@ -60,14 +60,14 @@
 
     Container4 As groupContainer.manualLayoutContainer:
         Height: =768
-        Width: =Parent.Width
+        Width: =802
+        X: =563
         ZIndex: =6
 
-        chartJS1 As chartJSV13:
-            DisplayMode: =DisplayMode.Edit
-            Height: =Parent.Height
-            Width: =Parent.Width
-            X: =0
-            Y: =0
-            ZIndex: =1
+    Button1 As button:
+        OnSelect: =Navigate('Preview Contract Screen_1')
+        Text: ="Button"
+        X: =64
+        Y: =444
+        ZIndex: =7
 
