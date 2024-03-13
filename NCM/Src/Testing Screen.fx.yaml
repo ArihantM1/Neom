@@ -58,3 +58,16 @@
         Y: =296
         ZIndex: =5
 
+    Container4 As groupContainer.manualLayoutContainer:
+        Height: =768
+        Width: =Parent.Width
+        ZIndex: =6
+
+        chartJS1 As chartJSV13:
+            DisplayMode: =DisplayMode.Edit
+            Height: =Parent.Height
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+

@@ -1,0 +1,159 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    /* padding: 20px; */
+    font-size: 15px;
+    /* padding: 20px; */
+    
+}
+.ShowListBTN{
+    background-color: #f9f9f9;
+    /* Set the background color to yellow */
+    border: none;
+color: darkblue;
+    cursor: pointer;
+    padding: 0;
+    /* Optional: Adjust padding as needed */
+    margin: 0;
+    /* Optional: Adjust margin as needed */
+    /* Remove default button styles */
+    outline: none;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    
+}
+
+.container2{
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: auto;
+}
+
+.container {
+    
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: auto;
+ 
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    /* Adjust the margin as needed */
+}
+
+label{
+    
+    text-align: left;
+    /* background-color: whitesmoke;
+     */
+    font-weight: normal;
+    padding: 5px;
+    width:90% ;
+    color: darkgray;
+    /* margin-bottom: 10px; */
+}
+
+input {
+    flex: 2;
+    width: 90%;
+    
+}
+input:focus{
+    background-color: white;
+   
+}
+
+h1 {
+    text-align: center;
+}
+
+
+p {
+    margin-bottom: 15px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.definitions {
+    margin-top: 20px;
+    text-align: left;
+
+}
+
+.definitions h2 {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.definitions dl {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.definitions dl dt {
+    font-weight: bold;
+    text-align: left;
+}
+
+.definitions dl dd {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.section {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.section h3 {
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%;
+    
+
+}
+
+.section ol {
+    margin-left: 20px;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+
+.Allbuttons {
+    background-color: yellow;
+    /* Set the background color to yellow */
+    border: none;
+
+
+    cursor: pointer;
+    padding: 0;
+    /* Optional: Adjust padding as needed */
+    margin: 0;
+    /* Optional: Adjust margin as needed */
+    /* Remove default button styles */
+    outline: none;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
