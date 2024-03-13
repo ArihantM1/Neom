@@ -78,8 +78,7 @@ App As appinfo:
         Set(VarfirstFormID,0);
         Set(VarContractDetailsPatch,Blank());
         Set(VarGetPDFID,Blank());
-        
-        
+        Set(VarLoggedInUser,Blank())
         
         
     Theme: =PowerAppsTheme

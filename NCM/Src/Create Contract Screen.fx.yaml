@@ -836,6 +836,12 @@
                                 );
                             )
                         )*/
+                        Patch(CM_Task,
+                         Defaults(CM_Task),
+                         
+                         
+                        
+                        );
                         Navigate(
                             'Preview Contract Screen',
                             ScreenTransition.Cover
