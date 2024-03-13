@@ -347,7 +347,7 @@
                     AlignInContainer: =AlignInContainer.SetByContainer
                     DelayItemLoading: =true
                     FillPortions: =0
-                    Height: =Parent.Height*.77
+                    Height: =Parent.Height*.8
                     Items: |-
                         =//CM_ContractDetails
                         If(IsBlank(Filter),

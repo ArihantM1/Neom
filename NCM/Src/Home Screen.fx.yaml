@@ -658,7 +658,9 @@
                             =ColorValue("#6b1d5e")
                         OnSelect: |+
                             =If(
-                                ThisItem.Status.Value="Draft", Navigate('Create Contract Screen', ScreenTransition.Fade),Navigate('Contract Summary Screen',ScreenTransition.None,{lclSelectedContract:gal_AllContractsDetailView_HS.Selected})
+                                ThisItem.Status.Value="Draft", 
+                                Navigate('Create Contract Screen', ScreenTransition.Fade,{lclSelectedContract:gal_AllContractsDetailView_HS.Selected}),
+                                Navigate('Contract Summary Screen',ScreenTransition.None,{lclSelectedContract:gal_AllContractsDetailView_HS.Selected})
                                
                             );
                             
