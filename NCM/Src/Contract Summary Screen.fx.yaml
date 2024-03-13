@@ -230,6 +230,17 @@
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =2
 
+            Gallery2 As gallery.variableTemplateHeightGallery:
+                DelayItemLoading: =true
+                Height: =Parent.Height-shp_MyTaskTopFiller_CSS.Height
+                Items: =ContrcatTasks
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplateSize: =Gallery2.Height*.2
+                Width: =Parent.Width
+                Y: =shp_MyTaskTopFiller_CSS.Height
+                ZIndex: =3
+
         con_DownloadDetails_CSS As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Semibold
             Height: =con_MyTask_CSS.Height

@@ -19,6 +19,10 @@ App As appinfo:
             )
         );
         ClearCollect(
+            ContrcatTasks,
+            Filter(CM_Task,Task_Assigned_to=LookUp(CM_Users,User().Email=Emaill).Role)
+        );
+        ClearCollect(
             RadioOptions,
             [
                 "Create New",
