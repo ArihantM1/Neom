@@ -57,6 +57,21 @@
     "TemplateDisplayName": "chartJSV13",
     "Version": "0.1.3"
   },
+  "chartJSV14": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": false,
+    "Id": "http://microsoft.com/appmagic/powercontrol/dev_ChartJSV14.chartJS",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "dev_ChartJSV14.chartJS",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "chartJSV14",
+    "Version": "0.1.4"
+  },
   "checkbox": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
