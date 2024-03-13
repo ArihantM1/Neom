@@ -1,6 +1,7 @@
 "'Home Screen' As screen":
-    OnVisible: |
+    OnVisible: |-
         =Set(ContractData,Blank());
+        Set(lclSelectedContracts,Blank())
 
     con_Main_HS As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
@@ -194,7 +195,7 @@
                                     ContractData,
                                     Blank()
                                 );
-                                Navigate('Create Contract Screen');
+                                Navigate('Create Contract Screen',ScreenTransition.None,{ContractData:Blank()});
                             Size: =10.5
                             Text: ="Create Contract"
                             Width: =Parent.Width*.25
@@ -659,7 +660,7 @@
                         OnSelect: |+
                             =If(
                                 ThisItem.Status.Value="Draft", 
-                                Navigate('Create Contract Screen', ScreenTransition.Fade,{lclSelectedContract:gal_AllContractsDetailView_HS.Selected}),
+                                Navigate('Create Contract Screen', ScreenTransition.Fade,{ContractData:gal_AllContractsDetailView_HS.Selected}),
                                 Navigate('Contract Summary Screen',ScreenTransition.None,{lclSelectedContract:gal_AllContractsDetailView_HS.Selected})
                                
                             );

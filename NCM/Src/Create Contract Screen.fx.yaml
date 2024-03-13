@@ -201,6 +201,8 @@
                     Color: =RGBA(107, 29, 94, 1)
                     Default: |
                         =If(Not(IsBlank(ContractData)),ContractData.Supplier.Value)
+                        
+                        //If(Not(IsBlank(lclSelectedContracts)),lclSelectedContracts.Supplier.Value)
                     Height: =30
                     HoverFill: |-
                         = ColorFade( ColorValue("#9e6c97"),80%)
@@ -228,7 +230,9 @@
                     ChevronFill: =RGBA(107, 29, 94, 1)
                     ChevronHoverBackground: =RGBA(107, 29, 94, 1)
                     Color: =RGBA(107, 29, 94, 1)
-                    Default: =If(Not(IsBlank(ContractData)),ContractData.Service_Type_fk.Value)
+                    Default: |-
+                        =If(Not(IsBlank(ContractData)),ContractData.Service_Type_fk.Value)
+                        //If(Not(IsBlank(lclSelectedContracts)),lclSelectedContracts.Service_Type_fk.Value)
                     Height: =30
                     HoverFill: |-
                         = ColorFade( ColorValue("#9e6c97"),80%)
@@ -277,7 +281,9 @@
                         ChevronFill: =RGBA(107, 29, 94, 1)
                         ChevronHoverBackground: =RGBA(107, 29, 94, 1)
                         Color: =RGBA(107, 29, 94, 1)
-                        Default: =If(Not(IsBlank(ContractData)),ContractData.Service_fk.Value)
+                        Default: |-
+                            =If(Not(IsBlank(ContractData)),ContractData.Service_fk.Value)
+                            //If(Not(IsBlank(lclSelectedContracts)),lclSelectedContracts.Service_fk.Value)
                         Height: =30
                         HoverFill: |-
                             = ColorFade( ColorValue("#9e6c97"),80%)
@@ -303,7 +309,9 @@
 
                     lblContractName_CCS As text:
                         BorderColor: =RGBA(219, 200, 216, 1)
-                        Default: =If(Not(IsBlank(ContractData)),ContractData.Contract_name)
+                        Default: |-
+                            =If(Not(IsBlank(ContractData)),ContractData.Contract_name)
+                            //If(Not(IsBlank(lclSelectedContracts)),lclSelectedContracts.Contract_name)
                         Height: =30
                         HintText: ="--Enter the name of Contract--"
                         HoverBorderColor: =ColorFade( RGBA(107, 29, 94, 1),50%)
@@ -347,7 +355,9 @@
                     ChevronFill: =RGBA(107, 29, 94, 1)
                     ChevronHoverBackground: =RGBA(107, 29, 94, 1)
                     Color: =RGBA(107, 29, 94, 1)
-                    Default: =If(Not(IsBlank(ContractData)),ContractData.Currency.Value,"")
+                    Default: |-
+                        =If(Not(IsBlank(ContractData)),ContractData.Currency.Value,"")
+                        //If(Not(IsBlank(lclSelectedContracts)),lclSelectedContracts.Currency.Value,"")
                     Height: =30
                     HoverFill: |-
                         = ColorFade( ColorValue("#9e6c97"),80%)
@@ -374,7 +384,9 @@
                     ChevronFill: =RGBA(107, 29, 94, 1)
                     ChevronHoverBackground: =RGBA(107, 29, 94, 1)
                     Color: =RGBA(107, 29, 94, 1)
-                    Default: =If(Not(IsBlank(ContractData)),ContractData.Applicable_to.Value)
+                    Default: |-
+                        =If(Not(IsBlank(ContractData)),ContractData.Applicable_to.Value)
+                        //If(Not(IsBlank(lclSelectedContracts)),lclSelectedContracts.Applicable_to.Value)
                     Height: =30
                     HoverFill: |-
                         = ColorFade( ColorValue("#9e6c97"),80%)
@@ -421,7 +433,9 @@
                     txt_DescriptionInput_CCS As text:
                         AlignInContainer: =AlignInContainer.Center
                         BorderColor: =RGBA(219, 200, 216, 1)
-                        Default: =If(Not(IsBlank(ContractData)),ContractData.Description)
+                        Default: |-
+                            =If(Not(IsBlank(ContractData)),ContractData.Description)
+                            //If(Not(IsBlank(lclSelectedContracts)),lclSelectedContracts.Description)
                         Height: =Parent.Height*.9
                         HintText: ="--Description of the Contract--"
                         HoverBorderColor: =ColorFade( RGBA(107, 29, 94, 1),50%)
@@ -456,7 +470,9 @@
                         ChevronFill: =RGBA(107, 29, 94, 1)
                         ChevronHoverBackground: =RGBA(107, 29, 94, 1)
                         Color: =RGBA(107, 29, 94, 1)
-                        Default: =If(Not(IsBlank(ContractData)),ContractData.Country.Value)
+                        Default: |-
+                            =If(Not(IsBlank(ContractData)),ContractData.Country.Value)
+                            //If(Not(IsBlank(lclSelectedContracts)),lclSelectedContracts.Country.Value)
                         Height: =30
                         HoverFill: |-
                             = ColorFade( ColorValue("#9e6c97"),80%)
@@ -511,6 +527,7 @@
                         LayoutMinWidth: =320
                         SelectedDate: |
                             =If(Not(IsBlank(ContractData)),ContractData.Start_date)
+                            //If(Not(IsBlank(lclSelectedContracts)),lclSelectedContracts.Start_date)
                         ValidationState: =
                         Width: =lblContractName_CCS.Width
                         X: =0
@@ -535,7 +552,9 @@
                         Height: =30
                         LayoutMinHeight: =32
                         LayoutMinWidth: =320
-                        SelectedDate: =If(Not(IsBlank(ContractData)),ContractData.End_date)
+                        SelectedDate: |-
+                            =If(Not(IsBlank(ContractData)),ContractData.End_date)
+                            //If(Not(IsBlank(lclSelectedContracts)),lclSelectedContracts.End_date)
                         Width: =lblContractName_CCS.Width
                         X: =0
                         Y: =0
@@ -640,10 +659,8 @@
                         Reset(dte_StartDate_CCS);
                         Reset(dte_EndDate_CCS);
                         Reset(Radio1);
-                        Navigate('Home Screen')
-                        
-                        
-                        
+                        Navigate('Home Screen');
+                        Set(ContractData, Blank())
                         
                         
                     Size: =10

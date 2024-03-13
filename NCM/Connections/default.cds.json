@@ -8,5 +8,9 @@
       "Identifier": "dev_ChartJSV13.chartJS",
       "IdentifierType": 0
     }
-  ]
+  ],
+  "dataSources": {},
+  "instanceUrl": "https://orgad6328d8.crm4.dynamics.com/",
+  "state": "Configured",
+  "webApiVersion": "v9.0"
 }

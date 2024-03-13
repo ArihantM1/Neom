@@ -158,10 +158,11 @@
                                 Y: =con_inputFieldmain_PCS_2.Height
                                 ZIndex: =1
 
-                                Container5_10 As groupContainer.verticalAutoLayoutContainer:
+                                con_WitnessVendorDate_PCS_1 As groupContainer.verticalAutoLayoutContainer:
                                     AlignInContainer: =AlignInContainer.Center
                                     FillPortions: =0
                                     Height: =con_ContractCreationDate_PCS_1.Height
+                                    LayoutAlignItems: =LayoutAlignItems.Center
                                     LayoutDirection: =LayoutDirection.Vertical
                                     LayoutGap: =5
                                     LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
@@ -169,10 +170,65 @@
                                     LayoutMinWidth: =250
                                     LayoutMode: =LayoutMode.Auto
                                     PaddingBottom: =20
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Proponent",true,false)
                                     Width: =con_ContractCreationDate_PCS_1.Width
                                     ZIndex: =1
 
-                                    Container1_32 As groupContainer.horizontalAutoLayoutContainer:
+                                    con_WitnessVendorDate_Header_PCS_1 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.SetByContainer
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_WitnessVendorDate_Header_PCS_1 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="WITNESS VENDOR DATE : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
+                                    "dt_WitnessVendorDate_PCS_1 As 'Date picker'":
+                                        BasePaletteColor: =
+                                        DisplayMode: =DisplayMode.Edit
+                                        FontColor: =
+                                        Height: =32
+                                        LayoutMinHeight: =32
+                                        LayoutMinWidth: =320
+                                        OnChange: =Set(VarFindText,"Witness Vendor Date")
+                                        Width: =Parent.Width*.97
+                                        X: =0
+                                        Y: =0
+                                        ZIndex: =2
+
+                                Container5_5 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =con_ContractCreationDate_PCS_1.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Supplier",true,false)
+                                    Width: =con_ContractCreationDate_PCS_1.Width
+                                    ZIndex: =2
+
+                                    Container1_4 As groupContainer.horizontalAutoLayoutContainer:
                                         AlignInContainer: =AlignInContainer.Center
                                         Fill: =RGBA(237, 237, 237, 1)
                                         FillPortions: =0
@@ -187,33 +243,90 @@
                                         Width: =Parent.Width
                                         ZIndex: =1
 
-                                        lbl_ContractCreateDate_PCS_10 As label:
+                                        lbl_ContractCreateDate_PCS_8 As label:
                                             FontWeight: =FontWeight.Bold
                                             Height: =Parent.Height
                                             PaddingLeft: =10
                                             PaddingRight: =0
                                             Size: =8
                                             Text: |-
-                                                ="WITNESS VENDOR BY : "
+                                                ="NOTICE CUSTOMER ATTN: "
                                             Width: =Parent.Width*.4
                                             ZIndex: =1
 
-                                    TextInput1_29 As text:
+                                    TextInput1_3 As text:
                                         AlignInContainer: =AlignInContainer.Center
                                         BorderColor: =RGBA(255, 255, 255, 1)
                                         BorderThickness: =0
                                         Default: =""
                                         Fill: =VarFieldColor
                                         Height: =30
-                                        HintText: ="Enter WITNESS VENDOR BY ..."
+                                        HintText: ="Enter Contract City ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
-                                        OnSelect: =Set(VarFindText,"Witness Vendor By")
+                                        OnSelect: =Set(VarFindText,"insert notice customer attn")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
 
-                                Container5_12 As groupContainer.verticalAutoLayoutContainer:
+                                con_CustomerNoticeAddress_PCS_1 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.SetByContainer
+                                    FillPortions: =0
+                                    Height: =con_ContractCreationDate_PCS_1.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Supplier",true,false)
+                                    Width: =con_ContractCreationDate_PCS_1.Width
+                                    ZIndex: =3
+
+                                    con_CustomerNoticeAddressHeader_PCS_1 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.SetByContainer
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_CustomerNoticeAddress_PCS_1 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="NOTICE CUSTOMER ADDRESS : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
+                                    txt_CustomerNoticeAddress_PCS_1 As text:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        BorderColor: =RGBA(255, 255, 255, 1)
+                                        BorderThickness: =0
+                                        Default: =""
+                                        Fill: =VarFieldColor
+                                        Height: =30
+                                        HintText: ="Enter Notice Customer Address ... "
+                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                        HoverFill: =VarFieldColor
+                                        Mode: =TextMode.MultiLine
+                                        OnSelect: =Set(VarFindText,"insert notice customer address")
+                                        Size: =10
+                                        Width: =Parent.Width*.97
+                                        ZIndex: =3
+
+                                Container5_36 As groupContainer.verticalAutoLayoutContainer:
                                     AlignInContainer: =AlignInContainer.Center
                                     FillPortions: =0
                                     Height: =con_ContractCreationDate_PCS_1.Height
@@ -224,10 +337,11 @@
                                     LayoutMinWidth: =250
                                     LayoutMode: =LayoutMode.Auto
                                     PaddingBottom: =20
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Procurement",true,false)
                                     Width: =con_ContractCreationDate_PCS_1.Width
-                                    ZIndex: =25
+                                    ZIndex: =4
 
-                                    Container1_33 As groupContainer.horizontalAutoLayoutContainer:
+                                    Container1_25 As groupContainer.horizontalAutoLayoutContainer:
                                         AlignInContainer: =AlignInContainer.Center
                                         Fill: =RGBA(237, 237, 237, 1)
                                         FillPortions: =0
@@ -242,18 +356,18 @@
                                         Width: =Parent.Width
                                         ZIndex: =1
 
-                                        lbl_ContractCreateDate_PCS_12 As label:
+                                        lbl_ContractCreateDate_PCS_45 As label:
                                             FontWeight: =FontWeight.Bold
                                             Height: =Parent.Height
                                             PaddingLeft: =10
                                             PaddingRight: =0
                                             Size: =8
                                             Text: |-
-                                                ="CUSTOMER BANK BRANCH ADDRESS : "
+                                                ="CHARGES : "
                                             Width: =Parent.Width*.4
                                             ZIndex: =1
 
-                                    TextInput1_30 As text:
+                                    TextInput1_24 As text:
                                         AlignInContainer: =AlignInContainer.Center
                                         BorderColor: =RGBA(255, 255, 255, 1)
                                         BorderThickness: =0
@@ -263,12 +377,12 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
-                                        OnSelect: =Set(VarFindText,"Customer Bank Branch Address")
+                                        OnSelect: =Set(VarFindText,"Insert Charger")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
 
-                                Container5_14 As groupContainer.verticalAutoLayoutContainer:
+                                Container5_37 As groupContainer.verticalAutoLayoutContainer:
                                     AlignInContainer: =AlignInContainer.Center
                                     FillPortions: =0
                                     Height: =con_ContractCreationDate_PCS_1.Height
@@ -279,10 +393,11 @@
                                     LayoutMinWidth: =250
                                     LayoutMode: =LayoutMode.Auto
                                     PaddingBottom: =20
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Supplier",true,false)
                                     Width: =con_ContractCreationDate_PCS_1.Width
-                                    ZIndex: =26
+                                    ZIndex: =5
 
-                                    Container1_34 As groupContainer.horizontalAutoLayoutContainer:
+                                    Container1_26 As groupContainer.horizontalAutoLayoutContainer:
                                         AlignInContainer: =AlignInContainer.Center
                                         Fill: =RGBA(237, 237, 237, 1)
                                         FillPortions: =0
@@ -297,18 +412,18 @@
                                         Width: =Parent.Width
                                         ZIndex: =1
 
-                                        lbl_ContractCreateDate_PCS_14 As label:
+                                        lbl_ContractCreateDate_PCS_46 As label:
                                             FontWeight: =FontWeight.Bold
                                             Height: =Parent.Height
                                             PaddingLeft: =10
                                             PaddingRight: =0
                                             Size: =8
                                             Text: |-
-                                                ="CUSTOMER BANK IFSC CODE : "
+                                                ="CUSTOMER CONTACT PERSON NAME : "
                                             Width: =Parent.Width*.4
                                             ZIndex: =1
 
-                                    TextInput1_31 As text:
+                                    TextInput1_28 As text:
                                         AlignInContainer: =AlignInContainer.Center
                                         BorderColor: =RGBA(255, 255, 255, 1)
                                         BorderThickness: =0
@@ -318,12 +433,12 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
-                                        OnSelect: =Set(VarFindText,"Customer Bank IFSC&NEFT")
+                                        OnSelect: =Set(VarFindText,"Insert Contact Person Name")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
 
-                                Container5_16 As groupContainer.verticalAutoLayoutContainer:
+                                Container5_42 As groupContainer.verticalAutoLayoutContainer:
                                     AlignInContainer: =AlignInContainer.Center
                                     FillPortions: =0
                                     Height: =con_ContractCreationDate_PCS_1.Height
@@ -334,174 +449,11 @@
                                     LayoutMinWidth: =250
                                     LayoutMode: =LayoutMode.Auto
                                     PaddingBottom: =20
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Supplier",true,false)
                                     Width: =con_ContractCreationDate_PCS_1.Width
-                                    ZIndex: =27
+                                    ZIndex: =6
 
-                                    Container1_35 As groupContainer.horizontalAutoLayoutContainer:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(237, 237, 237, 1)
-                                        FillPortions: =0
-                                        Height: =Parent.Height*.3
-                                        LayoutMinHeight: =100
-                                        LayoutMinWidth: =250
-                                        LayoutMode: =LayoutMode.Auto
-                                        RadiusBottomLeft: =0
-                                        RadiusBottomRight: =0
-                                        RadiusTopLeft: =0
-                                        RadiusTopRight: =0
-                                        Width: =Parent.Width
-                                        ZIndex: =1
-
-                                        lbl_ContractCreateDate_PCS_16 As label:
-                                            FontWeight: =FontWeight.Bold
-                                            Height: =Parent.Height
-                                            PaddingLeft: =10
-                                            PaddingRight: =0
-                                            Size: =8
-                                            Text: |-
-                                                ="CUSTOMER BANK MIRC NO : "
-                                            Width: =Parent.Width*.4
-                                            ZIndex: =1
-
-                                    TextInput1_32 As text:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        BorderColor: =RGBA(255, 255, 255, 1)
-                                        BorderThickness: =0
-                                        Default: =""
-                                        Fill: =VarFieldColor
-                                        Height: =30
-                                        HintText: ="Enter WITNESS VENDOR BY ..."
-                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                                        HoverFill: =VarFieldColor
-                                        OnSelect: =Set(VarFindText,"Customer Bank MIRC")
-                                        Size: =10
-                                        Width: =Parent.Width*.97
-                                        ZIndex: =2
-
-                                Container5_18 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.Center
-                                    FillPortions: =0
-                                    Height: =con_ContractCreationDate_PCS_1.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =20
-                                    Width: =con_ContractCreationDate_PCS_1.Width
-                                    ZIndex: =28
-
-                                    Container1_36 As groupContainer.horizontalAutoLayoutContainer:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(237, 237, 237, 1)
-                                        FillPortions: =0
-                                        Height: =Parent.Height*.3
-                                        LayoutMinHeight: =100
-                                        LayoutMinWidth: =250
-                                        LayoutMode: =LayoutMode.Auto
-                                        RadiusBottomLeft: =0
-                                        RadiusBottomRight: =0
-                                        RadiusTopLeft: =0
-                                        RadiusTopRight: =0
-                                        Width: =Parent.Width
-                                        ZIndex: =1
-
-                                        lbl_ContractCreateDate_PCS_18 As label:
-                                            FontWeight: =FontWeight.Bold
-                                            Height: =Parent.Height
-                                            PaddingLeft: =10
-                                            PaddingRight: =0
-                                            Size: =8
-                                            Text: |-
-                                                ="CUSTOMER BANK ACCOUNT NO : "
-                                            Width: =Parent.Width*.4
-                                            ZIndex: =1
-
-                                    TextInput1_33 As text:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        BorderColor: =RGBA(255, 255, 255, 1)
-                                        BorderThickness: =0
-                                        Default: =""
-                                        Fill: =VarFieldColor
-                                        Height: =30
-                                        HintText: ="Enter WITNESS VENDOR BY ..."
-                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                                        HoverFill: =VarFieldColor
-                                        OnSelect: =Set(VarFindText,"Customer Bank Account no")
-                                        Size: =10
-                                        Width: =Parent.Width*.97
-                                        ZIndex: =2
-
-                                Container5_20 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.Center
-                                    FillPortions: =0
-                                    Height: =con_ContractCreationDate_PCS_1.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =20
-                                    Width: =con_ContractCreationDate_PCS_1.Width
-                                    ZIndex: =29
-
-                                    Container1_37 As groupContainer.horizontalAutoLayoutContainer:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(237, 237, 237, 1)
-                                        FillPortions: =0
-                                        Height: =Parent.Height*.3
-                                        LayoutMinHeight: =100
-                                        LayoutMinWidth: =250
-                                        LayoutMode: =LayoutMode.Auto
-                                        RadiusBottomLeft: =0
-                                        RadiusBottomRight: =0
-                                        RadiusTopLeft: =0
-                                        RadiusTopRight: =0
-                                        Width: =Parent.Width
-                                        ZIndex: =1
-
-                                        lbl_ContractCreateDate_PCS_20 As label:
-                                            FontWeight: =FontWeight.Bold
-                                            Height: =Parent.Height
-                                            PaddingLeft: =10
-                                            PaddingRight: =0
-                                            Size: =8
-                                            Text: |-
-                                                ="CUSTOMER INVOICE COUNTRY : "
-                                            Width: =Parent.Width*.4
-                                            ZIndex: =1
-
-                                    TextInput1_34 As text:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        BorderColor: =RGBA(255, 255, 255, 1)
-                                        BorderThickness: =0
-                                        Default: =""
-                                        Fill: =VarFieldColor
-                                        Height: =30
-                                        HintText: ="Enter WITNESS VENDOR BY ..."
-                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                                        HoverFill: =VarFieldColor
-                                        Size: =10
-                                        Width: =Parent.Width*.97
-                                        ZIndex: =2
-
-                                Container5_21 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.Center
-                                    FillPortions: =0
-                                    Height: =con_ContractCreationDate_PCS_1.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =20
-                                    Width: =con_ContractCreationDate_PCS_1.Width
-                                    ZIndex: =30
-
-                                    Container1_38 As groupContainer.horizontalAutoLayoutContainer:
+                                    Container1_31 As groupContainer.horizontalAutoLayoutContainer:
                                         AlignInContainer: =AlignInContainer.Center
                                         Fill: =RGBA(237, 237, 237, 1)
                                         FillPortions: =0
@@ -523,11 +475,11 @@
                                             PaddingRight: =0
                                             Size: =8
                                             Text: |-
-                                                ="CUSTOMER INVOICE PIN NO : "
-                                            Width: =Parent.Width*.4
+                                                ="CUSTOMER CONTACT PERSON PHONE NO: "
+                                            Width: =Parent.Width*.45
                                             ZIndex: =1
 
-                                    TextInput1_35 As text:
+                                    TextInput1_29 As text:
                                         AlignInContainer: =AlignInContainer.Center
                                         BorderColor: =RGBA(255, 255, 255, 1)
                                         BorderThickness: =0
@@ -537,12 +489,12 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
-                                        OnSelect: =Set(VarFindText,"Customer Invoice Pin no")
+                                        OnSelect: =Set(VarFindText,"Insert Contact Person Phone No")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
 
-                                Container5_22 As groupContainer.verticalAutoLayoutContainer:
+                                Container5_43 As groupContainer.verticalAutoLayoutContainer:
                                     AlignInContainer: =AlignInContainer.Center
                                     FillPortions: =0
                                     Height: =con_ContractCreationDate_PCS_1.Height
@@ -553,10 +505,11 @@
                                     LayoutMinWidth: =250
                                     LayoutMode: =LayoutMode.Auto
                                     PaddingBottom: =20
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Supplier",true,false)
                                     Width: =con_ContractCreationDate_PCS_1.Width
-                                    ZIndex: =31
+                                    ZIndex: =7
 
-                                    Container1_39 As groupContainer.horizontalAutoLayoutContainer:
+                                    Container1_32 As groupContainer.horizontalAutoLayoutContainer:
                                         AlignInContainer: =AlignInContainer.Center
                                         Fill: =RGBA(237, 237, 237, 1)
                                         FillPortions: =0
@@ -578,11 +531,11 @@
                                             PaddingRight: =0
                                             Size: =8
                                             Text: |-
-                                                ="CUSTOMER BANK NAME : "
+                                                ="CUSTOMER CONTACT PERSON EMAIL : "
                                             Width: =Parent.Width*.4
                                             ZIndex: =1
 
-                                    TextInput1_36 As text:
+                                    TextInput1_30 As text:
                                         AlignInContainer: =AlignInContainer.Center
                                         BorderColor: =RGBA(255, 255, 255, 1)
                                         BorderThickness: =0
@@ -592,12 +545,12 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
-                                        OnSelect: =Set(VarFindText,"Customer Bank Name")
+                                        OnSelect: =Set(VarFindText,"Insert Contact Person Email")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
 
-                                Container5_23 As groupContainer.verticalAutoLayoutContainer:
+                                Container5_44 As groupContainer.verticalAutoLayoutContainer:
                                     AlignInContainer: =AlignInContainer.Center
                                     FillPortions: =0
                                     Height: =con_ContractCreationDate_PCS_1.Height
@@ -608,10 +561,11 @@
                                     LayoutMinWidth: =250
                                     LayoutMode: =LayoutMode.Auto
                                     PaddingBottom: =20
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Supplier",true,false)
                                     Width: =con_ContractCreationDate_PCS_1.Width
-                                    ZIndex: =32
+                                    ZIndex: =8
 
-                                    Container1_40 As groupContainer.horizontalAutoLayoutContainer:
+                                    Container1_33 As groupContainer.horizontalAutoLayoutContainer:
                                         AlignInContainer: =AlignInContainer.Center
                                         Fill: =RGBA(237, 237, 237, 1)
                                         FillPortions: =0
@@ -633,11 +587,11 @@
                                             PaddingRight: =0
                                             Size: =8
                                             Text: |-
-                                                ="CUSTOMER INVOICE STATE : "
+                                                ="CUSTOMER BILLING CITY : "
                                             Width: =Parent.Width*.4
                                             ZIndex: =1
 
-                                    TextInput1_37 As text:
+                                    TextInput1_31 As text:
                                         AlignInContainer: =AlignInContainer.Center
                                         BorderColor: =RGBA(255, 255, 255, 1)
                                         BorderThickness: =0
@@ -647,12 +601,12 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
-                                        OnSelect: =Set(VarFindText,"Customer Invoice State")
+                                        OnSelect: =Set(VarFindText,"Insert Company Billing City")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
 
-                                Container5_42 As groupContainer.verticalAutoLayoutContainer:
+                                Container5_45 As groupContainer.verticalAutoLayoutContainer:
                                     AlignInContainer: =AlignInContainer.Center
                                     FillPortions: =0
                                     Height: =con_ContractCreationDate_PCS_1.Height
@@ -663,10 +617,11 @@
                                     LayoutMinWidth: =250
                                     LayoutMode: =LayoutMode.Auto
                                     PaddingBottom: =20
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Supplier",true,false)
                                     Width: =con_ContractCreationDate_PCS_1.Width
-                                    ZIndex: =33
+                                    ZIndex: =9
 
-                                    Container1_41 As groupContainer.horizontalAutoLayoutContainer:
+                                    Container1_34 As groupContainer.horizontalAutoLayoutContainer:
                                         AlignInContainer: =AlignInContainer.Center
                                         Fill: =RGBA(237, 237, 237, 1)
                                         FillPortions: =0
@@ -688,11 +643,11 @@
                                             PaddingRight: =0
                                             Size: =8
                                             Text: |-
-                                                ="CUSTOMER INVOICE CITY : "
+                                                ="CUSTOMER BILLING STATE : "
                                             Width: =Parent.Width*.4
                                             ZIndex: =1
 
-                                    TextInput1_38 As text:
+                                    TextInput1_32 As text:
                                         AlignInContainer: =AlignInContainer.Center
                                         BorderColor: =RGBA(255, 255, 255, 1)
                                         BorderThickness: =0
@@ -702,12 +657,12 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
-                                        OnSelect: =Set(VarFindText,"Customer Invoice City")
+                                        OnSelect: =Set(VarFindText,"Insert Company Billing State")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
 
-                                Container5_43 As groupContainer.verticalAutoLayoutContainer:
+                                Container5_46 As groupContainer.verticalAutoLayoutContainer:
                                     AlignInContainer: =AlignInContainer.Center
                                     FillPortions: =0
                                     Height: =con_ContractCreationDate_PCS_1.Height
@@ -718,10 +673,11 @@
                                     LayoutMinWidth: =250
                                     LayoutMode: =LayoutMode.Auto
                                     PaddingBottom: =20
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Supplier",true,false)
                                     Width: =con_ContractCreationDate_PCS_1.Width
-                                    ZIndex: =34
+                                    ZIndex: =10
 
-                                    Container1_42 As groupContainer.horizontalAutoLayoutContainer:
+                                    Container1_35 As groupContainer.horizontalAutoLayoutContainer:
                                         AlignInContainer: =AlignInContainer.Center
                                         Fill: =RGBA(237, 237, 237, 1)
                                         FillPortions: =0
@@ -743,11 +699,11 @@
                                             PaddingRight: =0
                                             Size: =8
                                             Text: |-
-                                                ="CUSTOMER INVOICE NAME : "
+                                                ="CUSTOMER BILLING COUNTRY : "
                                             Width: =Parent.Width*.4
                                             ZIndex: =1
 
-                                    TextInput1_39 As text:
+                                    TextInput1_33 As text:
                                         AlignInContainer: =AlignInContainer.Center
                                         BorderColor: =RGBA(255, 255, 255, 1)
                                         BorderThickness: =0
@@ -757,12 +713,12 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
-                                        OnSelect: =Set(VarFindText,"Customer Invoice Name")
+                                        OnSelect: =Set(VarFindText,"Insert Company Billing Country")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
 
-                                Container5_44 As groupContainer.verticalAutoLayoutContainer:
+                                Container5_47 As groupContainer.verticalAutoLayoutContainer:
                                     AlignInContainer: =AlignInContainer.Center
                                     FillPortions: =0
                                     Height: =con_ContractCreationDate_PCS_1.Height
@@ -773,10 +729,11 @@
                                     LayoutMinWidth: =250
                                     LayoutMode: =LayoutMode.Auto
                                     PaddingBottom: =20
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Supplier",true,false)
                                     Width: =con_ContractCreationDate_PCS_1.Width
-                                    ZIndex: =35
+                                    ZIndex: =11
 
-                                    Container1_43 As groupContainer.horizontalAutoLayoutContainer:
+                                    Container1_36 As groupContainer.horizontalAutoLayoutContainer:
                                         AlignInContainer: =AlignInContainer.Center
                                         Fill: =RGBA(237, 237, 237, 1)
                                         FillPortions: =0
@@ -798,176 +755,11 @@
                                             PaddingRight: =0
                                             Size: =8
                                             Text: |-
-                                                ="CUSTOMER CONTACT PERSON EMAIL : "
+                                                ="INVOICE PIN CODE : "
                                             Width: =Parent.Width*.4
                                             ZIndex: =1
 
-                                    TextInput1_40 As text:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        BorderColor: =RGBA(255, 255, 255, 1)
-                                        BorderThickness: =0
-                                        Default: =""
-                                        Fill: =VarFieldColor
-                                        Height: =30
-                                        HintText: ="Enter WITNESS VENDOR BY ..."
-                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                                        HoverFill: =VarFieldColor
-                                        OnSelect: =Set(VarFindText,"Insert Contact Person Email")
-                                        Size: =10
-                                        Width: =Parent.Width*.97
-                                        ZIndex: =2
-
-                                Container5_45 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.Center
-                                    FillPortions: =0
-                                    Height: =con_ContractCreationDate_PCS_1.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =20
-                                    Width: =con_ContractCreationDate_PCS_1.Width
-                                    ZIndex: =36
-
-                                    Container1_44 As groupContainer.horizontalAutoLayoutContainer:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(237, 237, 237, 1)
-                                        FillPortions: =0
-                                        Height: =Parent.Height*.3
-                                        LayoutMinHeight: =100
-                                        LayoutMinWidth: =250
-                                        LayoutMode: =LayoutMode.Auto
-                                        RadiusBottomLeft: =0
-                                        RadiusBottomRight: =0
-                                        RadiusTopLeft: =0
-                                        RadiusTopRight: =0
-                                        Width: =Parent.Width
-                                        ZIndex: =1
-
-                                        lbl_ContractCreateDate_PCS_57 As label:
-                                            FontWeight: =FontWeight.Bold
-                                            Height: =Parent.Height
-                                            PaddingLeft: =10
-                                            PaddingRight: =0
-                                            Size: =8
-                                            Text: |-
-                                                ="CUSTOMER CONTACT PERSON PHONE NO: "
-                                            Width: =Parent.Width*.45
-                                            ZIndex: =1
-
-                                    TextInput1_41 As text:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        BorderColor: =RGBA(255, 255, 255, 1)
-                                        BorderThickness: =0
-                                        Default: =""
-                                        Fill: =VarFieldColor
-                                        Height: =30
-                                        HintText: ="Enter WITNESS VENDOR BY ..."
-                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                                        HoverFill: =VarFieldColor
-                                        OnSelect: =Set(VarFindText,"Insert Contact Person Phone No")
-                                        Size: =10
-                                        Width: =Parent.Width*.97
-                                        ZIndex: =2
-
-                                Container5_46 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.Center
-                                    FillPortions: =0
-                                    Height: =con_ContractCreationDate_PCS_1.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =20
-                                    Width: =con_ContractCreationDate_PCS_1.Width
-                                    ZIndex: =37
-
-                                    Container1_45 As groupContainer.horizontalAutoLayoutContainer:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(237, 237, 237, 1)
-                                        FillPortions: =0
-                                        Height: =Parent.Height*.3
-                                        LayoutMinHeight: =100
-                                        LayoutMinWidth: =250
-                                        LayoutMode: =LayoutMode.Auto
-                                        RadiusBottomLeft: =0
-                                        RadiusBottomRight: =0
-                                        RadiusTopLeft: =0
-                                        RadiusTopRight: =0
-                                        Width: =Parent.Width
-                                        ZIndex: =1
-
-                                        lbl_ContractCreateDate_PCS_58 As label:
-                                            FontWeight: =FontWeight.Bold
-                                            Height: =Parent.Height
-                                            PaddingLeft: =10
-                                            PaddingRight: =0
-                                            Size: =8
-                                            Text: |-
-                                                ="CUSTOMER CONTACT PERSON NAME : "
-                                            Width: =Parent.Width*.4
-                                            ZIndex: =1
-
-                                    TextInput1_42 As text:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        BorderColor: =RGBA(255, 255, 255, 1)
-                                        BorderThickness: =0
-                                        Default: =""
-                                        Fill: =VarFieldColor
-                                        Height: =30
-                                        HintText: ="Enter WITNESS VENDOR BY ..."
-                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                                        HoverFill: =VarFieldColor
-                                        OnSelect: =Set(VarFindText,"Insert Contact Person Name")
-                                        Size: =10
-                                        Width: =Parent.Width*.97
-                                        ZIndex: =2
-
-                                Container5_47 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.Center
-                                    FillPortions: =0
-                                    Height: =con_ContractCreationDate_PCS_1.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =20
-                                    Width: =con_ContractCreationDate_PCS_1.Width
-                                    ZIndex: =38
-
-                                    Container1_46 As groupContainer.horizontalAutoLayoutContainer:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(237, 237, 237, 1)
-                                        FillPortions: =0
-                                        Height: =Parent.Height*.3
-                                        LayoutMinHeight: =100
-                                        LayoutMinWidth: =250
-                                        LayoutMode: =LayoutMode.Auto
-                                        RadiusBottomLeft: =0
-                                        RadiusBottomRight: =0
-                                        RadiusTopLeft: =0
-                                        RadiusTopRight: =0
-                                        Width: =Parent.Width
-                                        ZIndex: =1
-
-                                        lbl_ContractCreateDate_PCS_59 As label:
-                                            FontWeight: =FontWeight.Bold
-                                            Height: =Parent.Height
-                                            PaddingLeft: =10
-                                            PaddingRight: =0
-                                            Size: =8
-                                            Text: |-
-                                                ="PIN CODE : "
-                                            Width: =Parent.Width*.4
-                                            ZIndex: =1
-
-                                    TextInput1_43 As text:
+                                    TextInput1_34 As text:
                                         AlignInContainer: =AlignInContainer.Center
                                         BorderColor: =RGBA(255, 255, 255, 1)
                                         BorderThickness: =0
@@ -993,10 +785,234 @@
                                     LayoutMinWidth: =250
                                     LayoutMode: =LayoutMode.Auto
                                     PaddingBottom: =20
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Supplier",true,false)
                                     Width: =con_ContractCreationDate_PCS_1.Width
-                                    ZIndex: =39
+                                    ZIndex: =12
 
-                                    Container1_47 As groupContainer.horizontalAutoLayoutContainer:
+                                    Container1_37 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_ContractCreateDate_PCS_57 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="CUSTOMER INVOICE NAME : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
+                                    TextInput1_35 As text:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        BorderColor: =RGBA(255, 255, 255, 1)
+                                        BorderThickness: =0
+                                        Default: =""
+                                        Fill: =VarFieldColor
+                                        Height: =30
+                                        HintText: ="Enter WITNESS VENDOR BY ..."
+                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                        HoverFill: =VarFieldColor
+                                        OnSelect: =Set(VarFindText,"Customer Invoice Name")
+                                        Size: =10
+                                        Width: =Parent.Width*.97
+                                        ZIndex: =2
+
+                                Container5_49 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =con_ContractCreationDate_PCS_1.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Supplier",true,false)
+                                    Width: =con_ContractCreationDate_PCS_1.Width
+                                    ZIndex: =13
+
+                                    Container1_38 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_ContractCreateDate_PCS_58 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="CUSTOMER INVOICE CITY : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
+                                    TextInput1_36 As text:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        BorderColor: =RGBA(255, 255, 255, 1)
+                                        BorderThickness: =0
+                                        Default: =""
+                                        Fill: =VarFieldColor
+                                        Height: =30
+                                        HintText: ="Enter WITNESS VENDOR BY ..."
+                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                        HoverFill: =VarFieldColor
+                                        OnSelect: =Set(VarFindText,"Customer Invoice City")
+                                        Size: =10
+                                        Width: =Parent.Width*.97
+                                        ZIndex: =2
+
+                                Container5_20 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =con_ContractCreationDate_PCS_1.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Supplier",true,false)
+                                    Width: =con_ContractCreationDate_PCS_1.Width
+                                    ZIndex: =14
+
+                                    Container1_39 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_ContractCreateDate_PCS_59 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="CUSTOMER INVOICE STATE : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
+                                    TextInput1_37 As text:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        BorderColor: =RGBA(255, 255, 255, 1)
+                                        BorderThickness: =0
+                                        Default: =""
+                                        Fill: =VarFieldColor
+                                        Height: =30
+                                        HintText: ="Enter WITNESS VENDOR BY ..."
+                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                        HoverFill: =VarFieldColor
+                                        OnSelect: =Set(VarFindText,"Customer Invoice State")
+                                        Size: =10
+                                        Width: =Parent.Width*.97
+                                        ZIndex: =2
+
+                                Container5_14 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =con_ContractCreationDate_PCS_1.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Supplier",true,false)
+                                    Width: =con_ContractCreationDate_PCS_1.Width
+                                    ZIndex: =15
+
+                                    Container1_40 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_ContractCreateDate_PCS_20 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="CUSTOMER INVOICE COUNTRY : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
+                                    TextInput1_38 As text:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        BorderColor: =RGBA(255, 255, 255, 1)
+                                        BorderThickness: =0
+                                        Default: =""
+                                        Fill: =VarFieldColor
+                                        Height: =30
+                                        HintText: ="Enter WITNESS VENDOR BY ..."
+                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                        HoverFill: =VarFieldColor
+                                        Size: =10
+                                        Width: =Parent.Width*.97
+                                        ZIndex: =2
+
+                                Container5_16 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =con_ContractCreationDate_PCS_1.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Supplier",true,false)
+                                    Width: =con_ContractCreationDate_PCS_1.Width
+                                    ZIndex: =16
+
+                                    Container1_41 As groupContainer.horizontalAutoLayoutContainer:
                                         AlignInContainer: =AlignInContainer.Center
                                         Fill: =RGBA(237, 237, 237, 1)
                                         FillPortions: =0
@@ -1018,11 +1034,11 @@
                                             PaddingRight: =0
                                             Size: =8
                                             Text: |-
-                                                ="CUSTOMER BILLING STATE : "
+                                                ="CUSTOMER INVOICE PIN NO : "
                                             Width: =Parent.Width*.4
                                             ZIndex: =1
 
-                                    TextInput1_44 As text:
+                                    TextInput1_39 As text:
                                         AlignInContainer: =AlignInContainer.Center
                                         BorderColor: =RGBA(255, 255, 255, 1)
                                         BorderThickness: =0
@@ -1032,12 +1048,12 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
-                                        OnSelect: =Set(VarFindText,"Insert Company Billing State")
+                                        OnSelect: =Set(VarFindText,"Customer Invoice Pin no")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
 
-                                Container5_49 As groupContainer.verticalAutoLayoutContainer:
+                                Container5_18 As groupContainer.verticalAutoLayoutContainer:
                                     AlignInContainer: =AlignInContainer.Center
                                     FillPortions: =0
                                     Height: =con_ContractCreationDate_PCS_1.Height
@@ -1048,10 +1064,11 @@
                                     LayoutMinWidth: =250
                                     LayoutMode: =LayoutMode.Auto
                                     PaddingBottom: =20
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Supplier",true,false)
                                     Width: =con_ContractCreationDate_PCS_1.Width
-                                    ZIndex: =40
+                                    ZIndex: =17
 
-                                    Container1_48 As groupContainer.horizontalAutoLayoutContainer:
+                                    Container1_42 As groupContainer.horizontalAutoLayoutContainer:
                                         AlignInContainer: =AlignInContainer.Center
                                         Fill: =RGBA(237, 237, 237, 1)
                                         FillPortions: =0
@@ -1073,11 +1090,11 @@
                                             PaddingRight: =0
                                             Size: =8
                                             Text: |-
-                                                ="CUSTOMER BILLING COUNTRY : "
+                                                ="CUSTOMER BANK NAME : "
                                             Width: =Parent.Width*.4
                                             ZIndex: =1
 
-                                    TextInput1_45 As text:
+                                    TextInput1_40 As text:
                                         AlignInContainer: =AlignInContainer.Center
                                         BorderColor: =RGBA(255, 255, 255, 1)
                                         BorderThickness: =0
@@ -1087,7 +1104,231 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
-                                        OnSelect: =Set(VarFindText,"Insert Company Billing Country")
+                                        OnSelect: =Set(VarFindText,"Customer Bank Name")
+                                        Size: =10
+                                        Width: =Parent.Width*.97
+                                        ZIndex: =2
+
+                                Container5_10 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =con_ContractCreationDate_PCS_1.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Supplier",true,false)
+                                    Width: =con_ContractCreationDate_PCS_1.Width
+                                    ZIndex: =18
+
+                                    Container1_43 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_ContractCreateDate_PCS_16 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="CUSTOMER BANK MIRC NO : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
+                                    TextInput1_41 As text:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        BorderColor: =RGBA(255, 255, 255, 1)
+                                        BorderThickness: =0
+                                        Default: =""
+                                        Fill: =VarFieldColor
+                                        Height: =30
+                                        HintText: ="Enter WITNESS VENDOR BY ..."
+                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                        HoverFill: =VarFieldColor
+                                        OnSelect: =Set(VarFindText,"Customer Bank MIRC")
+                                        Size: =10
+                                        Width: =Parent.Width*.97
+                                        ZIndex: =2
+
+                                Container5_8 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =con_ContractCreationDate_PCS_1.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Supplier",true,false)
+                                    Width: =con_ContractCreationDate_PCS_1.Width
+                                    ZIndex: =19
+
+                                    Container1_44 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_ContractCreateDate_PCS_14 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="CUSTOMER BANK IFSC CODE : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
+                                    TextInput1_42 As text:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        BorderColor: =RGBA(255, 255, 255, 1)
+                                        BorderThickness: =0
+                                        Default: =""
+                                        Fill: =VarFieldColor
+                                        Height: =30
+                                        HintText: ="Enter WITNESS VENDOR BY ..."
+                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                        HoverFill: =VarFieldColor
+                                        OnSelect: =Set(VarFindText,"Customer Bank IFSC&NEFT")
+                                        Size: =10
+                                        Width: =Parent.Width*.97
+                                        ZIndex: =2
+
+                                Container5_12 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =con_ContractCreationDate_PCS_1.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Supplier",true,false)
+                                    Width: =con_ContractCreationDate_PCS_1.Width
+                                    ZIndex: =20
+
+                                    Container1_45 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_ContractCreateDate_PCS_18 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="CUSTOMER BANK ACCOUNT NO : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
+                                    TextInput1_43 As text:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        BorderColor: =RGBA(255, 255, 255, 1)
+                                        BorderThickness: =0
+                                        Default: =""
+                                        Fill: =VarFieldColor
+                                        Height: =30
+                                        HintText: ="Enter WITNESS VENDOR BY ..."
+                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                        HoverFill: =VarFieldColor
+                                        OnSelect: =Set(VarFindText,"Customer Bank Account no")
+                                        Size: =10
+                                        Width: =Parent.Width*.97
+                                        ZIndex: =2
+
+                                Container5_21 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =con_ContractCreationDate_PCS_1.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Supplier",true,false)
+                                    Width: =con_ContractCreationDate_PCS_1.Width
+                                    ZIndex: =21
+
+                                    Container1_46 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_ContractCreateDate_PCS_12 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="CUSTOMER BANK BRANCH ADDRESS : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
+                                    TextInput1_44 As text:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        BorderColor: =RGBA(255, 255, 255, 1)
+                                        BorderThickness: =0
+                                        Default: =""
+                                        Fill: =VarFieldColor
+                                        Height: =30
+                                        HintText: ="Enter WITNESS VENDOR BY ..."
+                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                        HoverFill: =VarFieldColor
+                                        OnSelect: =Set(VarFindText,"Customer Bank Branch Address")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
@@ -1103,10 +1344,11 @@
                                     LayoutMinWidth: =250
                                     LayoutMode: =LayoutMode.Auto
                                     PaddingBottom: =20
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Proponent",true,false)
                                     Width: =con_ContractCreationDate_PCS_1.Width
-                                    ZIndex: =41
+                                    ZIndex: =22
 
-                                    Container1_49 As groupContainer.horizontalAutoLayoutContainer:
+                                    Container1_47 As groupContainer.horizontalAutoLayoutContainer:
                                         AlignInContainer: =AlignInContainer.Center
                                         Fill: =RGBA(237, 237, 237, 1)
                                         FillPortions: =0
@@ -1132,7 +1374,7 @@
                                             Width: =Parent.Width*.4
                                             ZIndex: =1
 
-                                    TextInput1_46 As text:
+                                    TextInput1_45 As text:
                                         AlignInContainer: =AlignInContainer.Center
                                         BorderColor: =RGBA(255, 255, 255, 1)
                                         BorderThickness: =0
@@ -1158,9 +1400,9 @@
                                     LayoutMode: =LayoutMode.Auto
                                     PaddingBottom: =20
                                     Width: =con_ContractCreationDate_PCS_1.Width
-                                    ZIndex: =42
+                                    ZIndex: =23
 
-                                    Container1_50 As groupContainer.horizontalAutoLayoutContainer:
+                                    Container1_48 As groupContainer.horizontalAutoLayoutContainer:
                                         AlignInContainer: =AlignInContainer.Center
                                         Fill: =RGBA(237, 237, 237, 1)
                                         FillPortions: =0
@@ -1186,7 +1428,7 @@
                                             Width: =Parent.Width*.4
                                             ZIndex: =1
 
-                                    TextInput1_47 As text:
+                                    txt_CustomerDelaranceName_PCS As text:
                                         AlignInContainer: =AlignInContainer.Center
                                         BorderColor: =RGBA(255, 255, 255, 1)
                                         BorderThickness: =0
@@ -1213,9 +1455,9 @@
                                     LayoutMode: =LayoutMode.Auto
                                     PaddingBottom: =20
                                     Width: =con_ContractCreationDate_PCS_1.Width
-                                    ZIndex: =43
+                                    ZIndex: =24
 
-                                    Container1_51 As groupContainer.horizontalAutoLayoutContainer:
+                                    Container1_49 As groupContainer.horizontalAutoLayoutContainer:
                                         AlignInContainer: =AlignInContainer.Center
                                         Fill: =RGBA(237, 237, 237, 1)
                                         FillPortions: =0
@@ -1237,11 +1479,11 @@
                                             PaddingRight: =0
                                             Size: =8
                                             Text: |-
-                                                ="CUSTOMER BILLING CITY : "
+                                                ="WITNESS VENDOR BY NULL  : "
                                             Width: =Parent.Width*.4
                                             ZIndex: =1
 
-                                    TextInput1_48 As text:
+                                    TextInput1_47 As text:
                                         AlignInContainer: =AlignInContainer.Center
                                         BorderColor: =RGBA(255, 255, 255, 1)
                                         BorderThickness: =0
@@ -1251,7 +1493,7 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
-                                        OnSelect: =Set(VarFindText,"Insert Company Billing City")
+                                        OnSelect: =Set(VarFindText,"Witness Vendor By")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
@@ -1267,10 +1509,11 @@
                                     LayoutMinWidth: =250
                                     LayoutMode: =LayoutMode.Auto
                                     PaddingBottom: =20
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Proponent",true,false)
                                     Width: =con_ContractCreationDate_PCS_1.Width
-                                    ZIndex: =44
+                                    ZIndex: =25
 
-                                    Container1_52 As groupContainer.horizontalAutoLayoutContainer:
+                                    Container1_50 As groupContainer.horizontalAutoLayoutContainer:
                                         AlignInContainer: =AlignInContainer.Center
                                         Fill: =RGBA(237, 237, 237, 1)
                                         FillPortions: =0
@@ -1292,11 +1535,11 @@
                                             PaddingRight: =0
                                             Size: =8
                                             Text: |-
-                                                ="CHARGES : "
+                                                ="VENDOR CONTACT NO  : "
                                             Width: =Parent.Width*.4
                                             ZIndex: =1
 
-                                    TextInput1_49 As text:
+                                    TextInput1_48 As text:
                                         AlignInContainer: =AlignInContainer.Center
                                         BorderColor: =RGBA(255, 255, 255, 1)
                                         BorderThickness: =0
@@ -1306,7 +1549,6 @@
                                         HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
-                                        OnSelect: =Set(VarFindText,"Insert Charger")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
@@ -1315,7 +1557,6 @@
                                     AlignInContainer: =AlignInContainer.Center
                                     FillPortions: =0
                                     Height: =con_ContractCreationDate_PCS_1.Height
-                                    LayoutAlignItems: =LayoutAlignItems.Center
                                     LayoutDirection: =LayoutDirection.Vertical
                                     LayoutGap: =5
                                     LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
@@ -1323,11 +1564,12 @@
                                     LayoutMinWidth: =250
                                     LayoutMode: =LayoutMode.Auto
                                     PaddingBottom: =20
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Proponent",true,false)
                                     Width: =con_ContractCreationDate_PCS_1.Width
-                                    ZIndex: =45
+                                    ZIndex: =26
 
-                                    Container1_53 As groupContainer.horizontalAutoLayoutContainer:
-                                        AlignInContainer: =AlignInContainer.SetByContainer
+                                    Container1_51 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Center
                                         Fill: =RGBA(237, 237, 237, 1)
                                         FillPortions: =0
                                         Height: =Parent.Height*.3
@@ -1348,21 +1590,22 @@
                                             PaddingRight: =0
                                             Size: =8
                                             Text: |-
-                                                ="WITNESS VENDOR DATE : "
+                                                ="VENDOR EMAIL : "
                                             Width: =Parent.Width*.4
                                             ZIndex: =1
 
-                                    "DatePickerCanvas2_1 As 'Date picker'":
-                                        BasePaletteColor: =
-                                        DisplayMode: =DisplayMode.Edit
-                                        FontColor: =
-                                        Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
-                                        OnChange: =Set(VarFindText,"Witness Vendor Date")
+                                    TextInput1_49 As text:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        BorderColor: =RGBA(255, 255, 255, 1)
+                                        BorderThickness: =0
+                                        Default: =""
+                                        Fill: =VarFieldColor
+                                        Height: =30
+                                        HintText: ="Enter WITNESS VENDOR BY ..."
+                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                        HoverFill: =VarFieldColor
+                                        Size: =10
                                         Width: =Parent.Width*.97
-                                        X: =0
-                                        Y: =0
                                         ZIndex: =2
 
                                 Container5_55 As groupContainer.verticalAutoLayoutContainer:
@@ -1376,10 +1619,11 @@
                                     LayoutMinWidth: =250
                                     LayoutMode: =LayoutMode.Auto
                                     PaddingBottom: =20
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Proponent",true,false)
                                     Width: =con_ContractCreationDate_PCS_1.Width
-                                    ZIndex: =46
+                                    ZIndex: =27
 
-                                    Container1_54 As groupContainer.horizontalAutoLayoutContainer:
+                                    Container1_52 As groupContainer.horizontalAutoLayoutContainer:
                                         AlignInContainer: =AlignInContainer.Center
                                         Fill: =RGBA(237, 237, 237, 1)
                                         FillPortions: =0
@@ -1395,224 +1639,6 @@
                                         ZIndex: =1
 
                                         lbl_ContractCreateDate_PCS_67 As label:
-                                            FontWeight: =FontWeight.Bold
-                                            Height: =Parent.Height
-                                            PaddingLeft: =10
-                                            PaddingRight: =0
-                                            Size: =8
-                                            Text: |-
-                                                ="WITNES VENDOR TITILE: "
-                                            Width: =Parent.Width*.4
-                                            ZIndex: =1
-
-                                    TextInput1_50 As text:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        BorderColor: =RGBA(255, 255, 255, 1)
-                                        BorderThickness: =0
-                                        Default: =""
-                                        Fill: =VarFieldColor
-                                        Height: =30
-                                        HintText: ="Enter WITNESS VENDOR BY ..."
-                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                                        HoverFill: =VarFieldColor
-                                        OnSelect: =Set(VarFindText,"Witness Vendor Title")
-                                        Size: =10
-                                        Width: =Parent.Width*.97
-                                        ZIndex: =2
-
-                                Container5_56 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.Center
-                                    FillPortions: =0
-                                    Height: =con_ContractCreationDate_PCS_1.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =20
-                                    Width: =con_ContractCreationDate_PCS_1.Width
-                                    ZIndex: =47
-
-                                    Container1_55 As groupContainer.horizontalAutoLayoutContainer:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(237, 237, 237, 1)
-                                        FillPortions: =0
-                                        Height: =Parent.Height*.3
-                                        LayoutMinHeight: =100
-                                        LayoutMinWidth: =250
-                                        LayoutMode: =LayoutMode.Auto
-                                        RadiusBottomLeft: =0
-                                        RadiusBottomRight: =0
-                                        RadiusTopLeft: =0
-                                        RadiusTopRight: =0
-                                        Width: =Parent.Width
-                                        ZIndex: =1
-
-                                        lbl_ContractCreateDate_PCS_68 As label:
-                                            FontWeight: =FontWeight.Bold
-                                            Height: =Parent.Height
-                                            PaddingLeft: =10
-                                            PaddingRight: =0
-                                            Size: =8
-                                            Text: |-
-                                                ="WITNESS VENDOR BY  : "
-                                            Width: =Parent.Width*.4
-                                            ZIndex: =1
-
-                                    TextInput1_51 As text:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        BorderColor: =RGBA(255, 255, 255, 1)
-                                        BorderThickness: =0
-                                        Default: =""
-                                        Fill: =VarFieldColor
-                                        Height: =30
-                                        HintText: ="Enter WITNESS VENDOR BY ..."
-                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                                        HoverFill: =VarFieldColor
-                                        OnSelect: =Set(VarFindText,"Witness Vendor By")
-                                        Size: =10
-                                        Width: =Parent.Width*.97
-                                        ZIndex: =2
-
-                                Container5_57 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.Center
-                                    FillPortions: =0
-                                    Height: =con_ContractCreationDate_PCS_1.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =20
-                                    Width: =con_ContractCreationDate_PCS_1.Width
-                                    ZIndex: =48
-
-                                    Container1_56 As groupContainer.horizontalAutoLayoutContainer:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(237, 237, 237, 1)
-                                        FillPortions: =0
-                                        Height: =Parent.Height*.3
-                                        LayoutMinHeight: =100
-                                        LayoutMinWidth: =250
-                                        LayoutMode: =LayoutMode.Auto
-                                        RadiusBottomLeft: =0
-                                        RadiusBottomRight: =0
-                                        RadiusTopLeft: =0
-                                        RadiusTopRight: =0
-                                        Width: =Parent.Width
-                                        ZIndex: =1
-
-                                        lbl_ContractCreateDate_PCS_69 As label:
-                                            FontWeight: =FontWeight.Bold
-                                            Height: =Parent.Height
-                                            PaddingLeft: =10
-                                            PaddingRight: =0
-                                            Size: =8
-                                            Text: |-
-                                                ="VENDOR CONTACT NO  : "
-                                            Width: =Parent.Width*.4
-                                            ZIndex: =1
-
-                                    TextInput1_52 As text:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        BorderColor: =RGBA(255, 255, 255, 1)
-                                        BorderThickness: =0
-                                        Default: =""
-                                        Fill: =VarFieldColor
-                                        Height: =30
-                                        HintText: ="Enter WITNESS VENDOR BY ..."
-                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                                        HoverFill: =VarFieldColor
-                                        Size: =10
-                                        Width: =Parent.Width*.97
-                                        ZIndex: =2
-
-                                Container5_58 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.Center
-                                    FillPortions: =0
-                                    Height: =con_ContractCreationDate_PCS_1.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =20
-                                    Width: =con_ContractCreationDate_PCS_1.Width
-                                    ZIndex: =49
-
-                                    Container1_57 As groupContainer.horizontalAutoLayoutContainer:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(237, 237, 237, 1)
-                                        FillPortions: =0
-                                        Height: =Parent.Height*.3
-                                        LayoutMinHeight: =100
-                                        LayoutMinWidth: =250
-                                        LayoutMode: =LayoutMode.Auto
-                                        RadiusBottomLeft: =0
-                                        RadiusBottomRight: =0
-                                        RadiusTopLeft: =0
-                                        RadiusTopRight: =0
-                                        Width: =Parent.Width
-                                        ZIndex: =1
-
-                                        lbl_ContractCreateDate_PCS_70 As label:
-                                            FontWeight: =FontWeight.Bold
-                                            Height: =Parent.Height
-                                            PaddingLeft: =10
-                                            PaddingRight: =0
-                                            Size: =8
-                                            Text: |-
-                                                ="VENDOR EMAIL : "
-                                            Width: =Parent.Width*.4
-                                            ZIndex: =1
-
-                                    TextInput1_53 As text:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        BorderColor: =RGBA(255, 255, 255, 1)
-                                        BorderThickness: =0
-                                        Default: =""
-                                        Fill: =VarFieldColor
-                                        Height: =30
-                                        HintText: ="Enter WITNESS VENDOR BY ..."
-                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                                        HoverFill: =VarFieldColor
-                                        Size: =10
-                                        Width: =Parent.Width*.97
-                                        ZIndex: =2
-
-                                Container5_59 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.Center
-                                    FillPortions: =0
-                                    Height: =con_ContractCreationDate_PCS_1.Height
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =20
-                                    Width: =con_ContractCreationDate_PCS_1.Width
-                                    ZIndex: =50
-
-                                    Container1_58 As groupContainer.horizontalAutoLayoutContainer:
-                                        AlignInContainer: =AlignInContainer.Center
-                                        Fill: =RGBA(237, 237, 237, 1)
-                                        FillPortions: =0
-                                        Height: =Parent.Height*.3
-                                        LayoutMinHeight: =100
-                                        LayoutMinWidth: =250
-                                        LayoutMode: =LayoutMode.Auto
-                                        RadiusBottomLeft: =0
-                                        RadiusBottomRight: =0
-                                        RadiusTopLeft: =0
-                                        RadiusTopRight: =0
-                                        Width: =Parent.Width
-                                        ZIndex: =1
-
-                                        lbl_ContractCreateDate_PCS_71 As label:
                                             FontWeight: =FontWeight.Bold
                                             Height: =Parent.Height
                                             PaddingLeft: =10
@@ -1643,7 +1669,7 @@
                                 LayoutAlignItems: =LayoutAlignItems.Center
                                 LayoutDirection: =LayoutDirection.Vertical
                                 LayoutGap: =5
-                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutJustifyContent: =LayoutJustifyContent.End
                                 LayoutMode: =LayoutMode.Auto
                                 PaddingBottom: =17
                                 PaddingRight: =8
@@ -1716,6 +1742,7 @@
                                     LayoutMode: =LayoutMode.Auto
                                     PaddingBottom: =20
                                     PaddingTop: =
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Procurement",true,false)
                                     Width: =con_ContractCreationDate_PCS_1.Width
                                     ZIndex: =2
 
@@ -1760,8 +1787,8 @@
                                         Width: =Parent.Width*.97
                                         ZIndex: =4
 
-                                con_CustomerNoticeAddress_PCS_1 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
+                                con_WitnessVendorBy_PCS_1 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
                                     FillPortions: =0
                                     Height: =con_ContractCreationDate_PCS_1.Height
                                     LayoutDirection: =LayoutDirection.Vertical
@@ -1771,10 +1798,11 @@
                                     LayoutMinWidth: =250
                                     LayoutMode: =LayoutMode.Auto
                                     PaddingBottom: =20
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Proponent",true,false)
                                     Width: =con_ContractCreationDate_PCS_1.Width
-                                    ZIndex: =3
+                                    ZIndex: =5
 
-                                    con_CustomerNoticeAddressHeader_PCS_1 As groupContainer.horizontalAutoLayoutContainer:
+                                    con_WitnessVendorBy_Header_PCS_1 As groupContainer.horizontalAutoLayoutContainer:
                                         AlignInContainer: =AlignInContainer.SetByContainer
                                         Fill: =RGBA(237, 237, 237, 1)
                                         FillPortions: =0
@@ -1789,34 +1817,32 @@
                                         Width: =Parent.Width
                                         ZIndex: =1
 
-                                        lbl_CustomerNoticeAddress_PCS_1 As label:
+                                        lbl_WitnessVendorBy_Header_PCS_1 As label:
                                             FontWeight: =FontWeight.Bold
                                             Height: =Parent.Height
                                             PaddingLeft: =10
                                             PaddingRight: =0
                                             Size: =8
                                             Text: |-
-                                                ="NOTICE CUSTOMER ADDRESS : "
+                                                ="WITNESS VENDOR BY : "
                                             Width: =Parent.Width*.4
                                             ZIndex: =1
 
-                                    txt_CustomerNoticeAddress_PCS_1 As text:
-                                        AlignInContainer: =AlignInContainer.Center
+                                    txt_WitnessVendorBy_PCS_1 As text:
                                         BorderColor: =RGBA(255, 255, 255, 1)
                                         BorderThickness: =0
                                         Default: =""
                                         Fill: =VarFieldColor
                                         Height: =30
-                                        HintText: ="Enter Notice Customer Address ... "
+                                        HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
-                                        Mode: =TextMode.MultiLine
-                                        OnSelect: =Set(VarFindText,"insert notice customer address")
+                                        OnSelect: =Set(VarFindText,"Witness Vendor By")
                                         Size: =10
                                         Width: =Parent.Width*.97
-                                        ZIndex: =3
+                                        ZIndex: =2
 
-                                Container5_8 As groupContainer.verticalAutoLayoutContainer:
+                                con_WitnessVendorTitle_PCS_1 As groupContainer.verticalAutoLayoutContainer:
                                     AlignInContainer: =AlignInContainer.Center
                                     FillPortions: =0
                                     Height: =con_ContractCreationDate_PCS_1.Height
@@ -1827,11 +1853,12 @@
                                     LayoutMinWidth: =250
                                     LayoutMode: =LayoutMode.Auto
                                     PaddingBottom: =20
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Proponent",true,false)
                                     Width: =con_ContractCreationDate_PCS_1.Width
-                                    ZIndex: =4
+                                    ZIndex: =6
 
-                                    Container1_31 As groupContainer.horizontalAutoLayoutContainer:
-                                        AlignInContainer: =AlignInContainer.Center
+                                    con_WitnessVendorTitle_Header_PCS_1 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.SetByContainer
                                         Fill: =RGBA(237, 237, 237, 1)
                                         FillPortions: =0
                                         Height: =Parent.Height*.3
@@ -1845,28 +1872,27 @@
                                         Width: =Parent.Width
                                         ZIndex: =1
 
-                                        lbl_ContractCreateDate_PCS_8 As label:
+                                        lbl_WitnessVendorTitle_PCS_1 As label:
                                             FontWeight: =FontWeight.Bold
                                             Height: =Parent.Height
                                             PaddingLeft: =10
                                             PaddingRight: =0
                                             Size: =8
                                             Text: |-
-                                                ="NOTICE CUSTOMER ATTN: "
+                                                ="WITNES VENDOR TITILE: "
                                             Width: =Parent.Width*.4
                                             ZIndex: =1
 
-                                    TextInput1_28 As text:
-                                        AlignInContainer: =AlignInContainer.Center
+                                    txxt_WitnessVendorTitle_Header_PCS_1 As text:
                                         BorderColor: =RGBA(255, 255, 255, 1)
                                         BorderThickness: =0
                                         Default: =""
                                         Fill: =VarFieldColor
                                         Height: =30
-                                        HintText: ="Enter Contract City ..."
+                                        HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
-                                        OnSelect: =Set(VarFindText,"insert notice customer attn")
+                                        OnSelect: =Set(VarFindText,"Witness Vendor Title")
                                         Size: =10
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
@@ -1988,28 +2014,28 @@
                                 Contract_Id:{Id:VarContractDetailsPatch.ID,Value:VarContractDetailsPatch.ID},
                                 contract_ID_FK:firstFormID,
                                 Notice_Client_Address:txt_CustomerNoticeAddress_PCS_1.Text,
-                                Notice_Client_Attention:TextInput1_28.Text,
-                                Witness_Vendor_By: TextInput1_29.Text,
-                                Client_Bank_Branch_Address:TextInput1_30.Text,
-                                'Client_Bank IFSC Code':TextInput1_31.Text,
-                                Client_Bank_MIRC_No:TextInput1_32.Text,
-                                Client_Bank_Account_No:TextInput1_33.Text,
-                                Client_Invoice_Country:TextInput1_34.Text,
-                                Client_Invoice_PinNo:Value(TextInput1_35.Text),
-                                Client_Bank_Name:TextInput1_36.Text,
+                                Notice_Client_Attention:TextInput1_3.Text,
+                                Witness_Vendor_By: txt_WitnessVendorBy_PCS_1.Text,
+                                Client_Bank_Branch_Address:TextInput1_44.Text,
+                                'Client_Bank IFSC Code':TextInput1_42.Text,
+                                Client_Bank_MIRC_No:TextInput1_41.Text,
+                                Client_Bank_Account_No:TextInput1_43.Text,
+                                Client_Invoice_Country:TextInput1_38.Text,
+                                Client_Invoice_PinNo:Value(TextInput1_39.Text),
+                                Client_Bank_Name:TextInput1_40.Text,
                                 Client_Invoice_State:TextInput1_37.Text,
-                                Client_Invoice_City:TextInput1_38.Text,
-                                Client_Invoice_Name:TextInput1_39.Text,
-                                Client_Contact_Person_Email:TextInput1_40.Text,
-                                Client_Contact_Person_PhoneNo:Value(TextInput1_41.Text),
-                                Client_Contact_Person_name:TextInput1_42.Text,
-                                PIN_CODE:Value(TextInput1_43.Text),
-                                Client_Billing_State:TextInput1_44.Text,
-                                Client_Billing_Country:TextInput1_45.Text, 
-                                Client_Delarance_Name:TextInput1_47.Text,
-                                Client_Billing_City:TextInput1_48.Text,
-                                'Witness Vendor Date':DatePickerCanvas2_1.SelectedDate,
-                                Witness_Vendor_Title:TextInput1_50.Text
+                                Client_Invoice_City:TextInput1_36.Text,
+                                Client_Invoice_Name:TextInput1_35.Text,
+                                Client_Contact_Person_Email:TextInput1_30.Text,
+                                Client_Contact_Person_PhoneNo:Value(TextInput1_29.Text),
+                                Client_Contact_Person_name:TextInput1_28.Text,
+                                PIN_CODE:Value(TextInput1_34.Text),
+                                Client_Billing_State:TextInput1_32.Text,
+                                Client_Billing_Country:TextInput1_33.Text, 
+                                Client_Delarance_Name:txt_CustomerDelaranceName_PCS.Text,
+                                Client_Billing_City:TextInput1_31.Text,
+                                'Witness Vendor Date':dt_WitnessVendorDate_PCS_1.SelectedDate,
+                                Witness_Vendor_Title:txxt_WitnessVendorTitle_Header_PCS_1.Text
                                 //Witness_Vendor_By:TextInput1_25.Text  
                                
                             }
@@ -2021,7 +2047,7 @@
                                 
                                 Contract_CreatedOn: dtp_ContractCreationDate_PCS_1.SelectedDate,
                                 Contract_Created_Location:txt_con_ContractCity_PCS_1.Text,
-                                Contract_Charges: Value(TextInput1_49.Text),
+                                Contract_Charges: Value(TextInput1_24.Text),
                                 Status: {Value: "Active"},
                                 Coc_stage: 2
                             }
@@ -2031,9 +2057,9 @@
                             {
                                 Contract_Id:{Id:VarContractDetailsPatch.ID,Value:VarContractDetailsPatch.ID},
                                contract_ID_FK:firstFormID ,
-                               Vendor_Contact_Number: Value(TextInput1_52.Text),
-                               Vendor_Email:TextInput1_53.Text,
-                               Vendor_Address:TextInput1_46.Text,
+                               Vendor_Contact_Number: Value(TextInput1_48.Text),
+                               Vendor_Email:TextInput1_49.Text,
+                               Vendor_Address:TextInput1_45.Text,
                                Title:txt_VendorName_PCS_1.Text
                                
                             }
@@ -2064,6 +2090,7 @@
         Fill: =RGBA(107, 29, 94, 1)
         Height: =3
         Width: =con_EditAndPreviewMain_PCS_1.X-shp_CircleDocuments_PCS_1.Width-shp_CircleDocuments_PCS_1.X-Parent.Width*0.01
+        X: =shp_CircleOverview_PCS.X+shp_CircleOverview_PCS.Width+(con_EditAndPreviewMain_PCS.X-shp_CircleOverview_PCS.X-shp_CircleOverview_PCS.Width-Self.Width)/2
         Y: =shp_CircleDocuments_PCS_1.Y+(shp_CircleDocuments_PCS_1.Height-Self.Height)/2
         ZIndex: =10
 

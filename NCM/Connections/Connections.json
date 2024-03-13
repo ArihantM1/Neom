@@ -29,6 +29,9 @@
           "CM_Services": {
             "tableName": "6dbb5b16-a766-4d7a-a4e9-0a481df4e7dd"
           },
+          "CM_Task": {
+            "tableName": "55d3d064-c8bb-4752-bbc6-7a7072f6f84e"
+          },
           "CM_Users": {
             "tableName": "53a260ac-fc52-41e6-9b41-2b2255667e34"
           },
@@ -51,7 +54,8 @@
       "CM_COC_Summary",
       "CM_VENDOR",
       "CM_COC_Download_History",
-      "CM_Users"
+      "CM_Users",
+      "CM_Task"
     ],
     "dependencies": {},
     "dependents": [],
