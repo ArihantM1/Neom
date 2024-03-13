@@ -233,13 +233,38 @@
             Gallery2 As gallery.variableTemplateHeightGallery:
                 DelayItemLoading: =true
                 Height: =Parent.Height-shp_MyTaskTopFiller_CSS.Height
-                Items: =ContrcatTasks
+                Items: |-
+                    =//ContrcatTasks
+                    Filter(CM_Task,Task_Assigned_to=LookUp(CM_Users,User().Email=Emaill).Role)
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplateSize: =Gallery2.Height*.2
                 Width: =Parent.Width
                 Y: =shp_MyTaskTopFiller_CSS.Height
                 ZIndex: =3
+
+                Label7 As label:
+                    FontWeight: =FontWeight.Semibold
+                    Height: =Parent.TemplateHeight
+                    OnSelect: =Select(Parent)
+                    Size: =8
+                    Text: =ThisItem.Task_Name
+                    Width: =Parent.TemplateWidth*.6
+                    ZIndex: =1
+
+                Label7_1 As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    Fill: =RGBA(166, 4, 184, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.TemplateHeight-7
+                    OnSelect: =Select(Parent)
+                    Size: =8
+                    Text: =ThisItem.Task_Status
+                    Width: =Parent.TemplateWidth-Label7.Width-20
+                    X: =Label7.Width+10
+                    Y: =Parent.TemplateHeight/2-Self.Height/2
+                    ZIndex: =2
 
         con_DownloadDetails_CSS As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Semibold
@@ -396,6 +421,7 @@
                 
                 }
             );
+            Notify("Your file has been downloaded to the system",NotificationType.Success)
         Tooltip: ="Export Contract"
         Width: =30
         X: =con_ContractDownloadDetails_CSS.X+con_ContractDownloadDetails_CSS.Width-Parent.Width*.02
