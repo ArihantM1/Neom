@@ -1669,7 +1669,6 @@
                                 LayoutAlignItems: =LayoutAlignItems.Center
                                 LayoutDirection: =LayoutDirection.Vertical
                                 LayoutGap: =5
-                                LayoutJustifyContent: =LayoutJustifyContent.End
                                 LayoutMode: =LayoutMode.Auto
                                 PaddingBottom: =17
                                 PaddingRight: =8
@@ -1897,6 +1896,62 @@
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
 
+                                Container5_57 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =con_ContractCreationDate_PCS.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Procurement",true,false)
+                                    Width: =con_ContractCreationDate_PCS.Width
+                                    ZIndex: =7
+
+                                    Container1_54 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_ContractCreateDate_PCS_69 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="CHARGES : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
+                                    TextInput1_50 As text:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        BorderColor: =RGBA(255, 255, 255, 1)
+                                        BorderThickness: =0
+                                        Default: =""
+                                        Fill: =VarFieldColor
+                                        Height: =30
+                                        HintText: ="Enter WITNESS VENDOR BY ..."
+                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                        HoverFill: =VarFieldColor
+                                        OnSelect: =Set(VarFindText,"Insert Charger")
+                                        Size: =10
+                                        Width: =Parent.Width*.97
+                                        ZIndex: =2
+
                             Label3 As label:
                                 Color: =RGBA(40, 134, 222, 1)
                                 FontWeight: =FontWeight.Bold
@@ -1906,6 +1961,7 @@
                                 PaddingLeft: =15
                                 Size: =8
                                 Text: =If(VarShowMoreFileds,"Show Less...","Show More...")
+                                Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Procurement",false,true)
                                 Y: =Parent.Height-Self.Height
                                 ZIndex: =3
 

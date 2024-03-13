@@ -102,7 +102,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 3,
+    "BindingErrorCount": 0,
     "ContainsThirdPartyPcfControls": true,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -120,7 +120,7 @@
     "ManualOfflineProfileId": "",
     "Name": "Contract Management",
     "OriginatingVersion": "1.336",
-    "ParserErrorCount": 2,
+    "ParserErrorCount": 0,
     "ShowStatusBar": false
   },
   "PublishInfo": {
@@ -142,7 +142,6 @@
     "Create Contract Screen",
     "Preview Contract Screen",
     "Preview Contract Screen_1",
-    "Preview Contract Screen_2",
     "Contract Summary Screen",
     "Testing Screen"
   ]

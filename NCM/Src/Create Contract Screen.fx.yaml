@@ -837,10 +837,13 @@
                             )
                         )*/
                         Patch(CM_Task,
-                         Defaults(CM_Task),
-                         
-                         
+                         {
+                            Contract_Id:VarContractDetailsPatch.ID,
+                            Task_Name:"Fill Out Key Data Of Supplier",
+                            Task_Status:"Pending",
+                            Task_Assigned_to:"Supplier"
                         
+                         }
                         );
                         Navigate(
                             'Preview Contract Screen',
