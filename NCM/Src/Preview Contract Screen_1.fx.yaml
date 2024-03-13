@@ -1,0 +1,341 @@
+"'Preview Contract Screen_1' As screen":
+
+    con_EditAndPreviewMain_PCS_1 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Bold
+        Height: =Parent.Height*.83
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =Parent.Width*.83
+        X: =Parent.Width*.15
+        Y: =HeaderComponent_WithoutNavbar_PCS_1.Y+HeaderComponent_WithoutNavbar_PCS_1.Height+Parent.Height*.035
+        ZIndex: =1
+
+        con_EditAndPreview_PCS_1 As groupContainer.horizontalAutoLayoutContainer:
+            DropShadow: =DropShadow.Bold
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =Parent.Height
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
+            ZIndex: =1
+
+            Container5 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =Parent.Height*0.1
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =1
+
+                con_EditContractHeader_PCS_1 As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    DropShadow: =DropShadow.None
+                    Height: =Parent.Height
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =5
+                    PaddingRight: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+                    lbl_Edit_PCS_1 As label:
+                        FontWeight: =FontWeight.Bold
+                        Height: =Parent.Height
+                        PaddingLeft: =10
+                        Size: =18
+                        Text: ="EDIT "
+                        Width: =Parent.Width*.3
+                        ZIndex: =1
+
+                con_PreviewContractHeader_PCS_1 As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    FillPortions: =3
+                    Height: =Parent.Height
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Width: =Parent.Width
+                    Y: =280
+                    ZIndex: =2
+
+                    Rectangle1 As rectangle:
+                        Fill: =RGBA(107, 29, 94, 1)
+                        Height: =Parent.Height
+                        Width: =4
+                        ZIndex: =1
+
+                    lbl_Preview_PCS_1 As label:
+                        FontWeight: =FontWeight.Bold
+                        Height: =Parent.Height
+                        PaddingLeft: =10
+                        Size: =18
+                        Text: ="PREVIEW CONTRACT"
+                        Width: =Parent.Width
+                        ZIndex: =2
+
+            Container6 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.None
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                ZIndex: =2
+
+                chartJS1 As chartJSV14:
+                    DisplayMode: =DisplayMode.Edit
+                    DivH: =Self.Height-35
+                    Height: =Parent.Height
+                    UserRole: =1
+                    Width: =Parent.Width
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
+                Rectangle1_1 As rectangle:
+                    Fill: =RGBA(107, 29, 94, 1)
+                    Height: =35
+                    Visible: =false
+                    Width: =4
+                    X: =Parent.Width*.25
+                    ZIndex: =2
+
+                Label8 As label:
+                    Height: =35
+                    Text: ="Text"
+                    Width: =Parent.Width*0.3
+                    X: =Rectangle1_1.X+5
+                    ZIndex: =3
+
+            con_EditAndPreviewButtonPart_PCS_1 As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =Parent.Height*.15
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingLeft: =80
+                PaddingRight: =80
+                PaddingTop: =10
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width
+                ZIndex: =3
+
+                btn_Back_PCS_1 As button:
+                    BorderColor: =RGBA(219, 200, 216, 1)
+                    Color: =RGBA(107, 29, 94, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =35
+                    HoverColor: =RGBA(107, 29, 94, 1)
+                    HoverFill: =RGBA(219, 200, 216, 1)
+                    OnSelect: |+
+                        =
+                        Navigate('Create Contract Screen')
+                        
+                        
+                        
+                        
+                        
+                    Size: =10
+                    Text: ="Back"
+                    Width: =Parent.Width*.07
+                    ZIndex: =1
+
+                btn_CreateContract_PCS_1 As button:
+                    BorderColor: =RGBA(107, 29, 94, 1)
+                    Color: =RGBA(107, 29, 94, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =35
+                    HoverFill: =RGBA(107, 29, 94, 1)
+                    OnSelect: |-
+                        =Patch(
+                            CM_Client_Contract,Defaults(CM_Client_Contract),
+                            {
+                                
+                                Contract_Id:{Id:VarContractDetailsPatch.ID,Value:VarContractDetailsPatch.ID},
+                                contract_ID_FK:firstFormID,
+                                Notice_Client_Address:txt_CustomerNoticeAddress_PCS_1.Text,
+                                Notice_Client_Attention:TextInput1_3.Text,
+                                Witness_Vendor_By: txt_WitnessVendorBy_PCS_1.Text,
+                                Client_Bank_Branch_Address:TextInput1_43.Text,
+                                'Client_Bank IFSC Code':TextInput1_41.Text,
+                                Client_Bank_MIRC_No:TextInput1_40.Text,
+                                Client_Bank_Account_No:TextInput1_42.Text,
+                                Client_Invoice_Country:TextInput1_37.Text,
+                                Client_Invoice_PinNo:Value(TextInput1_38.Text),
+                                Client_Bank_Name:TextInput1_39.Text,
+                                Client_Invoice_State:TextInput1_36.Text,
+                                Client_Invoice_City:TextInput1_35.Text,
+                                Client_Invoice_Name:TextInput1_34.Text,
+                                Client_Contact_Person_Email:TextInput1_29.Text,
+                                Client_Contact_Person_PhoneNo:Value(TextInput1_28.Text),
+                                Client_Contact_Person_name:TextInput1_24.Text,
+                                PIN_CODE:Value(TextInput1_33.Text),
+                                Client_Billing_State:TextInput1_31.Text,
+                                Client_Billing_Country:TextInput1_32.Text, 
+                                Client_Delarance_Name:TextInput1_48.Text,
+                                Client_Billing_City:TextInput1_30.Text,
+                                'Witness Vendor Date':dt_WitnessVendorDate_PCS_1.SelectedDate,
+                                Witness_Vendor_Title:txxt_WitnessVendorTitle_Header_PCS_1.Text
+                                //Witness_Vendor_By:TextInput1_25.Text  
+                               
+                            }
+                        );
+                        Patch(
+                            CM_ContractDetails,
+                            {ID: VarContractDetailsPatch.ID },
+                            {
+                                
+                                Contract_CreatedOn: dtp_ContractCreationDate_PCS_1.SelectedDate,
+                                Contract_Created_Location:txt_con_ContractCity_PCS_1.Text,
+                                Contract_Charges: Value(TextInput1_47.Text),
+                                Status: {Value: "Active"},
+                                Coc_stage: 2
+                            }
+                        );
+                        Patch(
+                            CM_VENDOR,Defaults(CM_VENDOR),
+                            {
+                                Contract_Id:{Id:VarContractDetailsPatch.ID,Value:VarContractDetailsPatch.ID},
+                               contract_ID_FK:firstFormID ,
+                               Vendor_Contact_Number: Value(TextInput1_45.Text),
+                               Vendor_Email:TextInput1_46.Text,
+                               Vendor_Address:TextInput1_44.Text,
+                               Title:txt_VendorName_PCS_1.Text
+                               
+                            }
+                        );
+                        
+                        Reset(drp_ServiceType_CCS);
+                        Reset(drp_Client_CCS);
+                        Reset(drp_Services_CCS);
+                        Reset(drp_ApplicableTo_CCS);
+                        Reset(drp_Currency_CCS);
+                        Reset(drp_Country_CCS);
+                        Reset('drp_SelectNew&Existing_CCS');
+                        Reset(lblContractName_CCS);
+                        Reset(txt_DescriptionInput_CCS);
+                        Reset(dte_StartDate_CCS);
+                        Reset(dte_EndDate_CCS);
+                        Reset(Radio1);
+                        Navigate('Home Screen');
+                        CM_PDFSummaryFlow.Run(firstFormID)
+                    Size: =10
+                    Text: ="Create"
+                    Width: =Parent.Width*.07
+                    ZIndex: =2
+
+    shp_RectDocuments_PCS_1 As rectangle:
+        BorderStyle: =BorderStyle.None
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(107, 29, 94, 1)
+        Height: =3
+        Width: =con_EditAndPreviewMain_PCS_1.X-shp_CircleDocuments_PCS_1.Width-shp_CircleDocuments_PCS_1.X-Parent.Width*0.01
+        Y: =shp_CircleDocuments_PCS_1.Y+(shp_CircleDocuments_PCS_1.Height-Self.Height)/2
+        ZIndex: =10
+
+    HeaderComponent_WithoutNavbar_PCS_1 As HeaderCMP_withoutNavbar:
+        Height: =Parent.Height*.1
+        Width: =Parent.Width
+        ZIndex: =11
+
+    grp_Milestone_PCS_1 As group:
+        Height: =5
+        Width: =5
+        X: =6.109999999999999
+        Y: =124.38000000000002
+        ZIndex: =11
+
+        shp_CircleDocuments_PCS_1 As circle:
+            Fill: =RGBA(107, 29, 94, 1)
+            Height: =70
+            Width: =70
+            X: =46
+            Y: =506
+            ZIndex: =2
+
+        shp_CircleOverview_PCS_1 As circle:
+            BorderStyle: =BorderStyle.None
+            Fill: =RGBA(107, 29, 94, 1)
+            Height: =70
+            Width: =70
+            X: =46
+            Y: =126
+            ZIndex: =3
+
+        ico_Overview_PCS_1 As icon.Flag:
+            Color: =RGBA(255, 255, 255, 1)
+            DisplayMode: =DisplayMode.View
+            Height: =36
+            Icon: =Icon.Flag
+            Width: =35
+            X: =63
+            Y: =143
+            ZIndex: =4
+
+        shp_RectOverview_PCS_1 As rectangle:
+            BorderStyle: =BorderStyle.None
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(107, 29, 94, 1)
+            Height: =3
+            Width: =con_EditAndPreviewMain_PCS_1.X-shp_CircleDocuments_PCS_1.Width-shp_CircleDocuments_PCS_1.X-Parent.Width*0.01
+            X: =122
+            Y: =159
+            ZIndex: =5
+
+        ico_Document_PCS_1 As icon.Flag:
+            Color: =RGBA(255, 255, 255, 1)
+            DisplayMode: =DisplayMode.View
+            Height: =36
+            Icon: =Icon.Flag
+            Width: =35
+            X: =63
+            Y: =524
+            ZIndex: =6
+
+        shp_RectMileStone_PCS_1 As rectangle:
+            Fill: =RGBA(107, 29, 94, 1)
+            Height: =261
+            Width: =3
+            X: =79
+            Y: =237
+            ZIndex: =7
+
+        lbl_Overview_PCS_1 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =41
+            Text: ="Overview"
+            Width: =149
+            X: =7
+            Y: =196
+            ZIndex: =8
+
+        lbl_Document_PCS_1 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =41
+            Text: ="Documents"
+            Width: =149
+            X: =7
+            Y: =571
+            ZIndex: =9
+
