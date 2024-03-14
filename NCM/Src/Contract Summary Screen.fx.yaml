@@ -238,6 +238,12 @@
                     Filter(CM_Task,Task_Assigned_to=LookUp(CM_Users,User().Email=Emaill).Role)
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
+                OnSelect: |+
+                    =Navigate('Preview Contract Screen(Supplier&Proponent)',ScreenTransition.Fade,{lclSelectedTask:Gallery2.Selected})
+                    
+                    
+                    
+                    
                 TemplateSize: =Gallery2.Height*.2
                 Width: =Parent.Width
                 Y: =shp_MyTaskTopFiller_CSS.Height
