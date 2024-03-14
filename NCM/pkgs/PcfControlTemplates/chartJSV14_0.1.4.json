@@ -599,8 +599,8 @@
     }
   ],
   "ControlConstructor": "chartJS",
-  "ControlNamespace": "ChartJSV13",
-  "DisplayNameKey": "chartJSV13",
+  "ControlNamespace": "ChartJSV14",
+  "DisplayNameKey": "chartJSV14",
   "IncludedProperties": [
     {
       "Category": "design",
@@ -827,7 +827,7 @@
       "WebDefaultValue": ""
     }
   ],
-  "Name": "chartJSV13",
+  "Name": "chartJSV14",
   "Properties": [
     {
       "Category": "data",
@@ -1948,7 +1948,7 @@
       "IsControlSpecific": false,
       "LoadingOrder": 8,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"ManifestTemplate\",\"Data\":{\"ConstructorName\":\"ChartJSV13.chartJS\",\"CustomControlId\":\"ChartJSV13.chartJS\",\"IsVirtual\":false,\"Properties\":{\"Resources\":[{\"Name\":\"/PCF/prop-types.js\",\"LoadOrder\":1,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/react-fela.js\",\"LoadOrder\":2,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela.js\",\"LoadOrder\":3,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela-dom.js\",\"LoadOrder\":4,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/common/js/container.js\",\"LoadOrder\":5,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PCFControls/js/PCFControlWrapper.js\",\"LoadOrder\":6,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PcfControlProxy/js/PcfControlProxy.js\",\"LoadOrder\":7,\"Type\":0,\"LibraryName\":null}],\"GroupDefinitions\":null,\"DataSetDefinitions\":{},\"Properties\":{\"contractCreationFullDate\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"contactCreationCity\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"toCustomerCustomerAddress\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"toCustomerCustomerAttn\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"witnessVendorBy\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"witnessVendorTitle\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"witnessVendorDate\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"companyName\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"companyBillingAddress\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"companyBillingCity\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"companyBillingState\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"companyBillingCountry\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"phoneNo\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"panNo\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"pinCode\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"serviceTaxNo\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"contactPersonName\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"contactPhoneNo\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"contactEmail\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"invoiceName\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"invoiceAddress\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"invoiceCity\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"invoiceState\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"invoicePin\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"bankName\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"bankMICRCode\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"bankAccountNo\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"bankIFSCNEFTCode\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"bankBranchAddress\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"vendorName\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"vendorEmail\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"vendorContactNo\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"vendorAddress\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"charges\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"HTMLContent\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"UserRole\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"DivH\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"}},\"FeatureUsage\":null},\"Events\":null,\"CommonEvents\":null,\"DesignMap\":null,\"PropertyDependencies\":[],\"Children\":null}}",
+      "Path": "{\"Id\":\"ManifestTemplate\",\"Data\":{\"ConstructorName\":\"ChartJSV14.chartJS\",\"CustomControlId\":\"ChartJSV14.chartJS\",\"IsVirtual\":false,\"Properties\":{\"Resources\":[{\"Name\":\"/PCF/prop-types.js\",\"LoadOrder\":1,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/react-fela.js\",\"LoadOrder\":2,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela.js\",\"LoadOrder\":3,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela-dom.js\",\"LoadOrder\":4,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/common/js/container.js\",\"LoadOrder\":5,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PCFControls/js/PCFControlWrapper.js\",\"LoadOrder\":6,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PcfControlProxy/js/PcfControlProxy.js\",\"LoadOrder\":7,\"Type\":0,\"LibraryName\":null}],\"GroupDefinitions\":null,\"DataSetDefinitions\":{},\"Properties\":{\"contractCreationFullDate\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"contactCreationCity\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"toCustomerCustomerAddress\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"toCustomerCustomerAttn\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"witnessVendorBy\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"witnessVendorTitle\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"witnessVendorDate\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"companyName\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"companyBillingAddress\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"companyBillingCity\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"companyBillingState\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"companyBillingCountry\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"phoneNo\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"panNo\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"pinCode\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"serviceTaxNo\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"contactPersonName\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"contactPhoneNo\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"contactEmail\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"invoiceName\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"invoiceAddress\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"invoiceCity\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"invoiceState\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"invoicePin\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"bankName\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"bankMICRCode\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"bankAccountNo\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"bankIFSCNEFTCode\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"bankBranchAddress\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"vendorName\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"vendorEmail\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"vendorContactNo\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"vendorAddress\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"charges\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"HTMLContent\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"UserRole\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"DivH\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"}},\"FeatureUsage\":null},\"Events\":null,\"CommonEvents\":null,\"DesignMap\":null,\"PropertyDependencies\":[],\"Children\":null}}",
       "Type": 3
     },
     {
@@ -1962,21 +1962,21 @@
       "IsControlSpecific": false,
       "LoadingOrder": 10,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"PowerAppsControlInfo\",\"Data\":{\"TemplateVersion\":1,\"Version\":\"0.1.3\",\"IsFirstParty\":false}}",
+      "Path": "{\"Id\":\"PowerAppsControlInfo\",\"Data\":{\"TemplateVersion\":1,\"Version\":\"0.1.4\",\"IsFirstParty\":false}}",
       "Type": 3
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 11,
-      "ModifiedPath": "https://docserverpwaprodneu.blob.core.windows.net/6e85b6e4-7098-43e4-81f7-7350db48ed44-1/appdynamicresources/D%253a0SvcFab0_App0PowerApps.WebAuthoringType_App980work0cwpk2hk5.za5020S0Resources0Controls0ChartJSV13.chartJS.bundle.js?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-03-13T06%3A09%3A09Z&ske=2024-03-14T06%3A24%3A09Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-03-14T06%3A24%3A09Z&sr=b&sp=r&sig=Xg1sY9Yhi6kVqPdhJ6tDeGpFqcW4%2F%2B0LvWbTk4qGats%3D",
-      "Path": "/PCFControls/dev_ChartJSV13.chartJS/ChartJSV13.chartJS.bundle.js",
+      "ModifiedPath": "https://docserverpwaprodweu.blob.core.windows.net/2b51dace-c39b-46f2-8698-aeec9b6fc9f2-1/appdynamicresources/D%253a0SvcFab0_App0PowerApps.WebAuthoringType_App1020work0vkkqg25y.3uo020S0Resources0Controls0ChartJSV14.chartJS.bundle.js?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-03-14T05%3A44%3A29Z&ske=2024-03-15T05%3A59%3A29Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-03-15T05%3A59%3A29Z&sr=b&sp=r&sig=WE7nMqLWwUMZFqMLH%2FC55LYzPG6ozzMpsSJ8w6QuRh4%3D",
+      "Path": "/PCFControls/dev_ChartJSV14.chartJS/ChartJSV14.chartJS.bundle.js",
       "Type": 0
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 11,
-      "ModifiedPath": "https://docserverpwaprodneu.blob.core.windows.net/6e85b6e4-7098-43e4-81f7-7350db48ed44-1/appdynamicresources/D%253a0SvcFab0_App0PowerApps.WebAuthoringType_App980work0cwpk2hk5.za5020S0Resources0Controls0css%252fChartJSV13.chartJS.chartJS.css?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-03-13T06%3A09%3A09Z&ske=2024-03-14T06%3A24%3A09Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-03-14T06%3A24%3A09Z&sr=b&sp=r&sig=aW1OhGXzYrOoTKZ4PD0fspQ7TxbGQzDtVIuj1cADCTE%3D",
-      "Path": "/PCFControls/dev_ChartJSV13.chartJS/css/ChartJSV13.chartJS.chartJS.css",
+      "ModifiedPath": "https://docserverpwaprodweu.blob.core.windows.net/2b51dace-c39b-46f2-8698-aeec9b6fc9f2-1/appdynamicresources/D%253a0SvcFab0_App0PowerApps.WebAuthoringType_App1020work0vkkqg25y.3uo020S0Resources0Controls0css%252fChartJSV14.chartJS.chartJS.css?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-03-14T05%3A44%3A29Z&ske=2024-03-15T05%3A59%3A29Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-03-15T05%3A59%3A29Z&sr=b&sp=r&sig=ELWkovgkQHOPyH5vh5qkNaHifIdOmFxZb4Z0tGGGjDQ%3D",
+      "Path": "/PCFControls/dev_ChartJSV14.chartJS/css/ChartJSV14.chartJS.chartJS.css",
       "Type": 1
     },
     {
@@ -1994,5 +1994,5 @@
       "Type": 0
     }
   ],
-  "Version": "0.1.3"
+  "Version": "0.1.4"
 }

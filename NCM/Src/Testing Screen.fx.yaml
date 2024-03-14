@@ -1,73 +1,9 @@
 "'Testing Screen' As screen":
 
-    Container5_3 As groupContainer.verticalAutoLayoutContainer:
-        DropShadow: =DropShadow.None
-        Height: =Parent.Height*.21
-        LayoutDirection: =LayoutDirection.Vertical
-        LayoutGap: =5
-        LayoutJustifyContent: =LayoutJustifyContent.End
-        LayoutMode: =LayoutMode.Auto
-        PaddingBottom: =5
-        PaddingLeft: =15
-        PaddingRight: =15
-        PaddingTop: =5
-        Width: =Parent.Width
-        ZIndex: =1
-
-        lbl_ContractCreateDate_PCS_3 As label:
-            PaddingLeft: =0
-            PaddingRight: =0
-            Size: =10
-            Text: |-
-                ="Contract Creeation Date: "
-            Width: =Parent.Width*.4
-            ZIndex: =1
-
-        "DatePickerCanvas1_3 As 'Date picker'":
-            BasePaletteColor: =RGBA(227, 106, 244, 1)
-            DisplayMode: =DisplayMode.Edit
-            FontColor: =
-            Height: =32
-            LayoutMinHeight: =32
-            LayoutMinWidth: =320
-            Width: =Parent.Width*.9
-            X: =0
-            Y: =0
-            ZIndex: =3
-
-        Rectangle1_3 As rectangle:
-            Fill: =RGBA(214, 221, 224, 1)
-            Height: =1
-            Width: =Parent.Width*.95
-            ZIndex: =4
-
-    ButtonCanvas1 As Button:
-        BasePaletteColor: =
-        DisplayMode: =DisplayMode.Edit
-        FontColor: =
-        Height: =32
-        OnSelect: =ClearCollect(colTest,CM_Client_Contract)
-        Width: =96
+    Button1 As button:
+        OnSelect: =Navigate('Preview Contract Screen_1')
+        Text: ="Button"
         X: =40
         Y: =40
-        ZIndex: =4
-
-    Label6 As label:
-        Text: =LookUp(CM_Users,Emaill=User().Email).Role
-        X: =384
-        Y: =296
-        ZIndex: =5
-
-    Container4 As groupContainer.manualLayoutContainer:
-        Height: =768
-        Width: =Parent.Width
-        ZIndex: =6
-
-        chartJS1 As chartJSV13:
-            DisplayMode: =DisplayMode.Edit
-            Height: =Parent.Height
-            Width: =Parent.Width
-            X: =0
-            Y: =0
-            ZIndex: =1
+        ZIndex: =1
 

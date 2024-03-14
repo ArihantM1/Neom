@@ -82,10 +82,21 @@ App As appinfo:
         Set(VarfirstFormID,0);
         Set(VarContractDetailsPatch,Blank());
         Set(VarGetPDFID,Blank());
-        Set(VarLoggedInUser,Blank())
+        Set(VarLoggedInUser,Blank());
+        Set(UserRole,
+        Switch(
+            LookUp(CM_Users,Emaill=User().Email).Role,
+            "Supplier",
+            1,
+            "Proponent",
+            0,
+            "Procurement",
+            2
+        )
+        )
         
         
-    StartScreen: |-
+    StartScreen: |
         =Switch(
             LookUp(CM_Users,Emaill=User().Email).Role,
             "Supplier",
@@ -94,8 +105,6 @@ App As appinfo:
             'Contract Summary Screen',
             "Procurement",
             'Home Screen'
-        
-        
         )
     Theme: =PowerAppsTheme
 

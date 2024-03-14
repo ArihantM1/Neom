@@ -1,0 +1,295 @@
+"'Preview Contract Screen_1' As screen":
+
+    con_EditAndPreviewMain_PCS_2 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Bold
+        Height: =Parent.Height*.83
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =Parent.Width*.83
+        X: =Parent.Width*.15
+        Y: =HeaderComponent_WithoutNavbar_PCS_2.Y+HeaderComponent_WithoutNavbar_PCS_2.Height+Parent.Height*.035
+        ZIndex: =1
+
+        con_EditAndPreview_PCS_2 As groupContainer.horizontalAutoLayoutContainer:
+            DropShadow: =DropShadow.Bold
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =Parent.Height
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
+            ZIndex: =1
+
+            Container4 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =Parent.Height*0.10
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =1
+
+                con_EditContractHeader_PCS_2 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.None
+                    Height: =Parent.Height*.1
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                    LayoutMinHeight: =Parent.Height
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =5
+                    PaddingRight: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+                    lbl_Edit_PCS_2 As label:
+                        FontWeight: =FontWeight.Bold
+                        Height: =Parent.Height
+                        Size: =18
+                        Text: ="EDIT "
+                        Width: =Parent.Width*.3
+                        ZIndex: =1
+
+                    con_HeaderButtons_PCS_2 As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        DropShadow: =DropShadow.None
+                        FillPortions: =0
+                        Height: =Parent.Height
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutGap: =5
+                        LayoutJustifyContent: =LayoutJustifyContent.End
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        PaddingRight: =5
+                        Width: =Parent.Width*.68
+                        ZIndex: =2
+
+                        con_CommentButton_PCS_2 As groupContainer.manualLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
+                            BorderColor: =RGBA(107, 29, 94, 1)
+                            BorderThickness: =2
+                            FillPortions: =0
+                            Height: =Parent.Height*.3
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            Width: =Parent.Height*.3
+                            ZIndex: =1
+
+                        con_FilterButton_PCS_2 As groupContainer.manualLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
+                            BorderColor: =RGBA(107, 29, 94, 1)
+                            BorderThickness: =2
+                            FillPortions: =0
+                            Height: =Parent.Height*.3
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            Width: =Parent.Height*.3
+                            ZIndex: =2
+
+                        con_ListViewButton_PCS_2 As groupContainer.manualLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
+                            BorderColor: =RGBA(107, 29, 94, 1)
+                            BorderThickness: =2
+                            FillPortions: =0
+                            Height: =Parent.Height*.3
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            Width: =Parent.Height*.3
+                            ZIndex: =3
+
+                con_PreviewContractHeader_PCS_2 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.None
+                    FillPortions: =3
+                    Height: =Parent.Height*.1
+                    LayoutMinHeight: =Parent.Height
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =5
+                    PaddingRight: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Width: =Parent.Width
+                    Y: =20
+                    ZIndex: =2
+
+                    lbl_Preview_PCS_2 As label:
+                        AlignInContainer: =AlignInContainer.Center
+                        FontWeight: =FontWeight.Bold
+                        Height: =Parent.Height
+                        LayoutMinHeight: =Parent.Height
+                        Size: =18
+                        Text: ="PREVIEW CONTRACT"
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+            Container5 As groupContainer.manualLayoutContainer:
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                ZIndex: =2
+
+                chartJS2 As chartJSV14:
+                    DisplayMode: =DisplayMode.Edit
+                    DivH: =Self.Height-35
+                    Height: =Parent.Height
+                    UserRole: =UserRole
+                    Width: =Parent.Width
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
+            con_EditAndPreviewButtonPart_PCS_2 As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =Parent.Height*.15
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingLeft: =80
+                PaddingRight: =80
+                PaddingTop: =10
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width
+                ZIndex: =3
+
+                btn_Back_PCS_2 As button:
+                    BorderColor: =RGBA(219, 200, 216, 1)
+                    Color: =RGBA(107, 29, 94, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =35
+                    HoverColor: =RGBA(107, 29, 94, 1)
+                    HoverFill: =RGBA(219, 200, 216, 1)
+                    OnSelect: |+
+                        =
+                        Navigate('Create Contract Screen')
+                        
+                        
+                        
+                        
+                        
+                    Size: =10
+                    Text: ="Back"
+                    Width: =Parent.Width*.07
+                    ZIndex: =1
+
+                btn_CreateContract_PCS_2 As button:
+                    BorderColor: =RGBA(107, 29, 94, 1)
+                    Color: =RGBA(107, 29, 94, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =35
+                    HoverFill: =RGBA(107, 29, 94, 1)
+                    OnSelect: =Navigate('Testing Screen')
+                    Size: =10
+                    Text: ="Create"
+                    Width: =Parent.Width*.07
+                    ZIndex: =2
+
+    shp_RectDocuments_PCS_2 As rectangle:
+        BorderStyle: =BorderStyle.None
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(107, 29, 94, 1)
+        Height: =3
+        Width: =con_EditAndPreviewMain_PCS_2.X-shp_CircleDocuments_PCS_2.Width-shp_CircleDocuments_PCS_2.X-Parent.Width*0.01
+        Y: =shp_CircleDocuments_PCS_2.Y+(shp_CircleDocuments_PCS_2.Height-Self.Height)/2
+        ZIndex: =10
+
+    HeaderComponent_WithoutNavbar_PCS_2 As HeaderCMP_withoutNavbar:
+        Height: =Parent.Height*.1
+        Width: =Parent.Width
+        ZIndex: =11
+
+    grp_Milestone_PCS_2 As group:
+        Height: =5
+        Width: =5
+        X: =6.109999999999999
+        Y: =124.38000000000002
+        ZIndex: =11
+
+        shp_CircleDocuments_PCS_2 As circle:
+            Fill: =RGBA(107, 29, 94, 1)
+            Height: =70
+            Width: =70
+            X: =46
+            Y: =506
+            ZIndex: =2
+
+        shp_CircleOverview_PCS_2 As circle:
+            BorderStyle: =BorderStyle.None
+            Fill: =RGBA(107, 29, 94, 1)
+            Height: =70
+            Width: =70
+            X: =46
+            Y: =126
+            ZIndex: =3
+
+        ico_Overview_PCS_2 As icon.Flag:
+            Color: =RGBA(255, 255, 255, 1)
+            DisplayMode: =DisplayMode.View
+            Height: =36
+            Icon: =Icon.Flag
+            Width: =35
+            X: =63
+            Y: =143
+            ZIndex: =4
+
+        shp_RectOverview_PCS_2 As rectangle:
+            BorderStyle: =BorderStyle.None
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(107, 29, 94, 1)
+            Height: =3
+            Width: =con_EditAndPreviewMain_PCS_2.X-shp_CircleDocuments_PCS_2.Width-shp_CircleDocuments_PCS_2.X-Parent.Width*0.01
+            X: =122
+            Y: =159
+            ZIndex: =5
+
+        ico_Document_PCS_2 As icon.Flag:
+            Color: =RGBA(255, 255, 255, 1)
+            DisplayMode: =DisplayMode.View
+            Height: =36
+            Icon: =Icon.Flag
+            Width: =35
+            X: =63
+            Y: =524
+            ZIndex: =6
+
+        shp_RectMileStone_PCS_2 As rectangle:
+            Fill: =RGBA(107, 29, 94, 1)
+            Height: =261
+            Width: =3
+            X: =79
+            Y: =237
+            ZIndex: =7
+
+        lbl_Overview_PCS_2 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =41
+            Text: ="Overview"
+            Width: =149
+            X: =7
+            Y: =196
+            ZIndex: =8
+
+        lbl_Document_PCS_2 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =41
+            Text: ="Documents"
+            Width: =149
+            X: =7
+            Y: =571
+            ZIndex: =9
+
