@@ -226,6 +226,7 @@
                 Italic: =true
                 Size: =9
                 Text: ="Your task will appear here"
+                Visible: =Gallery2.AllItemsCount<1
                 Width: =Parent.Width
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =2
