@@ -1789,7 +1789,7 @@
                                     txt_WitnessVendorBy_PCS_2 As text:
                                         BorderColor: =RGBA(255, 255, 255, 1)
                                         BorderThickness: =0
-                                        Default: =""
+                                        Default: =LookUp(CM_Client_Contract,lclSelectedTask.Contract_Id=contract_ID_FK).Witness_Vendor_By
                                         Fill: =VarFieldColor
                                         Height: =30
                                         HintText: ="Enter WITNESS VENDOR BY ..."
@@ -1844,7 +1844,7 @@
                                     txxt_WitnessVendorTitle_Header_PCS_2 As text:
                                         BorderColor: =RGBA(255, 255, 255, 1)
                                         BorderThickness: =0
-                                        Default: =""
+                                        Default: =LookUp(CM_Client_Contract,lclSelectedTask.Contract_Id=contract_ID_FK).Witness_Vendor_Title
                                         Fill: =VarFieldColor
                                         Height: =30
                                         HintText: ="Enter WITNESS VENDOR BY ..."
@@ -1961,6 +1961,7 @@
                                         LayoutMinHeight: =32
                                         LayoutMinWidth: =320
                                         OnChange: =Set(VarFindText,"Witness Vendor Date")
+                                        SelectedDate: =LookUp(CM_Client_Contract,lclSelectedTask.Contract_Id=contract_ID_FK).'Witness Vendor Date'
                                         Width: =Parent.Width*.97
                                         X: =0
                                         Y: =0
@@ -2011,7 +2012,7 @@
                                         AlignInContainer: =AlignInContainer.Center
                                         BorderColor: =RGBA(255, 255, 255, 1)
                                         BorderThickness: =0
-                                        Default: =""
+                                        Default: =LookUp(CM_VENDOR,lclSelectedTask.Contract_Id=contract_ID_FK).Vendor_Address
                                         Fill: =VarFieldColor
                                         Height: =30
                                         HintText: ="Enter WITNESS VENDOR BY ..."
@@ -2066,7 +2067,7 @@
                                         AlignInContainer: =AlignInContainer.Center
                                         BorderColor: =RGBA(255, 255, 255, 1)
                                         BorderThickness: =0
-                                        Default: =""
+                                        Default: =LookUp(CM_VENDOR,lclSelectedTask.Contract_Id=contract_ID_FK).Vendor_Contact_Number
                                         Fill: =VarFieldColor
                                         Height: =30
                                         HintText: ="Enter WITNESS VENDOR BY ..."
@@ -2121,7 +2122,7 @@
                                         AlignInContainer: =AlignInContainer.Center
                                         BorderColor: =RGBA(255, 255, 255, 1)
                                         BorderThickness: =0
-                                        Default: =""
+                                        Default: =LookUp(CM_VENDOR,lclSelectedTask.Contract_Id=contract_ID_FK).Title
                                         Fill: =VarFieldColor
                                         Height: =30
                                         HintText: ="ENTER VENDOR NAME ..."
