@@ -1,0 +1,105 @@
+MIleStones As CanvasComponent:
+    Component_Application_Stage: =8
+    Component_Background_Fill: =Color.White
+    Component_Height: =600
+    Component_Height_Milestone: =80
+    Component_Icon_Border_Color: =Color.DarkSeaGreen
+    Component_Icon_Fill_Color: =Color.DarkSeaGreen
+    Component_PendingColor: =RGBA(0, 0, 0, 1)
+    Component_Stage_Color: =Color.DimGrey
+    Component_Stage_Font_Size: =12
+    Component_Status_Color: =Color.DarkSeaGreen
+    Component_Status_Font_Size: =10
+    Component_Width: =300
+    Fill: =
+    Height: =MIleStones.Component_Height
+    Width: =MIleStones.Component_Width
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Gal_MileStones As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Height: =Parent.Height  
+        Items: |-
+            =[
+            {ID:1,Stage:"Document Upload"},
+            {ID:2,Stage:"Personal Details"},
+            {ID:3,Stage:"Photo Upload"},
+            {ID:4,Stage:"Video KYC Upload"},
+            {ID:5,Stage:"Media Verification"},
+            {ID:6,Stage:"Signatur Upload"},
+            {ID:7,Stage:"Profile Details"}
+            
+            ]
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateSize: =MIleStones.Component_Height_Milestone
+        Width: =Parent.Width
+        ZIndex: =1
+
+        shp_IconBackgroundBorder As rectangle:
+            BorderColor: =If(MIleStones.Component_Application_Stage<ThisItem.ID,MIleStones.Component_PendingColor,MIleStones.Component_Status_Color)
+            BorderThickness: =2
+            Fill: =Color.White
+            Height: =Gal_MileStones.TemplateHeight*.5
+            OnSelect: =Select(Parent)
+            Width: =Gal_MileStones.TemplateHeight*.5
+            X: =Gal_MileStones.TemplateWidth*.07
+            Y: =(Gal_MileStones.TemplateHeight-Self.Height)/2-Gal_MileStones.TemplateHeight*.15
+            ZIndex: =1
+
+        lbl_ApplicationStage As label:
+            Color: =If(MIleStones.Component_Application_Stage<ThisItem.ID,MIleStones.Component_PendingColor,MIleStones.Component_Stage_Color)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =Gal_MileStones.TemplateHeight*.5
+            OnSelect: =Select(Parent)
+            Size: =MIleStones.Component_Stage_Font_Size
+            Text: =ThisItem.Stage
+            Width: =Gal_MileStones.TemplateWidth-shp_IconBackgroundBorder.X-shp_IconBackgroundBorder.Width-Gal_MileStones.TemplateWidth*.1
+            X: =shp_IconBackgroundBorder.X+shp_IconBackgroundBorder.Width+Gal_MileStones.TemplateWidth*.1
+            ZIndex: =2
+
+        lbl_Status As label:
+            Color: =If(MIleStones.Component_Application_Stage<ThisItem.ID,MIleStones.Component_PendingColor,MIleStones.Component_Status_Color)
+            Font: =Font.'Segoe UI'
+            Height: =Gal_MileStones.TemplateHeight*.5
+            OnSelect: =Select(Parent)
+            PaddingLeft: =7
+            Size: =MIleStones.Component_Status_Font_Size
+            Text: =If(MIleStones.Component_Application_Stage<ThisItem.ID,"Pending","Completed")
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Gal_MileStones.TemplateWidth-shp_IconBackgroundBorder.X-shp_IconBackgroundBorder.Width-Gal_MileStones.TemplateWidth*.1
+            X: =shp_IconBackgroundBorder.X+shp_IconBackgroundBorder.Width+Gal_MileStones.TemplateWidth*.1
+            Y: =lbl_ApplicationStage.Height-10
+            ZIndex: =3
+
+        shp_MilestoneLine As rectangle:
+            Fill: =If(MIleStones.Component_Application_Stage<ThisItem.ID,MIleStones.Component_PendingColor,MIleStones.Component_Status_Color)
+            Height: =Gal_MileStones.TemplateHeight-shp_IconBackgroundBorder.Y-shp_IconBackgroundBorder.Height
+            OnSelect: =Select(Parent)
+            Width: =2.5
+            X: =shp_IconBackgroundBorder.X+(shp_IconBackgroundBorder.Width-Self.Width)/2
+            Y: =shp_IconBackgroundBorder.Y+shp_IconBackgroundBorder.Height
+            ZIndex: =4
+
+        shp_IconBackground As rectangle:
+            Fill: =If(MIleStones.Component_Application_Stage<ThisItem.ID,MIleStones.Component_PendingColor,MIleStones.Component_Status_Color)
+            Height: =Gal_MileStones.TemplateHeight*.3
+            OnSelect: =Select(Parent)
+            Width: =Gal_MileStones.TemplateHeight*.3
+            X: =shp_IconBackgroundBorder.X+(shp_IconBackgroundBorder.Width-Self.Width)/2
+            Y: =shp_IconBackgroundBorder.Y+(shp_IconBackgroundBorder.Height-Self.Height)/2
+            ZIndex: =5
+
+        Ico_Milestone As icon.Check:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =shp_IconBackground.Height*.7
+            Icon: =If(MIleStones.Component_Application_Stage<ThisItem.ID,Icon.Clock,Icon.Check)
+            OnSelect: =Select(Parent)
+            Width: =shp_IconBackground.Width*.7
+            X: =shp_IconBackgroundBorder.X+(shp_IconBackgroundBorder.Width-Self.Width)/2
+            Y: =shp_IconBackgroundBorder.Y+(shp_IconBackgroundBorder.Height-Self.Height)/2
+            ZIndex: =6
+

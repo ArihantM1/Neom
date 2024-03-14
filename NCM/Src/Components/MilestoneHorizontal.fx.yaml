@@ -1,0 +1,109 @@
+MilestoneHorizontal As CanvasComponent:
+    com_galBackgroundColor: =Color.White
+    com_Height: =200
+    com_MileStone_Completed_Color: =Color.DarkSeaGreen
+    com_MileStone_Font_color: =Color.Purple
+    com_MileStone_Icon_Size: =70
+    com_MileStone_Items: |-
+        =[
+            {
+                ID: 1,
+                Stage: "Started"
+            },
+            {
+                ID: 2,
+                Stage: "Supplier"
+            },
+            {
+                ID: 3,
+                Stage: "Proponent"
+            },
+            {
+                ID: 4,
+                Stage: "Legal Review"
+            },
+            {
+                ID: 5,
+                Stage: "Signing"
+            }
+        ]
+    com_MileStone_PendingColor: =Color.DimGrey
+    com_MileStone_Stage: =1
+    com_MileStoneStage_Font_Size: =12
+    com_MileStoneWidth: =Self.Width*0.2
+    com_Width: =1366
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =MilestoneHorizontal.com_Height
+    Width: =MilestoneHorizontal.com_Width
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    gal_MileStone_MH As gallery.galleryHorizontal:
+        Fill: =MilestoneHorizontal.com_galBackgroundColor
+        Height: =Parent.Height
+        Items: =MilestoneHorizontal.com_MileStone_Items
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =MilestoneHorizontal.com_MileStoneWidth
+        Width: =MilestoneHorizontal.com_Width
+        ZIndex: =1
+
+        shp_MileStoneBackground_gal As circle:
+            Fill: =If(MilestoneHorizontal.com_MileStone_Stage<ThisItem.ID,MilestoneHorizontal.com_MileStone_PendingColor,MilestoneHorizontal.com_MileStone_Completed_Color)
+            Height: |-
+                =//gal_MileStone_MH.TemplateWidth*0.5
+                MilestoneHorizontal.com_MileStone_Icon_Size
+            OnSelect: =Select(Parent)
+            Width: |-
+                =//gal_MileStone_MH.TemplateWidth*0.5
+                MilestoneHorizontal.com_MileStone_Icon_Size
+            X: =(gal_MileStone_MH.TemplateWidth-Self.Width)/2
+            Y: =(gal_MileStone_MH.TemplateHeight-Self.Height)/2-gal_MileStone_MH.TemplateHeight*0.15
+            ZIndex: =1
+
+        ico_StageIcon_gal As icon.CheckBadge:
+            Color: =Color.White
+            DisplayMode: =DisplayMode.View
+            Height: =shp_MileStoneBackground_gal.Width*0.6
+            Icon: =If(MilestoneHorizontal.com_MileStone_Stage<ThisItem.ID,Icon.Clock,Icon.CheckBadge)
+            OnSelect: =Select(Parent)
+            Width: =shp_MileStoneBackground_gal.Width*0.6
+            X: =shp_MileStoneBackground_gal.X+(shp_MileStoneBackground_gal.Width-Self.Width)/2
+            Y: =shp_MileStoneBackground_gal.Y+(shp_MileStoneBackground_gal.Height-Self.Height)/2
+            ZIndex: =2
+
+        lbl_StageName_gal As label:
+            Align: =Align.Center
+            Color: =MilestoneHorizontal.com_MileStone_Font_color
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =gal_MileStone_MH.TemplateHeight-shp_MileStoneBackground_gal.Y-shp_MileStoneBackground_gal.Height
+            OnSelect: =Select(Parent)
+            PaddingTop: =gal_MileStone_MH.TemplateHeight*0.1
+            Size: =MilestoneHorizontal.com_MileStoneStage_Font_Size
+            Text: =ThisItem.Stage
+            VerticalAlign: =VerticalAlign.Top
+            Width: =gal_MileStone_MH.TemplateWidth
+            Y: =shp_MileStoneBackground_gal.Y+shp_MileStoneBackground_gal.Height
+            ZIndex: =3
+
+        shp_ProgressBarRectangleBefore_gal As rectangle:
+            Fill: =If(MilestoneHorizontal.com_MileStone_Stage<ThisItem.ID,MilestoneHorizontal.com_MileStone_PendingColor,MilestoneHorizontal.com_MileStone_Completed_Color)
+            Height: =2.5
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.ID<>1
+            Width: =shp_MileStoneBackground_gal.X
+            Y: =shp_MileStoneBackground_gal.Y+(shp_MileStoneBackground_gal.Height-Self.Height)/2
+            ZIndex: =4
+
+        shp_ProgressBarRectangleAfter_gal As rectangle:
+            Fill: =If(MilestoneHorizontal.com_MileStone_Stage<ThisItem.ID+1,MilestoneHorizontal.com_MileStone_PendingColor,MilestoneHorizontal.com_MileStone_Completed_Color)
+            Height: =2.5
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.ID<gal_MileStone_MH.AllItemsCount
+            Width: =shp_MileStoneBackground_gal.X
+            X: =shp_MileStoneBackground_gal.X+shp_MileStoneBackground_gal.Width
+            Y: =shp_MileStoneBackground_gal.Y+(shp_MileStoneBackground_gal.Height-Self.Height)/2
+            ZIndex: =5
+
