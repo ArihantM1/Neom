@@ -267,7 +267,7 @@
                     Height: =Parent.TemplateHeight-7
                     OnSelect: =Select(Parent)
                     Size: =8
-                    Text: =ThisItem.Task_Status
+                    Text: =ThisItem.Contract_Id
                     Width: =Parent.TemplateWidth-Label7.Width-20
                     X: =Label7.Width+10
                     Y: =Parent.TemplateHeight/2-Self.Height/2
