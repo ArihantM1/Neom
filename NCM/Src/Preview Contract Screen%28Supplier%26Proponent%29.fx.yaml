@@ -2303,7 +2303,9 @@
                             Patch(
                                 CM_Task,
                                 {ID:LookUp(CM_Task,Contract_Id=lclSelectedTask.Contract_Id).ID},
-                                {Task_Assigned_to:"Proponent"}
+                                {Task_Assigned_to:"Proponent",
+                                Task_Name:"Fill Out Key Data of Proponent"
+                                }
                             );
                         
                            /* Patch(
@@ -2368,7 +2370,10 @@
                             Patch(
                                 CM_Task,
                                 {ID:LookUp(CM_Task,Contract_Id=lclSelectedTask.Contract_Id).ID},
-                                {Task_Assigned_to:"Procurement"}
+                                {Task_Assigned_to:"Procurement",
+                                Task_Name:"Legal Review"
+                                
+                                }
                             );
                             Patch(
                                 CM_Client_Contract,
