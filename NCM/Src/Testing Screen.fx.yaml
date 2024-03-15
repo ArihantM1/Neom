@@ -1,9 +1,57 @@
 "'Testing Screen' As screen":
 
-    Button1 As button:
-        OnSelect: =Navigate('Preview Contract Screen_1')
-        Text: ="Button"
-        X: =40
-        Y: =40
+    "Gallery4 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
+        DelayItemLoading: =true
+        Height: =615
+        Items: =CM_Audit_Table
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =116
+        Width: =657
+        X: =708
         ZIndex: =1
+
+        Label8 As label:
+            Height: =48
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Action
+            Width: =76
+            X: =40
+            Y: =40
+            ZIndex: =1
+
+        Gallery5 As gallery.galleryVertical:
+            DelayItemLoading: =true
+            Height: =Parent.TemplateHeight
+            Items: =Table(ParseJSON(ThisItem.Json_Object))
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplateSize: =30
+            Width: =541
+            X: =116
+            ZIndex: =2
+
+            Label9 As label:
+                Height: =30
+                OnSelect: =Select(Parent)
+                Text: =Text(ThisItem.Value.Field)
+                X: =8
+                ZIndex: =1
+
+            Label10 As label:
+                Height: =30
+                OnSelect: =Select(Parent)
+                Size: =9
+                Text: =Text(ThisItem.Value.PreviousValue)
+                X: =175
+                ZIndex: =2
+
+            Label11 As label:
+                Height: =30
+                OnSelect: =Select(Parent)
+                Size: =9
+                Text: =Text(ThisItem.Value.currentValue)
+                X: =376
+                ZIndex: =3
 
