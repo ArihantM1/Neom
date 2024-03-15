@@ -2103,9 +2103,9 @@
                                 
                                 Contract_CreatedOn: dtp_ContractCreationDate_PCS.SelectedDate,
                                 Contract_Created_Location:txt_con_ContractCity_PCS.Text,
-                                Contract_Charges: Value(TextInput1_23.Text),
                                 Status: {Value: "Active"},
-                                Coc_stage: 2
+                                Coc_stage: 2,
+                                Contract_Charges:Value(TextInput1_50.Text)
                             }
                         );
                         Patch(
