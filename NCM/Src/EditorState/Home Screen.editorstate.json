@@ -180,7 +180,7 @@
       "MetaDataIDKey": "",
       "Name": "btn_Configurations_Navigate_HS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1323,7 +1323,7 @@
       "MetaDataIDKey": "",
       "Name": "cmb_ApplicableTo_filter_HS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4916,7 +4916,7 @@
       "MetaDataIDKey": "",
       "Name": "con_CreateNewContract_HS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6717,7 +6717,7 @@
       "MetaDataIDKey": "",
       "Name": "con_RefreshReset_HS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7304,7 +7304,7 @@
       "MetaDataIDKey": "",
       "Name": "drp_Status_filter_HS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8374,7 +8374,7 @@
       "MetaDataIDKey": "",
       "Name": "Image4",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8898,7 +8898,7 @@
       "MetaDataIDKey": "",
       "Name": "img_Configuration_SupportingImage_HS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10839,7 +10839,7 @@
       "MetaDataIDKey": "",
       "Name": "lbl_ApplicableTo_filter_HS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14417,7 +14417,7 @@
       "MetaDataIDKey": "",
       "Name": "lbl_Contracts_HS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

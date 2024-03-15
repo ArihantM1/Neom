@@ -1758,7 +1758,7 @@
                                     PaddingBottom: =20
                                     Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Proponent",true,false)
                                     Width: =con_ContractCreationDate_PCS_3.Width
-                                    ZIndex: =5
+                                    ZIndex: =3
 
                                     con_WitnessVendorBy_Header_PCS_2 As groupContainer.horizontalAutoLayoutContainer:
                                         AlignInContainer: =AlignInContainer.SetByContainer
@@ -1813,7 +1813,7 @@
                                     PaddingBottom: =20
                                     Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Proponent",true,false)
                                     Width: =con_ContractCreationDate_PCS_3.Width
-                                    ZIndex: =6
+                                    ZIndex: =4
 
                                     con_WitnessVendorTitle_Header_PCS_2 As groupContainer.horizontalAutoLayoutContainer:
                                         AlignInContainer: =AlignInContainer.SetByContainer
@@ -1841,7 +1841,8 @@
                                             Width: =Parent.Width*.4
                                             ZIndex: =1
 
-                                    txxt_WitnessVendorTitle_Header_PCS_2 As text:
+                                    txxt_WitnessVendorTitle__PCS_2 As text:
+                                        AlignInContainer: =AlignInContainer.Center
                                         BorderColor: =RGBA(255, 255, 255, 1)
                                         BorderThickness: =0
                                         Default: =LookUp(CM_Client_Contract,lclSelectedTask.Contract_Id=contract_ID_FK).Witness_Vendor_Title
@@ -1853,6 +1854,62 @@
                                         OnSelect: =Set(VarFindText,"Witness Vendor Title")
                                         Size: =10
                                         Width: =Parent.Width*.97
+                                        ZIndex: =2
+
+                                con_WitnessVendorDate_PCS_3 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =con_ContractCreationDate_PCS.Height
+                                    LayoutAlignItems: =LayoutAlignItems.Center
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Proponent",true,false)
+                                    Width: =con_WitnessVendorTitle_PCS_2.Width
+                                    ZIndex: =5
+
+                                    con_WitnessVendorDate_Header_PCS_3 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.SetByContainer
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_WitnessVendorDate_Header_PCS_3 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="WITNESS VENDOR DATE : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
+                                    "dt_WitnessVendorDate_PCS_3 As 'Date picker'":
+                                        BasePaletteColor: =
+                                        DisplayMode: =DisplayMode.Edit
+                                        FontColor: =
+                                        Height: =32
+                                        LayoutMinHeight: =32
+                                        LayoutMinWidth: =320
+                                        OnChange: =Set(VarFindText,"Witness Vendor Date")
+                                        SelectedDate: =LookUp(CM_Client_Contract,lclSelectedTask.Contract_Id=contract_ID_FK).'Witness Vendor Date'
+                                        Width: =Parent.Width*.97
+                                        X: =0
+                                        Y: =0
                                         ZIndex: =2
 
                                 Container5_59 As groupContainer.verticalAutoLayoutContainer:
@@ -1868,7 +1925,7 @@
                                     PaddingBottom: =20
                                     Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Procurement",true,false)
                                     Width: =con_ContractCreationDate_PCS_3.Width
-                                    ZIndex: =7
+                                    ZIndex: =6
 
                                     Container1_56 As groupContainer.horizontalAutoLayoutContainer:
                                         AlignInContainer: =AlignInContainer.Center
@@ -1911,62 +1968,6 @@
                                         Width: =Parent.Width*.97
                                         ZIndex: =2
 
-                                con_WitnessVendorDate_PCS_3 As groupContainer.verticalAutoLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.Center
-                                    FillPortions: =0
-                                    Height: =con_ContractCreationDate_PCS.Height
-                                    LayoutAlignItems: =LayoutAlignItems.Center
-                                    LayoutDirection: =LayoutDirection.Vertical
-                                    LayoutGap: =5
-                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    LayoutMode: =LayoutMode.Auto
-                                    PaddingBottom: =20
-                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Proponent",true,false)
-                                    Width: =con_ContractCreationDate_PCS.Width
-                                    ZIndex: =8
-
-                                    con_WitnessVendorDate_Header_PCS_3 As groupContainer.horizontalAutoLayoutContainer:
-                                        AlignInContainer: =AlignInContainer.SetByContainer
-                                        Fill: =RGBA(237, 237, 237, 1)
-                                        FillPortions: =0
-                                        Height: =Parent.Height*.3
-                                        LayoutMinHeight: =100
-                                        LayoutMinWidth: =250
-                                        LayoutMode: =LayoutMode.Auto
-                                        RadiusBottomLeft: =0
-                                        RadiusBottomRight: =0
-                                        RadiusTopLeft: =0
-                                        RadiusTopRight: =0
-                                        Width: =Parent.Width
-                                        ZIndex: =1
-
-                                        lbl_WitnessVendorDate_Header_PCS_3 As label:
-                                            FontWeight: =FontWeight.Bold
-                                            Height: =Parent.Height
-                                            PaddingLeft: =10
-                                            PaddingRight: =0
-                                            Size: =8
-                                            Text: |-
-                                                ="WITNESS VENDOR DATE : "
-                                            Width: =Parent.Width*.4
-                                            ZIndex: =1
-
-                                    "dt_WitnessVendorDate_PCS_3 As 'Date picker'":
-                                        BasePaletteColor: =
-                                        DisplayMode: =DisplayMode.Edit
-                                        FontColor: =
-                                        Height: =32
-                                        LayoutMinHeight: =32
-                                        LayoutMinWidth: =320
-                                        OnChange: =Set(VarFindText,"Witness Vendor Date")
-                                        SelectedDate: =LookUp(CM_Client_Contract,lclSelectedTask.Contract_Id=contract_ID_FK).'Witness Vendor Date'
-                                        Width: =Parent.Width*.97
-                                        X: =0
-                                        Y: =0
-                                        ZIndex: =2
-
                                 Container5_60 As groupContainer.verticalAutoLayoutContainer:
                                     AlignInContainer: =AlignInContainer.Center
                                     FillPortions: =0
@@ -1979,8 +1980,8 @@
                                     LayoutMode: =LayoutMode.Auto
                                     PaddingBottom: =20
                                     Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Proponent",true,false)
-                                    Width: =con_ContractCreationDate_PCS.Width
-                                    ZIndex: =9
+                                    Width: =con_WitnessVendorTitle_PCS_2.Width
+                                    ZIndex: =7
 
                                     Container1_57 As groupContainer.horizontalAutoLayoutContainer:
                                         AlignInContainer: =AlignInContainer.Center
@@ -2034,8 +2035,8 @@
                                     LayoutMode: =LayoutMode.Auto
                                     PaddingBottom: =20
                                     Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Proponent",true,false)
-                                    Width: =con_ContractCreationDate_PCS.Width
-                                    ZIndex: =10
+                                    Width: =con_WitnessVendorTitle_PCS_2.Width
+                                    ZIndex: =8
 
                                     Container1_58 As groupContainer.horizontalAutoLayoutContainer:
                                         AlignInContainer: =AlignInContainer.Center
@@ -2089,8 +2090,8 @@
                                     LayoutMode: =LayoutMode.Auto
                                     PaddingBottom: =20
                                     Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Proponent",true,false)
-                                    Width: =con_ContractCreationDate_PCS.Width
-                                    ZIndex: =11
+                                    Width: =con_WitnessVendorTitle_PCS_2.Width
+                                    ZIndex: =9
 
                                     Container1_59 As groupContainer.horizontalAutoLayoutContainer:
                                         AlignInContainer: =AlignInContainer.Center
@@ -2126,6 +2127,61 @@
                                         Fill: =VarFieldColor
                                         Height: =30
                                         HintText: ="ENTER VENDOR NAME ..."
+                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                        HoverFill: =VarFieldColor
+                                        Size: =10
+                                        Width: =Parent.Width*.97
+                                        ZIndex: =2
+
+                                Container5_63 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =con_ContractCreationDate_PCS.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =5
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingBottom: =20
+                                    Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Proponent",true,false)
+                                    Width: =con_ContractCreationDate_PCS.Width
+                                    ZIndex: =10
+
+                                    Container1_60 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        Fill: =RGBA(237, 237, 237, 1)
+                                        FillPortions: =0
+                                        Height: =Parent.Height*.3
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        lbl_ContractCreateDate_PCS_75 As label:
+                                            FontWeight: =FontWeight.Bold
+                                            Height: =Parent.Height
+                                            PaddingLeft: =10
+                                            PaddingRight: =0
+                                            Size: =8
+                                            Text: |-
+                                                ="VENDOR EMAIL : "
+                                            Width: =Parent.Width*.4
+                                            ZIndex: =1
+
+                                    TextInput1_55 As text:
+                                        AlignInContainer: =AlignInContainer.Center
+                                        BorderColor: =RGBA(255, 255, 255, 1)
+                                        BorderThickness: =0
+                                        Default: =""
+                                        Fill: =VarFieldColor
+                                        Height: =30
+                                        HintText: ="Enter WITNESS VENDOR BY ..."
                                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                                         HoverFill: =VarFieldColor
                                         Size: =10
@@ -2212,7 +2268,7 @@
                     HoverFill: =RGBA(219, 200, 216, 1)
                     OnSelect: |+
                         =
-                        Navigate('Create Contract Screen')
+                        Navigate('Contract Summary Screen',ScreenTransition.Fade)
                         
                         
                         
@@ -2242,7 +2298,7 @@
                             Patch(
                                 CM_ContractDetails,
                                 {ID:lclSelectedTask.Contract_Id},
-                                {Coc_stage:2}
+                                {Coc_stage:3}
                                 );
                             Patch(
                                 CM_Task,
@@ -2304,6 +2360,39 @@
                                
                             ),
                             "Proponent",
+                            Patch(
+                                CM_ContractDetails,
+                                {ID:lclSelectedTask.Contract_Id},
+                                {Coc_stage:4}
+                                );
+                            Patch(
+                                CM_Task,
+                                {ID:LookUp(CM_Task,Contract_Id=lclSelectedTask.Contract_Id).ID},
+                                {Task_Assigned_to:"Procurement"}
+                            );
+                            Patch(
+                                CM_Client_Contract,
+                                {
+                                    ID:LookUp(CM_Client_Contract,contract_ID_FK=lclSelectedTask.Contract_Id).ID
+                                },
+                                { 
+                                    Witness_Vendor_By:txt_WitnessVendorBy_PCS_2.Text,
+                                    Witness_Vendor_Title:txxt_WitnessVendorTitle__PCS_2.Text,
+                                    'Witness Vendor Date':dt_WitnessVendorDate_PCS_3.SelectedDate
+                                
+                                }
+                        
+                            );
+                            Patch(CM_VENDOR,
+                             {ID:LookUp(CM_VENDOR,contract_ID_FK=lclSelectedTask.Contract_Id).ID},
+                             {
+                                    Vendor_Address:TextInput1_53.Text,
+                                    Vendor_Contact_Number:Value(TextInput1_54.Text),
+                                    Title:txt_VendorName_PCS_3.Text,
+                                    Vendor_Email:TextInput1_55.Text
+                                
+                             }
+                            )
                         
                             
                         );
