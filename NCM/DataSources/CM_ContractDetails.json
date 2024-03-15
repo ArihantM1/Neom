@@ -3,7 +3,7 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
     "CdpRevision": {
       "BaseUrl": "/",
-      "LastChangedTimeString": "2024-02-12T21:23:44.4260000Z",
+      "LastChangedTimeString": "2024-03-07T22:11:04.8240000Z",
       "RevisionNumber": 1
     },
     "ConnectedDataSourceInfoNameMapping": {
@@ -28,6 +28,7 @@
       "Author": "Created By",
       "Author#Claims": "Created By Claims",
       "Clauses": "Clauses",
+      "Client_ID": "Client_ID",
       "CM_PDF_FILE_ID": "CM_PDF_FILE_ID",
       "Coc_stage": "Coc_stage",
       "ComplianceAssetId": "Compliance Asset Id",

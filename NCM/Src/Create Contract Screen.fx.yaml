@@ -695,6 +695,7 @@
                                     CM_ContractDetails,
                                     Defaults(CM_ContractDetails),
                                     {
+                                        Client_ID:drp_Client_CCS.Selected.ID,
                                         Contract_name: lblContractName_CCS.Text,
                                         Currency: {Value: drp_Currency_CCS.SelectedText.Value},
                                         Applicable_to: {Value: drp_ApplicableTo_CCS.SelectedText.Value},
@@ -731,6 +732,7 @@
                                 CM_ContractDetails,
                                 {ID: ContractData.ID},
                                 {
+                                    Client_ID:drp_Client_CCS.Selected.ID,
                                     Contract_name: lblContractName_CCS.Text,
                                     Currency: {Value: drp_Currency_CCS.SelectedText.Value},
                                     Applicable_to: {Value: drp_ApplicableTo_CCS.SelectedText.Value},

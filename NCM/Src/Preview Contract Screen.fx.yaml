@@ -2066,7 +2066,7 @@
                         =Patch(
                             CM_Client_Contract,Defaults(CM_Client_Contract),
                             {
-                                
+                                Client_Id:{Id:VarContractDetailsPatch.Client_ID,Value:VarContractDetailsPatch.Client_ID},
                                 Contract_Id:{Id:VarContractDetailsPatch.ID,Value:VarContractDetailsPatch.ID},
                                 contract_ID_FK:firstFormID,
                                 Notice_Client_Address:txt_CustomerNoticeAddress_PCS.Text,

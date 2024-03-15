@@ -279,7 +279,9 @@
 
     PdfViewer1 As pdfViewer:
         BorderColor: =RGBA(0, 0, 0, 1)
-        Document: =First(Filter(CM_COC_Summary,CM_CONTRACT_DETAIL_ID_FK=gal_AllContractsDetailView_HS.Selected.ID)).DATA_URI
+        Document: |-
+            =//First(Filter(CM_COC_Summary,CM_CONTRACT_DETAIL_ID_FK=gal_AllContractsDetailView_HS.Selected.ID)).DATA_URI
+            LookUp(Documents,ID=gal_AllContractsDetailView_HS.Selected.CM_PDF_FILE_ID).DataUri
         Fill: =RGBA(0, 0, 0, 0.5)
         Height: =con_ContractDownloadDetails_CSS.Height
         Page: =0
