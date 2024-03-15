@@ -93,7 +93,8 @@ App As appinfo:
             "Procurement",
             2
         )
-        )
+        );
+        Set(gblContractCompletionView,false)
         
         
     StartScreen: |
