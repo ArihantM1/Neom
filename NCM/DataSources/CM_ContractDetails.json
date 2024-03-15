@@ -57,6 +57,8 @@
       "Status#Id": "Status Id",
       "Supplier": "Supplier",
       "Supplier#Id": "Supplier Id",
+      "Task_ID_Fk": "Task_ID_Fk",
+      "Task_ID_Fk#Id": "Task_ID_Fk Id",
       "Title": "Title"
     },
     "DatasetName": "https://xebiagroup.sharepoint.com/sites/PowerAppsDemo",

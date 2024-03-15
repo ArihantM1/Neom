@@ -126,10 +126,6 @@
                         Width: =Parent.Width*.7
                         ZIndex: =2
 
-                    Image4 As image:
-                        Image: =drafts
-                        ZIndex: =3
-
             con_ContractsAll_HS As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.Semibold
