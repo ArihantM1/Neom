@@ -733,8 +733,9 @@
                             FontWeight: =FontWeight.Semibold
                             OnSelect: =Select(Parent)
                             Size: =11
-                            Text: |
-                                =If(ThisItem.Country.Value=Blank(),"-",ThisItem.Country.Value)
+                            Text: |-
+                                =//If(ThisItem.Country.Value=Blank(),"-",ThisItem.Country.Value)
+                                ThisItem.Task_ID_Fk.Value
                             Width: =lbl_ContractCountries_Headline_HS.Width
                             X: =lbl_ContractCountries_Headline_HS.X
                             Y: =(gal_AllContractsDetailView_HS.TemplateHeight-Self.Height)/2

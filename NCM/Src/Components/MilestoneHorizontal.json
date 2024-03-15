@@ -27,7 +27,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "gal_MileStone_MH",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 694,
+            "PublishOrderIndex": 696,
             "Rules": [
               {
                 "Category": "Design",
@@ -121,7 +121,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "gal_MileStone_MH",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 695,
+            "PublishOrderIndex": 697,
             "Rules": [
               {
                 "Category": "Design",
@@ -322,7 +322,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "gal_MileStone_MH",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 696,
+            "PublishOrderIndex": 698,
             "Rules": [
               {
                 "Category": "Design",
@@ -556,7 +556,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "gal_MileStone_MH",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 697,
+            "PublishOrderIndex": 699,
             "Rules": [
               {
                 "Category": "Design",
@@ -755,7 +755,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "gal_MileStone_MH",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 698,
+            "PublishOrderIndex": 700,
             "Rules": [
               {
                 "Category": "Design",
@@ -1012,7 +1012,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "gal_MileStone_MH",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 699,
+            "PublishOrderIndex": 701,
             "Rules": [
               {
                 "Category": "Data",
@@ -1368,7 +1368,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "MilestoneHorizontal",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 693,
+        "PublishOrderIndex": 695,
         "Rules": [
           {
             "Category": "Data",
