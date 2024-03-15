@@ -10,12 +10,13 @@
 
         MilestoneHorizontal_1 As MilestoneHorizontal:
             com_Height: =Parent.Height
-            com_MileStone_Completed_Color: =RGBA(107, 29, 94, 1)
+            com_MileStone_Completed_Color: =RGBA(120, 31, 105, 1)
             com_MileStone_Font_color: =Color.Black
+            com_MileStone_PendingColor: =RGBA(166, 166, 166, 1)
             com_MileStone_Stage: =LookUp(CM_ContractDetails,ID=lclSelectedContract.ID).Coc_stage
             com_MileStoneStage_Font_Size: =13
             com_Width: =Parent.Width
-            Height: =99.84
+            Height: =Parent.Height
             Width: =MilestoneHorizontal_1.com_Width
 
     con_Task_CSS As groupContainer.manualLayoutContainer:

@@ -6000,7 +6000,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "RGBA(0, 0, 0, 1)",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "com_MileStone_PendingColor",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -6093,7 +6093,7 @@
         {
           "Category": "Data",
           "PropertyName": "com_MileStone_PendingColor",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -6143,7 +6143,7 @@
         {
           "Category": "Design",
           "PropertyName": "Height",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
