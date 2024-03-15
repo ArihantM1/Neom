@@ -259,7 +259,7 @@
         FontWeight: =FontWeight.Bold
         Size: =18
         Text: ="C000"&lclSelectedContract.ID &" - " &lclSelectedContract.Contract_name
-        Width: =Parent.Width*.5
+        Width: =Parent.Width*.7
         X: =con_ContractDownloadDetails_CSS.X
         Y: =con_Task_CSS.Y-40
         ZIndex: =6
