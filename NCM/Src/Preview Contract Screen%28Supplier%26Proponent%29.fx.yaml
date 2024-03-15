@@ -2401,7 +2401,7 @@
                         
                             
                         );
-                        CM_PDFSummaryFlow.Run(firstFormID)
+                        CM_PDFSummaryFlow.Run(lclSelectedTask.Contract_Id)
                     Size: =10
                     Text: ="Submit"
                     Width: =Parent.Width*.07
