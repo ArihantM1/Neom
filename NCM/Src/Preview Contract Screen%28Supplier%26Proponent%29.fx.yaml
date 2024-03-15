@@ -2145,7 +2145,7 @@
                                     LayoutMode: =LayoutMode.Auto
                                     PaddingBottom: =20
                                     Visible: =If(LookUp(CM_Users,Emaill=User().Email).Role="Proponent",true,false)
-                                    Width: =con_ContractCreationDate_PCS.Width
+                                    Width: =Container5_62.Width
                                     ZIndex: =10
 
                                     Container1_60 As groupContainer.horizontalAutoLayoutContainer:
