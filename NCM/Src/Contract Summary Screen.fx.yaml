@@ -6,7 +6,7 @@
         Width: =Parent.Width
         X: =(Parent.Width-Self.Width)/2
         Y: =HeaderCMP_withoutNavbar_CSS.Y+HeaderCMP_withoutNavbar_CSS.Height+Parent.Height*.01
-        ZIndex: =2
+        ZIndex: =1
 
         MilestoneHorizontal_1 As MilestoneHorizontal:
             com_Height: =Parent.Height
@@ -25,7 +25,7 @@
         Width: =Parent.Width*.21
         X: =Parent.Width*.01
         Y: =con_Task_Milestone_CSS.Y+con_Task_Milestone_CSS.Height+Parent.Height*.09
-        ZIndex: =3
+        ZIndex: =2
 
         con_MyTask_CSS As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Semibold
@@ -230,7 +230,7 @@
         Width: =Parent.Width*.75
         X: =con_Task_CSS.X+con_Task_CSS.Width+Parent.Width*.015
         Y: =con_Task_CSS.Y
-        ZIndex: =4
+        ZIndex: =3
 
         rec_TopFiller_CSS As rectangle:
             Fill: =RGBA(107, 29, 94, 1)
@@ -259,7 +259,7 @@
         Width: =30
         X: =con_ContractDownloadDetails_CSS.X+con_ContractDownloadDetails_CSS.Width-Parent.Width*.02
         Y: =lbl_Coc_CSS.Y
-        ZIndex: =5
+        ZIndex: =4
 
     lbl_Coc_CSS As label:
         FontWeight: =FontWeight.Bold
@@ -268,7 +268,7 @@
         Width: =Parent.Width*.7
         X: =con_ContractDownloadDetails_CSS.X
         Y: =con_Task_CSS.Y-40
-        ZIndex: =6
+        ZIndex: =5
 
     lbl_MyTask_CSS As label:
         FontWeight: =FontWeight.Bold
@@ -277,12 +277,12 @@
         Width: =Parent.Width*.2
         X: =con_Task_CSS.X
         Y: =con_Task_CSS.Y-40
-        ZIndex: =7
+        ZIndex: =6
 
     HeaderCMP_withoutNavbar_CSS As HeaderCMP_withoutNavbar:
         Height: =Parent.Height*.1
         Width: =Parent.Width
-        ZIndex: =8
+        ZIndex: =7
 
     PdfViewer1 As pdfViewer:
         BorderColor: =RGBA(0, 0, 0, 1)
@@ -295,45 +295,78 @@
         Width: =con_ContractDownloadDetails_CSS.Width
         X: =con_ContractDownloadDetails_CSS.X
         Y: =con_ContractDownloadDetails_CSS.Y
-        ZIndex: =9
+        ZIndex: =8
 
     shp_BackgroundContractSingingPopUp_Css As rectangle:
         Fill: =RGBA(0, 0, 0, 0.42)
         Height: =Parent.Height
         Visible: =gblContractCompletionView
         Width: =Parent.Width
-        ZIndex: =10
+        ZIndex: =9
 
-    Container6 As groupContainer.verticalAutoLayoutContainer:
-        DropShadow: =DropShadow.ExtraBold
-        Fill: =RGBA(0, 0, 0, 1)
-        Height: =Parent.Height*.8
-        LayoutDirection: =LayoutDirection.Vertical
-        LayoutMode: =LayoutMode.Auto
+    Container6 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =Parent.Height*.85
         Visible: =gblContractCompletionView
         Width: =Parent.Width*.7
-        X: =(Parent.Width-Self.Width)/2
-        Y: =(Parent.Height-Self.Height)/2
-        ZIndex: =11
+        X: =Parent.Width/2-Self.Width/2
+        Y: =Parent.Height/2-Self.Height/2
+        ZIndex: =10
 
-        Icon1 As icon.Cancel:
-            AlignInContainer: =AlignInContainer.End
-            Color: =RGBA(255, 255, 255, 1)
-            Height: =40
+        Icon2 As icon.Cancel:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =30
             Icon: =Icon.Cancel
-            OnSelect: =Set(gblContractCompletionView,false)
-            Width: =40
+            OnSelect: |-
+                =Set(gblContractCompletionView,false);
+                Reset(Checkbox1)
+            Width: =30
+            X: =Parent.Width-Self.Width-5
+            Y: =5
             ZIndex: =1
+
+        Checkbox1 As checkbox:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            CheckboxBorderColor: =RGBA(89, 22, 110, 1)
+            CheckmarkFill: =RGBA(107, 25, 120, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            PressedColor: =RGBA(0, 0, 0, 1)
+            Text: ="Are you sure you want to sign the contract?"
+            Width: =Parent.Width*.45
+            X: =Parent.Width/2-Self.Width/2+40
+            Y: =Parent.Height-Self.Height*2.5
+            ZIndex: =2
+
+        Button1 As button:
+            DisplayMode: =If(Checkbox1.Value,DisplayMode.Edit,DisplayMode.Disabled)
+            Fill: =RGBA(107, 29, 94, 1)
+            FontWeight: =FontWeight.Bold
+            HoverBorderColor: =
+            HoverColor: =RGBA(107, 29, 94, 1)
+            HoverFill: =Self.Color
+            OnSelect: |-
+                =Reset(Checkbox1);
+                Set(gblContractCompletionView,false)
+            PressedBorderColor: =
+            PressedColor: =Self.Color
+            PressedFill: =Self.Fill
+            Size: =13
+            Text: ="Submit"
+            Tooltip: =If(DisplayMode.Disabled,"Please Check The Above Conformation")
+            Width: =Parent.Width*.25
+            X: =Parent.Width/2-Self.Width/2
+            Y: =Parent.Height-Self.Height*1.5
+            ZIndex: =3
 
     PdfViewer2 As pdfViewer:
         BorderColor: =RGBA(0, 0, 0, 1)
         DisplayMode: =DisplayMode.View
         Document: =LookUp(Documents,ID=gal_AllContractsDetailView_HS.Selected.CM_PDF_FILE_ID).DataUri
         Fill: =RGBA(0, 0, 0, 0.5)
-        Height: =Container6.Height*.8
+        Height: =Container6.Height*.75
         Visible: =gblContractCompletionView
         Width: =Container6.Width
         X: =Parent.Width/2-Self.Width/2
-        Y: =Parent.Height/2-Self.Height/2-20
-        ZIndex: =12
+        Y: =Parent.Height/2-Self.Height/2-45
+        ZIndex: =11
 

@@ -4404,49 +4404,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Contract Summary Screen'.Container6.Icon1.AccessibleLabel"
+                  "fullyQualifiedName": "'Contract Summary Screen'.Container6.Icon2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Contract Summary Screen'.Container6.Icon1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Contract Summary Screen",
-                "type": "'Contract Summary Screen'.Container6.Icon1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Contract Summary Screen'.Container6.Icon1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Contract Summary Screen'.Container6.Icon1.TabIndex",
+                  "fullyQualifiedName": "'Contract Summary Screen'.Container6.Icon2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Contract Summary Screen",
-                "type": "'Contract Summary Screen'.Container6.Icon1"
+                "type": "'Contract Summary Screen'.Container6.Icon2"
               }
             }
           ],
@@ -4458,6 +4428,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Contract Summary Screen'.Container6.Icon2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Contract Summary Screen'.Container6.Icon2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Contract Summary Screen",
+                "type": "'Contract Summary Screen'.Container6.Icon2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
         },
         {
           "locations": [
