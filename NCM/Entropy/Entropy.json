@@ -733,9 +733,10 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "03/15/2024 10:24:10",
+  "HeaderLastSavedDateTimeUTC": "03/15/2024 10:44:57",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
+    "49116fd8-f2ff-46bd-a627-dd04288674d3": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/shared-sharepointonl-03b664c8-6dd2-4ac7-92a9-71d81430f5a9\"",
     "560d9749-ce2d-46ff-a027-334511a62e86": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/ffbc5922b2e140c387b18cbafc6d5552\"",
     "76710c75-5391-4ca4-90a8-211415955da1": "\"/providers/microsoft.powerapps/apis/shared_wordonlinebusiness/connections/shared-wordonlinebus-8ffc6f9a-74e5-4d9c-8ac8-92b0f5f9859e\"",
     "9fad6064-9d7a-46f8-8770-cbb9fe486f1f": "\"/providers/microsoft.powerapps/apis/shared_onedriveforbusiness/connections/1abc8e8b19304af39ad2bc1330d8937f\"",
@@ -857,9 +858,10 @@
     "eeae0174e886453083644726d574ee05": 0
   },
   "OrderDataSource": {
-    "CheckboxValue": 21,
-    "ClauseCollection": 20,
-    "ClauseCounts": 19,
+    "CheckboxValue": 22,
+    "ClauseCollection": 21,
+    "ClauseCounts": 20,
+    "CM_Audit_Table": 19,
     "CM_Client_Contract": 3,
     "CM_ClientData": 2,
     "CM_COC_Download_History": 16,
@@ -873,14 +875,14 @@
     "CM_VENDOR": 8,
     "CMDownloadSummaryFlow": 1,
     "ComboBoxSample": 9,
-    "ContrcatTasks": 24,
+    "ContrcatTasks": 25,
     "CustomGallerySample": 10,
     "Documents": 11,
     "DropDownSample": 12,
     "LegendSample": 13,
-    "NavBar": 22,
+    "NavBar": 23,
     "PieChartSample": 14,
-    "RadioOptions": 23,
+    "RadioOptions": 24,
     "RadioSample": 15
   },
   "OrderGroupControls": {

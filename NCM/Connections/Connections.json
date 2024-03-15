@@ -1,4 +1,26 @@
 {
+  "49116fd8-f2ff-46bd-a627-dd04288674d3": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/alexsp/sporelease/1.0.1682.3673/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://xebiagroup.sharepoint.com/sites/PowerAppsDemo": {
+        "dataSources": {
+          "CM_Audit_Table": {
+            "tableName": "9cc6c20a-16de-4caf-9fd5-8b50b1263bc9"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "CM_Audit_Table"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "49116fd8-f2ff-46bd-a627-dd04288674d3"
+  },
   "560d9749-ce2d-46ff-a027-334511a62e86": {
     "connectionRef": {
       "displayName": "SharePoint",
