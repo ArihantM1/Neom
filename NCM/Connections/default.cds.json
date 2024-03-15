@@ -7,6 +7,14 @@
       "ComponentName": "CustomControl",
       "Identifier": "dev_ChartJSV14.chartJS",
       "IdentifierType": 0
+    },
+    {
+      "Capabilities": {
+        "PCFExternalServiceUsageAllowed": false
+      },
+      "ComponentName": "CustomControl",
+      "Identifier": "dev_ChartJSV14.chartJS",
+      "IdentifierType": 0
     }
   ],
   "dataSources": {},

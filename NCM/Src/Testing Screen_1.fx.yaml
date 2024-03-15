@@ -511,3 +511,12 @@
                 Width: =Parent.Width*.97
                 ZIndex: =2
 
+    chartJS1 As chartJSV14:
+        DisplayMode: =DisplayMode.Edit
+        DivH: ="40%"
+        Height: =Parent.Height
+        Width: =Parent.Width
+        X: =0
+        Y: =0
+        ZIndex: =2
+
