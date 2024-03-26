@@ -608,8 +608,9 @@
                             Align: =Align.Center
                             Color: =RGBA(107, 29, 94,1)
                             FontWeight: =FontWeight.Bold
+                            PaddingLeft: =15
                             Size: =11
-                            Text: ="COUNTURIES"
+                            Text: ="TASK"
                             Width: =Parent.Width*.1
                             ZIndex: =6
 
@@ -687,8 +688,11 @@
                             Align: =Align.Center
                             FontWeight: =FontWeight.Semibold
                             OnSelect: =Select(Parent)
+                            Overflow: =Overflow.Scroll
                             PaddingLeft: =10
-                            Size: =11
+                            Size: |-
+                                =//If(Self.Width<=137,11,9)
+                                11
                             Text: =ThisItem.Contract_name
                             Width: =lbl_ContractName_Headline_HS.Width
                             X: =lbl_ContractName_Headline_HS.X
@@ -732,11 +736,12 @@
                             Align: =Align.Center
                             FontWeight: =FontWeight.Semibold
                             OnSelect: =Select(Parent)
+                            PaddingLeft: =0
                             Size: =11
                             Text: |-
                                 =//If(ThisItem.Country.Value=Blank(),"-",ThisItem.Country.Value)
                                 ThisItem.Task_ID_Fk.Value
-                            Width: =lbl_ContractCountries_Headline_HS.Width+20
+                            Width: =lbl_ContractCountries_Headline_HS.Width+25
                             X: =lbl_ContractCountries_Headline_HS.X
                             Y: =(gal_AllContractsDetailView_HS.TemplateHeight-Self.Height)/2
                             ZIndex: =7

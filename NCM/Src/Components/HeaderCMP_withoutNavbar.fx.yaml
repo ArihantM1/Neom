@@ -97,7 +97,7 @@ HeaderCMP_withoutNavbar As CanvasComponent:
                     Reset(txt_DescriptionInput_CCS);
                     Reset(dte_StartDate_CCS);
                     Reset(dte_EndDate_CCS);
-                    Reset(Radio1);
+                    Reset(rdo_CreateDucplicateCOCSelect_CCS);
                     Navigate('Home Screen')
                 PressedColor: =Self.Color
                 PressedFill: =Self.Fill
