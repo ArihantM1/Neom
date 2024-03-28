@@ -242,11 +242,6 @@
                         =Refresh(CM_Client_Contract);
                         Refresh(CM_ContractDetails);
                         Refresh(CM_Task);
-                        
-                        
-                        
-                        
-                        
                         Switch(
                              LookUp(CM_Users, Emaill = User().Email).Role,
                              "Supplier",
@@ -335,7 +330,6 @@
                             Task_Name:"Fill Out Key Data Of Supplier",
                             Task_Status:"Pending",
                             Task_Assigned_to:"Supplier"
-                        
                             }
                             );
                             Patch(
@@ -359,7 +353,7 @@
                                 Client_Contact_Person_Email:chartJS2.contactEmail,
                                 Client_Contact_Person_PhoneNo:Value(chartJS2.contactPhoneNo),
                                 Client_Contact_Person_name:chartJS2.contactPersonName,
-                                PIN_CODE:Value(chartJS2.pinCode),
+                                //PIN_CODE:Value(chartJS2.pinCode),
                                 Client_Billing_State:chartJS2.companyBillingState,
                                 Client_Billing_Country:chartJS2.companyBillingCountry, 
                                // Client_Delarance_Name:TextInput1_21.Text,
@@ -368,6 +362,7 @@
                                 Witness_Vendor_Title:chartJS2.witnessVendorTitle,
                                  Witness_Vendor_By: chartJS2.witnessVendorBy
                                 //Witness_Vendor_By:TextInput1_25.Text  
+                                
                                
                                 }
                             );
@@ -381,6 +376,7 @@
                                 Status: {Value: "Active"},
                                 Coc_stage: 2,
                                 Contract_Charges:Value(chartJS2.charges)
+                                //,Task_ID_Fk:LookUp(CM_Task,Contract_Id=VarContractDetailsPatch.ID)
                                 }
                             );
                         
