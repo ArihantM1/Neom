@@ -753,7 +753,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "\"\"",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "DivH",
           "IsLockable": false,
           "NameMapSourceSchema": "?"

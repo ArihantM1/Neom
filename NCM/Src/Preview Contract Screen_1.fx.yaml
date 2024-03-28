@@ -243,7 +243,7 @@
                         Refresh(CM_ContractDetails);
                         Refresh(CM_Task);
                         Switch(
-                             LookUp(CM_Users, Emaill = User().Email).Role,
+                             gblActiveUser,
                              "Supplier",
                             
                             Patch(
@@ -264,23 +264,25 @@
                                     ID:LookUp(CM_Client_Contract,contract_ID_FK=lclSelectedTaskHomeScreen.ID).ID
                                 },
                                 {
-                                     Notice_Client_Attention:TextInput1_3.Text,
-                                    Notice_Client_Address:txt_CustomerNoticeAddress_PCS_1.Text,
-                                    Client_Contact_Person_name:TextInput1_31.Text,
-                                    Client_Contact_Person_PhoneNo:Value(TextInput1_32.Text),
-                                    Client_Contact_Person_Email:TextInput1_33.Text,
-                                    Client_Billing_City:TextInput1_34.Text,
-                                    Client_Billing_State:TextInput1_35.Text,
-                                    Client_Billing_Country:TextInput1_36.Text,
-                                    PIN_CODE:Value(TextInput1_37.Text),
-                                    Client_Invoice_Name:TextInput1_38.Text,
-                                    Client_Invoice_City:TextInput1_39.Text,
-                                    Client_Invoice_State:TextInput1_40.Text,Client_Invoice_Country:TextInput1_41.Text,
-                                    Client_Invoice_PinNo:Value(TextInput1_42.Text),
-                                    Client_Bank_Name:TextInput1_43.Text,
-                                    Client_Bank_MIRC_No:TextInput1_44.Text,
-                                    'Client_Bank IFSC Code':TextInput1_45.Text,
-                                    Client_Bank_Account_No:TextInput1_46.Text,Client_Bank_Branch_Address:TextInput1_47.Text
+                                    Notice_Client_Attention:chartJS2.toCustomerCustomerAttn,
+                                    Notice_Client_Address:chartJS2.toCustomerCustomerAddress,
+                                    Client_Contact_Person_name:chartJS2.contactPersonName,
+                                    Client_Contact_Person_PhoneNo:Value(chartJS2.contactPhoneNo),
+                                    Client_Contact_Person_Email:chartJS2.contactEmail,
+                                    Client_Billing_City:chartJS2.companyBillingCity,
+                                    Client_Billing_State:chartJS2.companyBillingState,
+                                    Client_Billing_Country:chartJS2.companyBillingCountry,
+                                    PIN_CODE:Value(chartJS2.pinCode),
+                                    Client_Invoice_Name:chartJS2.invoiceName,
+                                    Client_Invoice_City:chartJS2.invoiceCity,
+                                    Client_Invoice_State:chartJS2.invoiceState,
+                                    //Client_Invoice_Country:chartJS2.invoi,
+                                    Client_Invoice_PinNo:Value(chartJS2.invoicePin),
+                                    Client_Bank_Name:chartJS2.bankName,
+                                    Client_Bank_MIRC_No:chartJS2.bankMICRCode,
+                                    'Client_Bank IFSC Code':chartJS2.bankIFSCNEFTCode,
+                                    Client_Bank_Account_No:chartJS2.bankAccountNo,
+                                    Client_Bank_Branch_Address:chartJS2.bankBranchAddress
                                     
                         
                                 }
@@ -306,20 +308,19 @@
                                     ID:LookUp(CM_Client_Contract,contract_ID_FK=lclSelectedTaskHomeScreen.ID).ID
                                 },
                                 { 
-                                    Witness_Vendor_By:txt_WitnessVendorBy_PCS_2.Text,
-                                    Witness_Vendor_Title:txxt_WitnessVendorTitle__PCS_2.Text,
-                                    'Witness Vendor Date':dt_WitnessVendorDate_PCS_3.SelectedDate
-                                
+                                    Witness_Vendor_By:chartJS2.witnessVendorBy,
+                                    Witness_Vendor_Title:chartJS2.witnessVendorTitle,
+                                    'Witness Vendor Date': DateTimeValue(chartJS2.witnessVendorDate)
                                 }
                         
                             );
                             Patch(CM_VENDOR,
                              {ID:LookUp(CM_VENDOR,contract_ID_FK=lclSelectedTaskHomeScreen.ID).ID},
                              {
-                                    Vendor_Address:TextInput1_53.Text,
-                                    Vendor_Contact_Number:Value(TextInput1_54.Text),
-                                    Title:txt_VendorName_PCS_3.Text,
-                                    Vendor_Email:TextInput1_55.Text
+                                    Vendor_Address:chartJS2.vendorAddress,
+                                    Vendor_Contact_Number:Value(chartJS2.vendorContactNo),
+                                    Title:chartJS2.vendorName,
+                                    Vendor_Email:chartJS2.vendorEmail
                                 
                              }
                             ),
@@ -332,7 +333,7 @@
                             Task_Assigned_to:"Supplier"
                             }
                             );
-                            Patch(
+                           /* Patch(
                                 CM_Client_Contract,Defaults(CM_Client_Contract),
                                 {
                                 Client_Id:{Id:VarContractDetailsPatch.Client_ID,Value:VarContractDetailsPatch.Client_ID},
@@ -365,7 +366,7 @@
                                 
                                
                                 }
-                            );
+                            );*/
                             Patch(
                                 CM_ContractDetails,
                                 {ID: VarContractDetailsPatch.ID },
@@ -380,7 +381,7 @@
                                 }
                             );
                         
-                            Patch(
+                           /* Patch(
                                 CM_VENDOR,Defaults(CM_VENDOR),
                                 {
                                 Contract_Id:{Id:VarContractDetailsPatch.ID,Value:VarContractDetailsPatch.ID},
@@ -391,7 +392,7 @@
                                Title:chartJS2.vendorName
                                
                                 }
-                            );
+                            );*/
                         );
                         //CM_PDFSummaryFlow.Run(lclSelectedTaskHomeScreen.ID);
                         If(IsBlank(firstFormID),{},CM_PDFSummaryFlow.Run(firstFormID));
