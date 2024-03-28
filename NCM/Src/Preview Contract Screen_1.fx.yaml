@@ -328,7 +328,16 @@
                                 
                              }
                             ),
-                            "Proponent",
+                            "Procurement",
+                            Patch(CM_Task,
+                            {
+                            Contract_Id:VarContractDetailsPatch.ID,
+                            Task_Name:"Fill Out Key Data Of Supplier",
+                            Task_Status:"Pending",
+                            Task_Assigned_to:"Supplier"
+                        
+                            }
+                            );
                             Patch(
                                 CM_Client_Contract,Defaults(CM_Client_Contract),
                                 {

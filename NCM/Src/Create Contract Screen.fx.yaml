@@ -844,9 +844,9 @@
                         Patch(CM_Task,
                          {
                             Contract_Id:VarContractDetailsPatch.ID,
-                            Task_Name:"Fill Out Key Data Of Supplier",
+                            Task_Name:"Fill Out Key Data Of Procurement",
                             Task_Status:"Pending",
-                            Task_Assigned_to:"Supplier"
+                            Task_Assigned_to:"Procurement"
                         
                          }
                         );
