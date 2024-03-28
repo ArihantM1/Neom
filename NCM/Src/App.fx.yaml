@@ -76,6 +76,7 @@ App As appinfo:
                 1 + RandomClauseIndex
             )
         );
+        Set(gblTaskPatchDetail,Blank());
         Set(VarShowMoreFileds,false);
         Set(VarFieldColor,RGBA(245,245,245,1));
         Set(VarFindText,Blank());

@@ -245,19 +245,28 @@
                         Switch(
                              gblActiveUser,
                              "Supplier",
-                            
-                            Patch(
-                                CM_ContractDetails,
-                                {ID:lclSelectedTaskHomeScreen.ID},
-                                {Coc_stage:3}
-                                );
+                            Set(gblTaskPatchDetail,
                             Patch(
                                 CM_Task,
-                                {ID:LookUp(CM_Task,Contract_Id=lclSelectedTaskHomeScreen.ID).ID},
+                                LookUp(CM_Task,Contract_Id=lclSelectedTaskHomeScreen.ID),
                                 {Task_Assigned_to:"Proponent",
                                 Task_Name:"Fill Out Key Data of Proponent"
                                 }
-                            );
+                            ));
+                            Refresh(CM_Task);
+                            UpdateIf(
+                                CM_ContractDetails,
+                                ID=lclSelectedTaskHomeScreen.ID,
+                                {
+                                    
+                                    Coc_stage:3,
+                                    Task_ID_Fk:{
+                                        Id:gblTaskPatchDetail.ID,
+                                        Value:gblTaskPatchDetail.Task_Name
+                                    }
+                                }
+                                );
+                            
                             Patch(
                                 CM_Client_Contract,
                                 {
@@ -289,11 +298,7 @@
                                
                             ),
                             "Proponent",
-                            Patch(
-                                CM_ContractDetails,
-                                {ID:lclSelectedTaskHomeScreen.ID},
-                                {Coc_stage:4}
-                                );
+                            Set(gblTaskPatchDetail,
                             Patch(
                                 CM_Task,
                                 {ID:LookUp(CM_Task,Contract_Id=lclSelectedTaskHomeScreen.ID).ID},
@@ -301,7 +306,20 @@
                                 Task_Name:"Legal Review"
                                 
                                 }
-                            );
+                            ));
+                        
+                            Refresh(CM_Task);
+                            Patch(
+                                CM_ContractDetails,
+                                {ID:lclSelectedTaskHomeScreen.ID},
+                                {Coc_stage:4,
+                                Task_ID_Fk:{
+                                        Id:gblTaskPatchDetail.ID,
+                                        Value:gblTaskPatchDetail.Task_Name
+                                    }
+                                }
+                                );
+                            
                             Patch(
                                 CM_Client_Contract,
                                 {
@@ -325,6 +343,7 @@
                              }
                             ),
                             "Procurement",
+                            Set(gblTaskPatchDetail,
                             Patch(CM_Task,
                             {
                             Contract_Id:VarContractDetailsPatch.ID,
@@ -332,7 +351,8 @@
                             Task_Status:"Pending",
                             Task_Assigned_to:"Supplier"
                             }
-                            );
+                            ));
+                            Refresh(CM_Task);
                            /* Patch(
                                 CM_Client_Contract,Defaults(CM_Client_Contract),
                                 {
@@ -376,7 +396,11 @@
                                 Contract_Created_Location:chartJS2.contactCreationCity,
                                 Status: {Value: "Active"},
                                 Coc_stage: 2,
-                                Contract_Charges:Value(chartJS2.charges)
+                                Contract_Charges:Value(chartJS2.charges),
+                                Task_ID_Fk:{
+                                        Id:gblTaskPatchDetail.ID,
+                                        Value:gblTaskPatchDetail.Task_Name
+                                    }
                                 //,Task_ID_Fk:LookUp(CM_Task,Contract_Id=VarContractDetailsPatch.ID)
                                 }
                             );
