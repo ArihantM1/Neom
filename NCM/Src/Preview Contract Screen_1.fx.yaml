@@ -395,6 +395,10 @@
                             );*/
                         );
                         //CM_PDFSummaryFlow.Run(lclSelectedTaskHomeScreen.ID);
+                        Refresh(CM_Client_Contract);
+                        Refresh(CM_ContractDetails);
+                        Refresh(CM_VENDOR);
+                        Refresh(CM_Task);
                         If(IsBlank(firstFormID),{},CM_PDFSummaryFlow.Run(firstFormID));
                         
                         

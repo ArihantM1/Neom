@@ -100,6 +100,7 @@
                 ZIndex: =1
 
                 rdo_CreateDucplicateCOCSelect_CCS As radio:
+                    AlignInContainer: =AlignInContainer.Start
                     BorderColor: =RGBA(107, 29, 94, 1)
                     BorderStyle: =BorderStyle.None
                     Color: =RGBA(107, 29, 94, 1)
@@ -107,6 +108,7 @@
                     Height: =Parent.Height-shp_Devider_CreateDucplicateCOCSelect_CCS.Height
                     Items: =RadioOptions
                     Layout: =Layout.Horizontal
+                    LineHeight: =1
                     OnChange: |
                         =
                          Set(
