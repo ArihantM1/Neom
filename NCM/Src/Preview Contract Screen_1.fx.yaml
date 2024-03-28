@@ -188,6 +188,53 @@
                 btn_CreateContract_PCS_2 As button:
                     BorderColor: =RGBA(107, 29, 94, 1)
                     Color: =RGBA(107, 29, 94, 1)
+                    DisplayMode: |-
+                        =Switch(
+                            gblActiveUser,
+                            "Procurement",
+                            If(
+                            !IsBlank(chartJS2.contactCreationCity)
+                            And !IsBlank(chartJS2.charges),
+                            DisplayMode.Edit,
+                            DisplayMode.Disabled
+                            ),
+                            "Proponent",
+                            If(
+                            !IsBlank(chartJS2.witnessVendorBy)
+                            And !IsBlank(chartJS2.vendorAddress)
+                            And !IsBlank(chartJS2.witnessVendorDate)
+                            And !IsBlank(chartJS2.witnessVendorTitle)
+                            And !IsBlank(chartJS2.vendorName)
+                            And !IsBlank(chartJS2.vendorContactNo)
+                            And !IsBlank(chartJS2.vendorEmail),
+                            DisplayMode.Edit,
+                            DisplayMode.Disabled
+                            ),
+                            "Supplier",
+                            If(
+                            !IsBlank(chartJS2.toCustomerCustomerAddress)
+                            And !IsBlank(chartJS2.toCustomerCustomerAttn)
+                            And !IsBlank(chartJS2.bankBranchAddress)
+                            And !IsBlank(chartJS2.bankIFSCNEFTCode)
+                            And !IsBlank(chartJS2.bankMICRCode)
+                            And !IsBlank(chartJS2.bankAccountNo)
+                            And !IsBlank(chartJS2.invoicePin)
+                            And !IsBlank(chartJS2.bankName)
+                            And !IsBlank(chartJS2.invoiceState)
+                            And !IsBlank(chartJS2.invoiceCity)
+                            And !IsBlank(chartJS2.invoiceName)
+                            And !IsBlank(chartJS2.contactEmail)
+                            And !IsBlank(chartJS2.contactPersonName)
+                            And !IsBlank(chartJS2.contactPersonName)
+                            And !IsBlank(chartJS2.pinCode)
+                            And !IsBlank(chartJS2.companyBillingCity)
+                            And !IsBlank(chartJS2.companyBillingState)
+                            And !IsBlank(chartJS2.companyBillingCountry),
+                            DisplayMode.Edit,
+                            DisplayMode.Disabled
+                            )
+                        
+                        )
                     Fill: =RGBA(255, 255, 255, 1)
                     Height: =35
                     HoverFill: =RGBA(107, 29, 94, 1)

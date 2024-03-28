@@ -2067,18 +2067,7 @@
                             }
                         );
                         
-                        Reset(drp_ServiceType_CCS);
-                        Reset(drp_Client_CCS);
-                        Reset(drp_Services_CCS);
-                        Reset(drp_ApplicableTo_CCS);
-                        Reset(drp_Currency_CCS);
-                        Reset(drp_Country_CCS);
-                        Reset('drp_SelectNew&Existing_CCS');
-                        Reset(lblContractName_CCS);
-                        Reset(txt_DescriptionInput_CCS);
-                        Reset(dte_StartDate_CCS);
-                        Reset(dte_EndDate_CCS);
-                        Reset(rdo_CreateDucplicateCOCSelect_CCS);
+                        
                         Navigate('Home Screen');
                         CM_PDFSummaryFlow.Run(firstFormID)
                     Size: =10
