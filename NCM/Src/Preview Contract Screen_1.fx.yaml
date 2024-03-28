@@ -252,6 +252,7 @@
                                 {Task_Assigned_to:"Proponent",
                                 Task_Name:"Fill Out Key Data of Proponent"
                                 }
+                                
                             ));
                             Refresh(CM_Task);
                             UpdateIf(
@@ -345,6 +346,7 @@
                             "Procurement",
                             Set(gblTaskPatchDetail,
                             Patch(CM_Task,
+                           
                             {
                             Contract_Id:VarContractDetailsPatch.ID,
                             Task_Name:"Fill Out Key Data Of Supplier",

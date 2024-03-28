@@ -108,7 +108,7 @@
                     Height: =Parent.Height-shp_Devider_CreateDucplicateCOCSelect_CCS.Height
                     Items: =RadioOptions
                     Layout: =Layout.Horizontal
-                    LineHeight: =1
+                    LineHeight: =0.8
                     OnChange: |
                         =
                          Set(
@@ -843,7 +843,7 @@
                                 );
                             )
                         )*/
-                        Patch(CM_Task,
+                        /*Patch(CM_Task,
                          {
                             Contract_Id:VarContractDetailsPatch.ID,
                             Task_Name:"Fill Out Key Data Of Procurement",
@@ -851,7 +851,7 @@
                             Task_Assigned_to:"Procurement"
                         
                          }
-                        );
+                        );*/
                         Refresh(CM_Task);
                         Navigate(
                             'Preview Contract Screen_1',
