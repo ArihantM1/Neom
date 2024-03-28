@@ -198,6 +198,9 @@
                                 Navigate('Create Contract Screen',ScreenTransition.None,{ContractData:Blank()});
                             Size: =10.5
                             Text: ="Create Contract"
+                            Visible: |-
+                                =//true
+                                If(gblActiveUser="Procurement",true,false)
                             Width: =Parent.Width*.25
                             ZIndex: =2
 
@@ -735,12 +738,15 @@
                         lbl_ContractCountries_HS As label:
                             Align: =Align.Center
                             FontWeight: =FontWeight.Semibold
-                            OnSelect: =Select(Parent)
+                            OnSelect: |-
+                                =//Select(Parent)
+                                Navigate('Preview Contract Screen_1',ScreenTransition.Fade,{lclSelectedTaskHomeScreen:gal_AllContractsDetailView_HS.Selected})
                             PaddingLeft: =0
                             Size: =11
                             Text: |-
                                 =//If(ThisItem.Country.Value=Blank(),"-",ThisItem.Country.Value)
                                 ThisItem.Task_ID_Fk.Value
+                            Visible: =If(LookUp(CM_Task,ThisItem.Task_ID_Fk.Id=ID).Task_Assigned_to=gblActiveUser,true,false)
                             Width: =lbl_ContractCountries_Headline_HS.Width+25
                             X: =lbl_ContractCountries_Headline_HS.X
                             Y: =(gal_AllContractsDetailView_HS.TemplateHeight-Self.Height)/2

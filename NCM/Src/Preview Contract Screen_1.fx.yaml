@@ -137,7 +137,7 @@
 
                 chartJS2 As chartJSV14:
                     DisplayMode: =DisplayMode.Edit
-                    DivH: =Self.Height-35
+                    DivH: =Self.Height
                     Height: =Parent.Height
                     UserRole: =UserRole
                     Width: =Parent.Width
@@ -191,7 +191,176 @@
                     Fill: =RGBA(255, 255, 255, 1)
                     Height: =35
                     HoverFill: =RGBA(107, 29, 94, 1)
-                    OnSelect: =Navigate('Testing Screen')
+                    OnSelect: |
+                        =Refresh(CM_Client_Contract);
+                        Refresh(CM_ContractDetails);
+                        Refresh(CM_Task);
+                        
+                        
+                        
+                        
+                        
+                        Switch(
+                             LookUp(CM_Users, Emaill = User().Email).Role,
+                             "Supplier",
+                            
+                            Patch(
+                                CM_ContractDetails,
+                                {ID:lclSelectedTaskHomeScreen.ID},
+                                {Coc_stage:3}
+                                );
+                            Patch(
+                                CM_Task,
+                                {ID:LookUp(CM_Task,Contract_Id=lclSelectedTaskHomeScreen.ID).ID},
+                                {Task_Assigned_to:"Proponent",
+                                Task_Name:"Fill Out Key Data of Proponent"
+                                }
+                            );
+                            Patch(
+                                CM_Client_Contract,
+                                {
+                                    ID:LookUp(CM_Client_Contract,contract_ID_FK=lclSelectedTaskHomeScreen.ID).ID
+                                },
+                                {
+                                     Notice_Client_Attention:TextInput1_3.Text,
+                                    Notice_Client_Address:txt_CustomerNoticeAddress_PCS_1.Text,
+                                    Client_Contact_Person_name:TextInput1_31.Text,
+                                    Client_Contact_Person_PhoneNo:Value(TextInput1_32.Text),
+                                    Client_Contact_Person_Email:TextInput1_33.Text,
+                                    Client_Billing_City:TextInput1_34.Text,
+                                    Client_Billing_State:TextInput1_35.Text,
+                                    Client_Billing_Country:TextInput1_36.Text,
+                                    PIN_CODE:Value(TextInput1_37.Text),
+                                    Client_Invoice_Name:TextInput1_38.Text,
+                                    Client_Invoice_City:TextInput1_39.Text,
+                                    Client_Invoice_State:TextInput1_40.Text,Client_Invoice_Country:TextInput1_41.Text,
+                                    Client_Invoice_PinNo:Value(TextInput1_42.Text),
+                                    Client_Bank_Name:TextInput1_43.Text,
+                                    Client_Bank_MIRC_No:TextInput1_44.Text,
+                                    'Client_Bank IFSC Code':TextInput1_45.Text,
+                                    Client_Bank_Account_No:TextInput1_46.Text,Client_Bank_Branch_Address:TextInput1_47.Text
+                                    
+                        
+                                }
+                               
+                            ),
+                            "Proponent",
+                            Patch(
+                                CM_ContractDetails,
+                                {ID:lclSelectedTaskHomeScreen.ID},
+                                {Coc_stage:4}
+                                );
+                            Patch(
+                                CM_Task,
+                                {ID:LookUp(CM_Task,Contract_Id=lclSelectedTaskHomeScreen.ID).ID},
+                                {Task_Assigned_to:"Procurement",
+                                Task_Name:"Legal Review"
+                                
+                                }
+                            );
+                            Patch(
+                                CM_Client_Contract,
+                                {
+                                    ID:LookUp(CM_Client_Contract,contract_ID_FK=lclSelectedTaskHomeScreen.ID).ID
+                                },
+                                { 
+                                    Witness_Vendor_By:txt_WitnessVendorBy_PCS_2.Text,
+                                    Witness_Vendor_Title:txxt_WitnessVendorTitle__PCS_2.Text,
+                                    'Witness Vendor Date':dt_WitnessVendorDate_PCS_3.SelectedDate
+                                
+                                }
+                        
+                            );
+                            Patch(CM_VENDOR,
+                             {ID:LookUp(CM_VENDOR,contract_ID_FK=lclSelectedTaskHomeScreen.ID).ID},
+                             {
+                                    Vendor_Address:TextInput1_53.Text,
+                                    Vendor_Contact_Number:Value(TextInput1_54.Text),
+                                    Title:txt_VendorName_PCS_3.Text,
+                                    Vendor_Email:TextInput1_55.Text
+                                
+                             }
+                            ),
+                            "Proponent",
+                            Patch(
+                                CM_Client_Contract,Defaults(CM_Client_Contract),
+                                {
+                                Client_Id:{Id:VarContractDetailsPatch.Client_ID,Value:VarContractDetailsPatch.Client_ID},
+                                Contract_Id:{Id:VarContractDetailsPatch.ID,Value:VarContractDetailsPatch.ID},
+                                contract_ID_FK:firstFormID,
+                                Notice_Client_Address:chartJS2.toCustomerCustomerAddress,
+                                Notice_Client_Attention:chartJS2.toCustomerCustomerAttn,
+                                Client_Bank_Branch_Address:chartJS2.bankBranchAddress,
+                                'Client_Bank IFSC Code':chartJS2.bankIFSCNEFTCode,
+                                Client_Bank_MIRC_No:chartJS2.bankMICRCode,
+                                Client_Bank_Account_No:chartJS2.bankAccountNo,
+                                //Client_Invoice_Country:chartJS2.invoi,
+                                Client_Invoice_PinNo:Value(chartJS2.invoicePin),
+                                Client_Bank_Name:chartJS2.bankName,
+                                Client_Invoice_State:chartJS2.invoiceState,
+                                Client_Invoice_City:chartJS2.invoiceCity,
+                                Client_Invoice_Name:chartJS2.invoiceName,
+                                Client_Contact_Person_Email:chartJS2.contactEmail,
+                                Client_Contact_Person_PhoneNo:Value(chartJS2.contactPhoneNo),
+                                Client_Contact_Person_name:chartJS2.contactPersonName,
+                                PIN_CODE:Value(chartJS2.pinCode),
+                                Client_Billing_State:chartJS2.companyBillingState,
+                                Client_Billing_Country:chartJS2.companyBillingCountry, 
+                               // Client_Delarance_Name:TextInput1_21.Text,
+                                Client_Billing_City:chartJS2.companyBillingCity,
+                                'Witness Vendor Date': DateTimeValue(chartJS2.witnessVendorDate),
+                                Witness_Vendor_Title:chartJS2.witnessVendorTitle,
+                                 Witness_Vendor_By: chartJS2.witnessVendorBy
+                                //Witness_Vendor_By:TextInput1_25.Text  
+                               
+                                }
+                            );
+                            Patch(
+                                CM_ContractDetails,
+                                {ID: VarContractDetailsPatch.ID },
+                                {
+                                
+                                Contract_CreatedOn: DateTimeValue(chartJS2.contractCreationFullDate),
+                                Contract_Created_Location:chartJS2.contactCreationCity,
+                                Status: {Value: "Active"},
+                                Coc_stage: 2,
+                                Contract_Charges:Value(chartJS2.charges)
+                                }
+                            );
+                        
+                            Patch(
+                                CM_VENDOR,Defaults(CM_VENDOR),
+                                {
+                                Contract_Id:{Id:VarContractDetailsPatch.ID,Value:VarContractDetailsPatch.ID},
+                               contract_ID_FK:firstFormID ,
+                               Vendor_Contact_Number: Value(chartJS2.vendorContactNo),
+                               Vendor_Email:chartJS2.vendorEmail,
+                               Vendor_Address:chartJS2.vendorAddress,
+                               Title:chartJS2.vendorName
+                               
+                                }
+                            );
+                        );
+                        //CM_PDFSummaryFlow.Run(lclSelectedTaskHomeScreen.ID);
+                        If(IsBlank(firstFormID),{},CM_PDFSummaryFlow.Run(firstFormID));
+                        
+                        
+                        
+                        
+                        
+                        Reset(drp_ServiceType_CCS);
+                        Reset(drp_Client_CCS);
+                        Reset(drp_Services_CCS);
+                        Reset(drp_ApplicableTo_CCS);
+                        Reset(drp_Currency_CCS);
+                        Reset(drp_Country_CCS);
+                        Reset('drp_SelectNew&Existing_CCS');
+                        Reset(lblContractName_CCS);
+                        Reset(txt_DescriptionInput_CCS);
+                        Reset(dte_StartDate_CCS);
+                        Reset(dte_EndDate_CCS);
+                        Reset(rdo_CreateDucplicateCOCSelect_CCS);
+                        Navigate('Home Screen');
                     Size: =10
                     Text: ="Create"
                     Width: =Parent.Width*.07
@@ -203,6 +372,7 @@
         Fill: =RGBA(107, 29, 94, 1)
         Height: =3
         Width: =con_EditAndPreviewMain_PCS_2.X-shp_CircleDocuments_PCS_2.Width-shp_CircleDocuments_PCS_2.X-Parent.Width*0.01
+        X: =122
         Y: =shp_CircleDocuments_PCS_2.Y+(shp_CircleDocuments_PCS_2.Height-Self.Height)/2
         ZIndex: =10
 

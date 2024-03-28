@@ -764,6 +764,9 @@
                             
                         );
                         Refresh(CM_ContractDetails);
+                        Refresh(CM_Client_Contract);
+                        Refresh(CM_VENDOR);
+                        
                         Set(firstFormID,Last(CM_ContractDetails).ID);
                         /*If(
                             Radio1.Selected.Value = "Create new",
@@ -847,8 +850,9 @@
                         
                          }
                         );
+                        Refresh(CM_Task);
                         Navigate(
-                            'Preview Contract Screen',
+                            'Preview Contract Screen_1',
                             ScreenTransition.Cover
                         )
                     Size: =10

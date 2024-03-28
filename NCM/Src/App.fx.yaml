@@ -94,8 +94,19 @@ App As appinfo:
             2
         )
         );
-        Set(gblContractCompletionView,false)
+        Set(gblContractCompletionView,false);
+        Set(gblActiveUser,
+        Switch(
+         LookUp(CM_Users,Emaill=User().Email).Role,
+            "Supplier",
+            "Supplier",
+            "Proponent",
+            "Proponent",
+            "Procurement",
+            "Procurement"
         
+        )
+        )
         
     StartScreen: |
         =Switch(

@@ -2307,32 +2307,6 @@
                                 Task_Name:"Fill Out Key Data of Proponent"
                                 }
                             );
-                        
-                           /* Patch(
-                                CM_Client_Contract,
-                                {contract_ID_FK:lclSelectedTask.Contract_Id},
-                                {
-                                    Notice_Client_Attention:TextInput1_3.Text,
-                                    Notice_Client_Address:txt_CustomerNoticeAddress_PCS_1.Text,
-                                    Client_Contact_Person_name:TextInput1_31.Text,
-                                    Client_Contact_Person_PhoneNo:Value(TextInput1_32.Text),
-                                    Client_Contact_Person_Email:TextInput1_33.Text,
-                                    Client_Billing_City:TextInput1_34.Text,
-                                    Client_Billing_State:TextInput1_35.Text,
-                                    Client_Billing_Country:TextInput1_36.Text,
-                                    PIN_CODE:Value(TextInput1_37.Text),
-                                    Client_Invoice_Name:TextInput1_38.Text,
-                                    Client_Invoice_City:TextInput1_39.Text,
-                                    Client_Invoice_State:TextInput1_40.Text,Client_Invoice_Country:TextInput1_41.Text,
-                                    Client_Invoice_PinNo:Value(TextInput1_42.Text),
-                                    Client_Bank_Name:TextInput1_43.Text,
-                                    Client_Bank_MIRC_No:TextInput1_44.Text,
-                                    'Client_Bank IFSC Code':TextInput1_45.Text,
-                                    Client_Bank_Account_No:TextInput1_46.Text,Client_Bank_Branch_Address:TextInput1_47.Text
-                                    
-                        
-                                }
-                            )*/
                             Patch(
                                 CM_Client_Contract,
                                 {
