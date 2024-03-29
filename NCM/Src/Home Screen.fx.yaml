@@ -634,10 +634,10 @@
                         ZIndex: =3
 
                     gal_AllContractsDetailView_HS As gallery.variableTemplateHeightGallery:
-                        AlignInContainer: =AlignInContainer.SetByContainer
+                        AlignInContainer: =AlignInContainer.Center
                         DelayItemLoading: =true
                         FillPortions: =0
-                        Height: =380
+                        Height: =Parent.Height*.77
                         Items: |-
                             =If(
                                 IsBlank(drp_Status_filter_HS.Selected.Value) && IsBlank(cmb_ApplicableTo_filter_HS.Selected.Value),
