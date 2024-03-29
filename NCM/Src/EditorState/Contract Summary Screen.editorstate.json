@@ -7072,7 +7072,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "100",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "com_MileStone_Icon_Size",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -7168,7 +7168,7 @@
         {
           "Category": "Data",
           "PropertyName": "com_MileStone_Icon_Size",
-          "RuleProviderType": "System"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Data",

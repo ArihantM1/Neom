@@ -2,19 +2,20 @@
 
     con_Task_Milestone_CSS As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
-        Height: =Parent.Height*.13
+        Height: =Parent.Height*.15
         Width: =Parent.Width
         X: =(Parent.Width-Self.Width)/2
-        Y: =HeaderCMP_withoutNavbar_CSS.Y+HeaderCMP_withoutNavbar_CSS.Height+Parent.Height*.01
+        Y: =HeaderCMP_withoutNavbar_CSS.Y+HeaderCMP_withoutNavbar_CSS.Height+Parent.Height*.01-5
         ZIndex: =1
 
         MilestoneHorizontal_1 As MilestoneHorizontal:
             com_Height: =Parent.Height
             com_MileStone_Completed_Color: =RGBA(120, 31, 105, 1)
             com_MileStone_Font_color: =Color.Black
+            com_MileStone_Icon_Size: =Parent.Height*.5
             com_MileStone_PendingColor: =RGBA(166, 166, 166, 1)
             com_MileStone_Stage: =LookUp(CM_ContractDetails,ID=lclSelectedContract.ID).Coc_stage
-            com_MileStoneStage_Font_Size: =13
+            com_MileStoneStage_Font_Size: =If(Self.Height<116,10,11)
             com_Width: =Parent.Width
             Height: =Parent.Height
             Width: =MilestoneHorizontal_1.com_Width

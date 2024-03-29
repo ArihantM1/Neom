@@ -78,7 +78,7 @@ MilestoneHorizontal As CanvasComponent:
             Color: =MilestoneHorizontal.com_MileStone_Font_color
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
-            Height: =gal_MileStone_MH.TemplateHeight-shp_MileStoneBackground_gal.Y-shp_MileStoneBackground_gal.Height
+            Height: =gal_MileStone_MH.TemplateHeight-shp_MileStoneBackground_gal.Y-shp_MileStoneBackground_gal.Height-10
             OnSelect: =Select(Parent)
             PaddingTop: =gal_MileStone_MH.TemplateHeight*0.1
             Size: =MilestoneHorizontal.com_MileStoneStage_Font_Size

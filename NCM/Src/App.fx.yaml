@@ -110,7 +110,7 @@ App As appinfo:
         )
         )
         
-    StartScreen: |
+    StartScreen: |-
         =/*Switch(
             LookUp(CM_Users,Emaill=User().Email).Role,
             "Supplier",
