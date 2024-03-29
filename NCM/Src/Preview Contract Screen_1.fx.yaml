@@ -439,17 +439,17 @@
                                     }
                                 }
                             );
-                           /* Patch(
+                            Patch(
                                 CM_VENDOR,Defaults(CM_VENDOR),
                                 {
                                 Contract_Id:{Id:VarContractDetailsPatch.ID,Value:VarContractDetailsPatch.ID},
-                               contract_ID_FK:firstFormID ,
-                               Vendor_Contact_Number: Value(chartJS2.vendorContactNo),
+                               contract_ID_FK:firstFormID 
+                               /*,Vendor_Contact_Number: Value(chartJS2.vendorContactNo),
                                Vendor_Email:chartJS2.vendorEmail,
                                Vendor_Address:chartJS2.vendorAddress,
-                               Title:chartJS2.vendorName
+                               Title:chartJS2.vendorName*/
                                 }
-                            );*/
+                            );
                         );
                         //CM_PDFSummaryFlow.Run(lclSelectedTaskHomeScreen.ID);
                         Refresh(CM_Client_Contract);

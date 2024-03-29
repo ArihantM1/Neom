@@ -664,8 +664,8 @@
                         OnSelect: |+
                             =If(
                                 ThisItem.Status.Value="Draft", 
-                                Navigate('Create Contract Screen', ScreenTransition.Fade,{ContractData:gal_AllContractsDetailView_HS.Selected}),
-                                Navigate('Contract Summary Screen',ScreenTransition.None,{lclSelectedContract:gal_AllContractsDetailView_HS.Selected})
+                                Navigate('Create Contract Screen', ScreenTransition.Fade,{ContractData:ThisItem}),
+                                Navigate('Contract Summary Screen',ScreenTransition.None,{lclSelectedContract:ThisItem})
                                
                             );
                             
