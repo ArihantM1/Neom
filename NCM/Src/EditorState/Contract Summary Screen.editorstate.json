@@ -7158,7 +7158,7 @@
         {
           "Category": "Data",
           "PropertyName": "com_MileStoneWidth",
-          "RuleProviderType": "System"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Data",
