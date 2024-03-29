@@ -236,130 +236,167 @@
                         Refresh(CM_ContractDetails);
                         Refresh(CM_Task);
                         Switch(
-                             gblActiveUser,
-                             "Supplier",
-                            Set(gblTaskPatchDetail,
-                            Patch(
-                                CM_Task,
-                                LookUp(CM_Task,Contract_Id=lclSelectedTaskHomeScreen.ID),
-                                {Task_Assigned_to:"Proponent",
-                                Task_Name:"Fill Out Key Data of Proponent"
-                                }
-                                
-                            ));
+                            gblActiveUser,
+                            "Supplier",
+                            Set(
+                                gblTaskPatchDetail,
+                                Patch(
+                                    CM_Task,
+                                    LookUp(
+                                        CM_Task,
+                                        Contract_Id = lclSelectedTaskHomeScreen.ID
+                                    ),
+                                    {
+                                        Task_Assigned_to: "Proponent",
+                                        Task_Name: "Fill Out Key Data of Proponent"
+                                    }
+                                )
+                            );
                             Refresh(CM_Task);
                             UpdateIf(
                                 CM_ContractDetails,
-                                ID=lclSelectedTaskHomeScreen.ID,
+                                ID = lclSelectedTaskHomeScreen.ID,
                                 {
-                                    
-                                    Coc_stage:3,
-                                    Task_ID_Fk:{
-                                        Id:gblTaskPatchDetail.ID,
-                                        Value:gblTaskPatchDetail.Task_Name
+                                    Coc_stage: 3,
+                                    Task_ID_Fk: {
+                                        Id: gblTaskPatchDetail.ID,
+                                        Value: gblTaskPatchDetail.Task_Name
                                     }
                                 }
-                                );
-                            
+                            );
                             Patch(
                                 CM_Client_Contract,
                                 {
-                                    ID:LookUp(CM_Client_Contract,contract_ID_FK=lclSelectedTaskHomeScreen.ID).ID
+                                    ID: LookUp(
+                                        CM_Client_Contract,
+                                        contract_ID_FK = lclSelectedTaskHomeScreen.ID
+                                    ).ID
                                 },
                                 {
-                                    Client_Id:{Id:VarContractDetailsPatch.Client_ID,Value:VarContractDetailsPatch.Client_ID},
-                                    Contract_Id:{Id:VarContractDetailsPatch.ID,Value:VarContractDetailsPatch.ID},
-                                    contract_ID_FK:firstFormID,
-                                    Notice_Client_Attention:chartJS2.toCustomerCustomerAttn,
-                                    Notice_Client_Address:chartJS2.toCustomerCustomerAddress,
-                                    Client_Contact_Person_name:chartJS2.contactPersonName,
-                                    Client_Contact_Person_PhoneNo:Value(chartJS2.contactPhoneNo),
-                                    Client_Contact_Person_Email:chartJS2.contactEmail,
-                                    Client_Billing_City:chartJS2.companyBillingCity,
-                                    Client_Billing_State:chartJS2.companyBillingState,
-                                    Client_Billing_Country:chartJS2.companyBillingCountry,
-                                    PIN_CODE:Value(chartJS2.pinCode),
-                                    Client_Invoice_Name:chartJS2.invoiceName,
-                                    Client_Invoice_City:chartJS2.invoiceCity,
-                                    Client_Invoice_State:chartJS2.invoiceState,
+                                    Client_Id: {
+                                        Id: VarContractDetailsPatch.Client_ID,
+                                        Value: VarContractDetailsPatch.Client_ID
+                                    },
+                                    Contract_Id: {
+                                        Id: VarContractDetailsPatch.ID,
+                                        Value: VarContractDetailsPatch.ID
+                                    },
+                                    contract_ID_FK: firstFormID,
+                                    Notice_Client_Attention: chartJS2.toCustomerCustomerAttn,
+                                    Notice_Client_Address: chartJS2.toCustomerCustomerAddress,
+                                    Client_Contact_Person_name: chartJS2.contactPersonName,
+                                    Client_Contact_Person_PhoneNo: Value(chartJS2.contactPhoneNo),
+                                    Client_Contact_Person_Email: chartJS2.contactEmail,
+                                    Client_Billing_City: chartJS2.companyBillingCity,
+                                    Client_Billing_State: chartJS2.companyBillingState,
+                                    Client_Billing_Country: chartJS2.companyBillingCountry,
+                                    PIN_CODE: Value(chartJS2.pinCode),
+                                    Client_Invoice_Name: chartJS2.invoiceName,
+                                    Client_Invoice_City: chartJS2.invoiceCity,
+                                    Client_Invoice_State: chartJS2.invoiceState,
                                     //Client_Invoice_Country:chartJS2.invoi,
-                                    Client_Invoice_PinNo:Value(chartJS2.invoicePin),
-                                    Client_Bank_Name:chartJS2.bankName,
-                                    Client_Bank_MIRC_No:chartJS2.bankMICRCode,
-                                    'Client_Bank IFSC Code':chartJS2.bankIFSCNEFTCode,
-                                    Client_Bank_Account_No:chartJS2.bankAccountNo,
-                                    Client_Bank_Branch_Address:chartJS2.bankBranchAddress
-                                    
-                        
+                                    Client_Invoice_PinNo: Value(chartJS2.invoicePin),
+                                    Client_Bank_Name: chartJS2.bankName,
+                                    Client_Bank_MIRC_No: chartJS2.bankMICRCode,
+                                    'Client_Bank IFSC Code': chartJS2.bankIFSCNEFTCode,
+                                    Client_Bank_Account_No: chartJS2.bankAccountNo,
+                                    Client_Bank_Branch_Address: chartJS2.bankBranchAddress
                                 }
-                               
                             ),
                             "Proponent",
-                            Set(gblTaskPatchDetail,
-                            Patch(
-                                CM_Task,
-                                {ID:LookUp(CM_Task,Contract_Id=lclSelectedTaskHomeScreen.ID).ID},
-                                {Task_Assigned_to:"Procurement",
-                                Task_Name:"Legal Review"
-                                
-                                }
-                            ));
-                        
+                            Set(
+                                gblTaskPatchDetail,
+                                Patch(
+                                    CM_Task,
+                                    {
+                                        ID: LookUp(
+                                            CM_Task,
+                                            Contract_Id = lclSelectedTaskHomeScreen.ID
+                                        ).ID
+                                    },
+                                    {
+                                        Task_Assigned_to: "Procurement",
+                                        Task_Name: "Legal Review"
+                                    }
+                                )
+                            );
                             Refresh(CM_Task);
                             Patch(
                                 CM_ContractDetails,
-                                {ID:lclSelectedTaskHomeScreen.ID},
-                                {Coc_stage:4,
-                                Task_ID_Fk:{
-                                        Id:gblTaskPatchDetail.ID,
-                                        Value:gblTaskPatchDetail.Task_Name
+                                {ID: lclSelectedTaskHomeScreen.ID},
+                                {
+                                    Coc_stage: 4,
+                                    Task_ID_Fk: {
+                                        Id: gblTaskPatchDetail.ID,
+                                        Value: gblTaskPatchDetail.Task_Name
                                     }
                                 }
-                                );
-                            
+                            );
                             Patch(
                                 CM_Client_Contract,
                                 {
-                                    ID:LookUp(CM_Client_Contract,contract_ID_FK=lclSelectedTaskHomeScreen.ID).ID
+                                    ID: LookUp(
+                                        CM_Client_Contract,
+                                        contract_ID_FK = lclSelectedTaskHomeScreen.ID
+                                    ).ID
                                 },
-                                { 
-                                    Client_Id:{Id:VarContractDetailsPatch.Client_ID,Value:VarContractDetailsPatch.Client_ID},
-                                    Contract_Id:{Id:VarContractDetailsPatch.ID,Value:VarContractDetailsPatch.ID},
-                                    contract_ID_FK:firstFormID,
-                                    Witness_Vendor_By:chartJS2.witnessVendorBy,
-                                    Witness_Vendor_Title:chartJS2.witnessVendorTitle,
+                                {
+                                    Client_Id: {
+                                        Id: VarContractDetailsPatch.Client_ID,
+                                        Value: VarContractDetailsPatch.Client_ID
+                                    },
+                                    Contract_Id: {
+                                        Id: VarContractDetailsPatch.ID,
+                                        Value: VarContractDetailsPatch.ID
+                                    },
+                                    contract_ID_FK: firstFormID,
+                                    Witness_Vendor_By: chartJS2.witnessVendorBy,
+                                    Witness_Vendor_Title: chartJS2.witnessVendorTitle,
                                     'Witness Vendor Date': DateTimeValue(chartJS2.witnessVendorDate)
                                 }
-                        
                             );
-                            Patch(CM_VENDOR,
-                             {ID:LookUp(CM_VENDOR,contract_ID_FK=lclSelectedTaskHomeScreen.ID).ID},
-                             {
-                                    Vendor_Address:chartJS2.vendorAddress,
-                                    Vendor_Contact_Number:Value(chartJS2.vendorContactNo),
-                                    Title:chartJS2.vendorName,
-                                    Vendor_Email:chartJS2.vendorEmail
-                                
-                             }
+                            Patch(
+                                CM_VENDOR,
+                                {
+                                    ID: LookUp(
+                                        CM_VENDOR,
+                                        contract_ID_FK = lclSelectedTaskHomeScreen.ID
+                                    ).ID
+                                },
+                                {
+                                    Vendor_Address: chartJS2.vendorAddress,
+                                    Vendor_Contact_Number: Value(chartJS2.vendorContactNo),
+                                    Title: chartJS2.vendorName,
+                                    Vendor_Email: chartJS2.vendorEmail
+                                }
                             ),
                             "Procurement",
-                            Set(gblTaskPatchDetail,
-                            Patch(CM_Task,
-                           
-                            {
-                            Contract_Id:VarContractDetailsPatch.ID,
-                            Task_Name:"Fill Out Key Data Of Supplier",
-                            Task_Status:"Pending",
-                            Task_Assigned_to:"Supplier"
-                            }
-                            ));
-                            Refresh(CM_Task);
-                           /* Patch(
-                                CM_Client_Contract,Defaults(CM_Client_Contract),
+                            Set(
+                                gblTaskPatchDetail,
+                                Patch(
+                                    CM_Task,
+                                    {
+                                        Contract_Id: VarContractDetailsPatch.ID,
+                                        Task_Name: "Fill Out Key Data Of Supplier",
+                                        Task_Status: "Pending",
+                                        Task_Assigned_to: "Supplier"
+                                    }
+                                )
+                            );
+                            Patch(
+                                CM_Client_Contract,
+                                Defaults(CM_Client_Contract),
                                 {
-                                Client_Id:{Id:VarContractDetailsPatch.Client_ID,Value:VarContractDetailsPatch.Client_ID},
-                                Contract_Id:{Id:VarContractDetailsPatch.ID,Value:VarContractDetailsPatch.ID},
-                                contract_ID_FK:firstFormID,
+                                    Client_Id: {
+                                        Id: VarContractDetailsPatch.Client_ID,
+                                        Value: VarContractDetailsPatch.Client_ID
+                                    },
+                                    Contract_Id: {
+                                        Id: VarContractDetailsPatch.ID,
+                                        Value: VarContractDetailsPatch.ID
+                                    },
+                                    contract_ID_FK: firstFormID
+                                /*,
                                 Notice_Client_Address:chartJS2.toCustomerCustomerAddress,
                                 Notice_Client_Attention:chartJS2.toCustomerCustomerAttn,
                                 Client_Bank_Branch_Address:chartJS2.bankBranchAddress,
@@ -384,28 +421,24 @@
                                 Witness_Vendor_Title:chartJS2.witnessVendorTitle,
                                  Witness_Vendor_By: chartJS2.witnessVendorBy
                                 //Witness_Vendor_By:TextInput1_25.Text  
-                                
-                               
-                                }
-                            );*/
-                            Patch(
-                                CM_ContractDetails,
-                                {ID: VarContractDetailsPatch.ID },
-                                {
-                                
-                                Contract_CreatedOn: DateTimeValue(chartJS2.contractCreationFullDate),
-                                Contract_Created_Location:chartJS2.contactCreationCity,
-                                Status: {Value: "Active"},
-                                Coc_stage: 2,
-                                Contract_Charges:Value(chartJS2.charges),
-                                Task_ID_Fk:{
-                                        Id:gblTaskPatchDetail.ID,
-                                        Value:gblTaskPatchDetail.Task_Name
-                                    }
-                                //,Task_ID_Fk:LookUp(CM_Task,Contract_Id=VarContractDetailsPatch.ID)
+                                */
                                 }
                             );
-                        
+                            Patch(
+                                CM_ContractDetails,
+                                {ID: VarContractDetailsPatch.ID},
+                                {
+                                    Contract_CreatedOn: DateTimeValue(chartJS2.contractCreationFullDate),
+                                    Contract_Created_Location: chartJS2.contactCreationCity,
+                                    Status: {Value: "Active"},
+                                    Coc_stage: 2,
+                                    Contract_Charges: Value(chartJS2.charges),
+                                    Task_ID_Fk: {
+                                        Id: gblTaskPatchDetail.ID,
+                                        Value: gblTaskPatchDetail.Task_Name
+                                    }
+                                }
+                            );
                            /* Patch(
                                 CM_VENDOR,Defaults(CM_VENDOR),
                                 {
@@ -415,7 +448,6 @@
                                Vendor_Email:chartJS2.vendorEmail,
                                Vendor_Address:chartJS2.vendorAddress,
                                Title:chartJS2.vendorName
-                               
                                 }
                             );*/
                         );
@@ -424,12 +456,11 @@
                         Refresh(CM_ContractDetails);
                         Refresh(CM_VENDOR);
                         Refresh(CM_Task);
-                        If(IsBlank(lclSelectedTaskHomeScreen.ID),{},CM_PDFSummaryFlow.Run(lclSelectedTaskHomeScreen.ID));
-                        
-                        
-                        
-                        
-                        
+                        If(
+                            IsBlank(VarContractDetailsPatch.ID),
+                            CM_PDFSummaryFlow.Run(lclSelectedTaskHomeScreen.ID),
+                            CM_PDFSummaryFlow.Run(VarContractDetailsPatch.ID)
+                        );
                         Reset(drp_ServiceType_CCS);
                         Reset(drp_Client_CCS);
                         Reset(drp_Services_CCS);
@@ -442,6 +473,14 @@
                         Reset(dte_StartDate_CCS);
                         Reset(dte_EndDate_CCS);
                         Reset(rdo_CreateDucplicateCOCSelect_CCS);
+                        Set(
+                            VarContractDetailsPatch,
+                            Blank()
+                        );
+                        Set(
+                            firstFormID,
+                            Blank()
+                        );
                         Navigate('Home Screen');
                     Size: =10
                     Text: ="Create"
