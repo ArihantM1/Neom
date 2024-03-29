@@ -76,6 +76,7 @@ App As appinfo:
                 1 + RandomClauseIndex
             )
         );
+        Set(gblViewAuditHistory,false);
         Set(gblReturnvaluePDFFlow,Blank());
         Set(gblTaskPatchDetail,Blank());
         Set(VarShowMoreFileds,false);
