@@ -137,7 +137,7 @@
 
                 chartJS2 As chartJSV14:
                     DisplayMode: =DisplayMode.Edit
-                    DivH: =Self.Height
+                    DivH: =Parent.Height
                     Height: =Parent.Height
                     UserRole: =UserRole
                     Width: =Parent.Width
@@ -458,9 +458,11 @@
                         Refresh(CM_Task);
                         If(
                             IsBlank(VarContractDetailsPatch.ID),
-                            CM_PDFSummaryFlow.Run(lclSelectedTaskHomeScreen.ID),
-                            CM_PDFSummaryFlow.Run(VarContractDetailsPatch.ID)
+                            Set(gblReturnvaluePDFFlow,CM_PDFSummaryFlow.Run(lclSelectedTaskHomeScreen.ID)),
+                            Set(gblReturnvaluePDFFlow,CM_PDFSummaryFlow.Run(VarContractDetailsPatch.ID))
                         );
+                        
+                        If(IsBlank(gblReturnvaluePDFFlow),{},Refresh(CM_ContractDetails));
                         Reset(drp_ServiceType_CCS);
                         Reset(drp_Client_CCS);
                         Reset(drp_Services_CCS);

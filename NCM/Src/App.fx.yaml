@@ -76,6 +76,7 @@ App As appinfo:
                 1 + RandomClauseIndex
             )
         );
+        Set(gblReturnvaluePDFFlow,Blank());
         Set(gblTaskPatchDetail,Blank());
         Set(VarShowMoreFileds,false);
         Set(VarFieldColor,RGBA(245,245,245,1));
@@ -110,7 +111,7 @@ App As appinfo:
         )
         
     StartScreen: |
-        =Switch(
+        =/*Switch(
             LookUp(CM_Users,Emaill=User().Email).Role,
             "Supplier",
             'Contract Summary Screen',
@@ -118,7 +119,7 @@ App As appinfo:
             'Contract Summary Screen',
             "Procurement",
             'Home Screen'
-        )
+        )*/
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:

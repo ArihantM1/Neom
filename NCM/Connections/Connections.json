@@ -1,4 +1,18 @@
 {
+  "2fc908ce-c8c7-43d1-8636-2b792a25b6a3": {
+    "connectionRef": {
+      "displayName": "OneDrive for Business",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1669/1.0.1669.3522/onedriveforbusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "c2b460e1-d4fa-4902-a63f-c41009f9bd26"
+    ],
+    "id": "2fc908ce-c8c7-43d1-8636-2b792a25b6a3"
+  },
   "49116fd8-f2ff-46bd-a627-dd04288674d3": {
     "connectionRef": {
       "displayName": "SharePoint",
@@ -18,7 +32,10 @@
       "CM_Audit_Table"
     ],
     "dependencies": {},
-    "dependents": [],
+    "dependents": [
+      "c2b460e1-d4fa-4902-a63f-c41009f9bd26",
+      "d4e657b5-5fc0-4544-97d1-6b76e2cff31e"
+    ],
     "id": "49116fd8-f2ff-46bd-a627-dd04288674d3"
   },
   "560d9749-ce2d-46ff-a027-334511a62e86": {
@@ -83,48 +100,20 @@
     "dependents": [],
     "id": "560d9749-ce2d-46ff-a027-334511a62e86"
   },
-  "76710c75-5391-4ca4-90a8-211415955da1": {
-    "connectionRef": {
-      "displayName": "Word Online (Business)",
-      "iconUri": "https://connectoricons-prod.azureedge.net/master/1.0.1678.3629/wordonlinebusiness/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_wordonlinebusiness"
-    },
-    "datasets": {},
-    "dataSources": [],
-    "dependencies": {},
-    "dependents": [
-      "c2b460e1-d4fa-4902-a63f-c41009f9bd26"
-    ],
-    "id": "76710c75-5391-4ca4-90a8-211415955da1"
-  },
-  "9fad6064-9d7a-46f8-8770-cbb9fe486f1f": {
-    "connectionRef": {
-      "displayName": "OneDrive for Business",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1669/1.0.1669.3522/onedriveforbusiness/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness"
-    },
-    "datasets": {},
-    "dataSources": [],
-    "dependencies": {},
-    "dependents": [
-      "c2b460e1-d4fa-4902-a63f-c41009f9bd26"
-    ],
-    "id": "9fad6064-9d7a-46f8-8770-cbb9fe486f1f"
-  },
   "c2b460e1-d4fa-4902-a63f-c41009f9bd26": {
     "connectionRef": {
       "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1680/1.0.1680.3652/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
-        "76710c75-5391-4ca4-90a8-211415955da1": {
-          "value": "shared_wordonlinebusiness"
-        },
-        "9fad6064-9d7a-46f8-8770-cbb9fe486f1f": {
+        "2fc908ce-c8c7-43d1-8636-2b792a25b6a3": {
           "value": "shared_onedriveforbusiness"
         },
-        "ef27b844-23b6-4bd7-9094-f27f7f7fb679": {
+        "49116fd8-f2ff-46bd-a627-dd04288674d3": {
           "value": "shared_sharepointonline"
+        },
+        "e378c9fc-13f7-4ddc-a8d7-2eb9279df82d": {
+          "value": "shared_wordonlinebusiness"
         },
         "workflowDisplayName": {
           "value": "CM_PDF Summary Flow"
@@ -138,13 +127,13 @@
       },
       "parameterHintsV2": {
         "shared_onedriveforbusiness": {
-          "value": "9fad6064-9d7a-46f8-8770-cbb9fe486f1f"
+          "value": "2fc908ce-c8c7-43d1-8636-2b792a25b6a3"
         },
         "shared_sharepointonline": {
-          "value": "ef27b844-23b6-4bd7-9094-f27f7f7fb679"
+          "value": "49116fd8-f2ff-46bd-a627-dd04288674d3"
         },
         "shared_wordonlinebusiness": {
-          "value": "76710c75-5391-4ca4-90a8-211415955da1"
+          "value": "e378c9fc-13f7-4ddc-a8d7-2eb9279df82d"
         },
         "workflowDisplayName": {
           "value": "CM_PDF Summary Flow"
@@ -162,9 +151,9 @@
       "CM_PDFSummaryFlow"
     ],
     "dependencies": {
-      "shared_onedriveforbusiness": "9fad6064-9d7a-46f8-8770-cbb9fe486f1f",
-      "shared_sharepointonline": "ef27b844-23b6-4bd7-9094-f27f7f7fb679",
-      "shared_wordonlinebusiness": "76710c75-5391-4ca4-90a8-211415955da1"
+      "shared_onedriveforbusiness": "2fc908ce-c8c7-43d1-8636-2b792a25b6a3",
+      "shared_sharepointonline": "49116fd8-f2ff-46bd-a627-dd04288674d3",
+      "shared_wordonlinebusiness": "e378c9fc-13f7-4ddc-a8d7-2eb9279df82d"
     },
     "dependents": [],
     "id": "c2b460e1-d4fa-4902-a63f-c41009f9bd26"
@@ -172,10 +161,10 @@
   "d4e657b5-5fc0-4544-97d1-6b76e2cff31e": {
     "connectionRef": {
       "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1680/1.0.1680.3652/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
-        "ef27b844-23b6-4bd7-9094-f27f7f7fb679": {
+        "49116fd8-f2ff-46bd-a627-dd04288674d3": {
           "value": "shared_sharepointonline"
         },
         "workflowDisplayName": {
@@ -190,7 +179,7 @@
       },
       "parameterHintsV2": {
         "shared_sharepointonline": {
-          "value": "ef27b844-23b6-4bd7-9094-f27f7f7fb679"
+          "value": "49116fd8-f2ff-46bd-a627-dd04288674d3"
         },
         "workflowDisplayName": {
           "value": "CM Download Summary Flow"
@@ -208,24 +197,23 @@
       "CMDownloadSummaryFlow"
     ],
     "dependencies": {
-      "shared_sharepointonline": "ef27b844-23b6-4bd7-9094-f27f7f7fb679"
+      "shared_sharepointonline": "49116fd8-f2ff-46bd-a627-dd04288674d3"
     },
     "dependents": [],
     "id": "d4e657b5-5fc0-4544-97d1-6b76e2cff31e"
   },
-  "ef27b844-23b6-4bd7-9094-f27f7f7fb679": {
+  "e378c9fc-13f7-4ddc-a8d7-2eb9279df82d": {
     "connectionRef": {
-      "displayName": "SharePoint",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1676/1.0.1676.3617/sharepointonline/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+      "displayName": "Word Online (Business)",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1678/1.0.1678.3641/wordonlinebusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_wordonlinebusiness"
     },
     "datasets": {},
     "dataSources": [],
     "dependencies": {},
     "dependents": [
-      "c2b460e1-d4fa-4902-a63f-c41009f9bd26",
-      "d4e657b5-5fc0-4544-97d1-6b76e2cff31e"
+      "c2b460e1-d4fa-4902-a63f-c41009f9bd26"
     ],
-    "id": "ef27b844-23b6-4bd7-9094-f27f7f7fb679"
+    "id": "e378c9fc-13f7-4ddc-a8d7-2eb9279df82d"
   }
 }
