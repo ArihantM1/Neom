@@ -281,7 +281,7 @@
                                         Id: VarContractDetailsPatch.ID,
                                         Value: VarContractDetailsPatch.ID
                                     },
-                                    contract_ID_FK: firstFormID,
+                                    //contract_ID_FK: firstFormID,
                                     Notice_Client_Attention: chartJS2.toCustomerCustomerAttn,
                                     Notice_Client_Address: chartJS2.toCustomerCustomerAddress,
                                     Client_Contact_Person_name: chartJS2.contactPersonName,
@@ -349,7 +349,7 @@
                                         Id: VarContractDetailsPatch.ID,
                                         Value: VarContractDetailsPatch.ID
                                     },
-                                    contract_ID_FK: firstFormID,
+                                   // contract_ID_FK: firstFormID,
                                     Witness_Vendor_By: chartJS2.witnessVendorBy,
                                     Witness_Vendor_Title: chartJS2.witnessVendorTitle,
                                     'Witness Vendor Date': DateTimeValue(chartJS2.witnessVendorDate)
