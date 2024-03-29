@@ -47,6 +47,9 @@
     "datasets": {
       "https://xebiagroup.sharepoint.com/sites/PowerAppsDemo": {
         "dataSources": {
+          "CM_Audit_Table_1": {
+            "tableName": "9cc6c20a-16de-4caf-9fd5-8b50b1263bc9"
+          },
           "CM_Client_Contract": {
             "tableName": "0ba33543-7f10-4f07-a454-4311de52ff60"
           },
@@ -94,7 +97,8 @@
       "CM_VENDOR",
       "CM_COC_Download_History",
       "CM_Users",
-      "CM_Task"
+      "CM_Task",
+      "CM_Audit_Table_1"
     ],
     "dependencies": {},
     "dependents": [],

@@ -216,6 +216,23 @@
                 Width: =Parent.Width
                 ZIndex: =1
 
+            Gallery6 As gallery.variableTemplateHeightGallery:
+                DelayItemLoading: =true
+                Height: =Parent.Height-shp_DownloadFiller_CSS_1.Height
+                Items: =CM_Audit_Table
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplateSize: =Parent.Height*.2
+                Width: =Parent.Width
+                ZIndex: =2
+
+                Label12 As label:
+                    Height: =24.960000000000004
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.Action
+                    X: =40
+                    ZIndex: =1
+
         lbl_VersionsHistory_CSS As label:
             FontWeight: =FontWeight.Bold
             Height: =37
@@ -266,7 +283,7 @@
         FontWeight: =FontWeight.Bold
         Size: =18
         Text: ="C000"&lclSelectedContract.ID &" - " &lclSelectedContract.Contract_name
-        Width: =Parent.Width*.7
+        Width: =Parent.Width*.68
         X: =con_ContractDownloadDetails_CSS.X
         Y: =con_Task_CSS.Y-40
         ZIndex: =5
@@ -380,7 +397,15 @@
         RadiusBottomRight: =0
         RadiusTopLeft: =10
         RadiusTopRight: =0
+        Visible: =gblViewAuditHistory
         Width: =Parent.Width*.45
         X: =Parent.Width-Self.Width
         ZIndex: =12
+
+        Icon1 As icon.Cancel:
+            Icon: =Icon.Cancel
+            OnSelect: =Set(gblViewAuditHistory,false)
+            X: =6
+            Y: =6
+            ZIndex: =1
 
