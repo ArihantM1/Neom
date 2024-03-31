@@ -106,7 +106,10 @@ App As appinfo:
             "Proponent",
             "Proponent",
             "Procurement",
-            "Procurement"
+            "Procurement",
+            "Admin",
+            "Admin"
+        
         
         )
         )

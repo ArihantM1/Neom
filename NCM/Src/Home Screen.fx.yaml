@@ -200,7 +200,7 @@
                             Text: ="Create Contract"
                             Visible: |-
                                 =//true
-                                If(gblActiveUser="Procurement",true,false)
+                                If(Or(gblActiveUser="Procurement",gblActiveUser="Admin"),true,false)
                             Width: =Parent.Width*.25
                             ZIndex: =2
 

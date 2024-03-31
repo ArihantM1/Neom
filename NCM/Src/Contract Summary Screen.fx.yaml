@@ -424,7 +424,7 @@
         Gallery7 As gallery.variableTemplateHeightGallery:
             DelayItemLoading: =true
             Height: =Parent.Height-Icon1.Height-10
-            Items: =CustomGallerySample
+            Items: =CM_Audit_Table
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplateSize: =280
