@@ -389,6 +389,15 @@
         Y: =Parent.Height/2-Self.Height/2-45
         ZIndex: =11
 
+    Image4 As image:
+        Height: =30
+        Image: ='history icon'
+        OnSelect: =Set(gblViewAuditHistory,true)
+        Width: =30
+        X: =Parent.Width-Self.Width-ico_Exportcontract_CSS.Width-30
+        Y: =lbl_Coc_CSS.Y
+        ZIndex: =12
+
     Container7 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.ExtraBold
         Fill: =RGBA(255, 255, 255, 1)
@@ -400,12 +409,26 @@
         Visible: =gblViewAuditHistory
         Width: =Parent.Width*.45
         X: =Parent.Width-Self.Width
-        ZIndex: =12
+        ZIndex: =13
 
         Icon1 As icon.Cancel:
+            Color: =RGBA(107, 29, 94, 1)
+            Height: =30
             Icon: =Icon.Cancel
             OnSelect: =Set(gblViewAuditHistory,false)
+            Width: =30
             X: =6
             Y: =6
             ZIndex: =1
+
+        Gallery7 As gallery.variableTemplateHeightGallery:
+            DelayItemLoading: =true
+            Height: =Parent.Height-Icon1.Height-10
+            Items: =CustomGallerySample
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplateSize: =280
+            Width: =614.7
+            Y: =Parent.Height-Self.Height
+            ZIndex: =2
 
