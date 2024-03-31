@@ -754,7 +754,9 @@
                             Text: |-
                                 =//If(ThisItem.Country.Value=Blank(),"-",ThisItem.Country.Value)
                                 ThisItem.Task_ID_Fk.Value
-                            Visible: =If(LookUp(CM_Task,ThisItem.Task_ID_Fk.Id=ID).Task_Assigned_to=gblActiveUser,true,false)
+                            Visible: |-
+                                =
+                                If(gblActiveUser="Admin",true,If(LookUp(CM_Task,ThisItem.Task_ID_Fk.Id=ID).Task_Assigned_to=gblActiveUser,true,false))
                             Width: =lbl_ContractCountries_Headline_HS.Width+25
                             X: =lbl_ContractCountries_Headline_HS.X
                             Y: =(gal_AllContractsDetailView_HS.TemplateHeight-Self.Height)/2
