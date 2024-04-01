@@ -526,7 +526,7 @@
                         
                         Navigate('Home Screen');
                     Size: =10
-                    Text: ="Create"
+                    Text: ="Submit"
                     Width: =Parent.Width*.07
                     ZIndex: =2
 
