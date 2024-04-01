@@ -520,6 +520,8 @@
                             firstFormID,
                             Blank()
                         );
+                        Set(HTMLContent,chartJS1.HTMLContent);
+                        
                         Navigate('Home Screen');
                     Size: =10
                     Text: ="Create"
