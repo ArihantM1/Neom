@@ -135,9 +135,9 @@
                 LayoutMinWidth: =250
                 ZIndex: =2
 
-                chartJS2 As chartJSV14:
+                chartJS1 As chartJSV18:
                     DisplayMode: =DisplayMode.Edit
-                    DivH: =Parent.Height
+                    DivH: =Self.Height+35
                     Height: =Parent.Height
                     UserRole: =UserRole
                     Width: =Parent.Width
@@ -186,43 +186,43 @@
                             gblActiveUser,
                             "Procurement",
                             If(
-                            !IsBlank(chartJS2.contactCreationCity)
-                            And !IsBlank(chartJS2.charges),
+                            !IsBlank(chartJS1.contactCreationCity)
+                            And !IsBlank(chartJS1.charges),
                             DisplayMode.Edit,
                             DisplayMode.Disabled
                             ),
                             "Proponent",
                             If(
-                            !IsBlank(chartJS2.witnessVendorBy)
-                            And !IsBlank(chartJS2.vendorAddress)
-                            And !IsBlank(chartJS2.witnessVendorDate)
-                            And !IsBlank(chartJS2.witnessVendorTitle)
-                            And !IsBlank(chartJS2.vendorName)
-                            And !IsBlank(chartJS2.vendorContactNo)
-                            And !IsBlank(chartJS2.vendorEmail),
+                            !IsBlank(chartJS1.witnessVendorBy)
+                            And !IsBlank(chartJS1.vendorAddress)
+                            And !IsBlank(chartJS1.witnessVendorDate)
+                            And !IsBlank(chartJS1.witnessVendorTitle)
+                            And !IsBlank(chartJS1.vendorName)
+                            And !IsBlank(chartJS1.vendorContactNo)
+                            And !IsBlank(chartJS1.vendorEmail),
                             DisplayMode.Edit,
                             DisplayMode.Disabled
                             ),
                             "Supplier",
                             If(
-                            !IsBlank(chartJS2.toCustomerCustomerAddress)
-                            And !IsBlank(chartJS2.toCustomerCustomerAttn)
-                            And !IsBlank(chartJS2.bankBranchAddress)
-                            And !IsBlank(chartJS2.bankIFSCNEFTCode)
-                            And !IsBlank(chartJS2.bankMICRCode)
-                            And !IsBlank(chartJS2.bankAccountNo)
-                            And !IsBlank(chartJS2.invoicePin)
-                            And !IsBlank(chartJS2.bankName)
-                            And !IsBlank(chartJS2.invoiceState)
-                            And !IsBlank(chartJS2.invoiceCity)
-                            And !IsBlank(chartJS2.invoiceName)
-                            And !IsBlank(chartJS2.contactEmail)
-                            And !IsBlank(chartJS2.contactPersonName)
-                            And !IsBlank(chartJS2.contactPersonName)
-                            And !IsBlank(chartJS2.pinCode)
-                            And !IsBlank(chartJS2.companyBillingCity)
-                            And !IsBlank(chartJS2.companyBillingState)
-                            And !IsBlank(chartJS2.companyBillingCountry),
+                            !IsBlank(chartJS1.toCustomerCustomerAddress)
+                            And !IsBlank(chartJS1.toCustomerCustomerAttn)
+                            And !IsBlank(chartJS1.bankBranchAddress)
+                            And !IsBlank(chartJS1.bankIFSCNEFTCode)
+                            And !IsBlank(chartJS1.bankMICRCode)
+                            And !IsBlank(chartJS1.bankAccountNo)
+                            And !IsBlank(chartJS1.invoicePin)
+                            And !IsBlank(chartJS1.bankName)
+                            And !IsBlank(chartJS1.invoiceState)
+                            And !IsBlank(chartJS1.invoiceCity)
+                            And !IsBlank(chartJS1.invoiceName)
+                            And !IsBlank(chartJS1.contactEmail)
+                            And !IsBlank(chartJS1.contactPersonName)
+                            And !IsBlank(chartJS1.contactPersonName)
+                            And !IsBlank(chartJS1.pinCode)
+                            And !IsBlank(chartJS1.companyBillingCity)
+                            And !IsBlank(chartJS1.companyBillingState)
+                            And !IsBlank(chartJS1.companyBillingCountry),
                             DisplayMode.Edit,
                             DisplayMode.Disabled
                             )
@@ -282,25 +282,25 @@
                                         Value: VarContractDetailsPatch.ID
                                     },
                                     //contract_ID_FK: firstFormID,
-                                    Notice_Client_Attention: chartJS2.toCustomerCustomerAttn,
-                                    Notice_Client_Address: chartJS2.toCustomerCustomerAddress,
-                                    Client_Contact_Person_name: chartJS2.contactPersonName,
-                                    Client_Contact_Person_PhoneNo: Value(chartJS2.contactPhoneNo),
-                                    Client_Contact_Person_Email: chartJS2.contactEmail,
-                                    Client_Billing_City: chartJS2.companyBillingCity,
-                                    Client_Billing_State: chartJS2.companyBillingState,
-                                    Client_Billing_Country: chartJS2.companyBillingCountry,
-                                    PIN_CODE: Value(chartJS2.pinCode),
-                                    Client_Invoice_Name: chartJS2.invoiceName,
-                                    Client_Invoice_City: chartJS2.invoiceCity,
-                                    Client_Invoice_State: chartJS2.invoiceState,
-                                    //Client_Invoice_Country:chartJS2.invoi,
-                                    Client_Invoice_PinNo: Value(chartJS2.invoicePin),
-                                    Client_Bank_Name: chartJS2.bankName,
-                                    Client_Bank_MIRC_No: chartJS2.bankMICRCode,
-                                    'Client_Bank IFSC Code': chartJS2.bankIFSCNEFTCode,
-                                    Client_Bank_Account_No: chartJS2.bankAccountNo,
-                                    Client_Bank_Branch_Address: chartJS2.bankBranchAddress
+                                    Notice_Client_Attention: chartJS1.toCustomerCustomerAttn,
+                                    Notice_Client_Address: chartJS1.toCustomerCustomerAddress,
+                                    Client_Contact_Person_name: chartJS1.contactPersonName,
+                                    Client_Contact_Person_PhoneNo: Value(chartJS1.contactPhoneNo),
+                                    Client_Contact_Person_Email: chartJS1.contactEmail,
+                                    Client_Billing_City: chartJS1.companyBillingCity,
+                                    Client_Billing_State: chartJS1.companyBillingState,
+                                    Client_Billing_Country: chartJS1.companyBillingCountry,
+                                    PIN_CODE: Value(chartJS1.pinCode),
+                                    Client_Invoice_Name: chartJS1.invoiceName,
+                                    Client_Invoice_City: chartJS1.invoiceCity,
+                                    Client_Invoice_State: chartJS1.invoiceState,
+                                    //Client_Invoice_Country:chartJS1.invoi,
+                                    Client_Invoice_PinNo: Value(chartJS1.invoicePin),
+                                    Client_Bank_Name: chartJS1.bankName,
+                                    Client_Bank_MIRC_No: chartJS1.bankMICRCode,
+                                    'Client_Bank IFSC Code': chartJS1.bankIFSCNEFTCode,
+                                    Client_Bank_Account_No: chartJS1.bankAccountNo,
+                                    Client_Bank_Branch_Address: chartJS1.bankBranchAddress
                                 }
                             ),
                             "Proponent",
@@ -350,9 +350,9 @@
                                         Value: VarContractDetailsPatch.ID
                                     },
                                    // contract_ID_FK: firstFormID,
-                                    Witness_Vendor_By: chartJS2.witnessVendorBy,
-                                    Witness_Vendor_Title: chartJS2.witnessVendorTitle,
-                                    'Witness Vendor Date': DateTimeValue(chartJS2.witnessVendorDate)
+                                    Witness_Vendor_By: chartJS1.witnessVendorBy,
+                                    Witness_Vendor_Title: chartJS1.witnessVendorTitle,
+                                    'Witness Vendor Date': DateTimeValue(chartJS1.witnessVendorDate)
                                 }
                             );
                             Patch(
@@ -364,10 +364,10 @@
                                     ).ID
                                 },
                                 {
-                                    Vendor_Address: chartJS2.vendorAddress,
-                                    Vendor_Contact_Number: Value(chartJS2.vendorContactNo),
-                                    Title: chartJS2.vendorName,
-                                    Vendor_Email: chartJS2.vendorEmail
+                                    Vendor_Address: chartJS1.vendorAddress,
+                                    Vendor_Contact_Number: Value(chartJS1.vendorContactNo),
+                                    Title: chartJS1.vendorName,
+                                    Vendor_Email: chartJS1.vendorEmail
                                 }
                             ),
                             "Procurement",
@@ -397,29 +397,29 @@
                                     },
                                     contract_ID_FK: firstFormID
                                 /*,
-                                Notice_Client_Address:chartJS2.toCustomerCustomerAddress,
-                                Notice_Client_Attention:chartJS2.toCustomerCustomerAttn,
-                                Client_Bank_Branch_Address:chartJS2.bankBranchAddress,
-                                'Client_Bank IFSC Code':chartJS2.bankIFSCNEFTCode,
-                                Client_Bank_MIRC_No:chartJS2.bankMICRCode,
-                                Client_Bank_Account_No:chartJS2.bankAccountNo,
-                                //Client_Invoice_Country:chartJS2.invoi,
-                                Client_Invoice_PinNo:Value(chartJS2.invoicePin),
-                                Client_Bank_Name:chartJS2.bankName,
-                                Client_Invoice_State:chartJS2.invoiceState,
-                                Client_Invoice_City:chartJS2.invoiceCity,
-                                Client_Invoice_Name:chartJS2.invoiceName,
-                                Client_Contact_Person_Email:chartJS2.contactEmail,
-                                Client_Contact_Person_PhoneNo:Value(chartJS2.contactPhoneNo),
-                                Client_Contact_Person_name:chartJS2.contactPersonName,
-                                //PIN_CODE:Value(chartJS2.pinCode),
-                                Client_Billing_State:chartJS2.companyBillingState,
-                                Client_Billing_Country:chartJS2.companyBillingCountry, 
+                                Notice_Client_Address:chartJS1.toCustomerCustomerAddress,
+                                Notice_Client_Attention:chartJS1.toCustomerCustomerAttn,
+                                Client_Bank_Branch_Address:chartJS1.bankBranchAddress,
+                                'Client_Bank IFSC Code':chartJS1.bankIFSCNEFTCode,
+                                Client_Bank_MIRC_No:chartJS1.bankMICRCode,
+                                Client_Bank_Account_No:chartJS1.bankAccountNo,
+                                //Client_Invoice_Country:chartJS1.invoi,
+                                Client_Invoice_PinNo:Value(chartJS1.invoicePin),
+                                Client_Bank_Name:chartJS1.bankName,
+                                Client_Invoice_State:chartJS1.invoiceState,
+                                Client_Invoice_City:chartJS1.invoiceCity,
+                                Client_Invoice_Name:chartJS1.invoiceName,
+                                Client_Contact_Person_Email:chartJS1.contactEmail,
+                                Client_Contact_Person_PhoneNo:Value(chartJS1.contactPhoneNo),
+                                Client_Contact_Person_name:chartJS1.contactPersonName,
+                                //PIN_CODE:Value(chartJS1.pinCode),
+                                Client_Billing_State:chartJS1.companyBillingState,
+                                Client_Billing_Country:chartJS1.companyBillingCountry, 
                                // Client_Delarance_Name:TextInput1_21.Text,
-                                Client_Billing_City:chartJS2.companyBillingCity,
-                                'Witness Vendor Date': DateTimeValue(chartJS2.witnessVendorDate),
-                                Witness_Vendor_Title:chartJS2.witnessVendorTitle,
-                                 Witness_Vendor_By: chartJS2.witnessVendorBy
+                                Client_Billing_City:chartJS1.companyBillingCity,
+                                'Witness Vendor Date': DateTimeValue(chartJS1.witnessVendorDate),
+                                Witness_Vendor_Title:chartJS1.witnessVendorTitle,
+                                 Witness_Vendor_By: chartJS1.witnessVendorBy
                                 //Witness_Vendor_By:TextInput1_25.Text  
                                 */
                                 }
@@ -428,11 +428,11 @@
                                 CM_ContractDetails,
                                 {ID: VarContractDetailsPatch.ID},
                                 {
-                                    Contract_CreatedOn: DateTimeValue(chartJS2.contractCreationFullDate),
-                                    Contract_Created_Location: chartJS2.contactCreationCity,
+                                    Contract_CreatedOn: DateTimeValue(chartJS1.contractCreationFullDate),
+                                    Contract_Created_Location: chartJS1.contactCreationCity,
                                     Status: {Value: "Active"},
                                     Coc_stage: 2,
-                                    Contract_Charges: Value(chartJS2.charges),
+                                    Contract_Charges: Value(chartJS1.charges),
                                     Task_ID_Fk: {
                                         Id: gblTaskPatchDetail.ID,
                                         Value: gblTaskPatchDetail.Task_Name
@@ -444,10 +444,10 @@
                                 {
                                 Contract_Id:{Id:VarContractDetailsPatch.ID,Value:VarContractDetailsPatch.ID},
                                contract_ID_FK:firstFormID 
-                               /*,Vendor_Contact_Number: Value(chartJS2.vendorContactNo),
-                               Vendor_Email:chartJS2.vendorEmail,
-                               Vendor_Address:chartJS2.vendorAddress,
-                               Title:chartJS2.vendorName*/
+                               /*,Vendor_Contact_Number: Value(chartJS1.vendorContactNo),
+                               Vendor_Email:chartJS1.vendorEmail,
+                               Vendor_Address:chartJS1.vendorAddress,
+                               Title:chartJS1.vendorName*/
                                 }
                             );
                         );

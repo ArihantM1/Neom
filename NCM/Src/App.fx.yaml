@@ -94,7 +94,7 @@ App As appinfo:
             "Proponent",
             0,
             "Procurement",
-            2
+            2,"Admin",3
         )
         );
         Set(gblContractCompletionView,false);

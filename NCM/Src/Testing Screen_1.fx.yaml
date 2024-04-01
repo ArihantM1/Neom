@@ -6,11 +6,18 @@
         Y: =40
         ZIndex: =1
 
-    Label3 As label:
-        Text: |-
-            =
-            DateTimeValue(TextInput1.Text)
-        X: =112
-        Y: =232
+    HtmlText2 As htmlViewer:
+        Height: =658
+        HtmlText: =chartJS1.HTMLContent
+        Width: =787
+        X: =360
+        Y: =110
         ZIndex: =2
+
+    Icon3 As icon.Download:
+        Icon: =Icon.Download
+        OnSelect: =Download(HTML2PDF_PCFFLOW.Run(chartJS1.HTMLContent,"FileNow"&Now()).uri)
+        X: =1072
+        Y: =46
+        ZIndex: =3
 

@@ -29,7 +29,15 @@
       }
     },
     "dataSources": [
-      "CM_Audit_Table"
+      "CM_Audit_Table",
+      "CM_Client_Contract",
+      "CM_COC_Download_History",
+      "CM_ClientData",
+      "Documents",
+      "CM_COC_Summary",
+      "CM_ContractDetails",
+      "CM_Services",
+      "CM_Service_Types"
     ],
     "dependencies": {},
     "dependents": [
@@ -99,6 +107,85 @@
     "dependencies": {},
     "dependents": [],
     "id": "560d9749-ce2d-46ff-a027-334511a62e86"
+  },
+  "645e7738-4ade-4de1-8808-e8dacbf868c2": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1682/1.0.1682.3675/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "97f55920-db07-4e62-b3a9-9787806baaba"
+    ],
+    "id": "645e7738-4ade-4de1-8808-e8dacbf868c2"
+  },
+  "78cbd3c3-d643-42ef-a180-51e57e54734f": {
+    "connectionRef": {
+      "displayName": "OneDrive for Business",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1669/1.0.1669.3522/onedriveforbusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "97f55920-db07-4e62-b3a9-9787806baaba"
+    ],
+    "id": "78cbd3c3-d643-42ef-a180-51e57e54734f"
+  },
+  "97f55920-db07-4e62-b3a9-9787806baaba": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1680/1.0.1680.3652/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "645e7738-4ade-4de1-8808-e8dacbf868c2": {
+          "value": "shared_sharepointonline"
+        },
+        "78cbd3c3-d643-42ef-a180-51e57e54734f": {
+          "value": "shared_onedriveforbusiness"
+        },
+        "workflowDisplayName": {
+          "value": "HTML2PDF_PCFFLOW"
+        },
+        "workflowEntityId": {
+          "value": "aaf47662-e9ef-ee11-904b-000d3ab64b97"
+        },
+        "workflowName": {
+          "value": "ff223d79-bbce-81d6-5940-a046ed8f74b7"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_onedriveforbusiness": {
+          "value": "78cbd3c3-d643-42ef-a180-51e57e54734f"
+        },
+        "shared_sharepointonline": {
+          "value": "645e7738-4ade-4de1-8808-e8dacbf868c2"
+        },
+        "workflowDisplayName": {
+          "value": "HTML2PDF_PCFFLOW"
+        },
+        "workflowEntityId": {
+          "value": "aaf47662-e9ef-ee11-904b-000d3ab64b97"
+        },
+        "workflowName": {
+          "value": "ff223d79-bbce-81d6-5940-a046ed8f74b7"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "HTML2PDF_PCFFLOW"
+    ],
+    "dependencies": {
+      "shared_onedriveforbusiness": "78cbd3c3-d643-42ef-a180-51e57e54734f",
+      "shared_sharepointonline": "645e7738-4ade-4de1-8808-e8dacbf868c2"
+    },
+    "dependents": [],
+    "id": "97f55920-db07-4e62-b3a9-9787806baaba"
   },
   "c2b460e1-d4fa-4902-a63f-c41009f9bd26": {
     "connectionRef": {
