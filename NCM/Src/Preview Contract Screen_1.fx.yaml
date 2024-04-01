@@ -521,6 +521,8 @@
                             Blank()
                         );
                         Set(HTMLContent,chartJS1.HTMLContent);
+                        Set(HTMLContent,Substitute(HTMLContent,"orange","white"));
+                        Set(HTMLContent,Substitute(HTMLContent,"yellow","white"));
                         
                         Navigate('Home Screen');
                     Size: =10
