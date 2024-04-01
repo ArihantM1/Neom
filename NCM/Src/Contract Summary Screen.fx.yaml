@@ -425,7 +425,7 @@
         Gallery9 As gallery.variableTemplateHeightGallery:
             DelayItemLoading: =true
             Height: =Parent.Height-(Icon1.Height*2)-20
-            Items: =CM_Audit_Table
+            Items: =Filter(CM_Audit_Table,Contract_ID_Fk=lclSelectedContract.ID)
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplateSize: =60
@@ -453,9 +453,11 @@
                     ZIndex: =1
 
                     Label14 As label:
+                        FontWeight: =FontWeight.Bold
                         Height: =Parent.Height/2
-                        PaddingLeft: =25
-                        Text: =ThisItem.'Created By'
+                        PaddingLeft: =26
+                        Size: =11
+                        Text: =ThisItem.'Created By'.DisplayName
                         Width: =Parent.Width
                         ZIndex: =1
 
@@ -509,7 +511,9 @@
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =DisplayMode.View
                         Fill: =RGBA(250, 237, 248, 1)
+                        FontWeight: =FontWeight.Bold
                         Height: =Parent.Height/2
+                        Size: =11
                         Text: =ThisItem.Action
                         Width: =90
                         ZIndex: =1
@@ -522,42 +526,48 @@
             LoadingSpinner: =LoadingSpinner.Data
             TemplateSize: =60
             Width: =546
-            X: =546
+            X: =Gallery9.Width
             Y: =Gallery9.Y
             ZIndex: =3
 
             Container11_2 As groupContainer.horizontalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
-                Height: =Parent.TemplateHeight
+                Height: =Parent.TemplateHeight-2
                 LayoutMode: =LayoutMode.Auto
                 Width: =Parent.TemplateWidth
                 ZIndex: =1
 
                 Label13_5 As label:
-                    Color: =RGBA(153, 153, 153, 1)
-                    FontWeight: =FontWeight.Bold
                     Height: =Parent.Height
                     PaddingLeft: =15
+                    Size: =10
                     Text: =Substitute(ThisItem.Value.Field,"_x005f_"," ")
                     Width: =Parent.Width/3
                     ZIndex: =1
 
                 Label13_6 As label:
-                    Color: =RGBA(153, 153, 153, 1)
-                    FontWeight: =FontWeight.Bold
                     Height: =Label13_5.Height
+                    Size: =10
                     Text: =Text(ThisItem.Value.currentValue)
                     Width: =Label13_5.Width
                     ZIndex: =2
 
                 Label13_7 As label:
-                    Color: =RGBA(153, 153, 153, 1)
-                    FontWeight: =FontWeight.Bold
                     Height: =Label13_5.Height
                     PaddingLeft: =25
+                    Size: =10
                     Text: =Text(ThisItem.Value.PreviousValue)
                     Width: =Label13_5.Width
                     ZIndex: =3
+
+            Rectangle1 As rectangle:
+                Fill: =RGBA(237, 237, 237, 1)
+                Height: =2
+                OnSelect: =Select(Parent)
+                Width: =Parent.Width*.9
+                X: =Parent.Width/2-Self.Width/2
+                Y: =Parent.TemplateHeight-Self.Height
+                ZIndex: =2
 
         Container10 As groupContainer.horizontalAutoLayoutContainer:
             DropShadow: =DropShadow.None
