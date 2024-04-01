@@ -424,59 +424,24 @@
 
         Gallery9 As gallery.variableTemplateHeightGallery:
             DelayItemLoading: =true
-            Height: =Parent.Height-(Icon1.Height*3)
-            Items: =CM_Audit_Table
-            Layout: =Layout.Vertical
-            LoadingSpinner: =LoadingSpinner.Data
-            TemplateSize: =Self.Height*.1
-            Width: =Parent.Width/2
-            Y: =Parent.Height-Self.Height
-            ZIndex: =2
-
-        Gallery9_1 As gallery.variableTemplateHeightGallery:
-            DelayItemLoading: =true
-            Height: =Gallery9.Height
+            Height: =Parent.Height-Icon1.Height-6
             Items: =CustomGallerySample
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplateSize: =280
-            Width: =Gallery9.Width
-            X: =Gallery9.Width
-            Y: =Gallery9.Y
-            ZIndex: =3
-
-        Container11 As groupContainer.horizontalAutoLayoutContainer:
-            Height: =Parent.Height-Icon1.Height-Gallery9.Height-6
-            LayoutMode: =LayoutMode.Auto
-            Width: =Parent.Width
+            Width: =Parent.Width/2
             Y: =Icon1.Height+6
-            ZIndex: =4
+            ZIndex: =2
 
-            Container12 As groupContainer.horizontalAutoLayoutContainer:
-                AlignInContainer: =AlignInContainer.Center
-                FillPortions: =0
-                Height: =Parent.Height
-                LayoutAlignItems: =LayoutAlignItems.Center
-                LayoutMinHeight: =100
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                Width: =Parent.Width/2
-                ZIndex: =1
-
-                Label3 As label:
-                    Color: =RGBA(150, 150, 150, 1)
-                    FontWeight: =FontWeight.Bold
-                    PaddingLeft: =15
-                    Text: ="Performed by"
-                    ZIndex: =1
-
-            Container12_1 As groupContainer.horizontalAutoLayoutContainer:
-                AlignInContainer: =AlignInContainer.Center
-                FillPortions: =0
-                Height: =Parent.Height
-                LayoutMinHeight: =100
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                Width: =Parent.Width/2
-                ZIndex: =2
+        Gallery9_1 As gallery.variableTemplateHeightGallery:
+            DelayItemLoading: =true
+            Height: =Parent.Height-Icon1.Height-6
+            Items: =CustomGallerySample
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplateSize: =280
+            Width: =Parent.Width/2
+            X: =Gallery9.Width
+            Y: =Icon1.Height+6
+            ZIndex: =3
 
