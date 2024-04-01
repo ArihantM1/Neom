@@ -27,20 +27,20 @@
     "OverridableProperties": {},
     "Version": "2.2.0"
   },
-  "chartJSV18": {
+  "chartJSV19": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": false,
-    "Id": "http://microsoft.com/appmagic/powercontrol/dev_ChartJSV18.chartJS",
+    "Id": "http://microsoft.com/appmagic/powercontrol/dev_ChartJSV19.chartJS",
     "IsComponentTemplate": false,
     "IsCustomGroupControlTemplate": false,
     "IsPcfControl": true,
     "IsPremiumPcfControl": false,
     "IsWidgetTemplate": false,
     "LastModifiedTimestamp": "0",
-    "Name": "dev_ChartJSV18.chartJS",
+    "Name": "dev_ChartJSV19.chartJS",
     "OverridableProperties": {},
-    "TemplateDisplayName": "chartJSV18",
-    "Version": "0.1.8"
+    "TemplateDisplayName": "chartJSV19",
+    "Version": "0.1.9"
   },
   "checkbox": {
     "CustomGroupControlTemplateName": "",

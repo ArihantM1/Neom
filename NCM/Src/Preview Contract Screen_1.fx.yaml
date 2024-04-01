@@ -1,4 +1,7 @@
 "'Preview Contract Screen_1' As screen":
+    OnVisible: |-
+        =UpdateContext({lclSelectedClientData:LookUp(CM_Client_Contract,Contract_Id.Value=lclSelectedTaskHomeScreen.ID)});
+        UpdateContext({lclSelectedVendorData:LookUp(CM_VENDOR,Contract_Id.Value=lclSelectedTaskHomeScreen.ID)});
 
     con_EditAndPreviewMain_PCS_2 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Bold
@@ -135,12 +138,15 @@
                 LayoutMinWidth: =250
                 ZIndex: =2
 
-                chartJS1 As chartJSV18:
+                chartJS1 As chartJSV19:
+                    contactCreationCity: =lclSelectedTaskHomeScreen.Contract_Created_Location
+                    contractCreationFullDate: =Text(lclSelectedTaskHomeScreen.Contract_CreatedOn)
                     DisplayMode: =DisplayMode.Edit
                     DivH: =Self.Height+35
                     Height: =Parent.Height
-                    UserRole: =UserRole
+                    toCustomerCustomerAddress: =
                     Width: =Parent.Width
+                    witnessVendorBy: =
                     X: =0
                     Y: =0
                     ZIndex: =1
