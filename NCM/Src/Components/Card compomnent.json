@@ -124,7 +124,7 @@
                     "OptimizeForDevices": "Off",
                     "Parent": "Con_information",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 689,
+                    "PublishOrderIndex": 688,
                     "Rules": [
                       {
                         "Category": "Data",
@@ -452,7 +452,7 @@
                     "OptimizeForDevices": "Off",
                     "Parent": "Con_information",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 690,
+                    "PublishOrderIndex": 689,
                     "Rules": [
                       {
                         "Category": "Data",
@@ -847,7 +847,7 @@
                     "OptimizeForDevices": "Off",
                     "Parent": "Con_information",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 691,
+                    "PublishOrderIndex": 690,
                     "Rules": [
                       {
                         "Category": "Data",
@@ -1168,7 +1168,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "ConMain",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 688,
+                "PublishOrderIndex": 687,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -1484,7 +1484,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "ConMain",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 692,
+                "PublishOrderIndex": 691,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -1836,7 +1836,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "ConCard_defaultValues_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 687,
+            "PublishOrderIndex": 686,
             "Rules": [
               {
                 "Category": "Design",
@@ -2069,7 +2069,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Card compomnent",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 686,
+        "PublishOrderIndex": 685,
         "Rules": [
           {
             "Category": "Design",
@@ -2252,7 +2252,7 @@
       "MainText",
       "SecondaryText"
     ],
-    "LastModifiedTimestamp": "638475762394710127",
+    "LastModifiedTimestamp": "638475720813232719",
     "Name": "Card compomnent",
     "Rules": [
       {
@@ -2357,7 +2357,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638475762394710127",
+  "LastModifiedTimestamp": "638475720813232719",
   "Name": "eeae0174e886453083644726d574ee05",
   "OverridableProperties": {},
   "Version": "1.0"
