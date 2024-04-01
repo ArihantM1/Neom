@@ -697,7 +697,7 @@
                                 =//If(Self.Width<=137,11,9)
                                 11
                             Text: =ThisItem.Contract_name
-                            Width: =lbl_ContractName_Headline_HS.Width
+                            Width: =lbl_ContractName_Headline_HS.Width+26
                             X: =lbl_ContractName_Headline_HS.X
                             Y: =(gal_AllContractsDetailView_HS.TemplateHeight-Self.Height)/2
                             ZIndex: =2
