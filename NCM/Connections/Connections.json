@@ -37,7 +37,10 @@
       "CM_COC_Summary",
       "CM_ContractDetails",
       "CM_Services",
-      "CM_Service_Types"
+      "CM_Service_Types",
+      "CM_VENDOR",
+      "CM_Users",
+      "CM_Task"
     ],
     "dependencies": {},
     "dependents": [

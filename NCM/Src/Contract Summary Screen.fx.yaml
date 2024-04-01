@@ -408,7 +408,7 @@
         RadiusTopLeft: =10
         RadiusTopRight: =0
         Visible: =gblViewAuditHistory
-        Width: =Parent.Width*.45
+        Width: =Parent.Width*.8
         X: =Parent.Width-Self.Width
         ZIndex: =13
 
@@ -418,111 +418,30 @@
             Icon: =Icon.Cancel
             OnSelect: =Set(gblViewAuditHistory,false)
             Width: =30
-            X: =6
+            X: =Parent.Width-Self.Width-6
             Y: =6
             ZIndex: =1
 
-        Gallery7 As gallery.variableTemplateHeightGallery:
+        Gallery9 As gallery.variableTemplateHeightGallery:
             DelayItemLoading: =true
-            Height: =Parent.Height-Icon1.Height-10
-            Items: =Filter(CM_Audit_Table,Contract_ID_Fk=lclSelectedContract.ID)
+            Height: =Parent.Height-Icon1.Height
+            Items: =CustomGallerySample
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplateSize: =280
-            Width: =Parent.Width
-            Y: =Parent.Height-Self.Height
+            Width: =Parent.Width/2
+            Y: =Icon1.Height
             ZIndex: =2
 
-            Container8 As groupContainer.verticalAutoLayoutContainer:
-                Height: =Parent.TemplateHeight
-                LayoutDirection: =LayoutDirection.Vertical
-                LayoutMode: =LayoutMode.Auto
-                Width: =Parent.TemplateWidth
-                X: =
-                Y: =
-                ZIndex: =1
-
-                HtmlText1 As htmlViewer:
-                    HtmlText: |-
-                        ="Action: <b><font color= #6B1D5E>"&ThisItem.Action&"</font></b>"
-                    OnSelect: =//Select(Parent)
-                    X: =40
-                    Y: =40
-                    ZIndex: =1
-
-                Gallery8 As gallery.variableTemplateHeightGallery:
-                    AlignInContainer: =AlignInContainer.Center
-                    DelayItemLoading: =true
-                    FillPortions: =0
-                    Height: =Parent.Height-HtmlText1.Height
-                    Items: =Table(ParseJSON(ThisItem.Json_Object))
-                    Layout: =Layout.Vertical
-                    LayoutMinHeight: =287
-                    LayoutMinWidth: =320
-                    LoadingSpinner: =LoadingSpinner.Data
-                    TemplateSize: =Self.Height*.4
-                    Width: =Parent.Width
-                    ZIndex: =2
-
-                    Container9 As groupContainer.manualLayoutContainer:
-                        Height: =Parent.TemplateHeight
-                        Width: =Parent.TemplateWidth
-                        X: =
-                        Y: =
-                        ZIndex: =1
-
-                        Label15 As label:
-                            FontWeight: =FontWeight.Lighter
-                            PaddingLeft: =25
-                            Size: =10
-                            Text: ="Field "
-                            Width: =Parent.Width/3.33
-                            ZIndex: =1
-
-                        Label15_1 As label:
-                            Align: =Align.Center
-                            FontWeight: =Label15.FontWeight
-                            Size: =Label15.Size
-                            Text: ="Current Value"
-                            Width: =Parent.Width/3.33
-                            X: =Parent.Width/2-Self.Width/2
-                            ZIndex: =2
-
-                        Label15_2 As label:
-                            Align: =Align.Center
-                            FontWeight: =Label15.FontWeight
-                            Size: =Label15.Size
-                            Text: ="Previous Value"
-                            Width: =Parent.Width/3.33
-                            X: =Parent.Width-Self.Width
-                            ZIndex: =3
-
-                        Label15_3 As label:
-                            FontWeight: =FontWeight.Lighter
-                            PaddingLeft: =25
-                            Size: =10
-                            Text: =Substitute(ThisItem.Value.Field,"_x005f_"," ")
-                            Width: =Parent.Width/3.33
-                            Y: =40
-                            ZIndex: =4
-
-                        Label15_4 As label:
-                            Align: =Align.Center
-                            FontWeight: =Label15_3.FontWeight
-                            Size: =Label15_3.Size
-                            Text: =Text(ThisItem.Value.currentValue)
-                            Width: =Parent.Width/3.33
-                            X: =Parent.Width/2-Self.Width/2
-                            Y: =40
-                            ZIndex: =5
-
-                        Label15_5 As label:
-                            Align: =Align.Center
-                            FontWeight: =Label15_3.FontWeight
-                            Size: =Label15_3.Size
-                            Text: =Text(ThisItem.Value.PreviousValue)
-                            Width: =Parent.Width/3.33
-                            X: =Parent.Width-Self.Width
-                            Y: =40
-                            ZIndex: =6
+        Gallery9_1 As gallery.variableTemplateHeightGallery:
+            DelayItemLoading: =true
+            Height: =Parent.Height-Icon1.Height
+            Items: =CustomGallerySample
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplateSize: =280
+            Width: =Parent.Width/2
+            X: =Gallery9.Width
+            Y: =Icon1.Height
+            ZIndex: =3
 
