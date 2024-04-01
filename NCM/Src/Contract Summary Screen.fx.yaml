@@ -424,24 +424,211 @@
 
         Gallery9 As gallery.variableTemplateHeightGallery:
             DelayItemLoading: =true
-            Height: =Parent.Height-Icon1.Height-6
-            Items: =CustomGallerySample
+            Height: =Parent.Height-(Icon1.Height*2)-20
+            Items: =CM_Audit_Table
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
-            TemplateSize: =280
+            TemplateSize: =60
             Width: =Parent.Width/2
-            Y: =Icon1.Height+6
+            Y: =(Icon1.Height*2)+20
             ZIndex: =2
+
+            Container12 As groupContainer.horizontalAutoLayoutContainer:
+                Height: =Parent.TemplateHeight
+                LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.TemplateWidth
+                ZIndex: =1
+
+                Container13 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Center
+                    DropShadow: =DropShadow.None
+                    FillPortions: =0
+                    Height: =Parent.Height
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width/1.5
+                    ZIndex: =1
+
+                    Label14 As label:
+                        Height: =Parent.Height/2
+                        PaddingLeft: =25
+                        Text: =ThisItem.'Created By'
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                    Container14 As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Center
+                        DropShadow: =DropShadow.None
+                        FillPortions: =0
+                        Height: =Parent.Height/2
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        PaddingLeft: =25
+                        Width: =Parent.Width
+                        ZIndex: =2
+
+                        Image5 As image:
+                            AlignInContainer: =AlignInContainer.Center
+                            Height: =Parent.Height-5
+                            Image: ='calender-Black'
+                            PaddingBottom: =5
+                            Width: =Parent.Height-5
+                            ZIndex: =1
+
+                        Label15 As label:
+                            AlignInContainer: =AlignInContainer.Center
+                            Color: =RGBA(163, 163, 163, 1)
+                            Fill: =RGBA(150, 150, 150, 0)
+                            Height: =Parent.Height
+                            PaddingLeft: =15
+                            Size: =9
+                            Text: |-
+                                =Text(ThisItem.Created,"dd-mmm")&" at "&Text(ThisItem.Created,"hh:mm am/pm")
+                            Width: =Parent.Width-Image5.Width*2
+                            ZIndex: =2
+
+                Container16 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Center
+                    DropShadow: =DropShadow.None
+                    FillPortions: =0
+                    Height: =Parent.Height
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width-Container13.Width
+                    ZIndex: =2
+
+                    Button2 As button:
+                        Color: =RGBA(107, 29, 94, 1)
+                        DisplayMode: =DisplayMode.View
+                        Fill: =RGBA(250, 237, 248, 1)
+                        Height: =Parent.Height/2
+                        Text: =ThisItem.Action
+                        Width: =90
+                        ZIndex: =1
 
         Gallery9_1 As gallery.variableTemplateHeightGallery:
             DelayItemLoading: =true
-            Height: =Parent.Height-Icon1.Height-6
-            Items: =CustomGallerySample
+            Height: =Gallery9.Height
+            Items: =Table(ParseJSON(Gallery9.Selected.Json_Object))
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
-            TemplateSize: =280
-            Width: =Parent.Width/2
-            X: =Gallery9.Width
-            Y: =Icon1.Height+6
+            TemplateSize: =60
+            Width: =546
+            X: =546
+            Y: =Gallery9.Y
             ZIndex: =3
+
+            Container11_2 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                Height: =Parent.TemplateHeight
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.TemplateWidth
+                ZIndex: =1
+
+                Label13_5 As label:
+                    Color: =RGBA(153, 153, 153, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height
+                    PaddingLeft: =15
+                    Text: =Substitute(ThisItem.Value.Field,"_x005f_"," ")
+                    Width: =Parent.Width/3
+                    ZIndex: =1
+
+                Label13_6 As label:
+                    Color: =RGBA(153, 153, 153, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =Label13_5.Height
+                    Text: =Text(ThisItem.Value.currentValue)
+                    Width: =Label13_5.Width
+                    ZIndex: =2
+
+                Label13_7 As label:
+                    Color: =RGBA(153, 153, 153, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =Label13_5.Height
+                    PaddingLeft: =25
+                    Text: =Text(ThisItem.Value.PreviousValue)
+                    Width: =Label13_5.Width
+                    ZIndex: =3
+
+        Container10 As groupContainer.horizontalAutoLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =Parent.Height-Gallery9.Height-Icon1.Height-10
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
+            Y: =Icon1.Height+6
+            ZIndex: =4
+
+            Container11 As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =Parent.Height
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width/2
+                ZIndex: =1
+
+                Label13 As label:
+                    Color: =RGBA(153, 153, 153, 1)
+                    FontWeight: =FontWeight.Bold
+                    PaddingLeft: =25
+                    Text: ="Performed by"
+                    ZIndex: =1
+
+                Label13_1 As label:
+                    Color: =RGBA(153, 153, 153, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height
+                    PaddingLeft: =25
+                    Text: ="Event"
+                    ZIndex: =2
+
+            Container11_1 As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =Parent.Height
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width/2
+                ZIndex: =2
+
+                Label13_2 As label:
+                    Color: =RGBA(153, 153, 153, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height
+                    PaddingLeft: =15
+                    Text: ="Field"
+                    Width: =Parent.Width/3
+                    ZIndex: =1
+
+                Label13_3 As label:
+                    Color: =RGBA(153, 153, 153, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =Label13_2.Height
+                    Text: ="Current Value"
+                    Width: =Label13_2.Width
+                    ZIndex: =2
+
+                Label13_4 As label:
+                    Color: =RGBA(153, 153, 153, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =Label13_2.Height
+                    PaddingLeft: =25
+                    Text: ="Previous Value"
+                    Width: =Label13_2.Width
+                    ZIndex: =3
 
