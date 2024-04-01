@@ -501,7 +501,7 @@
                             FontWeight: =FontWeight.Lighter
                             PaddingLeft: =25
                             Size: =10
-                            Text: =Text(ThisItem.Value.Field)
+                            Text: =Substitute(ThisItem.Value.Field,"_x005f_"," ")
                             Width: =Parent.Width/3.33
                             Y: =40
                             ZIndex: =4
