@@ -209,7 +209,9 @@
                     Height: =35
                     HoverColor: =RGBA(107, 29, 94, 1)
                     HoverFill: =RGBA(219, 200, 216, 1)
-                    OnSelect: =Back()
+                    OnSelect: |-
+                        =UpdateContext({lclSelectedTaskHomeScreen:Blank()});
+                        Back()
                     Size: =10
                     Text: ="Back"
                     Width: =Parent.Width*.07
