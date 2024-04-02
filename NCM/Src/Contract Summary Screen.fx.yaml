@@ -73,7 +73,7 @@
                         Set(gblContractCompletionView,true),
                         lclSelectedContract.Coc_stage>=5,{},
                         Navigate(
-                            'Preview Contract Screen_1',
+                            'Contract Detail Screen (Further Details)',
                             ScreenTransition.Fade,
                             {lclSelectedTaskHomeScreen: gal_AllContractsDetailView_HS.Selected}
                         )

@@ -854,7 +854,7 @@
                         );*/
                         Refresh(CM_Task);
                         Navigate(
-                            'Preview Contract Screen_1',
+                            'Contract Detail Screen (Further Details)',
                             ScreenTransition.Cover
                         )
                     Size: =10
