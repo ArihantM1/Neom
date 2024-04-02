@@ -527,9 +527,9 @@
         gal_AuditData_CSS As gallery.variableTemplateHeightGallery:
             DelayItemLoading: =true
             Height: ='gal_AuditEvent&PerformedBY_CSS'.Height
-            Items: |
-                =
-                Table(ParseJSON('gal_AuditEvent&PerformedBY_CSS'.Selected.Json_Object))
+            Items: |+
+                =If(IsBlank(Table(ParseJSON('gal_AuditEvent&PerformedBY_CSS'.Selected.Json_Object))),{},Table(ParseJSON('gal_AuditEvent&PerformedBY_CSS'.Selected.Json_Object)))
+                
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplateSize: =60
