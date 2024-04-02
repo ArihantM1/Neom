@@ -329,7 +329,7 @@
         Fill: =RGBA(255, 255, 255, 1)
         Height: =Parent.Height
         Visible: =gblContractCompletionView
-        Width: =Parent.Width*.3
+        Width: =Parent.Width*.33
         X: =Parent.Width-Self.Width
         Y: =Parent.Height/2-Self.Height/2
         ZIndex: =3
