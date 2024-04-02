@@ -191,6 +191,25 @@
                             HoverColor: =RGBA(107, 29, 94, 1)
                             HoverFill: =RGBA(255, 255, 255, 1)
                             OnSelect: |
+                                =
+                                Navigate('User Management Screen',ScreenTransition.Fade);
+                            Size: =10.5
+                            Text: ="Manage Users"
+                            Visible: |-
+                                =//true
+                                If(gblActiveUser="Admin",true,false)
+                            Width: =Parent.Width*.25
+                            ZIndex: =2
+
+                        btn_CreateNewContract_HS_1 As button:
+                            BorderColor: =RGBA(107, 29, 94, 1)
+                            Fill: =RGBA(107, 29, 94, 1)
+                            FontWeight: =FontWeight.Bold
+                            Height: =35
+                            HoverBorderColor: =RGBA(107, 29, 94, 1)
+                            HoverColor: =RGBA(107, 29, 94, 1)
+                            HoverFill: =RGBA(255, 255, 255, 1)
+                            OnSelect: |
                                 =Set(
                                     ContractData,
                                     Blank()
@@ -202,7 +221,7 @@
                                 =//true
                                 If(Or(gblActiveUser="Procurement",gblActiveUser="Admin"),true,false)
                             Width: =Parent.Width*.25
-                            ZIndex: =2
+                            ZIndex: =3
 
                 con_KpiAll_HS As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer

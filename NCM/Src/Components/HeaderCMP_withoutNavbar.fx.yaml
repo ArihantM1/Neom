@@ -30,7 +30,7 @@ HeaderCMP_withoutNavbar As CanvasComponent:
             ZIndex: =1
 
             Image1_1 As image:
-                Height: =Parent.Height-50
+                Height: =Parent.Height
                 Image: =xebialogo
                 Width: =Parent.Width-20
                 ZIndex: =1
@@ -108,7 +108,9 @@ HeaderCMP_withoutNavbar As CanvasComponent:
 
             Image7 As image:
                 Height: =50
-                Image: =User().Image
+                Image: |-
+                    =//User().Image
+                    gblActiveuserinfo.User_Image
                 RadiusBottomLeft: =50
                 RadiusBottomRight: =50
                 RadiusTopLeft: =50

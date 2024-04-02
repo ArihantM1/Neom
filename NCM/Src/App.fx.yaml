@@ -103,6 +103,7 @@ App As appinfo:
         )
         );
         Set(gblContractCompletionView,false);
+        Set(gblActiveuserinfo,LookUp(CM_Users,Emaill=User().Email));
         Set(gblActiveUser,
         Switch(
          LookUp(CM_Users,Emaill=User().Email).Role,
