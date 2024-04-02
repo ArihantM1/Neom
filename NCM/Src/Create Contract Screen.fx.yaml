@@ -190,8 +190,8 @@
                     Align: =Align.Right
                     Size: =12
                     Text: |-
-                        ="Client: "
-                    Width: =Parent.Width*.09
+                        ="Client* : "
+                    Width: =Parent.Width*.1
                     ZIndex: =1
 
                 drp_Client_CCS As dropdown:
@@ -221,7 +221,7 @@
                     Align: =Align.Right
                     Size: =12
                     Text: |-
-                        ="Service Type: "
+                        ="Service Type* : "
                     Width: =Parent.Width*.15
                     ZIndex: =3
 
@@ -272,7 +272,7 @@
                         Align: =Align.Right
                         Size: =12
                         Text: |-
-                            ="Services:"
+                            ="Services* : "
                         Width: =lbl_Client_CCS.Width
                         ZIndex: =1
 
@@ -305,7 +305,7 @@
                         Align: =Align.Right
                         Size: =12
                         Text: |-
-                            ="Name: "
+                            ="Name* : "
                         Width: =lbl_ServiceType_CCS.Width
                         ZIndex: =3
 
@@ -346,7 +346,7 @@
                     Align: =Align.Right
                     Size: =12
                     Text: |-
-                        ="Currency:"
+                        ="Currency* : "
                     Width: =lbl_Client_CCS.Width
                     ZIndex: =1
 
@@ -375,7 +375,7 @@
                     Align: =Align.Right
                     Size: =12
                     Text: |-
-                        ="Applicable To: "
+                        ="Applicable To* : "
                     Width: =lbl_ServiceType_CCS.Width
                     ZIndex: =3
 
@@ -428,7 +428,7 @@
                         PaddingLeft: =0
                         PaddingRight: =0
                         Text: |-
-                            ="Description: "
+                            ="Description* : "
                         Width: =lbl_Client_CCS.Width
                         ZIndex: =1
 
@@ -513,7 +513,7 @@
                         Align: =Align.Right
                         Size: =12
                         Text: |-
-                            ="Start Date: "
+                            ="Start Date* : "
                         Width: =lbl_Client_CCS.Width
                         ZIndex: =1
 
@@ -540,7 +540,7 @@
                         Align: =Align.Right
                         Size: =12
                         Text: |-
-                            ="End Date: "
+                            ="End Date* : "
                         Width: =lbl_ServiceType_CCS.Width
                         ZIndex: =3
 
@@ -577,7 +577,7 @@
                     Align: =Align.Right
                     Size: =12
                     Text: |-
-                        ="Created On:"
+                        ="Created On* : "
                     Width: =lbl_Client_CCS.Width
                     ZIndex: =1
 
@@ -600,7 +600,7 @@
                     Align: =Align.Right
                     Size: =12
                     Text: |-
-                        ="Created By:"
+                        ="Created By* :"
                     Width: =lbl_ServiceType_CCS.Width
                     ZIndex: =3
 
@@ -859,6 +859,7 @@
                         )
                     Size: =10
                     Text: ="Next"
+                    Tooltip: =If(Self.DisplayMode="DisplayMode.Disabled","Please Fill All The Details !",{})
                     Width: =Parent.Width*.07
                     ZIndex: =3
 
