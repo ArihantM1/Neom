@@ -108,7 +108,7 @@
                     Height: =Parent.Height-shp_Devider_CreateDucplicateCOCSelect_CCS.Height
                     Items: =RadioOptions
                     Layout: =Layout.Horizontal
-                    LineHeight: =0.8
+                    LineHeight: =1
                     OnChange: |
                         =
                          Set(
@@ -121,9 +121,9 @@
                     PaddingTop: =15
                     RadioBorderColor: =RGBA(107, 29, 94, 1)
                     RadioSelectionFill: =RGBA(107, 29, 94, 1)
-                    RadioSize: =30
-                    Size: =11
-                    Width: =Parent.Width*.4
+                    RadioSize: =25
+                    Size: =12
+                    Width: =Parent.Width
                     ZIndex: =1
 
                 shp_Devider_CreateDucplicateCOCSelect_CCS As rectangle:
@@ -859,15 +859,7 @@
                         )
                     Size: =10
                     Text: ="Next"
-                    Tooltip: |-
-                        =If(  !IsBlank(drp_Client_CCS.SelectedText)
-                            And !IsBlank(drp_ServiceType_CCS.SelectedText)
-                            And !IsBlank(drp_Services_CCS.SelectedText)
-                            And !IsBlank(lblContractName_CCS.Text)
-                            And !IsBlank(drp_ApplicableTo_CCS.SelectedText)
-                            And !IsBlank(dte_StartDate_CCS.SelectedDate)
-                            And !IsBlank(dte_EndDate_CCS.SelectedDate)
-                            And !IsBlank(drp_Currency_CCS.SelectedText),"Please Fill All The Details !","Submit Details")
+                    Tooltip: =If(  Self.DisplayMode = DisplayMode.Disabled,"Please Fill All The Details !","Submit Details")
                     Width: =Parent.Width*.07
                     ZIndex: =3
 

@@ -937,7 +937,7 @@
             Y: =Parent.Height-Self.Height- btn_SignCOC_HS.Height-chk_ConfomationCOCSigning_HS.Height-7
             ZIndex: =4
 
-    PdfViewer2_1 As pdfViewer:
+    Pdf_COCVIEW_HS As pdfViewer:
         BorderColor: =RGBA(0, 0, 0, 1)
         DisplayMode: =DisplayMode.View
         Document: =LookUp(Documents,ID=gal_AllContractsDetailView_HS.Selected.CM_PDF_FILE_ID).DataUri
