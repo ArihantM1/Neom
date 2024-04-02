@@ -35,7 +35,8 @@
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",
       "Role": "Role",
-      "Title": "Title"
+      "Title": "Title",
+      "User_Image": "User_Image"
     },
     "DatasetName": "https://xebiagroup.sharepoint.com/sites/PowerAppsDemo",
     "EncodeDataset": true,

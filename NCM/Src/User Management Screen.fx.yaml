@@ -7,6 +7,7 @@
 
         lbl_ManagePeopleHeader_UMS As label:
             Color: =RGBA(112, 112, 112, 1)
+            Fill: =RGBA(255, 247, 254, 1)
             FontWeight: =FontWeight.Semibold
             Height: =Parent.Height*.1
             PaddingLeft: =35
@@ -85,6 +86,28 @@
                     PaddingRight: =20
                     ZIndex: =5
 
+                    btn_ADDUSER_UMS As button:
+                        BorderColor: |-
+                            =ColorFade(ColorValue("#6b1d5e"), 70%)
+                        Fill: =RGBA(107, 29, 94, 1)
+                        Height: =30
+                        HoverBorderColor: |-
+                            =ColorValue("#6b1d5e")
+                        HoverFill: |-
+                            =ColorValue("#6b1d5e")
+                        OnSelect: |-
+                            =Set(gblContractCompletionView,true
+                            )
+                        PressedBorderColor: |-
+                            =ColorValue("#6b1d5e")
+                        PressedFill: |-
+                            =ColorValue("#6b1d5e")
+                        Size: =11
+                        Text: ="Add User"
+                        Width: =Parent.Width*.12
+                        Y: =(Parent.Height-Self.Height)/2
+                        ZIndex: =1
+
                     btn_Reset_AS_1 As button:
                         BorderColor: |-
                             =ColorFade(ColorValue("#6b1d5e"), 70%)
@@ -105,7 +128,7 @@
                         Text: ="Reset"
                         Width: =Parent.Width*.12
                         Y: =(Parent.Height-Self.Height)/2
-                        ZIndex: =1
+                        ZIndex: =2
 
                     btn_Refresh_AS_1 As icon.Reload:
                         Color: =RGBA(107, 29, 94, 1)
@@ -114,6 +137,11 @@
                         OnSelect: =Refresh(CM_Users)
                         Width: =30
                         ZIndex: =3
+
+                    Container2 As groupContainer.manualLayoutContainer:
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        ZIndex: =4
 
             con_ContractsHeadlines_AS_1 As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
@@ -129,6 +157,15 @@
                 Width: =Parent.Width
                 ZIndex: =2
 
+                lbl_ContractsIdHeadline_AS_2 As label:
+                    Align: =Align.Center
+                    Color: =RGBA(107, 29, 94,1)
+                    FontWeight: =FontWeight.Bold
+                    Size: =11
+                    Text: =" PROFILE"
+                    Width: =Parent.Width*.1
+                    ZIndex: =1
+
                 lbl_ContractsIdHeadline_AS_1 As label:
                     Align: =Align.Center
                     Color: =RGBA(107, 29, 94,1)
@@ -136,7 +173,7 @@
                     Size: =11
                     Text: =" NAME"
                     Width: =Parent.Width*.15
-                    ZIndex: =1
+                    ZIndex: =2
 
                 lbl_ContractsNameHeadline_AS_1 As label:
                     Align: =Align.Center
@@ -145,7 +182,7 @@
                     Size: =11
                     Text: ="E - MAIL"
                     Width: =Parent.Width*.2
-                    ZIndex: =2
+                    ZIndex: =3
 
                 lbl_ContractsClientHeadline_AS_1 As label:
                     Align: =Align.Center
@@ -154,7 +191,7 @@
                     Size: =11
                     Text: ="ROLE"
                     Width: =Parent.Width*.15
-                    ZIndex: =3
+                    ZIndex: =4
 
                 lbl_ContractsServiceHeadline_AS_1 As label:
                     Align: =Align.Center
@@ -163,7 +200,7 @@
                     Size: =11
                     Text: ="SETTING"
                     Width: =Parent.Width*.2
-                    ZIndex: =4
+                    ZIndex: =5
 
             shp_Devider_AS_1 As rectangle:
                 AlignInContainer: =AlignInContainer.Center
@@ -262,8 +299,29 @@
                     Height: =20
                     Image: ='menu-icon-purple'
                     OnSelect: =Select(Parent)
-                    Width: =20
-                    X: =lbl_ContractsServiceHeadline_AS_1.X+110
+                    PaddingRight: =5
+                    Width: =lbl_ContractsServiceHeadline_AS_1.Width
+                    X: =lbl_ContractsServiceHeadline_AS_1.X
                     Y: =Parent.TemplateHeight/2-Self.Height/2
                     ZIndex: =9
+
+                Image4 As image:
+                    Height: =40
+                    Image: =If(IsBlank(ThisItem.User_Image),'USER-IMAGE',ThisItem.User_Image)
+                    OnSelect: =Select(Parent)
+                    RadiusBottomLeft: =50
+                    RadiusBottomRight: =50
+                    RadiusTopLeft: =50
+                    RadiusTopRight: =50
+                    Width: =40
+                    X: =40
+                    Y: =Parent.TemplateHeight/2-Self.Height/2
+                    ZIndex: =10
+
+    shp_BackgroundContractSingingPopUp_Css_1 As rectangle:
+        Fill: =RGBA(0, 0, 0, 0.42)
+        Height: =Parent.Height
+        Visible: =gblContractCompletionView
+        Width: =Parent.Width
+        ZIndex: =2
 
