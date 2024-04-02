@@ -114,16 +114,7 @@ App As appinfo:
         )
         )
         
-    StartScreen: |-
-        =/*Switch(
-            LookUp(CM_Users,Emaill=User().Email).Role,
-            "Supplier",
-            'Contract Summary Screen',
-            "Proponent",
-            'Contract Summary Screen',
-            "Procurement",
-            'Home Screen'
-        )*/
+    StartScreen: =
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:

@@ -274,6 +274,13 @@
                         Refresh(CM_Task);
                         Switch(
                             gblActiveUser,
+                           // "Admin",
+                        
+                        
+                        
+                        
+                        
+                        
                             "Supplier",
                             Set(
                                 gblTaskPatchDetail,
@@ -486,7 +493,7 @@
                                Vendor_Address:chartJS1.vendorAddress,
                                Title:chartJS1.vendorName*/
                                 }
-                            );
+                            )
                         );
                         //CM_PDFSummaryFlow.Run(lclSelectedTaskHomeScreen.ID);
                         Refresh(CM_Client_Contract);
