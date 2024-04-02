@@ -325,10 +325,11 @@
         ZIndex: =2
 
     Container4 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Semilight
         Fill: =RGBA(255, 255, 255, 1)
         Height: =Parent.Height
         Visible: =gblContractCompletionView
-        Width: =Parent.Width*.4
+        Width: =Parent.Width*.3
         X: =Parent.Width-Self.Width
         Y: =Parent.Height/2-Self.Height/2
         ZIndex: =3
@@ -355,12 +356,17 @@
             ZIndex: =2
 
         Container5 As groupContainer.verticalAutoLayoutContainer:
+            DropShadow: =DropShadow.None
             Height: =Parent.Height-lbl_ManagePeopleHeader_UMS_1.Height
             LayoutDirection: =LayoutDirection.Vertical
             LayoutGap: =10
             LayoutMode: =LayoutMode.Auto
             PaddingBottom: =10
             PaddingTop: =10
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
             Width: =Parent.Width
             Y: =lbl_ManagePeopleHeader_UMS_1.Height
             ZIndex: =3
@@ -368,10 +374,10 @@
             Image6 As image:
                 AlignInContainer: =AlignInContainer.Center
                 Image: =If(gblAddUpdateUser="Update",gal_Analytics_AS_1.Selected.User_Image,'USER-IMAGE')
-                RadiusBottomLeft: =50
-                RadiusBottomRight: =50
-                RadiusTopLeft: =50
-                RadiusTopRight: =50
+                RadiusBottomLeft: =60
+                RadiusBottomRight: =60
+                RadiusTopLeft: =60
+                RadiusTopRight: =60
                 ZIndex: =1
 
             Container6 As groupContainer.manualLayoutContainer:
@@ -413,11 +419,11 @@
                     PaddingTop: =0
                     Size: =11
                     Text: |-
-                        ="NAME : "
+                        ="NAME* : "
                     Width: =Parent.Width*.9
                     ZIndex: =1
 
-                TextInput2 As text:
+                txt_USerNameINput_UMS As text:
                     AlignInContainer: =AlignInContainer.Center
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderThickness: =0
@@ -450,11 +456,11 @@
                     PaddingTop: =0
                     Size: =11
                     Text: |-
-                        ="E - MAIL : "
+                        ="E - MAIL* : "
                     Width: =Parent.Width*.9
                     ZIndex: =1
 
-                TextInput2_1 As text:
+                txt_USeMailINput_UMS As text:
                     AlignInContainer: =AlignInContainer.Center
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderThickness: =0
@@ -486,11 +492,11 @@
                     PaddingTop: =0
                     Size: =11
                     Text: |-
-                        ="ROLE : "
+                        ="ROLE* : "
                     Width: =Parent.Width*.9
                     ZIndex: =1
 
-                Dropdown1 As dropdown:
+                drp_USerRoleINput_UMS As dropdown:
                     AlignInContainer: =AlignInContainer.Center
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderThickness: =0
@@ -536,7 +542,12 @@
                     HoverColor: =RGBA(107, 29, 94, 1)
                     HoverFill: |-
                         =ColorFade( ColorValue("#6b1d5e"),90%)
-                    OnSelect: =Set(gblContractCompletionView,false)
+                    OnSelect: |-
+                        =Set(gblContractCompletionView,false);
+                        Reset(txt_USerNameINput_UMS);
+                        Reset(txt_USeMailINput_UMS);
+                        Reset(AddMediaButton1);
+                        Reset(drp_USerRoleINput_UMS);
                     PressedBorderColor: |-
                         =ColorValue("#6b1d5e")
                     PressedColor: =Self.Color
@@ -551,6 +562,17 @@
                 btn_ADDUSER_UMS_2 As button:
                     BorderColor: |-
                         =ColorFade(ColorValue("#6b1d5e"), 70%)
+                    DisplayMode: |-
+                        =If(
+                            And(
+                               !IsBlank( txt_USerNameINput_UMS),
+                                !IsBlank( txt_USeMailINput_UMS),
+                                 !IsBlank(drp_USerRoleINput_UMS)
+                            ),
+                            DisplayMode.Edit,
+                            DisplayMode.Disabled
+                        
+                        )
                     Fill: =RGBA(107, 29, 94, 1)
                     HoverBorderColor: |-
                         =ColorValue("#6b1d5e")
@@ -563,9 +585,9 @@
                                 Defaults(CM_Users),
                                 {ID:gal_Analytics_AS_1.Selected.ID},
                                 {
-                                    Name:TextInput2.Text,
-                                    Emaill:TextInput2_1.Text,
-                                    Role:Dropdown1.SelectedText.Value,
+                                    Name:txt_USerNameINput_UMS.Text,
+                                    Emaill:txt_USeMailINput_UMS.Text,
+                                    Role:drp_USerRoleINput_UMS.SelectedText.Value,
                                     User_Image:AddMediaButton1
                         
                                 }
@@ -576,9 +598,9 @@
                                 CM_Users,
                                 Defaults(CM_Users),
                                 {
-                                    Name:TextInput2.Text,
-                                    Emaill:TextInput2_1.Text,
-                                    Role:Dropdown1.SelectedText.Value,
+                                    Name:txt_USerNameINput_UMS.Text,
+                                    Emaill:txt_USeMailINput_UMS.Text,
+                                    Role:drp_USerRoleINput_UMS.SelectedText.Value,
                                     User_Image:AddMediaButton1
                                     
                                 }
@@ -588,10 +610,10 @@
                         );
                         
                         
-                        Reset(TextInput2);
-                        Reset(TextInput2_1);
+                        Reset(txt_USerNameINput_UMS);
+                        Reset(txt_USeMailINput_UMS);
                         Reset(AddMediaButton1);
-                        Reset(Dropdown1);
+                        Reset(drp_USerRoleINput_UMS);
                                    
                     PressedBorderColor: |-
                         =ColorValue("#6b1d5e")

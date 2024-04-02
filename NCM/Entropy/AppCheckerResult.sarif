@@ -1644,19 +1644,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'User Management Screen'.Container4.Container5.Container7_2.Dropdown1.AccessibleLabel"
+                  "fullyQualifiedName": "'User Management Screen'.Container4.Container5.Container7_2.drp_USerRoleINput_UMS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'User Management Screen'.Container4.Container5.Container7_2.Dropdown1.AccessibleLabel",
+                  "fullyQualifiedName": "'User Management Screen'.Container4.Container5.Container7_2.drp_USerRoleINput_UMS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "User Management Screen",
-                "type": "'User Management Screen'.Container4.Container5.Container7_2.Dropdown1"
+                "type": "'User Management Screen'.Container4.Container5.Container7_2.drp_USerRoleINput_UMS"
               }
             }
           ],
@@ -1674,19 +1674,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'User Management Screen'.Container4.Container5.Container7_1.TextInput2_1.AccessibleLabel"
+                  "fullyQualifiedName": "'User Management Screen'.Container4.Container5.Container7_1.txt_USeMailINput_UMS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'User Management Screen'.Container4.Container5.Container7_1.TextInput2_1.AccessibleLabel",
+                  "fullyQualifiedName": "'User Management Screen'.Container4.Container5.Container7_1.txt_USeMailINput_UMS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "User Management Screen",
-                "type": "'User Management Screen'.Container4.Container5.Container7_1.TextInput2_1"
+                "type": "'User Management Screen'.Container4.Container5.Container7_1.txt_USeMailINput_UMS"
               }
             }
           ],
@@ -1704,19 +1704,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'User Management Screen'.Container4.Container5.Container7.TextInput2.AccessibleLabel"
+                  "fullyQualifiedName": "'User Management Screen'.Container4.Container5.Container7.txt_USerNameINput_UMS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'User Management Screen'.Container4.Container5.Container7.TextInput2.AccessibleLabel",
+                  "fullyQualifiedName": "'User Management Screen'.Container4.Container5.Container7.txt_USerNameINput_UMS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "User Management Screen",
-                "type": "'User Management Screen'.Container4.Container5.Container7.TextInput2"
+                "type": "'User Management Screen'.Container4.Container5.Container7.txt_USerNameINput_UMS"
               }
             }
           ],
