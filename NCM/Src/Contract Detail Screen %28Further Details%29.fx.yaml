@@ -189,7 +189,7 @@
                     Y: =0
                     ZIndex: =1
 
-            con_EditAndPreviewButtonPart_PCS_2 As groupContainer.horizontalAutoLayoutContainer:
+            con_EditAndPreviewButtonPart_CSD As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
@@ -209,7 +209,7 @@
                 Width: =Parent.Width
                 ZIndex: =3
 
-                btn_Back_PCS_2 As button:
+                btn_Back_CSD As button:
                     BorderColor: =RGBA(219, 200, 216, 1)
                     Color: =RGBA(107, 29, 94, 1)
                     Fill: =RGBA(255, 255, 255, 1)
@@ -224,7 +224,7 @@
                     Width: =Parent.Width*.07
                     ZIndex: =1
 
-                btn_CreateContract_PCS_2 As button:
+                btn_CreateContract_CSD As button:
                     BorderColor: =RGBA(107, 29, 94, 1)
                     Color: =RGBA(107, 29, 94, 1)
                     DisplayMode: |-

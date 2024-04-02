@@ -8427,19 +8427,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Contract Summary Screen'.Container7.Icon1.AccessibleLabel"
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.ico_CloseAuditSideBar_SCC.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Contract Summary Screen'.Container7.Icon1.AccessibleLabel",
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.ico_CloseAuditSideBar_SCC.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Contract Summary Screen",
-                "type": "'Contract Summary Screen'.Container7.Icon1"
+                "type": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.ico_CloseAuditSideBar_SCC"
               }
             }
           ],
@@ -8457,19 +8457,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Contract Summary Screen'.Container7.Icon1.TabIndex"
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.ico_CloseAuditSideBar_SCC.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Contract Summary Screen'.Container7.Icon1.TabIndex",
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.ico_CloseAuditSideBar_SCC.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Contract Summary Screen",
-                "type": "'Contract Summary Screen'.Container7.Icon1"
+                "type": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.ico_CloseAuditSideBar_SCC"
               }
             }
           ],
@@ -8487,19 +8487,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Contract Summary Screen'.Container7.Gallery9.AccessibleLabel"
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.'gal_AuditEvent&PerformedBY_CSS'.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Contract Summary Screen'.Container7.Gallery9.AccessibleLabel",
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.'gal_AuditEvent&PerformedBY_CSS'.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Contract Summary Screen",
-                "type": "'Contract Summary Screen'.Container7.Gallery9"
+                "type": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.'gal_AuditEvent&PerformedBY_CSS'"
               }
             }
           ],
@@ -8517,19 +8517,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Contract Summary Screen'.Container7.Gallery9.TabIndex"
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.'gal_AuditEvent&PerformedBY_CSS'.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Contract Summary Screen'.Container7.Gallery9.TabIndex",
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.'gal_AuditEvent&PerformedBY_CSS'.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Contract Summary Screen",
-                "type": "'Contract Summary Screen'.Container7.Gallery9"
+                "type": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.'gal_AuditEvent&PerformedBY_CSS'"
               }
             }
           ],
@@ -8547,19 +8547,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Contract Summary Screen'.Container7.Gallery9_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.gal_AuditData_CSS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Contract Summary Screen'.Container7.Gallery9_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.gal_AuditData_CSS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Contract Summary Screen",
-                "type": "'Contract Summary Screen'.Container7.Gallery9_1"
+                "type": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.gal_AuditData_CSS"
               }
             }
           ],
@@ -8577,19 +8577,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Contract Summary Screen'.Container7.Gallery9_1.TabIndex"
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.gal_AuditData_CSS.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Contract Summary Screen'.Container7.Gallery9_1.TabIndex",
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.gal_AuditData_CSS.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Contract Summary Screen",
-                "type": "'Contract Summary Screen'.Container7.Gallery9_1"
+                "type": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.gal_AuditData_CSS"
               }
             }
           ],

@@ -406,7 +406,7 @@
             Y: =lbl_Coc_CSS.Y
             ZIndex: =2
 
-    Container7 As groupContainer.manualLayoutContainer:
+    con_Main_AuditDetail_CSS As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.ExtraBold
         Fill: =RGBA(255, 255, 255, 1)
         Height: =Parent.Height
@@ -419,7 +419,7 @@
         X: =Parent.Width-Self.Width
         ZIndex: =12
 
-        Icon1 As icon.Cancel:
+        ico_CloseAuditSideBar_SCC As icon.Cancel:
             Color: =RGBA(107, 29, 94, 1)
             Height: =30
             Icon: =Icon.Cancel
@@ -433,18 +433,18 @@
             Y: =6
             ZIndex: =1
 
-        Gallery9 As gallery.variableTemplateHeightGallery:
+        "'gal_AuditEvent&PerformedBY_CSS' As gallery.variableTemplateHeightGallery":
             DelayItemLoading: =true
-            Height: =Parent.Height-(Icon1.Height*2)-20
+            Height: =Parent.Height-(ico_CloseAuditSideBar_SCC.Height*2)-20
             Items: =Filter(CM_Audit_Table,Contract_ID_Fk=lclSelectedContract.ID)
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplateSize: =60
             Width: =Parent.Width/2
-            Y: =(Icon1.Height*2)+20
+            Y: =(ico_CloseAuditSideBar_SCC.Height*2)+20
             ZIndex: =2
 
-            Container12 As groupContainer.horizontalAutoLayoutContainer:
+            con_AuditDataPE_CSS As groupContainer.horizontalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
                 Fill: |
                     =If(ThisItem.IsSelected,RGBA(237, 237, 237, 0.63),RGBA(255, 255, 255, 0.63))
@@ -454,8 +454,8 @@
                 Width: =Parent.TemplateWidth
                 ZIndex: =1
 
-                Container13 As groupContainer.verticalAutoLayoutContainer:
-                    AlignInContainer: =AlignInContainer.Center
+                con_AuditPerformedBY_CSS As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     DropShadow: =DropShadow.None
                     FillPortions: =0
                     Height: =Parent.Height
@@ -466,7 +466,7 @@
                     Width: =Parent.Width/1.5
                     ZIndex: =1
 
-                    Label14 As label:
+                    lbl_con_AuditPerformedBY_CSS As label:
                         FontWeight: =FontWeight.Bold
                         Height: =Parent.Height/2
                         PaddingLeft: =26
@@ -475,8 +475,8 @@
                         Width: =Parent.Width
                         ZIndex: =1
 
-                    Container14 As groupContainer.horizontalAutoLayoutContainer:
-                        AlignInContainer: =AlignInContainer.Center
+                    con_AuditTime_CSS As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
                         DropShadow: =DropShadow.None
                         FillPortions: =0
                         Height: =Parent.Height/2
@@ -487,16 +487,14 @@
                         Width: =Parent.Width
                         ZIndex: =2
 
-                        Image5 As image:
-                            AlignInContainer: =AlignInContainer.Center
+                        img_AuditDataCalender_CSS As image:
                             Height: =Parent.Height-5
                             Image: ='calender-Black'
                             PaddingBottom: =5
                             Width: =Parent.Height-5
                             ZIndex: =1
 
-                        Label15 As label:
-                            AlignInContainer: =AlignInContainer.Center
+                        lbl_TimeAuditPerformedWhen_CSS As label:
                             Color: =RGBA(163, 163, 163, 1)
                             Fill: =RGBA(150, 150, 150, 0)
                             Height: =Parent.Height
@@ -504,11 +502,11 @@
                             Size: =9
                             Text: |-
                                 =Text(ThisItem.Created,"dd-mmm")&" at "&Text(ThisItem.Created,"hh:mm am/pm")
-                            Width: =Parent.Width-Image5.Width*2
+                            Width: =Parent.Width-img_AuditDataCalender_CSS.Width*2
                             ZIndex: =2
 
-                Container16 As groupContainer.verticalAutoLayoutContainer:
-                    AlignInContainer: =AlignInContainer.Center
+                con_MainAuditEvent_CSS As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     DropShadow: =DropShadow.None
                     FillPortions: =0
                     Height: =Parent.Height
@@ -518,10 +516,10 @@
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
-                    Width: =Parent.Width-Container13.Width
+                    Width: =Parent.Width-con_AuditPerformedBY_CSS.Width
                     ZIndex: =2
 
-                    Button2 As button:
+                    btn_Event_CSS As button:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =DisplayMode.View
                         Fill: =RGBA(250, 237, 248, 1)
@@ -532,7 +530,7 @@
                         Width: =90
                         ZIndex: =1
 
-            Rectangle1_1 As rectangle:
+            shp_BottomFillerAuditDataPE_CSS As rectangle:
                 Fill: =RGBA(237, 237, 237, 1)
                 Height: =2
                 OnSelect: =Select(Parent)
@@ -541,28 +539,28 @@
                 Y: =Parent.TemplateHeight-Self.Height
                 ZIndex: =2
 
-        Gallery9_1 As gallery.variableTemplateHeightGallery:
+        gal_AuditData_CSS As gallery.variableTemplateHeightGallery:
             DelayItemLoading: =true
-            Height: =Gallery9.Height
+            Height: ='gal_AuditEvent&PerformedBY_CSS'.Height
             Items: |
                 =
-                Table(ParseJSON(Gallery9.Selected.Json_Object))
+                Table(ParseJSON('gal_AuditEvent&PerformedBY_CSS'.Selected.Json_Object))
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplateSize: =60
-            Width: =Gallery9.Width
-            X: =Gallery9.Width
-            Y: =Gallery9.Y
+            Width: ='gal_AuditEvent&PerformedBY_CSS'.Width
+            X: ='gal_AuditEvent&PerformedBY_CSS'.Width
+            Y: ='gal_AuditEvent&PerformedBY_CSS'.Y
             ZIndex: =3
 
-            Container11_2 As groupContainer.horizontalAutoLayoutContainer:
+            con_AuditDataJson_CSS As groupContainer.horizontalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
                 Height: =Parent.TemplateHeight-2
                 LayoutMode: =LayoutMode.Auto
                 Width: =Parent.TemplateWidth
                 ZIndex: =1
 
-                Label13_5 As label:
+                lbl_FieldValue_CSS As label:
                     Height: =Parent.Height
                     PaddingLeft: =15
                     Size: =10
@@ -570,22 +568,22 @@
                     Width: =Parent.Width/3
                     ZIndex: =1
 
-                Label13_6 As label:
-                    Height: =Label13_5.Height
+                lbl_CurrentValuejson_CSS As label:
+                    Height: =lbl_FieldValue_CSS.Height
                     Size: =10
                     Text: =Text(ThisItem.Value.currentValue)
-                    Width: =Label13_5.Width
+                    Width: =lbl_FieldValue_CSS.Width
                     ZIndex: =2
 
-                Label13_7 As label:
-                    Height: =Label13_5.Height
+                lbl_PrevValuejson_CSS As label:
+                    Height: =lbl_FieldValue_CSS.Height
                     PaddingLeft: =25
                     Size: =10
                     Text: =Text(ThisItem.Value.PreviousValue)
-                    Width: =Label13_5.Width
+                    Width: =lbl_FieldValue_CSS.Width
                     ZIndex: =3
 
-            Rectangle1 As rectangle:
+            shp_BottomFillerAuditData_CSS As rectangle:
                 Fill: =RGBA(237, 237, 237, 1)
                 Height: =2
                 OnSelect: =Select(Parent)
@@ -594,16 +592,16 @@
                 Y: =Parent.TemplateHeight-Self.Height
                 ZIndex: =2
 
-        Container10 As groupContainer.horizontalAutoLayoutContainer:
+        con_AuditHeader_CSS As groupContainer.horizontalAutoLayoutContainer:
             DropShadow: =DropShadow.None
-            Height: =Parent.Height-Gallery9.Height-Icon1.Height-10
+            Height: =Parent.Height-'gal_AuditEvent&PerformedBY_CSS'.Height-ico_CloseAuditSideBar_SCC.Height-10
             LayoutMode: =LayoutMode.Auto
             Width: =Parent.Width
-            Y: =Icon1.Height+6
+            Y: =ico_CloseAuditSideBar_SCC.Height+6
             ZIndex: =4
 
-            Container11 As groupContainer.horizontalAutoLayoutContainer:
-                AlignInContainer: =AlignInContainer.Center
+            con_PerformedBY_CSS As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =Parent.Height
@@ -615,7 +613,7 @@
                 Width: =Parent.Width/2-10
                 ZIndex: =1
 
-                Label13 As label:
+                lbl_PerformedBY_CSS As label:
                     Color: =RGBA(153, 153, 153, 1)
                     FontWeight: =FontWeight.Bold
                     PaddingLeft: =25
@@ -623,8 +621,8 @@
                     Text: ="Performed by"
                     ZIndex: =1
 
-                Container16_1 As groupContainer.verticalAutoLayoutContainer:
-                    AlignInContainer: =AlignInContainer.Center
+                con_Event_CSS As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     DropShadow: =DropShadow.None
                     FillPortions: =0
                     Height: =Parent.Height
@@ -634,10 +632,10 @@
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
-                    Width: =Parent.Width-Container13.Width
+                    Width: =Parent.Width-con_AuditPerformedBY_CSS.Width
                     ZIndex: =3
 
-                    Label13_1 As label:
+                    lbl_Event_CSS As label:
                         Align: =Align.Center
                         Color: =RGBA(153, 153, 153, 1)
                         FontWeight: =FontWeight.Bold
@@ -648,11 +646,11 @@
                         PaddingTop: =0
                         Size: =12
                         Text: ="Event"
-                        Width: =Container16.Width
+                        Width: =con_MainAuditEvent_CSS.Width
                         ZIndex: =1
 
-            Container11_1 As groupContainer.horizontalAutoLayoutContainer:
-                AlignInContainer: =AlignInContainer.Center
+            con_AuditHeader_FCP_CSS As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =Parent.Height
@@ -662,7 +660,7 @@
                 Width: =Parent.Width/2
                 ZIndex: =2
 
-                Label13_2 As label:
+                lbl_Field_CSS As label:
                     Color: =RGBA(153, 153, 153, 1)
                     FontWeight: =FontWeight.Bold
                     Height: =Parent.Height
@@ -672,22 +670,22 @@
                     Width: =Parent.Width/3
                     ZIndex: =1
 
-                Label13_3 As label:
+                lbl_CurrentValue_CSS As label:
                     Color: =RGBA(153, 153, 153, 1)
                     FontWeight: =FontWeight.Bold
-                    Height: =Label13_2.Height
+                    Height: =lbl_Field_CSS.Height
                     Size: =12
                     Text: ="Current Value"
-                    Width: =Label13_2.Width
+                    Width: =lbl_Field_CSS.Width
                     ZIndex: =2
 
-                Label13_4 As label:
+                lbl_PreviousValue_CSS As label:
                     Color: =RGBA(153, 153, 153, 1)
                     FontWeight: =FontWeight.Bold
-                    Height: =Label13_2.Height
+                    Height: =lbl_Field_CSS.Height
                     PaddingLeft: =25
                     Size: =12
                     Text: ="Previous Value"
-                    Width: =Label13_2.Width
+                    Width: =lbl_Field_CSS.Width
                     ZIndex: =3
 
