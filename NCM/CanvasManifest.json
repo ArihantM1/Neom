@@ -101,7 +101,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 107,
+    "BindingErrorCount": 3,
     "ContainsThirdPartyPcfControls": true,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -142,8 +142,7 @@
     "Contract Detail Screen (Further Details)",
     "Contract Summary Screen",
     "Preview Contract Screen_3",
-    "Preview Contract Screen(Supplier&Proponent)",
     "Testing Screen",
-    "Testing Screen_1"
+    "User Management Screen"
   ]
 }
