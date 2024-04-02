@@ -859,7 +859,15 @@
                         )
                     Size: =10
                     Text: ="Next"
-                    Tooltip: =If(Self.DisplayMode="DisplayMode.Disabled","Please Fill All The Details !",{})
+                    Tooltip: |-
+                        =If(  !IsBlank(drp_Client_CCS.SelectedText)
+                            And !IsBlank(drp_ServiceType_CCS.SelectedText)
+                            And !IsBlank(drp_Services_CCS.SelectedText)
+                            And !IsBlank(lblContractName_CCS.Text)
+                            And !IsBlank(drp_ApplicableTo_CCS.SelectedText)
+                            And !IsBlank(dte_StartDate_CCS.SelectedDate)
+                            And !IsBlank(dte_EndDate_CCS.SelectedDate)
+                            And !IsBlank(drp_Currency_CCS.SelectedText),"Please Fill All The Details !","Submit Details")
                     Width: =Parent.Width*.07
                     ZIndex: =3
 
