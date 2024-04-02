@@ -423,6 +423,7 @@
             Items: =SortByColumns(Filter(CM_Audit_Table,Contract_ID_Fk=lclSelectedContract.ID),"Created",SortOrder.Descending)
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
+            OnSelect: =
             TemplateSize: =60
             Width: =Parent.Width/2
             Y: =(ico_CloseAuditSideBar_CSS.Height*2)+50
@@ -555,9 +556,10 @@
                 lbl_CurrentValuejson_CSS As label:
                     Height: =lbl_FieldValue_CSS.Height
                     Size: =10
-                    Text: |-
+                    Text: |+
                         =//If("-" in Text(ThisItem.Value.currentValue) || "/" in Text(ThisItem.Value.currentValue),DateTimeValue(ThisItem.Value),Text(ThisItem.Value.currentValue))
                         Text(ThisItem.Value.currentValue)
+                        
                     Width: =lbl_FieldValue_CSS.Width
                     ZIndex: =2
 
