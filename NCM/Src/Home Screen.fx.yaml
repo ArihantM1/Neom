@@ -744,11 +744,13 @@
                                 If(
                                     ThisItem.Coc_stage = 4,
                                     Set(gblContractCompletionView,true)&&Set(gblCOCSigningData,gal_AllContractsDetailView_HS.Selected),
+                                    ThisItem.Coc_stage>=5,{}, 
                                     Navigate(
                                         'Preview Contract Screen_1',
                                         ScreenTransition.Fade,
                                         {lclSelectedTaskHomeScreen: gal_AllContractsDetailView_HS.Selected}
                                     )
+                                   
                                 )
                             PaddingLeft: =0
                             Size: =11
@@ -879,6 +881,7 @@
                         gblTaskPatchDetail,
                         Patch(
                             CM_Task,
+                            {ID:LookUp(CM_ContractDetails,ID=gblCOCSigningData.ID).Task_ID_Fk.Id},
                             {
                                 Contract_Id: gblCOCSigningData.ID,
                                 Task_Name: "-",
