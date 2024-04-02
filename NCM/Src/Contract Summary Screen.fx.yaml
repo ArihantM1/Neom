@@ -8,7 +8,7 @@
         Y: =HeaderCMP_withoutNavbar_CSS.Y+HeaderCMP_withoutNavbar_CSS.Height+Parent.Height*.01-5
         ZIndex: =1
 
-        MilestoneHorizontal_1 As MilestoneHorizontal:
+        cmp_MilestoneCOCStage_CSS As MilestoneHorizontal:
             com_Height: =Parent.Height
             com_MileStone_Completed_Color: =RGBA(120, 31, 105, 1)
             com_MileStone_Font_color: =Color.Black
@@ -18,7 +18,7 @@
             com_MileStoneStage_Font_Size: =If(Self.Height<116,10,11)
             com_Width: =Parent.Width
             Height: =Parent.Height
-            Width: =MilestoneHorizontal_1.com_Width
+            Width: =cmp_MilestoneCOCStage_CSS.com_Width
 
     con_Task_CSS As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
@@ -47,12 +47,12 @@
                 Italic: =true
                 Size: =9
                 Text: ="Your task will appear here"
-                Visible: =Gallery2.AllItemsCount<1
+                Visible: =gal_COCTask_CSS.AllItemsCount<1
                 Width: =Parent.Width
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =2
 
-            Gallery2 As gallery.variableTemplateHeightGallery:
+            gal_COCTask_CSS As gallery.variableTemplateHeightGallery:
                 DelayItemLoading: =true
                 Height: =Parent.Height-shp_MyTaskTopFiller_CSS.Height
                 Items: |-
@@ -78,12 +78,12 @@
                             {lclSelectedTaskHomeScreen: gal_AllContractsDetailView_HS.Selected}
                         )
                     )
-                TemplateSize: =Gallery2.Height*.2
+                TemplateSize: =gal_COCTask_CSS.Height*.2
                 Width: =Parent.Width
                 Y: =shp_MyTaskTopFiller_CSS.Height
                 ZIndex: =3
 
-                Label7 As label:
+                lbl_COCtaskName_CSS As label:
                     FontWeight: =FontWeight.Semibold
                     Height: =Parent.TemplateHeight
                     OnSelect: =Select(Parent)
@@ -92,15 +92,15 @@
                     Width: =Parent.TemplateWidth*.6
                     ZIndex: =1
 
-                Label7_1 As label:
+                lbl_COCtaskID_CSS As label:
                     Align: =Align.Center
                     FontWeight: =FontWeight.Bold
                     Height: =Parent.TemplateHeight-7
                     OnSelect: =Select(Parent)
                     Size: =8
                     Text: =ThisItem.Contract_Id
-                    Width: =Parent.TemplateWidth-Label7.Width-20
-                    X: =Label7.Width+10
+                    Width: =Parent.TemplateWidth-lbl_COCtaskName_CSS.Width-20
+                    X: =lbl_COCtaskName_CSS.Width+10
                     Y: =Parent.TemplateHeight/2-Self.Height/2
                     ZIndex: =2
 
@@ -118,18 +118,18 @@
                 Width: =Parent.Width
                 ZIndex: =1
 
-            Gallery1 As gallery.variableTemplateHeightGallery:
+            gal_COCDownloadHIstory_CSS As gallery.variableTemplateHeightGallery:
                 DelayItemLoading: =true
                 Height: =Parent.Height-shp_DownloadFiller_CSS.Height
                 Items: =Filter(CM_COC_Download_History,Contract_Id_Fk=lclSelectedContract.ID)
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
-                TemplateSize: =Gallery1.Height*.2
+                TemplateSize: =gal_COCDownloadHIstory_CSS.Height*.2
                 Width: =Parent.Width
                 Y: =shp_DownloadFiller_CSS.Height
                 ZIndex: =2
 
-                Container1 As groupContainer.horizontalAutoLayoutContainer:
+                con_COCDownloadHIstory_CSS As groupContainer.horizontalAutoLayoutContainer:
                     Height: =Parent.TemplateHeight
                     LayoutAlignItems: =LayoutAlignItems.Center
                     LayoutMode: =LayoutMode.Auto
@@ -137,7 +137,7 @@
                     Width: =Parent.TemplateWidth
                     ZIndex: =1
 
-                    Image3 As image:
+                    img_Userimage_CSS As image:
                         Height: =Parent.Height*.9
                         Image: |-
                             =
@@ -149,8 +149,8 @@
                         Width: =Parent.Height*.9
                         ZIndex: =1
 
-                    Container2 As groupContainer.verticalAutoLayoutContainer:
-                        AlignInContainer: =AlignInContainer.Start
+                    con_Username_CSS As groupContainer.verticalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
                         DropShadow: =DropShadow.None
                         FillPortions: =0
                         Height: =Parent.Height
@@ -158,22 +158,20 @@
                         LayoutMinHeight: =100
                         LayoutMinWidth: =250
                         LayoutMode: =LayoutMode.Auto
-                        Width: =Parent.Width-Image3.Width-5
+                        Width: =Parent.Width-img_Userimage_CSS.Width-5
                         ZIndex: =2
 
-                        Label4 As label:
-                            AlignInContainer: =AlignInContainer.Start
+                        lbl_Username_CSS As label:
                             FontWeight: =FontWeight.Semibold
                             Height: =Parent.Height*.5
                             PaddingBottom: =0
                             PaddingLeft: =10
                             Size: =10
                             Text: =ThisItem.Name
-                            Width: =Parent.Width-Image3.Width-10
+                            Width: =Parent.Width-img_Userimage_CSS.Width-10
                             ZIndex: =1
 
-                        Label4_1 As label:
-                            AlignInContainer: =AlignInContainer.Start
+                        lbl_Downloaddatetime_CSS As label:
                             FontWeight: =FontWeight.Lighter
                             Height: =Parent.Height*.5
                             PaddingBottom: =0
@@ -182,16 +180,16 @@
                             Size: =8
                             Text: |
                                 =Text(ThisItem.Created, "dd - mmm - yy") & "  "& Text(ThisItem.Created, "hh:mm AM/PM")
-                            Width: =Parent.Width-Image3.Width-10
+                            Width: =Parent.Width-img_Userimage_CSS.Width-10
                             ZIndex: =2
 
-            Label5 As label:
+            lbl_COCHistoryMsg_CSS As label:
                 Align: =Align.Center
                 FontWeight: =FontWeight.Bold
                 Height: =Parent.Height
                 Size: =8
                 Text: ="No Download History is available"
-                Visible: =Gallery1.AllItemsCount<1
+                Visible: =gal_COCDownloadHIstory_CSS.AllItemsCount<1
                 Width: =Parent.Width
                 X: =Parent.Width/2-Self.Width/2
                 Y: =Parent.Height/2-Self.Height/2
@@ -243,7 +241,7 @@
         Width: =Parent.Width
         ZIndex: =6
 
-    PdfViewer1 As pdfViewer:
+    pdf_SummaryView_CSS As pdfViewer:
         BorderColor: =RGBA(0, 0, 0, 1)
         Document: |-
             =//First(Filter(CM_COC_Summary,CM_CONTRACT_DETAIL_ID_FK=gal_AllContractsDetailView_HS.Selected.ID)).DATA_URI
@@ -264,7 +262,7 @@
         Width: =Parent.Width
         ZIndex: =8
 
-    Container6 As groupContainer.manualLayoutContainer:
+    con_Signing_COCViewer_CSS As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
         Height: =Parent.Height*.85
         Visible: =gblContractCompletionView
@@ -273,19 +271,19 @@
         Y: =Parent.Height/2-Self.Height/2
         ZIndex: =9
 
-        Icon2 As icon.Cancel:
+        ico_CloseSigningCOCView_CSS As icon.Cancel:
             Color: =RGBA(0, 0, 0, 1)
             Height: =30
             Icon: =Icon.Cancel
             OnSelect: |-
                 =Set(gblContractCompletionView,false);
-                Reset(Checkbox1)
+                Reset(chk_ConformationTosignCOC_CSS)
             Width: =30
             X: =Parent.Width-Self.Width-5
             Y: =5
             ZIndex: =1
 
-        Checkbox1 As checkbox:
+        chk_ConformationTosignCOC_CSS As checkbox:
             BorderColor: =RGBA(0, 0, 0, 0)
             CheckboxBorderColor: =RGBA(89, 22, 110, 1)
             CheckmarkFill: =RGBA(107, 25, 120, 1)
@@ -297,8 +295,8 @@
             Y: =Parent.Height-Self.Height*2.5
             ZIndex: =2
 
-        Button1 As button:
-            DisplayMode: =If(Checkbox1.Value,DisplayMode.Edit,DisplayMode.Disabled)
+        btn_SubmitSignCOC_CSS As button:
+            DisplayMode: =If(chk_ConformationTosignCOC_CSS.Value,DisplayMode.Edit,DisplayMode.Disabled)
             Fill: =RGBA(107, 29, 94, 1)
             FontWeight: =FontWeight.Bold
             HoverBorderColor: =
@@ -337,7 +335,7 @@
                 
                 Set(gblTaskPatchDetail,Blank());
                 Set(gblCOCSigningData,Blank());
-                Reset(Checkbox1);
+                Reset(chk_ConformationTosignCOC_CSS);
                 Set(gblContractCompletionView,false)
             PressedBorderColor: =
             PressedColor: =Self.Color
@@ -350,19 +348,19 @@
             Y: =Parent.Height-Self.Height*1.5
             ZIndex: =3
 
-    PdfViewer2 As pdfViewer:
+    pdf_COCViewer_CSS As pdfViewer:
         BorderColor: =RGBA(0, 0, 0, 1)
         DisplayMode: =DisplayMode.View
         Document: =LookUp(Documents,ID=gal_AllContractsDetailView_HS.Selected.CM_PDF_FILE_ID).DataUri
         Fill: =RGBA(0, 0, 0, 0.5)
-        Height: =Container6.Height*.75
+        Height: =con_Signing_COCViewer_CSS.Height*.75
         Visible: =gblContractCompletionView
-        Width: =Container6.Width
+        Width: =con_Signing_COCViewer_CSS.Width
         X: =Parent.Width/2-Self.Width/2
         Y: =Parent.Height/2-Self.Height/2-45
         ZIndex: =10
 
-    Container15 As groupContainer.horizontalAutoLayoutContainer:
+    "'con_Donwload&AuditBtn_CSS' As groupContainer.horizontalAutoLayoutContainer":
         DropShadow: =DropShadow.None
         Height: =30
         LayoutAlignItems: =LayoutAlignItems.Center
@@ -373,7 +371,7 @@
         Y: =con_Task_CSS.Y-40
         ZIndex: =11
 
-        Image4 As image:
+        img_AuditButton_CSS As image:
             Height: =30
             Image: ='history icon'
             OnSelect: =Set(gblViewAuditHistory,true)
@@ -419,7 +417,7 @@
         X: =Parent.Width-Self.Width
         ZIndex: =12
 
-        ico_CloseAuditSideBar_SCC As icon.Cancel:
+        ico_CloseAuditSideBar_CSS As icon.Cancel:
             Color: =RGBA(107, 29, 94, 1)
             Height: =30
             Icon: =Icon.Cancel
@@ -435,13 +433,13 @@
 
         "'gal_AuditEvent&PerformedBY_CSS' As gallery.variableTemplateHeightGallery":
             DelayItemLoading: =true
-            Height: =Parent.Height-(ico_CloseAuditSideBar_SCC.Height*2)-20
+            Height: =Parent.Height-(ico_CloseAuditSideBar_CSS.Height*2)-20
             Items: =Filter(CM_Audit_Table,Contract_ID_Fk=lclSelectedContract.ID)
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplateSize: =60
             Width: =Parent.Width/2
-            Y: =(ico_CloseAuditSideBar_SCC.Height*2)+20
+            Y: =(ico_CloseAuditSideBar_CSS.Height*2)+20
             ZIndex: =2
 
             con_AuditDataPE_CSS As groupContainer.horizontalAutoLayoutContainer:
@@ -594,10 +592,10 @@
 
         con_AuditHeader_CSS As groupContainer.horizontalAutoLayoutContainer:
             DropShadow: =DropShadow.None
-            Height: =Parent.Height-'gal_AuditEvent&PerformedBY_CSS'.Height-ico_CloseAuditSideBar_SCC.Height-10
+            Height: =Parent.Height-'gal_AuditEvent&PerformedBY_CSS'.Height-ico_CloseAuditSideBar_CSS.Height-10
             LayoutMode: =LayoutMode.Auto
             Width: =Parent.Width
-            Y: =ico_CloseAuditSideBar_SCC.Height+6
+            Y: =ico_CloseAuditSideBar_CSS.Height+6
             ZIndex: =4
 
             con_PerformedBY_CSS As groupContainer.horizontalAutoLayoutContainer:
