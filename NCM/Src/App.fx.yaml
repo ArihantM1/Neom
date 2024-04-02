@@ -86,6 +86,7 @@ App As appinfo:
         Set(VarContractDetailsPatch,Blank());
         Set(VarGetPDFID,Blank());
         Set(VarLoggedInUser,Blank());
+        Set(gblCOCSigningData,Blank());
         Set(UserRole,
         Switch(
             LookUp(CM_Users,Emaill=User().Email).Role,

@@ -743,7 +743,7 @@
                                 //Select(Parent)
                                 If(
                                     ThisItem.Coc_stage = 4,
-                                    Set(gblContractCompletionView,true),
+                                    Set(gblContractCompletionView,true)&&Set(gblCOCSigningData,gal_AllContractsDetailView_HS.Selected),
                                     Navigate(
                                         'Preview Contract Screen_1',
                                         ScreenTransition.Fade,
@@ -875,7 +875,31 @@
             HoverColor: =RGBA(107, 29, 94, 1)
             HoverFill: =Self.Color
             OnSelect: |-
-                =
+                = Set(
+                        gblTaskPatchDetail,
+                        Patch(
+                            CM_Task,
+                            {
+                                Contract_Id: gblCOCSigningData.ID,
+                                Task_Name: "-",
+                                Task_Status: "Complete",
+                                Task_Assigned_to: "-"
+                            }
+                        )
+                    );
+                    
+                    Patch(
+                        CM_ContractDetails,
+                        {ID: gblCOCSigningData.ID},
+                        {
+                            
+                            Coc_stage: 5,
+                            Task_ID_Fk: {
+                                Id: gblTaskPatchDetail.ID,
+                                Value: gblTaskPatchDetail.Task_Name
+                            }
+                        }
+                    );
                 
                 
                 
@@ -887,6 +911,8 @@
                 
                 Reset(chk_ConfomationCOCSigning_HS);
                 Set(gblContractCompletionView,false);
+                Set(gblTaskPatchDetail,Blank());
+                Set(gblCOCSigningData,Blank())
             PressedBorderColor: =
             PressedColor: =Self.Color
             PressedFill: =Self.Fill

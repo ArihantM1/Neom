@@ -316,7 +316,39 @@
             HoverColor: =RGBA(107, 29, 94, 1)
             HoverFill: =Self.Color
             OnSelect: |-
-                =Reset(Checkbox1);
+                = Set(
+                        gblTaskPatchDetail,
+                        Patch(
+                            CM_Task,
+                            {
+                                Contract_Id: lclSelectedContract.ID,
+                                Task_Name: "-",
+                                Task_Status: "Complete",
+                                Task_Assigned_to: "-"
+                            }
+                        )
+                    );
+                    
+                    Patch(
+                        CM_ContractDetails,
+                        {ID: lclSelectedContract.ID},
+                        {
+                            
+                            Coc_stage: 5,
+                            Task_ID_Fk: {
+                                Id: gblTaskPatchDetail.ID,
+                                Value: gblTaskPatchDetail.Task_Name
+                            }
+                        }
+                    );
+                
+                
+                
+                
+                
+                Set(gblTaskPatchDetail,Blank());
+                Set(gblCOCSigningData,Blank());
+                Reset(Checkbox1);
                 Set(gblContractCompletionView,false)
             PressedBorderColor: =
             PressedColor: =Self.Color
