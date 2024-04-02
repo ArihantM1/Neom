@@ -88,6 +88,9 @@ App As appinfo:
         Set(VarLoggedInUser,Blank());
         Set(gblCOCSigningData,Blank());
         Set(gblAddUpdateUser,Blank());
+        Set(gblUserManagementSidebar,Blank());
+        
+        
         Set(UserRole,
         Switch(
             LookUp(CM_Users,Emaill=User().Email).Role,

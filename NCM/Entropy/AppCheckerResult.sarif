@@ -4044,36 +4044,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.VarGetPDFID"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.VarGetPDFID",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "VarGetPDFID",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.ContractData"
                 }
               ],
@@ -4205,6 +4175,36 @@
               },
               "properties": {
                 "member": "lclSelectedContracts",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.VarGetPDFID"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.VarGetPDFID",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "VarGetPDFID",
                 "module": "App",
                 "type": "App"
               }
