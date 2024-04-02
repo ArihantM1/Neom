@@ -417,30 +417,16 @@
         X: =Parent.Width-Self.Width
         ZIndex: =12
 
-        ico_CloseAuditSideBar_CSS As icon.Cancel:
-            Color: =RGBA(107, 29, 94, 1)
-            Height: =30
-            Icon: =Icon.Cancel
-            OnSelect: =Set(gblViewAuditHistory,false)
-            PaddingBottom: =5
-            PaddingLeft: =5
-            PaddingRight: =5
-            PaddingTop: =5
-            Width: =30
-            X: =Parent.Width-Self.Width-6
-            Y: =6
-            ZIndex: =1
-
         "'gal_AuditEvent&PerformedBY_CSS' As gallery.variableTemplateHeightGallery":
             DelayItemLoading: =true
-            Height: =Parent.Height-(ico_CloseAuditSideBar_CSS.Height*2)-20
-            Items: =Filter(CM_Audit_Table,Contract_ID_Fk=lclSelectedContract.ID)
+            Height: =Parent.Height-(ico_CloseAuditSideBar_CSS.Height*2)-50
+            Items: =SortByColumns(Filter(CM_Audit_Table,Contract_ID_Fk=lclSelectedContract.ID),"Created",SortOrder.Descending)
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplateSize: =60
             Width: =Parent.Width/2
-            Y: =(ico_CloseAuditSideBar_CSS.Height*2)+20
-            ZIndex: =2
+            Y: =(ico_CloseAuditSideBar_CSS.Height*2)+50
+            ZIndex: =1
 
             con_AuditDataPE_CSS As groupContainer.horizontalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
@@ -549,7 +535,7 @@
             Width: ='gal_AuditEvent&PerformedBY_CSS'.Width
             X: ='gal_AuditEvent&PerformedBY_CSS'.Width
             Y: ='gal_AuditEvent&PerformedBY_CSS'.Y
-            ZIndex: =3
+            ZIndex: =2
 
             con_AuditDataJson_CSS As groupContainer.horizontalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
@@ -569,7 +555,9 @@
                 lbl_CurrentValuejson_CSS As label:
                     Height: =lbl_FieldValue_CSS.Height
                     Size: =10
-                    Text: =Text(ThisItem.Value.currentValue)
+                    Text: |-
+                        =//If("-" in Text(ThisItem.Value.currentValue) || "/" in Text(ThisItem.Value.currentValue),DateTimeValue(ThisItem.Value),Text(ThisItem.Value.currentValue))
+                        Text(ThisItem.Value.currentValue)
                     Width: =lbl_FieldValue_CSS.Width
                     ZIndex: =2
 
@@ -592,11 +580,11 @@
 
         con_AuditHeader_CSS As groupContainer.horizontalAutoLayoutContainer:
             DropShadow: =DropShadow.None
-            Height: =Parent.Height-'gal_AuditEvent&PerformedBY_CSS'.Height-ico_CloseAuditSideBar_CSS.Height-10
+            Height: =Parent.Height-'gal_AuditEvent&PerformedBY_CSS'.Height-ico_CloseAuditSideBar_CSS.Height-40
             LayoutMode: =LayoutMode.Auto
             Width: =Parent.Width
-            Y: =ico_CloseAuditSideBar_CSS.Height+6
-            ZIndex: =4
+            Y: =ico_CloseAuditSideBar_CSS.Height+36
+            ZIndex: =3
 
             con_PerformedBY_CSS As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
@@ -686,4 +674,36 @@
                     Text: ="Previous Value"
                     Width: =lbl_Field_CSS.Width
                     ZIndex: =3
+
+        shp_AuditViewFiller_CSS As rectangle:
+            Fill: =RGBA(186, 186, 186, 1)
+            Height: =2
+            Width: =Parent.Width
+            Y: =lbl_AuditViewHeader_CSS.Height
+            ZIndex: =4
+
+        lbl_AuditViewHeader_CSS As label:
+            Color: =RGBA(112, 112, 112, 1)
+            Fill: =RGBA(255, 247, 254, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =Parent.Height- con_AuditHeader_CSS.Height-gal_AuditData_CSS.Height-9
+            PaddingLeft: =35
+            Size: =16
+            Text: ="Audit View"
+            Width: =Parent.Width
+            ZIndex: =5
+
+        ico_CloseAuditSideBar_CSS As icon.Cancel:
+            Color: =RGBA(107, 29, 94, 1)
+            Height: =30
+            Icon: =Icon.Cancel
+            OnSelect: =Set(gblViewAuditHistory,false)
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            Width: =30
+            X: =Parent.Width-Self.Width-6
+            Y: =6
+            ZIndex: =6
 
