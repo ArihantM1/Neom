@@ -4966,6 +4966,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.lclSelectedTaskHomeScreen"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.lclSelectedTaskHomeScreen",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "lclSelectedTaskHomeScreen",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.12083109_Wavy_Bus-05_Single-08"
                 }
               ],
