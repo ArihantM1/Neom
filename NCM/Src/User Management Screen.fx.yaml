@@ -367,6 +367,7 @@
 
             Image6 As image:
                 AlignInContainer: =AlignInContainer.Center
+                Image: =If(gblAddUpdateUser="Update",gal_Analytics_AS_1.Selected.User_Image,'USER-IMAGE')
                 RadiusBottomLeft: =50
                 RadiusBottomRight: =50
                 RadiusTopLeft: =50
