@@ -3,7 +3,7 @@
         =UpdateContext({lclSelectedClientData:LookUp(CM_Client_Contract,Contract_Id.Value=lclSelectedTaskHomeScreen.ID)});
         UpdateContext({lclSelectedVendorData:LookUp(CM_VENDOR,Contract_Id.Value=lclSelectedTaskHomeScreen.ID)});
 
-    con_EditAndPreviewMain_PCS_2 As groupContainer.manualLayoutContainer:
+    con_EditAndPreviewMain_CSD As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Bold
         Height: =Parent.Height*.83
         RadiusBottomLeft: =10
@@ -15,7 +15,7 @@
         Y: =HeaderComponent_WithoutNavbar_CDS.Y+HeaderComponent_WithoutNavbar_CDS.Height+Parent.Height*.035
         ZIndex: =1
 
-        con_EditAndPreview_PCS_2 As groupContainer.horizontalAutoLayoutContainer:
+        con_EditAndPreview_CSD As groupContainer.horizontalAutoLayoutContainer:
             DropShadow: =DropShadow.Bold
             Fill: =RGBA(255, 255, 255, 1)
             Height: =Parent.Height
@@ -24,18 +24,21 @@
             Width: =Parent.Width
             ZIndex: =1
 
-            Container4 As groupContainer.horizontalAutoLayoutContainer:
+            con_Header_UserAgreeementPCF_CSD As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =Parent.Height*0.10
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
                 ZIndex: =1
 
-                con_EditContractHeader_PCS_2 As groupContainer.horizontalAutoLayoutContainer:
+                con_EditContractHeader_CSD As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     DropShadow: =DropShadow.None
-                    Height: =Parent.Height*.1
+                    Height: =Parent.Height
                     LayoutAlignItems: =LayoutAlignItems.Center
                     LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                     LayoutMinHeight: =Parent.Height
@@ -50,7 +53,7 @@
                     Width: =Parent.Width
                     ZIndex: =1
 
-                    lbl_Edit_PCS_2 As label:
+                    lbl_Edit_CSD As label:
                         FontWeight: =FontWeight.Bold
                         Height: =Parent.Height
                         Size: =18
@@ -58,7 +61,7 @@
                         Width: =Parent.Width*.3
                         ZIndex: =1
 
-                    con_HeaderButtons_PCS_2 As groupContainer.horizontalAutoLayoutContainer:
+                    con_HeaderButtons_CSD As groupContainer.horizontalAutoLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         DropShadow: =DropShadow.None
                         FillPortions: =0
@@ -73,7 +76,7 @@
                         Width: =Parent.Width*.68
                         ZIndex: =2
 
-                        con_CommentButton_PCS_2 As groupContainer.manualLayoutContainer:
+                        con_CommentButton_CSD As groupContainer.manualLayoutContainer:
                             AlignInContainer: =AlignInContainer.SetByContainer
                             BorderColor: =RGBA(107, 29, 94, 1)
                             BorderThickness: =2
@@ -84,7 +87,7 @@
                             Width: =Parent.Height*.3
                             ZIndex: =1
 
-                        con_FilterButton_PCS_2 As groupContainer.manualLayoutContainer:
+                        con_FilterButton_CSD As groupContainer.manualLayoutContainer:
                             AlignInContainer: =AlignInContainer.SetByContainer
                             BorderColor: =RGBA(107, 29, 94, 1)
                             BorderThickness: =2
@@ -95,7 +98,7 @@
                             Width: =Parent.Height*.3
                             ZIndex: =2
 
-                        con_ListViewButton_PCS_2 As groupContainer.manualLayoutContainer:
+                        con_ListViewButton_CSD As groupContainer.manualLayoutContainer:
                             AlignInContainer: =AlignInContainer.SetByContainer
                             BorderColor: =RGBA(107, 29, 94, 1)
                             BorderThickness: =2
@@ -106,10 +109,11 @@
                             Width: =Parent.Height*.3
                             ZIndex: =3
 
-                con_PreviewContractHeader_PCS_2 As groupContainer.horizontalAutoLayoutContainer:
+                con_PreviewContractHeader_CSD As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     DropShadow: =DropShadow.None
                     FillPortions: =3
-                    Height: =Parent.Height*.1
+                    Height: =Parent.Height
                     LayoutMinHeight: =Parent.Height
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
@@ -123,8 +127,7 @@
                     Y: =20
                     ZIndex: =2
 
-                    lbl_Preview_PCS_2 As label:
-                        AlignInContainer: =AlignInContainer.Center
+                    lbl_Preview_CSD As label:
                         FontWeight: =FontWeight.Bold
                         Height: =Parent.Height
                         LayoutMinHeight: =Parent.Height
@@ -133,12 +136,16 @@
                         Width: =Parent.Width
                         ZIndex: =1
 
-            Container5 As groupContainer.manualLayoutContainer:
+            con_MainPFCUserAgreement_CSD As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                FillPortions: =0
+                Height: =Parent.Height*.75
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
+                Width: =Parent.Width
                 ZIndex: =2
 
-                chartJS1 As chartJSV19:
+                pcf_UserAgreement_CSD As chartJSV19:
                     bankAccountNo: =lclSelectedClientData.Client_Bank_Account_No
                     bankBranchAddress: =lclSelectedClientData.Client_Bank_Branch_Address
                     bankIFSCNEFTCode: =lclSelectedClientData.'Client_Bank IFSC Code'
@@ -225,43 +232,43 @@
                             gblActiveUser,
                             "Procurement",
                             If(
-                            !IsBlank(chartJS1.contactCreationCity)
-                            And !IsBlank(chartJS1.charges),
+                            !IsBlank(pcf_UserAgreement_CSD.contactCreationCity)
+                            And !IsBlank(pcf_UserAgreement_CSD.charges),
                             DisplayMode.Edit,
                             DisplayMode.Disabled
                             ),
                             "Proponent",
                             If(
-                            !IsBlank(chartJS1.witnessVendorBy)
-                            And !IsBlank(chartJS1.vendorAddress)
-                            And !IsBlank(chartJS1.witnessVendorDate)
-                            And !IsBlank(chartJS1.witnessVendorTitle)
-                            And !IsBlank(chartJS1.vendorName)
-                            And !IsBlank(chartJS1.vendorContactNo)
-                            And !IsBlank(chartJS1.vendorEmail),
+                            !IsBlank(pcf_UserAgreement_CSD.witnessVendorBy)
+                            And !IsBlank(pcf_UserAgreement_CSD.vendorAddress)
+                            And !IsBlank(pcf_UserAgreement_CSD.witnessVendorDate)
+                            And !IsBlank(pcf_UserAgreement_CSD.witnessVendorTitle)
+                            And !IsBlank(pcf_UserAgreement_CSD.vendorName)
+                            And !IsBlank(pcf_UserAgreement_CSD.vendorContactNo)
+                            And !IsBlank(pcf_UserAgreement_CSD.vendorEmail),
                             DisplayMode.Edit,
                             DisplayMode.Disabled
                             ),
                             "Supplier",
                             If(
-                            !IsBlank(chartJS1.toCustomerCustomerAddress)
-                            And !IsBlank(chartJS1.toCustomerCustomerAttn)
-                            And !IsBlank(chartJS1.bankBranchAddress)
-                            And !IsBlank(chartJS1.bankIFSCNEFTCode)
-                            And !IsBlank(chartJS1.bankMICRCode)
-                            And !IsBlank(chartJS1.bankAccountNo)
-                            And !IsBlank(chartJS1.invoicePin)
-                            And !IsBlank(chartJS1.bankName)
-                            And !IsBlank(chartJS1.invoiceState)
-                            And !IsBlank(chartJS1.invoiceCity)
-                            And !IsBlank(chartJS1.invoiceName)
-                            And !IsBlank(chartJS1.contactEmail)
-                            And !IsBlank(chartJS1.contactPersonName)
-                            And !IsBlank(chartJS1.contactPersonName)
-                            And !IsBlank(chartJS1.pinCode)
-                            And !IsBlank(chartJS1.companyBillingCity)
-                            And !IsBlank(chartJS1.companyBillingState)
-                            And !IsBlank(chartJS1.companyBillingCountry),
+                            !IsBlank(pcf_UserAgreement_CSD.toCustomerCustomerAddress)
+                            And !IsBlank(pcf_UserAgreement_CSD.toCustomerCustomerAttn)
+                            And !IsBlank(pcf_UserAgreement_CSD.bankBranchAddress)
+                            And !IsBlank(pcf_UserAgreement_CSD.bankIFSCNEFTCode)
+                            And !IsBlank(pcf_UserAgreement_CSD.bankMICRCode)
+                            And !IsBlank(pcf_UserAgreement_CSD.bankAccountNo)
+                            And !IsBlank(pcf_UserAgreement_CSD.invoicePin)
+                            And !IsBlank(pcf_UserAgreement_CSD.bankName)
+                            And !IsBlank(pcf_UserAgreement_CSD.invoiceState)
+                            And !IsBlank(pcf_UserAgreement_CSD.invoiceCity)
+                            And !IsBlank(pcf_UserAgreement_CSD.invoiceName)
+                            And !IsBlank(pcf_UserAgreement_CSD.contactEmail)
+                            And !IsBlank(pcf_UserAgreement_CSD.contactPersonName)
+                            And !IsBlank(pcf_UserAgreement_CSD.contactPersonName)
+                            And !IsBlank(pcf_UserAgreement_CSD.pinCode)
+                            And !IsBlank(pcf_UserAgreement_CSD.companyBillingCity)
+                            And !IsBlank(pcf_UserAgreement_CSD.companyBillingState)
+                            And !IsBlank(pcf_UserAgreement_CSD.companyBillingCountry),
                             DisplayMode.Edit,
                             DisplayMode.Disabled
                             )
@@ -313,11 +320,11 @@
                                 CM_ContractDetails,
                                 {ID: VarContractDetailsPatch.ID},
                                 {
-                                    Contract_CreatedOn: DateTimeValue(chartJS1.contractCreationFullDate),
-                                    Contract_Created_Location: chartJS1.contactCreationCity,
+                                    Contract_CreatedOn: DateTimeValue(pcf_UserAgreement_CSD.contractCreationFullDate),
+                                    Contract_Created_Location: pcf_UserAgreement_CSD.contactCreationCity,
                                     Status: {Value: "Active"},
                                     Coc_stage: 2,
-                                    Contract_Charges: Value(chartJS1.charges),
+                                    Contract_Charges: Value(pcf_UserAgreement_CSD.charges),
                                     Task_ID_Fk: {
                                         Id: gblTaskPatchDetail.ID,
                                         Value: gblTaskPatchDetail.Task_Name
@@ -377,25 +384,25 @@
                                         Id: VarContractDetailsPatch.ID,
                                         Value: VarContractDetailsPatch.ID
                                     },
-                                    Notice_Client_Attention: chartJS1.toCustomerCustomerAttn,
-                                    Notice_Client_Address: chartJS1.toCustomerCustomerAddress,
-                                    Client_Contact_Person_name: chartJS1.contactPersonName,
-                                    Client_Contact_Person_PhoneNo: Value(chartJS1.contactPhoneNo),
-                                    Client_Contact_Person_Email: chartJS1.contactEmail,
-                                    Client_Billing_City: chartJS1.companyBillingCity,
-                                    Client_Billing_State: chartJS1.companyBillingState,
-                                    Client_Billing_Country: chartJS1.companyBillingCountry,
-                                    PIN_CODE: Value(chartJS1.pinCode),
-                                    Client_Invoice_Name: chartJS1.invoiceName,
-                                    Client_Invoice_City: chartJS1.invoiceCity,
-                                    Client_Invoice_State: chartJS1.invoiceState,
+                                    Notice_Client_Attention: pcf_UserAgreement_CSD.toCustomerCustomerAttn,
+                                    Notice_Client_Address: pcf_UserAgreement_CSD.toCustomerCustomerAddress,
+                                    Client_Contact_Person_name: pcf_UserAgreement_CSD.contactPersonName,
+                                    Client_Contact_Person_PhoneNo: Value(pcf_UserAgreement_CSD.contactPhoneNo),
+                                    Client_Contact_Person_Email: pcf_UserAgreement_CSD.contactEmail,
+                                    Client_Billing_City: pcf_UserAgreement_CSD.companyBillingCity,
+                                    Client_Billing_State: pcf_UserAgreement_CSD.companyBillingState,
+                                    Client_Billing_Country: pcf_UserAgreement_CSD.companyBillingCountry,
+                                    PIN_CODE: Value(pcf_UserAgreement_CSD.pinCode),
+                                    Client_Invoice_Name: pcf_UserAgreement_CSD.invoiceName,
+                                    Client_Invoice_City: pcf_UserAgreement_CSD.invoiceCity,
+                                    Client_Invoice_State: pcf_UserAgreement_CSD.invoiceState,
                                     //Client_Invoice_Country:chartJS1.invoi,
-                                    Client_Invoice_PinNo: Value(chartJS1.invoicePin),
-                                    Client_Bank_Name: chartJS1.bankName,
-                                    Client_Bank_MIRC_No: chartJS1.bankMICRCode,
-                                    'Client_Bank IFSC Code': chartJS1.bankIFSCNEFTCode,
-                                    Client_Bank_Account_No: chartJS1.bankAccountNo,
-                                    Client_Bank_Branch_Address: chartJS1.bankBranchAddress
+                                    Client_Invoice_PinNo: Value(pcf_UserAgreement_CSD.invoicePin),
+                                    Client_Bank_Name: pcf_UserAgreement_CSD.bankName,
+                                    Client_Bank_MIRC_No: pcf_UserAgreement_CSD.bankMICRCode,
+                                    'Client_Bank IFSC Code': pcf_UserAgreement_CSD.bankIFSCNEFTCode,
+                                    Client_Bank_Account_No: pcf_UserAgreement_CSD.bankAccountNo,
+                                    Client_Bank_Branch_Address: pcf_UserAgreement_CSD.bankBranchAddress
                                 }
                             ),
                             3,
@@ -445,9 +452,9 @@
                                         Value: VarContractDetailsPatch.ID
                                     },
                                    // contract_ID_FK: firstFormID,
-                                    Witness_Vendor_By: chartJS1.witnessVendorBy,
-                                    Witness_Vendor_Title: chartJS1.witnessVendorTitle,
-                                    'Witness Vendor Date': DateTimeValue(chartJS1.witnessVendorDate)
+                                    Witness_Vendor_By: pcf_UserAgreement_CSD.witnessVendorBy,
+                                    Witness_Vendor_Title: pcf_UserAgreement_CSD.witnessVendorTitle,
+                                    'Witness Vendor Date': DateTimeValue(pcf_UserAgreement_CSD.witnessVendorDate)
                                 }
                             );
                             Patch(
@@ -459,10 +466,10 @@
                                     ).ID
                                 },
                                 {
-                                    Vendor_Address: chartJS1.vendorAddress,
-                                    Vendor_Contact_Number: Value(chartJS1.vendorContactNo),
-                                    Title: chartJS1.vendorName,
-                                    Vendor_Email: chartJS1.vendorEmail
+                                    Vendor_Address: pcf_UserAgreement_CSD.vendorAddress,
+                                    Vendor_Contact_Number: Value(pcf_UserAgreement_CSD.vendorContactNo),
+                                    Title: pcf_UserAgreement_CSD.vendorName,
+                                    Vendor_Email: pcf_UserAgreement_CSD.vendorEmail
                                 }
                             )
                         
@@ -518,25 +525,25 @@
                                         Value: VarContractDetailsPatch.ID
                                     },
                                     //contract_ID_FK: firstFormID,
-                                    Notice_Client_Attention: chartJS1.toCustomerCustomerAttn,
-                                    Notice_Client_Address: chartJS1.toCustomerCustomerAddress,
-                                    Client_Contact_Person_name: chartJS1.contactPersonName,
-                                    Client_Contact_Person_PhoneNo: Value(chartJS1.contactPhoneNo),
-                                    Client_Contact_Person_Email: chartJS1.contactEmail,
-                                    Client_Billing_City: chartJS1.companyBillingCity,
-                                    Client_Billing_State: chartJS1.companyBillingState,
-                                    Client_Billing_Country: chartJS1.companyBillingCountry,
-                                    PIN_CODE: Value(chartJS1.pinCode),
-                                    Client_Invoice_Name: chartJS1.invoiceName,
-                                    Client_Invoice_City: chartJS1.invoiceCity,
-                                    Client_Invoice_State: chartJS1.invoiceState,
+                                    Notice_Client_Attention: pcf_UserAgreement_CSD.toCustomerCustomerAttn,
+                                    Notice_Client_Address: pcf_UserAgreement_CSD.toCustomerCustomerAddress,
+                                    Client_Contact_Person_name: pcf_UserAgreement_CSD.contactPersonName,
+                                    Client_Contact_Person_PhoneNo: Value(pcf_UserAgreement_CSD.contactPhoneNo),
+                                    Client_Contact_Person_Email: pcf_UserAgreement_CSD.contactEmail,
+                                    Client_Billing_City: pcf_UserAgreement_CSD.companyBillingCity,
+                                    Client_Billing_State: pcf_UserAgreement_CSD.companyBillingState,
+                                    Client_Billing_Country: pcf_UserAgreement_CSD.companyBillingCountry,
+                                    PIN_CODE: Value(pcf_UserAgreement_CSD.pinCode),
+                                    Client_Invoice_Name: pcf_UserAgreement_CSD.invoiceName,
+                                    Client_Invoice_City: pcf_UserAgreement_CSD.invoiceCity,
+                                    Client_Invoice_State: pcf_UserAgreement_CSD.invoiceState,
                                     //Client_Invoice_Country:chartJS1.invoi,
-                                    Client_Invoice_PinNo: Value(chartJS1.invoicePin),
-                                    Client_Bank_Name: chartJS1.bankName,
-                                    Client_Bank_MIRC_No: chartJS1.bankMICRCode,
-                                    'Client_Bank IFSC Code': chartJS1.bankIFSCNEFTCode,
-                                    Client_Bank_Account_No: chartJS1.bankAccountNo,
-                                    Client_Bank_Branch_Address: chartJS1.bankBranchAddress
+                                    Client_Invoice_PinNo: Value(pcf_UserAgreement_CSD.invoicePin),
+                                    Client_Bank_Name: pcf_UserAgreement_CSD.bankName,
+                                    Client_Bank_MIRC_No: pcf_UserAgreement_CSD.bankMICRCode,
+                                    'Client_Bank IFSC Code': pcf_UserAgreement_CSD.bankIFSCNEFTCode,
+                                    Client_Bank_Account_No: pcf_UserAgreement_CSD.bankAccountNo,
+                                    Client_Bank_Branch_Address: pcf_UserAgreement_CSD.bankBranchAddress
                                 }
                             ),
                             "Proponent",
@@ -586,9 +593,9 @@
                                         Value: VarContractDetailsPatch.ID
                                     },
                                    // contract_ID_FK: firstFormID,
-                                    Witness_Vendor_By: chartJS1.witnessVendorBy,
-                                    Witness_Vendor_Title: chartJS1.witnessVendorTitle,
-                                    'Witness Vendor Date': DateTimeValue(chartJS1.witnessVendorDate)
+                                    Witness_Vendor_By: pcf_UserAgreement_CSD.witnessVendorBy,
+                                    Witness_Vendor_Title: pcf_UserAgreement_CSD.witnessVendorTitle,
+                                    'Witness Vendor Date': DateTimeValue(pcf_UserAgreement_CSD.witnessVendorDate)
                                 }
                             );
                             Patch(
@@ -600,10 +607,10 @@
                                     ).ID
                                 },
                                 {
-                                    Vendor_Address: chartJS1.vendorAddress,
-                                    Vendor_Contact_Number: Value(chartJS1.vendorContactNo),
-                                    Title: chartJS1.vendorName,
-                                    Vendor_Email: chartJS1.vendorEmail
+                                    Vendor_Address: pcf_UserAgreement_CSD.vendorAddress,
+                                    Vendor_Contact_Number: Value(pcf_UserAgreement_CSD.vendorContactNo),
+                                    Title: pcf_UserAgreement_CSD.vendorName,
+                                    Vendor_Email: pcf_UserAgreement_CSD.vendorEmail
                                 }
                             ),
                             "Procurement",
@@ -664,11 +671,11 @@
                                 CM_ContractDetails,
                                 {ID: VarContractDetailsPatch.ID},
                                 {
-                                    Contract_CreatedOn: DateTimeValue(chartJS1.contractCreationFullDate),
-                                    Contract_Created_Location: chartJS1.contactCreationCity,
+                                    Contract_CreatedOn: DateTimeValue(pcf_UserAgreement_CSD.contractCreationFullDate),
+                                    Contract_Created_Location: pcf_UserAgreement_CSD.contactCreationCity,
                                     Status: {Value: "Active"},
                                     Coc_stage: 2,
-                                    Contract_Charges: Value(chartJS1.charges),
+                                    Contract_Charges: Value(pcf_UserAgreement_CSD.charges),
                                     Task_ID_Fk: {
                                         Id: gblTaskPatchDetail.ID,
                                         Value: gblTaskPatchDetail.Task_Name
@@ -721,7 +728,7 @@
                             firstFormID,
                             Blank()
                         );
-                        Set(HTMLContent,chartJS1.HTMLContent);
+                        Set(HTMLContent,pcf_UserAgreement_CSD.HTMLContent);
                         Set(HTMLContent,Substitute(HTMLContent,"orange","white"));
                         Set(HTMLContent,Substitute(HTMLContent,"yellow","white"));
                         
@@ -736,9 +743,9 @@
         DisplayMode: =DisplayMode.View
         Fill: =RGBA(107, 29, 94, 1)
         Height: =3
-        Width: =con_EditAndPreviewMain_PCS_2.X-shp_CircleDocuments_PCS_2.Width-shp_CircleDocuments_PCS_2.X-Parent.Width*0.01
+        Width: =con_EditAndPreviewMain_CSD.X-shp_CircleDocuments_CSD.Width-shp_CircleDocuments_CSD.X-Parent.Width*0.01
         X: =122
-        Y: =shp_CircleDocuments_PCS_2.Y+(shp_CircleDocuments_PCS_2.Height-Self.Height)/2
+        Y: =shp_CircleDocuments_CSD.Y+(shp_CircleDocuments_CSD.Height-Self.Height)/2
         ZIndex: =10
 
     HeaderComponent_WithoutNavbar_CDS As HeaderCMP_withoutNavbar:
@@ -753,7 +760,7 @@
         Y: =124.38000000000002
         ZIndex: =11
 
-        shp_CircleDocuments_PCS_2 As circle:
+        shp_CircleDocuments_CSD As circle:
             Fill: =RGBA(107, 29, 94, 1)
             Height: =70
             Width: =70
@@ -761,7 +768,7 @@
             Y: =506
             ZIndex: =2
 
-        shp_CircleOverview_PCS_2 As circle:
+        shp_CircleOverview_CSD As circle:
             BorderStyle: =BorderStyle.None
             Fill: =RGBA(107, 29, 94, 1)
             Height: =70
@@ -770,7 +777,7 @@
             Y: =126
             ZIndex: =3
 
-        ico_Overview_PCS_2 As icon.Flag:
+        ico_Overview_CSD As icon.Flag:
             Color: =RGBA(255, 255, 255, 1)
             DisplayMode: =DisplayMode.View
             Height: =36
@@ -780,12 +787,12 @@
             Y: =143
             ZIndex: =4
 
-        shp_RectOverview_PCS_2 As rectangle:
+        shp_RectOverview_CSD As rectangle:
             BorderStyle: =BorderStyle.None
             DisplayMode: =DisplayMode.View
             Fill: =RGBA(107, 29, 94, 1)
             Height: =3
-            Width: =con_EditAndPreviewMain_PCS_2.X-shp_CircleDocuments_PCS_2.Width-shp_CircleDocuments_PCS_2.X-Parent.Width*0.01
+            Width: =con_EditAndPreviewMain_CSD.X-shp_CircleDocuments_CSD.Width-shp_CircleDocuments_CSD.X-Parent.Width*0.01
             X: =122
             Y: =159
             ZIndex: =5
