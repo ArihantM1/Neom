@@ -65,7 +65,7 @@
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 OnSelect: |-
-                    =//Navigate('Preview Contract Screen(Supplier&Proponent)',ScreenTransition.Fade,{lclSelectedTask:Gallery2.Selected})
+                    =/*Navigate('Preview Contract Screen(Supplier&Proponent)',ScreenTransition.Fade,{lclSelectedTask:Gallery2.Selected})
                     If(
                         lclSelectedContract.Coc_stage = 4,
                         Set(
@@ -76,6 +76,17 @@
                             'Preview Contract Screen(Supplier&Proponent)',
                             ScreenTransition.Fade,
                             {lclSelectedTask: Gallery2.Selected}
+                        )
+                    );*/
+                    UpdateContext({lclSelectedTaskHomeScreen:Blank()});
+                    //Select(Parent)
+                    If(
+                         gal_AllContractsDetailView_HS.Selected.Coc_stage = 4,
+                        Set(gblContractCompletionView,true),
+                        Navigate(
+                            'Preview Contract Screen_1',
+                            ScreenTransition.Fade,
+                            {lclSelectedTaskHomeScreen: gal_AllContractsDetailView_HS.Selected}
                         )
                     )
                 TemplateSize: =Gallery2.Height*.2
