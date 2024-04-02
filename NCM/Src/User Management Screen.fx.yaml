@@ -555,7 +555,43 @@
                         =ColorValue("#6b1d5e")
                     HoverFill: |-
                         =ColorValue("#6b1d5e")
-                    OnSelect: =
+                    OnSelect: |-
+                        =If(gblAddUpdateUser="Update",
+                         Patch(
+                                CM_Users,
+                                Defaults(CM_Users),
+                                {ID:gal_Analytics_AS_1.Selected.ID},
+                                {
+                                    Name:TextInput2.Text,
+                                    Emaill:TextInput2_1.Text,
+                                    Role:Dropdown1.SelectedText.Value,
+                                    User_Image:AddMediaButton1
+                        
+                                }
+                         )
+                        
+                        ,
+                        Patch(
+                                CM_Users,
+                                Defaults(CM_Users),
+                                {
+                                    Name:TextInput2.Text,
+                                    Emaill:TextInput2_1.Text,
+                                    Role:Dropdown1.SelectedText.Value,
+                                    User_Image:AddMediaButton1
+                                    
+                                }
+                         )
+                        
+                        
+                        );
+                        
+                        
+                        Reset(TextInput2);
+                        Reset(TextInput2_1);
+                        Reset(AddMediaButton1);
+                        Reset(Dropdown1);
+                                   
                     PressedBorderColor: |-
                         =ColorValue("#6b1d5e")
                     PressedFill: =RGBA(255, 255, 255, 1)
