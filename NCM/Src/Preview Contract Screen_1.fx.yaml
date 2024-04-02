@@ -708,6 +708,7 @@
                         Reset(txt_DescriptionInput_CCS);
                         Reset(dte_StartDate_CCS);
                         Reset(dte_EndDate_CCS);
+                        Set(VarContractDetailsPatch,Blank());
                         Reset(rdo_CreateDucplicateCOCSelect_CCS);
                         Set(
                             VarContractDetailsPatch,
