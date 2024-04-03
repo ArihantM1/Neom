@@ -19,7 +19,7 @@
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
-                Height: =Parent.Height*.1
+                Height: =Parent.Height*.13
                 LayoutAlignItems: =LayoutAlignItems.Center
                 LayoutGap: =2
                 LayoutMinHeight: =100
@@ -320,7 +320,7 @@
 
         Container1 As groupContainer.manualLayoutContainer:
             Fill: =RGBA(255, 247, 254, 1)
-            Height: =Parent.Height*.1
+            Height: =Parent.Height*.08
             Width: =Parent.Width
             ZIndex: =3
 

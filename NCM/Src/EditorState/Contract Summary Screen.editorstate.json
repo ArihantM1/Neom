@@ -2800,7 +2800,7 @@
       "MetaDataIDKey": "",
       "Name": "con_ContractDownloadDetails_CSS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 10,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3009,7 +3009,7 @@
       "MetaDataIDKey": "",
       "Name": "con_Donwload&AuditBtn_CSS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 8,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3682,7 +3682,7 @@
       "MetaDataIDKey": "",
       "Name": "con_Main_AuditDetail_CSS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4567,7 +4567,7 @@
       "MetaDataIDKey": "",
       "Name": "con_Signing_COCViewer_CSS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4769,7 +4769,7 @@
       "MetaDataIDKey": "",
       "Name": "con_Task_CSS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 9,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4963,7 +4963,7 @@
       "MetaDataIDKey": "",
       "Name": "con_Task_Milestone_CSS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5407,7 +5407,7 @@
       "MetaDataIDKey": "",
       "Name": "con_Username_CSS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6615,7 +6615,7 @@
       "MetaDataIDKey": "",
       "Name": "HeaderCMP_withoutNavbar_CSS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6958,7 +6958,7 @@
       "MetaDataIDKey": "",
       "Name": "ico_CloseSigningCOCView_CSS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8046,7 +8046,7 @@
       "MetaDataIDKey": "",
       "Name": "img_Userimage_CSS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8620,7 +8620,7 @@
       "MetaDataIDKey": "",
       "Name": "lbl_Coc_CSS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13346,7 +13346,7 @@
       "MetaDataIDKey": "",
       "Name": "lbl_MyTask_CSS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13983,7 +13983,7 @@
       "MetaDataIDKey": "",
       "Name": "lbl_NoticeText_HS_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -15979,7 +15979,7 @@
       "MetaDataIDKey": "",
       "Name": "pdf_COCViewer_CSS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16133,7 +16133,7 @@
       "MetaDataIDKey": "",
       "Name": "pdf_SummaryView_CSS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 11,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16722,7 +16722,7 @@
       "MetaDataIDKey": "",
       "Name": "shp_BackgroundContractSingingPopUp_Css",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
