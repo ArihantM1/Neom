@@ -569,7 +569,9 @@
                     Size: =10
                     Text: |+
                         =//If("-" in Text(ThisItem.Value.currentValue) || "/" in Text(ThisItem.Value.currentValue),DateTimeValue(ThisItem.Value),Text(ThisItem.Value.currentValue))
-                        Text(ThisItem.Value.currentValue)
+                        //Text(ThisItem.Value.currentValue)
+                        
+                        If(Text(ThisItem.Value.Field) = "Modified ", Text(DateTimeValue(ThisItem.Value.currentValue),"dd-mm-yyyy hh:mm am/pm") ,Text(ThisItem.Value.currentValue))
                         
                     Width: =lbl_FieldValue_CSS.Width
                     ZIndex: =2
@@ -578,7 +580,9 @@
                     Height: =lbl_FieldValue_CSS.Height
                     PaddingLeft: =25
                     Size: =10
-                    Text: =Text(ThisItem.Value.PreviousValue)
+                    Text: |-
+                        =//Text(ThisItem.Value.PreviousValue)
+                        If(Text(ThisItem.Value.Field) = "Modified ", Text(DateTimeValue(ThisItem.Value.PreviousValue),"dd-mm-yyyy hh:mm am/pm") ,Text(ThisItem.Value.PreviousValue))
                     Width: =lbl_FieldValue_CSS.Width
                     ZIndex: =3
 
@@ -719,4 +723,12 @@
             X: =Parent.Width-Self.Width-6
             Y: =6
             ZIndex: =6
+
+        shp_AuditViewGalleryFiller_CSS As rectangle:
+            Fill: =RGBA(186, 186, 186, 1)
+            Height: =Parent.Height-lbl_AuditViewHeader_CSS.Height
+            Width: =2
+            X: ='gal_AuditEvent&PerformedBY_CSS'.Width
+            Y: =lbl_AuditViewHeader_CSS.Height
+            ZIndex: =7
 
