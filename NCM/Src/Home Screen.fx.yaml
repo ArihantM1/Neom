@@ -888,7 +888,7 @@
             Size: =11
             Text: ="Are you sure you want to sign the contract?"
             Width: =Parent.Width*.45
-            X: =Parent.Width/2-Self.Width/2+40
+            X: =Parent.Width/2-Self.Width/2
             Y: =Parent.Height-Self.Height*2.1
             ZIndex: =2
 

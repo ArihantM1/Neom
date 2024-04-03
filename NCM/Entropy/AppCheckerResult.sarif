@@ -776,486 +776,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.ico_CloseAuditSideBar_CSS.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.ico_CloseAuditSideBar_CSS.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Contract Summary Screen",
-                "type": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.ico_CloseAuditSideBar_CSS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.ico_CloseAuditSideBar_CSS.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.ico_CloseAuditSideBar_CSS.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Contract Summary Screen",
-                "type": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.ico_CloseAuditSideBar_CSS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.'gal_AuditEvent&PerformedBY_CSS'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.'gal_AuditEvent&PerformedBY_CSS'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Contract Summary Screen",
-                "type": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.'gal_AuditEvent&PerformedBY_CSS'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.'gal_AuditEvent&PerformedBY_CSS'.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.'gal_AuditEvent&PerformedBY_CSS'.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Contract Summary Screen",
-                "type": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.'gal_AuditEvent&PerformedBY_CSS'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.gal_AuditData_CSS.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.gal_AuditData_CSS.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Contract Summary Screen",
-                "type": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.gal_AuditData_CSS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.gal_AuditData_CSS.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.gal_AuditData_CSS.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Contract Summary Screen",
-                "type": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.gal_AuditData_CSS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Contract Summary Screen'.con_Signing_COCViewer_CSS.ico_CloseSigningCOCView_CSS.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Contract Summary Screen'.con_Signing_COCViewer_CSS.ico_CloseSigningCOCView_CSS.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Contract Summary Screen",
-                "type": "'Contract Summary Screen'.con_Signing_COCViewer_CSS.ico_CloseSigningCOCView_CSS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Contract Summary Screen'.con_Signing_COCViewer_CSS.ico_CloseSigningCOCView_CSS.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Contract Summary Screen'.con_Signing_COCViewer_CSS.ico_CloseSigningCOCView_CSS.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Contract Summary Screen",
-                "type": "'Contract Summary Screen'.con_Signing_COCViewer_CSS.ico_CloseSigningCOCView_CSS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Contract Summary Screen'.'con_Donwload&AuditBtn_CSS'.img_AuditButton_CSS.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Contract Summary Screen'.'con_Donwload&AuditBtn_CSS'.img_AuditButton_CSS.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Contract Summary Screen",
-                "type": "'Contract Summary Screen'.'con_Donwload&AuditBtn_CSS'.img_AuditButton_CSS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Contract Summary Screen'.'con_Donwload&AuditBtn_CSS'.img_AuditButton_CSS.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Contract Summary Screen'.'con_Donwload&AuditBtn_CSS'.img_AuditButton_CSS.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Contract Summary Screen",
-                "type": "'Contract Summary Screen'.'con_Donwload&AuditBtn_CSS'.img_AuditButton_CSS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Contract Summary Screen'.'con_Donwload&AuditBtn_CSS'.ico_Exportcontract_CSS.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Contract Summary Screen'.'con_Donwload&AuditBtn_CSS'.ico_Exportcontract_CSS.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Contract Summary Screen",
-                "type": "'Contract Summary Screen'.'con_Donwload&AuditBtn_CSS'.ico_Exportcontract_CSS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Contract Summary Screen'.'con_Donwload&AuditBtn_CSS'.ico_Exportcontract_CSS.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Contract Summary Screen'.'con_Donwload&AuditBtn_CSS'.ico_Exportcontract_CSS.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Contract Summary Screen",
-                "type": "'Contract Summary Screen'.'con_Donwload&AuditBtn_CSS'.ico_Exportcontract_CSS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Contract Summary Screen'.con_Task_CSS.con_MyTask_CSS.gal_COCTask_CSS.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Contract Summary Screen'.con_Task_CSS.con_MyTask_CSS.gal_COCTask_CSS.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Contract Summary Screen",
-                "type": "'Contract Summary Screen'.con_Task_CSS.con_MyTask_CSS.gal_COCTask_CSS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Contract Summary Screen'.con_Task_CSS.con_MyTask_CSS.gal_COCTask_CSS.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Contract Summary Screen'.con_Task_CSS.con_MyTask_CSS.gal_COCTask_CSS.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Contract Summary Screen",
-                "type": "'Contract Summary Screen'.con_Task_CSS.con_MyTask_CSS.gal_COCTask_CSS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Contract Summary Screen'.con_Task_CSS.con_DownloadDetails_CSS.gal_COCDownloadHIstory_CSS.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Contract Summary Screen'.con_Task_CSS.con_DownloadDetails_CSS.gal_COCDownloadHIstory_CSS.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Contract Summary Screen",
-                "type": "'Contract Summary Screen'.con_Task_CSS.con_DownloadDetails_CSS.gal_COCDownloadHIstory_CSS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Contract Summary Screen'.con_Task_CSS.con_DownloadDetails_CSS.gal_COCDownloadHIstory_CSS.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Contract Summary Screen'.con_Task_CSS.con_DownloadDetails_CSS.gal_COCDownloadHIstory_CSS.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Contract Summary Screen",
-                "type": "'Contract Summary Screen'.con_Task_CSS.con_DownloadDetails_CSS.gal_COCDownloadHIstory_CSS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.con_ContractFilter_HS.con_RefreshReset_HS.ico_Refresh_HS.AccessibleLabel"
                 }
               ],
@@ -1436,36 +956,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.gal_AllContractsDetailView_HS.lbl_ContractTask_HS.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.gal_AllContractsDetailView_HS.lbl_ContractTask_HS.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Home Screen",
-                "type": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.gal_AllContractsDetailView_HS.lbl_ContractTask_HS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.gal_AllContractsDetailView_HS.lbl_ContractTask_HS.FocusedBorderThickness"
                 }
               ],
@@ -1490,6 +980,36 @@
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
           "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.gal_AllContractsDetailView_HS.lbl_ContractTask_HS.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.gal_AllContractsDetailView_HS.lbl_ContractTask_HS.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Home Screen",
+                "type": "'Home Screen'.con_Main_HS.con_BodyMain_HS.con_ContractsAll_HS.con_ContractsView_HS.gal_AllContractsDetailView_HS.lbl_ContractTask_HS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1976,36 +1496,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Preview Contract Screen_3'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS.dtc_UserAgreementPreview_PCS.con_inputFieldmain_PCS.con_ContractCreationDate_PCS.dtp_ContractCreationDate_PCS.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Preview Contract Screen_3'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS.dtc_UserAgreementPreview_PCS.con_inputFieldmain_PCS.con_ContractCreationDate_PCS.dtp_ContractCreationDate_PCS.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Preview Contract Screen_3",
-                "type": "'Preview Contract Screen_3'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS.dtc_UserAgreementPreview_PCS.con_inputFieldmain_PCS.con_ContractCreationDate_PCS.dtp_ContractCreationDate_PCS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Preview Contract Screen_3'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS.dtc_UserAgreementPreview_PCS.con_inputFieldmain_PCS.con_ContractCity_PCS.txt_con_ContractCity_PCS.AccessibleLabel"
                 }
               ],
@@ -2109,6 +1599,36 @@
                 "member": "AccessibleLabel",
                 "module": "Preview Contract Screen_3",
                 "type": "'Preview Contract Screen_3'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS.dtc_UserAgreementPreview_PCS.con_inputFieldmain_PCS.con_ChargesTitle_PCS.txt_ChargesTitle_Header_PCS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Preview Contract Screen_3'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS.dtc_UserAgreementPreview_PCS.con_inputFieldmain_PCS.con_ContractCreationDate_PCS.dtp_ContractCreationDate_PCS.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Preview Contract Screen_3'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS.dtc_UserAgreementPreview_PCS.con_inputFieldmain_PCS.con_ContractCreationDate_PCS.dtp_ContractCreationDate_PCS.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Preview Contract Screen_3",
+                "type": "'Preview Contract Screen_3'.con_EditAndPreviewMain_PCS.con_EditAndPreview_PCS.con_EditAndPreviewPart_PCS.con_EditContract_PCS.cvs_UserAgreementPreview_PCS.dtc_UserAgreementPreview_PCS.con_inputFieldmain_PCS.con_ContractCreationDate_PCS.dtp_ContractCreationDate_PCS"
               }
             }
           ],
@@ -3626,6 +3146,486 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.ico_CloseAuditSideBar_CSS.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.ico_CloseAuditSideBar_CSS.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Contract Summary Screen",
+                "type": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.ico_CloseAuditSideBar_CSS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.ico_CloseAuditSideBar_CSS.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.ico_CloseAuditSideBar_CSS.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Contract Summary Screen",
+                "type": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.ico_CloseAuditSideBar_CSS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.'gal_AuditEvent&PerformedBY_CSS'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.'gal_AuditEvent&PerformedBY_CSS'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Contract Summary Screen",
+                "type": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.'gal_AuditEvent&PerformedBY_CSS'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.'gal_AuditEvent&PerformedBY_CSS'.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.'gal_AuditEvent&PerformedBY_CSS'.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Contract Summary Screen",
+                "type": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.'gal_AuditEvent&PerformedBY_CSS'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.gal_AuditData_CSS.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.gal_AuditData_CSS.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Contract Summary Screen",
+                "type": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.gal_AuditData_CSS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.gal_AuditData_CSS.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.gal_AuditData_CSS.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Contract Summary Screen",
+                "type": "'Contract Summary Screen'.con_Main_AuditDetail_CSS.gal_AuditData_CSS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Signing_COCViewer_CSS.ico_CloseSigningCOCView_CSS.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Signing_COCViewer_CSS.ico_CloseSigningCOCView_CSS.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Contract Summary Screen",
+                "type": "'Contract Summary Screen'.con_Signing_COCViewer_CSS.ico_CloseSigningCOCView_CSS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Signing_COCViewer_CSS.ico_CloseSigningCOCView_CSS.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Signing_COCViewer_CSS.ico_CloseSigningCOCView_CSS.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Contract Summary Screen",
+                "type": "'Contract Summary Screen'.con_Signing_COCViewer_CSS.ico_CloseSigningCOCView_CSS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Contract Summary Screen'.'con_Donwload&AuditBtn_CSS'.img_AuditButton_CSS.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Contract Summary Screen'.'con_Donwload&AuditBtn_CSS'.img_AuditButton_CSS.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Contract Summary Screen",
+                "type": "'Contract Summary Screen'.'con_Donwload&AuditBtn_CSS'.img_AuditButton_CSS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Contract Summary Screen'.'con_Donwload&AuditBtn_CSS'.img_AuditButton_CSS.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Contract Summary Screen'.'con_Donwload&AuditBtn_CSS'.img_AuditButton_CSS.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Contract Summary Screen",
+                "type": "'Contract Summary Screen'.'con_Donwload&AuditBtn_CSS'.img_AuditButton_CSS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Contract Summary Screen'.'con_Donwload&AuditBtn_CSS'.ico_Exportcontract_CSS.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Contract Summary Screen'.'con_Donwload&AuditBtn_CSS'.ico_Exportcontract_CSS.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Contract Summary Screen",
+                "type": "'Contract Summary Screen'.'con_Donwload&AuditBtn_CSS'.ico_Exportcontract_CSS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Contract Summary Screen'.'con_Donwload&AuditBtn_CSS'.ico_Exportcontract_CSS.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Contract Summary Screen'.'con_Donwload&AuditBtn_CSS'.ico_Exportcontract_CSS.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Contract Summary Screen",
+                "type": "'Contract Summary Screen'.'con_Donwload&AuditBtn_CSS'.ico_Exportcontract_CSS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Task_CSS.con_MyTask_CSS.gal_COCTask_CSS.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Task_CSS.con_MyTask_CSS.gal_COCTask_CSS.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Contract Summary Screen",
+                "type": "'Contract Summary Screen'.con_Task_CSS.con_MyTask_CSS.gal_COCTask_CSS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Task_CSS.con_MyTask_CSS.gal_COCTask_CSS.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Task_CSS.con_MyTask_CSS.gal_COCTask_CSS.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Contract Summary Screen",
+                "type": "'Contract Summary Screen'.con_Task_CSS.con_MyTask_CSS.gal_COCTask_CSS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Task_CSS.con_DownloadDetails_CSS.gal_COCDownloadHIstory_CSS.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Task_CSS.con_DownloadDetails_CSS.gal_COCDownloadHIstory_CSS.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Contract Summary Screen",
+                "type": "'Contract Summary Screen'.con_Task_CSS.con_DownloadDetails_CSS.gal_COCDownloadHIstory_CSS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Task_CSS.con_DownloadDetails_CSS.gal_COCDownloadHIstory_CSS.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Contract Summary Screen'.con_Task_CSS.con_DownloadDetails_CSS.gal_COCDownloadHIstory_CSS.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Contract Summary Screen",
+                "type": "'Contract Summary Screen'.con_Task_CSS.con_DownloadDetails_CSS.gal_COCDownloadHIstory_CSS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Reports Screen'.con_Main_RS.con_Vertical_ResourceandClauses_RS.con_Horizontal_ResourceandMDC_RS.con_ResourcesInvolved_RS.gal_ContractDetails_RS.AccessibleLabel"
                 }
               ],
@@ -3806,66 +3806,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.cmb_FilterByApplicableTo_AS.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.cmb_FilterByApplicableTo_AS.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Analytics Screen",
-                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.cmb_FilterByApplicableTo_AS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.drp_FilterByStatus_AS.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.drp_FilterByStatus_AS.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Analytics Screen",
-                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.drp_FilterByStatus_AS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.con_ResetDownloadRefresh_AS.btn_Refresh_AS.AccessibleLabel"
                 }
               ],
@@ -3920,6 +3860,66 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.cmb_FilterByApplicableTo_AS.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.cmb_FilterByApplicableTo_AS.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Analytics Screen",
+                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.cmb_FilterByApplicableTo_AS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.drp_FilterByStatus_AS.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.drp_FilterByStatus_AS.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Analytics Screen",
+                "type": "'Analytics Screen'.con_Main_AS.con_Body_AS.con_ContractsAll_AS.con_ContractFilter_AS.drp_FilterByStatus_AS"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4046,47 +4046,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.gblcontractData"
+                  "fullyQualifiedName": "App.VarfirstFormID"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.gblcontractData",
+                  "fullyQualifiedName": "App.VarfirstFormID",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "gblcontractData",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.VarLoggedInUser"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.VarLoggedInUser",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "VarLoggedInUser",
+                "member": "VarfirstFormID",
                 "module": "App",
                 "type": "App"
               }
@@ -4136,17 +4106,77 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.VarfirstFormID"
+                  "fullyQualifiedName": "App.VarLoggedInUser"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.VarfirstFormID",
+                  "fullyQualifiedName": "App.VarLoggedInUser",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "VarfirstFormID",
+                "member": "VarLoggedInUser",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.gblSigningLoader"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.gblSigningLoader",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "gblSigningLoader",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.gblcontractData"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.gblcontractData",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "gblcontractData",
                 "module": "App",
                 "type": "App"
               }
@@ -4297,36 +4327,6 @@
               },
               "properties": {
                 "member": "services",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.gblSigningLoader"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.gblSigningLoader",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "gblSigningLoader",
                 "module": "App",
                 "type": "App"
               }
@@ -5456,6 +5456,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Home Screen'.lclSelectedTaskHomeScreen"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Home Screen'.lclSelectedTaskHomeScreen",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "lclSelectedTaskHomeScreen",
+                "module": "Home Screen",
+                "type": "'Home Screen'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Testing Screen'.HtmlText2.HtmlText"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Testing Screen'.HtmlText2.HtmlText",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "HtmlText",
+                "module": "Testing Screen",
+                "type": "'Testing Screen'.HtmlText2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Contract Summary Screen'.lclSelectedTaskHomeScreen"
                 }
               ],
@@ -5529,66 +5589,6 @@
                 "member": "Document",
                 "module": "Contract Summary Screen",
                 "type": "'Contract Summary Screen'.pdf_COCViewer_CSS"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Home Screen'.lclSelectedTaskHomeScreen"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen'.lclSelectedTaskHomeScreen",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "lclSelectedTaskHomeScreen",
-                "module": "Home Screen",
-                "type": "'Home Screen'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Testing Screen'.HtmlText2.HtmlText"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Testing Screen'.HtmlText2.HtmlText",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "HtmlText",
-                "module": "Testing Screen",
-                "type": "'Testing Screen'.HtmlText2"
               }
             }
           ],
