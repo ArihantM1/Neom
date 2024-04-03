@@ -85,7 +85,7 @@ HeaderCMP_withoutNavbar As CanvasComponent:
                 Height: =30
                 HoverColor: =RGBA(107, 29, 94, 1)
                 HoverFill: =Self.Color
-                OnSelect: |
+                OnSelect: |+
                     =Reset(drp_ServiceType_CCS);
                     Reset(drp_Client_CCS);
                     Reset(drp_Services_CCS);
@@ -98,7 +98,9 @@ HeaderCMP_withoutNavbar As CanvasComponent:
                     Reset(dte_StartDate_CCS);
                     Reset(dte_EndDate_CCS);
                     Reset(rdo_CreateDucplicateCOCSelect_CCS);
-                    Navigate('Home Screen')
+                    Set(gblcontractData,Blank());
+                    Navigate('Home Screen');
+                    
                 PressedColor: =Self.Color
                 PressedFill: =Self.Fill
                 Size: =11

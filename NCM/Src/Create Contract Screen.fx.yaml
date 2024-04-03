@@ -111,7 +111,7 @@
                     OnChange: |
                         =
                          Set(
-                                gblcontractData,
+                                contractData,
                                 Blank()
                             );
                         Reset('drp_SelectNew&Existing_CCS');
@@ -166,7 +166,7 @@
                     HoverFill: |-
                         = ColorFade( ColorValue("#9e6c97"),80%)
                     Items: =CM_ContractDetails
-                    OnChange: =Set(gblcontractData,Self.Selected)
+                    OnChange: =Set(contractData,Self.Selected)
                     OnSelect: =
                     PressedFill: =RGBA(158, 108, 151, 1)
                     SelectionFill: =ColorFade( RGBA(107, 29, 94, 1),80%)
@@ -202,7 +202,7 @@
                     ChevronHoverBackground: =RGBA(107, 29, 94, 1)
                     Color: =RGBA(107, 29, 94, 1)
                     Default: |
-                        =If(Not(IsBlank(gblcontractData)),gblcontractData.Supplier.Value)
+                        =If(Not(IsBlank(contractData)),contractData.Supplier.Value)
                         
                         //If(Not(IsBlank(lclSelectedContracts)),lclSelectedContracts.Supplier.Value)
                     Height: =30
@@ -233,7 +233,7 @@
                     ChevronHoverBackground: =RGBA(107, 29, 94, 1)
                     Color: =RGBA(107, 29, 94, 1)
                     Default: |-
-                        =If(Not(IsBlank(gblcontractData)),gblcontractData.Service_Type_fk.Value)
+                        =If(Not(IsBlank(contractData)),contractData.Service_Type_fk.Value)
                         //If(Not(IsBlank(lclSelectedContracts)),lclSelectedContracts.Service_Type_fk.Value)
                     Height: =30
                     HoverFill: |-
@@ -312,7 +312,7 @@
                     lblContractName_CCS As text:
                         BorderColor: =RGBA(219, 200, 216, 1)
                         Default: |
-                            =If(!IsBlank(gblcontractData),gblcontractData.Contract_name)
+                            =If(!IsBlank(contractData),contractData.Contract_name)
                         Height: =30
                         HintText: ="--Enter the name of Contract--"
                         HoverBorderColor: =ColorFade( RGBA(107, 29, 94, 1),50%)
@@ -435,7 +435,7 @@
                         AlignInContainer: =AlignInContainer.Center
                         BorderColor: =RGBA(219, 200, 216, 1)
                         Default: |-
-                            =If(Not(IsBlank(gblcontractData)),gblcontractData.Description)
+                            =If(Not(IsBlank(contractData)),contractData.Description)
                             //If(Not(IsBlank(lclSelectedContracts)),lclSelectedContracts.Description)
                         Height: =Parent.Height*.9
                         HintText: ="--Description of the Contract--"

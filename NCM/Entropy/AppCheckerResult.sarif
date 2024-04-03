@@ -4046,6 +4046,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.gblcontractData"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.gblcontractData",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "gblcontractData",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.VarLoggedInUser"
                 }
               ],
@@ -4267,6 +4297,36 @@
               },
               "properties": {
                 "member": "services",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.contractData"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.contractData",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "contractData",
                 "module": "App",
                 "type": "App"
               }

@@ -684,7 +684,7 @@
                         OnSelect: |+
                             =If(
                                 ThisItem.Status.Value="Draft", 
-                                Navigate('Create Contract Screen', ScreenTransition.Fade,{ContractData:ThisItem}),
+                                Navigate('Create Contract Screen', ScreenTransition.Fade,{contractData:ThisItem}),
                                 Navigate('Contract Summary Screen',ScreenTransition.None,{lclSelectedContract:ThisItem})
                                
                             );
@@ -760,7 +760,6 @@
                             FontWeight: =FontWeight.Semibold
                             OnSelect: |-
                                 =UpdateContext({lclSelectedTaskHomeScreen:Blank()});
-                                UpdateContext({lclSelectedTaskHomeScreen:Blank()});
                                 //Select(Parent)
                                 If(
                                     ThisItem.Coc_stage = 4,
