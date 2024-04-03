@@ -423,7 +423,7 @@
             Items: =SortByColumns(Filter(CM_Audit_Table,Contract_ID_Fk=lclSelectedContract.ID),"Created",SortOrder.Descending)
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
-            OnSelect: =
+            OnSelect: =true
             TemplateSize: =60
             Width: =Parent.Width/2
             Y: =(ico_CloseAuditSideBar_CSS.Height*2)+50
@@ -527,9 +527,7 @@
         gal_AuditData_CSS As gallery.variableTemplateHeightGallery:
             DelayItemLoading: =true
             Height: ='gal_AuditEvent&PerformedBY_CSS'.Height
-            Items: |+
-                =If(IsBlank(Table(ParseJSON('gal_AuditEvent&PerformedBY_CSS'.Selected.Json_Object))),{},Table(ParseJSON('gal_AuditEvent&PerformedBY_CSS'.Selected.Json_Object)))
-                
+            Items: =Table(ParseJSON('gal_AuditEvent&PerformedBY_CSS'.Selected.Json_Object))
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplateSize: =60
@@ -620,7 +618,7 @@
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
-                    Width: =Parent.Width-con_AuditPerformedBY_CSS.Width
+                    Width: =con_MainAuditEvent_CSS.Width
                     ZIndex: =3
 
                     lbl_Event_CSS As label:

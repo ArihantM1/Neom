@@ -151,7 +151,7 @@
                     bankIFSCNEFTCode: =lclSelectedClientData.'Client_Bank IFSC Code'
                     bankMICRCode: =lclSelectedClientData.Client_Bank_MIRC_No
                     bankName: =lclSelectedClientData.Client_Bank_Name
-                    charges: =lclSelectedTaskHomeScreen.Contract_Charges
+                    charges: =Text(lclSelectedTaskHomeScreen.Contract_Charges)
                     companyBillingAddress: =lclSelectedClientData.Client_Billing_Country
                     companyBillingCity: =lclSelectedClientData.Client_Billing_City
                     companyBillingCountry: =lclSelectedClientData.Client_Billing_Country
@@ -173,7 +173,7 @@
                     panNo: =lclSelectedClientData.PIN_CODE
                     phoneNo: =lclSelectedClientData.Client_Contact_Person_PhoneNo
                     pinCode: =lclSelectedClientData.PIN_CODE
-                    serviceTaxNo: =lclSelectedTaskHomeScreen.Contract_name
+                    serviceTaxNo: =LookUp(CM_ClientData, ID = lclSelectedTaskHomeScreen.Client_ID).Service_Tax_No
                     toCustomerCustomerAddress: =lclSelectedClientData.Notice_Client_Address
                     toCustomerCustomerAttn: =lclSelectedClientData.Notice_Client_Attention
                     UserRole: =UserRole

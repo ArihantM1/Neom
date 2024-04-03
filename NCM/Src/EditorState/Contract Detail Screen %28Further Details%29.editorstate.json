@@ -5410,7 +5410,14 @@
         "phoneNo",
         "panNo",
         "pinCode",
-        "serviceTaxNo",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "lclSelectedTaskHomeScreen.Contract_name",
+          "InvariantPropertyName": "serviceTaxNo",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "contactPersonName",
         "contactPhoneNo",
         "contactEmail",
@@ -5428,7 +5435,14 @@
         "vendorEmail",
         "vendorContactNo",
         "vendorAddress",
-        "charges",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "lclSelectedTaskHomeScreen.Contract_Charges",
+          "InvariantPropertyName": "charges",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "UserRole"
       ],
       "HasDynamicProperties": false,
@@ -5508,7 +5522,7 @@
         {
           "Category": "Data",
           "PropertyName": "charges",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Data",
@@ -5568,7 +5582,7 @@
         {
           "Category": "Data",
           "PropertyName": "serviceTaxNo",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Data",
