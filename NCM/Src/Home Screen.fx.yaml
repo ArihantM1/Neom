@@ -759,6 +759,7 @@
                             FontWeight: =FontWeight.Semibold
                             OnSelect: |-
                                 =UpdateContext({lclSelectedTaskHomeScreen:Blank()});
+                                UpdateContext({lclSelectedTaskHomeScreen:Blank()});
                                 //Select(Parent)
                                 If(
                                     ThisItem.Coc_stage = 4,
