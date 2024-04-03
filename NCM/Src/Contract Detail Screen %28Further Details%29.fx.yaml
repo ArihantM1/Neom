@@ -706,7 +706,7 @@
                         Set(HTMLContent,pcf_UserAgreement_CSD.HTMLContent);
                         Set(HTMLContent,Substitute(HTMLContent,"orange","white"));
                         Set(HTMLContent,Substitute(HTMLContent,"yellow","white"));
-                        HTML2PDF_PCFFLOW.Run(HTMLContent,lclSelectedTaskHomeScreen.Contract_name&"_"&Now(),lclSelectedTaskHomeScreen.ID);
+                        HTML2PDF_PCFFLOW.Run(HTMLContent,lclSelectedTaskHomeScreen.Contract_name&"_"&Now(),Value(lclSelectedTaskHomeScreen.ID));
                         Navigate('Home Screen');
                     Size: =10
                     Text: ="Submit"
