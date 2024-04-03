@@ -420,7 +420,7 @@
         "'gal_AuditEvent&PerformedBY_CSS' As gallery.variableTemplateHeightGallery":
             DelayItemLoading: =true
             Height: =Parent.Height-(ico_CloseAuditSideBar_CSS.Height*2)-50
-            Items: =SortByColumns(Filter(CM_Audit_Table,Contract_ID_Fk=lclSelectedContract.ID),"Created",SortOrder.Descending)
+            Items: =SortByColumns(Filter(CM_Audit_Table,Contract_ID_Fk=lclSelectedContract.ID,Action="Edit"),"Created",SortOrder.Descending)
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             OnSelect: =true
