@@ -763,7 +763,7 @@
                                 //Select(Parent)
                                 If(
                                     ThisItem.Coc_stage = 4,
-                                    Set(gblContractCompletionView,true)&&Set(gblCOCSigningData,gal_AllContractsDetailView_HS.Selected)),
+                                    Set(gblContractCompletionView,true)&&Set(gblCOCSigningData,gal_AllContractsDetailView_HS.Selected),
                                     ThisItem.Coc_stage>=5,{}, 
                                     Navigate(
                                         'Contract Detail Screen (Further Details)',
