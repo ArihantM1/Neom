@@ -1470,25 +1470,25 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "50",
+                    "InvariantScript": "100",
                     "Property": "RadiusTopLeft",
                     "RuleProviderType": "Unknown"
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "50",
+                    "InvariantScript": "100",
                     "Property": "RadiusTopRight",
                     "RuleProviderType": "Unknown"
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "50",
+                    "InvariantScript": "100",
                     "Property": "RadiusBottomLeft",
                     "RuleProviderType": "Unknown"
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "50",
+                    "InvariantScript": "100",
                     "Property": "RadiusBottomRight",
                     "RuleProviderType": "Unknown"
                   },
@@ -2539,7 +2539,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638477427562997164",
+    "LastModifiedTimestamp": "638477470428799828",
     "Name": "HeaderCMP_withoutNavbar",
     "Rules": [
       {
@@ -2598,7 +2598,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638477427562997164",
+  "LastModifiedTimestamp": "638477470428799828",
   "Name": "82ce9062a6a5495bad7260f812f08727",
   "OverridableProperties": {},
   "Version": "1.0"

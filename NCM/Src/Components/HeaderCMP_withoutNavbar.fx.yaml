@@ -113,10 +113,10 @@ HeaderCMP_withoutNavbar As CanvasComponent:
                 Image: |-
                     =//User().Image
                     gblActiveuserinfo.User_Image
-                RadiusBottomLeft: =50
-                RadiusBottomRight: =50
-                RadiusTopLeft: =50
-                RadiusTopRight: =50
+                RadiusBottomLeft: =100
+                RadiusBottomRight: =100
+                RadiusTopLeft: =100
+                RadiusTopRight: =100
                 Width: =50
                 ZIndex: =2
 
