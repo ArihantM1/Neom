@@ -5394,7 +5394,14 @@
         },
         "toCustomerCustomerAttn",
         "witnessVendorTitle",
-        "witnessVendorDate",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Text(lclSelectedClientData.'Witness Vendor Date')",
+          "InvariantPropertyName": "witnessVendorDate",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -5477,7 +5484,7 @@
         {
           "Category": "Data",
           "PropertyName": "witnessVendorDate",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Data",
@@ -5622,7 +5629,7 @@
         {
           "Category": "Data",
           "PropertyName": "contractCreationFullDate",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Data",

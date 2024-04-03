@@ -85,7 +85,7 @@ HeaderCMP_withoutNavbar As CanvasComponent:
                 Height: =30
                 HoverColor: =RGBA(107, 29, 94, 1)
                 HoverFill: =Self.Color
-                OnSelect: |-
+                OnSelect: |
                     =Reset(drp_ServiceType_CCS);
                     Reset(drp_Client_CCS);
                     Reset(drp_Services_CCS);

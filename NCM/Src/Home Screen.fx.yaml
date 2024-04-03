@@ -1,7 +1,8 @@
 "'Home Screen' As screen":
     OnVisible: |-
         =Set(ContractData,Blank());
-        Set(lclSelectedContracts,Blank())
+        Set(lclSelectedContracts,Blank());
+        UpdateContext({lclSelectedTaskHomeScreen:Blank()});
 
     con_Main_HS As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height

@@ -161,7 +161,7 @@
                     contactEmail: =lclSelectedClientData.Client_Contact_Person_Email
                     contactPersonName: =lclSelectedClientData.Client_Contact_Person_name
                     contactPhoneNo: =lclSelectedClientData.Client_Contact_Person_PhoneNo
-                    contractCreationFullDate: =Text(lclSelectedTaskHomeScreen.Contract_CreatedOn)
+                    contractCreationFullDate: =Text(lclSelectedTaskHomeScreen.Contract_CreatedOn,"yyyy-mm-dd")
                     DisplayMode: =DisplayMode.Edit
                     DivH: =Self.Height+35
                     Height: =Parent.Height
@@ -183,7 +183,7 @@
                     vendorName: =lclSelectedVendorData.Vendor_Email
                     Width: =Parent.Width
                     witnessVendorBy: =lclSelectedClientData.Witness_Vendor_By
-                    witnessVendorDate: =Text(lclSelectedClientData.'Witness Vendor Date')
+                    witnessVendorDate: =Text(lclSelectedClientData.'Witness Vendor Date',"yyyy-mm-dd")
                     witnessVendorTitle: =lclSelectedClientData.Witness_Vendor_Title
                     X: =0
                     Y: =0
@@ -455,7 +455,7 @@
                                         Id: VarContractDetailsPatch.ID,
                                         Value: VarContractDetailsPatch.ID
                                     },
-                                   // contract_ID_FK: firstFormID,
+                                   
                                     Witness_Vendor_By: pcf_UserAgreement_CSD.witnessVendorBy,
                                     Witness_Vendor_Title: pcf_UserAgreement_CSD.witnessVendorTitle,
                                     'Witness Vendor Date': DateTimeValue(pcf_UserAgreement_CSD.witnessVendorDate)
@@ -528,7 +528,7 @@
                                         Id: VarContractDetailsPatch.ID,
                                         Value: VarContractDetailsPatch.ID
                                     },
-                                    //contract_ID_FK: firstFormID,
+                                    
                                     Notice_Client_Attention: pcf_UserAgreement_CSD.toCustomerCustomerAttn,
                                     Notice_Client_Address: pcf_UserAgreement_CSD.toCustomerCustomerAddress,
                                     Client_Contact_Person_name: pcf_UserAgreement_CSD.contactPersonName,
@@ -541,7 +541,6 @@
                                     Client_Invoice_Name: pcf_UserAgreement_CSD.invoiceName,
                                     Client_Invoice_City: pcf_UserAgreement_CSD.invoiceCity,
                                     Client_Invoice_State: pcf_UserAgreement_CSD.invoiceState,
-                                    //Client_Invoice_Country:chartJS1.invoi,
                                     Client_Invoice_PinNo: Value(pcf_UserAgreement_CSD.invoicePin),
                                     Client_Bank_Name: pcf_UserAgreement_CSD.bankName,
                                     Client_Bank_MIRC_No: pcf_UserAgreement_CSD.bankMICRCode,
@@ -596,7 +595,7 @@
                                         Id: VarContractDetailsPatch.ID,
                                         Value: VarContractDetailsPatch.ID
                                     },
-                                   // contract_ID_FK: firstFormID,
+                                   
                                     Witness_Vendor_By: pcf_UserAgreement_CSD.witnessVendorBy,
                                     Witness_Vendor_Title: pcf_UserAgreement_CSD.witnessVendorTitle,
                                     'Witness Vendor Date': DateTimeValue(pcf_UserAgreement_CSD.witnessVendorDate)
@@ -643,32 +642,7 @@
                                         Value: VarContractDetailsPatch.ID
                                     },
                                     contract_ID_FK: firstFormID
-                                /*,
-                                Notice_Client_Address:chartJS1.toCustomerCustomerAddress,
-                                Notice_Client_Attention:chartJS1.toCustomerCustomerAttn,
-                                Client_Bank_Branch_Address:chartJS1.bankBranchAddress,
-                                'Client_Bank IFSC Code':chartJS1.bankIFSCNEFTCode,
-                                Client_Bank_MIRC_No:chartJS1.bankMICRCode,
-                                Client_Bank_Account_No:chartJS1.bankAccountNo,
-                                //Client_Invoice_Country:chartJS1.invoi,
-                                Client_Invoice_PinNo:Value(chartJS1.invoicePin),
-                                Client_Bank_Name:chartJS1.bankName,
-                                Client_Invoice_State:chartJS1.invoiceState,
-                                Client_Invoice_City:chartJS1.invoiceCity,
-                                Client_Invoice_Name:chartJS1.invoiceName,
-                                Client_Contact_Person_Email:chartJS1.contactEmail,
-                                Client_Contact_Person_PhoneNo:Value(chartJS1.contactPhoneNo),
-                                Client_Contact_Person_name:chartJS1.contactPersonName,
-                                //PIN_CODE:Value(chartJS1.pinCode),
-                                Client_Billing_State:chartJS1.companyBillingState,
-                                Client_Billing_Country:chartJS1.companyBillingCountry, 
-                               // Client_Delarance_Name:TextInput1_21.Text,
-                                Client_Billing_City:chartJS1.companyBillingCity,
-                                'Witness Vendor Date': DateTimeValue(chartJS1.witnessVendorDate),
-                                Witness_Vendor_Title:chartJS1.witnessVendorTitle,
-                                 Witness_Vendor_By: chartJS1.witnessVendorBy
-                                //Witness_Vendor_By:TextInput1_25.Text  
-                                */
+                                
                                 }
                             );
                             Patch(
@@ -691,14 +665,11 @@
                                 {
                                 Contract_Id:{Id:VarContractDetailsPatch.ID,Value:VarContractDetailsPatch.ID},
                                contract_ID_FK:firstFormID 
-                               /*,Vendor_Contact_Number: Value(chartJS1.vendorContactNo),
-                               Vendor_Email:chartJS1.vendorEmail,
-                               Vendor_Address:chartJS1.vendorAddress,
-                               Title:chartJS1.vendorName*/
+                              
                                 }
                             )
                         );
-                        //CM_PDFSummaryFlow.Run(lclSelectedTaskHomeScreen.ID);
+                        
                         Refresh(CM_Client_Contract);
                         Refresh(CM_ContractDetails);
                         Refresh(CM_VENDOR);

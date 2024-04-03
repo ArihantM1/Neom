@@ -1961,9 +1961,9 @@
                   },
                   {
                     "Category": "Behavior",
-                    "InvariantScript": "Reset(drp_ServiceType_CCS);\nReset(drp_Client_CCS);\nReset(drp_Services_CCS);\nReset(drp_ApplicableTo_CCS);\nReset(drp_Currency_CCS);\nReset(drp_Country_CCS);\nReset('drp_SelectNew&Existing_CCS');\nReset(lblContractName_CCS);\nReset(txt_DescriptionInput_CCS);\nReset(dte_StartDate_CCS);\nReset(dte_EndDate_CCS);\nReset(rdo_CreateDucplicateCOCSelect_CCS);\nNavigate('Home Screen')",
+                    "InvariantScript": "Reset(drp_ServiceType_CCS);\nReset(drp_Client_CCS);\nReset(drp_Services_CCS);\nReset(drp_ApplicableTo_CCS);\nReset(drp_Currency_CCS);\nReset(drp_Country_CCS);\nReset('drp_SelectNew&Existing_CCS');\nReset(lblContractName_CCS);\nReset(txt_DescriptionInput_CCS);\nReset(dte_StartDate_CCS);\nReset(dte_EndDate_CCS);\nReset(rdo_CreateDucplicateCOCSelect_CCS);\nNavigate('Home Screen')\n",
                     "Property": "OnSelect",
-                    "RuleProviderType": "Unknown"
+                    "RuleProviderType": "User"
                   }
                 ],
                 "StyleName": "defaultButtonStyle",
@@ -2539,7 +2539,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638477339304371074",
+    "LastModifiedTimestamp": "638477368907630657",
     "Name": "HeaderCMP_withoutNavbar",
     "Rules": [
       {
@@ -2598,7 +2598,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638477339304371074",
+  "LastModifiedTimestamp": "638477368907630657",
   "Name": "82ce9062a6a5495bad7260f812f08727",
   "OverridableProperties": {},
   "Version": "1.0"
