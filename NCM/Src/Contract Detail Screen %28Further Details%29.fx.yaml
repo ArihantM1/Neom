@@ -279,7 +279,7 @@
                     HoverFill: =RGBA(107, 29, 94, 1)
                     OnSelect: |+
                         =//If(IsBlank(VarContractDetailsPatch),Set(VarContractDetailsPatch,lclSelectedTaskHomeScreen),{});
-                        Navigate('Contract Summary Screen');
+                        
                         Refresh(CM_Client_Contract);
                         Refresh(CM_ContractDetails);
                         Refresh(CM_Task);
@@ -680,6 +680,13 @@
                             Set(gblReturnvaluePDFFlow,CM_PDFSummaryFlow.Run(lclSelectedTaskHomeScreen.ID)),
                             Set(gblReturnvaluePDFFlow,CM_PDFSummaryFlow.Run(VarContractDetailsPatch.ID))
                         );
+                        Navigate('Contract Summary Screen');
+                        
+                        Set(HTMLContent,pcf_UserAgreement_CSD.HTMLContent);
+                        Set(HTMLContent,Substitute(HTMLContent,"orange","white"));
+                        Set(HTMLContent,Substitute(HTMLContent,"yellow","white"));
+                        HTML2PDF_PCFFLOW.Run(HTMLContent,lclSelectedTaskHomeScreen.Contract_name&"_"&Now(),Value(lclSelectedTaskHomeScreen.ID));
+                        
                         
                         If(IsBlank(gblReturnvaluePDFFlow),{},Refresh(CM_ContractDetails));
                         Reset(drp_ServiceType_CCS);
@@ -704,10 +711,6 @@
                             firstFormID,
                             Blank()
                         );
-                        Set(HTMLContent,pcf_UserAgreement_CSD.HTMLContent);
-                        Set(HTMLContent,Substitute(HTMLContent,"orange","white"));
-                        Set(HTMLContent,Substitute(HTMLContent,"yellow","white"));
-                        HTML2PDF_PCFFLOW.Run(HTMLContent,lclSelectedTaskHomeScreen.Contract_name&"_"&Now(),Value(lclSelectedTaskHomeScreen.ID));
                         
                     Size: =10
                     Text: ="Submit"
