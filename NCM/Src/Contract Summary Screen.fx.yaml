@@ -641,7 +641,7 @@
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
-                    Width: =con_MainAuditEvent_CSS.Width
+                    Width: =Parent.Width*.3
                     ZIndex: =3
 
                     lbl_Event_CSS As label:
