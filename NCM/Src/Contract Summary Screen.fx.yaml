@@ -514,7 +514,9 @@
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
-                    Width: =Parent.Width-con_AuditPerformedBY_CSS.Width
+                    Width: |-
+                        =//Parent.Width-con_AuditPerformedBY_CSS.Width
+                        con_Event_CSS.Width
                     ZIndex: =2
 
                     btn_Event_CSS As button:
@@ -558,31 +560,34 @@
 
                 lbl_FieldValue_CSS As label:
                     Height: =Parent.Height
-                    PaddingLeft: =15
+                    PaddingLeft: =25
                     Size: =10
                     Text: =Substitute(ThisItem.Value.Field,"_x005f_"," ")
                     Width: =Parent.Width/3
                     ZIndex: =1
 
                 lbl_CurrentValuejson_CSS As label:
+                    Align: =Align.Center
                     Height: =lbl_FieldValue_CSS.Height
                     Size: =10
-                    Text: |+
+                    Text: |
                         =//If("-" in Text(ThisItem.Value.currentValue) || "/" in Text(ThisItem.Value.currentValue),DateTimeValue(ThisItem.Value),Text(ThisItem.Value.currentValue))
                         //Text(ThisItem.Value.currentValue)
                         
-                        If(Text(ThisItem.Value.Field) = "Modified ", Text(DateTimeValue(ThisItem.Value.currentValue),"dd-mm-yyyy hh:mm am/pm") ,Text(ThisItem.Value.currentValue))
-                        
+                        //If(Text(ThisItem.Value.Field) = "Modified ", Text(DateTimeValue(ThisItem.Value.currentValue),"dd-mm-yyyy hh:mm am/pm") ,Text(ThisItem.Value.currentValue))
+                        If(IsBlank(Text(ThisItem.Value.currentValue)),"-",If(Text(ThisItem.Value.Field) = "Modified ", Text(DateTimeValue(ThisItem.Value.currentValue),"dd-mm-yyyy hh:mm am/pm") ,Text(ThisItem.Value.currentValue)))
                     Width: =lbl_FieldValue_CSS.Width
                     ZIndex: =2
 
                 lbl_PrevValuejson_CSS As label:
+                    Align: =Align.Center
                     Height: =lbl_FieldValue_CSS.Height
                     PaddingLeft: =25
                     Size: =10
                     Text: |-
                         =//Text(ThisItem.Value.PreviousValue)
-                        If(Text(ThisItem.Value.Field) = "Modified ", Text(DateTimeValue(ThisItem.Value.PreviousValue),"dd-mm-yyyy hh:mm am/pm") ,Text(ThisItem.Value.PreviousValue))
+                        //If(Text(ThisItem.Value.Field) = "Modified ", Text(DateTimeValue(ThisItem.Value.PreviousValue),"dd-mm-yyyy hh:mm am/pm") ,Text(ThisItem.Value.PreviousValue))
+                        If(IsBlank(Text(ThisItem.Value.PreviousValue)),"-",If(Text(ThisItem.Value.Field) = "Modified ", Text(DateTimeValue(ThisItem.Value.PreviousValue),"dd-mm-yyyy hh:mm am/pm") ,Text(ThisItem.Value.PreviousValue)))
                     Width: =lbl_FieldValue_CSS.Width
                     ZIndex: =3
 
@@ -598,6 +603,7 @@
         con_AuditHeader_CSS As groupContainer.horizontalAutoLayoutContainer:
             DropShadow: =DropShadow.None
             Height: =Parent.Height-'gal_AuditEvent&PerformedBY_CSS'.Height-ico_CloseAuditSideBar_CSS.Height-40
+            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
             LayoutMode: =LayoutMode.Auto
             Width: =Parent.Width
             Y: =ico_CloseAuditSideBar_CSS.Height+36
@@ -657,6 +663,7 @@
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =Parent.Height
+                LayoutJustifyContent: =LayoutJustifyContent.End
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
@@ -667,13 +674,14 @@
                     Color: =RGBA(153, 153, 153, 1)
                     FontWeight: =FontWeight.Bold
                     Height: =Parent.Height
-                    PaddingLeft: =15
+                    PaddingLeft: =30
                     Size: =12
                     Text: ="Field"
                     Width: =Parent.Width/3
                     ZIndex: =1
 
                 lbl_CurrentValue_CSS As label:
+                    Align: =Align.Center
                     Color: =RGBA(153, 153, 153, 1)
                     FontWeight: =FontWeight.Bold
                     Height: =lbl_Field_CSS.Height
@@ -683,6 +691,7 @@
                     ZIndex: =2
 
                 lbl_PreviousValue_CSS As label:
+                    Align: =Align.Center
                     Color: =RGBA(153, 153, 153, 1)
                     FontWeight: =FontWeight.Bold
                     Height: =lbl_Field_CSS.Height
