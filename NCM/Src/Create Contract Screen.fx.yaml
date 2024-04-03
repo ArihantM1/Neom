@@ -770,88 +770,8 @@
                         Refresh(CM_VENDOR);
                         
                         Set(firstFormID,Last(CM_ContractDetails).ID);
-                        /*If(
-                            Radio1.Selected.Value = "Create new",
-                            Set(
-                                ContractData,
-                                Patch(
-                                    CM_ContractDetails,
-                                    Defaults(CM_ContractDetails),
-                                    {
-                                        Contract_name: lblContractName_CCS.Text,
-                                        Currency: {Value: drp_Currency_CCS.SelectedText.Value},
-                                        Applicable_to: {Value: drp_ApplicableTo_CCS.SelectedText.Value},
-                                        Description: txt_DescriptionInput_CCS.Text,
-                                        Start_date: dte_StartDate_CCS.SelectedDate,
-                                        End_date: dte_EndDate_CCS.SelectedDate,
-                                        Coc_stage: 1,
-                                        Status: {Value: "Draft"},
-                                        Service_Type_fk: {
-                                            Id: drp_ServiceType_CCS.Selected.ID,
-                                            Value: drp_ServiceType_CCS.SelectedText.Value
-                                        },
-                                        Supplier: {
-                                            Id: drp_Client_CCS.Selected.ID,
-                                            Value: drp_Client_CCS.SelectedText.Value
-                                        },
-                                        Service_fk: {
-                                            Id: drp_Services_CCS.Selected.ID,
-                                            Value: drp_Services_CCS.SelectedText.Value
-                                        },
-                                        Title: "C" & "000" & ContractData.ID,
-                                        Clauses: LookUp(
-                                            ClauseCollection,
-                                            Number = RandomClauseIndex
-                                        ).Name,
-                                        Country: {Value: drp_Country_CCS.SelectedText.Value}
-                                    }
-                                );
-                            );,
-                            Set(
-                                ContractData,
-                                Patch(
-                                    CM_ContractDetails,
-                                    Defaults(CM_ContractDetails),
-                                    {
-                                        Contract_name: lblContractName_CCS.Text,
-                                        Currency: {Value: drp_Currency_CCS.SelectedText.Value},
-                                        Applicable_to: {Value: drp_ApplicableTo_CCS.SelectedText.Value},
-                                        Description: txt_DescriptionInput_CCS.Text,
-                                        Start_date: dte_StartDate_CCS.SelectedDate,
-                                        End_date: dte_EndDate_CCS.SelectedDate,
-                                        Coc_stage: 1,
-                                        Status: {Value: "Draft"},
-                                        Service_Type_fk: {
-                                            Id: drp_ServiceType_CCS.Selected.ID,
-                                            Value: drp_ServiceType_CCS.SelectedText.Value
-                                        },
-                                        Supplier: {
-                                            Id: drp_Client_CCS.Selected.ID,
-                                            Value: drp_Client_CCS.SelectedText.Value
-                                        },
-                                        Service_fk: {
-                                            Id: drp_Services_CCS.Selected.ID,
-                                            Value: drp_Services_CCS.SelectedText.Value
-                                        },
-                                        Title: "C" & "000" & ContractData.ID,
-                                        Clauses: LookUp(
-                                            ClauseCollection,
-                                            Number = RandomClauseIndex
-                                        ).Name,
-                                        Country: {Value: drp_Country_CCS.SelectedText.Value}
-                                    }
-                                );
-                            )
-                        )*/
-                        /*Patch(CM_Task,
-                         {
-                            Contract_Id:VarContractDetailsPatch.ID,
-                            Task_Name:"Fill Out Key Data Of Procurement",
-                            Task_Status:"Pending",
-                            Task_Assigned_to:"Procurement"
                         
-                         }
-                        );*/
+                        
                         Refresh(CM_Task);
                         Navigate(
                             'Contract Detail Screen (Further Details)',

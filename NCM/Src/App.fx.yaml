@@ -117,8 +117,7 @@ App As appinfo:
             "Admin"
         
         
-        )
-        )
+        ))
         
     StartScreen: =
     Theme: =PowerAppsTheme
