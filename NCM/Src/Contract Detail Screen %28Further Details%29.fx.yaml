@@ -278,7 +278,7 @@
                     Height: =35
                     HoverFill: =RGBA(107, 29, 94, 1)
                     OnSelect: |+
-                        =//If(IsBlank(VarContractDetailsPatch),Set(VarContractDetailsPatch,lclSelectedTaskHomeScreen),{});
+                        =If(IsBlank(VarContractDetailsPatch),Set(VarContractDetailsPatch,lclSelectedTaskHomeScreen),{});
                         
                         Refresh(CM_Client_Contract);
                         Refresh(CM_ContractDetails);

@@ -1,6 +1,6 @@
 App As appinfo:
     BackEnabled: =true
-    OnStart: |
+    OnStart: |+
         =ClearCollect(
             NavBar,
             Table(
@@ -118,7 +118,8 @@ App As appinfo:
         
         
         ));
-        Set(gblcontractData,Blank())
+        Set(gblSigningLoader,false);
+        
     StartScreen: =
     Theme: =PowerAppsTheme
 
