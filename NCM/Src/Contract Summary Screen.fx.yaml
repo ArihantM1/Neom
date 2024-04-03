@@ -125,21 +125,22 @@
                 ZIndex: =4
 
                 lbl_COCtaskHeaderNameTASKNAME_CSS As label:
-                    FontWeight: =FontWeight.Semibold
+                    Color: =RGBA(89, 89, 89, 1)
+                    Fill: =RGBA(181, 181, 181, 0)
                     Height: =Parent.Height
                     OnSelect: =
                     PaddingLeft: =25
-                    Size: =8
+                    Size: =9
                     Text: ="Task"
                     Width: =Parent.Width*.6
                     ZIndex: =1
 
                 lbl_COCtaskHeaderNameCOCID_CSS As label:
                     Align: =Align.Center
-                    FontWeight: =FontWeight.Semibold
+                    Color: =RGBA(89, 89, 89, 1)
                     Height: =Parent.Height
                     OnSelect: =
-                    Size: =8
+                    Size: =9
                     Text: ="COC ID"
                     Width: =Parent.Width*.4
                     ZIndex: =2
