@@ -215,7 +215,7 @@
                 Width: =Parent.Width
                 ZIndex: =3
 
-            gal_Analytics_AS_1 As gallery.variableTemplateHeightGallery:
+            gal_Users_UMS As gallery.variableTemplateHeightGallery:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DelayItemLoading: =true
                 FillPortions: =0
@@ -243,15 +243,7 @@
                 LoadingSpinner: =LoadingSpinner.Data
                 LoadingSpinnerColor: |-
                     =ColorValue("#6b1d5e")
-                OnSelect: |-
-                    =If(
-                        ThisItem.Status.Value = "Active",
-                        Navigate('Contract Summary Screen')
-                    );
-                    Set(
-                        ContractData,
-                        gal_Analytics_AS_1.Selected
-                    )
+                OnSelect: =
                 TemplateSize: =60
                 Transition: =Transition.Pop
                 Width: =Parent.Width
@@ -265,7 +257,7 @@
                     Text: =ThisItem.Title
                     Width: =lbl_ContractsIdHeadline_AS_1.Width
                     X: =lbl_ContractsIdHeadline_AS_1.X
-                    Y: =(gal_Analytics_AS_1.TemplateHeight-Self.Height)/2
+                    Y: =(gal_Users_UMS.TemplateHeight-Self.Height)/2
                     ZIndex: =1
 
                 lbl_ContratName_AS_1 As label:
@@ -277,7 +269,7 @@
                     Text: =ThisItem.Emaill
                     Width: =lbl_ContractsNameHeadline_AS_1.Width
                     X: =lbl_ContractsNameHeadline_AS_1.X
-                    Y: =(gal_Analytics_AS_1.TemplateHeight-Self.Height)/2
+                    Y: =(gal_Users_UMS.TemplateHeight-Self.Height)/2
                     ZIndex: =2
 
                 lbl_ContractClients_AS_1 As label:
@@ -288,7 +280,7 @@
                     Text: =ThisItem.Role
                     Width: =lbl_ContractsClientHeadline_AS_1.Width
                     X: =lbl_ContractsClientHeadline_AS_1.X
-                    Y: =(gal_Analytics_AS_1.TemplateHeight-Self.Height)/2
+                    Y: =(gal_Users_UMS.TemplateHeight-Self.Height)/2
                     ZIndex: =3
 
                 rec_ContractDeviderLine_AS_1 As rectangle:
@@ -397,32 +389,45 @@
             Y: =lbl_ManagePeopleHeader_UMS_1.Height
             ZIndex: =3
 
-            Image6 As image:
-                AlignInContainer: =AlignInContainer.Center
-                Image: =If(gblAddUpdateUser="Update",gal_Analytics_AS_1.Selected.User_Image,'USER-IMAGE')
-                RadiusBottomLeft: =60
-                RadiusBottomRight: =60
-                RadiusTopLeft: =60
-                RadiusTopRight: =60
-                ZIndex: =1
-
             Container6 As groupContainer.manualLayoutContainer:
                 AlignInContainer: =AlignInContainer.Center
                 DropShadow: =DropShadow.None
                 FillPortions: =0
-                Height: =Parent.Height*.05
+                Height: =Parent.Height*.25
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 Width: =Parent.Width
                 ZIndex: =2
 
-                AddMediaButton1 As addMedia:
-                    Color: =RGBA(2, 100, 186, 1)
-                    Height: =Parent.Height
-                    Size: =15
-                    Text: ="Upload Profile Picture"
-                    Width: =Parent.Width
-                    ZIndex: =4
+                AddMediaWithImage1 As group:
+                    Height: =5
+                    Width: =5
+                    X: =40
+                    Y: =40
+                    ZIndex: =1
+
+                    UploadedImage1 As image:
+                        Image: |-
+                            =//If(IsBlank(AddMediaButton1.Media), SampleImage, AddMediaButton1.Media)
+                            //If(IsBlank(gal_Users_UMS.Selected.User_Image),'USER-IMAGE',gal_Users_UMS.Selected.User_Image)
+                            
+                            If(gblAddUpdateUser="Update",gal_Users_UMS.Selected.User_Image, 'USER-IMAGE')
+                        ImagePosition: =ImagePosition.Fill
+                        RadiusBottomLeft: =100
+                        RadiusBottomRight: =100
+                        RadiusTopLeft: =100
+                        RadiusTopRight: =100
+                        X: =(Parent.Width-Self.Width)/2
+                        Y: =Parent.Height*.1
+                        ZIndex: =2
+
+                    AddMediaButton1 As addMedia:
+                        Height: =Parent.Height*.3
+                        Size: =12
+                        Text: ="Tap or click to ada user picture"
+                        Width: =Parent.Width
+                        Y: =122
+                        ZIndex: =3
 
             Container7 As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.Center
@@ -453,7 +458,7 @@
                     AlignInContainer: =AlignInContainer.Center
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderThickness: =0
-                    Default: =If(gblAddUpdateUser="Update",gal_Analytics_AS_1.Selected.Name,Blank())
+                    Default: =If(gblAddUpdateUser="Update",gal_Users_UMS.Selected.Name,Blank())
                     Fill: =RGBA(245, 245, 245, 1)
                     Height: =35
                     HintText: ="Enter User's Name..."
@@ -492,7 +497,7 @@
                     AlignInContainer: =AlignInContainer.Center
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderThickness: =0
-                    Default: =If(gblAddUpdateUser="Update",gal_Analytics_AS_1.Selected.Emaill,Blank())
+                    Default: =If(gblAddUpdateUser="Update",gal_Users_UMS.Selected.Emaill,Blank())
                     Fill: =RGBA(245, 245, 245, 1)
                     Height: =35
                     HintText: ="Enter User's E-mail..."
@@ -533,7 +538,7 @@
                     BorderThickness: =0
                     ChevronBackground: =RGBA(107, 29, 94, 1)
                     ChevronHoverBackground: =RGBA(107, 29, 94, 1)
-                    Default: =If(gblAddUpdateUser="Update",gal_Analytics_AS_1.Selected.Role,"Enter User's Role")
+                    Default: =If(gblAddUpdateUser="Update",gal_Users_UMS.Selected.Role,"Enter User's Role")
                     Fill: =RGBA(245, 245, 245, 1)
                     Height: =35
                     HoverBorderColor: =ColorFade(Self.ChevronBackground, 15%)
@@ -613,7 +618,7 @@
                         =ColorValue("#6b1d5e")
                     OnSelect: |
                         =If(gblAddUpdateUser="Update",
-                        UpdateIf(CM_Users,ID = gal_Analytics_AS_1.Selected.ID,
+                        UpdateIf(CM_Users,ID = gal_Users_UMS.Selected.ID,
                         {
                             Title:txt_USerNameINput_UMS.Text,
                             Emaill: txt_USeMailINput_UMS.Text,
@@ -626,8 +631,8 @@
                                 {
                                     Title:txt_USerNameINput_UMS.Text,
                                     Emaill:txt_USeMailINput_UMS.Text,
-                                    Role:drp_USerRoleINput_UMS.SelectedText.Value
-                                   //, User_Image:AddMediaButton1
+                                    Role:drp_USerRoleINput_UMS.SelectedText.Value,
+                                   User_Image:AddMediaWithImage1
                                     
                                 }
                          )
