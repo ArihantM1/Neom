@@ -516,7 +516,7 @@
                     LayoutMode: =LayoutMode.Auto
                     Width: |-
                         =//Parent.Width-con_AuditPerformedBY_CSS.Width
-                        con_Event_CSS.Width
+                        Parent.Width*.3
                     ZIndex: =2
 
                     btn_Event_CSS As button:
@@ -655,7 +655,7 @@
                         PaddingTop: =0
                         Size: =12
                         Text: ="Event"
-                        Width: =con_MainAuditEvent_CSS.Width
+                        Width: =Parent.Width
                         ZIndex: =1
 
             con_AuditHeader_FCP_CSS As groupContainer.horizontalAutoLayoutContainer:
