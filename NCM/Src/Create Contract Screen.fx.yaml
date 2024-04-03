@@ -111,7 +111,7 @@
                     OnChange: |
                         =
                          Set(
-                                ContractData,
+                                gblcontractData,
                                 Blank()
                             );
                         Reset('drp_SelectNew&Existing_CCS');
