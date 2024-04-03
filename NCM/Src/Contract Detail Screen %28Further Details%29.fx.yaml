@@ -156,7 +156,7 @@
                     companyBillingCity: =lclSelectedClientData.Client_Billing_City
                     companyBillingCountry: =lclSelectedClientData.Client_Billing_Country
                     companyBillingState: =lclSelectedClientData.Client_Billing_State
-                    companyName: =lclSelectedTaskHomeScreen.Contract_name
+                    companyName: =LookUp(CM_ClientData,ID = lclSelectedTaskHomeScreen.Client_ID).Client_name
                     contactCreationCity: =lclSelectedTaskHomeScreen.Contract_Created_Location
                     contactEmail: =lclSelectedClientData.Client_Contact_Person_Email
                     contactPersonName: =lclSelectedClientData.Client_Contact_Person_name

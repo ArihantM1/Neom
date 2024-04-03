@@ -5395,7 +5395,14 @@
         "toCustomerCustomerAttn",
         "witnessVendorTitle",
         "witnessVendorDate",
-        "companyName",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "lclSelectedTaskHomeScreen.Contract_name",
+          "InvariantPropertyName": "companyName",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "companyBillingAddress",
         "companyBillingCity",
         "companyBillingState",
@@ -5446,7 +5453,7 @@
         {
           "Category": "Data",
           "PropertyName": "companyName",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Data",
