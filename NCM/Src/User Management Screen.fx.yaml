@@ -56,7 +56,7 @@
                     PressedColor: =RGBA(107, 29, 94, 1)
                     PressedFill: =RGBA(255, 255, 255, 1)
                     SearchFields: =["Value"]
-                    SearchItems: =Search([Blank(),"Admin","Procurement","Supplier","Proponent"],cmb_FilterByApplicableTo_AS_1.SearchText,"Value")
+                    SearchItems: =[]
                     SelectionFill: =RGBA(107, 29, 94, 1)
                     Size: =11
                     Width: =220

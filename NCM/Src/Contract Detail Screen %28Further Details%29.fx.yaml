@@ -680,7 +680,7 @@
                             Set(gblReturnvaluePDFFlow,CM_PDFSummaryFlow.Run(lclSelectedTaskHomeScreen.ID)),
                             Set(gblReturnvaluePDFFlow,CM_PDFSummaryFlow.Run(VarContractDetailsPatch.ID))
                         );
-                        Navigate('Home Screen');
+                        Navigate('Contract Summary Screen',ScreenTransition.Fade);
                         
                         Set(HTMLContent,pcf_UserAgreement_CSD.HTMLContent);
                         Set(HTMLContent,Substitute(HTMLContent,"orange","white"));
