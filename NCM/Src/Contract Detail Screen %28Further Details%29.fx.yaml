@@ -700,7 +700,7 @@
                         Reset(txt_DescriptionInput_CCS);
                         Reset(dte_StartDate_CCS);
                         Reset(dte_EndDate_CCS);
-                        UpdateContext({lclSelectedTaskHomeScreen:Blank()});
+                        //UpdateContext({lclSelectedTaskHomeScreen:Blank()});
                         Set(VarContractDetailsPatch,Blank());
                         Reset(rdo_CreateDucplicateCOCSelect_CCS);
                         Set(
